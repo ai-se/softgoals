@@ -34,7 +34,7 @@ def valDown(node):
            if there is a mixture of positive and negatives :
               return any of t,f
 
-function valUp(node):
+def valUp(node):
    "in the style of fuzzy logic, reason optimisitically about ors"       
      for kid in shuffle(kids):
              if val(kid) then 
