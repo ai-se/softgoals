@@ -1,17 +1,17 @@
-```
-function scores(softgoals):
+```python
+def scores(softgoals):
    repeat 1000 times:
        final += score(softgoals)
    return final
 
-function score(softgoals):
+def score(softgoals):
   roots =  all nodes with no parents
   for node in shuffle(roots):
       if val(node)== t
         count += 1
  return score
 
-function val(node):
+def val(node):
   if a node has no  value then
          if  has not childern, value= any of t,f
          else node.type = and then value = valDown(node)
@@ -19,7 +19,7 @@ function val(node):
          node.value = value
   return node.value
 
-function valDown(node):
+def valDown(node):
    "in the style of fuzzy logic, reason pessimisticaly about ands"
          for kid in shuffle(kids):
              if val(kid) then 
