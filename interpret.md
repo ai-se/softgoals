@@ -2,7 +2,7 @@
 t=True
 f=False
 any=random.choose
-def anything() return any([t,f])
+def anything(): return any([t,f])
 
 def scores(softgoals,n=1000):
    for _ in xrange(n):
