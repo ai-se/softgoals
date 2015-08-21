@@ -1,44 +1,46 @@
 ```python
-def scores(softgoals):
-   repeat 1000 times:
+t=True
+f=False
+any=random.choose
+def anything() return any([t,f])
+
+def scores(softgoals,n=1000):
+   for _ in xrange(n):
        final += score(softgoals)
-   return final
+   return final/n
 
 def score(softgoals):
-  roots =  all nodes with no parents
-  for node in shuffle(roots):
+  for node in shuffle(all nodes with no parents):
       if val(node)== t
         count += 1
- return score
+ return cout
 
-def val(node):
-  if a node has no  value then
-         if  has not childern, value= any of t,f
-         else node.type = and then value = valDown(node)
-                  node.tpye = or then value = valUp(node)
-         node.value = value
-  return node.value
+def val(x):
+  if not x.value:
+         if  not x.kids: 
+            x.value = anything()
+         else: 
+            x.value = valDown(x) if x.type == 'and' else valUp(x)
+  return x.value
 
-def valDown(node):
+def valDown(x):
    "in the style of fuzzy logic, reason pessimisticaly about ands"
-         for kid in shuffle(kids):
-             if val(kid) then 
-                  add  (node,kid) to active
-         using the  active arcs:
-            if is has only negative input arcs then pick one at random:
-              - if "hurts"    return any of t,f
-              - if "breaks"   return  f 
-           if it has only positive input arcs
-              - if "helps"   return any of t,f
-             - if "makes"  return  t
-           if there is a mixture of positive and negatives :
-              return any of t,f
+         # just reflect on the arvs to kids that are true
+         kids = shuffle([kid for kid in shuffle(x.kids) if  val(kid)])
+         if kids have only negative  arcs  to x then:
+            oracle= any(activeArcs)
+            return f if oralce.type=="breaks"  else anything()
+         elif:  kids have only positive input arcs
+             oracle= any(activeArcs)
+            return t if oracle.type=="makes"  else anything()
+         else:
+            return anything()
 
-def valUp(node):
+def valUp(x):
    "in the style of fuzzy logic, reason optimisitically about ors"       
-     for kid in shuffle(kids):
-             if val(kid) then 
-                 if positive arc for kid to node
-                     return t
-   else return f
+    for kid in shuffle(x):
+         if val(kid) then 
+            if positive arc from kid to x # makes or helps
+               return t
+  return f
 ```   
