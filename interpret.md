@@ -1,10 +1,14 @@
 ```python
+import random
+
 t=True
 f=False
 any=random.choose
 def anything(): return any([t,f])
 
-def scores(softgoals,n=1000):
+def scores(softgoals,n=1000,seed=None):
+   if seed: 
+      random.seed(seed)
    for _ in xrange(n):
        final += score(softgoals)
    return final/n
