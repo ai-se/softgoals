@@ -1,0 +1,159 @@
+-------------------------------------------------------------------
+                Welcome to TARZAN (Version 2.2)
+        Copyright (c) 2001 Tim Menzies (tim@menzies.com)
+              Copy policy: GPL-2 (see www.gnu.org)
+
+...while on high, our hero watches for the right chance to strike!
+-------------------------------------------------------------------
+
+NOW: specified
+CHANGES: specified
+default: SCORE for Classes not specified
+
+Read 10000 cases (48 attributes) from arch_patterns.data
+
+ Worth=1.000000
+ Granularity=3 Promising=-10000000.000000 Useful=1.000000 nChanges=1
+ Treatment:[No Treatment]
+
+ benefit_vvhigh=cost_vvlow:~~~~~~~~~~~~~~~                 [   196 -  2%] 
+ benefit_vvhigh=cost_vlow:~~~~~~~~~~~~~~~~~               [   211 -  2%] 
+ benefit_vhigh=cost_vvlow:~~~~~~~~~~~~~~~~~~~~            [   248 -  2%] 
+ benefit_vhigh=cost_vlow:~~~~~~~~~~~~~~~~~~~             [   241 -  2%] 
+ benefit_vvhigh=cost_low:~~~~~~~~~~~~~~~~~~~~~           [   263 -  3%] 
+ benefit_high=cost_vvlow:~~~~~~~~~~~~~~~~~~~~            [   249 -  2%] 
+ benefit_vhigh=cost_low:~~~~~~~~~~~~~~~~~~~             [   238 -  2%] 
+ benefit_high=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~        [   303 -  3%] 
+ benefit_high=cost_low:~~~~~~~~~~~~~~~~~~~~~~          [   282 -  3%] 
+ benefit_vvhigh=cost_high:~~~~~~~~~~~~~~~~~~~~~~~         [   286 -  3%] 
+ benefit_low=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~          [   278 -  3%] 
+ benefit_vhigh=cost_high:~~~~~~~~~~~~~~~~~~~~~~~~~       [   312 -  3%] 
+ benefit_low=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~          [   280 -  3%] 
+ benefit_high=cost_high:~~~~~~~~~~~~~~~~~~~~~~~         [   283 -  3%] 
+ benefit_low=cost_low:~~~~~~~~~~~~~~~~~~~~~~~~        [   301 -  3%] 
+ benefit_low=cost_high:~~~~~~~~~~~~~~~~~~~~~~~~        [   296 -  3%] 
+ benefit_vvhigh=cost_vhigh:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   [   362 -  4%] 
+ benefit_vlow=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~~~~~      [   328 -  3%] 
+ benefit_vhigh=cost_vhigh:~~~~~~~~~~~~~~~~~~~~~~~~~~      [   322 -  3%] 
+ benefit_vlow=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~~       [   308 -  3%] 
+ benefit_high=cost_vhigh:~~~~~~~~~~~~~~~~~~~~~           [   259 -  3%] 
+ benefit_vlow=cost_low:~~~~~~~~~~~~~~~~~~~~~           [   265 -  3%] 
+ benefit_low=cost_vhigh:~~~~~~~~~~~~~~~~~~~~~           [   267 -  3%] 
+ benefit_vlow=cost_high:~~~~~~~~~~~~~~~~~~~~            [   255 -  3%] 
+ benefit_vlow=cost_vhigh:~~~~~~~~~~~~~~~~~~~~            [   247 -  2%] 
+ benefit_vvhigh=cost_vvhigh:~~~~~~~~~~~~~~~~~~~~~~~~~~~~    [   351 -  4%] 
+ benefit_vvlow=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [   368 -  4%] 
+ benefit_vhigh=cost_vvhigh:~~~~~~~~~~~~~~~~~~~~~~~~        [   305 -  3%] 
+ benefit_vvlow=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~~~      [   323 -  3%] 
+ benefit_high=cost_vvhigh:~~~~~~~~~~~~~~~~~~~~~~~         [   290 -  3%] 
+ benefit_vvlow=cost_low:~~~~~~~~~~~~~~~~~~~~~~~~~       [   317 -  3%] 
+ benefit_low=cost_vvhigh:~~~~~~~~~~~~~~~~~~~             [   244 -  2%] 
+ benefit_vvlow=cost_high:~~~~~~~~~~~~~~~~~~~             [   234 -  2%] 
+ benefit_vlow=cost_vvhigh:~~~~~~~~~~~~~~~~~~~~~           [   263 -  3%] 
+ benefit_vvlow=cost_vhigh:~~~~~~~~~~~~~~~~~               [   209 -  2%] 
+ benefit_vvlow=cost_vvhigh:~~~~~~~~~~~~~~~~~               [   216 -  2%] 
+
+	Confidence1 Distribution:
+
+ -1297643:~~~~~~~                         [     1 -  8%] 
+ -621739:~~~~~~~                         [     1 -  8%] 
+ -253850:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [     4 - 33%] 
+ -162345:~~~~~~~                         [     1 -  8%] 
+   0:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [     4 - 33%] 
+ 67706:~~~~~~~                         [     1 -  8%] 
+
+Treatments learned on arch_patterns.data:
+worth=32.149837	[co_optation of archPattern=n] 
+worth=71.549919	[external agents can aquire trusted information=n] 
+
+ Worth=32.149837
+ Granularity=3 Promising=-10000000.000000 Useful=1.000000 nChanges=1
+ Treatment:[
+	co_optation of archPattern=n]
+
+ benefit_vvhigh=cost_vvlow:~~~~~~~~~~~~~~~                 [   196 -  4%] 
+ benefit_vvhigh=cost_vlow:~~~~~~~~~~~~~~~~~               [   211 -  4%] 
+ benefit_vhigh=cost_vvlow:~~~~~~~~~~~~~~~~~~~~            [   248 -  5%] 
+ benefit_vhigh=cost_vlow:~~~~~~~~~~~~~~~~~~~             [   240 -  4%] 
+ benefit_vvhigh=cost_low:~~~~~~~~~~~~~~~~~~              [   233 -  4%] 
+ benefit_high=cost_vvlow:~~~~~~~~~~~~~~~~~~~~            [   249 -  5%] 
+ benefit_vhigh=cost_low:~~~~~~~~~~~~~~~~~               [   212 -  4%] 
+ benefit_high=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~        [   303 -  6%] 
+ benefit_high=cost_low:~~~~~~~~~~~~~~~~~~~~            [   253 -  5%] 
+ benefit_vvhigh=cost_high:~~~~~                           [    65 -  1%] 
+ benefit_low=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~          [   278 -  5%] 
+ benefit_vhigh=cost_high:~~~~~                           [    71 -  1%] 
+ benefit_low=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~          [   280 -  5%] 
+ benefit_high=cost_high:~~~~~~                          [    74 -  1%] 
+ benefit_low=cost_low:~~~~~~~~~~~~~~~~~~~~~~          [   282 -  5%] 
+ benefit_low=cost_high:~~~~~~                          [    84 -  2%] 
+ benefit_vvhigh=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~~~~~      [   328 -  6%] 
+ benefit_vhigh=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~~       [   308 -  6%] 
+ benefit_high=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_low:~~~~~~~~~~~~~~~~~~~~            [   248 -  5%] 
+ benefit_low=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_high:~~~~~~~                         [    94 -  2%] 
+ benefit_vlow=cost_vhigh:                                [     0 -  0%] 
+ benefit_vvhigh=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [   368 -  7%] 
+ benefit_vhigh=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~~~      [   323 -  6%] 
+ benefit_high=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_low:~~~~~~~~~~~~~~~~~~~~~~~~        [   297 -  6%] 
+ benefit_low=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_high:~~~~~~~                         [    91 -  2%] 
+ benefit_vlow=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vvhigh:                                [     0 -  0%] 
+
+ Worth=71.549919
+ Granularity=3 Promising=-10000000.000000 Useful=1.000000 nChanges=1
+ Treatment:[
+	external agents can aquire trusted information=n]
+
+ benefit_vvhigh=cost_vvlow:~~                              [     9 -  1%] 
+ benefit_vvhigh=cost_vlow:~~~                             [    11 -  1%] 
+ benefit_vhigh=cost_vvlow:~~~~~~                          [    20 -  2%] 
+ benefit_vhigh=cost_vlow:~~~~~~                          [    21 -  3%] 
+ benefit_vvhigh=cost_low:~~~                             [    11 -  1%] 
+ benefit_high=cost_vvlow:~~~~~~~~~                       [    29 -  4%] 
+ benefit_vhigh=cost_low:~~                              [     9 -  1%] 
+ benefit_high=cost_vlow:~~~~~~~~~~                      [    32 -  4%] 
+ benefit_high=cost_low:~~~~~~~                         [    23 -  3%] 
+ benefit_vvhigh=cost_high:~                               [     6 -  1%] 
+ benefit_low=cost_vvlow:~~~~~~~~~~~~~                   [    41 -  5%] 
+ benefit_vhigh=cost_high:~~                              [     9 -  1%] 
+ benefit_low=cost_vlow:~~~~~~~~~~~~~~~                 [    48 -  6%] 
+ benefit_high=cost_high:~~                              [     8 -  1%] 
+ benefit_low=cost_low:~~~~~~~~~~~~~~                  [    43 -  5%] 
+ benefit_low=cost_high:~~~~~                           [    17 -  2%] 
+ benefit_vvhigh=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~           [    66 -  8%] 
+ benefit_vhigh=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_vlow:~~~~~~~~~~~~~~~~~               [    55 -  7%] 
+ benefit_high=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_low:~~~~~~~~~~~~~~~                 [    48 -  6%] 
+ benefit_low=cost_vhigh:                                [     0 -  0%] 
+ benefit_vlow=cost_high:~~~~~                           [    17 -  2%] 
+ benefit_vlow=cost_vhigh:                                [     0 -  0%] 
+ benefit_vvhigh=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vvlow:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [    92 - 11%] 
+ benefit_vhigh=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vlow:~~~~~~~~~~~~~~~~~~~~~~~~        [    74 -  9%] 
+ benefit_high=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_low:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   [    89 - 11%] 
+ benefit_low=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_high:~~~~~~~~~                       [    28 -  3%] 
+ benefit_vlow=cost_vvhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vhigh:                                [     0 -  0%] 
+ benefit_vvlow=cost_vvhigh:                                [     0 -  0%] 
+
+
+---- 01/14/03 11:36:26 ---
+  Setup: 1 sec
+Compute: 0 sec
+  Apply: 0 sec
+  Total: 1 sec
+--------------------------------------

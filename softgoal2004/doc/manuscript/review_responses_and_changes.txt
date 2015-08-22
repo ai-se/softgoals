@@ -1,0 +1,350 @@
+
+"Simulations for very early lifecycle Quality Evaluation" 
+- Eliza Chiang and Tim Menzies
+
+-------- Review Responses -------- 
+
+==| REVIEWER 1 |========================================
+
+1A)
+ >> No, because, a number of notation is without explanation.
+ >> It is difficult to read the paper without knowing the KWIC framework, the 
+ >> treatment-learning tool TAR2, SR-1 framework of the Nasa, Monte Carlo simulation 
+ >> etc.  
+ 
+The KWIC framework and the SR-1 framework are explained in section IIA and IVA respectively.  
+Full details on TAR2 and Monte Carlo are not mentioned due to word limits.  
+However, more references are provided with our revised manuscript.  
+ 
+1B)
+ >> This paper confuses between the non functional requirements at the 
+ >> architectural level and the non functional requirements at the lower design 
+ >> level (implementation level). This paper is very sketchy with respect to the 
+ >> really difficult issues, like measurement of these qualitative quality 
+ >> attributes. The paper speak about the design alternatives, but for me, this 
+ >> means the architectural styles using to select the appropriate architecture that 
+ >> meet on one hand the quality requirements ( defined in the standard ISO 9126-1) 
+ >> and the system's functionality (using the UML representation "user cases") on 
+ >> the other hand (Shaw and Garlan 96).  The author spend more than one page to 
+ >> explain the trivial notations concerning the use of logical operators in the 
+ >> definition of the precondition of an operation like: and, or and any.  
+ 
+The logical operators are crucial in defining constraints for our models and 
+allows business users to customize for different business goals.  
+Thus it is necessary to provide comprehensive explanations to these operators.  
+
+1C) 
+ >>     3.  What do you see as this manuscript's contribution to the literature
+ >> in this field?
+ >>      I see little contribution of this paper. This work is based on the Chung et 
+ >> al. method. The author claim that they extend this method in order to include an 
+ >> execution and analysis modules. But I know that the Chung et al. method define 
+ >> an entire soft-goal modeling framework, featuring tradeoffs and 
+ >> interdependencies between system quality attributes and design alternative.
+ 
+On the contrary, our sense is that the paper represent a new direction in simulation-based
+decision making. If exact numbers are known for all factors in a system then traditional
+quantitative simulation-based methods are appropriate. However, when dealing with imprecise
+areas of human judgement, what is required is a method to survey the full space of
+possibilties. What we show here is that such a survey is much simpler than might be
+expected.
+
+1D)
+ >>     4.  What do you see as the strongest aspect of this manuscript?
+ >>    The strongest aspect of this manuscript is combining all the existing  
+ >> methods like the treatment-learning "TAR2" , the Monte Carlo simulation etc. And 
+ >> also the study done on the SR-1 NASA IV&V Project which refers to the 
+ >> technologies involved in advance satellite design. But the application of the 
+ >> model presented in this paper on this example do not show any improvement since 
+ >> no comparison with other model is used.   
+ 
+It is hard to compare our method to other areas since the execution of early lifecycle
+requirement models is not an area that has been extensively explored previously.
+However, in our revised manuscript, we take time to review
+standard process simulation methods.  
+
+1E)
+ >>     5.  What do you see as the weakest aspect of this manuscript?
+ >>  The paper does not go deep- many of the concepts are superficial. The paper use 
+ >> the model of Chung et al. to produce another model with an analysis and 
+ >> execution module. However, how the method can be used is not clarified. There 
+ >> are numerous grammatical and spelling errors. However, overall the paper comes 
+ >> across as very preliminary with a lot more work to be done. In the reference 
+ >> section we find 6 papers for the same author 4-9. Only two papers are used to 
+ >> show other different methods (the first paper and second one).    
+ 
+More references regarding to other different methods are added to our revised manuscript.  
+ 
+1F)
+ >> C. Presentation
+ >> 
+ >>     1.  Are the title, abstract, and keywords appropriate? Please comment.
+ >>               Yes
+ >>             x No
+ >> There is not keywords, 
+
+Keywords are added.  
+
+1G)
+ >> the title is not suited to the abstract (named summary in 
+ >> the paper) and in the conclusion we find another used approaches like abductive 
+ >> reasoning, meta-interpreter that are not found in the abstract, introduction and 
+ >> not explained in the different sections of this papers.    
+
+Our mistake. Abductive reasoning and meta-interpreter are excluded from our manuscript to avoid confusion.  
+ 
+1H)
+ >> 	2.  Does the manuscript contain sufficient and appropriate references of 
+ >> past 	software process modeling and simulation special issue?  Please comment.
+ >>               References are sufficient and appropriate
+ >>             x Important references are missing; more references are needed
+ >>               Number of references are excessive 
+ >> Only two references are used in the related work section the first is based on 
+ >> the Bayesian theory and the second on the Fuzzy set theory and Petri Net theory. 
+ >> The inconvenient of these two methods as is claimed by the author are not 
+ >> convinced. I said this because I worked for a long time on the fuzzy theory and 
+ >> Petri Net theory. 
+ 
+In some sense, this issue is like "1D" above and we hope that
+our review of standard process simulation methods will address this point.
+
+1I)
+ >>     3.  Does the introduction state the objectives of the manuscript in
+ >> terms that encourage the reader to read on? Please explain your answer.
+ >>              Yes
+ >>              Could be improved
+ >>            x No
+ >> 
+ >>     The author give a long introduction witch contain references related only to 
+ >> the same team (Menzies, Feather, Conford et al). Many word are used without any 
+ >> explanation like (KWIC, TAR2, JPL, Monto carlo simulation, etc.). This work in 
+ >> this paper is based on the work of Chung99 but the author do not explain more 
+ >> this work. In the introduction and also in related work there are not comparison 
+ >> of the proposed model to other models existing in literature.  
+
+Addressed in "1D" issue.
+
+IJ)
+ >>     4.  How would you rate the organization of the manuscript? Is it
+ >> focused?  Is the length appropriate for the topic? Please comment.
+ >>           ___Satisfactory
+ >>           ___Could be improved
+ >>           x  Poor
+ >>    This manuscript is unorganized so that the originality of the presented work   
+ >> is lost in a lot of details. 
+
+Addressed in comments "IC and "ID" above
+
+1K)
+ >> 	5.	Does the paper include a realistic or real-world example to try
+ >> 	out the concepts?  Please explain if necessary
+ >> 
+ >>           ___Yes, 
+ >>            x Yes, Could be improved
+ >>           ___No, Including one would be really valuable
+ >>           ___No, not needed
+ >>        
+ >>       The realistic real-world example is the SR-1 Project of NASA IV&V Activity 
+ >> Prioritization. This project refers to the technologies involved in advance 
+ >> satellite design. But the application of the model presented in this paper to 
+ >> this example is not very clear; no comparison is done using another existing 
+ >> models.   
+ 
+Addressed in "ID", above
+ 
+1L)
+ >>  I do not find any originality in this work, it is just using existent model by 
+ >> improvement with analysis tool but the obtained model is not compared to others. 
+ >> The application of this model to the two presented example show no high 
+ >> improvement since no comparison is done. It is very hard to understand the hole 
+ >> paper 
+
+Addressed in "ID" above
+
+==| REVIEWER 2 |========================================
+
+2A)
+ >>     5.  What do you see as the weakest aspect of this manuscript?
+ >>           
+ >>     Lack of validation with respect to empirical data and lack of comparison 
+ >>     with alternative approaches. 
+
+References to other techniques are included in our revised manuscript. And see "IC/1D" above
+ 
+2B) 
+ >> It is not clear how the initial simulated model,
+ >>     including its quantitative simulation parameters, can be systematically developed.
+ >>     The whole approach appears to be complex and "heavy weight" in terms of 
+ >>     the different techniques used (AI reasoning, MonteCarlo simulation, machine learning)
+ >>     which cast some doubt about the scalability and usability of the approach in
+ >>     many real world simulations.
+ 
+ Further descriptions on our softgoal simulation technique (e.g. light-weight, automatic inference ...) are provided in our revised manuscipt.  
+ 
+2C)
+ >> 	Both the title and the abstract can be improved having in mind that
+ >> 	readers may not familiar with the proposed technique.
+ >> 	A possibility would be to add "...of architectural product and software process choices..."
+ >> 	No keywords are present in the manuscript. 
+
+Thanks for the suggestion- text added. As for keywords, see  "1F" above
+
+2D) 
+ >> 	2.  Does the manuscript contain sufficient and appropriate references of past 
+ >> 	software process modeling and simulation special issue?  Please comment.
+ >>           ___References are sufficient and appropriate
+ >>           _X_Important references are missing; more references are needed
+ >>           ___Number of references are excessive
+ >>         
+ >>         Most of the references appear to be related to work in requirements engineering.
+ >>         It would be interesting to know how the present contribution relates to
+ >>         the work in the two earlier special journal volumes that resulted from 
+ >>         the ProSim workshops. In order words, how the present work "links" to the
+ >>         existing work in Process Simulation and Modelling.
+
+Addressed in "1D" above
+
+2E) 
+ >>     3.  Does the introduction state the objectives of the manuscript in
+ >> terms that encourage the reader to read on? Please explain your answer.
+ >>           ___Yes
+ >>           _X_Could be improved
+ >>           ___No
+ >>           
+ >>           The introduction refers to product characteristics and introduces the approach
+ >>           as a requirements analysis technique.
+ >>           It would have been better if this paragraph starts referring to process issues.
+ >>           It is only midway into the paper that the reader realises that this applies to 
+ >>           process.
+ 
+Addressed in "1D" above
+
+2F)
+ >>           
+ >>           In fact, a better introduction for this paper in the context of the SPIP
+ >>           issue would start by pointing out the differences of this approach to classical
+ >>           simulation (system dynamics, discrete event-based...) in process modelling.
+ >> 
+ >>     4.  How would you rate the organization of the manuscript? Is it
+ >> focused?  Is the length appropriate for the topic? Please comment.
+ >>           ___Satisfactory
+ >>           _X_Could be improved
+ >>           ___Poor
+ >>           
+ >>           The length of the submission is above 9,000 words 
+ >> plus 14 figures and 
+ >>           16 tables. It is well above the 7,500 limit.
+ >>           The detailed description of the approaches could be included in the appendices
+ >>           or in a separate report. The shortened paper would benefit from a expansion of the
+ >>           process case study and practical guidelines on how to apply the technique.
+ 
+Word count has been reduced by trimming off paragraphs and 
+moving the appendix section (algorithm explanation) to author's website.  
+
+2G)
+ >> 	I strongly suggest that the technological aspects of the paper, particularly
+ >> 	the workings of the "treatment learner" should be 
+ >> 	reviewed by an expert in the related fields before a final acceptance is made.
+
+Fortuneately, this has already been done in previous journal-level publications.
+References on TAR2 and monte carlo simulation are added to our revised manuscipt.  
+
+2H) 
+ >> 
+ >> 	What is the rational for the "quantification" of the model, and in
+ >> 	particular the values of average and variance (or standard deviation?)
+ >> 	in II.E.1.
+
+This is one of the major points of the whole paper. In practice, 
+we do not have a basis on the quantification for subjective knowledge. 
+Our constraints are that the MEAN of our scores satisfies:
+
+0 <= Score1 < Score2 <= 1 <= Score3 < Score4 <= 2. 
+
+We use this range since scores less than 1 reflect a weakenning of the influence. Having fixed
+a [0..1] range for weakkenning, we used a [1..2] range for symmetry reasons.
+As to the VARIANCES in our scores, for a four point scheme like that shown above, 
+the variance we used ensure that the scores
+don't  "run over each other". And we will emphasis this point in oru paper.
+ 
+ 2G)
+ >> 	As further work, it will be interesting to know the sensitivity of
+ >> 	the results to the statistical assumptions in section II.E.1. What would
+ >> 	happen if the distributions were different?
+ 
+In our experiment with SR-1, we discovered that TAR2 gave the same recommendations on different cost parameters (variances).  More work will be done to determine the sensitivity to general softgoal framework.  
+This is also mentioned in the future work section on our revised manuscript.  
+
+ 2H)
+ >> 	The authors may like to comment on the applicability of the approach to
+ >> 	different software engineering domains (airspace, custom/commercial, open
+ >> 	source) and also about its relevance for organisations at different 
+ >> 	CMM levels. I guess that operating at level 5, organisations would be
+ >> 	able to have sufficient data to populate the initial models and the
+ >> 	conclusions from the simulation would be increasingly realistic. Any thoughts
+ >> 	about this?
+ 
+ Our softgoal simulation technique can be applied to many domain of subjective knowledge.  Reference on previous work (applying CMM level 2) is included.  
+ 
+ 2I)
+ >> 	The comments below are not the result of an exhaustive proof-read. Other
+ >> 	similar issues may remain:
+ 
+ Thanks for these. will fix!
+ 
+ 2J)
+ >> 	- This comments apply to the text at the end of section III (page 16)
+ >> 		(line 4) It says "among the space of inconsistent information". Why "inconsistent"?
+ >> 			 It would be more appropriate to say "among the very large implementation space"
+ >> 		(line 5) It says "variance is reduced and the means values improved"
+ >> 			 This statement needs adjustment based on the following observations.
+ >> 			 Tables II to V and VI to IX show that the variance of the "cost-benefit" distribution 
+ >> 			 is reduced by the treatments, the spread on the percentil matrix gets smaller.
+ >> 			 If one considers benefit *only*, in the sequence from tables II to V,
+ >> 			 its average increases but its variance appears to increase (from table II to III) then
+ >> 			 decrease (from table III to IV) and then increase again (from table IV and V).
+ >> 			 If one considers cost *only*, in the sequence from table II to V, the variance clearly
+ >> 			 reduces but its average increases (which is not an improvement).
+
+Tables II to V summarized the treatment results for the rigorous-SQA graph, which is the case where business users put more focus on the software quality (i.e. resulting benefit scores) than the resulting costs.  Thus, we have stressed the benefit improvement over the cost increased.  
+More emphasis on this statement is included in our revised manuscript.  
+ 
+2K)	
+ >> 	- In page 24, it says "10-way cross-validated and their trustworthiness ensured." How? What does it mean?
+
+Footnote and reference to 10-way cross-validation are included.  
+ 
+ 2L)
+ >> 	- In page 25 it indicates that not doing "dav12" would be beneficial as suggested by table XV. Comparing
+ >> 	table XIV and XV one can observe that the overall variance of "cost-benefit" went down (less uncertainty),
+ >> 	but the average cost went significantly up 
+
+As I have observed, the cost went down instead of up...
+
+2M)	
+ >> 	- Merrian-Webster does not have the word "satisficed". 
+ >> 	Should it be "satisfied" instead?
+ 
+Satisficed is a term taken from the Chung framework which, in turn, comes from Herbert Simon's
+1970s work on bounded rationality. 
+Reference to the word ''satisficed'' is added.  
+ 
+===| Reviewere 3 |========================
+
+
+3A)
+ >> general	is the software developed for this application available to other researchers? If so, please give URL
+The code and a user guide will be posted at author's URL.  
+
+3B) 
+This reviewer made many details comments targetted to specific parts of the paper. We have adjusted the
+text in accordance with those suggestions
+
+-------- Other changes made -------- 
+
+1) implementation details, syntax moved to author's web site
+2) lengthy explanations are simplified
+3) non-technical words replaced;  spelling errors corrected
+4) acronyms defined and explained/referenced
+5) reworked paper structure
+5) reduced word count

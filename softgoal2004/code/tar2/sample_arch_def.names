@@ -1,0 +1,152 @@
+|five_cost=vvlow_benefit,
+|five_cost=vlow_benefit,
+|four_cost=vvlow_benefit,
+|five_cost=low_benefit,
+three_cost=vvlow_benefit,
+|five_cost=high_benefit,
+two_cost=vvlow_benefit,
+|five_cost=vhigh_benefit,
+|one_cost=vvlow_benefit,
+|five_cost=vvhigh_benefit,
+|zero_cost=vvlow_benefit,
+|four_cost=vlow_benefit,
+|four_cost=low_benefit,
+three_cost=vlow_benefit,
+|four_cost=high_benefit,
+two_cost=vlow_benefit,
+|four_cost=vhigh_benefit,
+|one_cost=vlow_benefit,
+|four_cost=vvhigh_benefit,
+|zero_cost=vlow_benefit,
+three_cost=low_benefit,
+three_cost=high_benefit,
+two_cost=low_benefit,
+three_cost=vhigh_benefit,
+|one_cost=low_benefit,
+three_cost=vvhigh_benefit,
+|zero_cost=low_benefit,
+two_cost=high_benefit,
+two_cost=vhigh_benefit,
+|one_cost=high_benefit,
+two_cost=vvhigh_benefit
+|zero_cost=high_benefit,
+|one_cost=vhigh_benefit,
+|one_cost=vvhigh_benefit,
+|zero_cost=vhigh_benefit,
+|zero_cost=vvhigh_benefit
+
+abstractDataType of targetSystem: y,n,u
+coherence of system: y,n,u
+comprehensibility of system: y,n,u
+deletability of function: y,n,u
+extensibility of function: y,n,u
+implicitInvocation of targetSystem: y,n,u
+modifiability of dataRep: y,n,u
+modifiability of function: y,n,u
+modifiability of process: y,n,u
+modifiability of system: y,n,u
+performance of system: y,n,u
+pipeAndFilter of targetSystem: y,n,u
+reusability of system: y,n,u
+sharedData of targetSystem: y,n,u
+simplicity of system: y,n,u
+spacePerformance of system: y,n,u
+timePerformance of system: y,n,u
+updatability of function: y,n,u
+rule0:    y,n,u
+rule1:    y,n,u
+rule10:   y,n,u
+rule11:   y,n,u
+rule12:   y,n,u
+rule13:   y,n,u
+rule2:    y,n,u
+rule3:    y,n,u
+rule4:    y,n,u
+rule5:    y,n,u
+rule6:    y,n,u
+rule7:    y,n,u
+rule8:    y,n,u
+rule9:    y,n,u
+c1:       y,n,u
+c2:       y,n,u
+c3:       y,n,u
+c4:       y,n,u
+c5:       y,n,u
+
+NOW
+abstractDataType of targetSystem: true
+coherence of system: true
+comprehensibility of system: true
+deletability of function: true
+extensibility of function: true
+implicitInvocation of targetSystem: true
+modifiability of dataRep: true
+modifiability of function: true
+modifiability of process: true
+modifiability of system: true
+performance of system: true
+pipeAndFilter of targetSystem: true
+reusability of system: true
+sharedData of targetSystem: true
+simplicity of system: true
+spacePerformance of system: true
+timePerformance of system: true
+updatability of function: true
+rule0:    true
+rule1:    true
+rule10:   true
+rule11:   true
+rule12:   true
+rule13:   true
+rule2:    true
+rule3:    true
+rule4:    true
+rule5:    true
+rule6:    true
+rule7:    true
+rule8:    true
+rule9:    true
+c1:       true
+c2:       true
+c3:       true
+c4:       true
+c5:       true
+
+CHANGES
+abstractDataType of targetSystem: y,n
+coherence of system: ignore
+comprehensibility of system: ignore
+deletability of function: y,n
+extensibility of function: ignore
+implicitInvocation of targetSystem: y,n
+modifiability of dataRep: ignore
+modifiability of function: ignore
+modifiability of process: ignore
+modifiability of system: ignore
+performance of system: ignore
+pipeAndFilter of targetSystem: y,n
+reusability of system: ignore
+sharedData of targetSystem: y,n
+simplicity of system: ignore
+spacePerformance of system: ignore
+timePerformance of system: ignore
+updatability of function: ignore
+rule0:    ignore
+rule1:    ignore
+rule10:   ignore
+rule11:   ignore
+rule12:   ignore
+rule13:   ignore
+rule2:    ignore
+rule3:    ignore
+rule4:    ignore
+rule5:    ignore
+rule6:    ignore
+rule7:    ignore
+rule8:    ignore
+rule9:    ignore
+c1:       y,n
+c2:       y,n
+c3:       y,n
+c4:       y,n
+c5:       y,n

@@ -1,0 +1,470 @@
+benefi_vhigh=cost_vlow,
+benefi_vhigh=cost_low,
+benefit_high=cost_vlow,
+benefit_high=cost_low,
+benefi_vhigh=cost_high,
+benefit_low=cost_vlow,
+benefit_high=cost_high,
+benefit_low=cost_low,
+benefit_low=cost_high,
+benefi_vhigh=cost_vhigh,
+benefit_vlow=cost_vlow,
+benefit_high=cost_vhigh,
+benefit_vlow=cost_low,
+benefit_low=cost_vhigh,
+benefit_vlow=cost_high,
+benefit_vlow=cost_vhigh
+
+|benefit_vlow=cost_vhigh,
+|benefit_vlow=cost_high,
+|benefit_low=cost_vhigh,
+|benefit_vlow=cost_low,
+|benefit_high=cost_vhigh,
+|benefit_vlow=cost_vlow,
+|benefi_vhigh=cost_vhigh,
+|benefit_low=cost_high,
+|benefit_low=cost_low,
+|benefit_high=cost_high,
+|benefit_low=cost_vlow,
+|benefi_vhigh=cost_high,
+|benefit_high=cost_low,
+|benefit_high=cost_vlow,
+|benefi_vhigh=cost_low,
+|benefi_vhigh=cost_vlow
+
+acquisitionMode of avgs: y,n,u
+cam of dart: y,n,u
+cav01 of cal: y,n,u
+cav02 of cal: y,n,u
+cav03 of cal: y,n,u
+cav04 of cal: y,n,u
+cav05 of cal: y,n,u
+cav06 of cal: y,n,u
+cav07 of cal: y,n,u
+cav08 of cal: y,n,u
+cav09 of cal: y,n,u
+cav10 of cal: y,n,u
+cav11 of cal: y,n,u
+complexity of faultPotentiality: y,n,u
+control of dart: y,n,u
+dav01 of dal: y,n,u
+dav02 of dal: y,n,u
+dav03 of dal: y,n,u
+dav04 of dal: y,n,u
+dav05 of dal: y,n,u
+dav06 of dal: y,n,u
+dav07 of dal: y,n,u
+dav08 of dal: y,n,u
+dav09 of dal: y,n,u
+dav10 of dal: y,n,u
+dav11 of dal: y,n,u
+dav12 of dal: y,n,u
+dav13 of dal: y,n,u
+devCostAndSched of faultCriticality: y,n,u
+diagnosticMode of avgs: y,n,u
+guidance of dart: y,n,u
+maturityOfTechnology of faultPotentiality: y,n,u
+minimizeFaultCriticality of system: y,n,u
+minimizeFaultPotentiality of system: y,n,u
+navigation of dart: y,n,u
+overallRequirement of avgs: y,n,u
+performanceAndOperation of faultCriticality: y,n,u
+rav01 of ral: y,n,u
+rav02 of ral: y,n,u
+rav03 of ral: y,n,u
+rav04 of ral: y,n,u
+rav05 of ral: y,n,u
+rav06 of ral: y,n,u
+rav07 of ral: y,n,u
+rav08 of ral: y,n,u
+rav09 of ral: y,n,u
+rav10 of ral: y,n,u
+rav11 of ral: y,n,u
+rav12 of ral: y,n,u
+rav13 of ral: y,n,u
+reqmtsDefnAndStability of faultPotentiality: y,n,u
+riskMinimization of system: y,n,u
+safety of faultCriticality: y,n,u
+spotMode of avgs: y,n,u
+standbyMode of avgs: y,n,u
+stateFilter of dart: y,n,u
+targetStateFilter of dart: y,n,u
+tav01 of tal: y,n,u
+tav02 of tal: y,n,u
+tav03 of tal: y,n,u
+tav04 of tal: y,n,u
+tav05 of tal: y,n,u
+tav06 of tal: y,n,u
+tav07 of tal: y,n,u
+tav08 of tal: y,n,u
+tav09 of tal: y,n,u
+tav10 of tal: y,n,u
+tav11 of tal: y,n,u
+telemetry of dart: y,n,u
+testability of faultPotentiality: y,n,u
+trackingMode of avgs: y,n,u
+vehicleManagement of dart: y,n,u
+rule1:    y,n,u
+rule10:   y,n,u
+rule11:   y,n,u
+rule12:   y,n,u
+rule13:   y,n,u
+rule14:   y,n,u
+rule2:    y,n,u
+rule3:    y,n,u
+rule4:    y,n,u
+rule5:    y,n,u
+rule6:    y,n,u
+rule7:    y,n,u
+rule8:    y,n,u
+rule9:    y,n,u
+ruleA:    y,n,u
+ruleB:    y,n,u
+ruleC:    y,n,u
+ruleD:    y,n,u
+ruleE:    y,n,u
+ruleF:    y,n,u
+ruleG:    y,n,u
+ruleH:    y,n,u
+ruleI:    y,n,u
+ruleJ:    y,n,u
+price=cav01 of cal: continuous
+price=cav02 of cal: continuous
+price=cav03 of cal: continuous
+price=cav04 of cal: continuous
+price=cav05 of cal: continuous
+price=cav06 of cal: continuous
+price=cav07 of cal: continuous
+price=cav08 of cal: continuous
+price=cav09 of cal: continuous
+price=cav10 of cal: continuous
+price=cav11 of cal: continuous
+price=dav01 of dal: continuous
+price=dav02 of dal: continuous
+price=dav03 of dal: continuous
+price=dav04 of dal: continuous
+price=dav05 of dal: continuous
+price=dav06 of dal: continuous
+price=dav07 of dal: continuous
+price=dav08 of dal: continuous
+price=dav09 of dal: continuous
+price=dav10 of dal: continuous
+price=dav11 of dal: continuous
+price=dav12 of dal: continuous
+price=dav13 of dal: continuous
+price=rav01 of ral: continuous
+price=rav02 of ral: continuous
+price=rav03 of ral: continuous
+price=rav04 of ral: continuous
+price=rav05 of ral: continuous
+price=rav06 of ral: continuous
+price=rav07 of ral: continuous
+price=rav08 of ral: continuous
+price=rav09 of ral: continuous
+price=rav10 of ral: continuous
+price=rav11 of ral: continuous
+price=rav12 of ral: continuous
+price=rav13 of ral: continuous
+price=tav01 of tal: continuous
+price=tav02 of tal: continuous
+price=tav03 of tal: continuous
+price=tav04 of tal: continuous
+price=tav05 of tal: continuous
+price=tav06 of tal: continuous
+price=tav07 of tal: continuous
+price=tav08 of tal: continuous
+price=tav09 of tal: continuous
+price=tav10 of tal: continuous
+price=tav11 of tal: continuous
+
+NOW
+acquisitionMode of avgs: true
+cam of dart: true
+cav01 of cal: true
+cav02 of cal: true
+cav03 of cal: true
+cav04 of cal: true
+cav05 of cal: true
+cav06 of cal: true
+cav07 of cal: true
+cav08 of cal: true
+cav09 of cal: true
+cav10 of cal: true
+cav11 of cal: true
+complexity of faultPotentiality: true
+control of dart: true
+dav01 of dal: true
+dav02 of dal: true
+dav03 of dal: true
+dav04 of dal: true
+dav05 of dal: true
+dav06 of dal: true
+dav07 of dal: true
+dav08 of dal: true
+dav09 of dal: true
+dav10 of dal: true
+dav11 of dal: true
+dav12 of dal: true
+dav13 of dal: true
+devCostAndSched of faultCriticality: true
+diagnosticMode of avgs: true
+guidance of dart: true
+maturityOfTechnology of faultPotentiality: true
+minimizeFaultCriticality of system: true
+minimizeFaultPotentiality of system: true
+navigation of dart: true
+overallRequirement of avgs: true
+performanceAndOperation of faultCriticality: true
+rav01 of ral: true
+rav02 of ral: true
+rav03 of ral: true
+rav04 of ral: true
+rav05 of ral: true
+rav06 of ral: true
+rav07 of ral: true
+rav08 of ral: true
+rav09 of ral: true
+rav10 of ral: true
+rav11 of ral: true
+rav12 of ral: true
+rav13 of ral: true
+reqmtsDefnAndStability of faultPotentiality: true
+riskMinimization of system: true
+safety of faultCriticality: true
+spotMode of avgs: true
+standbyMode of avgs: true
+stateFilter of dart: true
+targetStateFilter of dart: true
+tav01 of tal: true
+tav02 of tal: true
+tav03 of tal: true
+tav04 of tal: true
+tav05 of tal: true
+tav06 of tal: true
+tav07 of tal: true
+tav08 of tal: true
+tav09 of tal: true
+tav10 of tal: true
+tav11 of tal: true
+telemetry of dart: true
+testability of faultPotentiality: true
+trackingMode of avgs: true
+vehicleManagement of dart: true
+rule1:    true
+rule10:   true
+rule11:   true
+rule12:   true
+rule13:   true
+rule14:   true
+rule2:    true
+rule3:    true
+rule4:    true
+rule5:    true
+rule6:    true
+rule7:    true
+rule8:    true
+rule9:    true
+ruleA:    true
+ruleB:    true
+ruleC:    true
+ruleD:    true
+ruleE:    true
+ruleF:    true
+ruleG:    true
+ruleH:    true
+ruleI:    true
+ruleJ:    true
+price=cav01 of cal: true
+price=cav02 of cal: true
+price=cav03 of cal: true
+price=cav04 of cal: true
+price=cav05 of cal: true
+price=cav06 of cal: true
+price=cav07 of cal: true
+price=cav08 of cal: true
+price=cav09 of cal: true
+price=cav10 of cal: true
+price=cav11 of cal: true
+price=dav01 of dal: true
+price=dav02 of dal: true
+price=dav03 of dal: true
+price=dav04 of dal: true
+price=dav05 of dal: true
+price=dav06 of dal: true
+price=dav07 of dal: true
+price=dav08 of dal: true
+price=dav09 of dal: true
+price=dav10 of dal: true
+price=dav11 of dal: true
+price=dav12 of dal: true
+price=dav13 of dal: true
+price=rav01 of ral: true
+price=rav02 of ral: true
+price=rav03 of ral: true
+price=rav04 of ral: true
+price=rav05 of ral: true
+price=rav06 of ral: true
+price=rav07 of ral: true
+price=rav08 of ral: true
+price=rav09 of ral: true
+price=rav10 of ral: true
+price=rav11 of ral: true
+price=rav12 of ral: true
+price=rav13 of ral: true
+price=tav01 of tal: true
+price=tav02 of tal: true
+price=tav03 of tal: true
+price=tav04 of tal: true
+price=tav05 of tal: true
+price=tav06 of tal: true
+price=tav07 of tal: true
+price=tav08 of tal: true
+price=tav09 of tal: true
+price=tav10 of tal: true
+price=tav11 of tal: true
+
+CHANGE
+acquisitionMode of avgs: ignore
+cam of dart: ignore
+cav01 of cal: y,n
+cav02 of cal: y,n
+cav03 of cal: y,n
+cav04 of cal: y,n
+cav05 of cal: y,n
+cav06 of cal: y,n
+cav07 of cal: y,n
+cav08 of cal: y,n
+cav09 of cal: y,n
+cav10 of cal: y,n
+cav11 of cal: y,n
+complexity of faultPotentiality: ignore
+control of dart: ignore
+dav01 of dal: y,n
+dav02 of dal: y,n
+dav03 of dal: y,n
+dav04 of dal: y,n
+dav05 of dal: y,n
+dav06 of dal: y,n
+dav07 of dal: y,n
+dav08 of dal: y,n
+dav09 of dal: y,n
+dav10 of dal: y,n
+dav11 of dal: y,n
+dav12 of dal: y,n
+dav13 of dal: y,n
+devCostAndSched of faultCriticality: ignore
+diagnosticMode of avgs: ignore
+guidance of dart: ignore
+maturityOfTechnology of faultPotentiality: ignore
+minimizeFaultCriticality of system: ignore
+minimizeFaultPotentiality of system: ignore
+navigation of dart: ignore
+overallRequirement of avgs: ignore
+performanceAndOperation of faultCriticality: ignore
+rav01 of ral: ignore
+rav02 of ral: ignore
+rav03 of ral: ignore
+rav04 of ral: ignore
+rav05 of ral: ignore
+rav06 of ral: ignore
+rav07 of ral: ignore
+rav08 of ral: ignore
+rav09 of ral: ignore
+rav10 of ral: y,n
+rav11 of ral: y,n
+rav12 of ral: y,n
+rav13 of ral: y,n
+reqmtsDefnAndStability of faultPotentiality: ignore
+riskMinimization of system: ignore
+safety of faultCriticality: ignore
+spotMode of avgs: ignore
+standbyMode of avgs: ignore
+stateFilter of dart: ignore
+targetStateFilter of dart: ignore
+tav01 of tal: ignore
+tav02 of tal: ignore
+tav03 of tal: ignore
+tav04 of tal: ignore
+tav05 of tal: ignore
+tav06 of tal: ignore
+tav07 of tal: ignore
+tav08 of tal: y,n
+tav09 of tal: y,n
+tav10 of tal: y,n
+tav11 of tal: y,n
+telemetry of dart: ignore
+testability of faultPotentiality: ignore
+trackingMode of avgs: ignore
+vehicleManagement of dart: ignore
+rule1:    ignore
+rule10:   ignore
+rule11:   ignore
+rule12:   ignore
+rule13:   ignore
+rule14:   ignore
+rule2:    ignore
+rule3:    ignore
+rule4:    ignore
+rule5:    ignore
+rule6:    ignore
+rule7:    ignore
+rule8:    ignore
+rule9:    ignore
+ruleA:    ignore
+ruleB:    ignore
+ruleC:    ignore
+ruleD:    ignore
+ruleE:    ignore
+ruleF:    ignore
+ruleG:    ignore
+ruleH:    ignore
+ruleI:    ignore
+ruleJ:    ignore
+price=cav01 of cal: ignore
+price=cav02 of cal: ignore
+price=cav03 of cal: ignore
+price=cav04 of cal: ignore
+price=cav05 of cal: ignore
+price=cav06 of cal: ignore
+price=cav07 of cal: ignore
+price=cav08 of cal: ignore
+price=cav09 of cal: ignore
+price=cav10 of cal: ignore
+price=cav11 of cal: ignore
+price=dav01 of dal: ignore
+price=dav02 of dal: ignore
+price=dav03 of dal: ignore
+price=dav04 of dal: ignore
+price=dav05 of dal: ignore
+price=dav06 of dal: ignore
+price=dav07 of dal: ignore
+price=dav08 of dal: ignore
+price=dav09 of dal: ignore
+price=dav10 of dal: ignore
+price=dav11 of dal: ignore
+price=dav12 of dal: ignore
+price=dav13 of dal: ignore
+price=rav01 of ral: ignore
+price=rav02 of ral: ignore
+price=rav03 of ral: ignore
+price=rav04 of ral: ignore
+price=rav05 of ral: ignore
+price=rav06 of ral: ignore
+price=rav07 of ral: ignore
+price=rav08 of ral: ignore
+price=rav09 of ral: ignore
+price=rav10 of ral: ignore
+price=rav11 of ral: ignore
+price=rav12 of ral: ignore
+price=rav13 of ral: ignore
+price=tav01 of tal: ignore
+price=tav02 of tal: ignore
+price=tav03 of tal: ignore
+price=tav04 of tal: ignore
+price=tav05 of tal: ignore
+price=tav06 of tal: ignore
+price=tav07 of tal: ignore
+price=tav08 of tal: ignore
+price=tav09 of tal: ignore
+price=tav10 of tal: ignore
+price=tav11 of tal: ignore

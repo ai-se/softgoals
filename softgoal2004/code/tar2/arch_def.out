@@ -1,0 +1,66 @@
+-------------------------------------------------------------------
+                Welcome to TARZAN (Version 2.2)
+        Copyright (c) 2001 Tim Menzies (tim@menzies.com)
+              Copy policy: GPL-2 (see www.gnu.org)
+
+...while on high, our hero watches for the right chance to strike!
+-------------------------------------------------------------------
+
+NOW: specified
+CHANGES: specified
+default: SCORE for Classes not specified
+
+Read 10000 cases (37 attributes) from arch_def.data
+
+ Worth=1.000000
+ Granularity=3 Promising=-10000000.000000 Useful=1.000000 nChanges=1
+ Treatment:[No Treatment]
+
+ three_cost=vvlow_benefit:~~~~~~~~~~                      [   543 -  5%] 
+ two_cost=vvlow_benefit:~~~~~~~~~~~~~~~~~~~~~           [  1124 - 11%] 
+ three_cost=vlow_benefit:~~~~~~~~~~~~~~                  [   791 -  8%] 
+ two_cost=vlow_benefit:~~~~~~~~~~~~~~~~                [   875 -  9%] 
+ three_cost=low_benefit:~~~~~~~~~~~~~~~~~~              [   991 - 10%] 
+ three_cost=high_benefit:~~~~~~~~~~~~~~~~~~~~~~~         [  1241 - 12%] 
+ two_cost=low_benefit:~~~~~~~~~~~~                    [   675 -  7%] 
+ three_cost=vhigh_benefit:~~~~~~~~~~~~~~~~~~~~~~~~~~~     [  1485 - 15%] 
+ three_cost=vvhigh_benefit:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [  1601 - 16%] 
+ two_cost=high_benefit:~~~~~~~                         [   425 -  4%] 
+ two_cost=vhigh_benefit:~~~                             [   181 -  2%] 
+ two_cost=vvhigh_benefit:~                               [    68 -  1%] 
+
+	Confidence1 Distribution:
+
+ -3896:~~~                             [     1 -  5%] 
+ -3565:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [     9 - 45%] 
+ -2907:~~~                             [     1 -  5%] 
+   0:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [     9 - 45%] 
+
+Treatments learned on arch_def.data:
+worth=1.416540	[abstractDataType of targetSystem=n] 
+
+ Worth=1.416540
+ Granularity=3 Promising=-10000000.000000 Useful=1.000000 nChanges=1
+ Treatment:[
+	abstractDataType of targetSystem=n]
+
+ three_cost=vvlow_benefit:                                [     0 -  0%] 
+ two_cost=vvlow_benefit:~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  [  1124 - 34%] 
+ three_cost=vlow_benefit:                                [     0 -  0%] 
+ two_cost=vlow_benefit:~~~~~~~~~~~~~~~~~~~~~~~         [   875 - 26%] 
+ three_cost=low_benefit:                                [     0 -  0%] 
+ three_cost=high_benefit:                                [     0 -  0%] 
+ two_cost=low_benefit:~~~~~~~~~~~~~~~~~~              [   675 - 20%] 
+ three_cost=vhigh_benefit:                                [     0 -  0%] 
+ three_cost=vvhigh_benefit:                                [     0 -  0%] 
+ two_cost=high_benefit:~~~~~~~~~~~                     [   425 - 13%] 
+ two_cost=vhigh_benefit:~~~~                            [   181 -  5%] 
+ two_cost=vvhigh_benefit:~                               [    68 -  2%] 
+
+
+---- 10/31/02 09:12:18 ---
+  Setup: 0 sec
+Compute: 0 sec
+  Apply: 0 sec
+  Total: 0 sec
+--------------------------------------
