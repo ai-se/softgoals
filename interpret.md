@@ -14,13 +14,12 @@ class graph:
      i.nodes,i.arcs={},{}
    def node(i,name,type):
      i.nodes[name] = node(name,type)
-   def edge(i,from,to,type):
+   def edge(i,froms,to,type):
      assert from in i.nodes
      assert to   in i.nodes
-     
-     from, to = i.nodes[from], i.nodes[to]
-     edge = arc(from,to,type)
-     key = (from.name, to.name)
+     froms, to = i.nodes[froms], i.nodes[to]
+     edge = arc(froms,to,type)
+     key = (froms.name, to.name)
      i.arcs[key]   = i.args.get(key,[]) + [edge]
      to.kids      += [edge]
      from.parents += [edge]
@@ -35,8 +34,8 @@ class node:
    def root(i): return not i.parents
    
 class arc:
-   def __init__(i,from,to,type="makes"):
-     i.from,i.to,i.type = from, to, type
+   def __init__(i,froms,to,type="makes"):
+     i.froms,i.to,i.type = froms, to, type
    def negative(i):
      return i.type == "breaks" or i.type=="hurst"
    def positive(i):
