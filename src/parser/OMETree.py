@@ -13,10 +13,23 @@ def default_ns():
 
 class Node(O):
   def __init__(self):
+    """
+    Creates a node which can represent a
+    a) Actor
+    b) Agent
+    c) Position
+    d) Role
+    e) Hard goal
+    f) Soft goal
+    g) Task
+    h) Resource
+    :return:
+    """
     O.__init__(self)
     self.id = None
     self.text = None
     self.type = None
+    self.container = None
     self.to_edges = None
     self.from_edges = None
 
@@ -33,6 +46,23 @@ class Node(O):
 
 class Edge(O):
   def __init__(self):
+    """
+    Creates an edge which can represent
+    a) Dependency
+    b) Decomposition
+      - AND
+      - OR
+    c) Contribution
+      - Help
+      - Hurt
+      - Make
+      - Break
+      - Some Plus
+      - Some Minus
+      - Conflict
+      - Unknown
+    :return:
+    """
     O.__init__(self)
     self.id = None
     self.type = None
@@ -65,13 +95,26 @@ class Parser(O):
       ns = default_ns()
     self.ns = ns
     Parser.register_namespace(self.ns)
+    self.nodes = None
+    self.edges = None
 
   @staticmethod
   def register_namespace(ns):
+    """
+    Registers a dictionary of namespace in the parse tree
+    :param ns:
+    :return:
+    """
     for key, val in ns.iteritems():
       ET.register_namespace(key, val)
 
   def get_attribute(self, element, key):
+    """
+    Retrieve and attribute from an element of xml
+    :param element:
+    :param key:
+    :return:
+    """
     parts = key.split(":")
     if len(parts) == 2:
       val = self.ns[parts[0]]
@@ -82,6 +125,11 @@ class Parser(O):
       attrib_key = parts[-1]
     return element.attrib.get(attrib_key, None)
 
+  def parse_intention(self, element):
+    # Create Node here
+    print(element.tag, ' ===> ' ,self.get_attribute(element, 'xmi:id'))
+    print("\n")
+
 
   def parse(self):
     """
@@ -90,8 +138,6 @@ class Parser(O):
     :return: XML Tree object
     """
     tree = ET.parse(self.src)
-    for child in tree.getroot().find("model:Model", self.ns):
-      print(child.tag, ' ==> ',self.get_attribute(child, 'xmi:id'))
-
-
-
+    model = tree.getroot().find("model:Model", self.ns)
+    for child in model.findall("intentions"):
+      self.parse_intention(child)
