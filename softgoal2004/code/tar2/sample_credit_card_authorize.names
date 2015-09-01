@@ -1,0 +1,243 @@
+benefit_vlow=cost_vhigh,
+benefit_vlow=cost_high,
+benefit_low=cost_vhigh,
+benefit_vlow=cost_low,
+benefit_high=cost_vhigh,
+benefit_vlow=cost_vlow,
+benefi_vhigh=cost_vhigh,
+benefit_low=cost_high,
+benefit_low=cost_low,
+benefit_high=cost_high,
+benefit_low=cost_vlow,
+benefi_vhigh=cost_high,
+benefit_high=cost_low,
+benefit_high=cost_vlow,
+benefi_vhigh=cost_low,
+benefi_vhigh=cost_vlow
+
+severalAttributesPerTuple at layer([4\, prioritization]): y,n,u
+earlyFixing of status at layer(2): y,n,u
+fewAttributePerTuple of (card*status)at layer([2\, operationComponents]): y,n,u
+lateFixing of otherAttrs at layer(2): y,n,u
+mainMemory of attributes(card): y,n,u
+performFirst of commonCode(authorize)at layer([4\, commonCode]): y,n,u
+performFirst of retrieve(card*creditRemaining)at layer([3\, operationComponents]): y,n,u
+performFirst of retrieve(card*status)at layer([3\, operationComponents]): y,n,u
+performFirst of update(card*creditRemaining)at layer([3\, operationComponents]): y,n,u
+performance of authorize(card\, money): y,n,u
+replicateDerivedAttribute of (card*creditRemaining)at layer([2\, operationComponents]): y,n,u
+responseTime of access(card*creditRemaining)at layer([3\, operationComponents]): y,n,u
+responseTime of commonCode(authorize)at layer([3\, commonCode]): y,n,u
+responseTime of commonCode(authorize)at layer([4\, commonCode]): y,n,u
+responseTime of nonCommonCode(authorize)at layer([4\, commonCode]): y,n,u
+responseTime of otherOperation(authorize)at layer([3\, operationComponents]): y,n,u
+responseTime of retrieve(card*creditRemaining)at layer([2\, operationComponents]): y,n,u
+responseTime of retrieve(card*creditRemaining)at layer([3\, operationComponents]): y,n,u
+responseTime of retrieve(card*status)at layer([2\, operationComponents]): y,n,u
+responseTime of retrieve(card*status)at layer([3\, operationComponents]): y,n,u
+responseTime of update(card*creditRemaining)at layer([3\, operationComponents]): y,n,u
+responseTime of authorize(card\, money)at layer(4): y,n,u
+responseTime_i of commonCode(authorize)at layer([4\, commonCode]): y,n,u
+responseTime_i of nonCommonCode(authorize)at layer([4\, commonCode]): y,n,u
+responseTime_i of otherOperation(authorize)at layer([3\, operationComponents]): y,n,u
+responseTime_i of retrieve(card*creditRemaining)at layer([3\, operationComponents]): y,n,u
+responseTime_i of retrieve(card*status)at layer([3\, operationComponents]): y,n,u
+secondaryStorage of attributes(card): y,n,u
+secondaryStorage of creditRemaining at layer([4\, individualAttributes]): y,n,u
+secondaryStorage of otherAttrs at layer(2): y,n,u
+secondaryStorage of otherAttrs at layer([4\, individualAttributes]): y,n,u
+secondaryStorage of status at layer(2): y,n,u
+secondaryStorage of status at layer([4\, individualAttributes]): y,n,u
+secondaryStorage_i of creditRemaining at layer([4\, prioritization]): y,n,u
+secondaryStorage_i of otherAttrs at layer([4\, prioritization]): y,n,u
+secondaryStorage_i of status at layer([4\, prioritization]): y,n,u
+spacePerformance of attributes(card): y,n,u
+timePerformance of authorize(card\, money): y,n,u
+cat01:    y,n,u
+cat02:    y,n,u
+cat03:    y,n,u
+eliza01:  y,n,u
+eliza02:  y,n,u
+eliza03:  y,n,u
+rule01:   y,n,u
+rule02:   y,n,u
+rule03:   y,n,u
+rule04:   y,n,u
+rule05:   y,n,u
+rule06:   y,n,u
+rule07:   y,n,u
+rule08:   y,n,u
+rule09:   y,n,u
+rule10:   y,n,u
+rule11:   y,n,u
+rule12:   y,n,u
+rule13:   y,n,u
+rule14:   y,n,u
+rule15:   y,n,u
+rule16:   y,n,u
+rule17:   y,n,u
+rule18:   y,n,u
+rule19:   y,n,u
+rule20:   y,n,u
+rule21:   y,n,u
+rule22:   y,n,u
+disallow bad cards at layer([3\, operationComponents]): y,n,u
+do not exceed credit limit at layer([3\, operationComponents]): y,n,u
+inherited code predominates authorization at layer([4\, commonCode]): y,n,u
+other Attrs not accessed during critical operations at layer(2): y,n,u
+other not important at layer([3\, operationComponents]): y,n,u
+otherAttrs use most space at layer([4\, individualAttributes]): y,n,u
+status needed quickly to stop fraud at layer(2): y,n,u
+status not specialized at layer([4\, prioritization]): y,n,u
+
+NOW
+severalAttributesPerTuple at layer([4\, prioritization]): true
+earlyFixing of status at layer(2): true
+fewAttributePerTuple of (card*status)at layer([2\, operationComponents]): true
+lateFixing of otherAttrs at layer(2): true
+mainMemory of attributes(card): true
+performFirst of commonCode(authorize)at layer([4\, commonCode]): true
+performFirst of retrieve(card*creditRemaining)at layer([3\, operationComponents]): true
+performFirst of retrieve(card*status)at layer([3\, operationComponents]): true
+performFirst of update(card*creditRemaining)at layer([3\, operationComponents]): true
+performance of authorize(card\, money): true
+replicateDerivedAttribute of (card*creditRemaining)at layer([2\, operationComponents]): true
+responseTime of access(card*creditRemaining)at layer([3\, operationComponents]): true
+responseTime of commonCode(authorize)at layer([3\, commonCode]): true
+responseTime of commonCode(authorize)at layer([4\, commonCode]): true
+responseTime of nonCommonCode(authorize)at layer([4\, commonCode]): true
+responseTime of otherOperation(authorize)at layer([3\, operationComponents]): true
+responseTime of retrieve(card*creditRemaining)at layer([2\, operationComponents]): true
+responseTime of retrieve(card*creditRemaining)at layer([3\, operationComponents]): true
+responseTime of retrieve(card*status)at layer([2\, operationComponents]): true
+responseTime of retrieve(card*status)at layer([3\, operationComponents]): true
+responseTime of update(card*creditRemaining)at layer([3\, operationComponents]): true
+responseTime of authorize(card\, money)at layer(4): true
+responseTime_i of commonCode(authorize)at layer([4\, commonCode]): true
+responseTime_i of nonCommonCode(authorize)at layer([4\, commonCode]): true
+responseTime_i of otherOperation(authorize)at layer([3\, operationComponents]): true
+responseTime_i of retrieve(card*creditRemaining)at layer([3\, operationComponents]): true
+responseTime_i of retrieve(card*status)at layer([3\, operationComponents]): true
+secondaryStorage of attributes(card): true
+secondaryStorage of creditRemaining at layer([4\, individualAttributes]): true
+secondaryStorage of otherAttrs at layer(2): true
+secondaryStorage of otherAttrs at layer([4\, individualAttributes]): true
+secondaryStorage of status at layer(2): true
+secondaryStorage of status at layer([4\, individualAttributes]): true
+secondaryStorage_i of creditRemaining at layer([4\, prioritization]): true
+secondaryStorage_i of otherAttrs at layer([4\, prioritization]): true
+secondaryStorage_i of status at layer([4\, prioritization]): true
+spacePerformance of attributes(card): true
+timePerformance of authorize(card\, money): true
+cat01:    true
+cat02:    true
+cat03:    true
+eliza01:  true
+eliza02:  ignore
+eliza03:  ignore
+rule01:   true
+rule02:   true
+rule03:   true
+rule04:   true
+rule05:   true
+rule06:   true
+rule07:   true
+rule08:   true
+rule09:   true
+rule10:   true
+rule11:   true
+rule12:   true
+rule13:   true
+rule14:   true
+rule15:   true
+rule16:   true
+rule17:   true
+rule18:   true
+rule19:   true
+rule20:   true
+rule21:   true
+rule22:   true
+disallow bad cards at layer([3\, operationComponents]): true
+do not exceed credit limit at layer([3\, operationComponents]): true
+inherited code predominates authorization at layer([4\, commonCode]): true
+other Attrs not accessed during critical operations at layer(2): true
+other not important at layer([3\, operationComponents]): true
+otherAttrs use most space at layer([4\, individualAttributes]): true
+status needed quickly to stop fraud at layer(2): true
+status not specialized at layer([4\, prioritization]): true
+
+CHANGES
+severalAttributesPerTuple at layer([4\, prioritization]): y,n
+earlyFixing of status at layer(2): y,n
+fewAttributePerTuple of (card*status)at layer([2\, operationComponents]): y,n
+lateFixing of otherAttrs at layer(2): y,n
+mainMemory of attributes(card): ignore
+performFirst of commonCode(authorize)at layer([4\, commonCode]): y,n
+performFirst of retrieve(card*creditRemaining)at layer([3\, operationComponents]): y,n
+performFirst of retrieve(card*status)at layer([3\, operationComponents]): y,n
+performFirst of update(card*creditRemaining)at layer([3\, operationComponents]): y,n
+performance of authorize(card\, money): ignore
+replicateDerivedAttribute of (card*creditRemaining)at layer([2\, operationComponents]): y,n
+responseTime of access(card*creditRemaining)at layer([3\, operationComponents]): ignore
+responseTime of commonCode(authorize)at layer([3\, commonCode]): ignore
+responseTime of commonCode(authorize)at layer([4\, commonCode]): ignore
+responseTime of nonCommonCode(authorize)at layer([4\, commonCode]): ignore
+responseTime of otherOperation(authorize)at layer([3\, operationComponents]): ignore
+responseTime of retrieve(card*creditRemaining)at layer([2\, operationComponents]): ignore
+responseTime of retrieve(card*creditRemaining)at layer([3\, operationComponents]): ignore
+responseTime of retrieve(card*status)at layer([2\, operationComponents]): ignore
+responseTime of retrieve(card*status)at layer([3\, operationComponents]): ignore
+responseTime of update(card*creditRemaining)at layer([3\, operationComponents]): ignore
+responseTime of authorize(card\, money)at layer(4): ignore
+responseTime_i of commonCode(authorize)at layer([4\, commonCode]): ignore
+responseTime_i of nonCommonCode(authorize)at layer([4\, commonCode]): ignore
+responseTime_i of otherOperation(authorize)at layer([3\, operationComponents]): ignore
+responseTime_i of retrieve(card*creditRemaining)at layer([3\, operationComponents]): ignore
+responseTime_i of retrieve(card*status)at layer([3\, operationComponents]): ignore
+secondaryStorage of attributes(card): ignore
+secondaryStorage of creditRemaining at layer([4\, individualAttributes]): ignore
+secondaryStorage of otherAttrs at layer(2): ignore
+secondaryStorage of otherAttrs at layer([4\, individualAttributes]): ignore
+secondaryStorage of status at layer(2): ignore
+secondaryStorage of status at layer([4\, individualAttributes]): ignore
+secondaryStorage_i of creditRemaining at layer([4\, prioritization]): ignore
+secondaryStorage_i of otherAttrs at layer([4\, prioritization]): ignore
+secondaryStorage_i of status at layer([4\, prioritization]): ignore
+spacePerformance of attributes(card): ignore
+timePerformance of authorize(card\, money): ignore
+cat01:    ignore
+cat02:    ignore
+cat03:    ignore
+eliza01:  ignore
+eliza02:  ignore
+eliza03:  ignore
+rule01:   ignore
+rule02:   ignore
+rule03:   ignore
+rule04:   ignore
+rule05:   ignore
+rule06:   ignore
+rule07:   ignore
+rule08:   ignore
+rule09:   ignore
+rule10:   ignore
+rule11:   ignore
+rule12:   ignore
+rule13:   ignore
+rule14:   ignore
+rule15:   ignore
+rule16:   ignore
+rule17:   ignore
+rule18:   ignore
+rule19:   ignore
+rule20:   ignore
+rule21:   ignore
+rule22:   ignore
+disallow bad cards at layer([3\, operationComponents]): y,n
+do not exceed credit limit at layer([3\, operationComponents]): y,n
+inherited code predominates authorization at layer([4\, commonCode]): y,n
+other Attrs not accessed during critical operations at layer(2): y,n
+other not important at layer([3\, operationComponents]): y,n
+otherAttrs use most space at layer([4\, individualAttributes]): y,n
+status needed quickly to stop fraud at layer(2): y,n
+status not specialized at layer([4\, prioritization]): y,n
