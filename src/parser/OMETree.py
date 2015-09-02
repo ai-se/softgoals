@@ -27,11 +27,25 @@ class Node(O):
     """
     O.__init__(self)
     self.id = None
-    self.text = None
+    self.name = None
     self.type = None
     self.container = None
     self.to_edges = None
     self.from_edges = None
+
+  @staticmethod
+  def get_type(key):
+    node_map = {
+      "edu.toronto.cs.openome_model:Goal"     : "goal",
+      "edu.toronto.cs.openome_model:Resource" : "resource",
+      "edu.toronto.cs.openome_model:Task"     : "task",
+      "edu.toronto.cs.openome_model:Softgoal" : "softgoal",
+      "edu.toronto.cs.openome_model:Actor"    : "actor",
+      "edu.toronto.cs.openome_model:Agent"    : "agent",
+      "edu.toronto.cs.openome_model:Position" : "position",
+      "edu.toronto.cs.openome_model:Role"     : "role",
+    }
+    return node_map.get(key)
 
   def __hash__(self):
     if not self.id:
@@ -69,6 +83,13 @@ class Edge(O):
     self.value = None
     self.source = None
     self.destination = None
+
+  @staticmethod
+  def get_type(key):
+    edge_map = {
+
+    }
+
 
   def __hash__(self):
     if not self.id:
@@ -108,6 +129,26 @@ class Parser(O):
     for key, val in ns.iteritems():
       ET.register_namespace(key, val)
 
+  def add_node(self, node):
+    """
+    Add a node to list of nodes for graph
+    :param node: Node to be added
+    :return:
+    """
+    if not self.nodes:
+      self.nodes = set()
+    self.nodes.add(node)
+
+  def add_edge(self, edge):
+    """
+    Add an edge to set of edges for graph
+    :param edge: Edge to be added
+    :return:
+    """
+    if not self.edges:
+      self.edges = set()
+    self.edges.add(edge)
+
   def get_attribute(self, element, key):
     """
     Retrieve and attribute from an element of xml
@@ -125,10 +166,47 @@ class Parser(O):
       attrib_key = parts[-1]
     return element.attrib.get(attrib_key, None)
 
-  def parse_intention(self, element):
-    # Create Node here
-    print(element.tag, ' ===> ' ,self.get_attribute(element, 'xmi:id'))
-    print("\n")
+  def parse_node(self, element, container=None):
+    """
+    Method to parse a node element and create an object
+    :param element: Node Element
+    :param container: Its parent container
+    """
+    node = Node()
+    node.id = self.get_attribute(element, 'xmi:id')
+    node.name = self.get_attribute(element, 'name')
+    node.type = Node.get_type(self.get_attribute(element, 'xmi:type'))
+    from_edges = []
+    froms = self.get_attribute(element, 'contributesFrom')
+    if froms:
+      from_edges += froms.split(" ")
+    froms = self.get_attribute(element, 'dependencyFrom')
+    if froms:
+      from_edges += froms.split(" ")
+    froms = self.get_attribute(element, 'parentDecompositions')
+    if froms:
+      from_edges += froms.split(" ")
+    node.from_edges = from_edges
+    # Means - Ends From
+    to_edges = []
+    tos = self.get_attribute(element, 'contributesTo')
+    if tos:
+      to_edges += tos.split(" ")
+    tos = self.get_attribute(element, 'dependencyTo')
+    if tos:
+      to_edges += tos.split(" ")
+    tos = self.get_attribute(element, 'decompositions')
+    if tos:
+      to_edges += tos.split(" ")
+    node.to_edges = to_edges
+    # Means - Ends To
+    if container:
+      node.container = container
+    self.add_node(node)
+
+  def parse_edge(self, element):
+    edge = Edge()
+    edge.id = self.get_attribute(element, 'xmi:id')
 
 
   def parse(self):
@@ -140,4 +218,6 @@ class Parser(O):
     tree = ET.parse(self.src)
     model = tree.getroot().find("model:Model", self.ns)
     for child in model.findall("intentions"):
-      self.parse_intention(child)
+      self.parse_node(child)
+
+    print(self)
