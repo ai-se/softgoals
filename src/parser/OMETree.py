@@ -29,6 +29,7 @@ class Node(O):
     self.id = None
     self.name = None
     self.type = None
+    self.value = None
     self.container = None
     self.to_edges = None
     self.from_edges = None
@@ -82,13 +83,27 @@ class Edge(O):
     self.type = None
     self.value = None
     self.source = None
-    self.destination = None
+    self.target = None
 
   @staticmethod
-  def get_type(key):
+  def get_value(key):
     edge_map = {
-
+      # Contributions
+      "edu.toronto.cs.openome_model:SomePlusContribution" : "someplus",
+      "edu.toronto.cs.openome_model:SomeMinusContribution" : "someminus",
+      "edu.toronto.cs.openome_model:HelpContribution" : "help",
+      "edu.toronto.cs.openome_model:HurtContribution" : "hurt",
+      "edu.toronto.cs.openome_model:MakeContribution" : "make",
+      "edu.toronto.cs.openome_model:BreakContribution" : "break",
+      "edu.toronto.cs.openome_model:ConflictContribution" : "conflict",
+      "edu.toronto.cs.openome_model:UnknownContribution" : "unknown",
+      # Decompositions
+      "edu.toronto.cs.openome_model:AndDecomposition" : "and",
+      "edu.toronto.cs.openome_model:OrDecomposition" : "or",
+      #Dependency
+      "edu.toronto.cs.openome_model:Dependency" : "dependency"
     }
+    return edge_map.get(key)
 
 
   def __hash__(self):
@@ -204,10 +219,25 @@ class Parser(O):
       node.container = container
     self.add_node(node)
 
-  def parse_edge(self, element):
+  def parse_edge(self, element, edge_type):
+    """
+    Method to parse an edge element and create an object
+    :param element: Edge Element
+    :param edge_type: type of the edge
+    """
     edge = Edge()
     edge.id = self.get_attribute(element, 'xmi:id')
-
+    edge.type = edge_type
+    edge.value = Edge.get_value(self.get_attribute(element, 'xmi:type'))
+    source = self.get_attribute(element, 'source')
+    if not source:
+      source = self.get_attribute(element, 'dependencyFrom')
+    edge.source = source
+    target = self.get_attribute(element, 'target')
+    if not target:
+      target = self.get_attribute(element, 'dependencyTo')
+    edge.target = target
+    self.add_edge(edge)
 
   def parse(self):
     """
@@ -219,5 +249,15 @@ class Parser(O):
     model = tree.getroot().find("model:Model", self.ns)
     for child in model.findall("intentions"):
       self.parse_node(child)
-
+    for child in model.findall("contributions"):
+      self.parse_edge(child, "contribution")
+    for child in model.findall("dependencies"):
+      self.parse_edge(child, "dependency")
+    for child in model.findall("decompositions"):
+      self.parse_edge(child, "decompositions")
+    for container in model.findall("containers"):
+      self.parse_node(container)
+      container_id = self.get_attribute(container, 'xmi:id')
+      for child in container.findall("intentions"):
+        self.parse_node(child, container_id)
     print(self)
