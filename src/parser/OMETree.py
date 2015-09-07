@@ -1,6 +1,7 @@
 from __future__ import print_function, division
 from utils.lib import *
 import xml.etree.ElementTree as ET
+import json
 __author__ = 'george'
 
 
@@ -260,4 +261,11 @@ class Parser(O):
       container_id = self.get_attribute(container, 'xmi:id')
       for child in container.findall("intentions"):
         self.parse_node(child, container_id)
-    print(self)
+
+  def dump_json(self, filepath = None):
+    if filepath:
+      f = open(filepath, 'w')
+      f.write(self.to_json())
+      f.close()
+    else:
+      print(self.to_json())
