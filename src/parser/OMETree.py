@@ -1,7 +1,8 @@
 from __future__ import print_function, division
-from utils.lib import *
+from utilities.lib import *
 import xml.etree.ElementTree as ET
 import json
+import os
 __author__ = 'george'
 
 
@@ -199,7 +200,7 @@ class Parser(O):
     froms = self.get_attribute(element, 'dependencyFrom')
     if froms:
       from_edges += froms.split(" ")
-    froms = self.get_attribute(element, 'parentDecompositions')
+    froms = self.get_attribute(element, 'decompositions')
     if froms:
       from_edges += froms.split(" ")
     node.from_edges = from_edges
@@ -211,7 +212,7 @@ class Parser(O):
     tos = self.get_attribute(element, 'dependencyTo')
     if tos:
       to_edges += tos.split(" ")
-    tos = self.get_attribute(element, 'decompositions')
+    tos = self.get_attribute(element, 'parentDecompositions')
     if tos:
       to_edges += tos.split(" ")
     node.to_edges = to_edges
@@ -269,3 +270,26 @@ class Parser(O):
       f.close()
     else:
       print(self.to_json())
+
+  def store_json(self):
+    folder_name = "models/" + self.src.split("/")[-1].split(".")[0]
+    if not os.path.exists(folder_name):
+      os.makedirs(folder_name)
+    self.parse()
+    self.dump_json(folder_name + "/model.json")
+
+  def make_dummy_props(self):
+    folder_name = "models/" + self.src.split("/")[-1].split(".")[0]
+    if not os.path.exists(folder_name):
+      os.makedirs(folder_name)
+    self.parse()
+    goals = {}
+    for node in self.nodes:
+      goals[node.id] = random.choice([0,1])
+    props = {
+      "src"   : self.src,
+      "goals" : goals
+    }
+    f = open(folder_name + "/properties.json", 'w')
+    f.write(json.dumps(props, indent=4, separators=(',', ': ')))
+    f.close()
