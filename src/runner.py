@@ -1,15 +1,13 @@
 __author__ = 'george'
-from parser.OMETree import *
 import sys
-sys.path.append("../../optima")
-import utils.constants as constants
+sys.path.append(".")
+from models.model import Model
 
 def test_ome_tree():
-  parser = Parser('../GMRepo/CMA12/bCMS_SR_bCMS_AuthenticationVariation.ood')
-  parser.store_json()
-  parser.make_dummy_props()
+  model = Model('../GMRepo/CMA12/bCMS_SR_bCMS_exceptional.ood')
+  print(model.roots)
+  print(model.generate())
 
 if __name__ == "__main__":
-  #test_ome_tree()
-  print(constants.EPS)
+  test_ome_tree()
 

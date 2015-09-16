@@ -1,8 +1,9 @@
 from __future__ import print_function, division
+import sys,os
+sys.path.append(os.path.abspath("."))
 from utilities.lib import *
 import xml.etree.ElementTree as ET
 import json
-import os
 __author__ = 'george'
 
 
@@ -12,6 +13,7 @@ def default_ns():
     "model" : "http:///edu/toronto/cs/openome_model.ecore",
     "notation" : "http://www.eclipse.org/gmf/runtime/1.0.2/notation"
   }
+
 
 class Node(O):
   def __init__(self):
@@ -35,6 +37,8 @@ class Node(O):
     self.container = None
     self.to_edges = None
     self.from_edges = None
+    self.hi = +1
+    self.lo = -1
 
   @staticmethod
   def get_type(key):
@@ -263,6 +267,53 @@ class Parser(O):
       for child in container.findall("intentions"):
         self.parse_node(child, container_id)
 
+  def get_edge(self, edge_id):
+    for edge in self.edges:
+      if edge.id == edge_id:
+        return edge
+    return None
+
+  def get_node(self, node_id):
+    for node in self.nodes:
+      if node.id == node_id:
+        return node
+    return None
+
+  def get_other_end(self, edge_id, one_end):
+    for edge in self.edges:
+      if edge.id == edge_id:
+        if edge.source == one_end:
+          return edge.target
+        elif edge.target == one_end:
+          return edge.source
+        else:
+          return None
+
+  def remove_actors(self):
+    from copy import copy
+
+    def remove_actor(actor):
+      edge_ids = []
+      if actor.from_edges : edge_ids+= actor.from_edges
+      if actor.to_edges   : edge_ids+= actor.to_edges
+      for edge_id in edge_ids:
+        other_end = self.get_node(self.get_other_end(edge_id, actor.id))
+        # Remove edges from "from" and "to" of other end
+        if other_end:
+          if other_end.from_edges and edge_id in other_end.from_edges:
+            other_end.from_edges.remove(edge_id)
+          if other_end.to_edges and edge_id in other_end.to_edges:
+            other_end.to_edges.remove(edge_id)
+        self.edges.remove(self.get_edge(edge_id))
+      self.nodes.remove(actor)
+
+    clones = copy(self.nodes)
+    for node in clones:
+      if node.type in ["agent", "role"]:
+        remove_actor(node)
+
+
+
   def dump_json(self, filepath = None):
     if filepath:
       f = open(filepath, 'w')
@@ -276,6 +327,7 @@ class Parser(O):
     if not os.path.exists(folder_name):
       os.makedirs(folder_name)
     self.parse()
+    self.remove_actors()
     self.dump_json(folder_name + "/model.json")
 
   def make_dummy_props(self):
@@ -285,7 +337,7 @@ class Parser(O):
     self.parse()
     goals = {}
     for node in self.nodes:
-      goals[node.id] = random.choice([0,1])
+      goals[node.id] = random.choice([-1, 1])
     props = {
       "src"   : self.src,
       "goals" : goals
@@ -293,3 +345,37 @@ class Parser(O):
     f = open(folder_name + "/properties.json", 'w')
     f.write(json.dumps(props, indent=4, separators=(',', ': ')))
     f.close()
+
+  def get_roots(self):
+    """
+    Get roots of the graph.
+    :return:
+    """
+    nodes = []
+    for node in self.nodes:
+      if node.type in ['task', 'resource']:
+        # We assume that decisions are either tasks or resources
+        if not node.from_edges:
+          nodes.append(node)
+    return nodes
+
+  def get_nodes(self, node_type=None):
+    """
+    Get nodes of a certain type
+    :param node_type:
+    :return:
+    """
+    if isinstance(node_type, list):
+      return [node for node in self.nodes if node.type in node_type]
+    elif isinstance(node_type, str):
+      return [node for node in self.nodes if node.type in [node_type]]
+    else: return self.nodes
+
+
+  # TODO Support functions from https://github.com/ai-se/softgoals/blob/master/interpret.md
+
+
+  @staticmethod
+  def from_json(json_obj):
+    #TODO implement method to load from json
+    pass
