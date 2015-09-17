@@ -6,7 +6,6 @@ import xml.etree.ElementTree as ET
 import json
 __author__ = 'george'
 
-
 def default_ns():
   return {
     "xmi" : "http://www.omg.org/XMI",
@@ -37,8 +36,7 @@ class Node(O):
     self.container = None
     self.to_edges = None
     self.from_edges = None
-    self.hi = +1
-    self.lo = -1
+    self.nature = None # Signifies the nature of the node based on the from edges
 
   @staticmethod
   def get_type(key):
@@ -122,6 +120,23 @@ class Edge(O):
       return False
     return self.id == other.id
 
+  @staticmethod
+  def get_contribution_weight(key):
+    if   key == "make":
+      return +3
+    elif key == "help":
+      return +2
+    elif key == "someplus":
+      return +1
+    elif key == "someminus":
+      return -1
+    elif key == "hurt":
+      return -2
+    elif key == "break":
+      return -3
+    raise RuntimeError("Invalid contribution type %s"%key)
+
+
 class Parser(O):
 
   def __init__(self, src, ns = None):
@@ -204,7 +219,7 @@ class Parser(O):
     froms = self.get_attribute(element, 'dependencyFrom')
     if froms:
       from_edges += froms.split(" ")
-    froms = self.get_attribute(element, 'decompositions')
+    froms = self.get_attribute(element, 'parentDecompositions')
     if froms:
       from_edges += froms.split(" ")
     node.from_edges = from_edges
@@ -216,7 +231,7 @@ class Parser(O):
     tos = self.get_attribute(element, 'dependencyTo')
     if tos:
       to_edges += tos.split(" ")
-    tos = self.get_attribute(element, 'parentDecompositions')
+    tos = self.get_attribute(element, 'decompositions')
     if tos:
       to_edges += tos.split(" ")
     node.to_edges = to_edges
@@ -313,6 +328,32 @@ class Parser(O):
         remove_actor(node)
 
 
+  def assign_nature(self):
+    """
+    Assigns nature of each node based on the from edges
+    :return:
+    """
+    def check_validity(es, n):
+      e_type = None
+      for e in es:
+        e_type = e_type or e.type
+        if e_type != e.type:
+          print(n)
+          print(es)
+          raise Exception("All Input nodes need to be of the same kind ")
+
+    for node in self.nodes:
+      if not node.from_edges:
+        # Do nothing id node does not have edges into it
+        continue
+      # TODO Retrieve all the edges' type and check if they are the same and assign it to the node's nature
+      edges = [self.get_edge(f_edge) for f_edge in node.from_edges]
+      check_validity(edges, node)
+      if edges[0].type == "decompositions":
+        node.nature = edges[0].value
+      else:
+        node.nature = edges[0].type
+
 
   def dump_json(self, filepath = None):
     if filepath:
@@ -328,6 +369,7 @@ class Parser(O):
       os.makedirs(folder_name)
     self.parse()
     self.remove_actors()
+    self.assign_nature()
     self.dump_json(folder_name + "/model.json")
 
   def make_dummy_props(self):
@@ -346,9 +388,9 @@ class Parser(O):
     f.write(json.dumps(props, indent=4, separators=(',', ': ')))
     f.close()
 
-  def get_roots(self):
+  def get_bases(self):
     """
-    Get roots of the graph.
+    Get the base decisions of the graph
     :return:
     """
     nodes = []
@@ -357,6 +399,17 @@ class Parser(O):
         # We assume that decisions are either tasks or resources
         if not node.from_edges:
           nodes.append(node)
+    return nodes
+
+  def get_roots(self):
+    """
+    Get roots of the tree
+    :return:
+    """
+    nodes = []
+    for node in self.nodes:
+      if not node.to_edges:
+        nodes.append(node)
     return nodes
 
   def get_nodes(self, node_type=None):
@@ -372,7 +425,7 @@ class Parser(O):
     else: return self.nodes
 
 
-  # TODO Support functions from https://github.com/ai-se/softgoals/blob/master/interpret.md
+
 
 
   @staticmethod
