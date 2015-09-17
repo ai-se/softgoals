@@ -36,7 +36,6 @@ class Node(O):
     self.container = None
     self.to_edges = None
     self.from_edges = None
-    self.nature = None # Signifies the nature of the node based on the from edges
 
   @staticmethod
   def get_type(key):
@@ -327,37 +326,9 @@ class Parser(O):
       if node.type in ["agent", "role"]:
         remove_actor(node)
 
-
-  def assign_nature(self):
-    """
-    Assigns nature of each node based on the from edges
-    :return:
-    """
-    def check_validity(es, n):
-      e_type = None
-      for e in es:
-        e_type = e_type or e.type
-        if e_type != e.type:
-          print(n)
-          print(es)
-          raise Exception("All Input nodes need to be of the same kind ")
-
-    for node in self.nodes:
-      if not node.from_edges:
-        # Do nothing id node does not have edges into it
-        continue
-      # TODO Retrieve all the edges' type and check if they are the same and assign it to the node's nature
-      edges = [self.get_edge(f_edge) for f_edge in node.from_edges]
-      check_validity(edges, node)
-      if edges[0].type == "decompositions":
-        node.nature = edges[0].value
-      else:
-        node.nature = edges[0].type
-
-
-  def dump_json(self, filepath = None):
-    if filepath:
-      f = open(filepath, 'w')
+  def dump_json(self, file_path = None):
+    if file_path:
+      f = open(file_path, 'w')
       f.write(self.to_json())
       f.close()
     else:
@@ -369,7 +340,6 @@ class Parser(O):
       os.makedirs(folder_name)
     self.parse()
     self.remove_actors()
-    self.assign_nature()
     self.dump_json(folder_name + "/model.json")
 
   def make_dummy_props(self):

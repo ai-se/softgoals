@@ -14,15 +14,6 @@ def shuffle(lst):
   random.shuffle(lst)
   return lst
 
-# TODO implement model here based on model.json based on the architecture in optima/utils/problem.py
-
-EDGE_WEIGHTS = {
-  "make"  : +2,
-  "help"  : +1,
-  "hurt"  : -1,
-  "break" : -2
-}
-
 class Model(O):
   def __init__(self, src):
     O.__init__(self)
@@ -31,8 +22,8 @@ class Model(O):
     self._tree = Parser(src)
     self._tree.parse()
     self._tree.remove_actors()
-    #self._tree.assign_nature()
     self.roots = self._tree.get_roots()
+    self.recursions = 0
 
 
   def generate(self):
@@ -41,7 +32,6 @@ class Model(O):
       point_map[node.id] = random.choice([node.lo, node.hi])
     return point_map
 
-  # TODO Support functions from https://github.com/ai-se/softgoals/blob/master/interpret.md
   def scores(self, n=1000, seed=None):
     """
     Evaluate the graph n times and
@@ -50,15 +40,17 @@ class Model(O):
     :param seed: Random seed to be set
     :return: The average score
     """
+    from utilities.sk import rdivDemo
     if not seed is None:
       random.seed(seed)
 
-    final = 0
+    final = []
     for _ in xrange(n):
       for node in self._tree.nodes:
         node.value = None
-      final += self.score()
-    return final/n
+      final.append(self.score())
+    final = ["Roots"] + final
+    rdivDemo([final])
 
   def score(self):
     """
@@ -90,9 +82,13 @@ class Model(O):
 
 
   def eval(self, node):
+    self.recursions += 1
     if not node.value is None:
+      self.recursions = 0
       return node.value
-    if not node.from_edges:
+    if self.recursions > 10:
+      status = coin_toss()
+    elif not node.from_edges:
       # Random generation
       status = coin_toss()
     else:
@@ -118,6 +114,7 @@ class Model(O):
           status = self.eval_or(kids)
       elif edge_type == "contributions":
         status = self.eval_contribs(rest)
+    self.recursions = 0
     node.value = status
     return status
 
@@ -168,5 +165,3 @@ class Model(O):
     else:
       # In case of conflict
       return coin_toss()
-
-
