@@ -24,6 +24,7 @@ class Model(O):
     self._tree.remove_actors()
     self.roots = self._tree.get_roots()
     self.recursions = 0
+    self.chain = set()
 
 
   def generate(self):
@@ -60,6 +61,8 @@ class Model(O):
     """
     count = 0
     for node in self.roots:
+      self.chain = set()
+      self.recursions = 0
       if self.eval(node) == t:
         count += 1
     return count
@@ -82,14 +85,15 @@ class Model(O):
 
 
   def eval(self, node):
-    self.recursions += 1
     if not node.value is None:
-      self.recursions = 0
       return node.value
-    if self.recursions > 10:
-      status = coin_toss()
-    elif not node.from_edges:
-      # Random generation
+    if node.id in self.chain:
+      node.value = coin_toss()
+      return node.value
+    self.recursions += 1
+    self.chain.add(node.id)
+    #if (self.recursions > 10) or (not node.from_edges):
+    if not node.from_edges:
       status = coin_toss()
     else:
       # First check for dependencies from the edges and evaluate it
@@ -114,7 +118,6 @@ class Model(O):
           status = self.eval_or(kids)
       elif edge_type == "contributions":
         status = self.eval_contribs(rest)
-    self.recursions = 0
     node.value = status
     return status
 
