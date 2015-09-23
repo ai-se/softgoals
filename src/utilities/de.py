@@ -11,6 +11,15 @@ def default():
     cr = 0.3
   )
 
+class Statistics(O):
+  def __init__(self):
+    O.__init__(self)
+    self.generations = []
+
+  def insert(self, pop):
+    self.generations.append(pop)
+    return self
+
 class Point(O):
   id = 0
   def __init__(self, decisions, objectives=None):
