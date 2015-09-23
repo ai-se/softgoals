@@ -11,7 +11,9 @@ def default():
     cr = 0.3
   )
 
-class Statistics(O):
+class Statistics(O, settings=None):
+  def default_settings(self):
+
   def __init__(self):
     O.__init__(self)
     self.generations = []
@@ -19,6 +21,10 @@ class Statistics(O):
   def insert(self, pop):
     self.generations.append(pop)
     return self
+
+  def tiles(self):
+    num_obs = len(self.generations[0][0].objectives)
+    for
 
 class Point(O):
   id = 0
@@ -69,6 +75,7 @@ class DE(O):
     Runner function to run differential evolution
     :return: Optimal population
     """
+    stat = Statistics()
     population = self.generate(self.settings.candidates)
     for _ in range(self.settings.gens):
       clones = population[:]
@@ -80,7 +87,8 @@ class DE(O):
           clones.remove(point)
           clones.append(mutant)
       population = clones
-    return population
+      stat.update(population)
+    return stat
 
 
   def mutate(self, one, pop):
