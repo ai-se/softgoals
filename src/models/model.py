@@ -4,9 +4,6 @@ sys.path.append(os.path.abspath("."))
 from utilities.lib import *
 from parser.OMETree import Parser, Edge
 
-t = +1
-f = -1
-
 def coin_toss():
   return random.choice([t, f])
 
@@ -30,8 +27,18 @@ class Model(O):
   def generate(self):
     point_map = {}
     for node in self.roots:
-      point_map[node.id] = random.choice([node.lo, node.hi])
+      point_map[node.id] = random.choice([t, f])
     return point_map
+
+  def clear_nodes(self):
+    for node in self._tree.nodes:
+      node.value = None
+
+  def evaluate(self, initial_node_map):
+    for key in initial_node_map.keys():
+      node = self._tree.get_node(key)
+      node.value = initial_node_map[key]
+    return self.score()
 
   def scores(self, n=1000, seed=None):
     """

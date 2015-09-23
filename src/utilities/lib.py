@@ -1,6 +1,9 @@
 from __future__ import division, print_function
 import random, json
 
+t = +1
+f = -1
+
 """
 Default class which everything extends.
 """
@@ -92,3 +95,9 @@ def medianIQR(lst, ordered=False):
   else:
     p = max(0,q-1)
     return (lst[p] + lst[q]) * 0.5,iqr
+
+def choice(lst):
+  return random.choice(lst)
+
+def rand():
+  random.random()

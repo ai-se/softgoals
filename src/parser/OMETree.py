@@ -395,9 +395,6 @@ class Parser(O):
     else: return self.nodes
 
 
-
-
-
   @staticmethod
   def from_json(json_obj):
     #TODO implement method to load from json
