@@ -100,4 +100,16 @@ def choice(lst):
   return random.choice(lst)
 
 def rand():
-  random.random()
+  return random.random()
+
+def seed(val):
+  random.seed(val)
+
+def gt(a, b):
+  return a > b
+
+def lt(a, b):
+  return a < b
+
+def shuffle(lst):
+  return random.shuffle(lst)

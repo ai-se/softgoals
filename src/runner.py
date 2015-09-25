@@ -27,7 +27,6 @@ if __name__ == "__main__":
   # print(pt2 in lst)
   model = Model('../GMRepo/CMA12/bCMS_SR_bCMS_exceptional.ood')
   de = DE(model)
-  best = sorted(de.run(), key=lambda point: point.objectives[0],reverse=True)
-  print(best[:5])
+  de.run().tiles()
 
 

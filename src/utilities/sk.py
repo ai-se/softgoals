@@ -478,7 +478,6 @@ def rdivDemo(data):
     return int(100 * (x - lo) / (hi - lo + 0.00001))
   data = map(lambda lst:Num(lst[0],lst[1:]),
              data)
-  print "Maximum : %d"%max(data[0].all)
   print ""
   ranks=[]
   for x in scottknott(data,useA12=True):

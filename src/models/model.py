@@ -7,10 +7,6 @@ from parser.OMETree import Parser, Edge
 def coin_toss():
   return random.choice([t, f])
 
-def shuffle(lst):
-  random.shuffle(lst)
-  return lst
-
 class Model(O):
   def __init__(self, src):
     O.__init__(self)
@@ -34,13 +30,26 @@ class Model(O):
     for node in self._tree.nodes:
       node.value = None
 
-  def evaluate(self, initial_node_map):
+  def evaluate_score(self, initial_node_map):
+    self.clear_nodes()
     for key in initial_node_map.keys():
       node = self._tree.get_node(key)
       node.value = initial_node_map[key]
     return self.score()
 
-  def scores(self, n=1000, seed=None):
+  def evaluate_type(self, initial_node_map, node_type):
+    self.clear_nodes()
+    for key in initial_node_map.keys():
+      node = self._tree.get_node(key)
+      node.value = initial_node_map[key]
+    count = 0
+    for node in self._tree.get_nodes(node_type=node_type):
+      self.chain = set()
+      if self.eval(node) == t:
+        count += 1
+    return count
+
+  def  scores(self, n=1000, seed=None):
     """
     Evaluate the graph n times and
     return the average value
@@ -89,6 +98,7 @@ class Model(O):
       else:
         rest.append(edge)
     return deps, rest
+    #return shuffle(deps), shuffle(rest)
 
 
   def eval(self, node):
@@ -160,18 +170,41 @@ class Model(O):
     :param edges: Nodes to be evaluated
     :return: status
     """
-    status_sum = 0
-    wt_sum = 0
+    kids = []
     for edge in edges:
       node = self._tree.get_node(edge.source)
-      wt = Edge.get_contribution_weight(edge.value)
-      status_sum += self.eval(node) * wt
-      wt_sum += wt
-    status = status_sum / wt_sum
-    if status > 0:
-      return t
-    elif status < 0:
-      return f
-    else:
-      # In case of conflict
-      return coin_toss()
+      kids += [Model.soft_goal_val(node.value, edge.value)]
+    return choice(kids)
+
+  @staticmethod
+  def soft_goal_val(kid, edge):
+    """
+    Check out src/img/prop_rules.png
+    :param kid:
+    :param edge:
+    :return:
+    """
+    if edge in ["someplus", "someminus"]:
+      return choice([t/2, f/2])
+    if kid == t:
+      if edge == "make"   : return t
+      if edge == "help"   : return t/2
+      if edge == "hurt"   : return f/2
+      if edge == "break"  : return f
+    elif kid == t/2:
+      if edge == "make"   : return t/2
+      if edge == "help"   : return t/2
+      if edge == "hurt"   : return f/2
+      if edge == "break"  : return f/2
+    elif kid == f/2:
+      if edge == "make"   : return f/2
+      if edge == "help"   : return f/2
+      if edge == "hurt"   : return t/2
+      if edge == "break"  : return t/2
+    elif kid == f:
+      if edge == "make"   : return f
+      if edge == "help"   : return f/2
+      if edge == "hurt"   : return t/2
+      if edge == "break"  : return t/2
+    raise RuntimeError("Either node value %s or edge %s is unknown"%(kid, edge))
+
