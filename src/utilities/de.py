@@ -13,7 +13,7 @@ def default():
     cr = 0.3,
     seed = 1,
     better = gt,
-    obj_funcs = [eval_softgoals]
+    obj_funcs = [eval_softgoals, eval_goals]
   )
 
 def eval_roots(model, decision_map):

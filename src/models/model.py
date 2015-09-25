@@ -97,8 +97,7 @@ class Model(O):
         deps.append(edge)
       else:
         rest.append(edge)
-    return deps, rest
-    #return shuffle(deps), shuffle(rest)
+    return shuffle(deps), shuffle(rest)
 
 
   def eval(self, node):
@@ -119,22 +118,25 @@ class Model(O):
 
       # Check if all dependencies are satisfied
       dep_nodes = [self._tree.get_node(dep.source) for dep in deps]
-      status = self.eval_and(dep_nodes)
 
-      if not rest or status == f:
-        return status
+
+      if not rest:
+        return self.eval_and(dep_nodes)
 
       # Evaluate the rest. We assume the rest are of same kind
       edge_type = rest[0].type
       if edge_type == "decompositions":
+        status = self.eval_and(dep_nodes)
         kids = [self._tree.get_node(edge.source) for edge in rest]
         if rest[0].value == "and":
           # Evaluate all children
-          status = self.eval_and(kids)
+          status = status and self.eval_and(kids)
         elif rest[0].value == "or":
-          status = self.eval_or(kids)
-      elif edge_type == "contributions":
-        status = self.eval_contribs(rest)
+          status = status and self.eval_or(kids)
+      elif edge_type == "contribution":
+        status = self.eval_contribs(rest, deps)
+      else:
+        raise Exception("Unexpected edge type %s"%edge_type)
     node.value = status
     return status
 
@@ -163,7 +165,7 @@ class Model(O):
         return t
     return f
 
-  def eval_contribs(self, edges):
+  def eval_contribs(self, edges, dependencies=None):
     """
     Evaluate cumulative of contributions
     based on the weight.
@@ -173,7 +175,12 @@ class Model(O):
     kids = []
     for edge in edges:
       node = self._tree.get_node(edge.source)
+      self.eval(node)
       kids += [Model.soft_goal_val(node.value, edge.value)]
+    if dependencies:
+      for dep in dependencies:
+        self.eval(dep)
+        kids += [Model.soft_goal_val(dep.value, "make")]
     return choice(kids)
 
   @staticmethod

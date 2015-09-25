@@ -112,4 +112,7 @@ def lt(a, b):
   return a < b
 
 def shuffle(lst):
-  return random.shuffle(lst)
+  if not lst:
+    return []
+  random.shuffle(lst)
+  return lst
