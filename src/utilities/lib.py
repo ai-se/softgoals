@@ -12,7 +12,13 @@ class O():
   def has(self): return self.__dict__
   def update(self,**d): self.has().update(d); return self
   def __repr__(self)   :
-    show=[':%s %s' % (k,self.has()[k])
+    def _name(val):
+      if isinstance(val, list):
+        return [_name(v) for v in val]
+      if hasattr(val, '__call__'):
+        return val.__name__
+      return val
+    show=[':%s %s' % (k,_name(self.has()[k]))
       for k in sorted(self.has().keys() )
       if k[0] is not "_"]
     txt = ' '.join(show)
@@ -116,3 +122,10 @@ def shuffle(lst):
     return []
   random.shuffle(lst)
   return lst
+
+def printm(matrix):
+  s = [[str(e) for e in row] for row in matrix]
+  lens = [max(map(len, col)) for col in zip(*s)]
+  fmt = ' | '.join('{{:{}}}'.format(x) for x in lens)
+  for row in [fmt.format(*row) for row in s]:
+    print(row)

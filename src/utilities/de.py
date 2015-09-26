@@ -56,6 +56,12 @@ class Statistics(O):
         obj_gens.append(objs)
       sk.rdivDemo(obj_gens)
 
+  def spit_objectives(self):
+    objectives = []
+    for point in self.generations[-1]:
+      objectives.append(point.objectives)
+    return objectives
+
 
 def dominates(obj1, obj2, better=lt):
   at_least = False
