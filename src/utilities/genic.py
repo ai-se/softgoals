@@ -174,7 +174,21 @@ class Genic(O):
     caught=0
     for m,(u0,u,dob,centroid) in enumerate(clusters):
       caught += u0
-      matrix += [[m+1,u0,u,dob] + Genic.round_row(centroid, 2)]
+      matrix += [[m,u0,u,dob] + Genic.round_row(centroid, 2)]
     printm(matrix)
     print("")
     print(self.settings)
+
+  def assign_clusters(self, points):
+    """
+    For each point in points find the
+    nearest cluster and create a map of
+    cluster id and list of points in it
+    :param points: List of points
+    :return: Map of cluster id and points in it.
+    """
+    clusters = {}
+    for point in points:
+      nearest = self.nearest_cluster(point)
+      clusters[nearest] = clusters.get(nearest, []) + [point]
+    return clusters

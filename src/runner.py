@@ -4,6 +4,7 @@ import sys
 sys.path.append(".")
 from models.model import Model
 from utilities.de import DE
+from utilities.plotter import plot_clusters
 
 def test_ome_tree():
   model = Model('../GMRepo/CMA12/bCMS_SR_bCMS_exceptional.ood')
@@ -20,5 +21,9 @@ if __name__ == "__main__":
   g = Genic(k=3)
   g.run(cluster_input)
   g.report()
-
+  clusters = g.assign_clusters(objs)
+  plot_clusters(clusters,
+                fig_name="img/bCMS_SR_bCMS_exceptional",
+                col_names=headers, colors=["red", "blue", "green"],
+                s=50, edgecolors='none')
 

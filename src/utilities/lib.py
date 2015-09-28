@@ -105,10 +105,13 @@ def medianIQR(lst, ordered=False):
 def choice(lst):
   return random.choice(lst)
 
+def sample(lst, k):
+  return random.sample(lst, k)
+
 def rand():
   return random.random()
 
-def seed(val):
+def seed(val=None):
   random.seed(val)
 
 def gt(a, b):
