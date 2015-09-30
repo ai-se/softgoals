@@ -7,11 +7,6 @@ from utilities.de import DE
 from utilities.plotter import plot_clusters
 
 def test_ome_tree():
-  model = Model('../GMRepo/CMA12/bCMS_SR_bCMS_exceptional.ood')
-  print("Roots : " , len(model.roots))
-  model.scores(1000,1)
-
-if __name__ == "__main__":
   from utilities.genic import Genic
   model = Model('../GMRepo/CMA12/bCMS_SR_bCMS_exceptional.ood')
   de = DE(model)
@@ -26,4 +21,9 @@ if __name__ == "__main__":
                 fig_name="img/bCMS_SR_bCMS_exceptional",
                 col_names=headers, colors=["red", "blue", "green"],
                 s=50, edgecolors='none')
+
+
+
+if __name__ == "__main__":
+  test_ome_tree()
 

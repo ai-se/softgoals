@@ -49,12 +49,14 @@ def plot_clusters(clusters, fig_name="temp.png", col_names=None, colors=None, **
   if not colors:
     colors = get_colors(len(clusters.keys()))
   handles=[]
+  cluster_labels = []
   size = 0
   for color, key in zip(colors, clusters.keys()):
     points = np.array(clusters.get(key))
     size += len(points)
     handles.append(plt.scatter(points[:,0], points[:,1], c=color, **settings))
+    cluster_labels.append("cluster "+str(key))
   plt.xlabel(col_names[0])
   plt.ylabel(col_names[1])
-  plt.legend(handles, colors)
+  plt.legend(handles, cluster_labels)
   plt.savefig(fig_name)

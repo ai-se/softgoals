@@ -2,17 +2,17 @@ __author__ = 'george'
 import sys,os
 sys.path.append(os.path.abspath("."))
 from utilities.lib import *
-from parser.OMETree import Parser, Edge
+from parser.OMETree import OMEParser
 
 def coin_toss():
   return random.choice([t, f])
 
 class Model(O):
-  def __init__(self, src):
+  def __init__(self, src, parser=OMEParser):
     O.__init__(self)
     self.src = src
     self.properties = 'properties.json'
-    self._tree = Parser(src)
+    self._tree = parser(src)
     self._tree.parse()
     self._tree.remove_actors()
     self.roots = self._tree.get_roots()
