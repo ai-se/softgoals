@@ -7,3 +7,8 @@
   * Based on the results, we should not be using genic. Moving on to k-means
 * [Runtimes](https://github.com/ai-se/softgoals/blob/master/src/img/runtimes.png) for each model 
 
+## In Progress
+
+* K-means using knee curve.
+* Fully random walks
+* Visio parser
