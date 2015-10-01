@@ -42,6 +42,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 21         | 21        | 1   | 7.14      | 15.71
 2          | 6          | 6         | 2   | 4.5       | 16.17
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_bCMS.png)
+
 
 ### bCMS_SR_bCMS_AuthenticationVariation
 ```
@@ -87,6 +89,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 12         | 12        | 1   | 5.75      | 17.42
 2          | 11         | 11        | 0   | 6.45      | 15.82
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_bCMS_AuthenticationVariation.png)
+
 
 ### bCMS_SR_bCMS_exceptional
 ```
@@ -132,6 +136,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 15         | 15        | 2   | 6.73      | 9.47 
 2          | 15         | 15        | 0   | 8.07      | 9.8  
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_bCMS_exceptional.png)
+
 
 ### bCMS_SR_bCMS_VehicleCommunicationVariant
 ```
@@ -177,6 +183,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 18         | 18        | 1   | 6.28      | 17.44
 2          | 8          | 8         | 2   | 4.75      | 18.13
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_bCMS_VehicleCommunicationVariant.png)
+
 
 ### bCMS_SR_Fireman
 ```
@@ -222,6 +230,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 18         | 18        | 0   | 9.17      | 6.83 
 2          | 12         | 12        | 2   | 10.33     | 5.58 
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_Fireman.png)
+
 
 ### bCMS_SR_GovernmentAgency
 ```
@@ -267,6 +277,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 17         | 17        | 0   | 4.0       | 2.41 
 2          | 10         | 10        | 1   | 3.0       | 2.7  
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_GovernmentAgency.png)
+
 
 ### bCMS_SR_Policeman
 ```
@@ -312,6 +324,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 14         | 14        | 2   | 5.36      | 6.0  
 2          | 10         | 10        | 0   | 3.8       | 5.7  
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_Policeman.png)
+
 
 ### bCMS_SR_Victim
 ```
@@ -356,6 +370,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 15         | 15        | 0   | 7.2       | 4.0  
 2          | 2          | 2         | 2   | 8.0       | 5.0  
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_Victim.png)
+
 
 ### bCMS_SR_Witness
 ```
@@ -401,6 +417,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 15         | 15        | 1   | 5.2       | 4.93 
 2          | 8          | 8         | 2   | 7.25      | 5.0  
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_SR_Witness.png)
+
 
 ### bCMS_StrategicDependency_MultiplicityVariant
 ```
@@ -446,6 +464,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 1          | 1         | 2   | 0         | 6    
 2          | 1          | 1         | 1   | 0         | 6    
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_StrategicDependency_MultiplicityVariant.png)
+
 
 ### bCMS_StrategicDependency_VehiclesVariant
 ```
@@ -491,6 +511,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 1          | 1         | 2   | 0         | 4    
 2          | 1          | 1         | 1   | 0         | 4    
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_StrategicDependency_VehiclesVariant.png)
+
 
 ### bCMS_StrategicDependency_withbCMS
 ```
@@ -536,6 +558,8 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 1          | 1         | 2   | 0         | 6    
 2          | 1          | 1         | 1   | 0         | 6    
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_StrategicDependency_withbCMS.png)
+
 
 ### bCMS_StrategicDependency_withoutbCMS
 ```
@@ -581,3 +605,4 @@ cluster_id | caughtLast | caughtAll | dob | softgoals | goals
 1          | 1          | 1         | 2   | 0         | 4    
 2          | 1          | 1         | 1   | 0         | 4    
 ```
+![1](https://github.com/ai-se/softgoals/blob/master/src/img/bCMS_StrategicDependency_withoutbCMS.png)
