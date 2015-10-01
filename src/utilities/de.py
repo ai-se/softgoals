@@ -3,7 +3,7 @@ import sys
 __author__ = 'george'
 sys.dont_write_bytecode = True
 from lib import *
-import sk
+import time
 
 def default():
   return O(
@@ -24,43 +24,6 @@ def eval_goals(model, decision_map):
 
 def eval_softgoals(model, decision_map):
   return model.evaluate_type(decision_map, node_type="softgoal")
-
-
-class Statistics(O):
-  @staticmethod
-  def default_settings():
-    return O(
-      gen_step = 20
-    )
-  def __init__(self, settings=None):
-    O.__init__(self)
-    self.generations = []
-    if not settings:
-      settings = Statistics.default_settings()
-    self.settings = settings
-
-  def insert(self, pop):
-    self.generations.append(pop)
-    return self
-
-  def tiles(self):
-    num_obs = len(self.generations[0][0].objectives)
-    for i in range(num_obs):
-      obj_gens=[]
-      for gen, pop in enumerate(self.generations):
-        if gen % self.settings.gen_step != 0:
-          continue
-        objs = ["gen"+str(gen)+"_f"+str(i+1)]
-        for point in pop:
-          objs.append(point.objectives[i])
-        obj_gens.append(objs)
-      sk.rdivDemo(obj_gens)
-
-  def spit_objectives(self):
-    objectives = []
-    for point in self.generations[-1]:
-      objectives.append(point.objectives)
-    return objectives
 
 
 def dominates(obj1, obj2, better=lt):
@@ -128,6 +91,10 @@ class DE(O):
     """
     print(self.settings)
     stat = Statistics()
+    start = time.time()
+    if 2**len(self.model.roots) < self.settings.candidates:
+      raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
+                %(self.settings.candidates, len(self.model.roots)))
     population = self.generate(self.settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):
@@ -141,6 +108,7 @@ class DE(O):
           clones.append(mutant)
       population = clones
       stat.insert(population)
+    stat.runtime = time.time() - start
     return stat
 
 

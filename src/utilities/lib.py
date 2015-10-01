@@ -1,5 +1,5 @@
 from __future__ import division, print_function
-import random, json
+import sys, random, json, sk
 
 t = +1
 f = -1
@@ -132,3 +132,45 @@ def printm(matrix):
   fmt = ' | '.join('{{:{}}}'.format(x) for x in lens)
   for row in [fmt.format(*row) for row in s]:
     print(row)
+
+def say(*lst):
+  print(*lst, end="")
+  sys.stdout.flush()
+
+
+class Statistics(O):
+  @staticmethod
+  def default_settings():
+    return O(
+      gen_step = 20
+    )
+  def __init__(self, settings=None):
+    O.__init__(self)
+    self.generations = []
+    self.runtime = 0
+    if not settings:
+      settings = Statistics.default_settings()
+    self.settings = settings
+
+  def insert(self, pop):
+    self.generations.append(pop)
+    return self
+
+  def tiles(self):
+    num_obs = len(self.generations[0][0].objectives)
+    for i in range(num_obs):
+      obj_gens=[]
+      for gen, pop in enumerate(self.generations):
+        if gen % self.settings.gen_step != 0:
+          continue
+        objs = ["gen"+str(gen)+"_f"+str(i+1)]
+        for point in pop:
+          objs.append(point.objectives[i])
+        obj_gens.append(objs)
+      sk.rdivDemo(obj_gens)
+
+  def spit_objectives(self):
+    objectives = []
+    for point in self.generations[-1]:
+      objectives.append(point.objectives)
+    return objectives

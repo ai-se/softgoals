@@ -60,3 +60,23 @@ def plot_clusters(clusters, fig_name="temp.png", col_names=None, colors=None, **
   plt.ylabel(col_names[1])
   plt.legend(handles, cluster_labels)
   plt.savefig(fig_name)
+  plt.clf()
+
+def bar_plot(vals, fig_name="temp.png", label=None, **settings):
+  ind = np.arange(len(vals.keys()))
+  width = 0.35
+  fig = plt.figure()
+  fig.subplots_adjust(left=0.35)
+  ax = fig.add_subplot(111)
+  ax.barh(ind, vals.values(), width, color='r')
+  if not label:
+    label = "Time (in seconds)"
+  ax.set_xlabel(label)
+  ax.set_ylabel("Models")
+  ax.set_yticks(ind)
+  ax.set_yticklabels(vals.keys())
+  # We change the fontsize of minor ticks label
+  ax.tick_params(axis='both', which='major', labelsize=8)
+  ax.tick_params(axis='both', which='minor', labelsize=7)
+  plt.savefig(fig_name)
+  plt.clf()

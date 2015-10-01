@@ -175,9 +175,9 @@ class Genic(O):
     for m,(u0,u,dob,centroid) in enumerate(clusters):
       caught += u0
       matrix += [[m,u0,u,dob] + Genic.round_row(centroid, 2)]
-    printm(matrix)
+    print("Cluster Settings: ", self.settings)
     print("")
-    print(self.settings)
+    printm(matrix)
 
   def assign_clusters(self, points):
     """

@@ -31,3 +31,11 @@ class VisioParser(Parser):
     """
     for key, val in ns.iteritems():
       ET.register_namespace(key, val)
+
+  def parse(self):
+    """
+    Parse xml tree for the file
+    """
+    tree = ET.parse(self.src)
+    model = tree.getroot()
+    print(model)
