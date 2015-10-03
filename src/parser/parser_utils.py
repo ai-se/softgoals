@@ -1,6 +1,6 @@
 from __future__ import print_function, division
 __author__ = 'george'
-import sys, os
+import os
 from utilities.lib import *
 
 
@@ -148,8 +148,8 @@ class Parser(O):
     :return:
     """
     if not self.nodes:
-      self.nodes = set()
-    self.nodes.add(node)
+      self.nodes = list()
+    self.nodes.append(node)
 
   def add_edge(self, edge):
     """
@@ -158,8 +158,8 @@ class Parser(O):
     :return:
     """
     if not self.edges:
-      self.edges = set()
-    self.edges.add(edge)
+      self.edges = list()
+    self.edges.append(edge)
 
   def get_edge(self, edge_id):
     for edge in self.edges:
@@ -196,6 +196,9 @@ class Parser(O):
       if not node.to_edges:
         nodes.append(node)
     return nodes
+
+  def get_nodes_covered(self):
+    return [node for node in self.get_nodes() if node.value]
 
   def get_nodes(self, node_type=None):
     """

@@ -13,7 +13,8 @@ def default():
     cr = 0.3,
     seed = 1,
     better = gt,
-    obj_funcs = [eval_softgoals, eval_goals, eval_coverage]
+    obj_funcs = [eval_softgoals, eval_goals, eval_coverage],
+    evaluation = Point.evaluate_random
   )
 
 def eval_roots(model):
@@ -26,7 +27,7 @@ def eval_softgoals(model):
   return model.evaluate_type(node_type="softgoal")
 
 def eval_coverage(model):
-  return len(model.get_nodes_covered())
+  return len(model._tree.get_nodes_covered())
 
 
 def dominates(obj1, obj2, better=lt):
@@ -56,11 +57,22 @@ class Point(O):
   def __eq__(self, other):
     return cmp(self.decisions, other.decisions) == 0
 
-  def evaluate(self, model, obj_funcs):
-    if not self.objectives:
-      model.reset_nodes(self.decisions)
-      self.objectives = [func(model) for func in obj_funcs]
-    return self.objectives
+  @staticmethod
+  def evaluate(point, model, obj_funcs):
+    if not point.objectives:
+      model.reset_nodes(point.decisions)
+      point.objectives = [func(model) for func in obj_funcs]
+    return point.objectives
+
+  @staticmethod
+  def evaluate_random(point, model, obj_funcs):
+    if point.objectives:
+      return point.objectives
+    model.reset_nodes(point.decisions)
+    model.evaluate_random()
+    point.objectives = [func(model) for func in obj_funcs]
+    return point.objectives
+
 
   @staticmethod
   def trim(val):
@@ -92,21 +104,22 @@ class DE(O):
     Runner function to run differential evolution
     :return: Optimal population
     """
-    print(self.settings)
+    settings = self.settings
+    print(settings)
     stat = Statistics()
     start = time.time()
-    if 2**len(self.model.roots) < self.settings.candidates:
+    if 2**len(self.model.roots) < settings.candidates:
       raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
-                %(self.settings.candidates, len(self.model.roots)))
-    population = self.generate(self.settings.candidates)
+                %(settings.candidates, len(self.model.roots)))
+    population = self.generate(settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):
       clones = population[:]
       for point in population:
-        original_obj = point.evaluate(self.model, self.settings.obj_funcs)
+        original_obj = settings.evaluation(point, self.model, settings.obj_funcs)
         mutant = self.mutate(point, population)
-        mutated_obj = mutant.evaluate(self.model, self.settings.obj_funcs)
-        if dominates(mutated_obj, original_obj, better=self.settings.better) and (not mutant in clones):
+        mutated_obj = settings.evaluation(mutant, self.model, settings.obj_funcs)
+        if dominates(mutated_obj, original_obj, better=settings.better) and (not mutant in clones):
           clones.remove(point)
           clones.append(mutant)
       population = clones

@@ -19,13 +19,6 @@ class Model(O):
     self.recursions = 0
     self.chain = set()
 
-
-  def get_nodes(self):
-    return self._tree.nodes
-
-  def get_nodes_covered(self):
-    return [node for node in self.get_nodes() if node.value]
-
   def generate(self):
     point_map = {}
     for node in self.roots:
@@ -57,17 +50,32 @@ class Model(O):
         count += 1
     return count
 
-  def  scores(self, n=1000, seed=None):
+  def evaluate_random(self):
+    def check_status():
+      for node in self._tree.nodes:
+        if node.type in ["goal", "softgoal"] and (not node.value):
+          return False
+      return True
+    #while not check_status():
+    for _ in range(len(self._tree.nodes)/2):
+      self.chain = set()
+      self.eval(choice(self._tree.nodes))
+
+  def eval_node(self, node):
+    self.chain=set()
+    self.eval(node)
+
+  def scores(self, n=1000, seed_val=None):
     """
     Evaluate the graph n times and
     return the average value
     :param n: Number of evals
-    :param seed: Random seed to be set
+    :param seed_val: Random seed to be set
     :return: The average score
     """
     from utilities.sk import rdivDemo
-    if not seed is None:
-      random.seed(seed)
+    if not seed_val is None:
+      seed(seed_val)
 
     final = []
     for _ in xrange(n):

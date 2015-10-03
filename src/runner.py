@@ -18,6 +18,7 @@ def process_OOD(file_name):
   objs = stat.spit_objectives()
   headers = [obj.__name__.split("_")[-1] for obj in de.settings.obj_funcs]
   cluster_input = [headers] + objs
+  print("")
   g = Genic(k=3)
   g.run(cluster_input)
   g.report()
@@ -49,24 +50,24 @@ def test_visio_tree():
   #process_Visio('../GMRepo/CMA12/bCMS_SR_CommunicationCompromiser.ood')
 
 if __name__ == "__main__":
-  # directory = '../GMRepo/CMA12'
-  # times = {}
-  # for file_name in os.listdir(directory):
-  #   if file_name.endswith(".ood"):
-  #     file_name = directory + "/" + file_name
-  #     name = os.path.basename(file_name).split(".")[0]
-  #     try:
-  #       times[name] = process_OOD(file_name)
-  #     except RuntimeError as e:
-  #       if e[0] == 500:
-  #         print(file_name)
-  #         print(e[1])
-  #         print("```")
-  #       else:
-  #         raise Exception()
-  #     print("")
-  # x=times
-  # bar_plot(x, 'img/runtimes.png')
-  test_ome_tree()
+  directory = '../GMRepo/CMA12'
+  times = {}
+  for file_name in os.listdir(directory):
+    if file_name.endswith(".ood"):
+      file_name = directory + "/" + file_name
+      name = os.path.basename(file_name).split(".")[0]
+      try:
+        times[name] = process_OOD(file_name)
+      except RuntimeError as e:
+        if e[0] == 500:
+          print(file_name)
+          print(e[1])
+          print("```")
+        else:
+          raise Exception()
+      print("")
+  x=times
+  bar_plot(x, 'img/runtimes.png')
+  #test_ome_tree()
   #test_visio_tree()
 
