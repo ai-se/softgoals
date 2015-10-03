@@ -13,17 +13,20 @@ def default():
     cr = 0.3,
     seed = 1,
     better = gt,
-    obj_funcs = [eval_softgoals, eval_goals]
+    obj_funcs = [eval_softgoals, eval_goals, eval_coverage]
   )
 
-def eval_roots(model, decision_map):
-  return model.evaluate_score(decision_map)
+def eval_roots(model):
+  return model.evaluate_score()
 
-def eval_goals(model, decision_map):
-  return model.evaluate_type(decision_map, node_type="goal")
+def eval_goals(model):
+  return model.evaluate_type(node_type="goal")
 
-def eval_softgoals(model, decision_map):
-  return model.evaluate_type(decision_map, node_type="softgoal")
+def eval_softgoals(model):
+  return model.evaluate_type(node_type="softgoal")
+
+def eval_coverage(model):
+  return len(model.get_nodes_covered())
 
 
 def dominates(obj1, obj2, better=lt):
@@ -55,8 +58,8 @@ class Point(O):
 
   def evaluate(self, model, obj_funcs):
     if not self.objectives:
-      self.objectives = [func(model, self.decisions) for func in obj_funcs]
-      #self.objectives = [model.evaluate(self.decisions)]
+      model.reset_nodes(self.decisions)
+      self.objectives = [func(model) for func in obj_funcs]
     return self.objectives
 
   @staticmethod

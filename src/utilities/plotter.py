@@ -42,7 +42,7 @@ def plot_clusters(clusters, fig_name="temp.png", col_names=None, colors=None, **
   :return:
   """
   if len(clusters.values()[0][0]) != 2:
-    raise Exception("Only 2 dimensional points supported")
+    raise RuntimeError(500, "Only 2 dimensional points supported")
   seed()
   if not col_names:
     col_names = ["Obj 1", "Obj 2"]

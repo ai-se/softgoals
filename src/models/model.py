@@ -20,6 +20,12 @@ class Model(O):
     self.chain = set()
 
 
+  def get_nodes(self):
+    return self._tree.nodes
+
+  def get_nodes_covered(self):
+    return [node for node in self.get_nodes() if node.value]
+
   def generate(self):
     point_map = {}
     for node in self.roots:
@@ -30,6 +36,12 @@ class Model(O):
     for node in self._tree.nodes:
       node.value = None
 
+  def reset_nodes(self, initial_node_map):
+    self.clear_nodes()
+    for key in initial_node_map.keys():
+      node = self._tree.get_node(key)
+      node.value = initial_node_map[key]
+
   def evaluate_score(self, initial_node_map):
     self.clear_nodes()
     for key in initial_node_map.keys():
@@ -37,11 +49,7 @@ class Model(O):
       node.value = initial_node_map[key]
     return self.score()
 
-  def evaluate_type(self, initial_node_map, node_type):
-    self.clear_nodes()
-    for key in initial_node_map.keys():
-      node = self._tree.get_node(key)
-      node.value = initial_node_map[key]
+  def evaluate_type(self, node_type):
     count = 0
     for node in self._tree.get_nodes(node_type=node_type):
       self.chain = set()

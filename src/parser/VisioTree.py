@@ -4,7 +4,9 @@ from parser_utils import *
 __author__ = 'george'
 
 def default_ns():
-  return {}
+  return {
+    'model' : 'http://schemas.microsoft.com/visio/2003/core'
+  }
 
 
 class VisioParser(Parser):
@@ -38,4 +40,7 @@ class VisioParser(Parser):
     """
     tree = ET.parse(self.src)
     model = tree.getroot()
-    print(model)
+    for pages in model.findall('model:Pages', self.ns):
+      for page in pages.findall('model:Page', self.ns):
+        for element in page.find('./'):
+          print(element)
