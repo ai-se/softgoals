@@ -117,7 +117,7 @@ class Model(O):
 
 
   def eval(self, node):
-    if not node.value is None:
+    if not (node.value is None):
       return node.value
     if node.id in self.chain:
       node.value = coin_toss()
@@ -137,7 +137,8 @@ class Model(O):
 
 
       if not rest:
-        return self.eval_and(dep_nodes)
+        node.value = self.eval_and(dep_nodes)
+        return node.value
 
       # Evaluate the rest. We assume the rest are of same kind
       edge_type = rest[0].type

@@ -64,6 +64,7 @@ if __name__ == "__main__":
           print(e[1])
           print("```")
         else:
+          print(e)
           raise Exception()
       print("")
   x=times

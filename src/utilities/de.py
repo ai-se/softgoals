@@ -5,6 +5,8 @@ sys.dont_write_bytecode = True
 from lib import *
 import time
 
+MIN_FRONTIER_SIZE=10
+
 def default():
   return O(
     gens = 100,
@@ -87,9 +89,13 @@ class DE(O):
     O.__init__(self)
     self.model = model
     if not settings:
-      settings = default()
+      settings = default().update(candidates=self.assign_frontier_size())
     self.settings = settings
     seed(self.settings.seed)
+
+  def assign_frontier_size(self):
+    num_decs = len(self.model.generate().keys())
+    return min(int(2**num_decs/3), default().candidates)
 
   def generate(self, size):
     population = list()
@@ -108,7 +114,7 @@ class DE(O):
     print(settings)
     stat = Statistics()
     start = time.time()
-    if 2**len(self.model.roots) < settings.candidates:
+    if settings.candidates < MIN_FRONTIER_SIZE:
       raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
                 %(settings.candidates, len(self.model.roots)))
     population = self.generate(settings.candidates)
