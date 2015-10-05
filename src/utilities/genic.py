@@ -3,7 +3,6 @@ Genic is a clusterer that allows you to stream data and then cluster it
 """
 from __future__ import print_function, division
 __author__ = 'george'
-import sys
 from lib import *
 
 class Genic(O):

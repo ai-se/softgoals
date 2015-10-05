@@ -9,7 +9,7 @@
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.67361903191
+Time Taken :  1.53201985359
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -38,21 +38,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    4900  ,   100 (               | ------*      ),48.00, 49.00, 49.00, 50.00, 50.00
    2 ,    gen100_f3 ,    4900  ,   100 (               | ------*      ),48.00, 49.00, 49.00, 50.00, 50.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 22         | 22        | 1   | 6.77      | 13.5  | 49.77   
-1          | 16         | 16        | 0   | 5.56      | 15.38 | 49.31   
-2          | 12         | 12        | 2   | 7.67      | 13.33 | 48.17   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_bCMS.png)
 
 ### bCMS_SR_bCMS_AuthenticationVariation
 ```
@@ -65,7 +52,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  2.21618485451
+Time Taken :  1.92508387566
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -94,21 +81,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    5600  ,   200 (               |        *  -- ),55.00, 55.00, 56.00, 57.00, 58.00
    2 ,    gen100_f3 ,    5600  ,   200 (               |        *  -- ),55.00, 55.00, 56.00, 57.00, 58.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 20         | 20        | 0   | 5.65      | 13.8  | 56.95   
-1          | 15         | 15        | 2   | 5.67      | 16.6  | 55.2    
-2          | 15         | 15        | 1   | 7.53      | 13.87 | 55.53   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_bCMS_AuthenticationVariation.png)
 
 ### bCMS_SR_bCMS_exceptional
 ```
@@ -121,7 +95,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.62503814697
+Time Taken :  1.45492005348
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -150,21 +124,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    4100  ,   100 (               |       *      ),41.00, 41.00, 41.00, 42.00, 42.00
    2 ,    gen100_f3 ,    4100  ,   100 (               |       *      ),41.00, 41.00, 41.00, 42.00, 42.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 21         | 21        | 1   | 6.29      | 11.05 | 40.76   
-1          | 17         | 17        | 2   | 5.76      | 9.94  | 41.88   
-2          | 12         | 12        | 0   | 6.5       | 7.08  | 41.75   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_bCMS_exceptional.png)
 
 ### bCMS_SR_bCMS_VehicleCommunicationVariant
 ```
@@ -177,7 +138,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  3.63954496384
+Time Taken :  1.92318201065
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -206,21 +167,8 @@ rank ,         name ,    med   ,  iqr
    3 ,     gen80_f3 ,    5800  ,   100 (               |   ----   *-- ),56.00, 57.00, 58.00, 58.00, 59.00
    3 ,    gen100_f3 ,    5800  ,   100 (               |          *-- ),57.00, 57.00, 58.00, 58.00, 59.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 21         | 21        | 0   | 7.24      | 14.24 | 57.95   
-1          | 20         | 20        | 2   | 5.55      | 15.45 | 57.0    
-2          | 9          | 9         | 1   | 4.78      | 12.56 | 58.78   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_bCMS_VehicleCommunicationVariant.png)
 
 ### bCMS_SR_CommunicationCompromiser
 ```
@@ -233,7 +181,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.107675075531
+Time Taken :  0.0934879779816
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -262,21 +210,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    1300  ,     0 (               |   *--------- ),13.00, 13.00, 13.00, 13.00, 14.00
    2 ,    gen100_f3 ,    1300  ,     0 (               |   *--------- ),13.00, 13.00, 13.00, 13.00, 14.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 6          | 6         | 0   | 1.0       | 2.0   | 12.83   
-1          | 3          | 3         | 1   | 1.0       | 0.33  | 13.67   
-2          | 1          | 1         | 2   | 0         | 2     | 13      
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_CommunicationCompromiser.png)
 
 ### bCMS_SR_Fireman
 ```
@@ -289,7 +224,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.75738406181
+Time Taken :  1.52555298805
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -318,21 +253,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    3900  ,   200 (            ---|-----*        ),37.00, 39.00, 39.00, 40.00, 40.00
    2 ,    gen100_f3 ,    3900  ,   100 (            ---|-----*        ),37.00, 39.00, 39.00, 40.00, 40.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 27         | 27        | 2   | 8.19      | 6.0   | 39.22   
-1          | 18         | 18        | 0   | 6.22      | 7.44  | 39.5    
-2          | 5          | 5         | 1   | 8.6       | 7.4   | 36.8    
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_Fireman.png)
 
 ### bCMS_SR_FSC
 ```
@@ -345,7 +267,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.194209814072
+Time Taken :  0.166095972061
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -374,21 +296,8 @@ rank ,         name ,    med   ,  iqr
    1 ,     gen80_f3 ,    2600  ,   100 (               |      -------*),25.00, 26.00, 26.00, 26.00, 26.00
    1 ,    gen100_f3 ,    2600  ,   100 (               |      -------*),25.00, 26.00, 26.00, 26.00, 26.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 4          | 4         | 0   | 4.5       | 4.25  | 26.0    
-1          | 3          | 3         | 2   | 4.0       | 5.67  | 25.0    
-2          | 3          | 3         | 1   | 5.0       | 5.33  | 26.0    
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_FSC.png)
 
 ### bCMS_SR_GovernmentAgency
 ```
@@ -401,7 +310,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.360116958618
+Time Taken :  0.31560087204
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -430,21 +339,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    1500  ,   100 (               |      *------ ),14.00, 14.00, 15.00, 15.00, 16.00
    2 ,    gen100_f3 ,    1500  ,   100 (               |      *------ ),14.00, 14.00, 15.00, 15.00, 16.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 21         | 21        | 2   | 2.48      | 2.81  | 15.0    
-1          | 11         | 11        | 0   | 3.91      | 2.45  | 14.0    
-2          | 10         | 10        | 1   | 3.2       | 1.3   | 14.9    
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_GovernmentAgency.png)
 
 ### bCMS_SR_Policeman
 ```
@@ -457,7 +353,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.858726978302
+Time Taken :  0.745082139969
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -486,21 +382,8 @@ rank ,         name ,    med   ,  iqr
    3 ,     gen80_f3 ,    2500  ,   100 (               | ----    *--- ),23.00, 24.00, 25.00, 25.00, 26.00
    3 ,    gen100_f3 ,    2500  ,   100 (               | --------*--- ),23.00, 25.00, 25.00, 25.00, 26.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 36         | 36        | 2   | 3.92      | 4.5   | 25.25   
-1          | 9          | 9         | 1   | 4.89      | 4.89  | 22.56   
-2          | 5          | 5         | 0   | 3.6       | 6.0   | 25.0    
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_Policeman.png)
 
 ### bCMS_SR_PSC
 ```
@@ -513,7 +396,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.293285131454
+Time Taken :  0.164933919907
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -542,21 +425,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    2500  ,   100 (               |             *),25.00, 25.00, 26.00, 26.00, 26.00
    2 ,    gen100_f3 ,    2500  ,   100 (               |             *),25.00, 25.00, 26.00, 26.00, 26.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 4          | 4         | 2   | 5.5       | 3.75  | 26.0    
-1          | 3          | 3         | 1   | 6.0       | 5.67  | 25.0    
-2          | 3          | 3         | 0   | 5.0       | 5.0   | 25.33   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_PSC.png)
 
 ### bCMS_SR_Victim
 ```
@@ -569,7 +439,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.43477296829
+Time Taken :  1.07897782326
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -598,21 +468,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    3100  ,   200 (         ------|---    *      ),27.00, 30.00, 31.00, 32.00, 32.00
    2 ,    gen100_f3 ,    3100  ,   200 (         ------|-------*      ),27.00, 31.00, 31.00, 32.00, 32.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 21         | 21        | 0   | 6.38      | 3.71  | 29.48   
-1          | 15         | 15        | 1   | 4.2       | 4.2   | 31.8    
-2          | 14         | 14        | 2   | 5.79      | 5.21  | 30.71   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_Victim.png)
 
 ### bCMS_SR_Witness
 ```
@@ -625,7 +482,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.903892993927
+Time Taken :  0.784739971161
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -654,21 +511,8 @@ rank ,         name ,    med   ,  iqr
    2 ,     gen80_f3 ,    2600  ,   100 (               |        *     ),26.00, 26.00, 26.00, 27.00, 27.00
    2 ,    gen100_f3 ,    2600  ,   100 (               |        *     ),26.00, 26.00, 26.00, 27.00, 27.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 25         | 25        | 2   | 5.56      | 3.92  | 26.04   
-1          | 18         | 18        | 1   | 5.33      | 2.89  | 26.78   
-2          | 7          | 7         | 0   | 4.14      | 5.0   | 26.43   
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_SR_Witness.png)
 
 ### bCMS_StrategicDependency_MultiplicityVariant
 ```
@@ -681,7 +525,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.901202917099
+Time Taken :  0.610211133957
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -710,21 +554,8 @@ rank ,         name ,    med   ,  iqr
    1 ,     gen80_f3 ,    3100  ,     0 (*              |              ),31.00, 31.00, 31.00, 31.00, 31.00
    1 ,    gen100_f3 ,    3100  ,     0 (*              |              ),31.00, 31.00, 31.00, 31.00, 31.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 48         | 48        | 0   | 0.0       | 6.0   | 31.0    
-1          | 1          | 1         | 2   | 0         | 6     | 31      
-2          | 1          | 1         | 1   | 0         | 6     | 31      
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_StrategicDependency_MultiplicityVariant.png)
 
 ### bCMS_StrategicDependency_VehiclesVariant
 ```
@@ -737,7 +568,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.753015995026
+Time Taken :  0.5701379776
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -766,21 +597,8 @@ rank ,         name ,    med   ,  iqr
    1 ,     gen80_f3 ,    3000  ,     0 (*              |              ),30.00, 30.00, 30.00, 30.00, 30.00
    1 ,    gen100_f3 ,    3000  ,     0 (*              |              ),30.00, 30.00, 30.00, 30.00, 30.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 48         | 48        | 0   | 0.0       | 4.0   | 30.0    
-1          | 1          | 1         | 2   | 0         | 4     | 30      
-2          | 1          | 1         | 1   | 0         | 4     | 30      
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_StrategicDependency_VehiclesVariant.png)
 
 ### bCMS_StrategicDependency_withbCMS
 ```
@@ -793,7 +611,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.684285879135
+Time Taken :  0.610255002975
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -822,21 +640,8 @@ rank ,         name ,    med   ,  iqr
    1 ,     gen80_f3 ,    3100  ,     0 (*              |              ),31.00, 31.00, 31.00, 31.00, 31.00
    1 ,    gen100_f3 ,    3100  ,     0 (*              |              ),31.00, 31.00, 31.00, 31.00, 31.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 48         | 48        | 0   | 0.0       | 6.0   | 31.0    
-1          | 1          | 1         | 2   | 0         | 6     | 31      
-2          | 1          | 1         | 1   | 0         | 6     | 31      
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_StrategicDependency_withbCMS.png)
 
 ### bCMS_StrategicDependency_withoutbCMS
 ```
@@ -849,7 +654,7 @@ Only 2 dimensional points supported
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.514832019806
+Time Taken :  0.477564096451
 
 rank ,         name ,    med   ,  iqr 
 ----------------------------------------------------
@@ -878,19 +683,6 @@ rank ,         name ,    med   ,  iqr
    1 ,     gen80_f3 ,    2500  ,     0 (*              |              ),25.00, 25.00, 25.00, 25.00, 25.00
    1 ,    gen100_f3 ,    2500  ,     0 (*              |              ),25.00, 25.00, 25.00, 25.00, 25.00
 
-Cluster Settings:  {	:buffer 500
- 	:era 1000
- 	:k 3
- 	:prune_size 10
- 	:seed 1
- 	:src array
- 	:verbose True
-}
-
-cluster_id | caughtLast | caughtAll | dob | softgoals | goals | coverage
-0          | 48         | 48        | 0   | 0.0       | 4.0   | 25.0    
-1          | 1          | 1         | 2   | 0         | 4     | 25      
-2          | 1          | 1         | 1   | 0         | 4     | 25      
-Only 2 dimensional points supported
 ```
+![1](img/bCMS_StrategicDependency_withoutbCMS.png)
 

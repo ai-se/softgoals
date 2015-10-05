@@ -4,6 +4,7 @@ from StdSuites.Type_Names_Suite import point
 __author__ = 'george'
 
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 from lib import *
 
@@ -41,7 +42,9 @@ def plot_clusters(clusters, fig_name="temp.png", col_names=None, colors=None, **
   :param clusters: Key value pair of cluster_id and points in them
   :return:
   """
-  if len(clusters.values()[0][0]) != 2:
+  if len(clusters.values()[0][0]) == 3:
+    return plot_3d_clusters(clusters, fig_name, col_names, colors)
+  elif len(clusters.values()[0][0]) != 2:
     raise RuntimeError(500, "Only 2 dimensional points supported")
   seed()
   if not col_names:
@@ -58,6 +61,43 @@ def plot_clusters(clusters, fig_name="temp.png", col_names=None, colors=None, **
     cluster_labels.append("cluster "+str(key))
   plt.xlabel(col_names[0])
   plt.ylabel(col_names[1])
+  plt.legend(handles, cluster_labels)
+  plt.savefig(fig_name)
+  plt.clf()
+
+def plot_3d_clusters(clusters, fig_name = "temp.png", col_names=None, colors=None, **settings):
+  mins = [10**32]*3
+  maxs = [-10**32]*3
+  def update_limits(pts):
+    for i, (less, more) in enumerate(zip(mins, maxs)):
+      if min(pts[:,i]) < less : mins[i] = min(pts[:,i])
+      if max(pts[:,i]) > more : maxs[i] = max(pts[:,i])
+
+  seed()
+  if not col_names:
+    col_names = ["Obj 1", "Obj 2", "Obj 3"]
+  if not colors:
+    colors = get_colors(len(clusters.keys()))
+  handles=[]
+  cluster_labels = []
+  fig = plt.figure()
+  ax = fig.add_subplot(111, projection="3d")
+  for color, key in zip(colors, clusters.keys()):
+    points = np.array(clusters.get(key))
+    update_limits(points)
+    handles.append(
+      ax.scatter(points[:,0],
+                  points[:,1],
+                  zs = points[:,2],
+                  c=color,
+                  **settings))
+    cluster_labels.append("cluster "+str(key))
+  ax.set_xlabel(col_names[0])
+  ax.set_ylabel(col_names[1])
+  ax.set_zlabel(col_names[2])
+  ax.set_xlim3d(mins[0]-1, maxs[0]+1)
+  ax.set_ylim3d(mins[1]-1, maxs[1]+1)
+  ax.set_zlim3d(mins[2]-1, maxs[2]+1)
   plt.legend(handles, cluster_labels)
   plt.savefig(fig_name)
   plt.clf()

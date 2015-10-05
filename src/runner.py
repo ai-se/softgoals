@@ -5,6 +5,7 @@ from models.model import Model
 from utilities.de import DE
 from utilities.plotter import plot_clusters, bar_plot
 from utilities.genic import Genic
+from utilities.kmeans import KMeans
 
 def process_OOD(file_name):
   name = os.path.basename(file_name).split(".")[0]
@@ -19,22 +20,31 @@ def process_OOD(file_name):
   headers = [obj.__name__.split("_")[-1] for obj in de.settings.obj_funcs]
   cluster_input = [headers] + objs
   print("")
-  g = Genic(k=3)
-  g.run(cluster_input)
-  g.report()
-  clusters = g.assign_clusters(objs)
-  try:
-    plot_clusters(clusters,
+  g = KMeans(k=2)
+  clusters = g.run(cluster_input)
+  plot_clusters(clusters,
                 fig_name="img/"+name,
                 col_names=headers, colors=["red", "blue", "green"],
                 s=50, edgecolors='none')
-  except RuntimeError as e:
-    if e[0] == 500:
-      print(e[1])
-    else:
-      raise Exception(e)
   print("```")
+  print("![1](img/%s.png)"%name)
   return stat.runtime
+  # g = Genic(k=3)
+  # g.run(cluster_input)
+  # g.report()
+  # clusters = g.assign_clusters(objs)
+  # try:
+  #   plot_clusters(clusters,
+  #               fig_name="img/"+name,
+  #               col_names=headers, colors=["red", "blue", "green"],
+  #               s=50, edgecolors='none')
+  # except RuntimeError as e:
+  #   if e[0] == 500:
+  #     print(e[1])
+  #   else:
+  #     raise Exception(e)
+  # print("```")
+  # return stat.runtime
 
 
 def process_Visio(file_name):
@@ -67,8 +77,7 @@ if __name__ == "__main__":
           print(e)
           raise Exception()
       print("")
-  x=times
-  bar_plot(x, 'img/runtimes.png')
+  bar_plot(times, 'img/random_runtimes.png')
   #test_ome_tree()
   #test_visio_tree()
 
