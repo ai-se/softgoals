@@ -27,7 +27,7 @@ def process_OOD(file_name):
                 col_names=headers, colors=["red", "blue", "green"],
                 s=50, edgecolors='none')
   print("```")
-  print("![1](img/%s.png)"%name)
+  print("![1](../../src/img/%s.png)"%name)
   return stat.runtime
   # g = Genic(k=3)
   # g.run(cluster_input)
