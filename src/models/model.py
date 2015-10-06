@@ -49,7 +49,10 @@ class Model(O):
       self.chain = set()
       if self.eval(node) == t:
         count += 1
-    return count
+    if is_percent:
+      return percent(count, len(nodes))
+    else:
+      return count
 
   def evaluate_random(self):
     def check_status():

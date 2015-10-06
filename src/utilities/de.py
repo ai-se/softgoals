@@ -16,20 +16,25 @@ def default():
     seed = 1,
     better = gt,
     obj_funcs = [eval_softgoals, eval_goals, eval_coverage],
-    evaluation = Point.evaluate_random
+    evaluation = Point.evaluate_random,
+    is_percent = True
   )
 
 def eval_roots(model):
   return model.evaluate_score()
 
 def eval_goals(model):
-  return model.evaluate_type(node_type="goal")
+  return model.evaluate_type(node_type="goal", is_percent=default().is_percent)
 
 def eval_softgoals(model):
-  return model.evaluate_type(node_type="softgoal")
+  return model.evaluate_type(node_type="softgoal", is_percent=default().is_percent)
 
 def eval_coverage(model):
-  return len(model._tree.get_nodes_covered())
+  covered = len(model._tree.get_nodes_covered())
+  if default().is_percent:
+    return percent(covered, len(model._tree.get_nodes()))
+  else:
+    return len(model._tree.get_nodes_covered())
 
 
 def dominates(obj1, obj2, better=lt):

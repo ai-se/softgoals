@@ -137,6 +137,10 @@ def say(*lst):
   print(*lst, end="")
   sys.stdout.flush()
 
+def percent(num, den):
+  if den==0:
+    return 0
+  return round(num*100/den, 2)
 
 class Statistics(O):
   @staticmethod
