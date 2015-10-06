@@ -42,9 +42,10 @@ class Model(O):
       node.value = initial_node_map[key]
     return self.score()
 
-  def evaluate_type(self, node_type):
+  def evaluate_type(self, node_type, is_percent=False):
     count = 0
-    for node in self._tree.get_nodes(node_type=node_type):
+    nodes = self._tree.get_nodes(node_type=node_type)
+    for node in nodes:
       self.chain = set()
       if self.eval(node) == t:
         count += 1
