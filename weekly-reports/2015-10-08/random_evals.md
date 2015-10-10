@@ -10,7 +10,7 @@
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.75601196289
+Time Taken :  2.0183339119
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -54,7 +54,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  2.16969299316
+Time Taken :  2.63561201096
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -98,7 +98,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.69079494476
+Time Taken :  2.03779697418
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -142,7 +142,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  2.16243982315
+Time Taken :  2.60298490524
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -186,7 +186,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.112910985947
+Time Taken :  0.135340929031
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -230,7 +230,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.6992790699
+Time Taken :  2.15216207504
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -274,7 +274,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.194487094879
+Time Taken :  0.235769987106
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -318,7 +318,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.410051107407
+Time Taken :  0.471007108688
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -362,7 +362,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.877591848373
+Time Taken :  1.13415002823
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -406,7 +406,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.192464113235
+Time Taken :  0.216145038605
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -450,7 +450,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  1.25536799431
+Time Taken :  1.51840615273
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -494,7 +494,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.91086101532
+Time Taken :  1.12047410011
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -538,7 +538,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.730086088181
+Time Taken :  0.909363985062
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -582,7 +582,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.694154977798
+Time Taken :  0.840830087662
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -626,7 +626,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.725508928299
+Time Taken :  0.890400886536
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -670,7 +670,7 @@ rank ,         name ,    med   ,   iqr
  	:obj_funcs ['eval_softgoals', 'eval_goals', 'eval_coverage']
  	:seed 1
 }
-Time Taken :  0.583299875259
+Time Taken :  0.727941989899
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------

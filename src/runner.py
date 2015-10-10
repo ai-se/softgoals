@@ -6,6 +6,7 @@ from utilities.de import DE
 from utilities.plotter import plot_clusters, bar_plot
 from utilities.genic import Genic
 from utilities.kmeans import KMeans
+from utilities.dbscan import DBSCAN
 
 def process_OOD(file_name):
   name = os.path.basename(file_name).split(".")[0]
@@ -20,11 +21,12 @@ def process_OOD(file_name):
   headers = [obj.__name__.split("_")[-1] for obj in de.settings.obj_funcs]
   cluster_input = [headers] + objs
   print("")
+  #g = DBSCAN(eps=0.1, min_pts=2)
   g = KMeans(k=2)
   clusters = g.run(cluster_input)
   plot_clusters(clusters,
                 fig_name="img/"+name,
-                col_names=headers, colors=["red", "blue", "green"],
+                col_names=headers,
                 s=50, edgecolors='none')
   print("```")
   print("![1](../../src/img/%s.png)"%name)
