@@ -1,5 +1,6 @@
 from __future__ import division, print_function
 import sys, random, json, sk
+from prettytable import PrettyTable
 
 t = +1
 f = -1
@@ -183,3 +184,14 @@ class Statistics(O):
     for point in self.generations[-1]:
       objectives.append(point.objectives)
     return objectives
+
+  def tabulate(self, columns, pt):
+    tab = PrettyTable(columns)
+    tab.align["name"] = "l"
+    nodes = pt.get_nodes()
+    for node in nodes:
+      row = []
+      for key in columns:
+        row.append(node.has()[key])
+      tab.add_row(row)
+    print(tab)

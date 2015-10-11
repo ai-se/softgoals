@@ -59,6 +59,9 @@ class Point(O):
     self.objectives = objectives
     self._nodes = None
 
+  def get_nodes(self):
+    return self._nodes
+
   def get_randomness(self):
     count = 0
     for node in self._nodes:
