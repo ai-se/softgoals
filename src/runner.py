@@ -31,22 +31,6 @@ def process_OOD(file_name):
   print("```")
   print("![1](../../src/img/%s.png)"%name)
   return stat.runtime
-  # g = Genic(k=3)
-  # g.run(cluster_input)
-  # g.report()
-  # clusters = g.assign_clusters(objs)
-  # try:
-  #   plot_clusters(clusters,
-  #               fig_name="img/"+name,
-  #               col_names=headers, colors=["red", "blue", "green"],
-  #               s=50, edgecolors='none')
-  # except RuntimeError as e:
-  #   if e[0] == 500:
-  #     print(e[1])
-  #   else:
-  #     raise Exception(e)
-  # print("```")
-  # return stat.runtime
 
 
 def process_Visio(file_name):
