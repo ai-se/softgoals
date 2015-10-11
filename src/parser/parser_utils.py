@@ -26,6 +26,8 @@ class Node(O):
     self.container = None
     self.to_edges = None
     self.from_edges = None
+    self.is_random = False
+
 
   @staticmethod
   def get_type(key):

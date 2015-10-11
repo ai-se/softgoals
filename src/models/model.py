@@ -19,6 +19,9 @@ class Model(O):
     self.recursions = 0
     self.chain = set()
 
+  def get_tree(self):
+    return self._tree
+
   def generate(self):
     point_map = {}
     for node in self.roots:
@@ -28,6 +31,7 @@ class Model(O):
   def clear_nodes(self):
     for node in self._tree.nodes:
       node.value = None
+      node.is_random = False
 
   def reset_nodes(self, initial_node_map):
     self.clear_nodes()
@@ -47,7 +51,8 @@ class Model(O):
     nodes = self._tree.get_nodes(node_type=node_type)
     for node in nodes:
       self.chain = set()
-      if self.eval(node) == t:
+      self.eval(node)
+      if node.value == t:
         count += 1
     if is_percent:
       return percent(count, len(nodes))
@@ -99,7 +104,8 @@ class Model(O):
     for node in self.roots:
       self.chain = set()
       self.recursions = 0
-      if self.eval(node) == t:
+      self.eval(node)
+      if node.value == t:
         count += 1
     return count
 
@@ -125,12 +131,14 @@ class Model(O):
       return node.value
     if node.id in self.chain:
       node.value = coin_toss()
-      return node.value
+      node.is_random = True
+      return
     self.recursions += 1
     self.chain.add(node.id)
-    #if (self.recursions > 10) or (not node.from_edges):
     if not node.from_edges:
-      status = coin_toss()
+      node.value = coin_toss()
+      node.is_random = True
+      return
     else:
       # First check for dependencies from the edges and evaluate it
       # Ask @jenhork about it
@@ -142,24 +150,27 @@ class Model(O):
 
       if not rest:
         node.value = self.eval_and(dep_nodes)
-        return node.value
+        return
 
       # Evaluate the rest. We assume the rest are of same kind
       edge_type = rest[0].type
       if edge_type == "decompositions":
         status = self.eval_and(dep_nodes)
+        if status < 0:
+          node.value = status
+          return
         kids = [self._tree.get_node(edge.source) for edge in rest]
         if rest[0].value == "and":
           # Evaluate all children
-          status = status and self.eval_and(kids)
+          status = self.eval_and(kids)
         elif rest[0].value == "or":
-          status = status and self.eval_or(kids)
+          status = self.eval_or(kids)
       elif edge_type == "contribution":
         status = self.eval_contribs(rest, deps)
       else:
         raise Exception("Unexpected edge type %s"%edge_type)
-    node.value = status
-    return status
+      node.value = status
+      return
 
   def eval_and(self, nodes):
     """
@@ -169,8 +180,9 @@ class Model(O):
     """
     status = t
     for node in nodes:
-      if status == f: break
-      status = self.eval(node)
+      if status <= 0: break
+      self.eval(node)
+      status = node.value
     return status
 
   def eval_or(self, nodes):
@@ -181,9 +193,10 @@ class Model(O):
     :return: status
     """
     for node in nodes:
-      status = self.eval(node)
-      if status == t:
-        return t
+      self.eval(node)
+      status = node.value
+      if status > 0:
+        return status
     return f
 
   def eval_contribs(self, edges, dependencies=None):

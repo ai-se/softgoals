@@ -32,6 +32,11 @@ class O():
       if isinstance(obj, set): return list(obj)
       return obj.__dict__
     return json.dumps(self, default=dflt, sort_keys=True, indent=4)
+  def clone(self):
+    cloned = O()
+    for key, val in self.has().iteritems():
+      cloned.__dict__[key] = val
+    return cloned
 
 """
 An accumulator for reporting on numbers.

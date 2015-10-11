@@ -30,11 +30,11 @@ def eval_softgoals(model):
   return model.evaluate_type(node_type="softgoal", is_percent=default().is_percent)
 
 def eval_coverage(model):
-  covered = len(model._tree.get_nodes_covered())
+  covered = len(model.get_tree().get_nodes_covered())
   if default().is_percent:
-    return percent(covered, len(model._tree.get_nodes()))
+    return percent(covered, len(model.get_tree().get_nodes()))
   else:
-    return len(model._tree.get_nodes_covered())
+    return len(model.get_tree().get_nodes_covered())
 
 
 def dominates(obj1, obj2, better=lt):
@@ -57,6 +57,13 @@ class Point(O):
     self.id = Point.id
     self.decisions = decisions
     self.objectives = objectives
+    self._nodes = None
+
+  def get_randomness(self):
+    count = 0
+    for node in self._nodes:
+      if node.is_random: count+=1
+    return percent(count, len(self._nodes))
 
   def __hash__(self):
     return hash(self.decisions)
@@ -69,6 +76,7 @@ class Point(O):
     if not point.objectives:
       model.reset_nodes(point.decisions)
       point.objectives = [func(model) for func in obj_funcs]
+      point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
     return point.objectives
 
   @staticmethod
@@ -78,6 +86,7 @@ class Point(O):
     model.reset_nodes(point.decisions)
     model.evaluate_random()
     point.objectives = [func(model) for func in obj_funcs]
+    point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
     return point.objectives
 
 
