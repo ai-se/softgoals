@@ -90,13 +90,13 @@ class Cache:
   def has(self):
     if self._has == None:
       lst  = sorted(self.all)
-      med,iqr = medianIQR(lst,ordered=True)
+      med,iqr = median_iqr(lst,ordered=True)
       self._has = O(
         median = med,      iqr = iqr,
         lo     = self.all[0], hi  = self.all[-1])
     return self._has
 
-def medianIQR(lst, ordered=False):
+def median_iqr(lst, ordered=False):
   if not ordered:
     lst = sorted(lst)
   n = len(lst)
@@ -178,6 +178,23 @@ class Statistics(O):
           objs.append(point.objectives[i])
         obj_gens.append(objs)
       sk.rdivDemo(obj_gens)
+
+  def median_spread(self):
+    num_obs = len(self.generations[0][0].objectives)
+    data  = []
+    for i in range(num_obs):
+      data_map = {}
+      meds = []
+      iqrs = []
+      for gen, pop in enumerate(self.generations):
+        objs = [pt.objectives[i] for pt in pop]
+        med, iqr = median_iqr(objs)
+        meds.append(med)
+        iqrs.append(iqr)
+      data_map["meds"] = meds
+      data_map["iqrs"] = iqrs
+      data.append(data_map)
+    return data
 
   def spit_objectives(self):
     objectives = []
