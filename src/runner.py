@@ -50,6 +50,14 @@ def process_Visio(file_name):
   parser = VisioParser(file_name)
   parser.parse()
 
+def test_pystar():
+  from pystar.models.bCMS_SR_Witness import graph
+  #print(graph.nodes)
+  model = Model("", tree=graph)
+  de = DE(model)
+  stat = de.run()
+  stat.tiles()
+
 def test_ome_tree():
   process_OOD('../GMRepo/CMA12/bCMS_SR_bCMS_AuthenticationVariation.ood')
 
@@ -58,26 +66,27 @@ def test_visio_tree():
   #process_Visio('../GMRepo/CMA12/bCMS_SR_CommunicationCompromiser.ood')
 
 if __name__ == "__main__":
-  directory = '../GMRepo/CMA12'
-  times = {}
-  for file_name in os.listdir(directory):
-    if file_name.endswith(".ood"):
-      file_name = directory + "/" + file_name
-      name = os.path.basename(file_name).split(".")[0]
-      try:
-        times[name] = process_OOD(file_name)
-      except RuntimeError as e:
-        if e[0] == 500:
-          print(file_name)
-          print(e[1])
-          print("```")
-        else:
-          print(e)
-          raise Exception()
-      print("")
-  bar_plot(times, 'img/random_runtimes.png')
+  # directory = '../GMRepo/CMA12'
+  # times = {}
+  # for file_name in os.listdir(directory):
+  #   if file_name.endswith(".ood"):
+  #     file_name = directory + "/" + file_name
+  #     name = os.path.basename(file_name).split(".")[0]
+  #     try:
+  #       times[name] = process_OOD(file_name)
+  #     except RuntimeError as e:
+  #       if e[0] == 500:
+  #         print(file_name)
+  #         print(e[1])
+  #         print("```")
+  #       else:
+  #         print(e)
+  #         raise Exception()
+  #     print("")
+  # bar_plot(times, 'img/random_runtimes.png')
   #test_ome_tree()
   #test_visio_tree()
   #_test()
+  test_pystar()
 
 

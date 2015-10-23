@@ -8,16 +8,19 @@ def coin_toss():
   return random.choice([t, f])
 
 class Model(O):
-  def __init__(self, src, parser=OMEParser):
+  def __init__(self, src, parser=OMEParser, tree=None):
     O.__init__(self)
     self.src = src
     self.properties = 'properties.json'
-    self._tree = parser(src)
-    self._tree.parse()
-    self._tree.remove_actors()
+    if tree:
+      self._tree = tree
+    else:
+      self._tree = parser(src)
+      self._tree.parse()
+      self._tree.remove_actors()
     self.roots = self._tree.get_roots()
-    self.recursions = 0
     self.chain = set()
+    self.recursions = 0
 
   def get_tree(self):
     return self._tree
@@ -166,6 +169,9 @@ class Model(O):
         elif rest[0].value == "or":
           status = self.eval_or(kids)
       elif edge_type == "contribution":
+        print("#######")
+        print(rest)
+        print(deps)
         status = self.eval_contribs(rest, deps)
       else:
         raise Exception("Unexpected edge type %s"%edge_type)
