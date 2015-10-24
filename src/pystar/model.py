@@ -2,23 +2,31 @@ from __future__ import print_function, division
 __author__ = 'george'
 import sys,os
 sys.path.append(os.path.abspath("."))
-from utilities.lib import *
-from parser.OMETree import OMEParser
+sys.dont_write_bytecode = True
+from template import *
+import random
+
+t =  1
+f = -1
 
 def coin_toss():
   return random.choice([t, f])
 
+def percent(num, den):
+  if den==0:
+    return 0
+  return round(num*100/den, 2)
+
+def shuffle(lst):
+  if not lst:
+    return []
+  random.shuffle(lst)
+  return lst
+
 class Model(O):
-  def __init__(self, src, parser=OMEParser, tree=None):
+  def __init__(self, tree):
     O.__init__(self)
-    self.src = src
-    self.properties = 'properties.json'
-    if tree:
-      self._tree = tree
-    else:
-      self._tree = parser(src)
-      self._tree.parse()
-      self._tree.remove_actors()
+    self._tree = tree
     self.roots = self._tree.get_roots()
     self.bases = self._tree.get_bases()
     self.chain = set()
@@ -70,9 +78,9 @@ class Model(O):
         if node.type in ["goal", "softgoal"] and (not node.value):
           return False
       return True
-    for _ in range(len(self._tree.nodes)/2):
+    for _ in range(len(self._tree.nodes)//2):
       self.chain = set()
-      self.eval(choice(self._tree.nodes))
+      self.eval(random.choice(self._tree.nodes))
 
 
   def eval_node(self, node):
@@ -89,7 +97,7 @@ class Model(O):
     """
     from utilities.sk import rdivDemo
     if not seed_val is None:
-      seed(seed_val)
+      random.seed(seed_val)
 
     final = []
     for _ in xrange(n):
@@ -223,7 +231,7 @@ class Model(O):
       for dep in dependencies:
         self.eval(dep)
         kids += [Model.soft_goal_val(dep.value, "make")]
-    return choice(kids)
+    return random.choice(kids)
 
   @staticmethod
   def soft_goal_val(kid, edge):
@@ -234,7 +242,7 @@ class Model(O):
     :return:
     """
     if edge in ["someplus", "someminus"]:
-      return choice([t/2, f/2])
+      return random.choice([t/2, f/2])
     if kid == t:
       if edge == "make"   : return t
       if edge == "help"   : return t/2
@@ -256,4 +264,3 @@ class Model(O):
       if edge == "hurt"   : return t/2
       if edge == "break"  : return t/2
     raise RuntimeError("Either node value %s or edge %s is unknown"%(kid, edge))
-

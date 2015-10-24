@@ -25,7 +25,7 @@ agent = "agent"
 role = "role"
 
 
-class _O(object):
+class O(object):
   """
   Default class that gives
   kwargs properties
@@ -57,22 +57,22 @@ class _O(object):
       return obj.__dict__
     return json.dumps(self, default=dflt, sort_keys=True, indent=4)
   def clone(self):
-    cloned = _O()
+    cloned = O()
     for key, val in self.has().iteritems():
       cloned.__dict__[key] = val
     return cloned
 
-class _Component(_O):
+class Component(O):
   """
   All components of graph
   should extend this class
   """
   id = 0
   def __init__(self, component, **kwargs):
-    _O.__init__(self, **kwargs)
-    self.id = _Component.id
+    O.__init__(self, **kwargs)
+    self.id = Component.id
     self.component = component
-    _Component.id += 1
+    Component.id += 1
 
   def __hash__(self):
     if not self.id:
@@ -84,12 +84,12 @@ class _Component(_O):
       return False
     return self.id == other.id
 
-class Node(_Component):
+class Node(Component):
   """
   Node of a graph
   """
   def __init__(self, **kwargs):
-    _Component.__init__(self, "node", **kwargs)
+    Component.__init__(self, "node", **kwargs)
     self.from_edges = []
     self.to_edges = []
 
@@ -99,12 +99,12 @@ class Node(_Component):
     else:
       self.to_edges.append(edge_id)
 
-class Edge(_Component):
+class Edge(Component):
   """
   Edge of a graph
   """
   def __init__(self, **kwargs):
-    _Component.__init__(self, "edge", **kwargs)
+    Component.__init__(self, "edge", **kwargs)
     if self.source: self.source = self.source.id
     if self.target: self.target = self.target.id
     self._set_type()
@@ -137,12 +137,12 @@ class Edge(_Component):
       return -3
     raise RuntimeError("Invalid contribution type %s"%key)
 
-class Graph(_O):
+class Graph(O):
   """
   Graph object
   """
   def __init__(self, nodes, edges):
-    _O.__init__(self, nodes=nodes, edges=edges)
+    O.__init__(self, nodes=nodes, edges=edges)
     self.update_nodes()
 
   def update_nodes(self):
