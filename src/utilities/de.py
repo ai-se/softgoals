@@ -112,7 +112,7 @@ class DE(O):
 
   def assign_frontier_size(self):
     num_decs = len(self.model.generate().keys())
-    return min(int(2**num_decs/3), default().candidates)
+    return min(int(2**num_decs), default().candidates)
 
   def generate(self, size):
     population = list()

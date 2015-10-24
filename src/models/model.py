@@ -19,6 +19,7 @@ class Model(O):
       self._tree.parse()
       self._tree.remove_actors()
     self.roots = self._tree.get_roots()
+    self.bases = self._tree.get_bases()
     self.chain = set()
     self.recursions = 0
 
@@ -27,7 +28,7 @@ class Model(O):
 
   def generate(self):
     point_map = {}
-    for node in self.roots:
+    for node in self.bases:
       point_map[node.id] = random.choice([t, f])
     return point_map
 
@@ -68,10 +69,10 @@ class Model(O):
         if node.type in ["goal", "softgoal"] and (not node.value):
           return False
       return True
-    #while not check_status():
     for _ in range(len(self._tree.nodes)/2):
       self.chain = set()
       self.eval(choice(self._tree.nodes))
+
 
   def eval_node(self, node):
     self.chain=set()
@@ -132,6 +133,7 @@ class Model(O):
   def eval(self, node):
     if not (node.value is None):
       return node.value
+
     if node.id in self.chain:
       node.value = coin_toss()
       node.is_random = True
@@ -145,8 +147,10 @@ class Model(O):
     else:
       # First check for dependencies from the edges and evaluate it
       # Ask @jenhork about it
-      deps, rest= self.dep_and_rest(node.from_edges)
 
+      deps, rest= self.dep_and_rest(node.from_edges)
+      # if rest and rest[0].type == "contribution":
+      #   exit()
       # Check if all dependencies are satisfied
       dep_nodes = [self._tree.get_node(dep.source) for dep in deps]
 
@@ -169,9 +173,6 @@ class Model(O):
         elif rest[0].value == "or":
           status = self.eval_or(kids)
       elif edge_type == "contribution":
-        print("#######")
-        print(rest)
-        print(deps)
         status = self.eval_contribs(rest, deps)
       else:
         raise Exception("Unexpected edge type %s"%edge_type)
