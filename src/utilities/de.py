@@ -17,7 +17,8 @@ def default():
     better = gt,
     obj_funcs = [eval_softgoals, eval_goals, eval_coverage],
     evaluation = Point.evaluate_random,
-    is_percent = True
+    is_percent = True,
+    binary = True
   )
 
 def eval_roots(model):
@@ -159,6 +160,19 @@ class DE(O):
     :param pop: Population to mutate from
     :return: Mutated point
     """
+    if self.settings.binary:
+      return self.mutate_binary(one, pop)
+    else:
+      return self.mutate_real(one, pop)
+
+  def mutate_real(self, one, pop):
+    """
+    Function to perform real mutation to
+    compute real values
+    :param one: Point to be mutated
+    :param pop: Population to selected from
+    :return: mutant
+    """
     two, three, four = DE.three_others(one, pop)
     random_key = choice(one.decisions.keys())
     mutated_decs = one.decisions.copy()
@@ -166,6 +180,17 @@ class DE(O):
       if (rand() < self.settings.cr) or (key == random_key):
         mutated_decs[key] = Point.trim(two.decisions[key] + self.settings.f * (three.decisions[key] - four.decisions[key]))
     return Point(mutated_decs)
+
+  def mutate_binary(self, one, pop):
+    two, three, four = DE.three_others(one, pop)
+    random_key = choice(one.decisions.keys())
+    mutated_decs = one.decisions.copy()
+    crossover_vector = [t if rand() < self.settings.f else f for _ in mutated_decs]
+    for i, key in enumerate(one.decisions.keys()):
+      if (rand() < self.settings.cr) or (key == random_key):
+        mutated_decs[key] = OR(two.decisions[key], AND(crossover_vector[i], XOR(three.decisions[key], four.decisions[key])))
+    return Point(mutated_decs)
+
 
   @staticmethod
   def three_others(one, pop):
@@ -186,3 +211,18 @@ class DE(O):
     three = one_other()
     four = one_other()
     return two, three, four
+
+def XOR(a, b):
+  if (a==t and b==f) or (a==f and b==t):
+    return t
+  return f
+
+def OR(a, b):
+  if a==t or b==t:
+    return t
+  return f
+
+def AND(a, b):
+  if a==t and b==t:
+    return t
+  return f
