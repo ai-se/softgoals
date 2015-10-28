@@ -229,8 +229,9 @@ class Model(O):
       kids += [Model.soft_goal_val(node.value, edge.value)]
     if dependencies:
       for dep in dependencies:
-        self.eval(dep)
-        kids += [Model.soft_goal_val(dep.value, "make")]
+        dep_node = self._tree.get_node(dep.source)
+        self.eval(dep_node)
+        kids += [Model.soft_goal_val(dep_node.value, "make")]
     return random.choice(kids)
 
   @staticmethod

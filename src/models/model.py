@@ -70,7 +70,7 @@ class Model(O):
         if node.type in ["goal", "softgoal"] and (not node.value):
           return False
       return True
-    for _ in range(len(self._tree.nodes)/2):
+    for _ in range(len(self._tree.nodes)//2):
       self.chain = set()
       self.eval(choice(self._tree.nodes))
 

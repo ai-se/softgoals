@@ -82,7 +82,7 @@ if __name__ == "__main__":
   #         raise Exception()
   #     print("")
   # bar_plot(times, 'img/random_runtimes.png')
-  # #test_ome_tree()
+  #test_ome_tree()
   # #test_visio_tree()
   # #_test()
   test_pystar()
