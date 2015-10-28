@@ -263,4 +263,5 @@ class Model(O):
       if edge == "help"   : return f/2
       if edge == "hurt"   : return t/2
       if edge == "break"  : return t/2
+
     raise RuntimeError("Either node value %s or edge %s is unknown"%(kid, edge))

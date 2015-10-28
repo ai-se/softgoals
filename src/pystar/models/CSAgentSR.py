@@ -543,7 +543,7 @@ n89 = n = Node(
 );nodes.append(n)
 
 n90 = n = Node(
-  name = "Reduced Misconceptions",
+  name = "Reduce Misconceptions",
   type = softgoal,
   container = "CS"
 );nodes.append(n)
@@ -795,7 +795,7 @@ n131 = n = Node(
 );nodes.append(n)
 
 n132 = n = Node(
-  name = "Provide Resource to Regional Offices",
+  name = "Provide Resources to Regional Offices",
   type = task,
   container = "CS"
 );nodes.append(n)
@@ -806,3 +806,1088 @@ n133 = n = Node(
   container = "CS"
 );nodes.append(n)
 
+n134 = n = Node(
+  name = "Service is National",
+  type = softgoal,
+  container = "CS"
+);nodes.append(n)
+
+
+# EDGES
+edges = []
+
+e1 = e = Edge(
+  value = dep,
+  source = n63,
+  target = n1
+); edges.append(e)
+
+e2 = e = Edge(
+  value = dep,
+  source = n65,
+  target = n3
+); edges.append(e)
+
+e3 = e = Edge(
+  value = dep,
+  source = n130,
+  target = n4
+); edges.append(e)
+
+e4 = e = Edge(
+  value = dep,
+  source = n70,
+  target = n9
+); edges.append(e)
+
+e5 = e = Edge(
+  value = dep,
+  source = n76,
+  target = n15
+); edges.append(e)
+
+e6 = e = Edge(
+  value = dep,
+  source = n131,
+  target = n25
+); edges.append(e)
+
+e7 = e = Edge(
+  value = dep,
+  source = n132,
+  target = n26
+); edges.append(e)
+
+e8 = e = Edge(
+  value = dep,
+  source = n91,
+  target = n35
+); edges.append(e)
+
+e9 = e = Edge(
+  value = dep,
+  source = n92,
+  target = n36
+); edges.append(e)
+
+e10 = e = Edge(
+  value = dep,
+  source = n133,
+  target = n33
+); edges.append(e)
+
+e11 = e = Edge(
+  value = dep,
+  source = n73,
+  target = n44
+); edges.append(e)
+
+e12 = e = Edge(
+  value = dep,
+  source = n98,
+  target = n45
+); edges.append(e)
+
+e13 = e = Edge(
+  value = dep,
+  source = n99,
+  target = n50
+); edges.append(e)
+
+e14 = e = Edge(
+  value = dep,
+  source = n100,
+  target = n51
+); edges.append(e)
+
+e15 = e = Edge(
+  value = dep,
+  source = n94,
+  target = n49
+); edges.append(e)
+
+e16 = e = Edge(
+  value = dep,
+  source = n103,
+  target = n54
+); edges.append(e)
+
+e17 = e = Edge(
+  value = dep,
+  source = n105,
+  target = n56
+); edges.append(e)
+
+e18 = e = Edge(
+  value = dep,
+  source = n106,
+  target = n57
+); edges.append(e)
+
+e19 = e = Edge(
+  value = dep,
+  source = n108,
+  target = n59
+); edges.append(e)
+
+e20 = e = Edge(
+  value = dep,
+  source = n109,
+  target = n60
+); edges.append(e)
+
+e21 = e = Edge(
+  value = dep,
+  source = n111,
+  target = n62
+); edges.append(e)
+
+e22 = e = Edge(
+  value = dep,
+  source = n2,
+  target = n64
+); edges.append(e)
+
+e23 = e = Edge(
+  value = dep,
+  source = n5,
+  target = n66
+); edges.append(e)
+
+e24 = e = Edge(
+  value = dep,
+  source = n6,
+  target = n67
+); edges.append(e)
+
+e25 = e = Edge(
+  value = dep,
+  source = n7,
+  target = n68
+); edges.append(e)
+
+e26 = e = Edge(
+  value = help,
+  source = n64,
+  target = n68
+); edges.append(e)
+
+e27 = e = Edge(
+  value = help,
+  source = n117,
+  target = n68
+); edges.append(e)
+
+e28 = e = Edge(
+  value = dep,
+  source = n8,
+  target = n69
+); edges.append(e)
+
+e29 = e = Edge(
+  value = help,
+  source = n127,
+  target = n69
+); edges.append(e)
+
+e30 = e = Edge(
+  value = help,
+  source = n79,
+  target = n69
+); edges.append(e)
+
+e31 = e = Edge(
+  value = help,
+  source = n80,
+  target = n69
+); edges.append(e)
+
+e32 = e = Edge(
+  value = dep,
+  source = n10,
+  target = n71
+); edges.append(e)
+
+e33 = e = Edge(
+  value = help,
+  source = n74,
+  target = n71
+); edges.append(e)
+
+e34 = e = Edge(
+  value = dep,
+  source = n11,
+  target = n72
+); edges.append(e)
+
+e35 = e = Edge(
+  value = dep,
+  source = n12,
+  target = n73
+); edges.append(e)
+
+e36 = e = Edge(
+  value = dep,
+  source = n13,
+  target = n74
+); edges.append(e)
+
+e37 = e = Edge(
+  value = dep,
+  source = n14,
+  target = n75
+); edges.append(e)
+
+e38 = e = Edge(
+  value = dep,
+  source = n16,
+  target = n77
+); edges.append(e)
+
+e39 = e = Edge(
+  value = help,
+  source = n127,
+  target = n77
+); edges.append(e)
+
+e40 = e = Edge(
+  value = dep,
+  source = n17,
+  target = n78
+); edges.append(e)
+
+e41 = e = Edge(
+  value = help,
+  source = n77,
+  target = n78
+); edges.append(e)
+
+e42 = e = Edge(
+  value = help,
+  source = n117,
+  target = n78
+); edges.append(e)
+
+e43 = e = Edge(
+  value = help,
+  source = n96,
+  target = n78
+); edges.append(e)
+
+e44 = e = Edge(
+  value = help,
+  source = n90,
+  target = n78
+); edges.append(e)
+
+e45 = e = Edge(
+  value = dep,
+  source = n18,
+  target = n79
+); edges.append(e)
+
+e46 = e = Edge(
+  value = dep,
+  source = n19,
+  target = n80
+); edges.append(e)
+
+e47 = e = Edge(
+  value = dep,
+  source = n20,
+  target = n81
+); edges.append(e)
+
+e48 = e = Edge(
+  value = dep,
+  source = n21,
+  target = n82
+); edges.append(e)
+
+e49 = e = Edge(
+  value = dep,
+  source = n22,
+  target = n83
+); edges.append(e)
+
+e50 = e = Edge(
+  value = dep,
+  source = n23,
+  target = n84
+); edges.append(e)
+
+e51 = e = Edge(
+  value = dep,
+  source = n24,
+  target = n85
+); edges.append(e)
+
+e52 = e = Edge(
+  value = dep,
+  source = n28,
+  target = n87
+); edges.append(e)
+
+e53 = e = Edge(
+  value = dep,
+  source = n29,
+  target = n88
+); edges.append(e)
+
+e54 = e = Edge(
+  value = dep,
+  source = n30,
+  target = n89
+); edges.append(e)
+
+e55 = e = Edge(
+  value = dep,
+  source = n31,
+  target = n90
+); edges.append(e)
+
+e56 = e = Edge(
+  value = hurt,
+  source = n126,
+  target = n91
+); edges.append(e)
+
+e57 = e = Edge(
+  value = help,
+  source = n120,
+  target = n91
+); edges.append(e)
+
+e58 = e = Edge(
+  value = dep,
+  source = n37,
+  target = n93
+); edges.append(e)
+
+e59 = e = Edge(
+  value = dep,
+  source = n38,
+  target = n94
+); edges.append(e)
+
+e60 = e = Edge(
+  value = dep,
+  source = n40,
+  target = n95
+); edges.append(e)
+
+e61 = e = Edge(
+  value = dep,
+  source = n41,
+  target = n96
+); edges.append(e)
+
+e62 = e = Edge(
+  value = dep,
+  source = n43,
+  target = n97
+); edges.append(e)
+
+e63 = e = Edge(
+  value = help,
+  source = n121,
+  target = n98
+); edges.append(e)
+
+e64 = e = Edge(
+  value = help,
+  source = n122,
+  target = n98
+); edges.append(e)
+
+e65 = e = Edge(
+  value = help,
+  source = n71,
+  target = n99
+); edges.append(e)
+
+e66 = e = Edge(
+  value = help,
+  source = n126,
+  target = n99
+); edges.append(e)
+
+e67 = e = Edge(
+  value = help,
+  source = n80,
+  target = n99
+); edges.append(e)
+
+e68 = e = Edge(
+  value = help,
+  source = n118,
+  target = n100
+); edges.append(e)
+
+e69 = e = Edge(
+  value = help,
+  source = n70,
+  target = n100
+); edges.append(e)
+
+e70 = e = Edge(
+  value = help,
+  source = n106,
+  target = n100
+); edges.append(e)
+
+e71 = e = Edge(
+  value = help,
+  source = n103,
+  target = n100
+); edges.append(e)
+
+e72 = e = Edge(
+  value = help,
+  source = n108,
+  target = n101
+); edges.append(e)
+
+e73 = e = Edge(
+  value = help,
+  source = n111,
+  target = n101
+); edges.append(e)
+
+e74 = e = Edge(
+  value = dep,
+  source = n54,
+  target = n102
+); edges.append(e)
+
+e75 = e = Edge(
+  value = help,
+  source = n96,
+  target = n103
+); edges.append(e)
+
+e76 = e = Edge(
+  value = help,
+  source = n95,
+  target = n103
+); edges.append(e)
+
+e77 = e = Edge(
+  value = help,
+  source = n94,
+  target = n103
+); edges.append(e)
+
+e78 = e = Edge(
+  value = help,
+  source = n118,
+  target = n103
+); edges.append(e)
+
+e79 = e = Edge(
+  value = help,
+  source = n105,
+  target = n103
+); edges.append(e)
+
+e80 = e = Edge(
+  value = help,
+  source = n107,
+  target = n103
+); edges.append(e)
+
+e81 = e = Edge(
+  value = help,
+  source = n71,
+  target = n103
+); edges.append(e)
+
+e82 = e = Edge(
+  value = help,
+  source = n123,
+  target = n103
+); edges.append(e)
+
+e83 = e = Edge(
+  value = dep,
+  source = n55,
+  target = n104
+); edges.append(e)
+
+e84 = e = Edge(
+  value = help,
+  source = n63,
+  target = n105
+); edges.append(e)
+
+e85 = e = Edge(
+  value = help,
+  source = n105,
+  target = n106
+); edges.append(e)
+
+e86 = e = Edge(
+  value = help,
+  source = n103,
+  target = n106
+); edges.append(e)
+
+e87 = e = Edge(
+  value = help,
+  source = n118,
+  target = n106
+); edges.append(e)
+
+e88 = e = Edge(
+  value = help,
+  source = n107,
+  target = n106
+); edges.append(e)
+
+e89 = e = Edge(
+  value = help,
+  source = n108,
+  target = n106
+); edges.append(e)
+
+e90 = e = Edge(
+  value = help,
+  source = n63,
+  target = n106
+); edges.append(e)
+
+e91 = e = Edge(
+  value = dep,
+  source = n58,
+  target = n107
+); edges.append(e)
+
+e92 = e = Edge(
+  value = dep,
+  source = n47,
+  target = n108
+); edges.append(e)
+
+e93 = e = Edge(
+  value = dep,
+  source = n48,
+  target = n108
+); edges.append(e)
+
+e94 = e = Edge(
+  value = dep,
+  source = n61,
+  target = n110
+); edges.append(e)
+
+e95 = e = Edge(
+  value = help,
+  source = n111,
+  target = n112
+); edges.append(e)
+
+e96 = e = Edge(
+  value = help,
+  source = n64,
+  target = n112
+); edges.append(e)
+
+e97 = e = Edge(
+  value = help,
+  source = n113,
+  target = n112
+); edges.append(e)
+
+e98 = e = Edge(
+  value = help,
+  source = n67,
+  target = n112
+); edges.append(e)
+
+e99 = e = Edge(
+  value = help,
+  source = n69,
+  target = n112
+); edges.append(e)
+
+e100 = e = Edge(
+  value = help,
+  source = n70,
+  target = n112
+); edges.append(e)
+
+e101 = e = Edge(
+  value = help,
+  source = n125,
+  target = n112
+); edges.append(e)
+
+e102 = e = Edge(
+  value = help,
+  source = n77,
+  target = n112
+); edges.append(e)
+
+e103 = e = Edge(
+  value = help,
+  source = n79,
+  target = n112
+); edges.append(e)
+
+e104 = e = Edge(
+  value = help,
+  source = n88,
+  target = n112
+); edges.append(e)
+
+e105 = e = Edge(
+  value = help,
+  source = n116,
+  target = n112
+); edges.append(e)
+
+e106 = e = Edge(
+  value = help,
+  source = n96,
+  target = n112
+); edges.append(e)
+
+e107 = e = Edge(
+  value = help,
+  source = n90,
+  target = n112
+); edges.append(e)
+
+e108 = e = Edge(
+  value = help,
+  source = n82,
+  target = n113
+); edges.append(e)
+
+e109 = e = Edge(
+  value = help,
+  source = n64,
+  target = n114
+); edges.append(e)
+
+e110 = e = Edge(
+  value = help,
+  source = n134,
+  target = n114
+); edges.append(e)
+
+e111 = e = Edge(
+  value = help,
+  source = n70,
+  target = n114
+); edges.append(e)
+
+e112 = e = Edge(
+  value = help,
+  source = n72,
+  target = n114
+); edges.append(e)
+
+e113 = e = Edge(
+  value = help,
+  source = n78,
+  target = n114
+); edges.append(e)
+
+e114 = e = Edge(
+  value = help,
+  source = n123,
+  target = n114
+); edges.append(e)
+
+e115 = e = Edge(
+  value = help,
+  source = n84,
+  target = n114
+); edges.append(e)
+
+e116 = e = Edge(
+  value = help,
+  source = n85,
+  target = n114
+); edges.append(e)
+
+e117 = e = Edge(
+  value = help,
+  source = n89,
+  target = n114
+); edges.append(e)
+
+e118 = e = Edge(
+  value = help,
+  source = n101,
+  target = n114
+); edges.append(e)
+
+e119 = e = Edge(
+  value = help,
+  source = n132,
+  target = n134
+); edges.append(e)
+
+e120 = e = Edge(
+  value = help,
+  source = n64,
+  target = n115
+); edges.append(e)
+
+e121 = e = Edge(
+  value = help,
+  source = n68,
+  target = n115
+); edges.append(e)
+
+e122 = e = Edge(
+  value = help,
+  source = n83,
+  target = n115
+); edges.append(e)
+
+e123 = e = Edge(
+  value = help,
+  source = n120,
+  target = n115
+); edges.append(e)
+
+e124 = e = Edge(
+  value = help,
+  source = n116,
+  target = n115
+); edges.append(e)
+
+e125 = e = Edge(
+  value = help,
+  source = n117,
+  target = n116
+); edges.append(e)
+
+e126 = e = Edge(
+  value = help,
+  source = n77,
+  target = n116
+); edges.append(e)
+
+e127 = e = Edge(
+  value = hurt,
+  source = n83,
+  target = n116
+); edges.append(e)
+
+e128 = e = Edge(
+  value = help,
+  source = n84,
+  target = n116
+); edges.append(e)
+
+e129 = e = Edge(
+  value = help,
+  source = n124,
+  target = n116
+); edges.append(e)
+
+e130 = e = Edge(
+  value = help,
+  source = n102,
+  target = n116
+); edges.append(e)
+
+e131 = e = Edge(
+  value = help,
+  source = n104,
+  target = n116
+); edges.append(e)
+
+e132 = e = Edge(
+  value = help,
+  source = n107,
+  target = n116
+); edges.append(e)
+
+e133 = e = Edge(
+  value = help,
+  source = n110,
+  target = n117
+); edges.append(e)
+
+e134 = e = Edge(
+  value = help,
+  source = n85,
+  target = n117
+); edges.append(e)
+
+e135 = e = Edge(
+  value = help,
+  source = n105,
+  target = n118
+); edges.append(e)
+
+e136 = e = Edge(
+  value = help,
+  source = n94,
+  target = n118
+); edges.append(e)
+
+e137 = e = Edge(
+  value = help,
+  source = n97,
+  target = n118
+); edges.append(e)
+
+e138 = e = Edge(
+  value = help,
+  source = n98,
+  target = n118
+); edges.append(e)
+
+e139 = e = Edge(
+  value = help,
+  source = n117,
+  target = n119
+); edges.append(e)
+
+e140 = e = Edge(
+  value = help,
+  source = n118,
+  target = n119
+); edges.append(e)
+
+e141 = e = Edge(
+  value = help,
+  source = n126,
+  target = n119
+); edges.append(e)
+
+e142 = e = Edge(
+  value = hurt,
+  source = n108,
+  target = n120
+); edges.append(e)
+
+e143 = e = Edge(
+  value = help,
+  source = n104,
+  target = n120
+); edges.append(e)
+
+e144 = e = Edge(
+  value = help,
+  source = n118,
+  target = n120
+); edges.append(e)
+
+e145 = e = Edge(
+  value = help,
+  source = n124,
+  target = n120
+); edges.append(e)
+
+e146 = e = Edge(
+  value = help,
+  source = n83,
+  target = n120
+); edges.append(e)
+
+e147 = e = Edge(
+  value = help,
+  source = n86,
+  target = n120
+); edges.append(e)
+
+e148 = e = Edge(
+  value = help,
+  source = n80,
+  target = n123
+); edges.append(e)
+
+e149 = e = Edge(
+  value = help,
+  source = n81,
+  target = n123
+); edges.append(e)
+
+e150 = e = Edge(
+  value = hurt,
+  source = n65,
+  target = n124
+); edges.append(e)
+
+e151 = e = Edge(
+  value = help,
+  source = n66,
+  target = n124
+); edges.append(e)
+
+e152 = e = Edge(
+  value = hurt,
+  source = n76,
+  target = n124
+); edges.append(e)
+
+e153 = e = Edge(
+  value = help,
+  source = n129,
+  target = n124
+); edges.append(e)
+
+e154 = e = Edge(
+  value = hurt,
+  source = n83,
+  target = n124
+); edges.append(e)
+
+e155 = e = Edge(
+  value = help,
+  source = n84,
+  target = n124
+); edges.append(e)
+
+e156 = e = Edge(
+  value = hurt,
+  source = n128,
+  target = n124
+); edges.append(e)
+
+e157 = e = Edge(
+  value = hurt,
+  source = n87,
+  target = n124
+); edges.append(e)
+
+e158 = e = Edge(
+  value = hurt,
+  source = n91,
+  target = n124
+); edges.append(e)
+
+e159 = e = Edge(
+  value = hurt,
+  source = n92,
+  target = n124
+); edges.append(e)
+
+e160 = e = Edge(
+  value = help,
+  source = n93,
+  target = n124
+); edges.append(e)
+
+e161 = e = Edge(
+  value = help,
+  source = n73,
+  target = n125
+); edges.append(e)
+
+e162 = e = Edge(
+  value = help,
+  source = n75,
+  target = n125
+); edges.append(e)
+
+e163 = e = Edge(
+  value = help,
+  source = n101,
+  target = n126
+); edges.append(e)
+
+e164 = e = Edge(
+  value = hurt,
+  source = n102,
+  target = n126
+); edges.append(e)
+
+e165 = e = Edge(
+  value = help,
+  source = n103,
+  target = n126
+); edges.append(e)
+
+e166 = e = Edge(
+  value = help,
+  source = n77,
+  target = n126
+); edges.append(e)
+
+e167 = e = Edge(
+  value = help,
+  source = n88,
+  target = n126
+); edges.append(e)
+
+e168 = e = Edge(
+  value = help,
+  source = n90,
+  target = n126
+); edges.append(e)
+
+e169 = e = Edge(
+  value = help,
+  source = n96,
+  target = n126
+); edges.append(e)
+
+e170 = e = Edge(
+  value = help,
+  source = n95,
+  target = n127
+); edges.append(e)
+
+e171 = e = Edge(
+  value = OR,
+  source = n130,
+  target = n128
+); edges.append(e)
+
+e172 = e = Edge(
+  value = OR,
+  source = n131,
+  target = n128
+); edges.append(e)
+
+e173 = e = Edge(
+  value = OR,
+  source = n132,
+  target = n128
+); edges.append(e)
+
+e174 = e = Edge(
+  value = OR,
+  source = n133,
+  target = n128
+); edges.append(e)
+
+e175 = e = Edge(
+  value = hurt,
+  source = n80,
+  target = n129
+); edges.append(e)
+
+e176 = e = Edge(
+  value = OR,
+  source = n86,
+  target = n130
+); edges.append(e)
+
+e177 = e = Edge(
+  value = OR,
+  source = n86,
+  target = n131
+); edges.append(e)
+
+e178 = e = Edge(
+  value = OR,
+  source = n86,
+  target = n132
+); edges.append(e)
+
+e179 = e = Edge(
+  value = OR,
+  source = n86,
+  target = n133
+); edges.append(e)
+
+graph = Graph(nodes=nodes, edges=edges)
