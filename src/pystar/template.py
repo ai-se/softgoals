@@ -88,8 +88,8 @@ class Node(Component):
   """
   Node of a graph
   """
-  def __init__(self, **kwargs):
-    Component.__init__(self, "node", **kwargs)
+  def __init__(self, name, type, **kwargs):
+    Component.__init__(self, "node", name=name, type=type, **kwargs)
     self.from_edges = []
     self.to_edges = []
 
@@ -99,27 +99,42 @@ class Node(Component):
     else:
       self.to_edges.append(edge_id)
 
+class Task(Node):
+  """
+  A Task node.
+  """
+  def __init__(self, name, **kwargs):
+    Node.__init__(self, name, "task", **kwargs)
+
+class Resource(Node):
+  """
+  A resource node
+  """
+  def __init__(self, name, **kwargs):
+    Node.__init__(self, name, "resource", **kwargs)
+
+class SoftGoal(Node):
+  """
+  A Soft goal node
+  """
+  def __init__(self, name, **kwargs):
+    Node.__init__(self, name, "softgoal", **kwargs)
+
+class HardGoal(Node):
+  """
+  A Hard Goal Node
+  """
+  def __init__(self, name, **kwargs):
+    Node.__init__(self, name, "goal", **kwargs)
+
 class Edge(Component):
   """
   Edge of a graph
   """
-  def __init__(self, **kwargs):
+  def __init__(self, source, target, **kwargs):
     Component.__init__(self, "edge", **kwargs)
-    if self.source: self.source = self.source.id
-    if self.target: self.target = self.target.id
-    self._set_type()
-
-  def _set_type(self):
-    if self.type:
-      return
-    if self.value in [make,help,someplus,someminus,hurt,destroy,conflict]:
-      self.type = "contribution"
-    elif self.value in [AND, OR]:
-      self.type = "decompositions"
-    elif self.value == dep:
-      self.type = dep
-    else:
-      raise RuntimeError("Invalid edge value %s"%self.value)
+    self.source = source.id
+    self.target = target.id
 
   @staticmethod
   def get_contribution_weight(key):
@@ -137,6 +152,97 @@ class Edge(Component):
       return -3
     raise RuntimeError("Invalid contribution type %s"%key)
 
+class Make(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "make"
+    self.type = "contribution"
+
+class Help(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "help"
+    self.type = "contribution"
+
+class SomePlus(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "someplus"
+    self.type = "contribution"
+
+class SomeMinus(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "someminus"
+    self.type = "contribution"
+
+class Hurt(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "hurt"
+    self.type = "contribution"
+
+class Break(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "break"
+    self.type = "contribution"
+
+class Conflict(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "conflict"
+    self.type = "contribution"
+
+class And(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "and"
+    self.type = "decompositions"
+
+class Or(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "or"
+    self.type = "decompositions"
+
+class Dep(Edge):
+  """
+  Make Contribution edge.
+  """
+  def __init__(self, source, target, **kwargs):
+    Edge.__init__(self, source, target, **kwargs)
+    self.value = "dependency"
+    self.type = "dependency"
+
+
 class Graph(O):
   """
   Graph object
@@ -150,6 +256,7 @@ class Graph(O):
     for node in self.nodes:
       node_map[node.id] = node
     for edge in self.edges:
+      print(edge)
       node_map[edge.source].add_edge(edge.id, "to")
       node_map[edge.target].add_edge(edge.id, "from")
 

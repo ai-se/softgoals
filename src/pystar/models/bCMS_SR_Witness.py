@@ -5,89 +5,70 @@ from pystar.template import *
 __author__ = 'george'
 
 # Nodes
-n1 =Node(
+n1 =SoftGoal(
   name = "Provide accurate Information",
-  type = softgoal
 )
-n2 = Node(
+n2 = SoftGoal(
   name = "To know what to do",
-  type = softgoal
 )
-n3 = Node(
+n3 = Task(
   name = "Follow instructions from firemen",
-  type = task
 )
-n4 = Node(
+n4 = Task(
   name = "Provide crisis related info",
-  type = task
 )
-n5 = Node(
+n5 = Task(
   name = "Provide to fireman",
-  type = task
 )
-n6 = Node(
+n6 = Task(
   name = "Provide info to police",
-  type = task
 )
-n7 = Node(
+n7 = HardGoal(
   name = "Receive instructions",
-  type = hardgoal
 )
-n8 = Node(
+n8 = Resource(
   name = "Crisis-related information(Fire)",
-  type = resource
 )
-n9 = Node(
+n9 = Resource(
   name = "Instructions(Fire)",
-  type = resource
 )
-n10 = Node(
+n10 = Resource(
   name = "Instructions(Police)",
-  type = resource
 )
-n11 = Node(
+n11 = Task(
   name = "Crisis-related information(Police)",
-  type = task
 )
 
 #Edges
-e1 = Edge(
-  value = someplus,
+e1 = SomePlus(
   source = n7,
   target = n2
 )
-e2 = Edge(
-  value = OR,
+e2 = Or(
   source = n7,
   target = n3
 )
-e3 = Edge(
-  value = AND,
+e3 = And(
   source = n5,
   target = n4
 )
-e4 = Edge(
-  value = AND,
+e4 = And(
   source = n6,
   target = n4
 )
-e5 = Edge(
-  value = dep,
+e5 = Dep(
   source = n5,
   target = n8
 )
-e6 = Edge(
-  value = dep,
+e6 = Dep(
   source = n9,
   target = n7
 )
-e7 = Edge(
-  value = dep,
+e7 = Dep(
   source = n10,
   target = n7
 )
-e8 = Edge(
-  value = dep,
+e8 = Dep(
   source = n6,
   target = n11
 )
