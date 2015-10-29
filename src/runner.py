@@ -55,6 +55,14 @@ def test_pystar():
   de = DE(model)
   stat = de.run()
   stat.tiles()
+  lastgen = stat.generations[-1]
+  maxs = [-1]*len(lastgen[0].objectives)
+  for point in lastgen:
+    for i in range(len(maxs)):
+      if point.objectives[i] > maxs[i]:
+        maxs[i] = point.objectives[i]
+  print(maxs)
+
 
 def test_ome_tree():
   process_OOD('../GMRepo/CMA12/bCMS_SR_Witness.ood')

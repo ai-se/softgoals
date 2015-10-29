@@ -30,6 +30,9 @@ def eval_goals(model):
 def eval_softgoals(model):
   return model.evaluate_type(node_type="softgoal", is_percent=default().is_percent)
 
+def eval_all_goals(model):
+  return model.evaluate_type(node_type=["softgoal", "goal"], is_percent=default().is_percent)
+
 def eval_coverage(model):
   covered = len(model.get_tree().get_nodes_covered())
   if default().is_percent:
