@@ -22,13 +22,13 @@ def process_OOD(file_name):
   print("")
   g = KMeans(k=2)
   clusters = g.run(cluster_input)
-  med_spread_plot(data_map, headers, fig_name="img/gen_"+name)
+  med_spread_plot(data_map, headers, fig_name="img/gen_bin_"+name)
   plot_clusters(clusters,
-                fig_name="img/"+name,
+                fig_name="img/bin_"+name,
                 col_names=headers,
                 s=50, edgecolors='none')
   print("```")
-  print("![1](../../src/img/gen_%s.png)"%name)
+  print("![1](../../src/img/gen_bin_%s.png)"%name)
   return stat.runtime
 
 
