@@ -138,19 +138,29 @@ class Model(O):
         rest.append(edge)
     return shuffle(deps), shuffle(rest)
 
+  @staticmethod
+  def random_node_val(node):
+    """
+    Return a random value for a node
+    :param node:
+    :return:
+    """
+    if node.type in ["goal", "softgoal"]:
+      return t
+    return coin_toss()
 
   def eval(self, node):
     if not (node.value is None):
       return node.value
 
     if node.id in self.chain:
-      node.value = coin_toss()
+      node.value = Model.random_node_val(node)
       node.is_random = True
       return
     self.recursions += 1
     self.chain.add(node.id)
     if not node.from_edges:
-      node.value = coin_toss()
+      node.value = Model.random_node_val(node)
       node.is_random = True
       return
     else:
