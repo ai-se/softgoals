@@ -65,7 +65,7 @@ class Model(O):
     for node in nodes:
       self.chain = set()
       self.eval(node)
-      if node.value == t:
+      if node.value > 0:
         count += 1
     if is_percent:
       return percent(count, len(nodes))
@@ -118,7 +118,7 @@ class Model(O):
       self.chain = set()
       self.recursions = 0
       self.eval(node)
-      if node.value == t:
+      if node.value > 0:
         count += 1
     return count
 

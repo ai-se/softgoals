@@ -47,11 +47,15 @@ def test_pystar():
   stat.tiles()
   lastgen = stat.generations[-1]
   maxs = [-1]*len(lastgen[0].objectives)
+  bests = [None]*len(lastgen[0].objectives)
   for point in lastgen:
     for i in range(len(maxs)):
       if point.objectives[i] > maxs[i]:
         maxs[i] = point.objectives[i]
+        bests[i] = point
   print(maxs)
+  columns = ["id", "type", "value", "is_random", "name"]
+  stat.tabulate(columns, bests[0])
 
 
 def test_ome_tree():
@@ -61,27 +65,34 @@ def test_visio_tree():
   process_Visio('../GMRepo/Counseling Service/Stage1_UnderstandingCS/XML/ParentsSD.vdx')
   #process_Visio('../GMRepo/CMA12/bCMS_SR_CommunicationCompromiser.ood')
 
+
+def test_ome_trees():
+  directory = '../GMRepo/CMA12'
+  times = {}
+  for file_name in os.listdir(directory):
+    if file_name.endswith(".ood"):
+      file_name = directory + "/" + file_name
+      name = os.path.basename(file_name).split(".")[0]
+      try:
+        times[name] = process_OOD(file_name)
+      except RuntimeError as e:
+        if e[0] == 500:
+          print(file_name)
+          print(e[1])
+          print("```")
+        else:
+          print(e)
+          raise Exception()
+      print("")
+  bar_plot(times, 'img/random_runtimes.png')
+
+
 if __name__ == "__main__":
-  # directory = '../GMRepo/CMA12'
-  # times = {}
-  # for file_name in os.listdir(directory):
-  #   if file_name.endswith(".ood"):
-  #     file_name = directory + "/" + file_name
-  #     name = os.path.basename(file_name).split(".")[0]
-  #     try:
-  #       times[name] = process_OOD(file_name)
-  #     except RuntimeError as e:
-  #       if e[0] == 500:
-  #         print(file_name)
-  #         print(e[1])
-  #         print("```")
-  #       else:
-  #         print(e)
-  #         raise Exception()
-  #     print("")
-  # bar_plot(times, 'img/random_runtimes.png')
-  #test_ome_tree()
-  # #test_visio_tree()
-  test_pystar()
+  # test_ome_trees()
+  # #test_ome_tree()
+  # # #test_visio_tree()
+  from star1 import star1
+  star1.run()
+  #test_pystar()
 
 

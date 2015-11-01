@@ -256,7 +256,6 @@ class Graph(O):
     for node in self.nodes:
       node_map[node.id] = node
     for edge in self.edges:
-      print(edge)
       node_map[edge.source].add_edge(edge.id, "to")
       node_map[edge.target].add_edge(edge.id, "from")
 

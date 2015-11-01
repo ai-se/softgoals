@@ -132,6 +132,12 @@ def shuffle(lst):
   random.shuffle(lst)
   return lst
 
+def sign(num):
+  if num > 0:
+    return 1
+  else:
+    return -1
+
 def printm(matrix):
   s = [[str(e) for e in row] for row in matrix]
   lens = [max(map(len, col)) for col in zip(*s)]
