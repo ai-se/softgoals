@@ -73,7 +73,9 @@ class Point(O):
     return percent(count, len(self._nodes))
 
   def __hash__(self):
-    return hash(self.decisions)
+    if type(self.decisions) == dict:
+      return hash(frozenset(self.decisions.items()))
+    return hash(frozenset(self.decisions))
 
   def __eq__(self, other):
     return cmp(self.decisions, other.decisions) == 0

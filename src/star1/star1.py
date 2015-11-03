@@ -39,12 +39,29 @@ class Star1(O):
               break
     return nodes
 
+  def sample(self):
+    stat = self.de.run()
+    stat.tiles()
+    best = set()
+    for obj_index in range(len(self.de.settings.obj_funcs)):
+      sorted_pop = sorted(stat.generations[-1], key=lambda x: x.objectives[obj_index], reverse=True)[:len(stat.generations[-1])//5]
+      best.update(sorted_pop)
+    rest = set()
+    for gen in stat.generations:
+      for point in gen:
+        if not point in best:
+          rest.add(point)
+    print(len(best))
+    print(len(rest))
+
+
+
 
 def run():
   model = Model(CSAgentSR_graph)
   print(len(model.bases))
   star = Star1(model)
-  print(len(star.model.bases))
+  star.sample()
 
 
 
