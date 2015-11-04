@@ -75,4 +75,4 @@ e8 = Dep(
 
 nodes = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11]
 edges = [e1, e2, e3, e4, e5, e6, e7, e8]
-graph = Graph(nodes=nodes, edges=edges)
+graph = Graph(name="bCMS_SR_Witness", nodes=nodes, edges=edges)

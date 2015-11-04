@@ -108,12 +108,10 @@ class Point(O):
 
 
 class DE(O):
-  def __init__(self, model, settings=None):
+  def __init__(self, model, **settings):
     O.__init__(self)
     self.model = model
-    if not settings:
-      settings = default().update(candidates=self.assign_frontier_size())
-    self.settings = settings
+    self.settings = default().update(candidates=self.assign_frontier_size()).update(**settings)
     seed(self.settings.seed)
 
   def assign_frontier_size(self):

@@ -1577,4 +1577,4 @@ e179 = e = Or(
   target = n133
 ); edges.append(e)
 
-graph = Graph(nodes=nodes, edges=edges)
+graph = Graph(name="CSAgentSR", nodes=nodes, edges=edges)

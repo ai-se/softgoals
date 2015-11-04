@@ -247,8 +247,8 @@ class Graph(O):
   """
   Graph object
   """
-  def __init__(self, nodes, edges):
-    O.__init__(self, nodes=nodes, edges=edges)
+  def __init__(self, name, nodes, edges):
+    O.__init__(self, name=name, nodes=nodes, edges=edges)
     self.update_nodes()
 
   def update_nodes(self):
