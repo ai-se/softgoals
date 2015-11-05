@@ -4,75 +4,76 @@ sys.dont_write_bytecode = True
 from pystar.template import *
 __author__ = 'george'
 
+N = Many()
 # Nodes
-n1 =SoftGoal(
+n1 = N + SoftGoal(
   name = "Provide accurate Information",
 )
-n2 = SoftGoal(
+n2 = N + SoftGoal(
   name = "To know what to do",
 )
-n3 = Task(
+n3 = N + Task(
   name = "Follow instructions from firemen",
 )
-n4 = Task(
+n4 = N + Task(
   name = "Provide crisis related info",
 )
-n5 = Task(
+n5 = N + Task(
   name = "Provide to fireman",
 )
-n6 = Task(
+n6 = N + Task(
   name = "Provide info to police",
 )
-n7 = HardGoal(
+n7 = N + HardGoal(
   name = "Receive instructions",
 )
-n8 = Resource(
+n8 = N + Resource(
   name = "Crisis-related information(Fire)",
 )
-n9 = Resource(
+n9 = N + Resource(
   name = "Instructions(Fire)",
 )
-n10 = Resource(
+n10 = N + Resource(
   name = "Instructions(Police)",
 )
-n11 = Task(
+n11 = N + Task(
   name = "Crisis-related information(Police)",
 )
 
+E = Many()
 #Edges
-e1 = SomePlus(
+e1 = E + SomePlus(
   source = n7,
   target = n2
 )
-e2 = Or(
+e2 = E + Or(
   source = n7,
   target = n3
 )
-e3 = And(
+e3 = E + And(
   source = n5,
   target = n4
 )
-e4 = And(
+e4 = E + And(
   source = n6,
   target = n4
 )
-e5 = Dep(
+e5 = E + Dep(
   source = n5,
   target = n8
 )
-e6 = Dep(
+e6 = E + Dep(
   source = n9,
   target = n7
 )
-e7 = Dep(
+e7 = E + Dep(
   source = n10,
   target = n7
 )
-e8 = Dep(
+e8 = E + Dep(
   source = n6,
   target = n11
 )
 
-nodes = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11]
-edges = [e1, e2, e3, e4, e5, e6, e7, e8]
-graph = Graph(name="bCMS_SR_Witness", nodes=nodes, edges=edges)
+
+graph = Graph(name="bCMS_SR_Witness", nodes=N.all, edges=E.all)
