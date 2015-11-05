@@ -147,7 +147,7 @@ n28 = n = SoftGoal(
 );nodes.append(n)
 
 n29 = n = Task(
-  "Maintain Phone Resources",
+  "Maintain Phone Services",
   container = "CS Technology Services"
 );nodes.append(n)
 
@@ -656,12 +656,11 @@ n136 = n = SoftGoal(
 );nodes.append(n)
 
 n137 = n = SoftGoal(
-  "Avoid Bad Advice [Kids]"
+  "Avoid Bad Advice"
 );nodes.append(n)
 
 n138 = n = Task(
-  "Maintain CS Phone Services",
-  container = "CS Phone Services"
+  "Maintain CS Phone Services"
 );nodes.append(n)
 
 n139 = n = SoftGoal(
@@ -925,7 +924,7 @@ n193 = n = SoftGoal(
 );nodes.append(n)
 
 n194 = n = SoftGoal(
-  "Anonymity[Kids]",
+  "Anonymity [Kids]",
   container = "CS Web Services"
 );nodes.append(n)
 
@@ -1733,3 +1732,1001 @@ n356 = n = Resource(
   "Feedback",
   container = "Kids and Youth"
 );nodes.append(n)
+
+#EDGES
+
+edges = []
+e1 = e = Dep(
+  source=n14,
+  target=n2
+);edges.append(e)
+
+e2 = e = Dep(
+  source=n36,
+  target=n3
+);edges.append(e)
+
+e3 = e = Dep(
+  source=n48,
+  target=n4
+);edges.append(e)
+
+e4 = e = Dep(
+  source=n49,
+  target=n5
+);edges.append(e)
+
+e5 = e = Dep(
+  source=n29,
+  target=n6
+);edges.append(e)
+
+e6 = e = Dep(
+  source=n52,
+  target=n7
+);edges.append(e)
+
+e7 = e = Dep(
+  source=n35,
+  target=n8
+);edges.append(e)
+
+e8 = e = Dep(
+  source=n37,
+  target=n9
+);edges.append(e)
+
+e9 = e = Dep(
+  source=n37,
+  target=n9
+);edges.append(e)
+
+e10 = e = Dep(
+  source=n30,
+  target=n10
+);edges.append(e)
+
+e11 = e = Dep(
+  source=n107,
+  target=n12
+);edges.append(e)
+
+e12 = e = Dep(
+  source=n169,
+  target=n12
+);edges.append(e)
+
+e13 = e = Dep(
+  source=n140,
+  target=n13
+);edges.append(e)
+
+e14 = e = Dep(
+  source=n1,
+  target=n15
+);edges.append(e)
+
+e15 = e = Help(
+  source=n20,
+  target=n15
+);edges.append(e)
+
+e16 = e = Help(
+  source=n28,
+  target=n15
+);edges.append(e)
+
+e17 = e = Help(
+  source=n17,
+  target=n16
+);edges.append(e)
+
+e18 = e = Help(
+  source=n41,
+  target=n16
+);edges.append(e)
+
+e19 = e = Hurt(
+  source=n33,
+  target=n16
+);edges.append(e)
+
+e20 = e = Dep(
+  source=n116,
+  target=n17
+);edges.append(e)
+
+e21 = e = Dep(
+  source=n60,
+  target=n18
+);edges.append(e)
+
+e22 = e = Dep(
+  source=n118,
+  target=n19
+);edges.append(e)
+
+e23 = e = Dep(
+  source=n88,
+  target=n21
+);edges.append(e)
+
+e24 = e = Dep(
+  source=n121,
+  target=n22
+);edges.append(e)
+
+e25 = e = Dep(
+  source=n122,
+  target=n23
+);edges.append(e)
+
+e26 = e = Dep(
+  source=n125,
+  target=n25
+);edges.append(e)
+
+e27 = e = Dep(
+  source=n126,
+  target=n26
+);edges.append(e)
+
+e28 = e = Dep(
+  source=n145,
+  target=n29
+);edges.append(e)
+
+e29 = e = Or(
+  source=n50,
+  target=n29
+);edges.append(e)
+
+e30 = e = Dep(
+  source=n129,
+  target=n30
+);edges.append(e)
+
+e31 = e = Dep(
+  source=n147,
+  target=n31
+);edges.append(e)
+
+e32 = e = Dep(
+  source=n148,
+  target=n32
+);edges.append(e)
+
+e33 = e = Dep(
+  source=n149,
+  target=n33
+);edges.append(e)
+
+e34 = e = Help(
+  source=n102,
+  target=n35
+);edges.append(e)
+
+e35 = e = Help(
+  source=n13,
+  target=n36
+);edges.append(e)
+
+e36 = e = Help(
+  source=n16,
+  target=n36
+);edges.append(e)
+
+e37 = e = Help(
+  source=n19,
+  target=n36
+);edges.append(e)
+
+e38 = e = Help(
+  source=n21,
+  target=n36
+);edges.append(e)
+
+e39 = e = Help(
+  source=n47,
+  target=n36
+);edges.append(e)
+
+e40 = e = Help(
+  source=n23,
+  target=n36
+);edges.append(e)
+
+e41 = e = Help(
+  source=n24,
+  target=n36
+);edges.append(e)
+
+e42 = e = Help(
+  source=n25,
+  target=n36
+);edges.append(e)
+
+e43 = e = Help(
+  source=n46,
+  target=n36
+);edges.append(e)
+
+e44 = e = Help(
+  source=n32,
+  target=n36
+);edges.append(e)
+
+e45 = e = Help(
+  source=n37,
+  target=n36
+);edges.append(e)
+
+e46 = e = Help(
+  source=n34,
+  target=n36
+);edges.append(e)
+
+e47 = e = Help(
+  source=n27,
+  target=n37
+);edges.append(e)
+
+e48 = e = Help(
+  source=n40,
+  target=n37
+);edges.append(e)
+
+e49 = e = Help(
+  source=n34,
+  target=n37
+);edges.append(e)
+
+e50 = e = Help(
+  source=n19,
+  target=n38
+);edges.append(e)
+
+e51 = e = Help(
+  source=n42,
+  target=n38
+);edges.append(e)
+
+e52 = e = Hurt(
+  source=n33,
+  target=n38
+);edges.append(e)
+
+e53 = e = Help(
+  source=n36,
+  target=n39
+);edges.append(e)
+
+e54 = e = Dep(
+  source=n142,
+  target=n40
+);edges.append(e)
+
+e55 = e = Dep(
+  source=n143,
+  target=n41
+);edges.append(e)
+
+e56 = e = Dep(
+  source=n146,
+  target=n42
+);edges.append(e)
+
+e57 = e = Or(
+  source=n48,
+  target=n43
+);edges.append(e)
+
+e58 = e = Or(
+  source=n49,
+  target=n43
+);edges.append(e)
+
+e59 = e = Or(
+  source=n29,
+  target=n43
+);edges.append(e)
+
+e60 = e = Or(
+  source=n52,
+  target=n43
+);edges.append(e)
+
+e61 = e = Or(
+  source=n49,
+  target=n44
+);edges.append(e)
+
+e62 = e = Or(
+  source=n31,
+  target=n45
+);edges.append(e)
+
+e63 = e = Or(
+  source=n51,
+  target=n45
+);edges.append(e)
+
+e64 = e = Or(
+  source=n31,
+  target=n45
+);edges.append(e)
+
+e65 = e = Dep(
+  source=n128,
+  target=n46
+);edges.append(e)
+
+e66 = e = Dep(
+  source=n80,
+  target=n47
+);edges.append(e)
+
+e67 = e = Dep(
+  source=n351,
+  target=n47
+);edges.append(e)
+
+e68 = e = Or(
+  source=n50,
+  target=n48
+);edges.append(e)
+
+e69 = e = Dep(
+  source=n78,
+  target=n48
+);edges.append(e)
+
+e70 = e = Or(
+  source=n50,
+  target=n49
+);edges.append(e)
+
+e71 = e = Dep(
+  source=n123,
+  target=n49
+);edges.append(e)
+
+e72 = e = Dep(
+  source=n11,
+  target=n50
+);edges.append(e)
+
+e73 = e = Dep(
+  source=n124,
+  target=n51
+);edges.append(e)
+
+e74 = e = Or(
+  source=n50,
+  target=n52
+);edges.append(e)
+
+e75 = e = Dep(
+  source=n176,
+  target=n52
+);edges.append(e)
+
+e76 = e = Dep(
+  source=n44,
+  target=n53
+);edges.append(e)
+
+e77 = e = Dep(
+  source=n36,
+  target=n54
+);edges.append(e)
+
+e78 = e = Dep(
+  source=n13,
+  target=n55
+);edges.append(e)
+
+e79 = e = Dep(
+  source=n42,
+  target=n56
+);edges.append(e)
+
+e80 = e = Dep(
+  source=n46,
+  target=n57
+);edges.append(e)
+
+e81 = e = Dep(
+  source=n30,
+  target=n58
+);edges.append(e)
+
+e82 = e = Dep(
+  source=n206,
+  target=n59
+);edges.append(e)
+
+e83 = e = Dep(
+  source=n199,
+  target=n60
+);edges.append(e)
+
+e84 = e = Dep(
+  source=n205,
+  target=n62
+);edges.append(e)
+
+e85 = e = Dep(
+  source=n200,
+  target=n63
+);edges.append(e)
+
+e86 = e = Dep(
+  source=n202,
+  target=n65
+);edges.append(e)
+
+e87 = e = Dep(
+  source=n231,
+  target=n71
+);edges.append(e)
+
+e88 = e = Or(
+  source=n75,
+  target=n73
+);edges.append(e)
+
+e89 = e = Or(
+  source=n76,
+  target=n73
+);edges.append(e)
+
+e90 = e = Dep(
+  source=n79,
+  target=n74
+);edges.append(e)
+
+e91 = e = Dep(
+  source=n83,
+  target=n75
+);edges.append(e)
+
+e92 = e = Dep(
+  source=n138,
+  target=n76
+);edges.append(e)
+
+e93 = e = Dep(
+  source=n80,
+  target=n77
+);edges.append(e)
+
+e94 = e = Dep(
+  source=n73,
+  target=n78
+);edges.append(e)
+
+e95 = e = Dep(
+  source=n275,
+  target=n79
+);edges.append(e)
+
+e96 = e = Dep(
+  source=n273,
+  target=n80
+);edges.append(e)
+
+e97 = e = Help(
+  source=n223,
+  target=n81
+);edges.append(e)
+
+e98 = e = Help(
+  source=n227,
+  target=n81
+);edges.append(e)
+
+e99 = e = Help(
+  source=n228,
+  target=n81
+);edges.append(e)
+
+e100 = e = Dep(
+  source=n81,
+  target=n82
+);edges.append(e)
+
+e101 = e = Dep(
+  source=n195,
+  target=n83
+);edges.append(e)
+
+e102 = e = Dep(
+  source=n195,
+  target=n83
+);edges.append(e)
+
+e103 = e = Dep(
+  source=n203,
+  target=n85
+);edges.append(e)
+
+e104 = e = Dep(
+  source=n220,
+  target=n86
+);edges.append(e)
+
+e105 = e = Dep(
+  source=n201,
+  target=n87
+);edges.append(e)
+
+e106 = e = Dep(
+  source=n218,
+  target=n88
+);edges.append(e)
+
+e107 = e = Or(
+  source=n90,
+  target=n89
+);edges.append(e)
+
+e108 = e = Dep(
+  source=n67,
+  target=n90
+);edges.append(e)
+
+e109 = e = Dep(
+  source=n66,
+  target=n91
+);edges.append(e)
+
+e110 = e = Dep(
+  source=n82,
+  target=n92
+);edges.append(e)
+
+e111 = e = Dep(
+  source=n84,
+  target=n93
+);edges.append(e)
+
+e112 = e = Dep(
+  source=n86,
+  target=n95
+);edges.append(e)
+
+e113 = e = Help(
+  source=n114,
+  target=n95
+);edges.append(e)
+
+e114 = e = Dep(
+  source=n134,
+  target=n96
+);edges.append(e)
+
+e115 = e = Help(
+  source=n114,
+  target=n96
+);edges.append(e)
+
+e116 = e = Dep(
+  source=n154,
+  target=n97
+);edges.append(e)
+
+e117 = e = Hurt(
+  source=n109,
+  target=n98
+);edges.append(e)
+
+e118 = e = Help(
+  source=n115,
+  target=n99
+);edges.append(e)
+
+e119 = e = Help(
+  source=n108,
+  target=n99
+);edges.append(e)
+
+e120 = e = Help(
+  source=n108,
+  target=n99
+);edges.append(e)
+
+e121 = e = Help(
+  source=n112,
+  target=n100
+);edges.append(e)
+
+e122 = e = Help(
+  source=n105,
+  target=n100
+);edges.append(e)
+
+e123 = e = Dep(
+  source=n137,
+  target=n101
+);edges.append(e)
+
+e124 = e = Dep(
+  source=n114,
+  target=n103
+);edges.append(e)
+
+e125 = e = Dep(
+  source=n119,
+  target=n105
+);edges.append(e)
+
+e126 = e = Help(
+  source=n94,
+  target=n105
+);edges.append(e)
+
+e127 = e = Dep(
+  source=n133,
+  target=n106
+);edges.append(e)
+
+e128 = e = Dep(
+  source=n87,
+  target=n107
+);edges.append(e)
+
+e129 = e = Help(
+  source=n89,
+  target=n107
+);edges.append(e)
+
+e130 = e = Help(
+  source=n92,
+  target=n108
+);edges.append(e)
+
+e131 = e = Make(
+  source=n114,
+  target=n108
+);edges.append(e)
+
+e132 = e = Or(
+  source=n111,
+  target=n109
+);edges.append(e)
+
+e133 = e = Or(
+  source=n113,
+  target=n109
+);edges.append(e)
+
+e134 = e = Or(
+  source=n97,
+  target=n109
+);edges.append(e)
+
+e135 = e = Dep(
+  source=n83,
+  target=n111
+);edges.append(e)
+
+e136 = e = Dep(
+  source=n83,
+  target=n111
+);edges.append(e)
+
+e137 = e = Dep(
+  source=n68,
+  target=n113
+);edges.append(e)
+
+e138 = e = Dep(
+  source=n132,
+  target=n114
+);edges.append(e)
+
+e139 = e = Dep(
+  source=n85,
+  target=n115
+);edges.append(e)
+
+e140 = e = Dep(
+  source=n106,
+  target=n116
+);edges.append(e)
+
+e141 = e = Dep(
+  source=n77,
+  target=n117
+);edges.append(e)
+
+e142 = e = Dep(
+  source=n104,
+  target=n118
+);edges.append(e)
+
+e143 = e = Dep(
+  source=n20,
+  target=n119
+);edges.append(e)
+
+e144 = e = Dep(
+  source=n103,
+  target=n120
+);edges.append(e)
+
+e145 = e = Dep(
+  source=n102,
+  target=n121
+);edges.append(e)
+
+e146 = e = Dep(
+  source=n101,
+  target=n122
+);edges.append(e)
+
+e147 = e = Dep(
+  source=n109,
+  target=n123
+);edges.append(e)
+
+e148 = e = Dep(
+  source=n89,
+  target=n124
+);edges.append(e)
+
+e149 = e = Dep(
+  source=n100,
+  target=n125
+);edges.append(e)
+
+e150 = e = Dep(
+  source=n99,
+  target=n126
+);edges.append(e)
+
+e151 = e = Dep(
+  source=n27,
+  target=n127
+);edges.append(e)
+
+e152 = e = Dep(
+  source=n74,
+  target=n128
+);edges.append(e)
+
+e153 = e = Dep(
+  source=n98,
+  target=n129
+);edges.append(e)
+
+e154 = e = Dep(
+  source=n196,
+  target=n130
+);edges.append(e)
+
+e155 = e = Dep(
+  source=n244,
+  target=n131
+);edges.append(e)
+
+e156 = e = Dep(
+  source=n276,
+  target=n133
+);edges.append(e)
+
+e157 = e = Dep(
+  source=n194,
+  target=n133
+);edges.append(e)
+
+e158 = e = Dep(
+  source=n217,
+  target=n134
+);edges.append(e)
+
+e159 = e = Dep(
+  source=n221,
+  target=n135
+);edges.append(e)
+
+e160 = e = Dep(
+  source=n219,
+  target=n136
+);edges.append(e)
+
+e161 = e = Dep(
+  source=n215,
+  target=n137
+);edges.append(e)
+
+e162 = e = Dep(
+  source=n296,
+  target=n137
+);edges.append(e)
+
+e163 = e = Dep(
+  source=n278,
+  target=n138
+);edges.append(e)
+
+e164 = e = Dep(
+  source=n291,
+  target=n139
+);edges.append(e)
+
+e165 = e = Dep(
+  source=n160,
+  target=n140
+);edges.append(e)
+
+e166 = e = Dep(
+  source=n28,
+  target=n141
+);edges.append(e)
+
+e167 = e = Dep(
+  source=n171,
+  target=n142
+);edges.append(e)
+
+e168 = e = Dep(
+  source=n165,
+  target=n143
+);edges.append(e)
+
+e169 = e = Dep(
+  source=n172,
+  target=n145
+);edges.append(e)
+
+e170 = e = Dep(
+  source=n170,
+  target=n146
+);edges.append(e)
+
+e171 = e = Dep(
+  source=n168,
+  target=n147
+);edges.append(e)
+
+e172 = e = Dep(
+  source=n41,
+  target=n150
+);edges.append(e)
+
+e173 = e = Dep(
+  source=n290,
+  target=n151
+);edges.append(e)
+
+e174 = e = Dep(
+  source=n289,
+  target=n152
+);edges.append(e)
+
+e175 = e = Dep(
+  source=n292,
+  target=n152
+);edges.append(e)
+
+e176 = e = Dep(
+  source=n284,
+  target=n153
+);edges.append(e)
+
+e177 = e = Dep(
+  source=n294,
+  target=n153
+);edges.append(e)
+
+e178 = e = Dep(
+  source=n295,
+  target=n154
+);edges.append(e)
+
+e179 = e = Dep(
+  source=n287,
+  target=n155
+);edges.append(e)
+
+e180 = e = Dep(
+  source=n286,
+  target=n157
+);edges.append(e)
+
+e181 = e = Dep(
+  source=n293,
+  target=n158
+);edges.append(e)
+
+e182 = e = Dep(
+  source=n167,
+  target=n159
+);edges.append(e)
+
+e183 = e = Help(
+  source=n172,
+  target=n160
+);edges.append(e)
+
+e184 = e = Dep(
+  source=n141,
+  target=n161
+);edges.append(e)
+
+e185 = e = Make(
+  source=n172,
+  target=n162
+);edges.append(e)
+
+e186 = e = Dep(
+  source=n132,
+  target=n163
+);edges.append(e)
+
+e187 = e = Dep(
+  source=n138,
+  target=n164
+);edges.append(e)
+
+e188 = e = Break(
+  source=n173,
+  target=n165
+);edges.append(e)
+
+e189 = e = Dep(
+  source=n151,
+  target=n165
+);edges.append(e)
+
+e190 = e = Dep(
+  source=n155,
+  target=n166
+);edges.append(e)
+
+e191 = e = Help(
+  source=n163,
+  target=n167
+);edges.append(e)
+
+e192 = e = Help(
+  source=n161,
+  target=n167
+);edges.append(e)
+
+e193 = e = Dep(
+  source=n70,
+  target=n168
+);edges.append(e)
+
+e194 = e = Help(
+  source=n168,
+  target=n169
+);edges.append(e)
+
+e195 = e = Hurt(
+  source=n173,
+  target=n170
+);edges.append(e)
+
+e196 = e = Hurt(
+  source=n167,
+  target=n171
+);edges.append(e)
+
+e197 = e = Or(
+  source=n164,
+  target=n172
+);edges.append(e)
+
+e198 = e = Or(
+  source=n166,
+  target=n172
+);edges.append(e)
+
+e199 = e = Dep(
+  source=n69,
+  target=n174
+);edges.append(e)
