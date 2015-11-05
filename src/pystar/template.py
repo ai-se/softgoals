@@ -103,29 +103,29 @@ class Task(Node):
   """
   A Task node.
   """
-  def __init__(self, name, **kwargs):
-    Node.__init__(self, name, "task", **kwargs)
+  def __init__(self, name, container=None, **kwargs):
+    Node.__init__(self, name, "task", container=container, **kwargs)
 
 class Resource(Node):
   """
   A resource node
   """
-  def __init__(self, name, **kwargs):
-    Node.__init__(self, name, "resource", **kwargs)
+  def __init__(self, name, container=None, **kwargs):
+    Node.__init__(self, name, "resource", container=container, **kwargs)
 
 class SoftGoal(Node):
   """
   A Soft goal node
   """
-  def __init__(self, name, **kwargs):
-    Node.__init__(self, name, "softgoal", **kwargs)
+  def __init__(self, name, container=None, **kwargs):
+    Node.__init__(self, name, "softgoal", container=container, **kwargs)
 
 class HardGoal(Node):
   """
   A Hard Goal Node
   """
-  def __init__(self, name, **kwargs):
-    Node.__init__(self, name, "goal", **kwargs)
+  def __init__(self, name, container=None, **kwargs):
+    Node.__init__(self, name, "goal", container=container, **kwargs)
 
 class Edge(Component):
   """
@@ -242,6 +242,16 @@ class Dep(Edge):
     self.value = "dependency"
     self.type = "dependency"
 
+class Many:
+  """
+  An Array object
+  """
+  def __init__(self):
+    self.all = []
+
+  def __add__(self, other):
+    self.all.append(other)
+    return other
 
 class Graph(O):
   """

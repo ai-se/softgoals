@@ -127,11 +127,18 @@ def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
   plt.figure(1)
   for i, data_map in enumerate(data):
     meds = data_map["meds"]
-    iqrs = data_map["iqrs"]
-    x = range(len(meds))
-    index = int(str(len(data))+"1"+str(i+1))
-    plt.subplot(index)
-    plt.title(obj_names[i])
-    plt.plot(x, meds, 'b-', x, iqrs, 'r-')
+    iqrs = data_map.get("iqrs", None)
+    if iqrs:
+      x = range(len(meds))
+      index = int(str(len(data))+"1"+str(i+1))
+      plt.subplot(index)
+      plt.title(obj_names[i])
+      plt.plot(x, meds, 'b-', x, iqrs, 'r-')
+    else:
+      x = range(len(meds))
+      index = int(str(len(data))+"1"+str(i+1))
+      plt.subplot(index)
+      plt.title(obj_names[i])
+      plt.plot(x, meds, 'b-')
   plt.savefig(fig_name)
   plt.clf()
