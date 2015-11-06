@@ -4,2729 +4,3509 @@ sys.dont_write_bytecode = True
 from pystar.template import *
 __author__ = 'george'
 
-nodes = []
+N = Many()
 
-n1 = n = SoftGoal(
+n1 = N + SoftGoal(
   "Increase Resources[Services]",
   container = "CS"
-);nodes.append(n)
+)
 
-n2 = n = HardGoal(
+n2 = N + HardGoal(
   "Services be Bilingual",
   container = "CS"
-);nodes.append(n)
+)
 
-n3 = n = SoftGoal(
+n3 = N + SoftGoal(
   "High Quality Service",
   container = "CS"
-);nodes.append(n)
+)
 
-n4 = n = Task(
+n4 = N + Task(
   "Maintain/Implement CS Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n5 = n = Task(
+n5 = N + Task(
   "Maintain Web Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n6 = n = Task(
+n6 = N + Task(
   "Maintain Phone Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n7 = n = Task(
+n7 = N + Task(
   "Maintain/Implement PHL Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n8 = n = SoftGoal(
+n8 = N + SoftGoal(
   "Increase Number of Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n9 = n = SoftGoal(
+n9 = N + SoftGoal(
   "Efficient Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n10 = n = SoftGoal(
+n10 = N + SoftGoal(
   "Available [Services]",
   container = "CS"
-);nodes.append(n)
+)
 
-n11 = n = Resource(
+n11 = N + Resource(
   "Service Resources",
   container = "CS"
-);nodes.append(n)
+)
 
-n12 = n = SoftGoal(
+n12 = N + SoftGoal(
   "Measure Success of Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n13 = n = SoftGoal(
+n13 = N + SoftGoal(
   "Immediacy",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n14 = n = HardGoal(
+n14 = N + HardGoal(
   "Services Be Bilingual",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n15 = n = SoftGoal(
+n15 = N + SoftGoal(
   "Increase Resources [Services]",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n16 = n = SoftGoal(
+n16 = N + SoftGoal(
   "Anonymity",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n17 = n = SoftGoal(
+n17 = N + SoftGoal(
   "Anonymity [Kids]",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n18 = n = SoftGoal(
+n18 = N + SoftGoal(
   "Avoid Presence of Pedofiles",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n19 = n = SoftGoal(
+n19 = N + SoftGoal(
   "Confidentiality [Kids]",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n20 = n = SoftGoal(
+n20 = N + SoftGoal(
   "Increase Web Resources",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n21 = n = SoftGoal(
+n21 = N + SoftGoal(
   "Sufficiently Moderated Web Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n22 = n = SoftGoal(
+n22 = N + SoftGoal(
   "Increased Web Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n23 = n = SoftGoal(
+n23 = N + SoftGoal(
   "Avoid Bad Advice",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n24 = n = SoftGoal(
+n24 = N + SoftGoal(
   "Direct Response to Kids",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n25 = n = SoftGoal(
+n25 = N + SoftGoal(
   "Improve Website Content",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n26 = n = SoftGoal(
+n26 = N + SoftGoal(
   "Efficient Web Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n27 = n = SoftGoal(
+n27 = N + SoftGoal(
   "Decrease Response Time",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n28 = n = SoftGoal(
+n28 = N + SoftGoal(
   "Increase Phone Resources",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n29 = n = Task(
+n29 = N + Task(
   "Maintain Phone Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n30 = n = SoftGoal(
+n30 = N + SoftGoal(
   "Available [Services]",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n31 = n = Task(
+n31 = N + Task(
   "Implement Phone Feedback",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n32 = n = HardGoal(
+n32 = N + HardGoal(
   "Counsellors be Professionally Trained",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n33 = n = Task(
+n33 = N + Task(
   "Acquire Feedback",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n34 = n = HardGoal(
+n34 = N + HardGoal(
   "Service Levels Be Met",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n35 = n = SoftGoal(
+n35 = N + SoftGoal(
   "Increase Number of Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n36 = n = SoftGoal(
+n36 = N + SoftGoal(
   "High Quality Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n37 = n = SoftGoal(
+n37 = N + SoftGoal(
   "Efficient Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n38 = n = SoftGoal(
+n38 = N + SoftGoal(
   "Confidentiality",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n39 = n = SoftGoal(
+n39 = N + SoftGoal(
   "Relevance in Kids Lives",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n40 = n = SoftGoal(
+n40 = N + SoftGoal(
   "Efficient Phone Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n41 = n = SoftGoal(
+n41 = N + SoftGoal(
   "Anonymity [Parents]",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n42 = n = SoftGoal(
+n42 = N + SoftGoal(
   "Confidentiality [Parents]",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n43 = n = Task(
+n43 = N + Task(
   "Implement Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n44 = n = HardGoal(
+n44 = N + HardGoal(
   "Services be provided for Kids Bullying Line",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n45 = n = Task(
+n45 = N + Task(
   "Implement Feedback Collection",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n46 = n = SoftGoal(
+n46 = N + SoftGoal(
   "Connect Back to the Community",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n47 = n = SoftGoal(
+n47 = N + SoftGoal(
   "Kids Have Ownership of Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n48 = n = Task(
+n48 = N + Task(
   "Maintain/Implement CS Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n49 = n = Task(
+n49 = N + Task(
   "Maintain Web Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n50 = n = Task(
+n50 = N + Task(
   "Acquire Service Resources",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n51 = n = Task(
+n51 = N + Task(
   "Implement Feedback Form",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n52 = n = Task(
+n52 = N + Task(
   "Maintain/Implement PHL Services",
   container = "CS Technology Services"
-);nodes.append(n)
+)
 
-n53 = n = HardGoal(
+n53 = N + HardGoal(
   "Services be provided for Kids Bullying Line",
   container = "Provincial government"
-);nodes.append(n)
+)
 
-n54 = n = SoftGoal(
+n54 = N + SoftGoal(
   "Quality [Services]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n55 = n = SoftGoal(
+n55 = N + SoftGoal(
   "Immediacy [Services]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n56 = n = SoftGoal(
+n56 = N + SoftGoal(
   "Confidentiality [Services]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n57 = n = SoftGoal(
+n57 = N + SoftGoal(
   "Connect Back to the Community",
   container = "Parents"
-);nodes.append(n)
+)
 
-n58 = n = SoftGoal(
+n58 = N + SoftGoal(
   "Availability [Services]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n59 = n = SoftGoal(
+n59 = N + SoftGoal(
   "Improve Image to Kids",
   container = "CS"
-);nodes.append(n)
+)
 
-n60 = n = SoftGoal(
+n60 = N + SoftGoal(
   "Maintain Services above Competition",
   container = "CS"
-);nodes.append(n)
+)
 
-n61 = n = SoftGoal(
+n61 = N + SoftGoal(
   "Avoid Presence of Pedofiles",
   container = "CS"
-);nodes.append(n)
+)
 
-n62 = n = SoftGoal(
+n62 = N + SoftGoal(
   "Reduce Contagion Effect [Of Harmful Actions]",
   container = "CS"
-);nodes.append(n)
+)
 
-n63 = n = SoftGoal(
+n63 = N + SoftGoal(
   "Encourage Kids Using Web Services to Use Phone Services",
   container = "CS"
-);nodes.append(n)
+)
 
-n64 = n = SoftGoal(
+n64 = N + SoftGoal(
   "Web Services Self Serve",
   container = "CS"
-);nodes.append(n)
+)
 
-n65 = n = SoftGoal(
+n65 = N + SoftGoal(
   "Empowering Kids to Help Themselves",
   container = "CS"
-);nodes.append(n)
+)
 
-n66 = n = Resource(
+n66 = N + Resource(
   "Web Server",
   container = "IT Department"
-);nodes.append(n)
+)
 
-n67 = n = Resource(
+n67 = N + Resource(
   "Feedback Form Software",
   container = "IT Department"
-);nodes.append(n)
+)
 
-n68 = n = Resource(
+n68 = N + Resource(
   "Web Software",
   container = "IT Department"
-);nodes.append(n)
+)
 
-n69 = n = HardGoal(
+n69 = N + HardGoal(
   "Telephony Be Implemented and Managed",
   container = "IT Department"
-);nodes.append(n)
+)
 
-n70 = n = Task(
+n70 = N + Task(
   "Implement Phone Feedback",
   container = "IT Department"
-);nodes.append(n)
+)
 
-n71 = n = Task(
+n71 = N + Task(
   "Put Content Onto Website",
   container = "IT Department"
-);nodes.append(n)
+)
 
-n72 = n = Resource(
+n72 = N + Resource(
   "Strategic Blue Print",
   container = "Web Task Force"
-);nodes.append(n)
+)
 
-n73 = n = Task(
+n73 = N + Task(
   "Maintain Implement CS Services",
   container = "CS Service"
-);nodes.append(n)
+)
 
-n74 = n = SoftGoal(
+n74 = N + SoftGoal(
   "Connect Back to the Community",
   container = "CS Service"
-);nodes.append(n)
+)
 
-n75 = n = Task(
+n75 = N + Task(
   "Maintain Implement CS Web Services",
   container = "CS Service"
-);nodes.append(n)
+)
 
-n76 = n = Task(
+n76 = N + Task(
   "Maintain CS Phone Services",
   container = "CS Service"
-);nodes.append(n)
+)
 
-n77 = n = SoftGoal(
+n77 = N + SoftGoal(
   "Kids Have Ownership of Services",
   container = "CS Service"
-);nodes.append(n)
+)
 
-n78 = n = Task(
+n78 = N + Task(
   "Maintain/Implement CS Services",
-);nodes.append(n)
+)
 
-n79 = n = SoftGoal(
+n79 = N + SoftGoal(
   "Connect Back to the Community",
-);nodes.append(n)
+)
 
-n80 = n = SoftGoal(
+n80 = N + SoftGoal(
   "Kids Have Ownership of Services",
-);nodes.append(n)
+)
 
-n81 = n = SoftGoal(
+n81 = N + SoftGoal(
   "Web Services Self Serve",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n82 = n = SoftGoal(
+n82 = N + SoftGoal(
   "Web Services Self Serve",
-);nodes.append(n)
+)
 
-n83 = n = Task(
+n83 = N + Task(
   "Maintain/Implement CS Web Services",
-);nodes.append(n)
+)
 
-n84 = n = SoftGoal(
+n84 = N + SoftGoal(
   "Immediacy",
-);nodes.append(n)
+)
 
-n85 = n = SoftGoal(
+n85 = N + SoftGoal(
   "Easier Navigation [CS Web Services]",
-);nodes.append(n)
+)
 
-n86 = n = SoftGoal(
+n86 = N + SoftGoal(
   "Decrease Response Time",
-);nodes.append(n)
+)
 
-n87 = n = SoftGoal(
+n87 = N + SoftGoal(
   "Measure Success of Services",
-);nodes.append(n)
+)
 
-n88 = n = SoftGoal(
+n88 = N + SoftGoal(
   "Sufficiently Moderated Web Services",
-);nodes.append(n)
+)
 
-n89 = n = Task(
+n89 = N + Task(
   "Implement Feedback Form",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n90 = n = Task(
+n90 = N + Task(
   "Obtain Needed Software",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n91 = n = Task(
+n91 = N + Task(
   "Obtain Web Server",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n92 = n = SoftGoal(
+n92 = N + SoftGoal(
   "Web Services Self Serve",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n93 = n = SoftGoal(
+n93 = N + SoftGoal(
   "Immediacy",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n94 = n = HardGoal(
+n94 = N + HardGoal(
   "Only Online Request from Canadians Accepted",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n95 = n = SoftGoal(
+n95 = N + SoftGoal(
   "Decrease Response Time",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n96 = n = SoftGoal(
+n96 = N + SoftGoal(
   "Control [Web Services]",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n97 = n = Task(
+n97 = N + Task(
   "Maintain PHL Web Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n98 = n = SoftGoal(
+n98 = N + SoftGoal(
   "Available [Services]",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n99 = n = SoftGoal(
+n99 = N + SoftGoal(
   "Efficient Web Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n100 = n = SoftGoal(
+n100 = N + SoftGoal(
   "Improve Website Content",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n101 = n = SoftGoal(
+n101 = N + SoftGoal(
   "Avoid Bad Advice",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n102 = n = SoftGoal(
+n102 = N + SoftGoal(
   "Increased Web Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n103 = n = SoftGoal(
+n103 = N + SoftGoal(
   "Sufficiently Moderated Web Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n104 = n = SoftGoal(
+n104 = N + SoftGoal(
   "Confidentiality [Kids]",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n105 = n = SoftGoal(
+n105 = N + SoftGoal(
   "Increase Web Resources",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n106 = n = SoftGoal(
+n106 = N + SoftGoal(
   "Anonymity [Kids]",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n107 = n = SoftGoal(
+n107 = N + SoftGoal(
   "Measure Success of Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n108 = n = SoftGoal(
+n108 = N + SoftGoal(
   "Accommodate Web Site Traffic",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n109 = n = Task(
+n109 = N + Task(
   "Maintain Web Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n110 = n = HardGoal(
+n110 = N + HardGoal(
   "Web Traffic Be Kept Track of",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n111 = n = Task(
+n111 = N + Task(
   "Maintain/Implement CS Web Services",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n112 = n = HardGoal(
+n112 = N + HardGoal(
   "Web Site Content Be Updated Daily",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n113 = n = Task(
+n113 = N + Task(
   "Obtain Software",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n114 = n = SoftGoal(
+n114 = N + SoftGoal(
   "Sufficient Counselling Resources",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n115 = n = SoftGoal(
+n115 = N + SoftGoal(
   "Easier Navigation [CS Web Services]",
   container = "Web Service"
-);nodes.append(n)
+)
 
-n116 = n = SoftGoal(
+n116 = N + SoftGoal(
   "Anonymity [Kids]",
-);nodes.append(n)
+)
 
-n117 = n = SoftGoal(
+n117 = N + SoftGoal(
   "Kids Have Ownership of Services",
-);nodes.append(n)
+)
 
-n118 = n = SoftGoal(
+n118 = N + SoftGoal(
   "Confidentiality [Kids]",
-);nodes.append(n)
+)
 
-n119 = n = SoftGoal(
+n119 = N + SoftGoal(
   "Increase Web Resources",
-);nodes.append(n)
+)
 
-n120 = n = SoftGoal(
+n120 = N + SoftGoal(
   "Sufficiently Moderated Web Services",
-);nodes.append(n)
+)
 
-n121 = n = SoftGoal(
+n121 = N + SoftGoal(
   "Increased Web Services",
-);nodes.append(n)
+)
 
-n122 = n = SoftGoal(
+n122 = N + SoftGoal(
   "Avoid Bad Advice",
-);nodes.append(n)
+)
 
-n123 = n = Task(
+n123 = N + Task(
   "Maintain Web Services",
-);nodes.append(n)
+)
 
-n124 = n = Task(
+n124 = N + Task(
   "Implement Feedback Form",
-);nodes.append(n)
+)
 
-n125 = n = SoftGoal(
+n125 = N + SoftGoal(
   "Improve Website Content",
-);nodes.append(n)
+)
 
-n126 = n = SoftGoal(
+n126 = N + SoftGoal(
   "Efficient Web Services",
-);nodes.append(n)
+)
 
-n127 = n = SoftGoal(
+n127 = N + SoftGoal(
   "Decrease Response Time",
-);nodes.append(n)
+)
 
-n128 = n = SoftGoal(
+n128 = N + SoftGoal(
   "Connect Back to the Community",
-);nodes.append(n)
+)
 
-n129 = n = SoftGoal(
+n129 = N + SoftGoal(
   "Available [Services]",
-);nodes.append(n)
+)
 
-n130 = n = SoftGoal(
+n130 = N + SoftGoal(
   "Relevance in Kids Lives",
-);nodes.append(n)
+)
 
-n131 = n = SoftGoal(
+n131 = N + SoftGoal(
   "Increased Web Services"
-);nodes.append(n)
+)
 
-n132 = n = SoftGoal(
+n132 = N + SoftGoal(
   "Sufficient Counselling Resources"
-);nodes.append(n)
+)
 
-n133 = n = SoftGoal(
+n133 = N + SoftGoal(
   "Anonymity [Kids]"
-);nodes.append(n)
+)
 
-n134 = n = SoftGoal(
+n134 = N + SoftGoal(
   "Control [Web Services]"
-);nodes.append(n)
+)
 
-n135 = n = SoftGoal(
+n135 = N + SoftGoal(
   "Direct Response to Kids"
-);nodes.append(n)
+)
 
-n136 = n = SoftGoal(
+n136 = N + SoftGoal(
   "Confidentiality [Kids]"
-);nodes.append(n)
+)
 
-n137 = n = SoftGoal(
+n137 = N + SoftGoal(
   "Avoid Bad Advice"
-);nodes.append(n)
+)
 
-n138 = n = Task(
+n138 = N + Task(
   "Maintain CS Phone Services"
-);nodes.append(n)
+)
 
-n139 = n = SoftGoal(
+n139 = N + SoftGoal(
   "Immediacy",
   container = "PHL Web Service -> Web Service"
-);nodes.append(n)
+)
 
-n140 = n = SoftGoal(
+n140 = N + SoftGoal(
   "Immediacy",
   container = "Phone Service -> Web Service"
-);nodes.append(n)
+)
 
-n141 = n = SoftGoal(
+n141 = N + SoftGoal(
   "Increase Phone Resources",
-);nodes.append(n)
+)
 
-n142 = n = SoftGoal(
+n142 = N + SoftGoal(
   "Efficient Phone Services",
-);nodes.append(n)
+)
 
-n143 = n = SoftGoal(
+n143 = N + SoftGoal(
   "Anonymity [Parents]",
-);nodes.append(n)
+)
 
-n145 = n = Task(
+n145 = N + Task(
   "Maintain Phone Services",
-);nodes.append(n)
+)
 
-n146 = n = SoftGoal(
+n146 = N + SoftGoal(
   "Confidentiality [Parents]",
-);nodes.append(n)
+)
 
-n147 = n = Task(
+n147 = N + Task(
   "Implement Phone Feedback",
-);nodes.append(n)
+)
 
-n148 = n = HardGoal(
+n148 = N + HardGoal(
   "Counsellors Be Professionally Trained",
   container = "Counselling Management"
-);nodes.append(n)
+)
 
-n149 = n = Resource(
+n149 = N + Resource(
   "Feedback",
   container = "Parents"
-);nodes.append(n)
+)
 
-n150 = n = SoftGoal(
+n150 = N + SoftGoal(
   "Anonymity [Parents]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n151 = n = SoftGoal(
+n151 = N + SoftGoal(
   "Anonymity [Kids]",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n152 = n = SoftGoal(
+n152 = N + SoftGoal(
   "Confidentiality [Parents]",
-);nodes.append(n)
+)
 
-n153 = n = SoftGoal(
+n153 = N + SoftGoal(
   "Connect Back to the Community",
-);nodes.append(n)
+)
 
-n154 = n = Task(
+n154 = N + Task(
   "Maintain PHL Web Services",
-);nodes.append(n)
+)
 
-n155 = n = Task(
+n155 = N + Task(
   "Maintain PHL Phone Services",
-);nodes.append(n)
+)
 
-n156 = n = Task(
+n156 = N + Task(
   "Maintain PHL Phone Services",
   container = "Parents"
-);nodes.append(n)
+)
 
-n157 = n = Task(
+n157 = N + Task(
   "Parents use Phone Counselling",
   container = "Parents"
-);nodes.append(n)
+)
 
-n158 = n = SoftGoal(
+n158 = N + SoftGoal(
   "Similarity with other parents' problems",
   container = "Parents"
-);nodes.append(n)
+)
 
-n159 = n = SoftGoal(
+n159 = N + SoftGoal(
   "Decrease [Phone Waiting Time]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n160 = n = SoftGoal(
+n160 = N + SoftGoal(
   "Immediacy",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n161 = n = SoftGoal(
+n161 = N + SoftGoal(
   "Increase Phone Resources",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n162 = n = SoftGoal(
+n162 = N + SoftGoal(
   "Available [Services]",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n163 = n = SoftGoal(
+n163 = N + SoftGoal(
   "Sufficient Counselling Resources",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n164 = n = Task(
+n164 = N + Task(
   "Maintain CS Phone Services",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n165 = n = SoftGoal(
+n165 = N + SoftGoal(
   "Anonymity [Parents]",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n166 = n = Task(
+n166 = N + Task(
   "Maintain PHL Phone Services",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n167 = n = SoftGoal(
+n167 = N + SoftGoal(
   "Accommodate Phone Traffic",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n168 = n = Task(
+n168 = N + Task(
   "Implement Phone Feedback",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n169 = n = SoftGoal(
+n169 = N + SoftGoal(
   "Measure Success of Services",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n170 = n = SoftGoal(
+n170 = N + SoftGoal(
   "Confidentiality [Parents]",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n171 = n = SoftGoal(
+n171 = N + SoftGoal(
   "Efficient Phone Services",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n172 = n = Task(
+n172 = N + Task(
   "Maintain Phone Services",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n173 = n = Task(
+n173 = N + Task(
   "Trace Calls",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n174 = n = HardGoal(
+n174 = N + HardGoal(
   "Telephony Be Implemented and Managed",
   container = "Phone Service"
-);nodes.append(n)
+)
 
-n175 = n = SoftGoal(
+n175 = N + SoftGoal(
   "Connect Back to the Community",
   container = "PHL Service"
-);nodes.append(n)
+)
 
-n176 = n = Task(
+n176 = N + Task(
   "Maintain/Implement PHL Services",
   container = "PHL Service"
-);nodes.append(n)
+)
 
-n177 = n = Task(
+n177 = N + Task(
   "Maintain PHL Web Services",
   container = "PHL Service"
-);nodes.append(n)
+)
 
-n178 = n = Task(
+n178 = N + Task(
   "Maintain PHL Phone Services",
   container = "PHL Service"
-);nodes.append(n)
+)
 
-n179 = n = Task(
+n179 = N + Task(
   "Kids Read General Questions and Answers",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n180 = n = Task(
+n180 = N + Task(
   "Implement Polls about Kids",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n181 = n = Task(
+n181 = N + Task(
   "Kids read Polls about Kids",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n182 = n = Task(
+n182 = N + Task(
   "Implement General Questions and Answers",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n183 = n = Task(
+n183 = N + Task(
   "Kids use get Informed Section of Website",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n184 = n = Task(
-  "Implement Get Informed Section of Website",
+n184 = N + Task(
+  "Implement Get Informed Section of Web Site",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n185 = n = SoftGoal(
+n185 = N + SoftGoal(
   "Increase Emphasis on Online Feedback Form",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n186 = n = SoftGoal(
+n186 = N + SoftGoal(
   "Easier to Find Posts [Web Posting Technology]",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n187 = n = Resource(
+n187 = N + Resource(
   "Web Site Content",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n188 = n = SoftGoal(
+n188 = N + SoftGoal(
   "Anonymity [Counsellors]",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n189 = n = SoftGoal(
+n189 = N + SoftGoal(
   "Reduce Prank Calls ",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n190 = n = SoftGoal(
+n190 = N + SoftGoal(
   "Avoid Dialogues",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n191 = n = SoftGoal(
+n191 = N + SoftGoal(
   "Correct Interpretation of Counsel",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n192 = n = SoftGoal(
+n192 = N + SoftGoal(
   "Reduce Number of Steps [Web Posting Technology]",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n193 = n = SoftGoal(
+n193 = N + SoftGoal(
   "Control of Counselling Work",
   container = "Counselling"
-);nodes.append(n)
+)
 
-n194 = n = SoftGoal(
+n194 = N + SoftGoal(
   "Anonymity [Kids]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n195 = n = Task(
+n195 = N + Task(
   "Maintain/Implement CS Web Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n196 = n = SoftGoal(
+n196 = N + SoftGoal(
   "Relevance in Kids Lives",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n197 = n = HardGoal(
+n197 = N + HardGoal(
   "Strategic Blue Print for Website Be Followed",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n198 = n = SoftGoal(
+n198 = N + SoftGoal(
   "Connect Back to the Community",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n199 = n = SoftGoal(
+n199 = N + SoftGoal(
   "Maintain Services above Competition",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n200 = n = SoftGoal(
+n200 = N + SoftGoal(
   "Encourage Kids Using Web Services to Use Phone Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n201 = n = SoftGoal(
+n201 = N + SoftGoal(
   "Measure Success of Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n202 = n = SoftGoal(
+n202 = N + SoftGoal(
   "Empowering Kids to Help Themselves",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n203 = n = SoftGoal(
+n203 = N + SoftGoal(
   "Easier Navigation [CS Web Services]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n204 = n = SoftGoal(
+n204 = N + SoftGoal(
   "Avoid Presence of Pedofiles",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n205 = n = SoftGoal(
+n205 = N + SoftGoal(
   "Reduce Contagion Effect[Of harmful Actions]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n206 = n = SoftGoal(
+n206 = N + SoftGoal(
   "Improve Image to Kids",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n207 = n = SoftGoal(
-  "Improve Image to Kids",
-  container = "CS Web Services"
-);nodes.append(n)
-
-n208 = n = SoftGoal(
+n208 = N + SoftGoal(
   "Immediacy",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n209 = n = SoftGoal(
-  "Increase Emphasis on Online Feedback",
+n209 = N + SoftGoal(
+  "Increase Emphasis on Online Feedback Form",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n210 = n = SoftGoal(
+n210 = N + SoftGoal(
   "Similarity of Problems",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n211 = n = HardGoal(
+n211 = N + HardGoal(
   "Kids Use Online Information Provided",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n212 = n = SoftGoal(
+n212 = N + SoftGoal(
   "Easier to Find Posts [Web Posting Technology]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n213 = n = SoftGoal(
+n213 = N + SoftGoal(
   "Effective chat room filters",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n214 = n = SoftGoal(
+n214 = N + SoftGoal(
   "Avoid Dialogues [Between Kids]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n215 = n = SoftGoal(
+n215 = N + SoftGoal(
   "Avoid Bad Advice",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n216 = n = SoftGoal(
+n216 = N + SoftGoal(
   "Avoid Dialogues Between[Kids and Counsellors on the Web]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n217 = n = SoftGoal(
+n217 = N + SoftGoal(
   "Control [Web Services]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n218 = n = SoftGoal(
+n218 = N + SoftGoal(
   "Sufficiently Moderated Web Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n219 = n = SoftGoal(
+n219 = N + SoftGoal(
   "Confidentiality [Kids]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n220 = n = SoftGoal(
+n220 = N + SoftGoal(
   "Decrease Response Time",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n221 = n = SoftGoal(
+n221 = N + SoftGoal(
   "Direct Response to Kids",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n222 = n = SoftGoal(
+n222 = N + SoftGoal(
   "Kids Have Ownership of Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n223 = n = Task(
+n223 = N + Task(
   "Kids Read Polls about Kids",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n224 = n = Task(
+n224 = N + Task(
   "Implement Polls about Kids",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n225 = n = Task(
+n225 = N + Task(
   "Implement General Questions and Answers",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n226 = n = Task(
+n226 = N + Task(
   "Implement Get Informed Section of Web Site",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n227 = n = Task(
+n227 = N + Task(
   "Kids Read General Questions and Answers",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n228 = n = Task(
+n228 = N + Task(
   "Kids Read Get Informed Section of Website",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n229 = n = Task(
+n229 = N + Task(
   "Kids Get Information through E-Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n230 = n = SoftGoal(
+n230 = N + SoftGoal(
   "Control of Counselling Work",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n231 = n = Task(
+n231 = N + Task(
   "Put Content onto Website",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n232 = n = Task(
+n232 = N + Task(
   "Acquire Web Content",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n233 = n = SoftGoal(
-  "Reduce Number of Steps[Web Posting Technology]",
+n233 = N + SoftGoal(
+  "Reduce Number of Steps [Web Posting Technology]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n234 = n = SoftGoal(
+n234 = N + SoftGoal(
   "Correct Interpretation of Counsel",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n235 = n = HardGoal(
+n235 = N + HardGoal(
   "Technology that Does Not Allow Dialogue Between Kids Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n236 = n = HardGoal(
+n236 = N + HardGoal(
   "Technology that Allows Dialogue Between Kids Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n237 = n = HardGoal(
+n237 = N + HardGoal(
   "Anonymous Technology Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n238 = n = HardGoal(
+n238 = N + HardGoal(
   "Non-Anonymous Technology Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n239 = n = HardGoal(
+n239 = N + HardGoal(
   "Moderated E-Counselling Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n240 = n = HardGoal(
+n240 = N + HardGoal(
   "Non-Confidential Technology Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n241 = n = HardGoal(
+n241 = N + HardGoal(
   "Confidential Technology Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n242 = n = HardGoal(
+n242 = N + HardGoal(
   "Real Time E-Counselling Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n243 = n = HardGoal(
+n243 = N + HardGoal(
   "Non-Real Time E-Counselling Be Used",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n244 = n = SoftGoal(
+n244 = N + SoftGoal(
   "Increased Web Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n245 = n = SoftGoal(
+n245 = N + SoftGoal(
   "Anonymity [Counsellors]",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n246 = n = SoftGoal(
+n246 = N + SoftGoal(
   "Friendly Web Site",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n247 = n = Task(
+n247 = N + Task(
   "Kids Use Video Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n248 = n = Task(
+n248 = N + Task(
   "Implement Video Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n249 = n = Task(
+n249 = N + Task(
   "Kids Use Voice Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n250 = n = Task(
+n250 = N + Task(
   "Implement Voice Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n251 = n = Task(
+n251 = N + Task(
   "Kids Use Cyber Cafe/Portal/Chat Room",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n252 = n = Task(
+n252 = N + Task(
   "Implement Cyber Cafe/Portal/Chat Room",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n253 = n = Task(
+n253 = N + Task(
   "Implement Filters",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n254 = n = Task(
+n254 = N + Task(
   "Block Kids who Display Inappropriate Behaviour",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n255 = n = Task(
+n255 = N + Task(
   "Schedule Chat at Specific Times",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n256 = n = Task(
+n256 = N + Task(
   "Implement Delay",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n257 = n = Task(
+n257 = N + Task(
   "Kids Use Ask a Counsellor Section",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n258 = n = Task(
+n258 = N + Task(
   "Maintain Ask a Counsellor Section",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n259 = n = Task(
+n259 = N + Task(
   "Kids Use Text Messaging",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n260 = n = Task(
+n260 = N + Task(
   "Implement Text Messaging",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n261 = n = SoftGoal(
+n261 = N + SoftGoal(
   "Easier Access to Post Reply",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n262 = n = Task(
+n262 = N + Task(
   "Inform Kids about Anonymity[Kids] of Web Services",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n263 = n = Task(
+n263 = N + Task(
   "Kids Use One-On-One Chat Rooms",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n264 = n = Task(
-  "Kids Use One-On-One Chat Rooms",
-  container = "CS Web Services"
-);nodes.append(n)
-
-n265 = n = Task(
+n265 = N + Task(
   "Implement One-On-One Chat Rooms",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n266 = n = Task(
-  "Implement One-On-One Chat Rooms",
-  container = "CS Web Services"
-);nodes.append(n)
-
-n267 = n = Task(
+n267 = N + Task(
   "Kids Use Bulletin Board with Replies",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n268 = n = Task(
+n268 = N + Task(
   "Implement Bulletin Board with Replies",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n269 = n = Task(
+n269 = N + Task(
   "Kids Use Email Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n270 = n = Task(
+n270 = N + Task(
   "Implement Email Counselling",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n271 = n = Task(
+n271 = N + Task(
   "Kids Use Bulletin Board with Delayed Moderation",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n272 = n = Task(
+n272 = N + Task(
   "Implement Bulletin Board with Delayed Moderation",
   container = "CS Web Services"
-);nodes.append(n)
+)
 
-n273 = n = SoftGoal(
+n273 = N + SoftGoal(
   "Kids Have Ownership of Services",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n274 = n = Task(
+n274 = N + Task(
   "Kids Use Phone Counselling",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n275 = n = SoftGoal(
+n275 = N + SoftGoal(
   "Connect Back to the Community",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n276 = n = SoftGoal(
+n276 = N + SoftGoal(
   "Anonymity [Kids]",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n277 = n = SoftGoal(
+n277 = N + SoftGoal(
   "Confidentiality [Kids]",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n278 = n = Task(
+n278 = N + Task(
   "Maintain CS Phone Services",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n279 = n = SoftGoal(
+n279 = N + SoftGoal(
   "Determine Calls Coming from Web Users",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n280 = n = Task(
+n280 = N + Task(
   "Implement Anti-Pranking Message",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n281 = n = SoftGoal(
+n281 = N + SoftGoal(
   "Reduce Prank Calls",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n282 = n = SoftGoal(
+n282 = N + SoftGoal(
   "Decrease Phone Waiting Time",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n283 = n = HardGoal(
+n283 = N + HardGoal(
   "Answer 80% of Calls within 30 Seconds of Message Ending",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n284 = n = SoftGoal(
+n284 = N + SoftGoal(
   "Connect Back to the Community",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n285 = n = SoftGoal(
+n285 = N + SoftGoal(
   "Anonymity [Parents]",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n286 = n = Task(
+n286 = N + Task(
   "Parents Use Phone Counselling",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n287 = n = Task(
+n287 = N + Task(
   "Maintain PHL Phone Services",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n288 = n = Task(
+n288 = N + Task(
   "Provide Recorded Messages",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n289 = n = SoftGoal(
+n289 = N + SoftGoal(
   "Confidentiality [Parents]",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n290 = n = SoftGoal(
+n290 = N + SoftGoal(
   "Anonymity [Parents]",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n291 = n = SoftGoal(
+n291 = N + SoftGoal(
   "Immediacy",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n292 = n = SoftGoal(
+n292 = N + SoftGoal(
   "Confidentiality [Parents]",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n293 = n = SoftGoal(
+n293 = N + SoftGoal(
   "Similarity with other parents' problems",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n294 = n = SoftGoal(
+n294 = N + SoftGoal(
   "Connect Back to the Community",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n295 = n = Task(
+n295 = N + Task(
   "Maintain PHL Web Services",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n296 = n = SoftGoal(
+n296 = N + SoftGoal(
   "Avoid Bad Advice",
   container = "PHL Web Services"
-);nodes.append(n)
+)
 
-n297 = n = Task(
+n297 = N + Task(
   "Parent Use Tool to Allow Parents to Talk to Each Other",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n298 = n = Task(
+n298 = N + Task(
   "Implement Tool to Allow Parents to Talk to Each Other",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n299 = n = Task(
+n299 = N + Task(
   "Parent Use Bulletin Board with Replies",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n300 = n = Task(
+n300 = N + Task(
   "Implement Board with Replies",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n301 = n = Task(
+n301 = N + Task(
   "Parent Use Information Section",
   container = "PHL Phone Services"
-);nodes.append(n)
+)
 
-n302 = n = Task(
+n302 = N + Task(
   "Implement Information Section",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n303 = n = SoftGoal(
+n303 = N + SoftGoal(
   "Easy [Access to Post Reply]",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n304 = n = SoftGoal(
+n304 = N + SoftGoal(
   "Friendly [Web Site]",
   container = "CS Phone Services"
-);nodes.append(n)
+)
 
-n305 = n = Task(
+n305 = N + Task(
   "Implement Tool to Allow Parents to Talk to Each Other",
   container = "Parents"
-);nodes.append(n)
+)
 
-n306 = n = Task(
+n306 = N + Task(
   "Parents Use Tool to Allow Parents to Talk to Each Other",
   container = "Parents"
-);nodes.append(n)
+)
 
-n307 = n = Task(
+n307 = N + Task(
   "Implement Board with Replies",
   container = "Parents"
-);nodes.append(n)
+)
 
-n309 = n = Task(
+n309 = N + Task(
   "Parents Use Bulletin Board with Replies",
   container = "Parents"
-);nodes.append(n)
+)
 
-n310 = n = Task(
+n310 = N + Task(
   "Implement Information Section",
   container = "Parents"
-);nodes.append(n)
+)
 
-n311 = n = Task(
+n311 = N + Task(
   "Parents Use Information Section",
   container = "Parents"
-);nodes.append(n)
+)
 
-n312 = n = SoftGoal(
+n312 = N + SoftGoal(
   "Friendly [Web Site]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n313 = n = Task(
+n313 = N + Task(
   "Easy [Access to Post Reply]",
   container = "Parents"
-);nodes.append(n)
+)
 
-n314 = n = Resource(
+n314 = N + Resource(
   "Phone Library of Recorded Messages",
   container = "Parents"
-);nodes.append(n)
+)
 
-n315 = n = Task(
+n315 = N + Task(
   "Kids use Video Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n316 = n = Task(
+n316 = N + Task(
   "Implement Video Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n317 = n = Task(
+n317 = N + Task(
   "Provide Web Counselling With Video",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n318 = n = Task(
+n318 = N + Task(
   "Provide Web Counselling With Audio",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n319 = n = Task(
+n319 = N + Task(
   "Kids Use Cyber Cafe/Portal/Chat Room",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n320 = n = Task(
+n320 = N + Task(
   "Implement Cyber Cafe/Portal/Chat Room",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n321 = n = Task(
+n321 = N + Task(
   "Kids Use Voice Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n322 = n = Task(
+n322 = N + Task(
   "Implement Voice Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n323 = n = Task(
+n323 = N + Task(
   "Moderate a Chat",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n324 = n = SoftGoal(
+n324 = N + SoftGoal(
   "Similarity of Problems",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n325 = n = SoftGoal(
+n325 = N + SoftGoal(
   "Connect to Other Kids",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n326 = n = Task(
+n326 = N + Task(
   "Kids use Text Messaging",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n327 = n = Task(
+n327 = N + Task(
   "Kids use Ask a Counsellor Section",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n328 = n = Task(
+n328 = N + Task(
   "Maintain Ask a Counsellor Section",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n329 = n = Task(
+n329 = N + Task(
   "Provide Written Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n330 = n = Task(
+n330 = N + Task(
   "Easier Access to Post Reply",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n331 = n = Task(
+n331 = N + Task(
   "Inform Kids about Anonymity[Kids] of Web Services",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n332 = n = Task(
+n332 = N + Task(
   "Kids Use One-On-One Chat Rooms",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n333 = n = Task(
+n333 = N + Task(
   "Moderate Discussion Boards",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n334 = n = Task(
+n334 = N + Task(
   "Implement Text Messaging",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n335 = n = Task(
+n335 = N + Task(
   "Implement Bulletin Board With Replies",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n336 = n = Task(
+n336 = N + Task(
   "Implement One-On-ONe Chat Rooms",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n337 = n = Task(
+n337 = N + Task(
   "Create Counselling Posts",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n338 = n = Task(
+n338 = N + Task(
   "Kids Use Bulletin Board with Replies",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n339 = n = Task(
+n339 = N + Task(
   "Implement Email Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n340 = n = Task(
+n340 = N + Task(
   "Perform Email Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n341 = n = Task(
+n341 = N + Task(
   "Kids Use Email Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n342 = n = Task(
+n342 = N + Task(
   "Kids Use Bulletin Board with Delayed Moderation",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n343 = n = Task(
+n343 = N + Task(
   "Implement Bulletin Board with Delayed Moderation",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n344 = n = SoftGoal(
+n344 = N + SoftGoal(
   "Friendly Web Site",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n345 = n = Task(
+n345 = N + Task(
   "Kids Use Phone Counselling",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n346 = n = SoftGoal(
+n346 = N + SoftGoal(
   "Decrease Phone Waiting Time",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n347 = n = Task(
+n347 = N + Task(
   "Maintain Phone Services",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n348 = n = Task(
+n348 = N + Task(
   "Voice Counselling Be Performed",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n349 = n = SoftGoal(
+n349 = N + SoftGoal(
   "Anonymity [Kids]",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n350 = n = SoftGoal(
+n350 = N + SoftGoal(
   "Connect Back to the Community",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n351 = n = SoftGoal(
+n351 = N + SoftGoal(
   "Kids have Ownership of Services",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n352 = n = SoftGoal(
+n352 = N + SoftGoal(
   "Immediacy",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n353 = n = SoftGoal(
+n353 = N + SoftGoal(
   "Confidentiality [Kids]",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n354 = n = SoftGoal(
+n354 = N + SoftGoal(
   "Available [Services]",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n355 = n = SoftGoal(
+n355 = N + SoftGoal(
   "High Quality Services",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
-n356 = n = Resource(
+n356 = N + Resource(
   "Feedback",
   container = "Kids and Youth"
-);nodes.append(n)
+)
 
 #EDGES
+E = Many()
 
-edges = []
-e1 = e = Dep(
+e1 = E + Dep(
   source=n14,
   target=n2
-);edges.append(e)
+)
 
-e2 = e = Dep(
+e2 = E + Dep(
   source=n36,
   target=n3
-);edges.append(e)
+)
 
-e3 = e = Dep(
+e3 = E + Dep(
   source=n48,
   target=n4
-);edges.append(e)
+)
 
-e4 = e = Dep(
+e4 = E + Dep(
   source=n49,
   target=n5
-);edges.append(e)
+)
 
-e5 = e = Dep(
+e5 = E + Dep(
   source=n29,
   target=n6
-);edges.append(e)
+)
 
-e6 = e = Dep(
+e6 = E + Dep(
   source=n52,
   target=n7
-);edges.append(e)
+)
 
-e7 = e = Dep(
+e7 = E + Dep(
   source=n35,
   target=n8
-);edges.append(e)
+)
 
-e8 = e = Dep(
+e8 = E + Dep(
   source=n37,
   target=n9
-);edges.append(e)
+)
 
-e9 = e = Dep(
+e9 = E + Dep(
   source=n37,
   target=n9
-);edges.append(e)
+)
 
-e10 = e = Dep(
+e10 = E + Dep(
   source=n30,
   target=n10
-);edges.append(e)
+)
 
-e11 = e = Dep(
+e11 = E + Dep(
   source=n107,
   target=n12
-);edges.append(e)
+)
 
-e12 = e = Dep(
+e12 = E + Dep(
   source=n169,
   target=n12
-);edges.append(e)
+)
 
-e13 = e = Dep(
+e13 = E + Dep(
   source=n140,
   target=n13
-);edges.append(e)
+)
 
-e14 = e = Dep(
+e14 = E + Dep(
   source=n1,
   target=n15
-);edges.append(e)
+)
 
-e15 = e = Help(
+e15 = E + Help(
   source=n20,
   target=n15
-);edges.append(e)
+)
 
-e16 = e = Help(
+e16 = E + Help(
   source=n28,
   target=n15
-);edges.append(e)
+)
 
-e17 = e = Help(
+e17 = E + Help(
   source=n17,
   target=n16
-);edges.append(e)
+)
 
-e18 = e = Help(
+e18 = E + Help(
   source=n41,
   target=n16
-);edges.append(e)
+)
 
-e19 = e = Hurt(
+e19 = E + Hurt(
   source=n33,
   target=n16
-);edges.append(e)
+)
 
-e20 = e = Dep(
+e20 = E + Dep(
   source=n116,
   target=n17
-);edges.append(e)
+)
 
-e21 = e = Dep(
+e21 = E + Dep(
   source=n60,
   target=n18
-);edges.append(e)
+)
 
-e22 = e = Dep(
+e22 = E + Dep(
   source=n118,
   target=n19
-);edges.append(e)
+)
 
-e23 = e = Dep(
+e23 = E + Dep(
   source=n88,
   target=n21
-);edges.append(e)
+)
 
-e24 = e = Dep(
+e24 = E + Dep(
   source=n121,
   target=n22
-);edges.append(e)
+)
 
-e25 = e = Dep(
+e25 = E + Dep(
   source=n122,
   target=n23
-);edges.append(e)
+)
 
-e26 = e = Dep(
+e26 = E + Dep(
   source=n125,
   target=n25
-);edges.append(e)
+)
 
-e27 = e = Dep(
+e27 = E + Dep(
   source=n126,
   target=n26
-);edges.append(e)
+)
 
-e28 = e = Dep(
+e28 = E + Dep(
   source=n145,
   target=n29
-);edges.append(e)
+)
 
-e29 = e = Or(
+e29 = E + Or(
   source=n50,
   target=n29
-);edges.append(e)
+)
 
-e30 = e = Dep(
+e30 = E + Dep(
   source=n129,
   target=n30
-);edges.append(e)
+)
 
-e31 = e = Dep(
+e31 = E + Dep(
   source=n147,
   target=n31
-);edges.append(e)
+)
 
-e32 = e = Dep(
+e32 = E + Dep(
   source=n148,
   target=n32
-);edges.append(e)
+)
 
-e33 = e = Dep(
+e33 = E + Dep(
   source=n149,
   target=n33
-);edges.append(e)
+)
 
-e34 = e = Help(
+e34 = E + Help(
   source=n102,
   target=n35
-);edges.append(e)
+)
 
-e35 = e = Help(
+e35 = E + Help(
   source=n13,
   target=n36
-);edges.append(e)
+)
 
-e36 = e = Help(
+e36 = E + Help(
   source=n16,
   target=n36
-);edges.append(e)
+)
 
-e37 = e = Help(
+e37 = E + Help(
   source=n19,
   target=n36
-);edges.append(e)
+)
 
-e38 = e = Help(
+e38 = E + Help(
   source=n21,
   target=n36
-);edges.append(e)
+)
 
-e39 = e = Help(
+e39 = E + Help(
   source=n47,
   target=n36
-);edges.append(e)
+)
 
-e40 = e = Help(
+e40 = E + Help(
   source=n23,
   target=n36
-);edges.append(e)
+)
 
-e41 = e = Help(
+e41 = E + Help(
   source=n24,
   target=n36
-);edges.append(e)
+)
 
-e42 = e = Help(
+e42 = E + Help(
   source=n25,
   target=n36
-);edges.append(e)
+)
 
-e43 = e = Help(
+e43 = E + Help(
   source=n46,
   target=n36
-);edges.append(e)
+)
 
-e44 = e = Help(
+e44 = E + Help(
   source=n32,
   target=n36
-);edges.append(e)
+)
 
-e45 = e = Help(
+e45 = E + Help(
   source=n37,
   target=n36
-);edges.append(e)
+)
 
-e46 = e = Help(
+e46 = E + Help(
   source=n34,
   target=n36
-);edges.append(e)
+)
 
-e47 = e = Help(
+e47 = E + Help(
   source=n27,
   target=n37
-);edges.append(e)
+)
 
-e48 = e = Help(
+e48 = E + Help(
   source=n40,
   target=n37
-);edges.append(e)
+)
 
-e49 = e = Help(
+e49 = E + Help(
   source=n34,
   target=n37
-);edges.append(e)
+)
 
-e50 = e = Help(
+e50 = E + Help(
   source=n19,
   target=n38
-);edges.append(e)
+)
 
-e51 = e = Help(
+e51 = E + Help(
   source=n42,
   target=n38
-);edges.append(e)
+)
 
-e52 = e = Hurt(
+e52 = E + Hurt(
   source=n33,
   target=n38
-);edges.append(e)
+)
 
-e53 = e = Help(
+e53 = E + Help(
   source=n36,
   target=n39
-);edges.append(e)
+)
 
-e54 = e = Dep(
+e54 = E + Dep(
   source=n142,
   target=n40
-);edges.append(e)
+)
 
-e55 = e = Dep(
+e55 = E + Dep(
   source=n143,
   target=n41
-);edges.append(e)
+)
 
-e56 = e = Dep(
+e56 = E + Dep(
   source=n146,
   target=n42
-);edges.append(e)
+)
 
-e57 = e = Or(
+e57 = E + Or(
   source=n48,
   target=n43
-);edges.append(e)
+)
 
-e58 = e = Or(
+e58 = E + Or(
   source=n49,
   target=n43
-);edges.append(e)
+)
 
-e59 = e = Or(
+e59 = E + Or(
   source=n29,
   target=n43
-);edges.append(e)
+)
 
-e60 = e = Or(
+e60 = E + Or(
   source=n52,
   target=n43
-);edges.append(e)
+)
 
-e61 = e = Or(
+e61 = E + Or(
   source=n49,
   target=n44
-);edges.append(e)
+)
 
-e62 = e = Or(
+e62 = E + Or(
   source=n31,
   target=n45
-);edges.append(e)
+)
 
-e63 = e = Or(
+e63 = E + Or(
   source=n51,
   target=n45
-);edges.append(e)
+)
 
-e64 = e = Or(
+e64 = E + Or(
   source=n31,
   target=n45
-);edges.append(e)
+)
 
-e65 = e = Dep(
+e65 = E + Dep(
   source=n128,
   target=n46
-);edges.append(e)
+)
 
-e66 = e = Dep(
+e66 = E + Dep(
   source=n80,
   target=n47
-);edges.append(e)
+)
 
-e67 = e = Dep(
+e67 = E + Dep(
   source=n351,
   target=n47
-);edges.append(e)
+)
 
-e68 = e = Or(
+e68 = E + Or(
   source=n50,
   target=n48
-);edges.append(e)
+)
 
-e69 = e = Dep(
+e69 = E + Dep(
   source=n78,
   target=n48
-);edges.append(e)
+)
 
-e70 = e = Or(
+e70 = E + Or(
   source=n50,
   target=n49
-);edges.append(e)
+)
 
-e71 = e = Dep(
+e71 = E + Dep(
   source=n123,
   target=n49
-);edges.append(e)
+)
 
-e72 = e = Dep(
+e72 = E + Dep(
   source=n11,
   target=n50
-);edges.append(e)
+)
 
-e73 = e = Dep(
+e73 = E + Dep(
   source=n124,
   target=n51
-);edges.append(e)
+)
 
-e74 = e = Or(
+e74 = E + Or(
   source=n50,
   target=n52
-);edges.append(e)
+)
 
-e75 = e = Dep(
+e75 = E + Dep(
   source=n176,
   target=n52
-);edges.append(e)
+)
 
-e76 = e = Dep(
+e76 = E + Dep(
   source=n44,
   target=n53
-);edges.append(e)
+)
 
-e77 = e = Dep(
+e77 = E + Dep(
   source=n36,
   target=n54
-);edges.append(e)
+)
 
-e78 = e = Dep(
+e78 = E + Dep(
   source=n13,
   target=n55
-);edges.append(e)
+)
 
-e79 = e = Dep(
+e79 = E + Dep(
   source=n42,
   target=n56
-);edges.append(e)
+)
 
-e80 = e = Dep(
+e80 = E + Dep(
   source=n46,
   target=n57
-);edges.append(e)
+)
 
-e81 = e = Dep(
+e81 = E + Dep(
   source=n30,
   target=n58
-);edges.append(e)
+)
 
-e82 = e = Dep(
+e82 = E + Dep(
   source=n206,
   target=n59
-);edges.append(e)
+)
 
-e83 = e = Dep(
+e83 = E + Dep(
   source=n199,
   target=n60
-);edges.append(e)
+)
 
-e84 = e = Dep(
+e84 = E + Dep(
   source=n205,
   target=n62
-);edges.append(e)
+)
 
-e85 = e = Dep(
+e85 = E + Dep(
   source=n200,
   target=n63
-);edges.append(e)
+)
 
-e86 = e = Dep(
+e86 = E + Dep(
   source=n202,
   target=n65
-);edges.append(e)
+)
 
-e87 = e = Dep(
+e87 = E + Dep(
   source=n231,
   target=n71
-);edges.append(e)
+)
 
-e88 = e = Or(
+e88 = E + Or(
   source=n75,
   target=n73
-);edges.append(e)
+)
 
-e89 = e = Or(
+e89 = E + Or(
   source=n76,
   target=n73
-);edges.append(e)
+)
 
-e90 = e = Dep(
+e90 = E + Dep(
   source=n79,
   target=n74
-);edges.append(e)
+)
 
-e91 = e = Dep(
+e91 = E + Dep(
   source=n83,
   target=n75
-);edges.append(e)
+)
 
-e92 = e = Dep(
+e92 = E + Dep(
   source=n138,
   target=n76
-);edges.append(e)
+)
 
-e93 = e = Dep(
+e93 = E + Dep(
   source=n80,
   target=n77
-);edges.append(e)
+)
 
-e94 = e = Dep(
+e94 = E + Dep(
   source=n73,
   target=n78
-);edges.append(e)
+)
 
-e95 = e = Dep(
+e95 = E + Dep(
   source=n275,
   target=n79
-);edges.append(e)
+)
 
-e96 = e = Dep(
+e96 = E + Dep(
   source=n273,
   target=n80
-);edges.append(e)
+)
 
-e97 = e = Help(
+e97 = E + Help(
   source=n223,
   target=n81
-);edges.append(e)
+)
 
-e98 = e = Help(
+e98 = E + Help(
   source=n227,
   target=n81
-);edges.append(e)
+)
 
-e99 = e = Help(
+e99 = E + Help(
   source=n228,
   target=n81
-);edges.append(e)
+)
 
-e100 = e = Dep(
+e100 = E + Dep(
   source=n81,
   target=n82
-);edges.append(e)
+)
 
-e101 = e = Dep(
+e101 = E + Dep(
   source=n195,
   target=n83
-);edges.append(e)
+)
 
-e102 = e = Dep(
+e102 = E + Dep(
   source=n195,
   target=n83
-);edges.append(e)
+)
 
-e103 = e = Dep(
+e103 = E + Dep(
   source=n203,
   target=n85
-);edges.append(e)
+)
 
-e104 = e = Dep(
+e104 = E + Dep(
   source=n220,
   target=n86
-);edges.append(e)
+)
 
-e105 = e = Dep(
+e105 = E + Dep(
   source=n201,
   target=n87
-);edges.append(e)
+)
 
-e106 = e = Dep(
+e106 = E + Dep(
   source=n218,
   target=n88
-);edges.append(e)
+)
 
-e107 = e = Or(
+e107 = E + Or(
   source=n90,
   target=n89
-);edges.append(e)
+)
 
-e108 = e = Dep(
+e108 = E + Dep(
   source=n67,
   target=n90
-);edges.append(e)
+)
 
-e109 = e = Dep(
+e109 = E + Dep(
   source=n66,
   target=n91
-);edges.append(e)
+)
 
-e110 = e = Dep(
+e110 = E + Dep(
   source=n82,
   target=n92
-);edges.append(e)
+)
 
-e111 = e = Dep(
+e111 = E + Dep(
   source=n84,
   target=n93
-);edges.append(e)
+)
 
-e112 = e = Dep(
+e112 = E + Dep(
   source=n86,
   target=n95
-);edges.append(e)
+)
 
-e113 = e = Help(
+e113 = E + Help(
   source=n114,
   target=n95
-);edges.append(e)
+)
 
-e114 = e = Dep(
+e114 = E + Dep(
   source=n134,
   target=n96
-);edges.append(e)
+)
 
-e115 = e = Help(
+e115 = E + Help(
   source=n114,
   target=n96
-);edges.append(e)
+)
 
-e116 = e = Dep(
+e116 = E + Dep(
   source=n154,
   target=n97
-);edges.append(e)
+)
 
-e117 = e = Hurt(
+e117 = E + Hurt(
   source=n109,
   target=n98
-);edges.append(e)
+)
 
-e118 = e = Help(
+e118 = E + Help(
   source=n115,
   target=n99
-);edges.append(e)
+)
 
-e119 = e = Help(
+e119 = E + Help(
   source=n108,
   target=n99
-);edges.append(e)
+)
 
-e120 = e = Help(
+e120 = E + Help(
   source=n108,
   target=n99
-);edges.append(e)
+)
 
-e121 = e = Help(
+e121 = E + Help(
   source=n112,
   target=n100
-);edges.append(e)
+)
 
-e122 = e = Help(
+e122 = E + Help(
   source=n105,
   target=n100
-);edges.append(e)
+)
 
-e123 = e = Dep(
+e123 = E + Dep(
   source=n137,
   target=n101
-);edges.append(e)
+)
 
-e124 = e = Dep(
+e124 = E + Dep(
   source=n114,
   target=n103
-);edges.append(e)
+)
 
-e125 = e = Dep(
+e125 = E + Dep(
   source=n119,
   target=n105
-);edges.append(e)
+)
 
-e126 = e = Help(
+e126 = E + Help(
   source=n94,
   target=n105
-);edges.append(e)
+)
 
-e127 = e = Dep(
+e127 = E + Dep(
   source=n133,
   target=n106
-);edges.append(e)
+)
 
-e128 = e = Dep(
+e128 = E + Dep(
   source=n87,
   target=n107
-);edges.append(e)
+)
 
-e129 = e = Help(
+e129 = E + Help(
   source=n89,
   target=n107
-);edges.append(e)
+)
 
-e130 = e = Help(
+e130 = E + Help(
   source=n92,
   target=n108
-);edges.append(e)
+)
 
-e131 = e = Make(
+e131 = E + Make(
   source=n114,
   target=n108
-);edges.append(e)
+)
 
-e132 = e = Or(
+e132 = E + Or(
   source=n111,
   target=n109
-);edges.append(e)
+)
 
-e133 = e = Or(
+e133 = E + Or(
   source=n113,
   target=n109
-);edges.append(e)
+)
 
-e134 = e = Or(
+e134 = E + Or(
   source=n97,
   target=n109
-);edges.append(e)
+)
 
-e135 = e = Dep(
+e135 = E + Dep(
   source=n83,
   target=n111
-);edges.append(e)
+)
 
-e136 = e = Dep(
+e136 = E + Dep(
   source=n83,
   target=n111
-);edges.append(e)
+)
 
-e137 = e = Dep(
+e137 = E + Dep(
   source=n68,
   target=n113
-);edges.append(e)
+)
 
-e138 = e = Dep(
+e138 = E + Dep(
   source=n132,
   target=n114
-);edges.append(e)
+)
 
-e139 = e = Dep(
+e139 = E + Dep(
   source=n85,
   target=n115
-);edges.append(e)
+)
 
-e140 = e = Dep(
+e140 = E + Dep(
   source=n106,
   target=n116
-);edges.append(e)
+)
 
-e141 = e = Dep(
+e141 = E + Dep(
   source=n77,
   target=n117
-);edges.append(e)
+)
 
-e142 = e = Dep(
+e142 = E + Dep(
   source=n104,
   target=n118
-);edges.append(e)
+)
 
-e143 = e = Dep(
+e143 = E + Dep(
   source=n20,
   target=n119
-);edges.append(e)
+)
 
-e144 = e = Dep(
+e144 = E + Dep(
   source=n103,
   target=n120
-);edges.append(e)
+)
 
-e145 = e = Dep(
+e145 = E + Dep(
   source=n102,
   target=n121
-);edges.append(e)
+)
 
-e146 = e = Dep(
+e146 = E + Dep(
   source=n101,
   target=n122
-);edges.append(e)
+)
 
-e147 = e = Dep(
+e147 = E + Dep(
   source=n109,
   target=n123
-);edges.append(e)
+)
 
-e148 = e = Dep(
+e148 = E + Dep(
   source=n89,
   target=n124
-);edges.append(e)
+)
 
-e149 = e = Dep(
+e149 = E + Dep(
   source=n100,
   target=n125
-);edges.append(e)
+)
 
-e150 = e = Dep(
+e150 = E + Dep(
   source=n99,
   target=n126
-);edges.append(e)
+)
 
-e151 = e = Dep(
+e151 = E + Dep(
   source=n27,
   target=n127
-);edges.append(e)
+)
 
-e152 = e = Dep(
+e152 = E + Dep(
   source=n74,
   target=n128
-);edges.append(e)
+)
 
-e153 = e = Dep(
+e153 = E + Dep(
   source=n98,
   target=n129
-);edges.append(e)
+)
 
-e154 = e = Dep(
+e154 = E + Dep(
   source=n196,
   target=n130
-);edges.append(e)
+)
 
-e155 = e = Dep(
+e155 = E + Dep(
   source=n244,
   target=n131
-);edges.append(e)
+)
 
-e156 = e = Dep(
+e156 = E + Dep(
   source=n276,
   target=n133
-);edges.append(e)
+)
 
-e157 = e = Dep(
+e157 = E + Dep(
   source=n194,
   target=n133
-);edges.append(e)
+)
 
-e158 = e = Dep(
+e158 = E + Dep(
   source=n217,
   target=n134
-);edges.append(e)
+)
 
-e159 = e = Dep(
+e159 = E + Dep(
   source=n221,
   target=n135
-);edges.append(e)
+)
 
-e160 = e = Dep(
+e160 = E + Dep(
   source=n219,
   target=n136
-);edges.append(e)
+)
 
-e161 = e = Dep(
+e161 = E + Dep(
   source=n215,
   target=n137
-);edges.append(e)
+)
 
-e162 = e = Dep(
+e162 = E + Dep(
   source=n296,
   target=n137
-);edges.append(e)
+)
 
-e163 = e = Dep(
+e163 = E + Dep(
   source=n278,
   target=n138
-);edges.append(e)
+)
 
-e164 = e = Dep(
+e164 = E + Dep(
   source=n291,
   target=n139
-);edges.append(e)
+)
 
-e165 = e = Dep(
+e165 = E + Dep(
   source=n160,
   target=n140
-);edges.append(e)
+)
 
-e166 = e = Dep(
+e166 = E + Dep(
   source=n28,
   target=n141
-);edges.append(e)
+)
 
-e167 = e = Dep(
+e167 = E + Dep(
   source=n171,
   target=n142
-);edges.append(e)
+)
 
-e168 = e = Dep(
+e168 = E + Dep(
   source=n165,
   target=n143
-);edges.append(e)
+)
 
-e169 = e = Dep(
+e169 = E + Dep(
   source=n172,
   target=n145
-);edges.append(e)
+)
 
-e170 = e = Dep(
+e170 = E + Dep(
   source=n170,
   target=n146
-);edges.append(e)
+)
 
-e171 = e = Dep(
+e171 = E + Dep(
   source=n168,
   target=n147
-);edges.append(e)
+)
 
-e172 = e = Dep(
+e172 = E + Dep(
   source=n41,
   target=n150
-);edges.append(e)
+)
 
-e173 = e = Dep(
+e173 = E + Dep(
   source=n290,
   target=n151
-);edges.append(e)
+)
 
-e174 = e = Dep(
+e174 = E + Dep(
   source=n289,
   target=n152
-);edges.append(e)
+)
 
-e175 = e = Dep(
+e175 = E + Dep(
   source=n292,
   target=n152
-);edges.append(e)
+)
 
-e176 = e = Dep(
+e176 = E + Dep(
   source=n284,
   target=n153
-);edges.append(e)
+)
 
-e177 = e = Dep(
+e177 = E + Dep(
   source=n294,
   target=n153
-);edges.append(e)
+)
 
-e178 = e = Dep(
+e178 = E + Dep(
   source=n295,
   target=n154
-);edges.append(e)
+)
 
-e179 = e = Dep(
+e179 = E + Dep(
   source=n287,
   target=n155
-);edges.append(e)
+)
 
-e180 = e = Dep(
+e180 = E + Dep(
   source=n286,
   target=n157
-);edges.append(e)
+)
 
-e181 = e = Dep(
+e181 = E + Dep(
   source=n293,
   target=n158
-);edges.append(e)
+)
 
-e182 = e = Dep(
+e182 = E + Dep(
   source=n167,
   target=n159
-);edges.append(e)
+)
 
-e183 = e = Help(
+e183 = E + Help(
   source=n172,
   target=n160
-);edges.append(e)
+)
 
-e184 = e = Dep(
+e184 = E + Dep(
   source=n141,
   target=n161
-);edges.append(e)
+)
 
-e185 = e = Make(
+e185 = E + Make(
   source=n172,
   target=n162
-);edges.append(e)
+)
 
-e186 = e = Dep(
+e186 = E + Dep(
   source=n132,
   target=n163
-);edges.append(e)
+)
 
-e187 = e = Dep(
+e187 = E + Dep(
   source=n138,
   target=n164
-);edges.append(e)
+)
 
-e188 = e = Break(
+e188 = E + Break(
   source=n173,
   target=n165
-);edges.append(e)
+)
 
-e189 = e = Dep(
+e189 = E + Dep(
   source=n151,
   target=n165
-);edges.append(e)
+)
 
-e190 = e = Dep(
+e190 = E + Dep(
   source=n155,
   target=n166
-);edges.append(e)
+)
 
-e191 = e = Help(
+e191 = E + Help(
   source=n163,
   target=n167
-);edges.append(e)
+)
 
-e192 = e = Help(
+e192 = E + Help(
   source=n161,
   target=n167
-);edges.append(e)
+)
 
-e193 = e = Dep(
+e193 = E + Dep(
   source=n70,
   target=n168
-);edges.append(e)
+)
 
-e194 = e = Help(
+e194 = E + Help(
   source=n168,
   target=n169
-);edges.append(e)
+)
 
-e195 = e = Hurt(
+e195 = E + Hurt(
   source=n173,
   target=n170
-);edges.append(e)
+)
 
-e196 = e = Hurt(
+e196 = E + Hurt(
   source=n167,
   target=n171
-);edges.append(e)
+)
 
-e197 = e = Or(
+e197 = E + Or(
   source=n164,
   target=n172
-);edges.append(e)
+)
 
-e198 = e = Or(
+e198 = E + Or(
   source=n166,
   target=n172
-);edges.append(e)
+)
 
-e199 = e = Dep(
+e199 = E + Dep(
   source=n69,
   target=n174
-);edges.append(e)
+)
+
+e200 = E + Dep(
+  source=n153,
+  target=n175
+)
+
+e201 = E + Or(
+  source=n177,
+  target=n176
+)
+
+e202 = E + Or(
+  source=n178,
+  target=n176
+)
+
+e203 = E + Dep(
+  source=n154,
+  target=n177
+)
+
+e204 = E + Dep(
+  source=n155,
+  target=n178
+)
+
+e205 = E + Dep(
+  source=n223,
+  target=n180
+)
+
+e206 = E + Dep(
+  source=n225,
+  target=n182
+)
+
+e207 = E + Dep(
+  source=n226,
+  target=n184
+)
+
+e208 = E + Dep(
+  source=n209,
+  target=n185
+)
+
+e209 = E + Dep(
+  source=n212,
+  target=n186
+)
+
+e210 = E + Dep(
+  source=n245,
+  target=n188
+)
+
+e211 = E + Dep(
+  source=n214,
+  target=n190
+)
+
+e212 = E + Dep(
+  source=n233,
+  target=n192
+)
+
+e213 = E + Dep(
+  source=n230,
+  target=n193
+)
+
+e214 = E + Dep(
+  source=n133,
+  target=n194
+)
+
+e215 = E + Make(
+  source=n237,
+  target=n194
+)
+
+e216 = E + Break(
+  source=n238,
+  target=n194
+)
+
+e217 = E + Hurt(
+  source=n271,
+  target=n194
+)
+
+e218 = E + Help(
+  source=n221,
+  target=n194
+)
+
+e219 = E + Or(
+  source=n211,
+  target=n195
+)
+
+e220 = E + Or(
+  source=n239,
+  target=n195
+)
+
+e221 = E + Dep(
+  source=n72,
+  target=n197
+)
+
+e222 = E + Help(
+  source=n211,
+  target=n198
+)
+
+e223 = E + Help(
+  source=n239,
+  target=n199
+)
+
+e224 = E + Help(
+  source=n216,
+  target=n200
+)
+
+e225 = E + Help(
+  source=n209,
+  target=n201
+)
+
+e226 = E + Help(
+  source=n211,
+  target=n202
+)
+
+e227 = E + Help(
+  source=n261,
+  target=n203
+)
+
+e228 = E + Dep(
+  source=n61,
+  target=n204
+)
+
+e229 = E + Break(
+  source=n271,
+  target=n204
+)
+
+e230 = E + Help(
+  source=n217,
+  target=n204
+)
+
+e231 = E + Help(
+  source=n213,
+  target=n205
+)
+
+e232 = E + Help(
+  source=n214,
+  target=n205
+)
+
+e233 = E + Help(
+  source=n255,
+  target=n205
+)
+
+e234 = E + Help(
+  source=n256,
+  target=n205
+)
+
+e235 = E + Hurt(
+  source=n271,
+  target=n205
+)
+
+e236 = E + Help(
+  source=n199,
+  target=n206
+)
+
+e237 = E + Help(
+  source=n204,
+  target=n206
+)
+
+e238 = E + Help(
+  source=n211,
+  target=n206
+)
+
+e239 = E + Help(
+  source=n261,
+  target=n206
+)
+
+e240 = E + Help(
+  source=n219,
+  target=n206
+)
+
+e241 = E + Help(
+  source=n220,
+  target=n206
+)
+
+e242 = E + Help(
+  source=n220,
+  target=n208
+)
+
+e243 = E + Make(
+  source=n242,
+  target=n208
+)
+
+e244 = E + Hurt(
+  source=n243,
+  target=n208
+)
+
+e245 = E + Help(
+  source=n223,
+  target=n210
+)
+
+e246 = E + Help(
+  source=n227,
+  target=n210
+)
+
+e247 = E + Help(
+  source=n228,
+  target=n210
+)
+
+e248 = E + Hurt(
+  source=n235,
+  target=n210
+)
+
+e249 = E + Help(
+  source=n236,
+  target=n210
+)
+
+e250 = E + Or(
+  source=n223,
+  target=n211
+)
+
+e251 = E + Or(
+  source=n227,
+  target=n211
+)
+
+e252 = E + Or(
+  source=n228,
+  target=n211
+)
+
+e253 = E + Or(
+  source=n229,
+  target=n211
+)
+
+e254 = E + Help(
+  source=n251,
+  target=n212
+)
+
+e255 = E + Help(
+  source=n267,
+  target=n212
+)
+
+e256 = E + Hurt(
+  source=n271,
+  target=n212
+)
+
+e257 = E + Make(
+  source=n235,
+  target=n214
+)
+
+e258 = E + Break(
+  source=n236,
+  target=n214
+)
+
+e259 = E + Help(
+  source=n214,
+  target=n215
+)
+
+e260 = E + Hurt(
+  source=n242,
+  target=n215
+)
+
+e261 = E + Help(
+  source=n243,
+  target=n215
+)
+
+e262 = E + Hurt(
+  source=n247,
+  target=n216
+)
+
+e263 = E + Hurt(
+  source=n249,
+  target=n216
+)
+
+e264 = E + Hurt(
+  source=n251,
+  target=n216
+)
+
+e265 = E + Help(
+  source=n257,
+  target=n216
+)
+
+e266 = E + Hurt(
+  source=n259,
+  target=n216
+)
+
+e267 = E + Hurt(
+  source=n263,
+  target=n216
+)
+
+e268 = E + Hurt(
+  source=n267,
+  target=n216
+)
+
+e269 = E + Hurt(
+  source=n269,
+  target=n216
+)
+
+e270 = E + Hurt(
+  source=n271,
+  target=n216
+)
+
+e271 = E + Help(
+  source=n235,
+  target=n217
+)
+
+e272 = E + Hurt(
+  source=n235,
+  target=n217
+)
+
+e273 = E + Hurt(
+  source=n237,
+  target=n217
+)
+
+e274 = E + Help(
+  source=n238,
+  target=n217
+)
+
+e275 = E + Hurt(
+  source=n242,
+  target=n217
+)
+
+e276 = E + Help(
+  source=n243,
+  target=n217
+)
+
+e277 = E + Hurt(
+  source=n267,
+  target=n218
+)
+
+e278 = E + Break(
+  source=n240,
+  target=n219
+)
+
+e279 = E + Make(
+  source=n241,
+  target=n219
+)
+
+e280 = E + Make(
+  source=n242,
+  target=n220
+)
+
+e281 = E + Hurt(
+  source=n243,
+  target=n220
+)
+
+e282 = E + Break(
+  source=n257,
+  target=n221
+)
+
+e283 = E + Help(
+  source=n259,
+  target=n221
+)
+
+e284 = E + Break(
+  source=n267,
+  target=n221
+)
+
+e285 = E + Make(
+  source=n269,
+  target=n221
+)
+
+e286 = E + Break(
+  source=n271,
+  target=n221
+)
+
+e287 = E + Help(
+  source=n239,
+  target=n222
+)
+
+e288 = E + Help(
+  source=n262,
+  target=n222
+)
+
+e289 = E + Dep(
+  source=n181,
+  target=n223
+)
+
+e290 = E + Or(
+  source=n224,
+  target=n223
+)
+
+e291 = E + Or(
+  source=n231,
+  target=n224
+)
+
+e292 = E + Or(
+  source=n231,
+  target=n225
+)
+
+e293 = E + Or(
+  source=n231,
+  target=n226
+)
+
+e294 = E + Dep(
+  source=n179,
+  target=n227
+)
+
+e295 = E + Or(
+  source=n225,
+  target=n227
+)
+
+e296 = E + Or(
+  source=n226,
+  target=n228
+)
+
+e297 = E + Dep(
+  source=n183,
+  target=n228
+)
+
+e298 = E + Or(
+  source=n239,
+  target=n229
+)
+
+e299 = E + Hurt(
+  source=n239,
+  target=n230
+)
+
+e300 = E + Dep(
+  source=n71,
+  target=n231
+)
+
+e301 = E + Or(
+  source=n232,
+  target=n231
+)
+
+e302 = E + Dep(
+  source=n187,
+  target=n232
+)
+
+e303 = E + Hurt(
+  source=n258,
+  target=n233
+)
+
+e304 = E + Hurt(
+  source=n267,
+  target=n233
+)
+
+e305 = E + Help(
+  source=n271,
+  target=n233
+)
+
+e306 = E + Help(
+  source=n247,
+  target=n234
+)
+
+e307 = E + Help(
+  source=n249,
+  target=n234
+)
+
+e308 = E + Hurt(
+  source=n251,
+  target=n234
+)
+
+e309 = E + Hurt(
+  source=n257,
+  target=n234
+)
+
+e310 = E + Hurt(
+  source=n259,
+  target=n234
+)
+
+e311 = E + Hurt(
+  source=n263,
+  target=n234
+)
+
+e312 = E + Hurt(
+  source=n267,
+  target=n234
+)
+
+e313 = E + Hurt(
+  source=n269,
+  target=n234
+)
+
+e314 = E + Hurt(
+  source=n271,
+  target=n234
+)
+
+e315 = E + Or(
+  source=n247,
+  target=n235
+)
+
+e316 = E + Or(
+  source=n249,
+  target=n235
+)
+
+e317 = E + Or(
+  source=n257,
+  target=n235
+)
+
+e318 = E + Or(
+  source=n259,
+  target=n235
+)
+
+e319 = E + Or(
+  source=n263,
+  target=n235
+)
+
+e320 = E + Or(
+  source=n269,
+  target=n235
+)
+
+e321 = E + Or(
+  source=n251,
+  target=n236
+)
+
+e322 = E + Or(
+  source=n267,
+  target=n236
+)
+
+e323 = E + Or(
+  source=n271,
+  target=n236
+)
+
+e324 = E + Or(
+  source=n249,
+  target=n237
+)
+
+e325 = E + Or(
+  source=n257,
+  target=n237
+)
+
+e326 = E + Or(
+  source=n267,
+  target=n237
+)
+
+e327 = E + Or(
+  source=n247,
+  target=n238
+)
+
+e328 = E + Or(
+  source=n251,
+  target=n238
+)
+
+e329 = E + Or(
+  source=n259,
+  target=n238
+)
+
+e330 = E + Or(
+  source=n263,
+  target=n238
+)
+
+e331 = E + Or(
+  source=n269,
+  target=n238
+)
+
+e332 = E + Or(
+  source=n247,
+  target=n239
+)
+
+e333 = E + Or(
+  source=n249,
+  target=n239
+)
+
+e334 = E + Or(
+  source=n251,
+  target=n239
+)
+
+e335 = E + Or(
+  source=n257,
+  target=n239
+)
+
+e336 = E + Or(
+  source=n259,
+  target=n239
+)
+
+e337 = E + Or(
+  source=n263,
+  target=n239
+)
+
+e338 = E + Or(
+  source=n267,
+  target=n239
+)
+
+e339 = E + Or(
+  source=n269,
+  target=n239
+)
+
+e340 = E + Or(
+  source=n271,
+  target=n239
+)
+
+e341 = E + Or(
+  source=n251,
+  target=n240
+)
+
+e342 = E + Or(
+  source=n257,
+  target=n240
+)
+
+e343 = E + Or(
+  source=n267,
+  target=n240
+)
+
+e344 = E + Or(
+  source=n271,
+  target=n240
+)
+
+e345 = E + Or(
+  source=n247,
+  target=n241
+)
+
+e346 = E + Or(
+  source=n249,
+  target=n241
+)
+
+e347 = E + Or(
+  source=n259,
+  target=n241
+)
+
+e348 = E + Or(
+  source=n263,
+  target=n241
+)
+
+e349 = E + Or(
+  source=n269,
+  target=n241
+)
+
+e350 = E + Or(
+  source=n247,
+  target=n242
+)
+
+e351 = E + Or(
+  source=n249,
+  target=n242
+)
+
+e352 = E + Or(
+  source=n251,
+  target=n242
+)
+
+e353 = E + Or(
+  source=n259,
+  target=n242
+)
+
+e354 = E + Or(
+  source=n263,
+  target=n242
+)
+
+e355 = E + Or(
+  source=n257,
+  target=n243
+)
+
+e356 = E + Or(
+  source=n267,
+  target=n243
+)
+
+e357 = E + Or(
+  source=n269,
+  target=n243
+)
+
+e358 = E + Or(
+  source=n271,
+  target=n243
+)
