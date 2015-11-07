@@ -38,7 +38,7 @@ def process_Visio(file_name):
   parser.parse()
 
 def test_pystar():
-  from pystar.models.CSAgentSR import graph
+  from pystar.models.CSServices import graph
   from pystar.model import Model
   #print(graph.nodes)
   model = Model(graph)

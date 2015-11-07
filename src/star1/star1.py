@@ -4,7 +4,7 @@ sys.path.append(os.path.abspath("."))
 __author__ = 'george'
 sys.dont_write_bytecode = True
 from utilities.lib import *
-from pystar.models.CSAgentSR import graph as cs_agent_sr_graph
+from pystar.models.CSServices import graph as cs_agent_sr_graph
 from pystar.model import Model
 from utilities.de import DE, Point
 from utilities.plotter import med_spread_plot
