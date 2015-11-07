@@ -7,37 +7,48 @@ __author__ = 'george'
 N = Many()
 # Nodes
 n1 = N + SoftGoal(
-  name = "Provide accurate Information",
+  "Provide accurate Information about the crisis to police and firemen",
+  "Witnesses"
 )
 n2 = N + SoftGoal(
-  name = "To know what to do",
+  "To know what to do at different stages in the crisis",
+  "Witnesses"
 )
 n3 = N + Task(
-  name = "Follow instructions from firemen",
+  "Follow instructions from firemen and police",
+  "Witnesses"
 )
 n4 = N + Task(
-  name = "Provide crisis related info",
+  "Provide crisis related information",
+  "Witnesses"
 )
 n5 = N + Task(
-  name = "Provide to fireman",
+  "Provide to fireman",
+  "Witnesses"
 )
 n6 = N + Task(
-  name = "Provide info to police",
+  "Provide information to police",
+  "Witnesses"
 )
 n7 = N + HardGoal(
-  name = "Receive instructions",
+  "Receive instructions",
+  "Witnesses"
 )
 n8 = N + Resource(
-  name = "Crisis-related information(Fire)",
+  "Crisis-related information(Fire)",
+  "Fire Personnel"
 )
 n9 = N + Resource(
-  name = "Instructions(Fire)",
+  "Instructions",
+  "Fire Personnel"
 )
 n10 = N + Resource(
-  name = "Instructions(Police)",
+  "Instructions(Police)",
+  "Police Officer(Policeman)"
 )
 n11 = N + Task(
-  name = "Crisis-related information(Police)",
+  "Crisis-related information",
+  "Police Officer(Policeman)"
 )
 
 E = Many()
