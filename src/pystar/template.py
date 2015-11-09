@@ -24,6 +24,16 @@ sys.dont_write_bytecode = True
 # agent = "agent"
 # role = "role"
 
+def decode(input):
+  if isinstance(input, dict):
+    return {decode(key):decode(value) for key,value in input.iteritems()}
+  elif isinstance(input, list):
+    return [decode(element) for element in input]
+  elif isinstance(input, unicode):
+    return input.encode('utf-8')
+  else:
+    return input
+
 
 class O(object):
   """
@@ -319,5 +329,38 @@ class Graph(O):
     elif isinstance(node_type, str):
       return [node for node in self.nodes if node.type in [node_type]]
     else: return self.nodes
+
+  @staticmethod
+  def json(graph, file_path=None):
+    if file_path:
+      fl = open(file_path, 'w+')
+      fl.write(graph.to_json())
+      fl.close()
+    else:
+      print(graph.to_json())
+
+  @staticmethod
+  def read(file_path):
+    with open(file_path) as json_file:
+      data = decode(json.load(json_file))
+      nodes, edges = [],[]
+      for node_json in data["nodes"]:
+        node_name = node_json["name"]
+        container = node_json["container"]
+        type = node_json["type"]
+        node = Node(node_name, type, container=container)
+        node.id = node_json["id"]
+        nodes.append(node)
+      for edge_json in data["edges"]:
+        edge = Component("edge")
+        edge.id = edge_json["id"]
+        edge.value = edge_json["value"]
+        edge.type = edge_json["type"]
+        edge.source = edge_json["source"]
+        edge.target = edge_json["target"]
+        edges.append(edge)
+      return Graph(name=data["name"], nodes=nodes, edges=edges)
+
+
 
 
