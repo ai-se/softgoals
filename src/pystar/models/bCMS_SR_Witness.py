@@ -77,5 +77,5 @@ e8 = E + Dep(
 
 
 graph = Graph(name="bCMS_SR_Witness", nodes=N.all, edges=E.all)
-Graph.json(graph, "json/%s.json"%graph.name)
-Graph.json(Graph.read("json/%s.json"%graph.name), "json/dummy.json")
+Graph.json(graph, "pystar/json/%s.json"%graph.name)
+Graph.json(Graph.read("pystar/json/%s.json"%graph.name), "pystar/json/dummy.json")

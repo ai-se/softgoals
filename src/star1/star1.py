@@ -6,8 +6,10 @@ sys.dont_write_bytecode = True
 from utilities.lib import *
 from pystar.models.CSServices import graph as cs_agent_sr_graph
 from pystar.model import Model
+import pystar.template as template
 from utilities.de import DE, Point
 from utilities.plotter import med_spread_plot
+from pystar.models.dot_models import CSServices, OOOChatRooms
 
 def default():
   return O(
@@ -34,7 +36,7 @@ class Star1(O):
         for edge_id in node.from_edges:
           edge = graph.get_edge(edge_id)
           if edge.type == "contribution":
-            temp_toggle = sign(edge.get_contribution_weight(edge.value))
+            temp_toggle = sign(template.Edge.get_contribution_weight(edge.value))
             if toggle is None: toggle = temp_toggle
             if temp_toggle != toggle:
               nodes.append(node)
@@ -122,7 +124,9 @@ class Star1(O):
 
 
 def run():
-  model = Model(cs_agent_sr_graph)
+  graph = OOOChatRooms()
+  #model = Model(cs_agent_sr_graph)
+  model = Model(graph)
   star = Star1(model)
   best, rest = star.sample()
   sup_map = star.rank(best, rest)

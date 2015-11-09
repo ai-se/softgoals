@@ -234,6 +234,8 @@ class Model(O):
     """
     kids = []
     for edge in edges:
+      if edge.type != "contribution":
+        continue
       node = self._tree.get_node(edge.source)
       self.eval(node)
       kids += [Model.soft_goal_val(node.value, edge.value)]

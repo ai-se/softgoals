@@ -276,6 +276,11 @@ class Graph(O):
     for node in self.nodes:
       node_map[node.id] = node
     for edge in self.edges:
+      source = node_map.get(edge.source, None)
+      target = node_map.get(edge.target, None)
+      if source is None or target is None:
+        print(edge)
+        continue
       node_map[edge.source].add_edge(edge.id, "to")
       node_map[edge.target].add_edge(edge.id, "from")
 
@@ -362,8 +367,91 @@ class Graph(O):
       return Graph(name=data["name"], nodes=nodes, edges=edges)
 
   @staticmethod
-  def from_dot(file_name):
+  def from_dot(graph_name, path, resources=[], containers=[]):
+    def trim(str):
+      return str[1:-1]
+
     import pydot
+    graph = pydot.graph_from_dot_file(path)
+    graph_nodes = graph.get_node_list()
+    nodes = []
+    for graph_node in graph_nodes:
+      name = trim(graph_node.get_name())
+      if name in resources:
+        node = Resource(name)
+      elif name in containers:
+        continue
+      else:
+        shape = graph_node.get_attributes()["shape"]
+        if shape == "parallelogram":
+          node = HardGoal(name)
+        elif shape == "polygon":
+          node = Task(name)
+        elif shape == "box":
+          node = SoftGoal(name)
+        elif shape in ["circle", "ellipse"]:
+          # containers
+          continue
+        else:
+          print(name)
+          continue
+      node.id = node.name
+      nodes.append(node)
 
+    graph_edges = graph.get_edge_list()
+    edges = []
+    labels = set()
+    for graph_edge in graph_edges:
+      source = trim(graph_edge.get_source())
+      target = trim(graph_edge.get_destination())
+      if source in containers or target in containers:
+        continue
+      labels.add(graph_edge.get_attributes().get("label", None))
+      label = graph_edge.get_attributes().get("label", None)
+      if not label:
+        value = "or"
+        type = "decompositions"
+      elif "make" in label.lower():
+        value = "make"
+        type = "contribution"
+      elif "break" in label.lower():
+        value = "break"
+        type = "contribution"
+      elif "help" in label.lower():
+        value = "help"
+        type = "contribution"
+      elif "hurt" in label.lower():
+        value = "hurt"
+        type = "contribution"
+      elif "some +" in label.lower():
+        value = "someplus"
+        type = "contribution"
+      elif "some -" in label.lower():
+        value = "someminus"
+        type = "contribution"
+      elif "d" in label.lower():
+        value = "dependency"
+        type = "dependency"
+        source, target = target, source
+      else:
+        print(source, target, label)
+        continue
+      edge = Component("edge")
+      edge.value = value
+      edge.type = type
+      edge.source = source
+      edge.target = target
+      edges.append(edge)
+    return Graph(name=graph_name, nodes=nodes, edges=edges)
 
-
+if __name__ == "__main__":
+  resources = ["Service Resources", "Web Server", "Feedback Form Software", "Web Software",
+                 "Strategic Blue Print", "Feedback", "Web Site Content", "Phone Library of Recorded Messages",
+                 "Feedback1"]
+  containers = ["CS", "Fund Development and Marketing", "Provincial government",
+                "CS Technology Services", "CS Service", "Web Service", "Phone Service",
+                "Counselling Management", "PHL Service", "Parents", "IT Department",
+                "Web Task Force", "CS Web Services", "CS Phone Services", "PHL Phone Services",
+                "PHL Web Services", "Counselling", "Kids and Youth"]
+  graph = Graph.from_dot("CSServices", "pystar/CSServices.gv", resources, containers)
+  Graph.json(graph, "pystar/json/%s.json"%graph.name)
