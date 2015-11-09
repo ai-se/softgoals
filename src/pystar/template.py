@@ -320,4 +320,8 @@ class Graph(O):
       return [node for node in self.nodes if node.type in [node_type]]
     else: return self.nodes
 
+  @staticmethod
+  def from_dot(file_name):
+    import pydot
+
 
