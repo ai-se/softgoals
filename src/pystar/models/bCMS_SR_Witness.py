@@ -7,48 +7,37 @@ __author__ = 'george'
 N = Many()
 # Nodes
 n1 = N + SoftGoal(
-  "Provide accurate Information about the crisis to police and firemen",
-  "Witnesses"
+  name = "Provide accurate Information",
 )
 n2 = N + SoftGoal(
-  "To know what to do at different stages in the crisis",
-  "Witnesses"
+  name = "To know what to do",
 )
 n3 = N + Task(
-  "Follow instructions from firemen and police",
-  "Witnesses"
+  name = "Follow instructions from firemen",
 )
 n4 = N + Task(
-  "Provide crisis related information",
-  "Witnesses"
+  name = "Provide crisis related info",
 )
 n5 = N + Task(
-  "Provide to fireman",
-  "Witnesses"
+  name = "Provide to fireman",
 )
 n6 = N + Task(
-  "Provide information to police",
-  "Witnesses"
+  name = "Provide info to police",
 )
 n7 = N + HardGoal(
-  "Receive instructions",
-  "Witnesses"
+  name = "Receive instructions",
 )
 n8 = N + Resource(
-  "Crisis-related information(Fire)",
-  "Fire Personnel"
+  name = "Crisis-related information(Fire)",
 )
 n9 = N + Resource(
-  "Instructions",
-  "Fire Personnel"
+  name = "Instructions(Fire)",
 )
 n10 = N + Resource(
-  "Instructions(Police)",
-  "Police Officer(Policeman)"
+  name = "Instructions(Police)",
 )
 n11 = N + Task(
-  "Crisis-related information",
-  "Police Officer(Policeman)"
+  name = "Crisis-related information(Police)",
 )
 
 E = Many()
@@ -88,3 +77,5 @@ e8 = E + Dep(
 
 
 graph = Graph(name="bCMS_SR_Witness", nodes=N.all, edges=E.all)
+Graph.json(graph, "json/%s.json"%graph.name)
+Graph.json(Graph.read("json/%s.json"%graph.name), "json/dummy.json")
