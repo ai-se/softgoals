@@ -9,7 +9,7 @@ from pystar.model import Model
 import pystar.template as template
 from utilities.de import DE, Point
 from utilities.plotter import med_spread_plot
-from pystar.models.dot_models import CSServices, OOOChatRooms
+from pystar.models.dot_models import *
 
 def default():
   return O(
@@ -124,7 +124,7 @@ class Star1(O):
 
 
 def run():
-  graph = OOOChatRooms()
+  graph = CSCounselling()
   #model = Model(cs_agent_sr_graph)
   model = Model(graph)
   star = Star1(model)
