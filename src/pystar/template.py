@@ -273,16 +273,19 @@ class Graph(O):
 
   def update_nodes(self):
     node_map = {}
+    count = 0
     for node in self.nodes:
       node_map[node.id] = node
     for edge in self.edges:
       source = node_map.get(edge.source, None)
       target = node_map.get(edge.target, None)
       if source is None or target is None:
+        count +=1;
         print(edge)
         continue
       node_map[edge.source].add_edge(edge.id, "to")
       node_map[edge.target].add_edge(edge.id, "from")
+    if count: print(count)
 
   def get_edge(self, edge_id):
     for edge in self.edges:
