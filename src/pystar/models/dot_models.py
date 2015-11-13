@@ -83,7 +83,6 @@ def CSCounsellingSD():
                 "Kids and Youth", "Counselling", "Counselling Management", "IT Department",
                 "Web Counselling", "Activity Manager" ,"Phone System", "Voice Counselling"
                 "Research Partners", "CS Services", "CS", "Counselling Support to Counselling"]
-
   resources = ["Information in E-Library", "Information Binders at Stations",
                "Resources in the Library", "Tapes", "Tape Recording Technoloyg", "Salary",
                "Counselling Workshops", "Double Headsets", "Training CDs", "Information/Resources",
@@ -103,3 +102,17 @@ def CSFDandMarketing():
   graph = Graph.from_dot("CSFDandMarketing", "pystar/graphviz/CSFD and Marketing.gv", resources, containers)
   Graph.json(graph, "pystar/json/%s.json"%graph.name)
   return graph
+
+def CSFDandMarketingSD():
+  containers = ["CS", "CS Services", "Individual donor", "Corporate Sponsor", "Donor Technology",
+                "Marketing", "Corporate Partner Management", "Fund Development", "CEO +CFO", "SA Program",
+                "Counselling", "Regional Offices", "HR for Marketing and Fundraising staff", "IT department",
+                "Provincial government", "Not for Profit Partners", "Regional\nContact management"]
+  resources = ["Free advertisement", "Funds", "Sponsor Logo", "Agreement", " Free services", "Sponsor partner\ncontacts"
+               "Promotion Resources", "Single charitable registration number", "National Event Calendar",
+               "Donor/Accounting Database"]
+  graph = Graph.from_dot("CSFDandMarketingSD", "pystar/graphviz/CSFD and MarketingSD.gv", resources, containers)
+  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  return graph
+
+CSFDandMarketingSD()
