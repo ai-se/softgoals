@@ -115,4 +115,13 @@ def CSFDandMarketingSD():
   Graph.json(graph, "pystar/json/%s.json"%graph.name)
   return graph
 
-CSFDandMarketingSD()
+def CSITDepartment():
+  containers = ["CS", "Counselling Management", "Counselling", "IT Company",
+                "Pro Bono Company", "CS Services", "FD & M"]
+  resources = ["IT Resources", "Web Server", "Software", "Free Software",
+               "Free Hardware", "Hardware", "Free Web Server", "Oracle",
+               "Feedback Form Software", "Web Software", "Web Server1",
+               "Donor/Accounting Data Base", "Upgrades", "Free Upgrades"]
+  graph = Graph.from_dot("CSITDepartment", "pystar/graphviz/CSITDepartment.gv", resources, containers)
+  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  return graph

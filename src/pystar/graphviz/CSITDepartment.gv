@@ -130,6 +130,9 @@
   "Implement IVR" [width="0.78125", height="0.5", pos="957.888779527559,725.669291338583", label="Implement IVR", sides="6", shape=polygon];
   "Consideration of Feedback [IT Providers]" [width="0.816179286622626", height="0.490638069621911", pos="1136.65376615403,289.99927559055", label="Consideration of Feedback [IT Providers]", shape=box];
   "Consideration of Feedback [from Counsellors]" [width="0.816179286622626", height="0.490638069621911", pos="1115.0125984252,786.062267716535", label="Consideration of Feedback [from Counsellors]", shape=box];
+  "Get web event technology" [shape=polygon]
+  "Get web event technology1" [shape=polygon]
+
   "Increased Emphasis on IT in Hiring Process [of Counsellors]"->"Counselling Management" [label=D];
   "Counselling Management"->"Improve [Call Recording Equipment]" [label=D];
   "Increased Emphasis on IT in Hiring Process [of Counsellors]1"->"Increased Emphasis on IT in Hiring Process [of Counsellors]" [label=D];
