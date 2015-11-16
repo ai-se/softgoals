@@ -14,16 +14,8 @@ def CSServices():
                 "Counselling Management", "PHL Service", "Parents", "IT Department",
                 "Web Task Force", "CS Web Services", "CS Phone Services", "PHL Phone Services",
                 "PHL Web Services", "Counselling", "Kids and Youth"]
-  graph = Graph.from_dot("CSServices", "pystar/graphviz/CSServices.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
-  return graph
-
-def OOOChatRooms():
-  resources = []
-  containers = ["CS Technology Services", "CS Service", "Web Service", "CS Web Services",
-                "Counselling", "Counselling Employee", "Web Counselling"]
-  graph = Graph.from_dot("OOOChatRooms", "pystar/graphviz/chat_room.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSServices", "pystar/graphviz/stage1/CSServices.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSComplex():
@@ -47,8 +39,8 @@ def CSCounselling():
                "Counselling Workshops", "Double Headsets", "Training CDs", "Information/Resources",
                "Counselling Policies", "Web Moderator Meetings", "Counsellor Experience",
                "Caller Statistics", "Web Site Content", "Feedback"]
-  graph = Graph.from_dot("CSCounselling", "pystar/graphviz/CSCounselling.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSCounselling", "pystar/graphviz/stage1/CSCounselling.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSCounsellingManagement():
@@ -59,8 +51,8 @@ def CSCounsellingManagement():
   resources = ["Counselling Resources", "Double Head Set", "Salary", "Counselling Workshops"
                ,"Counselling Policies", "Web Moderator Meetings", "Call Statistics",
                "Historical Data of Call Volumes"]
-  graph = Graph.from_dot("CSCounsellingManagement", "pystar/graphviz/CSCounsellingManagement.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSCounsellingManagement", "pystar/graphviz/stage1/CSCounsellingManagement.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSCounsellingManagementSD():
@@ -71,8 +63,8 @@ def CSCounsellingManagementSD():
   resources = ["Counselling Resources", "Double Head Set", "Salary", "Counselling Workshops"
                ,"Counselling Policies", "Web Moderator Meetings", "Call Statistics",
                "Historical Data of Call Volumes"]
-  graph = Graph.from_dot("CSCounsellingManagementSD", "pystar/graphviz/CSCounsellingManagementSD.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSCounsellingManagementSD", "pystar/graphviz/stage1/CSCounsellingManagementSD.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSCounsellingSD():
@@ -88,8 +80,8 @@ def CSCounsellingSD():
                "Counselling Workshops", "Double Headsets", "Training CDs", "Information/Resources",
                "Counselling Policies", "Web Moderator Meetings", "Counsellor Experience",
                "Caller Statistics", "Web Site Content", "Feedback"]
-  graph = Graph.from_dot("CSCounsellingSD", "pystar/graphviz/CSCounsellingSD.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSCounsellingSD", "pystar/graphviz/stage1/CSCounsellingSD.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSFDandMarketing():
@@ -99,8 +91,8 @@ def CSFDandMarketing():
                " Free services", "Sponsor partner\ncontacts", "Sponsor partner\ncontacts1", "Sponsor partner\ncontacts2",
                "Single charitable registration number", "Single charitable registration number1",
                "National Marketing Strategy ", "Sponsor Logo", "Donor/Accounting Database", "Promotion Resources"]
-  graph = Graph.from_dot("CSFDandMarketing", "pystar/graphviz/CSFD and Marketing.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSFDandMarketing", "pystar/graphviz/stage1/CSFD and Marketing.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSFDandMarketingSD():
@@ -111,8 +103,8 @@ def CSFDandMarketingSD():
   resources = ["Free advertisement", "Funds", "Sponsor Logo", "Agreement", " Free services", "Sponsor partner\ncontacts"
                "Promotion Resources", "Single charitable registration number", "National Event Calendar",
                "Donor/Accounting Database"]
-  graph = Graph.from_dot("CSFDandMarketingSD", "pystar/graphviz/CSFD and MarketingSD.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSFDandMarketingSD", "pystar/graphviz/stage1/CSFD and MarketingSD.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
 def CSITDepartment():
@@ -122,6 +114,14 @@ def CSITDepartment():
                "Free Hardware", "Hardware", "Free Web Server", "Oracle",
                "Feedback Form Software", "Web Software", "Web Server1",
                "Donor/Accounting Data Base", "Upgrades", "Free Upgrades"]
-  graph = Graph.from_dot("CSITDepartment", "pystar/graphviz/CSITDepartment.gv", resources, containers)
-  Graph.json(graph, "pystar/json/%s.json"%graph.name)
+  graph = Graph.from_dot("CSITDepartment", "pystar/graphviz/stage1/CSITDepartment.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
+  return graph
+
+def OOOChatRooms():
+  resources = []
+  containers = ["CS Technology Services", "CS Service", "Web Service", "CS Web Services",
+                "Counselling", "Counselling Employee", "Web Counselling"]
+  graph = Graph.from_dot("OOOChatRooms", "pystar/graphviz/stage2/chat_room.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage2/%s.json"%graph.name)
   return graph

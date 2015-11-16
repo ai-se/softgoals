@@ -1,0 +1,11 @@
+ digraph  RootGraph {
+  node [color="#000000", fillcolor="#D1FEC7", fontcolor="#0000FF", fontname=Arial, fontsize="12", style=filled];
+  edge [color="#0000FF"];
+  "Provide Group IT/System Training to Counsellors" [width="1.37180118110236", height="0.877952755905511", pos="144.889960629921,79.5666141732283", label="Provide Group IT/System Training to Counsellors", sides="6", shape=polygon];
+  "Counsellors should be more familiar with systems" [width="1.40673046772499", height="0.845642045167509", pos="66.7157480314961,177.616027011857", label="Counsellors should be more familiar with systems", shape=box];
+  "Counsellors should become comfortable with technology" [width="1.40673046772499", height="0.845642045167508", pos="143.632506311507,262.655397090597", label="Counsellors should become comfortable with technology", shape=box];
+  "Counsellors spend as much time as possible performing counseling" [width="1.5748031496063", height="0.946677268121596", pos="265.14094488189,252.119436770488", label="Counsellors spend as much time as possible performing counseling", shape=box];
+  "Provide Group IT/System Training to Counsellors"->"Counsellors should be more familiar with systems" [fillcolor="#CDCDCD", label=Help];
+  "Provide Group IT/System Training to Counsellors"->"Counsellors should become comfortable with technology" [fillcolor="#CDCDCD", label=Help];
+  "Provide Group IT/System Training to Counsellors"->"Counsellors spend as much time as possible performing counseling" [fillcolor="#FFFFFF", label=Hurt];
+}

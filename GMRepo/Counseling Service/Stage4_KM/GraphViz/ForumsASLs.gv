@@ -1,0 +1,50 @@
+ digraph  RootGraph {
+  node [color="#000000", fontcolor="#0000FF", fontname=Arial, fontsize="12", style=filled];
+  edge [color="#0000FF"];
+  subgraph Connector {
+      node [width="1.91152721158446", height="0", pos="652.066771653543,426.743173699118", color="#0000FF", fillcolor="#CDCDCD", fontcolor="#0000FF", fontname=Arial, fontsize="12", style=filled, label=Help, shape=box];
+      "Help" [];
+  }
+  "Effective Use of Forums" [width="1.13113991654389", height="0.679973523246231", pos="412.866548806604,497.396212191195", fillcolor="#D1FEC7", label="Effective Use of Forums", shape=box];
+  "Effective Use of Forums1" [width="1.13113991654389", height="0.679973523246231", pos="748.488596050698,564.293849986471", fillcolor="#C8DCFD", label="Effective Use of Forums", shape=box];
+  "Effective Use of Forums2" [width="1.13113991654389", height="0.679973523246231", pos="55.4177299089658,415.191487781746", fillcolor="#C8DCFD", label="Effective Use of Forums", shape=box];
+  "Effective internal communications" [width="1.37795275590551", height="0.828342609606397", pos="190.728188976378,507.839861504886", fillcolor="#D1FEC7", label="Effective internal communications", shape=box];
+  "Avoid forum duplication" [width="1.06301319633239", height="0.639019822212531", pos="281.154144359305,405.213217536659", fillcolor="#C8DCFD", label="Avoid forum duplication", shape=box];
+  "Avoid forum duplication1" [width="1.06301319633239", height="0.639019822212531", pos="410.41398687899,412.016367142958", fillcolor="#D1FEC7", label="Avoid forum duplication", shape=box];
+  "Reduce number of clicks" [width="1.01302968032341", height="0.608972728137111", pos="618.378359830226,196.635459157818", fillcolor="#C8DCFD", label="Reduce number of clicks", shape=box];
+  "Make Forum use less awkward" [width="1.11417322834646", height="0.669774167196029", pos="569.862047244095,372.304625924569", fillcolor="#C8DCFD", label="Make Forum use less awkward", shape=box];
+  "Must log in 3 times to post a message" [width="1.23389086771041", height="0.733858267716535", pos="681.888417694268,82.0762204724412", fillcolor="#D1FEC7", label="Must log in 3 times to post a message", sides="6", shape=polygon];
+  "Speed up system" [width="0.905511811023622", height="0.544339429169918", pos="716.554960629921,184.10393598555", fillcolor="#C8DCFD", label="Speed up system", shape=box];
+  "Facilitate informal Communication among Counselors" [width="1.49606299212599", height="0.908661417322835", pos="947.578582677165,298.132913385827", fillcolor="#D1FEC7", label="Facilitate informal Communication among Counselors", sides="6", shape=polygon];
+  "Avoid forum duplication2" [width="1.06301319633239", height="0.639019822212531", pos="732.429734910486,481.181721473667", fillcolor="#C8DCFD", label="Avoid forum duplication", shape=box];
+  "Must be easier to get into" [width="1.18110236220473", height="0.710007951091198", pos="531.452598425197,201.406585451882", fillcolor="#C8DCFD", label="Must be easier to get into", shape=box];
+  "Make Forum use less awkward1" [width="1.11417322834646", height="0.669774167196029", pos="170.460472440945,385.343996003309", fillcolor="#C8DCFD", label="Make Forum use less awkward", shape=box];
+  "Make Forum use less awkward2" [width="1.11417322834646", height="0.669774167196029", pos="399.783307086614,320.147145609608", fillcolor="#D1FEC7", label="Make Forum use less awkward", shape=box];
+  "Provide Internal Forums" [width="0.95185367454068", height="0.609186351706035", pos="830.475236220472,405.273070866142", fillcolor="#D1FEC7", label="Provide Internal Forums", sides="6", shape=polygon];
+  "Forum  Counsellor Communication " [width="1.37795275590551", height="0.640609621062991", pos="843.405354330709,295.85312746063", fillcolor="#D1FEC7", label="Forum  Counsellor Communication ", shape=box];
+  "Forum  Kids Help Phone " [width="1.24409448818898", height="0.640609621062991", pos="741.499842519685,295.85312746063", fillcolor="#D1FEC7", label="Forum  Kids Help Phone ", shape=box];
+  "Effective Use of Forums"->"Effective Use of Forums1" [fillcolor="#FFFFFF", label=D];
+  "Effective Use of Forums2"->"Effective Use of Forums" [fillcolor="#FFFFFF", label=D];
+  "Effective Use of Forums2"->"Effective internal communications" [fillcolor="#CDCDCD", label=Help];
+  "Avoid forum duplication"->"Avoid forum duplication1" [fillcolor="#FFFFFF", label=D];
+  "Avoid forum duplication1"->"Help" [fillcolor="#FFFFFF", label=D];
+  "Reduce number of clicks"->"Make Forum use less awkward" [fillcolor="#CDCDCD", label=Help];
+  "Must log in 3 times to post a message"->"Reduce number of clicks" [fillcolor="#FFFFFF", label=Hurt];
+  "Reduce number of clicks"->"Speed up system" [fillcolor="#CDCDCD", label=Help];
+  "Avoid forum duplication"->"Effective internal communications" [fillcolor="#CDCDCD", label=Help];
+  "Facilitate informal Communication among Counselors"->"Effective Use of Forums1" [fillcolor="#FFFFFF", label=Unknown];
+  "Avoid forum duplication2"->"Effective Use of Forums1" [fillcolor="#CDCDCD", label=Help];
+  "Must log in 3 times to post a message"->"Must be easier to get into" [fillcolor="#FFFFFF", label=Hurt];
+  "Must be easier to get into"->"Make Forum use less awkward" [fillcolor="#CDCDCD", label=Help];
+  "Speed up system"->"Make Forum use less awkward" [fillcolor="#CDCDCD", label=Help];
+  "Avoid forum duplication2"->"Make Forum use less awkward" [fillcolor="#CDCDCD", label=Help];
+  "Make Forum use less awkward1"->"Make Forum use less awkward2" [fillcolor="#FFFFFF", label=D];
+  "Make Forum use less awkward2"->"Make Forum use less awkward" [fillcolor="#FFFFFF", label=D];
+  "Facilitate informal Communication among Counselors"->"Provide Internal Forums" [fillcolor="#FFFFFF"];
+  "Make Forum use less awkward1"->"Effective internal communications" [fillcolor="#CDCDCD", label=Help];
+  "Must log in 3 times to post a message"->"Provide Internal Forums" [fillcolor="#FFFFFF"];
+  "Forum  Counsellor Communication "->"Provide Internal Forums" [fillcolor="#FFFFFF"];
+  "Forum  Kids Help Phone "->"Provide Internal Forums" [fillcolor="#FFFFFF"];
+  "Forum  Kids Help Phone "->"Avoid forum duplication2" [fillcolor="#FFFFFF", label=Hurt];
+  "Forum  Counsellor Communication "->"Avoid forum duplication2" [fillcolor="#FFFFFF", label=Hurt];
+}

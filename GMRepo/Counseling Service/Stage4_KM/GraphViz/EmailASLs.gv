@@ -1,0 +1,52 @@
+ digraph  RootGraph {
+  node [color="#000000", fontcolor="#0000FF", fontname=Arial, fontsize="12", style=filled];
+  edge [color="#0000FF"];
+  subgraph Connector {
+      node [width="5.74882389396571", height="0", pos="833.712933070866,327.698138533465", color="#0000FF", fillcolor="#FFFFFF", fontname=Arial, fontsize="16", style=filled, label=D, shape=box];
+      "D" [];
+  }
+  "Reduce the number of Emails" [width="1.10236220472441", height="0.662674087685117", pos="884.271496062992,389.9545348732", fillcolor="#FAC8C8", label="Reduce the number of Emails", shape=box];
+  "Mail being read" [width="0.982385329531613", height="0.590551181102363", pos="970.660989973374,339.169133858268", fillcolor="#FAC8C8", label="Mail being read", shape=box];
+  "Decrease Irrelevant Information" [width="1.06299212598425", height="0.639007155982077", pos="889.468346456693,260.598588324016", fillcolor="#FAC8C8", label="Decrease Irrelevant Information", shape=box];
+  "Speed up System" [width="0.998640824413675", height="0.600323010356554", pos="1219.750124797,276.213833097245", fillcolor="#FAC8C8", label="Speed up System", shape=box];
+  "Check/compose e-mail" [width="1.00578248031496", height="0.643700787401576", pos="133.20407480315,175.917165354331", fillcolor="#D1FEC7", label="Check/compose e-mail", sides="6", shape=polygon];
+  "Email (=internal)" [width="0.984251968503937", height="0.517578125", pos="615.452598425197,230.715332185039", fillcolor="#D1FEC7", label="Email (=internal)", shape=box];
+  "Facilitate communication" [width="1.36441929133858", height="0.873228346456691", pos="1016.54019685039,456.117165354331", fillcolor="#D1FEC7", label="Facilitate communication", sides="6", shape=polygon];
+  "Communicate internally" [width="1.31336122047244", height="0.84055118110236", pos="203.03187992126,263.578582677165", fillcolor="#D1FEC7", label="Communicate internally", sides="6", shape=polygon];
+  "Reduce amount of email" [width="1.14364106313316", height="0.687488463322699", pos="302.765408981455,291.635253970956", fillcolor="#FAC8C8", label="Reduce amount of email", shape=box];
+  "Effective internal communications" [width="1.37795275590551", height="0.828342609606397", pos="249.783307086614,440.743937007874", fillcolor="#D1FEC7", label="Effective internal communications", shape=box];
+  "Counselors Delete their Email" [width="1.13558070866141", height="0.726771653543306", pos="1172.71145669291,122.970708661417", fillcolor="#D1FEC7", label="Counselors Delete their Email", sides="6", shape=polygon];
+  "Counselors Delete their Email1" [width="1.13558070866141", height="0.726771653543306", pos="613.341377952756,35.0966929133858", fillcolor="#D1FEC7", label="Counselors Delete their Email", sides="6", shape=polygon];
+  "Delete More Email" [width="0.993344640953335", height="0.597139262285591", pos="408.850800775107,344.130714229683", fillcolor="#FAC8C8", label="Delete More Email", shape=box];
+  "Increase Response Time of Emails" [width="1.37795275590551", height="0.828342609606396", pos="1129.46834645669,428.989467804098", fillcolor="#FAC8C8", label="Increase Response Time of Emails", shape=box];
+  "Reduce amount of email1" [width="1.14364106313316", height="0.687488463322699", pos="614.915999532636,327.304545309538", fillcolor="#D1FEC7", label="Reduce amount of email", shape=box];
+  "Awareness of events in company" [width="1.25984251968504", height="0.757341814497277", pos="171.830551181102,356.786718300145", fillcolor="#D1FEC7", label="Awareness of events in company", shape=box];
+  "Receive mail for entire KHP" [width="1.0498687664042", height="0.671916010498688", pos="228.523464566929,171.074645669291", fillcolor="#D1FEC7", label="Receive mail for entire KHP", sides="6", shape=polygon];
+  "KHP-Wide Communication" [width="1.28683207051949", height="0.68202099737533", pos="1028.86516713713,203.564409448819", fillcolor="#D1FEC7", label="KHP-Wide Communication", sides="6", shape=polygon];
+  "KHP-Wide Emails" [width="0.984251968503937", height="0.517578125", pos="617.342362204724,169.298009350394", fillcolor="#D1FEC7", label="KHP-Wide Emails", shape=box];
+  "Reduce the number of Emails"->"Mail being read" [fillcolor="#CDCDCD", label=Help];
+  "Decrease Irrelevant Information"->"Reduce the number of Emails" [fillcolor="#CDCDCD", label=Help];
+  "Speed up System"->"Mail being read" [fillcolor="#CDCDCD", label=Help];
+  "Check/compose e-mail"->"Email (=internal)" [fillcolor="#FFFFFF", label=D];
+  "Email (=internal)"->"Facilitate communication" [fillcolor="#FFFFFF", label=D];
+  "Check/compose e-mail"->"Communicate internally" [fillcolor="#FFFFFF"];
+  "Reduce amount of email"->"Effective internal communications" [fillcolor="#CDCDCD", label=Help];
+  "Counselors Delete their Email"->"Speed up System" [fillcolor="#CDCDCD", label=Help];
+  "Counselors Delete their Email"->"Counselors Delete their Email1" [fillcolor="#FFFFFF", label=D];
+  "Counselors Delete their Email1"->"Delete More Email" [fillcolor="#FFFFFF", label=D];
+  "Speed up System"->"Increase Response Time of Emails" [fillcolor="#CDCDCD", label=Help];
+  "Reduce amount of email"->"Reduce amount of email1" [fillcolor="#FFFFFF", label=D];
+  "Reduce amount of email1"->"Reduce the number of Emails" [fillcolor="#FFFFFF", label=D];
+  "Communicate internally"->"Awareness of events in company" [fillcolor="#CDCDCD", label=Help];
+  "Awareness of events in company"->"Effective internal communications" [fillcolor="#CDCDCD", label=Help];
+  "Receive mail for entire KHP"->"Communicate internally" [fillcolor="#FFFFFF"];
+  "KHP-Wide Communication"->"Facilitate communication" [fillcolor="#FFFFFF"];
+  "Mail being read"->"D" [fillcolor="#FFFFFF"];
+  "Receive mail for entire KHP"->"KHP-Wide Emails" [fillcolor="#FFFFFF", label=D];
+  "Decrease Irrelevant Information"->"Mail being read" [fillcolor="#CDCDCD", label=Help];
+  "Mail being read"->"Increase Response Time of Emails" [fillcolor="#CDCDCD", label=Help];
+  "Reduce amount of email"->"Delete More Email" [fillcolor="#CDCDCD", label=Help];
+  "KHP-Wide Emails"->"KHP-Wide Communication" [fillcolor="#FFFFFF", label=D];
+  "Receive mail for entire KHP"->"Delete More Email" [fillcolor="#FFFFFF", label=Hurt];
+  "KHP-Wide Communication"->"Decrease Irrelevant Information" [fillcolor="#FFFFFF", label=Hurt];
+}
