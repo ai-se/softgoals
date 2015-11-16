@@ -124,7 +124,7 @@ class Star1(O):
 
 
 def run():
-  graph = Parents()
+  graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
   model = Model(graph)
   star = Star1(model)

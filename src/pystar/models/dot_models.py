@@ -168,3 +168,11 @@ def OOOChatRooms():
   graph = Graph.from_dot("OOOChatRooms", "pystar/graphviz/stage2/chat_room.gv", resources, containers)
   Graph.json(graph, "pystar/json/stage2/%s.json"%graph.name)
   return graph
+
+def DelayModeratedBulletinBoard():
+  containers = ["CS Technology Services", "CS Service", "Web Service", "CS Web Services",
+                "Counselling Employee", "Counselling", "Web Counselling"]
+  resources = []
+  graph = Graph.from_dot("DelayModeratedBulletinBoard", "pystar/graphviz/stage2/Delay Moderated Bulletin Board.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage2/%s.json"%graph.name)
+  return graph
