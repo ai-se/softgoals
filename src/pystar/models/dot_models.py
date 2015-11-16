@@ -118,6 +118,49 @@ def CSITDepartment():
   Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
   return graph
 
+def CSSAProgram():
+  containers = ["CS", "Student Ambassador Volunteer", "Student Ambassador",
+                "Marketing and Fund Development", "Schools"]
+  resources = ["Promotion Resources", "Promotion Resources1", "Speaches"]
+  graph = Graph.from_dot("CSSAProgram", "pystar/graphviz/stage1/CSSAProgram.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
+  return graph
+
+def CSSimplified():
+  containers = ["General Public", "Corporate employee", "Individual donor", "Corporate Sponsor", "Donor Technology",
+                "Not for Profit Partners", "Marketing and Fund Development", "Corporate Partner Management",
+                "Research Partners", "CEO +CFO", "Public Education Program", "Regional\nContact management",
+                "Provincial government", "Community Resource", "CS", "Regional Offices", "Student Ambassador Volunteer",
+                "IT Company", "IT Department", "Counselling Employee", "SA Program", "Student Ambassador Coordinator",
+                "Student Ambassador", "Schools", "Parents", "Pro-bono Partners", "Counselling Management",
+                "Director Enterprise/Blue Pumpkin", "CS Technology Services", "Web Task Force", "Kids and Youth",
+                "Phone System", "Counselling", "Counsellors Union", "Counselling Manager"]
+  resources = ["Information", "Sponsor Logo", " Free services", "Sponsor partner\ncontacts", "Agreement", "Funds",
+               "Donor/Accounting Data Base", "Single charitable registration number", "Service Resources", "IT Resources",
+               "Promotion Resources", "Promotion Resources1", "Speaches", "Web Server", "Web Server1", "Software", "Hardware",
+               "Upgrades", "Feedback Form Software", "Web Software", "Free Web Server", "Free Upgrades", "Free Hardware",
+               "Free Software", "Oracle", "Free advertisement", "Counsellor Experience", "Web Site Content", "Double Head Set",
+               "Counselling Workshops", "*Salary", "Counselling Policies", "Web Moderator Meetings", "Call Statistics",
+               "Phone Library of Recorded Messages", "Strategic Blue Print", "Caller Statistics", "Feedback", "Feedback1",
+               "Tape Recording Technology", "Training CDs", "Tapes", "Historical Data of Call Volumes"]
+  graph = Graph.from_dot("CSSimplified", "pystar/graphviz/stage1/CSSimplified.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
+  return graph
+
+def KidsAndYouth():
+  containers = ["CS", "CS web technology"]
+  resources = ["Feedback"]
+  graph = Graph.from_dot("Kids and Youth", "pystar/graphviz/stage1/Kids and Youth.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
+  return graph
+
+def Parents():
+  containers = ["CS", "PHL web technology"]
+  resources = ["Feedback", "Phone Library of Recorded Messages", "Phone Library of Recorded Messages1"]
+  graph = Graph.from_dot("Parents", "pystar/graphviz/stage1/Parents.gv", resources, containers)
+  Graph.json(graph, "pystar/json/stage1/%s.json"%graph.name)
+  return graph
+
 def OOOChatRooms():
   resources = []
   containers = ["CS Technology Services", "CS Service", "Web Service", "CS Web Services",

@@ -1,0 +1,1654 @@
+{
+    "edges": [
+        {
+            "component": "edge", 
+            "id": 1023, 
+            "source": "Similarity with other kids  problems ", 
+            "target": "Similarity with other kids  problems 1", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1024, 
+            "source": "Patient [Counselor] 1", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1025, 
+            "source": "Use Ask a Counsellor Section", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1026, 
+            "source": "Use Text Messaging", 
+            "target": "Kids Use Text Messaging", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1027, 
+            "source": "Confidentiality [Service] ", 
+            "target": "*Safety of service usage", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1028, 
+            "source": "Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1029, 
+            "source": "Friendly [Web site] 1", 
+            "target": "Friendly [Web site] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1030, 
+            "source": "Ownership of Service [Kids] ", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1031, 
+            "source": "Patient [Counselor] ", 
+            "target": "Patient [Counselor] 1", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1032, 
+            "source": "Effective Help in Crisis", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1033, 
+            "source": "High Quality [Service] ", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1034, 
+            "source": "!Implement Polls about Kids", 
+            "target": "Read Polls about Kids", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1035, 
+            "source": "Connect Back to the Community 1", 
+            "target": "Connect Back to the Community ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1036, 
+            "source": "Decrease [Phone Waiting Time] ", 
+            "target": "Effective Help in Crisis", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1037, 
+            "source": "!Implement One-On-One Chat Rooms", 
+            "target": "Use One-On-One Chat Rooms", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1038, 
+            "source": "Use Ask a Counsellor Section", 
+            "target": "Kids Use Ask a Counsellor Section\\ns", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1039, 
+            "source": "Provide Feedback", 
+            "target": "Feedback", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1040, 
+            "source": "Provide Feedback", 
+            "target": "*Privacy", 
+            "type": "contribution", 
+            "value": "hurt"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1041, 
+            "source": "Read General Questions and Answers", 
+            "target": "Kids read General Questions and Answers", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1042, 
+            "source": "Anonymity [Service] ", 
+            "target": "*Safety of service usage", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1043, 
+            "source": "Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "target": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1044, 
+            "source": "Anonymity [Services] ", 
+            "target": "Anonymity [Service] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1045, 
+            "source": "Availability [Service] ", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1046, 
+            "source": "Easy [Access to Post Reply] ", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1047, 
+            "source": "Support and Be Supported By Other Kids ", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1048, 
+            "source": "Ownership of Services [Kids] ", 
+            "target": "Ownership of Service [Kids] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1049, 
+            "source": "Use Phone Counselling", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1050, 
+            "source": "Immediacy [Service] ", 
+            "target": "Effective Help in Crisis", 
+            "type": "contribution", 
+            "value": "someplus"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1051, 
+            "source": "Services Be Free1", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1052, 
+            "source": "Immediacy [Service] ", 
+            "target": "Effective Help in Non Crisis Situation", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1053, 
+            "source": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
+            "target": "Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1054, 
+            "source": "Services Be Free1", 
+            "target": "Services Be Free", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1055, 
+            "source": "Read Polls about Kids", 
+            "target": "Information be acquired on website", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1056, 
+            "source": "Use Phone Counselling", 
+            "target": "Kids Use Phone Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1057, 
+            "source": "Children Decide When to Hang Up and Call", 
+            "target": "*Privacy", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1058, 
+            "source": "!Implement General Questions and Answers", 
+            "target": "Read General Questions and Answers", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1059, 
+            "source": "Implement Email Counselling", 
+            "target": "Use Email Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1060, 
+            "source": "Maintain Ask a Counsellor Section", 
+            "target": "Use Ask a Counsellor Section", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1061, 
+            "source": "Immediacy [Service] ", 
+            "target": "*Safety of service usage", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1062, 
+            "source": "Read Polls about Kids", 
+            "target": "Kids read Polls about Kids", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1063, 
+            "source": "Implement Voice Counselling", 
+            "target": "Use voice Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1064, 
+            "source": "Use Video Counselling", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1065, 
+            "source": "Decrease [Phone Waiting Time] 1", 
+            "target": "Decrease [Phone Waiting Time] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1066, 
+            "source": "Anonymity [Service] ", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1067, 
+            "source": "Use Email Counselling", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1068, 
+            "source": "Read General Questions and Answers", 
+            "target": "Information be acquired on website", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1069, 
+            "source": "Use bulletin Board with Replies", 
+            "target": "Kids Use Bulletin Board with Replies", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1070, 
+            "source": "Read Get Informed Section of Web Site", 
+            "target": "Kids use get Informed Section of Web Site", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1071, 
+            "source": "Similarity with other kids  problems 1", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1072, 
+            "source": "Friendly [Web site] ", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1073, 
+            "source": "Use voice Counselling", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1074, 
+            "source": "Use Video Counselling", 
+            "target": "Kids Use Video Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1075, 
+            "source": "Maintain Phone Counselling", 
+            "target": "Use Phone Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1076, 
+            "source": "Confidentiality [Service] ", 
+            "target": "*Privacy", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1077, 
+            "source": "Vent Emotions ", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1078, 
+            "source": "Be informed of service anonymity", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1079, 
+            "source": "Availability [Services] ", 
+            "target": "Availability [Service] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1080, 
+            "source": "Connect with Other Kids ", 
+            "target": "Support and Be Supported By Other Kids ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1081, 
+            "source": "Provide Feedback", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "hurt"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1082, 
+            "source": "Be informed of service anonymity", 
+            "target": "Inform kids about anonymity of service", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1083, 
+            "source": "!Implement Bulletin Board with Replies", 
+            "target": "Use bulletin Board with Replies", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1084, 
+            "source": "Read Get Informed Section of Web Site", 
+            "target": "Information be acquired on website", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1085, 
+            "source": "Confidentiality [Service] ", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1086, 
+            "source": "Patient [Counselor] 1", 
+            "target": "Comfortableness with service ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1087, 
+            "source": "Anonymity [Service] ", 
+            "target": "*Privacy", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1088, 
+            "source": "Use One-On-One Chat Rooms", 
+            "target": "Kids Use One-On-One Chat Rooms", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1089, 
+            "source": "Use voice Counselling", 
+            "target": "Kids Use Voice Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1090, 
+            "source": "Use Text Messaging", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1091, 
+            "source": "Use One-On-One Chat Rooms", 
+            "target": "Help be acquired", 
+            "type": "decompositions", 
+            "value": "or"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1092, 
+            "source": "High Quality [Services] ", 
+            "target": "High Quality [Service] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1093, 
+            "source": "Connect with Other Kids 1", 
+            "target": "Connect with Other Kids ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1094, 
+            "source": "Easy [Access to Post Reply] 1", 
+            "target": "Easy [Access to Post Reply] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1095, 
+            "source": "Maintain Get Informed Section of Web Site", 
+            "target": "Read Get Informed Section of Web Site", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1096, 
+            "source": "Patient [Counselor] 1", 
+            "target": "Vent Emotions ", 
+            "type": "contribution", 
+            "value": "help"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1097, 
+            "source": "Ownership of Service [Kids] ", 
+            "target": "Children Decide When to Hang Up and Call", 
+            "type": "contribution", 
+            "value": "make"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1098, 
+            "source": "Immediacy [Services] ", 
+            "target": "Immediacy [Service] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1099, 
+            "source": "Implement Video Counselling", 
+            "target": "Use Video Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1100, 
+            "source": "Use Email Counselling", 
+            "target": "Kids Use Email Counselling", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1101, 
+            "source": "Confidentiality [Services] ", 
+            "target": "Confidentiality [Service] ", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1102, 
+            "source": "!Implement Text Messaging", 
+            "target": "Use Text Messaging", 
+            "type": "dependency", 
+            "value": "dependency"
+        }, 
+        {
+            "component": "edge", 
+            "id": 1103, 
+            "source": "Effective Help in Non Crisis Situation", 
+            "target": "*Get Effective Help", 
+            "type": "contribution", 
+            "value": "help"
+        }
+    ], 
+    "name": "Kids and Youth", 
+    "nodes": [
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1038
+            ], 
+            "id": "Kids Use Ask a Counsellor Section\\ns", 
+            "name": "Kids Use Ask a Counsellor Section\\ns", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1024, 
+                1032, 
+                1033, 
+                1045, 
+                1046, 
+                1072, 
+                1077, 
+                1103
+            ], 
+            "id": "*Get Effective Help", 
+            "name": "*Get Effective Help", 
+            "to_edges": [], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1056
+            ], 
+            "id": "Kids Use Phone Counselling", 
+            "name": "Kids Use Phone Counselling", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1025, 
+                1028, 
+                1049, 
+                1064, 
+                1067, 
+                1073, 
+                1090, 
+                1091
+            ], 
+            "id": "Help be acquired", 
+            "name": "Help be acquired", 
+            "to_edges": [], 
+            "type": "goal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1075
+            ], 
+            "id": "Use Phone Counselling", 
+            "name": "Use Phone Counselling", 
+            "to_edges": [
+                1049, 
+                1056
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1054
+            ], 
+            "id": "Services Be Free", 
+            "name": "Services Be Free", 
+            "to_edges": [], 
+            "type": "goal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Implement Voice Counselling", 
+            "name": "Implement Voice Counselling", 
+            "to_edges": [
+                1063
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Maintain Phone Counselling", 
+            "name": "Maintain Phone Counselling", 
+            "to_edges": [
+                1075
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1027, 
+                1042, 
+                1061
+            ], 
+            "id": "*Safety of service usage", 
+            "name": "*Safety of service usage", 
+            "to_edges": [], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Implement Video Counselling", 
+            "name": "Implement Video Counselling", 
+            "to_edges": [
+                1099
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Implement Email Counselling", 
+            "name": "Implement Email Counselling", 
+            "to_edges": [
+                1059
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1092
+            ], 
+            "id": "High Quality [Service] ", 
+            "name": "High Quality [Service] ", 
+            "to_edges": [
+                1033
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1099
+            ], 
+            "id": "Use Video Counselling", 
+            "name": "Use Video Counselling", 
+            "to_edges": [
+                1064, 
+                1074
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Maintain Ask a Counsellor Section", 
+            "name": "Maintain Ask a Counsellor Section", 
+            "to_edges": [
+                1060
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1048
+            ], 
+            "id": "Ownership of Service [Kids] ", 
+            "name": "Ownership of Service [Kids] ", 
+            "to_edges": [
+                1030, 
+                1097
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1094
+            ], 
+            "id": "Easy [Access to Post Reply] ", 
+            "name": "Easy [Access to Post Reply] ", 
+            "to_edges": [
+                1046
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1096
+            ], 
+            "id": "Vent Emotions ", 
+            "name": "Vent Emotions ", 
+            "to_edges": [
+                1077
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
+            "name": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
+            "to_edges": [
+                1053
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1040, 
+                1057, 
+                1076, 
+                1087
+            ], 
+            "id": "*Privacy", 
+            "name": "*Privacy", 
+            "to_edges": [], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Patient [Counselor] ", 
+            "name": "Patient [Counselor] ", 
+            "to_edges": [
+                1031
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Contact CS about Non-Crisis Situation ", 
+            "name": "Contact CS about Non-Crisis Situation ", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Confidentiality [Services] ", 
+            "name": "Confidentiality [Services] ", 
+            "to_edges": [
+                1101
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1034
+            ], 
+            "id": "Read Polls about Kids", 
+            "name": "Read Polls about Kids", 
+            "to_edges": [
+                1055, 
+                1062
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1065
+            ], 
+            "id": "Decrease [Phone Waiting Time] ", 
+            "name": "Decrease [Phone Waiting Time] ", 
+            "to_edges": [
+                1036
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1101
+            ], 
+            "id": "Confidentiality [Service] ", 
+            "name": "Confidentiality [Service] ", 
+            "to_edges": [
+                1027, 
+                1076, 
+                1085
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1070
+            ], 
+            "id": "Kids use get Informed Section of Web Site", 
+            "name": "Kids use get Informed Section of Web Site", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "!Implement Text Messaging", 
+            "name": "!Implement Text Messaging", 
+            "to_edges": [
+                1102
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1102
+            ], 
+            "id": "Use Text Messaging", 
+            "name": "Use Text Messaging", 
+            "to_edges": [
+                1026, 
+                1090
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1059
+            ], 
+            "id": "Use Email Counselling", 
+            "name": "Use Email Counselling", 
+            "to_edges": [
+                1067, 
+                1100
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1043
+            ], 
+            "id": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1097
+            ], 
+            "id": "Children Decide When to Hang Up and Call", 
+            "name": "Children Decide When to Hang Up and Call", 
+            "to_edges": [
+                1057
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Maintain Get Informed Section of Web Site", 
+            "name": "Maintain Get Informed Section of Web Site", 
+            "to_edges": [
+                1095
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1063
+            ], 
+            "id": "Use voice Counselling", 
+            "name": "Use voice Counselling", 
+            "to_edges": [
+                1073, 
+                1089
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Friendly [Web site] 1", 
+            "name": "Friendly [Web site] 1", 
+            "to_edges": [
+                1029
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "High Quality [Services] ", 
+            "name": "High Quality [Services] ", 
+            "to_edges": [
+                1092
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1079
+            ], 
+            "id": "Availability [Service] ", 
+            "name": "Availability [Service] ", 
+            "to_edges": [
+                1045
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1089
+            ], 
+            "id": "Kids Use Voice Counselling", 
+            "name": "Kids Use Voice Counselling", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Connect Back to the Community 1", 
+            "name": "Connect Back to the Community 1", 
+            "to_edges": [
+                1035
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1044
+            ], 
+            "id": "Anonymity [Service] ", 
+            "name": "Anonymity [Service] ", 
+            "to_edges": [
+                1042, 
+                1066, 
+                1087
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1098
+            ], 
+            "id": "Immediacy [Service] ", 
+            "name": "Immediacy [Service] ", 
+            "to_edges": [
+                1050, 
+                1052, 
+                1061
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "!Implement Polls about Kids", 
+            "name": "!Implement Polls about Kids", 
+            "to_edges": [
+                1034
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Similarity with other kids  problems ", 
+            "name": "Similarity with other kids  problems ", 
+            "to_edges": [
+                1023
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "!Implement Bulletin Board with Replies", 
+            "name": "!Implement Bulletin Board with Replies", 
+            "to_edges": [
+                1083
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1062
+            ], 
+            "id": "Kids read Polls about Kids", 
+            "name": "Kids read Polls about Kids", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1080
+            ], 
+            "id": "Support and Be Supported By Other Kids ", 
+            "name": "Support and Be Supported By Other Kids ", 
+            "to_edges": [
+                1047
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1058
+            ], 
+            "id": "Read General Questions and Answers", 
+            "name": "Read General Questions and Answers", 
+            "to_edges": [
+                1041, 
+                1068
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1023
+            ], 
+            "id": "Similarity with other kids  problems 1", 
+            "name": "Similarity with other kids  problems 1", 
+            "to_edges": [
+                1071
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Ownership of Services [Kids] ", 
+            "name": "Ownership of Services [Kids] ", 
+            "to_edges": [
+                1048
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Availability [Services] ", 
+            "name": "Availability [Services] ", 
+            "to_edges": [
+                1079
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Decrease [Phone Waiting Time] 1", 
+            "name": "Decrease [Phone Waiting Time] 1", 
+            "to_edges": [
+                1065
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1041
+            ], 
+            "id": "Kids read General Questions and Answers", 
+            "name": "Kids read General Questions and Answers", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1053
+            ], 
+            "id": "Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "name": "Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "to_edges": [
+                1028, 
+                1043
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "!Implement General Questions and Answers", 
+            "name": "!Implement General Questions and Answers", 
+            "to_edges": [
+                1058
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1055, 
+                1068, 
+                1084
+            ], 
+            "id": "Information be acquired on website", 
+            "name": "Information be acquired on website", 
+            "to_edges": [], 
+            "type": "goal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1026
+            ], 
+            "id": "Kids Use Text Messaging", 
+            "name": "Kids Use Text Messaging", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "!Implement One-On-One Chat Rooms", 
+            "name": "!Implement One-On-One Chat Rooms", 
+            "to_edges": [
+                1037
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Provide Feedback", 
+            "name": "Provide Feedback", 
+            "to_edges": [
+                1039, 
+                1040, 
+                1081
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1060
+            ], 
+            "id": "Use Ask a Counsellor Section", 
+            "name": "Use Ask a Counsellor Section", 
+            "to_edges": [
+                1025, 
+                1038
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Anonymity [Services] ", 
+            "name": "Anonymity [Services] ", 
+            "to_edges": [
+                1044
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Services Be Free1", 
+            "name": "Services Be Free1", 
+            "to_edges": [
+                1051, 
+                1054
+            ], 
+            "type": "goal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Contact CS in Crisis ", 
+            "name": "Contact CS in Crisis ", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1036, 
+                1050
+            ], 
+            "id": "Effective Help in Crisis", 
+            "name": "Effective Help in Crisis", 
+            "to_edges": [
+                1032
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1052
+            ], 
+            "id": "Effective Help in Non Crisis Situation", 
+            "name": "Effective Help in Non Crisis Situation", 
+            "to_edges": [
+                1103
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1035
+            ], 
+            "id": "Connect Back to the Community ", 
+            "name": "Connect Back to the Community ", 
+            "to_edges": [], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1069
+            ], 
+            "id": "Kids Use Bulletin Board with Replies", 
+            "name": "Kids Use Bulletin Board with Replies", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1037
+            ], 
+            "id": "Use One-On-One Chat Rooms", 
+            "name": "Use One-On-One Chat Rooms", 
+            "to_edges": [
+                1088, 
+                1091
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Connect with Other Kids 1", 
+            "name": "Connect with Other Kids 1", 
+            "to_edges": [
+                1093
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1029
+            ], 
+            "id": "Friendly [Web site] ", 
+            "name": "Friendly [Web site] ", 
+            "to_edges": [
+                1072
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1088
+            ], 
+            "id": "Kids Use One-On-One Chat Rooms", 
+            "name": "Kids Use One-On-One Chat Rooms", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1082
+            ], 
+            "id": "Inform kids about anonymity of service", 
+            "name": "Inform kids about anonymity of service", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Immediacy [Services] ", 
+            "name": "Immediacy [Services] ", 
+            "to_edges": [
+                1098
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1031
+            ], 
+            "id": "Patient [Counselor] 1", 
+            "name": "Patient [Counselor] 1", 
+            "to_edges": [
+                1024, 
+                1086, 
+                1096
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1039
+            ], 
+            "id": "Feedback", 
+            "name": "Feedback", 
+            "to_edges": [], 
+            "type": "resource"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Easy [Access to Post Reply] 1", 
+            "name": "Easy [Access to Post Reply] 1", 
+            "to_edges": [
+                1094
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [], 
+            "id": "Be informed of service anonymity", 
+            "name": "Be informed of service anonymity", 
+            "to_edges": [
+                1078, 
+                1082
+            ], 
+            "type": "goal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1074
+            ], 
+            "id": "Kids Use Video Counselling", 
+            "name": "Kids Use Video Counselling", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1100
+            ], 
+            "id": "Kids Use Email Counselling", 
+            "name": "Kids Use Email Counselling", 
+            "to_edges": [], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1030, 
+                1047, 
+                1051, 
+                1066, 
+                1071, 
+                1078, 
+                1081, 
+                1085, 
+                1086
+            ], 
+            "id": "Comfortableness with service ", 
+            "name": "Comfortableness with service ", 
+            "to_edges": [], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1083
+            ], 
+            "id": "Use bulletin Board with Replies", 
+            "name": "Use bulletin Board with Replies", 
+            "to_edges": [
+                1069
+            ], 
+            "type": "task"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1093
+            ], 
+            "id": "Connect with Other Kids ", 
+            "name": "Connect with Other Kids ", 
+            "to_edges": [
+                1080
+            ], 
+            "type": "softgoal"
+        }, 
+        {
+            "component": "node", 
+            "container": null, 
+            "from_edges": [
+                1095
+            ], 
+            "id": "Read Get Informed Section of Web Site", 
+            "name": "Read Get Informed Section of Web Site", 
+            "to_edges": [
+                1070, 
+                1084
+            ], 
+            "type": "task"
+        }
+    ]
+}
