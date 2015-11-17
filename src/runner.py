@@ -89,7 +89,7 @@ def test_ome_trees():
 def test_star1():
   from pystar.models.dot_models import modelers
   from star1 import star1
-  for model in modelers[:1]:
+  for model in modelers:
     star1.run(model())
 
 if __name__ == "__main__":
