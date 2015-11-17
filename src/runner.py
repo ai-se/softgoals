@@ -86,13 +86,17 @@ def test_ome_trees():
       print("")
   bar_plot(times, 'img/random_runtimes.png')
 
+def test_star1():
+  from pystar.models.dot_models import modelers
+  from star1 import star1
+  for model in modelers[:1]:
+    star1.run(model())
 
 if __name__ == "__main__":
   # test_ome_trees()
   # #test_ome_tree()
   # # #test_visio_tree()
-  from star1 import star1
-  star1.run()
   #test_pystar()
+  test_star1()
 
 

@@ -132,7 +132,7 @@ class DE(O):
     :return: Optimal population
     """
     settings = self.settings
-    print(settings)
+    #print(settings)
     stat = Statistics()
     start = time.time()
     if settings.candidates < MIN_FRONTIER_SIZE:

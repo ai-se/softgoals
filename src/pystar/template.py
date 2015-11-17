@@ -281,11 +281,11 @@ class Graph(O):
       target = node_map.get(edge.target, None)
       if source is None or target is None:
         count +=1;
-        print(edge)
+        #print(edge)
         continue
       node_map[edge.source].add_edge(edge.id, "to")
       node_map[edge.target].add_edge(edge.id, "from")
-    if count: print(count)
+    #if count: print(count)
 
   def get_edge(self, edge_id):
     for edge in self.edges:
@@ -396,7 +396,7 @@ class Graph(O):
           # containers
           continue
         else:
-          print(name)
+          #print(name)
           continue
       node.id = node.name
       nodes.append(node)
@@ -437,7 +437,7 @@ class Graph(O):
         type = "dependency"
         source, target = target, source
       else:
-        print(source, target, label)
+        #print(source, target, label)
         continue
       edge = Component("edge")
       edge.value = value

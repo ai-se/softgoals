@@ -176,3 +176,9 @@ def DelayModeratedBulletinBoard():
   graph = Graph.from_dot("DelayModeratedBulletinBoard", "pystar/graphviz/stage2/Delay Moderated Bulletin Board.gv", resources, containers)
   Graph.json(graph, "pystar/json/stage2/%s.json"%graph.name)
   return graph
+
+
+modelers = [CSServices, CSCounselling, CSCounsellingManagement,
+          CSCounsellingManagementSD, CSCounsellingSD, CSFDandMarketing, CSFDandMarketingSD,
+          CSITDepartment, CSSAProgram, CSSimplified, KidsAndYouth, Parents, OOOChatRooms,
+          DelayModeratedBulletinBoard]

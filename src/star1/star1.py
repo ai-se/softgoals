@@ -1,5 +1,5 @@
 from __future__ import print_function, division
-import sys, os
+import sys, os, time
 sys.path.append(os.path.abspath("."))
 __author__ = 'george'
 sys.dont_write_bytecode = True
@@ -123,16 +123,23 @@ class Star1(O):
     med_spread_plot(stats, headers, fig_name="img/"+self.model.get_tree().name+".png")
 
 
-def run():
-  graph = DelayModeratedBulletinBoard()
+def run(graph):
+  #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
+  start = time.time()
   model = Model(graph)
+  print("## %s"%graph.name)
+  print("```")
   star = Star1(model)
   best, rest = star.sample()
   sup_map = star.rank(best, rest)
   sup_keys = sorted(sup_map, key=lambda k: sup_map[k], reverse=True)
   obj_stats = star.prune(sup_keys)
+  delta = time.time() - start
   star.report(obj_stats)
+  print("```")
+  print("### Time Taken : %s"%delta)
+  print("![1](../../src/img/%s.png)"%graph.name)
 
 
 

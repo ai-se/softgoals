@@ -2,7 +2,7 @@
     "edges": [
         {
             "component": "edge", 
-            "id": 960, 
+            "id": 3275, 
             "source": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -10,7 +10,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 961, 
+            "id": 3276, 
             "source": "*Implement Email for Counsellors", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -18,7 +18,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 962, 
+            "id": 3277, 
             "source": "Install Desktop Software", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -26,7 +26,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 963, 
+            "id": 3278, 
             "source": "Acquire and Implement Employee Software", 
             "target": "*Implement/Maintain Computer Systems for Employee Use ", 
             "type": "decompositions", 
@@ -34,7 +34,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 964, 
+            "id": 3279, 
             "source": "Acquire Software", 
             "target": "*Implement Bulletin Board", 
             "type": "decompositions", 
@@ -42,7 +42,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 965, 
+            "id": 3280, 
             "source": "!Integrate IT Systems", 
             "target": "!IT Systems Be Integrated", 
             "type": "dependency", 
@@ -50,7 +50,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 966, 
+            "id": 3281, 
             "source": "Manage and Implement Web Site", 
             "target": "Satisfy CS IT Needs", 
             "type": "decompositions", 
@@ -58,7 +58,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 967, 
+            "id": 3282, 
             "source": "*Effective IT Training", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -66,7 +66,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 968, 
+            "id": 3283, 
             "source": "Hardware Be Acquired for Free", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -74,7 +74,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 969, 
+            "id": 3284, 
             "source": "Free Hardware", 
             "target": "Hardware Be Acquired for Free", 
             "type": "dependency", 
@@ -82,7 +82,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 970, 
+            "id": 3285, 
             "source": "*Hardware Be Acquired", 
             "target": "Acquire Telephone Switch", 
             "type": "decompositions", 
@@ -90,7 +90,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 971, 
+            "id": 3286, 
             "source": "Increase IT Methods to Acquire Feedback1", 
             "target": "Improve Quality Assurance Technology1", 
             "type": "contribution", 
@@ -98,7 +98,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 972, 
+            "id": 3287, 
             "source": "!Performance Review Information Be Collected in Data Base1", 
             "target": "Improve Quality Assurance Technology1", 
             "type": "contribution", 
@@ -106,7 +106,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 973, 
+            "id": 3288, 
             "source": "Feedback Form Be Implemented", 
             "target": "Feedback Form Software", 
             "type": "dependency", 
@@ -114,7 +114,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 974, 
+            "id": 3289, 
             "source": "Telephony Be Implemented and Managed", 
             "target": "Satisfy CS IT Needs", 
             "type": "decompositions", 
@@ -122,7 +122,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 975, 
+            "id": 3290, 
             "source": "Improve Quality Assurance Technology1", 
             "target": "Improve Quality Assurance Technology", 
             "type": "dependency", 
@@ -130,7 +130,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 976, 
+            "id": 3291, 
             "source": "Acquire Software", 
             "target": "*Implement Activity Manager", 
             "type": "decompositions", 
@@ -138,7 +138,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 977, 
+            "id": 3292, 
             "source": "Acquire IT Resources", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -146,7 +146,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 978, 
+            "id": 3293, 
             "source": "Acquire Software", 
             "target": "Implement Director Enterprise through Blue Pumpkin ", 
             "type": "decompositions", 
@@ -154,7 +154,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 979, 
+            "id": 3294, 
             "source": "Web Server1", 
             "target": "*Pay for Web Server", 
             "type": "dependency", 
@@ -162,7 +162,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 980, 
+            "id": 3295, 
             "source": "Implement Director Enterprise through Blue Pumpkin ", 
             "target": "Support Analysis [Counsellors Time]1", 
             "type": "contribution", 
@@ -170,7 +170,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 981, 
+            "id": 3296, 
             "source": "*Acquire Software for Free", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -178,7 +178,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 982, 
+            "id": 3297, 
             "source": "Acquire Software", 
             "target": "Provide Document Library System1", 
             "type": "decompositions", 
@@ -186,7 +186,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 983, 
+            "id": 3298, 
             "source": "Implement Director Enterprise through Blue Pumpkin ", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -194,7 +194,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 984, 
+            "id": 3299, 
             "source": "!An IT Trainer Be Present1", 
             "target": "IT Dept Provides Orientation and Training", 
             "type": "decompositions", 
@@ -202,7 +202,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 985, 
+            "id": 3300, 
             "source": "Acquire Software", 
             "target": "*Implement Symposium System", 
             "type": "decompositions", 
@@ -210,7 +210,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 986, 
+            "id": 3301, 
             "source": "*Implement/Maintain Computer Systems for Employee Use ", 
             "target": "Satisfy CS IT Needs", 
             "type": "decompositions", 
@@ -218,7 +218,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 987, 
+            "id": 3302, 
             "source": "!An IT Trainer Be Present1", 
             "target": "!An IT Trainer Be Present", 
             "type": "dependency", 
@@ -226,7 +226,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 988, 
+            "id": 3303, 
             "source": "*Implement Email for Counsellors", 
             "target": "*Implement Email for Counsellors1", 
             "type": "dependency", 
@@ -234,7 +234,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 989, 
+            "id": 3304, 
             "source": "*Pay for Software", 
             "target": "*Web Software Be Acquired", 
             "type": "decompositions", 
@@ -242,7 +242,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 990, 
+            "id": 3305, 
             "source": "Hardware Be Acquired for Free", 
             "target": "*Hardware Be Acquired", 
             "type": "decompositions", 
@@ -250,7 +250,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 991, 
+            "id": 3306, 
             "source": "Use VPN", 
             "target": "Implement and Manage Technology in Regional Offices", 
             "type": "decompositions", 
@@ -258,7 +258,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 992, 
+            "id": 3307, 
             "source": "!A Training Computer Be Present1", 
             "target": "*Cost Effective Training", 
             "type": "contribution", 
@@ -266,7 +266,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 993, 
+            "id": 3308, 
             "source": "Use Informal Buddy System for Training", 
             "target": "*Cost Effective Training", 
             "type": "contribution", 
@@ -274,7 +274,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 994, 
+            "id": 3309, 
             "source": "IT Resources", 
             "target": "Acquire IT Resources", 
             "type": "dependency", 
@@ -282,7 +282,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 995, 
+            "id": 3310, 
             "source": "Free Web Server", 
             "target": "*Acquire Web Server for Free", 
             "type": "dependency", 
@@ -290,7 +290,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 996, 
+            "id": 3311, 
             "source": "Put Content Onto Website1", 
             "target": "Put Content Onto Website", 
             "type": "dependency", 
@@ -298,7 +298,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 997, 
+            "id": 3312, 
             "source": "Increase IT Training Resources", 
             "target": "*Increase [IT Training for Counsellors]1", 
             "type": "contribution", 
@@ -306,7 +306,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 998, 
+            "id": 3313, 
             "source": "Adequately Customizable [CS Technology]", 
             "target": "Fit Between System Capabilities and CS Requirements", 
             "type": "contribution", 
@@ -314,7 +314,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 999, 
+            "id": 3314, 
             "source": "Hardware", 
             "target": "Pay for Hardware", 
             "type": "dependency", 
@@ -322,7 +322,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1000, 
+            "id": 3315, 
             "source": "Increase IT Resources", 
             "target": "Keep Up With New Technology", 
             "type": "contribution", 
@@ -330,7 +330,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1001, 
+            "id": 3316, 
             "source": "Acquire Software", 
             "target": "Implement IVR", 
             "type": "decompositions", 
@@ -338,7 +338,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1002, 
+            "id": 3317, 
             "source": "Pay for Hardware", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -346,7 +346,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1003, 
+            "id": 3318, 
             "source": "*IT Providers have Knowledge of Counselling", 
             "target": "Sensitive to the Environment IT Equipment will Be Introduced to", 
             "type": "contribution", 
@@ -354,7 +354,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1004, 
+            "id": 3319, 
             "source": "Manage Donor/ Accounting Data Base", 
             "target": "Satisfy CS IT Needs", 
             "type": "decompositions", 
@@ -362,7 +362,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1005, 
+            "id": 3320, 
             "source": "*IT Providers have Knowledge of Fundraising and Marketing", 
             "target": "Sensitive to the Environment IT Equipment will Be Introduced to", 
             "type": "contribution", 
@@ -370,7 +370,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1006, 
+            "id": 3321, 
             "source": "Perform Donor/Accounting Data Base Maintenance", 
             "target": "Manage Donor/ Accounting Data Base", 
             "type": "decompositions", 
@@ -378,7 +378,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1007, 
+            "id": 3322, 
             "source": "!An IT Trainer Be Present1", 
             "target": "*Cost Effective Training", 
             "type": "contribution", 
@@ -386,7 +386,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1008, 
+            "id": 3323, 
             "source": "*Implement Categorization Tool", 
             "target": "*Implement Categorization Tool1", 
             "type": "dependency", 
@@ -394,7 +394,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1009, 
+            "id": 3324, 
             "source": "!Performance Review Information Be Collected in Data Base1", 
             "target": "!Performance Review Information Be Collected in Data Base", 
             "type": "dependency", 
@@ -402,7 +402,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1010, 
+            "id": 3325, 
             "source": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]1", 
             "type": "dependency", 
@@ -410,7 +410,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1011, 
+            "id": 3326, 
             "source": "Provide Document Library System1", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
             "type": "contribution", 
@@ -418,7 +418,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1012, 
+            "id": 3327, 
             "source": "Increase Access Speed [  Regional Offices to DL]1", 
             "target": "Increase Access Speed [  Regional Offices to DL]", 
             "type": "dependency", 
@@ -426,7 +426,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1013, 
+            "id": 3328, 
             "source": "Web Counselling Software Be Implemented", 
             "target": "Manage and Implement Web Site", 
             "type": "decompositions", 
@@ -434,7 +434,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1014, 
+            "id": 3329, 
             "source": "Fit Between System Capabilities and CS Requirements", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -442,7 +442,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1015, 
+            "id": 3330, 
             "source": "IT Training/Support Be Given to Employees", 
             "target": "Satisfy CS IT Needs", 
             "type": "decompositions", 
@@ -450,7 +450,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1016, 
+            "id": 3331, 
             "source": "Expand IT Department", 
             "target": "Increase IT Training Resources", 
             "type": "contribution", 
@@ -458,7 +458,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1017, 
+            "id": 3332, 
             "source": "Increased Emphasis on IT in Hiring Process [of Counsellors]1", 
             "target": "*Effective IT Training", 
             "type": "contribution", 
@@ -466,7 +466,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1018, 
+            "id": 3333, 
             "source": "IT Dept Provides Orientation and Training", 
             "target": "IT Training/Support Be Given to Employees", 
             "type": "decompositions", 
@@ -474,7 +474,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1019, 
+            "id": 3334, 
             "source": "IT Be Upgraded", 
             "target": "Keep Up With New Technology", 
             "type": "contribution", 
@@ -482,7 +482,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1020, 
+            "id": 3335, 
             "source": "Adjust to Software Changes", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -490,7 +490,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1021, 
+            "id": 3336, 
             "source": "Provide Online Donor Technology1", 
             "target": "Manage and Implement Web Site", 
             "type": "decompositions", 
@@ -498,7 +498,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1022, 
+            "id": 3337, 
             "source": "*Pay for Upgrades", 
             "target": "IT Be Upgraded", 
             "type": "decompositions", 
@@ -506,7 +506,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1023, 
+            "id": 3338, 
             "source": "*Implement Activity Manager", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -514,7 +514,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1024, 
+            "id": 3339, 
             "source": "*Implement Email for Counsellors", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -522,7 +522,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1025, 
+            "id": 3340, 
             "source": "Implement Director Enterprise through Blue Pumpkin ", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -530,7 +530,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1026, 
+            "id": 3341, 
             "source": "Implement IVR", 
             "target": "Telephony Be Implemented and Managed", 
             "type": "decompositions", 
@@ -538,7 +538,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1027, 
+            "id": 3342, 
             "source": "*Implement Categorization Tool", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -546,7 +546,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1028, 
+            "id": 3343, 
             "source": "Use T1", 
             "target": "Increase Access Speed [  Regional Offices to DL]1", 
             "type": "contribution", 
@@ -554,7 +554,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1029, 
+            "id": 3344, 
             "source": "!A Training Computer Be Present1", 
             "target": "!A Training Computer Be Present", 
             "type": "dependency", 
@@ -562,7 +562,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1030, 
+            "id": 3345, 
             "source": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -570,7 +570,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1031, 
+            "id": 3346, 
             "source": "!A Training Computer Be Present1", 
             "target": "*Effective IT Training", 
             "type": "contribution", 
@@ -578,7 +578,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1032, 
+            "id": 3347, 
             "source": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
             "target": "Increased Emphasis on IT in Hiring Process [of Counsellors]1", 
             "type": "dependency", 
@@ -586,7 +586,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1033, 
+            "id": 3348, 
             "source": "IT Be Upgraded", 
             "target": "Adjust to Software Changes", 
             "type": "contribution", 
@@ -594,7 +594,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1034, 
+            "id": 3349, 
             "source": "Get web event technology", 
             "target": "Manage and Implement Web Site", 
             "type": "decompositions", 
@@ -602,7 +602,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1035, 
+            "id": 3350, 
             "source": "!Calls Be Recorded into a Data Base1", 
             "target": "!Calls Be Recorded into a Data Base", 
             "type": "dependency", 
@@ -610,7 +610,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1036, 
+            "id": 3351, 
             "source": "Use Informal Buddy System for Training", 
             "target": "IT Training/Support Be Given to Employees", 
             "type": "decompositions", 
@@ -618,7 +618,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1037, 
+            "id": 3352, 
             "source": "Acquire Software", 
             "target": "Get web event technology", 
             "type": "decompositions", 
@@ -626,7 +626,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1038, 
+            "id": 3353, 
             "source": "Use T1", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -634,7 +634,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1039, 
+            "id": 3354, 
             "source": "Implement and Manage Technology in Regional Offices", 
             "target": "*Implement/Maintain Computer Systems for Employee Use ", 
             "type": "decompositions", 
@@ -642,7 +642,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1040, 
+            "id": 3355, 
             "source": "*Acquire Web Server for Free", 
             "target": "*Web Server Be Acquired", 
             "type": "decompositions", 
@@ -650,7 +650,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1041, 
+            "id": 3356, 
             "source": "Upgrades", 
             "target": "*Pay for Upgrades", 
             "type": "dependency", 
@@ -658,7 +658,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1042, 
+            "id": 3357, 
             "source": "Manage Donor/ Accounting Data Base", 
             "target": "Donor/Accounting Data Base", 
             "type": "dependency", 
@@ -666,7 +666,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1043, 
+            "id": 3358, 
             "source": "Telephony Be Implemented and Managed", 
             "target": "Telephony Be Implemented and Managed1", 
             "type": "dependency", 
@@ -674,7 +674,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1044, 
+            "id": 3359, 
             "source": "*Implement Activity Manager", 
             "target": "Support Analysis [Counsellors Time]1", 
             "type": "contribution", 
@@ -682,7 +682,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1045, 
+            "id": 3360, 
             "source": "IT Dept Provides Orientation and Training", 
             "target": "*Effective IT Training", 
             "type": "contribution", 
@@ -690,7 +690,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1046, 
+            "id": 3361, 
             "source": "Software", 
             "target": "*Pay for Software", 
             "type": "dependency", 
@@ -698,7 +698,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1047, 
+            "id": 3362, 
             "source": "!Calls Be Recorded into a Data Base1", 
             "target": "Improve Quality Assurance Technology1", 
             "type": "contribution", 
@@ -706,7 +706,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1048, 
+            "id": 3363, 
             "source": "Improve [Call Recording Equipment]1", 
             "target": "Improve [Call Recording Equipment]", 
             "type": "dependency", 
@@ -714,7 +714,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1049, 
+            "id": 3364, 
             "source": "!A Training Computer Be Present1", 
             "target": "*Increase [IT Training for Counsellors]1", 
             "type": "contribution", 
@@ -722,7 +722,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1050, 
+            "id": 3365, 
             "source": "*Implement Bulletin Board", 
             "target": "*Implement Bulletin Board1", 
             "type": "dependency", 
@@ -730,7 +730,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1051, 
+            "id": 3366, 
             "source": "Free Software", 
             "target": "*Acquire Software for Free", 
             "type": "dependency", 
@@ -738,7 +738,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1052, 
+            "id": 3367, 
             "source": "Acquire Software", 
             "target": "Install Desktop Software", 
             "type": "decompositions", 
@@ -746,7 +746,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1053, 
+            "id": 3368, 
             "source": "*Hardware Be Acquired", 
             "target": "*Implement/Maintain Computer Systems for Employee Use ", 
             "type": "decompositions", 
@@ -754,7 +754,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1054, 
+            "id": 3369, 
             "source": "*Cost Effective Training", 
             "target": "Increase IT Resources", 
             "type": "contribution", 
@@ -762,7 +762,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1055, 
+            "id": 3370, 
             "source": "IT Be Upgraded", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -770,7 +770,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1056, 
+            "id": 3371, 
             "source": "Sensitive to the Environment IT Equipment will Be Introduced to", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -778,7 +778,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1057, 
+            "id": 3372, 
             "source": "Acquire Telephone Switch", 
             "target": "Telephony Be Implemented and Managed", 
             "type": "decompositions", 
@@ -786,7 +786,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1058, 
+            "id": 3373, 
             "source": "Manage Donor/ Accounting Data Base", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
             "type": "contribution", 
@@ -794,7 +794,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1059, 
+            "id": 3374, 
             "source": "Network PCs", 
             "target": "*Implement/Maintain Computer Systems for Employee Use ", 
             "type": "decompositions", 
@@ -802,7 +802,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1060, 
+            "id": 3375, 
             "source": "Put Content Onto Website1", 
             "target": "Manage and Implement Web Site", 
             "type": "decompositions", 
@@ -810,7 +810,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1061, 
+            "id": 3376, 
             "source": "Provide Technology to Create and Send Documents", 
             "target": "*Implement/Maintain Computer Systems for Employee Use ", 
             "type": "decompositions", 
@@ -818,7 +818,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1062, 
+            "id": 3377, 
             "source": "Support Analysis [Counsellors Time]1", 
             "target": "Support Analysis [Counsellors Time]", 
             "type": "dependency", 
@@ -826,7 +826,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1063, 
+            "id": 3378, 
             "source": "Use Current Method", 
             "target": "Provide Peer-to-Peer Access Regional Offices", 
             "type": "decompositions", 
@@ -834,7 +834,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1064, 
+            "id": 3379, 
             "source": "*Implement Bulletin Board", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -842,7 +842,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1065, 
+            "id": 3380, 
             "source": "*Implement Bulletin Board", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -850,7 +850,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1066, 
+            "id": 3381, 
             "source": "!An IT Trainer Be Present1", 
             "target": "*Increase [IT Training for Counsellors]1", 
             "type": "contribution", 
@@ -858,7 +858,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1067, 
+            "id": 3382, 
             "source": "*Implement Activity Manager", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -866,7 +866,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1068, 
+            "id": 3383, 
             "source": "*Implement Activity Manager", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -874,7 +874,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1069, 
+            "id": 3384, 
             "source": "*Implement Categorization Tool", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -882,7 +882,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1070, 
+            "id": 3385, 
             "source": "*Web Software Be Acquired", 
             "target": "Web Software", 
             "type": "dependency", 
@@ -890,7 +890,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1071, 
+            "id": 3386, 
             "source": "!Integrate IT Systems", 
             "target": "Simple [Technology]1", 
             "type": "contribution", 
@@ -898,7 +898,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1072, 
+            "id": 3387, 
             "source": "Improve [Call Recording Equipment]1", 
             "target": "Improve Quality Assurance Technology1", 
             "type": "contribution", 
@@ -906,7 +906,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1073, 
+            "id": 3388, 
             "source": "Install Desktop Software", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -914,7 +914,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1074, 
+            "id": 3389, 
             "source": "*Acquire Software for Free", 
             "target": "*Web Software Be Acquired", 
             "type": "decompositions", 
@@ -922,7 +922,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1075, 
+            "id": 3390, 
             "source": "Simple [Technology]1", 
             "target": "Simple [Technology]", 
             "type": "dependency", 
@@ -930,7 +930,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1076, 
+            "id": 3391, 
             "source": "*Acquire Software for Free", 
             "target": "Acquire Software", 
             "type": "decompositions", 
@@ -938,7 +938,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1077, 
+            "id": 3392, 
             "source": "Increase IT Resources", 
             "target": "Expand IT Department", 
             "type": "contribution", 
@@ -946,7 +946,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1078, 
+            "id": 3393, 
             "source": "!Implement Phone Feedback1", 
             "target": "!Implement Phone Feedback", 
             "type": "dependency", 
@@ -954,7 +954,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1079, 
+            "id": 3394, 
             "source": "Provide Document Library System1", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -962,7 +962,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1080, 
+            "id": 3395, 
             "source": "*Web Server Be Acquired", 
             "target": "Web Server", 
             "type": "dependency", 
@@ -970,7 +970,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1081, 
+            "id": 3396, 
             "source": "Provide Peer-to-Peer Access Regional Offices", 
             "target": "Implement and Manage Technology in Regional Offices", 
             "type": "decompositions", 
@@ -978,7 +978,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1082, 
+            "id": 3397, 
             "source": "Oracle", 
             "target": "Use Oracle for Data Base", 
             "type": "dependency", 
@@ -986,7 +986,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1083, 
+            "id": 3398, 
             "source": "Free Upgrades", 
             "target": "*Acquire Upgrades for Free", 
             "type": "dependency", 
@@ -994,7 +994,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1084, 
+            "id": 3399, 
             "source": "Pay for Hardware", 
             "target": "*Hardware Be Acquired", 
             "type": "decompositions", 
@@ -1002,7 +1002,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1085, 
+            "id": 3400, 
             "source": "Increase IT Training Resources", 
             "target": "*Effective IT Training", 
             "type": "contribution", 
@@ -1010,7 +1010,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1086, 
+            "id": 3401, 
             "source": "Decrease Clumsiness [Technology]1", 
             "target": "Decrease Clumsiness [Technology]", 
             "type": "dependency", 
@@ -1018,7 +1018,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1087, 
+            "id": 3402, 
             "source": "*Pay for Software", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -1026,7 +1026,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1088, 
+            "id": 3403, 
             "source": "CS Be Not for Profit", 
             "target": "Keep Up With New Technology", 
             "type": "contribution", 
@@ -1034,7 +1034,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1089, 
+            "id": 3404, 
             "source": "Install Desktop Software", 
             "target": "Implement Desktops", 
             "type": "decompositions", 
@@ -1042,7 +1042,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1090, 
+            "id": 3405, 
             "source": "Acquire Software", 
             "target": "Feedback Form Be Implemented", 
             "type": "decompositions", 
@@ -1050,7 +1050,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1091, 
+            "id": 3406, 
             "source": "*Implement Symposium System", 
             "target": "Telephony Be Implemented and Managed", 
             "type": "decompositions", 
@@ -1058,7 +1058,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1092, 
+            "id": 3407, 
             "source": "Provide Online Donor Technology1", 
             "target": "Provide Online Donor Technology", 
             "type": "dependency", 
@@ -1066,7 +1066,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1093, 
+            "id": 3408, 
             "source": "Use Current Method", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -1074,7 +1074,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1094, 
+            "id": 3409, 
             "source": "Feedback Form Be Implemented", 
             "target": "Increase IT Methods to Acquire Feedback1", 
             "type": "contribution", 
@@ -1082,7 +1082,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1095, 
+            "id": 3410, 
             "source": "Implement Desktops", 
             "target": "*Implement/Maintain Computer Systems for Employee Use ", 
             "type": "decompositions", 
@@ -1090,7 +1090,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1096, 
+            "id": 3411, 
             "source": "Use Oracle for Data Base", 
             "target": "Manage Donor/ Accounting Data Base", 
             "type": "decompositions", 
@@ -1098,7 +1098,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1097, 
+            "id": 3412, 
             "source": "Increase IT Resources", 
             "target": "Increase IT Training Resources", 
             "type": "contribution", 
@@ -1106,7 +1106,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1098, 
+            "id": 3413, 
             "source": "Consideration of Feedback [from Counsellors]", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -1114,7 +1114,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1099, 
+            "id": 3414, 
             "source": "*Pay for Web Server", 
             "target": "*Web Server Be Acquired", 
             "type": "decompositions", 
@@ -1122,7 +1122,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1100, 
+            "id": 3415, 
             "source": "Acquire Software", 
             "target": "*Implement Categorization Tool", 
             "type": "decompositions", 
@@ -1130,7 +1130,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1101, 
+            "id": 3416, 
             "source": "*Increase [IT Training for Counsellors]1", 
             "target": "*Increase [IT Training for Counsellors]", 
             "type": "dependency", 
@@ -1138,7 +1138,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1102, 
+            "id": 3417, 
             "source": "Call Center Server and Scheduling System Be Integrated", 
             "target": "!Integrate IT Systems", 
             "type": "decompositions", 
@@ -1146,7 +1146,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1103, 
+            "id": 3418, 
             "source": "*Implement Categorization Tool", 
             "target": "! Provide compiled call data ", 
             "type": "dependency", 
@@ -1154,7 +1154,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1104, 
+            "id": 3419, 
             "source": "Easily Accessable Technology Instructions1", 
             "target": "Easily Accessable Technology Instructions", 
             "type": "dependency", 
@@ -1162,7 +1162,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1105, 
+            "id": 3420, 
             "source": "!Implement Phone Feedback1", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "type": "contribution", 
@@ -1170,7 +1170,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1106, 
+            "id": 3421, 
             "source": "Provide Document Library System1", 
             "target": "Provide Document Library System", 
             "type": "dependency", 
@@ -1178,7 +1178,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1107, 
+            "id": 3422, 
             "source": "Cost Effective Technology", 
             "target": "Increase IT Training Resources", 
             "type": "contribution", 
@@ -1186,7 +1186,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1108, 
+            "id": 3423, 
             "source": "Use Oracle for Data Base", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -1194,7 +1194,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1109, 
+            "id": 3424, 
             "source": "Consideration of Feedback [from Counsellors]", 
             "target": "Consideration of Feedback [IT Providers]", 
             "type": "dependency", 
@@ -1202,7 +1202,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1110, 
+            "id": 3425, 
             "source": "*Pay for Software", 
             "target": "Acquire Software", 
             "type": "decompositions", 
@@ -1210,7 +1210,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1111, 
+            "id": 3426, 
             "source": "Use T1", 
             "target": "Provide Peer-to-Peer Access Regional Offices", 
             "type": "decompositions", 
@@ -1218,7 +1218,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1112, 
+            "id": 3427, 
             "source": "*Acquire Web Server for Free", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -1226,7 +1226,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1113, 
+            "id": 3428, 
             "source": "Increase IT Resources1", 
             "target": "Increase IT Resources", 
             "type": "dependency", 
@@ -1234,7 +1234,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1114, 
+            "id": 3429, 
             "source": "Increase IT Methods to Acquire Feedback1", 
             "target": "Increase IT Methods to Acquire Feedback", 
             "type": "dependency", 
@@ -1242,7 +1242,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1115, 
+            "id": 3430, 
             "source": "*Web Software Be Acquired", 
             "target": "Web Counselling Software Be Implemented", 
             "type": "decompositions", 
@@ -1250,7 +1250,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1116, 
+            "id": 3431, 
             "source": "*Pay for Web Server", 
             "target": "Cost Effective Technology", 
             "type": "contribution", 
@@ -1258,7 +1258,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1117, 
+            "id": 3432, 
             "source": "*Implement Bulletin Board", 
             "target": "Acquire and Implement Employee Software", 
             "type": "decompositions", 
@@ -1266,7 +1266,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1118, 
+            "id": 3433, 
             "source": "Cost Effective Technology", 
             "target": "Expand IT Department", 
             "type": "contribution", 
@@ -1274,7 +1274,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1119, 
+            "id": 3434, 
             "source": "*Web Server Be Acquired", 
             "target": "Manage and Implement Web Site", 
             "type": "decompositions", 
@@ -1282,7 +1282,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1120, 
+            "id": 3435, 
             "source": "Keep Up With New Technology", 
             "target": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "type": "contribution", 
@@ -1290,7 +1290,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 1121, 
+            "id": 3436, 
             "source": "Get web event technology", 
             "target": "Get web event technology1", 
             "type": "dependency", 
@@ -1306,7 +1306,7 @@
             "id": "Easily Accessable Technology Instructions1", 
             "name": "Easily Accessable Technology Instructions1", 
             "to_edges": [
-                1104
+                3419
             ], 
             "type": "softgoal"
         }, 
@@ -1314,7 +1314,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1010
+                3325
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]1", 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]1", 
@@ -1328,7 +1328,7 @@
             "id": "Free Upgrades", 
             "name": "Free Upgrades", 
             "to_edges": [
-                1083
+                3398
             ], 
             "type": "resource"
         }, 
@@ -1336,7 +1336,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1092
+                3407
             ], 
             "id": "Provide Online Donor Technology", 
             "name": "Provide Online Donor Technology", 
@@ -1347,7 +1347,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1012
+                3327
             ], 
             "id": "Increase Access Speed [  Regional Offices to DL]", 
             "name": "Increase Access Speed [  Regional Offices to DL]", 
@@ -1361,8 +1361,8 @@
             "id": "Put Content Onto Website1", 
             "name": "Put Content Onto Website1", 
             "to_edges": [
-                996, 
-                1060
+                3311, 
+                3375
             ], 
             "type": "task"
         }, 
@@ -1370,7 +1370,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                975
+                3290
             ], 
             "id": "Improve Quality Assurance Technology", 
             "name": "Improve Quality Assurance Technology", 
@@ -1381,13 +1381,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                969
+                3284
             ], 
             "id": "Hardware Be Acquired for Free", 
             "name": "Hardware Be Acquired for Free", 
             "to_edges": [
-                968, 
-                990
+                3283, 
+                3305
             ], 
             "type": "task"
         }, 
@@ -1398,7 +1398,7 @@
             "id": "Use VPN", 
             "name": "Use VPN", 
             "to_edges": [
-                991
+                3306
             ], 
             "type": "task"
         }, 
@@ -1406,13 +1406,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1003, 
-                1005
+                3318, 
+                3320
             ], 
             "id": "Sensitive to the Environment IT Equipment will Be Introduced to", 
             "name": "Sensitive to the Environment IT Equipment will Be Introduced to", 
             "to_edges": [
-                1056
+                3371
             ], 
             "type": "softgoal"
         }, 
@@ -1423,8 +1423,8 @@
             "id": "!Calls Be Recorded into a Data Base1", 
             "name": "!Calls Be Recorded into a Data Base1", 
             "to_edges": [
-                1035, 
-                1047
+                3350, 
+                3362
             ], 
             "type": "goal"
         }, 
@@ -1432,17 +1432,17 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                963, 
-                1039, 
-                1053, 
-                1059, 
-                1061, 
-                1095
+                3278, 
+                3354, 
+                3368, 
+                3374, 
+                3376, 
+                3410
             ], 
             "id": "*Implement/Maintain Computer Systems for Employee Use ", 
             "name": "*Implement/Maintain Computer Systems for Employee Use ", 
             "to_edges": [
-                986
+                3301
             ], 
             "type": "task"
         }, 
@@ -1450,13 +1450,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1018, 
-                1036
+                3333, 
+                3351
             ], 
             "id": "IT Training/Support Be Given to Employees", 
             "name": "IT Training/Support Be Given to Employees", 
             "to_edges": [
-                1015
+                3330
             ], 
             "type": "goal"
         }, 
@@ -1467,7 +1467,7 @@
             "id": "IT Resources", 
             "name": "IT Resources", 
             "to_edges": [
-                994
+                3309
             ], 
             "type": "resource"
         }, 
@@ -1475,21 +1475,21 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                961, 
-                962, 
-                1025, 
-                1064, 
-                1065, 
-                1067, 
-                1068, 
-                1069, 
-                1098, 
-                1105
+                3276, 
+                3277, 
+                3340, 
+                3379, 
+                3380, 
+                3382, 
+                3383, 
+                3384, 
+                3413, 
+                3420
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "name": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "to_edges": [
-                1030
+                3345
             ], 
             "type": "softgoal"
         }, 
@@ -1500,7 +1500,7 @@
             "id": "Oracle", 
             "name": "Oracle", 
             "to_edges": [
-                1082
+                3397
             ], 
             "type": "resource"
         }, 
@@ -1508,7 +1508,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1086
+                3401
             ], 
             "id": "Decrease Clumsiness [Technology]", 
             "name": "Decrease Clumsiness [Technology]", 
@@ -1519,13 +1519,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1082
+                3397
             ], 
             "id": "Use Oracle for Data Base", 
             "name": "Use Oracle for Data Base", 
             "to_edges": [
-                1096, 
-                1108
+                3411, 
+                3423
             ], 
             "type": "task"
         }, 
@@ -1533,14 +1533,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                982
+                3297
             ], 
             "id": "Provide Document Library System1", 
             "name": "Provide Document Library System1", 
             "to_edges": [
-                1011, 
-                1079, 
-                1106
+                3326, 
+                3394, 
+                3421
             ], 
             "type": "task"
         }, 
@@ -1548,21 +1548,21 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                968, 
-                981, 
-                1002, 
-                1038, 
-                1087, 
-                1093, 
-                1108, 
-                1112, 
-                1116
+                3283, 
+                3296, 
+                3317, 
+                3353, 
+                3402, 
+                3408, 
+                3423, 
+                3427, 
+                3431
             ], 
             "id": "Cost Effective Technology", 
             "name": "Cost Effective Technology", 
             "to_edges": [
-                1107, 
-                1118
+                3422, 
+                3433
             ], 
             "type": "softgoal"
         }, 
@@ -1570,16 +1570,16 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1013, 
-                1021, 
-                1034, 
-                1060, 
-                1119
+                3328, 
+                3336, 
+                3349, 
+                3375, 
+                3434
             ], 
             "id": "Manage and Implement Web Site", 
             "name": "Manage and Implement Web Site", 
             "to_edges": [
-                966
+                3281
             ], 
             "type": "task"
         }, 
@@ -1587,7 +1587,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1103
+                3418
             ], 
             "id": "! Provide compiled call data ", 
             "name": "! Provide compiled call data ", 
@@ -1598,12 +1598,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1041
+                3356
             ], 
             "id": "*Pay for Upgrades", 
             "name": "*Pay for Upgrades", 
             "to_edges": [
-                1022
+                3337
             ], 
             "type": "task"
         }, 
@@ -1614,7 +1614,7 @@
             "id": "Call Center Server and Scheduling System Be Integrated", 
             "name": "Call Center Server and Scheduling System Be Integrated", 
             "to_edges": [
-                1102
+                3417
             ], 
             "type": "goal"
         }, 
@@ -1625,8 +1625,8 @@
             "id": "Improve [Call Recording Equipment]1", 
             "name": "Improve [Call Recording Equipment]1", 
             "to_edges": [
-                1048, 
-                1072
+                3363, 
+                3387
             ], 
             "type": "softgoal"
         }, 
@@ -1634,12 +1634,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                998
+                3313
             ], 
             "id": "Fit Between System Capabilities and CS Requirements", 
             "name": "Fit Between System Capabilities and CS Requirements", 
             "to_edges": [
-                1014
+                3329
             ], 
             "type": "softgoal"
         }, 
@@ -1647,20 +1647,20 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                960, 
-                967, 
-                977, 
-                1014, 
-                1020, 
-                1030, 
-                1055, 
-                1056, 
-                1120
+                3275, 
+                3282, 
+                3292, 
+                3329, 
+                3335, 
+                3345, 
+                3370, 
+                3371, 
+                3435
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "to_edges": [
-                1010
+                3325
             ], 
             "type": "softgoal"
         }, 
@@ -1668,13 +1668,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1102
+                3417
             ], 
             "id": "!Integrate IT Systems", 
             "name": "!Integrate IT Systems", 
             "to_edges": [
-                965, 
-                1071
+                3280, 
+                3386
             ], 
             "type": "goal"
         }, 
@@ -1682,7 +1682,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                973
+                3288
             ], 
             "id": "Feedback Form Software", 
             "name": "Feedback Form Software", 
@@ -1693,7 +1693,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1009
+                3324
             ], 
             "id": "!Performance Review Information Be Collected in Data Base", 
             "name": "!Performance Review Information Be Collected in Data Base", 
@@ -1707,7 +1707,7 @@
             "id": "CS Be Not for Profit", 
             "name": "CS Be Not for Profit", 
             "to_edges": [
-                1088
+                3403
             ], 
             "type": "goal"
         }, 
@@ -1715,7 +1715,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1080
+                3395
             ], 
             "id": "Web Server", 
             "name": "Web Server", 
@@ -1726,7 +1726,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1083
+                3398
             ], 
             "id": "*Acquire Upgrades for Free", 
             "name": "*Acquire Upgrades for Free", 
@@ -1737,14 +1737,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                997, 
-                1049, 
-                1066
+                3312, 
+                3364, 
+                3381
             ], 
             "id": "*Increase [IT Training for Counsellors]1", 
             "name": "*Increase [IT Training for Counsellors]1", 
             "to_edges": [
-                1101
+                3416
             ], 
             "type": "softgoal"
         }, 
@@ -1752,7 +1752,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1050
+                3365
             ], 
             "id": "*Implement Bulletin Board1", 
             "name": "*Implement Bulletin Board1", 
@@ -1766,10 +1766,10 @@
             "id": "!An IT Trainer Be Present1", 
             "name": "!An IT Trainer Be Present1", 
             "to_edges": [
-                984, 
-                987, 
-                1007, 
-                1066
+                3299, 
+                3302, 
+                3322, 
+                3381
             ], 
             "type": "goal"
         }, 
@@ -1777,14 +1777,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                992, 
-                993, 
-                1007
+                3307, 
+                3308, 
+                3322
             ], 
             "id": "*Cost Effective Training", 
             "name": "*Cost Effective Training", 
             "to_edges": [
-                1054
+                3369
             ], 
             "type": "softgoal"
         }, 
@@ -1795,7 +1795,7 @@
             "id": "*IT Providers have Knowledge of Fundraising and Marketing", 
             "name": "*IT Providers have Knowledge of Fundraising and Marketing", 
             "to_edges": [
-                1005
+                3320
             ], 
             "type": "goal"
         }, 
@@ -1806,7 +1806,7 @@
             "id": "Free Web Server", 
             "name": "Free Web Server", 
             "to_edges": [
-                995
+                3310
             ], 
             "type": "resource"
         }, 
@@ -1814,7 +1814,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1104
+                3419
             ], 
             "id": "Easily Accessable Technology Instructions", 
             "name": "Easily Accessable Technology Instructions", 
@@ -1825,14 +1825,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                990, 
-                1084
+                3305, 
+                3399
             ], 
             "id": "*Hardware Be Acquired", 
             "name": "*Hardware Be Acquired", 
             "to_edges": [
-                970, 
-                1053
+                3285, 
+                3368
             ], 
             "type": "goal"
         }, 
@@ -1840,7 +1840,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1078
+                3393
             ], 
             "id": "!Implement Phone Feedback", 
             "name": "!Implement Phone Feedback", 
@@ -1851,15 +1851,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1100
+                3415
             ], 
             "id": "*Implement Categorization Tool", 
             "name": "*Implement Categorization Tool", 
             "to_edges": [
-                1008, 
-                1027, 
-                1069, 
-                1103
+                3323, 
+                3342, 
+                3384, 
+                3418
             ], 
             "type": "task"
         }, 
@@ -1867,7 +1867,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                987
+                3302
             ], 
             "id": "!An IT Trainer Be Present", 
             "name": "!An IT Trainer Be Present", 
@@ -1878,13 +1878,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1090
+                3405
             ], 
             "id": "Feedback Form Be Implemented", 
             "name": "Feedback Form Be Implemented", 
             "to_edges": [
-                973, 
-                1094
+                3288, 
+                3409
             ], 
             "type": "task"
         }, 
@@ -1895,8 +1895,8 @@
             "id": "!Implement Phone Feedback1", 
             "name": "!Implement Phone Feedback1", 
             "to_edges": [
-                1078, 
-                1105
+                3393, 
+                3420
             ], 
             "type": "task"
         }, 
@@ -1904,13 +1904,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                980, 
-                1044
+                3295, 
+                3359
             ], 
             "id": "Support Analysis [Counsellors Time]1", 
             "name": "Support Analysis [Counsellors Time]1", 
             "to_edges": [
-                1062
+                3377
             ], 
             "type": "softgoal"
         }, 
@@ -1918,7 +1918,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1008
+                3323
             ], 
             "id": "*Implement Categorization Tool1", 
             "name": "*Implement Categorization Tool1", 
@@ -1932,7 +1932,7 @@
             "id": "Provide Technology to Create and Send Documents", 
             "name": "Provide Technology to Create and Send Documents", 
             "to_edges": [
-                1061
+                3376
             ], 
             "type": "task"
         }, 
@@ -1943,7 +1943,7 @@
             "id": "Network PCs", 
             "name": "Network PCs", 
             "to_edges": [
-                1059
+                3374
             ], 
             "type": "task"
         }, 
@@ -1951,7 +1951,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1121
+                3436
             ], 
             "id": "Get web event technology1", 
             "name": "Get web event technology1", 
@@ -1965,7 +1965,7 @@
             "id": "Free Software", 
             "name": "Free Software", 
             "to_edges": [
-                1051
+                3366
             ], 
             "type": "resource"
         }, 
@@ -1973,12 +1973,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1071
+                3386
             ], 
             "id": "Simple [Technology]1", 
             "name": "Simple [Technology]1", 
             "to_edges": [
-                1075
+                3390
             ], 
             "type": "softgoal"
         }, 
@@ -1986,7 +1986,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1114
+                3429
             ], 
             "id": "Increase IT Methods to Acquire Feedback", 
             "name": "Increase IT Methods to Acquire Feedback", 
@@ -1997,14 +1997,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1046
+                3361
             ], 
             "id": "*Pay for Software", 
             "name": "*Pay for Software", 
             "to_edges": [
-                989, 
-                1087, 
-                1110
+                3304, 
+                3402, 
+                3425
             ], 
             "type": "task"
         }, 
@@ -2012,14 +2012,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                978
+                3293
             ], 
             "id": "Implement Director Enterprise through Blue Pumpkin ", 
             "name": "Implement Director Enterprise through Blue Pumpkin ", 
             "to_edges": [
-                980, 
-                983, 
-                1025
+                3295, 
+                3298, 
+                3340
             ], 
             "type": "task"
         }, 
@@ -2027,7 +2027,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1043
+                3358
             ], 
             "id": "Telephony Be Implemented and Managed1", 
             "name": "Telephony Be Implemented and Managed1", 
@@ -2038,15 +2038,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                976
+                3291
             ], 
             "id": "*Implement Activity Manager", 
             "name": "*Implement Activity Manager", 
             "to_edges": [
-                1023, 
-                1044, 
-                1067, 
-                1068
+                3338, 
+                3359, 
+                3382, 
+                3383
             ], 
             "type": "task"
         }, 
@@ -2057,7 +2057,7 @@
             "id": "Adequately Customizable [CS Technology]", 
             "name": "Adequately Customizable [CS Technology]", 
             "to_edges": [
-                998
+                3313
             ], 
             "type": "softgoal"
         }, 
@@ -2065,12 +2065,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1001
+                3316
             ], 
             "id": "Implement IVR", 
             "name": "Implement IVR", 
             "to_edges": [
-                1026
+                3341
             ], 
             "type": "task"
         }, 
@@ -2078,7 +2078,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1075
+                3390
             ], 
             "id": "Simple [Technology]", 
             "name": "Simple [Technology]", 
@@ -2092,8 +2092,8 @@
             "id": "Use Current Method", 
             "name": "Use Current Method", 
             "to_edges": [
-                1063, 
-                1093
+                3378, 
+                3408
             ], 
             "type": "task"
         }, 
@@ -2101,13 +2101,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1011, 
-                1058
+                3326, 
+                3373
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
             "name": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
             "to_edges": [
-                960
+                3275
             ], 
             "type": "softgoal"
         }, 
@@ -2115,15 +2115,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                971, 
-                972, 
-                1047, 
-                1072
+                3286, 
+                3287, 
+                3362, 
+                3387
             ], 
             "id": "Improve Quality Assurance Technology1", 
             "name": "Improve Quality Assurance Technology1", 
             "to_edges": [
-                975
+                3290
             ], 
             "type": "softgoal"
         }, 
@@ -2131,7 +2131,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                996
+                3311
             ], 
             "id": "Put Content Onto Website", 
             "name": "Put Content Onto Website", 
@@ -2145,7 +2145,7 @@
             "id": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
             "name": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
             "to_edges": [
-                1032
+                3347
             ], 
             "type": "softgoal"
         }, 
@@ -2153,12 +2153,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1028
+                3343
             ], 
             "id": "Increase Access Speed [  Regional Offices to DL]1", 
             "name": "Increase Access Speed [  Regional Offices to DL]1", 
             "to_edges": [
-                1012
+                3327
             ], 
             "type": "softgoal"
         }, 
@@ -2169,9 +2169,9 @@
             "id": "*Implement Email for Counsellors", 
             "name": "*Implement Email for Counsellors", 
             "to_edges": [
-                961, 
-                988, 
-                1024
+                3276, 
+                3303, 
+                3339
             ], 
             "type": "task"
         }, 
@@ -2179,14 +2179,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1000, 
-                1019, 
-                1088
+                3315, 
+                3334, 
+                3403
             ], 
             "id": "Keep Up With New Technology", 
             "name": "Keep Up With New Technology", 
             "to_edges": [
-                1120
+                3435
             ], 
             "type": "softgoal"
         }, 
@@ -2194,12 +2194,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                994
+                3309
             ], 
             "id": "Acquire IT Resources", 
             "name": "Acquire IT Resources", 
             "to_edges": [
-                977
+                3292
             ], 
             "type": "task"
         }, 
@@ -2210,9 +2210,9 @@
             "id": "Use T1", 
             "name": "Use T1", 
             "to_edges": [
-                1028, 
-                1038, 
-                1111
+                3343, 
+                3353, 
+                3426
             ], 
             "type": "task"
         }, 
@@ -2220,15 +2220,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1017, 
-                1031, 
-                1045, 
-                1085
+                3332, 
+                3346, 
+                3360, 
+                3400
             ], 
             "id": "*Effective IT Training", 
             "name": "*Effective IT Training", 
             "to_edges": [
-                967
+                3282
             ], 
             "type": "softgoal"
         }, 
@@ -2236,14 +2236,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1052
+                3367
             ], 
             "id": "Install Desktop Software", 
             "name": "Install Desktop Software", 
             "to_edges": [
-                962, 
-                1073, 
-                1089
+                3277, 
+                3388, 
+                3404
             ], 
             "type": "task"
         }, 
@@ -2254,7 +2254,7 @@
             "id": "Decrease Clumsiness [Technology]1", 
             "name": "Decrease Clumsiness [Technology]1", 
             "to_edges": [
-                1086
+                3401
             ], 
             "type": "softgoal"
         }, 
@@ -2265,8 +2265,8 @@
             "id": "Use Informal Buddy System for Training", 
             "name": "Use Informal Buddy System for Training", 
             "to_edges": [
-                993, 
-                1036
+                3308, 
+                3351
             ], 
             "type": "task"
         }, 
@@ -2274,14 +2274,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1051
+                3366
             ], 
             "id": "*Acquire Software for Free", 
             "name": "*Acquire Software for Free", 
             "to_edges": [
-                981, 
-                1074, 
-                1076
+                3296, 
+                3389, 
+                3391
             ], 
             "type": "task"
         }, 
@@ -2292,10 +2292,10 @@
             "id": "!A Training Computer Be Present1", 
             "name": "!A Training Computer Be Present1", 
             "to_edges": [
-                992, 
-                1029, 
-                1031, 
-                1049
+                3307, 
+                3344, 
+                3346, 
+                3364
             ], 
             "type": "goal"
         }, 
@@ -2303,12 +2303,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1033
+                3348
             ], 
             "id": "Adjust to Software Changes", 
             "name": "Adjust to Software Changes", 
             "to_edges": [
-                1020
+                3335
             ], 
             "type": "softgoal"
         }, 
@@ -2319,7 +2319,7 @@
             "id": "Free Hardware", 
             "name": "Free Hardware", 
             "to_edges": [
-                969
+                3284
             ], 
             "type": "resource"
         }, 
@@ -2327,13 +2327,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                991, 
-                1081
+                3306, 
+                3396
             ], 
             "id": "Implement and Manage Technology in Regional Offices", 
             "name": "Implement and Manage Technology in Regional Offices", 
             "to_edges": [
-                1039
+                3354
             ], 
             "type": "task"
         }, 
@@ -2341,18 +2341,18 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                983, 
-                1023, 
-                1024, 
-                1027, 
-                1073, 
-                1079, 
-                1117
+                3298, 
+                3338, 
+                3339, 
+                3342, 
+                3388, 
+                3394, 
+                3432
             ], 
             "id": "Acquire and Implement Employee Software", 
             "name": "Acquire and Implement Employee Software", 
             "to_edges": [
-                963
+                3278
             ], 
             "type": "task"
         }, 
@@ -2360,7 +2360,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1109
+                3424
             ], 
             "id": "Consideration of Feedback [IT Providers]", 
             "name": "Consideration of Feedback [IT Providers]", 
@@ -2371,7 +2371,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1042
+                3357
             ], 
             "id": "Donor/Accounting Data Base", 
             "name": "Donor/Accounting Data Base", 
@@ -2385,7 +2385,7 @@
             "id": "Increase IT Resources1", 
             "name": "Increase IT Resources1", 
             "to_edges": [
-                1113
+                3428
             ], 
             "type": "softgoal"
         }, 
@@ -2393,12 +2393,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1089
+                3404
             ], 
             "id": "Implement Desktops", 
             "name": "Implement Desktops", 
             "to_edges": [
-                1095
+                3410
             ], 
             "type": "task"
         }, 
@@ -2406,15 +2406,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1026, 
-                1057, 
-                1091
+                3341, 
+                3372, 
+                3406
             ], 
             "id": "Telephony Be Implemented and Managed", 
             "name": "Telephony Be Implemented and Managed", 
             "to_edges": [
-                974, 
-                1043
+                3289, 
+                3358
             ], 
             "type": "task"
         }, 
@@ -2422,12 +2422,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                985
+                3300
             ], 
             "id": "*Implement Symposium System", 
             "name": "*Implement Symposium System", 
             "to_edges": [
-                1091
+                3406
             ], 
             "type": "task"
         }, 
@@ -2438,7 +2438,7 @@
             "id": "Software", 
             "name": "Software", 
             "to_edges": [
-                1046
+                3361
             ], 
             "type": "resource"
         }, 
@@ -2446,13 +2446,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                999
+                3314
             ], 
             "id": "Pay for Hardware", 
             "name": "Pay for Hardware", 
             "to_edges": [
-                1002, 
-                1084
+                3317, 
+                3399
             ], 
             "type": "task"
         }, 
@@ -2460,7 +2460,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1106
+                3421
             ], 
             "id": "Provide Document Library System", 
             "name": "Provide Document Library System", 
@@ -2471,15 +2471,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1006, 
-                1096
+                3321, 
+                3411
             ], 
             "id": "Manage Donor/ Accounting Data Base", 
             "name": "Manage Donor/ Accounting Data Base", 
             "to_edges": [
-                1004, 
-                1042, 
-                1058
+                3319, 
+                3357, 
+                3373
             ], 
             "type": "task"
         }, 
@@ -2490,7 +2490,7 @@
             "id": "Web Server1", 
             "name": "Web Server1", 
             "to_edges": [
-                979
+                3294
             ], 
             "type": "resource"
         }, 
@@ -2498,7 +2498,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                988
+                3303
             ], 
             "id": "*Implement Email for Counsellors1", 
             "name": "*Implement Email for Counsellors1", 
@@ -2512,7 +2512,7 @@
             "id": "*IT Providers have Knowledge of Counselling", 
             "name": "*IT Providers have Knowledge of Counselling", 
             "to_edges": [
-                1003
+                3318
             ], 
             "type": "goal"
         }, 
@@ -2523,8 +2523,8 @@
             "id": "!Performance Review Information Be Collected in Data Base1", 
             "name": "!Performance Review Information Be Collected in Data Base1", 
             "to_edges": [
-                972, 
-                1009
+                3287, 
+                3324
             ], 
             "type": "goal"
         }, 
@@ -2532,7 +2532,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                965
+                3280
             ], 
             "id": "!IT Systems Be Integrated", 
             "name": "!IT Systems Be Integrated", 
@@ -2543,13 +2543,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1077, 
-                1118
+                3392, 
+                3433
             ], 
             "id": "Expand IT Department", 
             "name": "Expand IT Department", 
             "to_edges": [
-                1016
+                3331
             ], 
             "type": "softgoal"
         }, 
@@ -2557,22 +2557,22 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1076, 
-                1110
+                3391, 
+                3425
             ], 
             "id": "Acquire Software", 
             "name": "Acquire Software", 
             "to_edges": [
-                964, 
-                976, 
-                978, 
-                982, 
-                985, 
-                1001, 
-                1037, 
-                1052, 
-                1090, 
-                1100
+                3279, 
+                3291, 
+                3293, 
+                3297, 
+                3300, 
+                3316, 
+                3352, 
+                3367, 
+                3405, 
+                3415
             ], 
             "type": "goal"
         }, 
@@ -2580,14 +2580,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1040, 
-                1099
+                3355, 
+                3414
             ], 
             "id": "*Web Server Be Acquired", 
             "name": "*Web Server Be Acquired", 
             "to_edges": [
-                1080, 
-                1119
+                3395, 
+                3434
             ], 
             "type": "goal"
         }, 
@@ -2604,12 +2604,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1032
+                3347
             ], 
             "id": "Increased Emphasis on IT in Hiring Process [of Counsellors]1", 
             "name": "Increased Emphasis on IT in Hiring Process [of Counsellors]1", 
             "to_edges": [
-                1017
+                3332
             ], 
             "type": "softgoal"
         }, 
@@ -2617,7 +2617,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1070
+                3385
             ], 
             "id": "Web Software", 
             "name": "Web Software", 
@@ -2628,12 +2628,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1115
+                3430
             ], 
             "id": "Web Counselling Software Be Implemented", 
             "name": "Web Counselling Software Be Implemented", 
             "to_edges": [
-                1013
+                3328
             ], 
             "type": "task"
         }, 
@@ -2641,15 +2641,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1054, 
-                1113
+                3369, 
+                3428
             ], 
             "id": "Increase IT Resources", 
             "name": "Increase IT Resources", 
             "to_edges": [
-                1000, 
-                1077, 
-                1097
+                3315, 
+                3392, 
+                3412
             ], 
             "type": "softgoal"
         }, 
@@ -2657,13 +2657,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                995
+                3310
             ], 
             "id": "*Acquire Web Server for Free", 
             "name": "*Acquire Web Server for Free", 
             "to_edges": [
-                1040, 
-                1112
+                3355, 
+                3427
             ], 
             "type": "task"
         }, 
@@ -2671,7 +2671,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1048
+                3363
             ], 
             "id": "Improve [Call Recording Equipment]", 
             "name": "Improve [Call Recording Equipment]", 
@@ -2685,7 +2685,7 @@
             "id": "Hardware", 
             "name": "Hardware", 
             "to_edges": [
-                999
+                3314
             ], 
             "type": "resource"
         }, 
@@ -2696,7 +2696,7 @@
             "id": "Upgrades", 
             "name": "Upgrades", 
             "to_edges": [
-                1041
+                3356
             ], 
             "type": "resource"
         }, 
@@ -2704,7 +2704,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1035
+                3350
             ], 
             "id": "!Calls Be Recorded into a Data Base", 
             "name": "!Calls Be Recorded into a Data Base", 
@@ -2715,13 +2715,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1037
+                3352
             ], 
             "id": "Get web event technology", 
             "name": "Get web event technology", 
             "to_edges": [
-                1034, 
-                1121
+                3349, 
+                3436
             ], 
             "type": "task"
         }, 
@@ -2729,15 +2729,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                964
+                3279
             ], 
             "id": "*Implement Bulletin Board", 
             "name": "*Implement Bulletin Board", 
             "to_edges": [
-                1050, 
-                1064, 
-                1065, 
-                1117
+                3365, 
+                3379, 
+                3380, 
+                3432
             ], 
             "type": "task"
         }, 
@@ -2745,14 +2745,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1022
+                3337
             ], 
             "id": "IT Be Upgraded", 
             "name": "IT Be Upgraded", 
             "to_edges": [
-                1019, 
-                1033, 
-                1055
+                3334, 
+                3348, 
+                3370
             ], 
             "type": "goal"
         }, 
@@ -2760,11 +2760,11 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                966, 
-                974, 
-                986, 
-                1004, 
-                1015
+                3281, 
+                3289, 
+                3301, 
+                3319, 
+                3330
             ], 
             "id": "Satisfy CS IT Needs", 
             "name": "Satisfy CS IT Needs", 
@@ -2778,7 +2778,7 @@
             "id": "Perform Donor/Accounting Data Base Maintenance", 
             "name": "Perform Donor/Accounting Data Base Maintenance", 
             "to_edges": [
-                1006
+                3321
             ], 
             "type": "task"
         }, 
@@ -2786,12 +2786,12 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                970
+                3285
             ], 
             "id": "Acquire Telephone Switch", 
             "name": "Acquire Telephone Switch", 
             "to_edges": [
-                1057
+                3372
             ], 
             "type": "task"
         }, 
@@ -2802,8 +2802,8 @@
             "id": "Consideration of Feedback [from Counsellors]", 
             "name": "Consideration of Feedback [from Counsellors]", 
             "to_edges": [
-                1098, 
-                1109
+                3413, 
+                3424
             ], 
             "type": "softgoal"
         }, 
@@ -2811,7 +2811,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1101
+                3416
             ], 
             "id": "*Increase [IT Training for Counsellors]", 
             "name": "*Increase [IT Training for Counsellors]", 
@@ -2822,13 +2822,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                979
+                3294
             ], 
             "id": "*Pay for Web Server", 
             "name": "*Pay for Web Server", 
             "to_edges": [
-                1099, 
-                1116
+                3414, 
+                3431
             ], 
             "type": "task"
         }, 
@@ -2836,7 +2836,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1062
+                3377
             ], 
             "id": "Support Analysis [Counsellors Time]", 
             "name": "Support Analysis [Counsellors Time]", 
@@ -2850,8 +2850,8 @@
             "id": "Provide Online Donor Technology1", 
             "name": "Provide Online Donor Technology1", 
             "to_edges": [
-                1021, 
-                1092
+                3336, 
+                3407
             ], 
             "type": "task"
         }, 
@@ -2859,13 +2859,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                984
+                3299
             ], 
             "id": "IT Dept Provides Orientation and Training", 
             "name": "IT Dept Provides Orientation and Training", 
             "to_edges": [
-                1018, 
-                1045
+                3333, 
+                3360
             ], 
             "type": "task"
         }, 
@@ -2873,14 +2873,14 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                989, 
-                1074
+                3304, 
+                3389
             ], 
             "id": "*Web Software Be Acquired", 
             "name": "*Web Software Be Acquired", 
             "to_edges": [
-                1070, 
-                1115
+                3385, 
+                3430
             ], 
             "type": "goal"
         }, 
@@ -2888,7 +2888,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1029
+                3344
             ], 
             "id": "!A Training Computer Be Present", 
             "name": "!A Training Computer Be Present", 
@@ -2899,15 +2899,15 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1016, 
-                1097, 
-                1107
+                3331, 
+                3412, 
+                3422
             ], 
             "id": "Increase IT Training Resources", 
             "name": "Increase IT Training Resources", 
             "to_edges": [
-                997, 
-                1085
+                3312, 
+                3400
             ], 
             "type": "softgoal"
         }, 
@@ -2915,13 +2915,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1063, 
-                1111
+                3378, 
+                3426
             ], 
             "id": "Provide Peer-to-Peer Access Regional Offices", 
             "name": "Provide Peer-to-Peer Access Regional Offices", 
             "to_edges": [
-                1081
+                3396
             ], 
             "type": "goal"
         }, 
@@ -2929,13 +2929,13 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                1094
+                3409
             ], 
             "id": "Increase IT Methods to Acquire Feedback1", 
             "name": "Increase IT Methods to Acquire Feedback1", 
             "to_edges": [
-                971, 
-                1114
+                3286, 
+                3429
             ], 
             "type": "softgoal"
         }
