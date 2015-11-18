@@ -61,7 +61,7 @@ class Model(O):
 
   def evaluate_type(self, node_type, is_percent=False):
     count = 0
-    nodes = self._tree.get_nodes(node_type=node_type)
+    nodes = shuffle(self._tree.get_nodes(node_type=node_type))
     for node in nodes:
       self.chain = set()
       self.eval(node)

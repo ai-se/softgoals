@@ -16,7 +16,7 @@ def default():
     seed = 1,
     better = gt,
     obj_funcs = [eval_softgoals, eval_goals, eval_coverage],
-    evaluation = Point.evaluate_random,
+    evaluation = Point.evaluate,
     is_percent = True,
     binary = True
   )
