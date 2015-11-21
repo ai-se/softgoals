@@ -14,8 +14,8 @@ def default():
     f = 0.75,
     cr = 0.3,
     seed = 1,
-    better = gt,
-    obj_funcs = [eval_softgoals, eval_goals, eval_coverage],
+    better = [gt, gt, lt],
+    obj_funcs = [eval_softgoals, eval_goals, eval_costs],
     evaluation = Point.evaluate,
     is_percent = True,
     binary = True
@@ -40,17 +40,12 @@ def eval_coverage(model):
   else:
     return len(model.get_tree().get_nodes_covered())
 
-
-def dominates(obj1, obj2, better=lt):
-  at_least = False
-  for a, b in zip(obj1, obj2):
-    if better(a,b):
-      at_least = True
-    elif a == b:
-      continue
-    else:
-      return False
-  return at_least
+def eval_costs(model):
+  total_cost = 0
+  for node, cost in zip(model.bases, model.costs):
+    if node.value and node.value > 0:
+      total_cost += cost
+  return total_cost
 
 
 class Point(O):
@@ -146,7 +141,7 @@ class DE(O):
         original_obj = settings.evaluation(point, self.model, settings.obj_funcs)
         mutant = self.mutate(point, population)
         mutated_obj = settings.evaluation(mutant, self.model, settings.obj_funcs)
-        if dominates(mutated_obj, original_obj, better=settings.better) and (not mutant in clones):
+        if self.dominates(mutated_obj, original_obj) and (not mutant in clones):
           clones.remove(point)
           clones.append(mutant)
       population = clones
@@ -154,6 +149,16 @@ class DE(O):
     stat.runtime = time.time() - start
     return stat
 
+  def dominates(self, obj1, obj2):
+    at_least = False
+    for i,(a, b) in enumerate(zip(obj1, obj2)):
+      if self.settings.better[i](a,b):
+        at_least = True
+      elif a == b:
+        continue
+      else:
+        return False
+    return at_least
 
   def mutate(self, one, pop):
     """

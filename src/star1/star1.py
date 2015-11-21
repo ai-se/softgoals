@@ -120,7 +120,7 @@ class Star1(O):
 
   def report(self, stats):
     headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
-    med_spread_plot(stats, headers, fig_name="img/"+self.model.get_tree().name+".png")
+    med_spread_plot(stats, headers, fig_name="img/costs/"+self.model.get_tree().name+".png")
 
 
 def run(graph):
@@ -139,7 +139,7 @@ def run(graph):
   star.report(obj_stats)
   print("```")
   print("### Time Taken : %s"%delta)
-  print("![1](../../src/img/%s.png)"%graph.name)
+  print("![1](../../src/img/costs/%s.png)"%graph.name)
 
 
 

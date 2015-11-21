@@ -31,6 +31,16 @@ class Model(O):
     self.bases = self._tree.get_bases()
     self.chain = set()
     self.recursions = 0
+    self.costs = []
+    self.assign_costs()
+
+  def assign_costs(self):
+    rands = range(1,6)
+    costs = []
+    for _ in self.bases:
+      costs.append(random.choice(rands))
+    self.costs = costs
+
 
   def get_tree(self):
     return self._tree

@@ -2,6 +2,7 @@ from __future__ import print_function
 __author__ = 'george'
 import os
 from models.model import Model
+from pystar.model import Model as Py_Model
 from utilities.de import DE
 from utilities.plotter import plot_clusters, bar_plot, med_spread_plot
 from utilities.kmeans import KMeans
@@ -92,11 +93,22 @@ def test_star1():
   for model in modelers:
     star1.run(model())
 
+def _test():
+  from pystar.models.dot_models import modelers
+  from utilities.de import eval_softgoals, eval_costs
+  model = Py_Model(modelers[0]())
+  eval_softgoals(model)
+  eval_costs(model)
+
+
 if __name__ == "__main__":
   # test_ome_trees()
   # #test_ome_tree()
   # # #test_visio_tree()
   #test_pystar()
   test_star1()
+  #_test()
+
+
 
 
