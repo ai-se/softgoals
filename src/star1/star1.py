@@ -58,6 +58,7 @@ class Star1(O):
     return best, rest
 
   def rank(self, best, rest):
+    # TODO - Change this method to include the value along with the decision
     best_size = len(best)
     rest_size = len(rest)
     p_best = best_size / (best_size + rest_size)

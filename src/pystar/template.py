@@ -4,26 +4,6 @@ import os, sys, json
 sys.path.append(os.path.abspath("."))
 sys.dont_write_bytecode = True
 
-# Edge Values
-# make = "make"
-# help = "help"
-# someplus = "someplus"
-# someminus = "someminus"
-# hurt = "hurt"
-# destroy = "break"
-# conflict = "conflict"
-# AND = "and"
-# OR = "or"
-# dep = dependency = "dependency"
-#
-# # Node Types
-# softgoal = "softgoal"
-# hardgoal = "goal"
-# task = "task"
-# resource = "resource"
-# agent = "agent"
-# role = "role"
-
 def decode(input):
   if isinstance(input, dict):
     return {decode(key):decode(value) for key,value in input.iteritems()}
