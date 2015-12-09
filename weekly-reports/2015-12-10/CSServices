@@ -1,0 +1,87 @@
+## CSServices
+```
+
+rank ,         name ,    med   ,   iqr 
+----------------------------------------------------
+   1 ,      gen0_f1 ,    54.84  ,   9.14 (   -------   * |--            ),43.01, 51.08, 54.84, 57.53, 61.83
+   2 ,     gen20_f1 ,     58.6  ,    8.6 (        ---    |* -----       ),48.39, 53.23, 58.60, 61.29, 67.74
+   3 ,     gen40_f1 ,     58.6  ,   6.99 (         ----  |* -----       ),50.54, 55.38, 59.14, 61.83, 68.28
+   3 ,     gen60_f1 ,    59.14  ,   8.61 (           --- |*  -----      ),53.23, 56.45, 59.14, 63.44, 68.82
+   3 ,     gen80_f1 ,    59.68  ,    8.6 (            ---| *  ----      ),54.30, 58.60, 60.75, 64.52, 68.82
+   3 ,    gen100_f1 ,    61.29  ,   6.99 (              -|  *  ---      ),56.45, 58.60, 61.29, 65.05, 68.82
+
+rank ,         name ,    med   ,   iqr 
+----------------------------------------------------
+   1 ,      gen0_f2 ,    69.57  ,  30.43 (--           * |  -------     ),43.48, 47.83, 69.57, 78.26, 91.30
+   2 ,     gen20_f2 ,    73.91  ,  17.39 (  -----------  |*   -----     ),47.83, 69.57, 73.91, 82.61, 91.30
+   2 ,     gen40_f2 ,    73.91  ,  17.39 (  -----------  |  *    --     ),47.83, 69.57, 78.26, 86.96, 91.30
+   2 ,     gen60_f2 ,    78.26  ,  17.39 (  -----------  |  *    --     ),47.83, 69.57, 78.26, 86.96, 91.30
+   2 ,     gen80_f2 ,    78.26  ,  17.39 (  -------------|  *    --     ),47.83, 73.91, 78.26, 86.96, 91.30
+   2 ,    gen100_f2 ,    82.61  ,  13.05 (           ----|    *  ----   ),65.22, 73.91, 82.61, 86.96, 95.65
+
+rank ,         name ,    med   ,   iqr 
+----------------------------------------------------
+   1 ,    gen100_f3 ,     69.0  ,   16.0 (       ---   * |--            ),53.00, 62.00, 69.00, 75.00, 81.00
+   1 ,     gen60_f3 ,     69.0  ,   15.0 (        ---   *| ---          ),57.00, 64.00, 70.00, 77.00, 86.00
+   1 ,     gen80_f3 ,     69.0  ,   15.0 (       ----   *|---           ),54.00, 64.00, 70.00, 76.00, 82.00
+   1 ,     gen40_f3 ,     71.0  ,   15.0 (        ---   *| ---          ),57.00, 64.00, 71.00, 77.00, 86.00
+   2 ,     gen20_f3 ,     73.0  ,   16.0 (         ---   * ----         ),58.00, 65.00, 74.00, 79.00, 87.00
+   2 ,      gen0_f3 ,     77.0  ,   14.0 (         ----- | * ---        ),58.00, 71.00, 78.00, 83.00, 90.00
+
++------+------------------------------------------------------------+----------+-------+
+| rank |                            name                            |   type   | value |
++------+------------------------------------------------------------+----------+-------+
+|  1   |                Kids Use Video Counselling1                 |   task   |   1   |
+|  2   |                        Trace Calls                         |   task   |   -1  |
+|  3   |             Provide Web Counselling with Video             |   task   |   1   |
+|  4   |       Block Kids who Display Inappropriate Behavoir        |   task   |   -1  |
+|  5   |                     Service Resources                      | resource |   1   |
+|  6   |          Kids Read General Questions and Answers1          |   task   |   1   |
+|  7   |           Kids Use Cyber Café/Portal/Chat Room1            |   task   |   -1  |
+|  8   |                   Feedback Form Software                   | resource |   -1  |
+|  9   |           Kids Use Bulletin Board with Replies1            |   task   |   1   |
+|  10  |                        Web Software                        | resource |   -1  |
+|  11  |              Implement Anti-Pranking Message               |   task   |   -1  |
+|  12  |               Implement Information Section                |   task   |   1   |
+|  13  |           Kids Use Ask a Counsellor Section\ns1            |   task   |   -1  |
+|  14  |              Parents Use Information Section1              |   task   |   -1  |
+|  15  |                Provide Written Counselling                 |   task   |   1   |
+|  16  |               Voice Counselling be Performed               |   task   |   1   |
+|  17  |    Inform Kids about Anonymity [Kids] of Web Services1     |   task   |   1   |
+|  18  |                 !Perform Email Counselling                 |   task   |   -1  |
+|  19  |                    Strategic Blue Print                    | resource |   1   |
+|  20  |                      Implement Delay                       |   task   |   1   |
+|  21  |           Implement Bulletin Board with Replies1           |   task   |   -1  |
+|  22  |                     Implement Filters                      |   task   |   -1  |
+|  23  |                Implement Board with Replies                |   task   |   -1  |
+|  24  |                !Kids Read Polls about Kids1                |   task   |   -1  |
+|  25  |                Implement Voice Counselling1                |   task   |   1   |
+|  26  |                Kids Use Voice Counselling1                 |   task   |   1   |
+|  27  |                         Web Server                         | resource |   1   |
+|  28  |              Schedule Chat at Specific Times               |   task   |   1   |
+|  29  |      Kids Use Bulletin Board with Delayed Moderation1      |   task   |   1   |
+|  30  |                         Feedback1                          | resource |   -1  |
+|  31  |         Kids use get Informed Section of Web Site          |   task   |   1   |
+|  32  |                      !Moderate a Chat                      |   task   |   1   |
+|  33  |     Implement Bulletin Board with Delayed Moderation1      |   task   |   1   |
+|  34  |  !Implement\nTool to Allow Parents to Talk to Each Other   |   task   |   1   |
+|  35  | Parents Use\nTool to Allow Parents to Talk to Each Other 1 |   task   |   1   |
+|  36  |                Kids Use Email Counselling1                 |   task   |   -1  |
+|  37  |                 !Implement Phone Feedback3                 |   task   |   -1  |
+|  38  |                 Put Content Onto Website1                  |   task   |   1   |
+|  39  |             Maintain Ask a Counsellor Section1             |   task   |   1   |
+|  40  |                 *Provide Recorded Messages                 |   task   |   -1  |
+|  41  |                          Feedback                          | resource |   1   |
+|  42  |                 !Implement Text Messaging1                 |   task   |   -1  |
+|  43  |             !Implement One-On-One Chat Rooms1              |   task   |   1   |
+|  44  |                Kids Use Phone Counselling1                 |   task   |   -1  |
+|  45  |                  Create Counselling Posts                  |   task   |   -1  |
+|  46  |                !Moderate Discussion Boards                 |   task   |   -1  |
+|  47  |                      Web Site Content                      | resource |   -1  |
+|  48  |          Parents Use Bulletin Board with Replies1          |   task   |   -1  |
+|  49  |               *Maintain PHL Phone Services4                |   task   |   -1  |
+|  50  |             Provide Web Counselling with Audio             |   task   |   -1  |
++------+------------------------------------------------------------+----------+-------+
+```
+### Time Taken : 304.563951015
+![1](../../src/img/no_conflict/CSServices.png)

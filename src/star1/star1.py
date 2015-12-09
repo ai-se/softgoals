@@ -26,7 +26,7 @@ class Star1(O):
   def __init__(self, model, **settings):
     O.__init__(self)
     self.model = model
-    #self.model.bases.extend(self.get_conflicts())
+    self.model.bases.extend(self.get_conflicts())
     self.settings = default().update(**settings)
     self.de = DE(model, gens = self.settings.k1)
 

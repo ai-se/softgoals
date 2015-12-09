@@ -131,8 +131,11 @@ class DE(O):
     stat = Statistics()
     start = time.time()
     if settings.candidates < MIN_FRONTIER_SIZE:
-      raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
-                %(settings.candidates, len(self.model.roots)))
+      print("```")
+      print("### Possible candidates = %s lesser than minimum frontier size = %s"%(settings.candidates, MIN_FRONTIER_SIZE))
+      exit()
+      # raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
+      #           %(settings.candidates, len(self.model.bases)))
     population = self.generate(settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):
