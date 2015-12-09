@@ -90,8 +90,9 @@ def test_ome_trees():
 def test_star1():
   from pystar.models.dot_models import modelers
   from star1 import star1
+  subfolder = "no_conflict"
   for model in modelers:
-    star1.run(model())
+    star1.run(model(), subfolder)
 
 def _test():
   from pystar.models.dot_models import modelers
