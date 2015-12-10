@@ -55,4 +55,4 @@ rank ,         name ,    med   ,   iqr
 +------+-------------------------------------------------+----------+-------+
 ```
 ### Time Taken : 31.061745882
-![1](../../src/img/no_conflict/CSITDepartment.png)
+![1](../../../src/img/no_conflict/CSITDepartment.png)
