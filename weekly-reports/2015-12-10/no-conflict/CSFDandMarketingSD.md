@@ -66,4 +66,4 @@ rank ,         name ,    med   ,   iqr
 +------+----------------------------------------------+----------+-------+
 ```
 ### Time Taken : 9.27286505699
-![1](../../src/img/no_conflict/CSFDandMarketingSD.png)
+![1](../../../src/img/no_conflict/CSFDandMarketingSD.png)
