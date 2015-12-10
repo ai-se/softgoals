@@ -49,4 +49,4 @@ rank ,         name ,    med   ,   iqr
 +------+-------------------------------------------+------+-------+
 ```
 ### Time Taken : 12.0028619766
-![1](../../src/img/no_conflict/Kids and Youth.png)
+![1](../../../src/img/no_conflict/Kids and Youth.png)
