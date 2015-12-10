@@ -41,4 +41,4 @@ rank ,         name ,    med   ,   iqr
 +------+----------------------------------------------------------+----------+-------+
 ```
 ### Time Taken : 4.44099402428
-![1](../../src/img/conflict/Parents.png)
+![1](../../../src/img/conflict/Parents.png)
