@@ -45,4 +45,4 @@ rank ,         name ,    med   ,   iqr
 +------+----------------------------------+----------+-------+
 ```
 ### Time Taken : 83.0317800045
-![1](../../src/img/conflict/OOOChatRooms.png)
+![1](../../../src/img/conflict/OOOChatRooms.png)
