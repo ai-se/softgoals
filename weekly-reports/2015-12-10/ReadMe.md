@@ -14,7 +14,7 @@
 | 4|CSCounsellingManagement| [conflict](conflict/CSCounsellingManagement.md)|[no_conflict](conflict/CSCounsellingManagement.md)|
 | 5|CSITDepartment| [conflict](conflict/CSITDepartment.md)|[no_conflict](conflict/CSITDepartment.md)|
 | 6|CSSAProgram| [conflict](conflict/CSSAProgram.md)|[no_conflict](conflict/CSSAProgram.md)|
-| 7|CSSimplified| [conflict](conflict/CSSimplified.md)|[no_conflict](conflict/CSSimplified.md)|
+| 7|CSSimplifiedSD| [conflict](conflict/CSSimplified.md)|[no_conflict](conflict/CSSimplified.md)|
 | 8|KidsAndYouth| [conflict](conflict/KidsAndYouth.md)|[no_conflict](conflict/KidsAndYouth.md)|
 | 9|DelayModeratedBulletinBoard| [conflict](conflict/DelayModeratedBulletinBoard.md)|[no_conflict](conflict/DelayModeratedBulletinBoard.md)|
 | 10|OOOChatRooms| [conflict](conflict/OOOChatRooms.md)|[no_conflict](conflict/OOOChatRooms.md)|
