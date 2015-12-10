@@ -50,4 +50,4 @@ rank ,         name ,    med   ,   iqr
 +------+-------------------------------------------------+----------+-------+
 ```
 ### Time Taken : 129.128220081
-![1](../../src/img/conflict/DelayModeratedBulletinBoard.png)
+![1](../../../src/img/conflict/DelayModeratedBulletinBoard.png)
