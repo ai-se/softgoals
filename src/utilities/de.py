@@ -42,9 +42,9 @@ def eval_coverage(model):
 
 def eval_costs(model):
   total_cost = 0
-  for node, cost in zip(model.bases, model.costs):
+  for node in model.bases:
     if node.value and node.value > 0:
-      total_cost += cost
+      total_cost += model.cost_map[node.id]
   return total_cost
 
 
