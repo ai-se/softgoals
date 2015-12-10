@@ -104,5 +104,5 @@ rank ,         name ,    med   ,   iqr
 +------+------------------------------------------------------------+----------+-------+
 ```
 ### Time Taken : 305.6506509781
-![1](../../../src/img/no-conflict/CSServices.png)
+![1](../../../src/img/no_conflict/CSServices.png)
 
