@@ -43,4 +43,4 @@ rank ,         name ,    med   ,   iqr
 +------+----------------------------------+----------+-------+
 ```
 ### Time Taken : 4.45676898956
-![1](../../src/img/conflict/CSCounsellingManagementSD.png)
+![1](../../../src/img/conflict/CSCounsellingManagementSD.png)
