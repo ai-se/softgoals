@@ -42,9 +42,9 @@ def eval_coverage(model):
 
 def eval_costs(model):
   total_cost = 0
-  for node, cost in zip(model.bases, model.costs):
+  for node in model.bases:
     if node.value and node.value > 0:
-      total_cost += cost
+      total_cost += model.cost_map[node.id]
   return total_cost
 
 
@@ -131,8 +131,11 @@ class DE(O):
     stat = Statistics()
     start = time.time()
     if settings.candidates < MIN_FRONTIER_SIZE:
-      raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
-                %(settings.candidates, len(self.model.roots)))
+      print("```")
+      print("### Possible candidates = %s lesser than minimum frontier size = %s"%(settings.candidates, MIN_FRONTIER_SIZE))
+      exit()
+      # raise RuntimeError(500, "Cannot generate %s candidates with %s leaves"
+      #           %(settings.candidates, len(self.model.bases)))
     population = self.generate(settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):

@@ -26,7 +26,7 @@ class Star1(O):
   def __init__(self, model, **settings):
     O.__init__(self)
     self.model = model
-    #self.model.bases.extend(self.get_conflicts())
+    #self.model.bases.extend(self.get_conflicts());self.model.assign_costs()
     self.settings = default().update(**settings)
     self.de = DE(model, gens = self.settings.k1)
 
@@ -90,7 +90,8 @@ class Star1(O):
       sup_best = l_best**2 / (l_best + l_rest)
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_best, value = node_value,
-                                type = dec_node.type, container=dec_node.container))
+                                type = dec_node.type, container=dec_node.container,
+                                cost = self.model.cost_map[dec_node.id]))
     decisions.sort(key=lambda x:x.support, reverse=True)
     return decisions
 
@@ -121,13 +122,25 @@ class Star1(O):
       stats.append(data_map)
     return stats
 
+  def evaluate(self, point, decisions):
+    model = self.model
+    if not point.objectives:
+      model.reset_nodes(point.decisions)
+      point.objectives = [func(model) for func in self.de.settings.obj_funcs[:2]]
+      point.objectives.append(sum(decision.cost for decision in decisions))
+      point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
+
+    return point.objectives
+
   def prune(self, support):
     gens = []
     for i in range(len(support)):
       decisions = support[:i]
       population = self.generate(decisions)
       for point in population:
-        self.de.settings.evaluation(point, self.model, self.de.settings.obj_funcs)
+        # TODO - Make change here
+        self.evaluate(point, decisions)
+        #self.de.settings.evaluation(point, self.model, self.de.settings.obj_funcs)
       gens.append(population)
     obj_stats = self.objective_stats(gens)
     return obj_stats
@@ -137,10 +150,10 @@ class Star1(O):
     med_spread_plot(stats, headers, fig_name="img/"+subfolder+"/"+self.model.get_tree().name+".png")
 
 def print_decisions(decisions):
-  columns = ["rank", "name", "type", "value"]
+  columns = ["rank", "name", "type", "value", "cost"]
   table = PrettyTable(columns)
   for i, decision in enumerate(decisions):
-    row = [i+1, decision.name, decision.type, decision.value]
+    row = [i+1, decision.name, decision.type, decision.value, decision.cost]
     table.add_row(row)
   print("")
   print(table)
@@ -156,12 +169,14 @@ def run(graph, subfolder):
   best, rest = star.sample()
   decisions = star.rank(best, rest)
   obj_stats = star.prune(decisions)
-  print_decisions(decisions)
   delta = time.time() - start
   star.report(obj_stats, subfolder)
   print("```")
   print("### Time Taken : %s"%delta)
-  print("![1](../../src/img/%s/%s.png)"%(subfolder,graph.name))
+  print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
+  print("```")
+  print_decisions(decisions)
+  print("```")
 
 
 

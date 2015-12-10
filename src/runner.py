@@ -1,6 +1,6 @@
 from __future__ import print_function
 __author__ = 'george'
-import os
+import os, sys
 from models.model import Model
 from pystar.model import Model as Py_Model
 from utilities.de import DE
@@ -87,12 +87,13 @@ def test_ome_trees():
       print("")
   bar_plot(times, 'img/random_runtimes.png')
 
-def test_star1():
+def test_star1(model_name):
   from pystar.models.dot_models import modelers
   from star1 import star1
   subfolder = "no_conflict"
   for model in modelers:
-    star1.run(model(), subfolder)
+    if model.__name__ == model_name:
+      star1.run(model(), subfolder)
 
 def _test():
   from pystar.models.dot_models import modelers
@@ -107,7 +108,11 @@ if __name__ == "__main__":
   # #test_ome_tree()
   # # #test_visio_tree()
   #test_pystar()
-  test_star1()
+  args = sys.argv
+  if len(args) != 2:
+    print("Invalid args")
+    exit()
+  test_star1(args[1])
   #_test()
 
 

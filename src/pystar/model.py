@@ -31,15 +31,15 @@ class Model(O):
     self.bases = self._tree.get_bases()
     self.chain = set()
     self.recursions = 0
-    self.costs = []
+    self.cost_map = {}
     self.assign_costs()
 
   def assign_costs(self):
     rands = range(1,6)
-    costs = []
-    for _ in self.bases:
-      costs.append(random.choice(rands))
-    self.costs = costs
+    cost_map = {}
+    for base in self.bases:
+      cost_map[base.id] = random.choice(rands)
+    self.cost_map = cost_map
 
 
   def get_tree(self):
