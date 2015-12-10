@@ -175,4 +175,4 @@ rank ,         name ,    med   ,   iqr
 +------+----------------------------------------------------------+----------+-------+
 ```
 ### Time Taken : 110.415484905
-![1](../../src/img/conflict/CSSimplified.png)
+![1](../../../src/img/conflict/CSSimplified.png)
