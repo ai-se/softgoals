@@ -127,7 +127,7 @@ class Star1(O):
     if not point.objectives:
       model.reset_nodes(point.decisions)
       point.objectives = [func(model) for func in self.de.settings.obj_funcs[:2]]
-      point.objectives.append(sum(decision.cost for decision in decisions))
+      point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
       point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
 
     return point.objectives

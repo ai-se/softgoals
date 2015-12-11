@@ -21,28 +21,28 @@ rank ,         name ,    med   ,   iqr
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
-   1 ,     gen80_f3 ,      6.0  ,    5.0 (  --  * ---    |              ), 3.00,  5.00,  7.00,  9.00, 12.00
-   1 ,    gen100_f3 ,      6.0  ,    5.0 (  --  * ---    |              ), 3.00,  5.00,  7.00,  9.00, 12.00
-   1 ,     gen40_f3 ,      7.0  ,    5.0 (  --- *  --    |              ), 3.00,  6.00,  7.00, 10.00, 12.00
-   1 ,     gen60_f3 ,      7.0  ,    5.0 (  --  * ---    |              ), 3.00,  5.00,  7.00,  9.00, 12.00
-   1 ,     gen20_f3 ,      8.0  ,    5.0 (   --- *  ---  |              ), 4.00,  7.00,  8.00, 11.00, 14.00
-   2 ,      gen0_f3 ,     16.0  ,   10.0 (      -----   *|  ----        ), 7.00, 12.00, 16.00, 20.00, 24.00
+   1 ,     gen80_f3 ,      5.0  ,    4.0 (  -- *  ---    |              ), 2.00,  4.00,  5.00,  8.00, 10.00
+   1 ,    gen100_f3 ,      5.0  ,    4.0 (  -- *  ---    |              ), 2.00,  4.00,  5.00,  8.00, 10.00
+   1 ,     gen60_f3 ,      5.0  ,    4.0 (  --  * ---    |              ), 2.00,  4.00,  6.00,  8.00, 10.00
+   1 ,     gen20_f3 ,      6.0  ,    5.0 (  --  *  ----  |              ), 2.00,  4.00,  6.00,  9.00, 12.00
+   1 ,     gen40_f3 ,      6.0  ,    5.0 (  --  * ----   |              ), 2.00,  4.00,  6.00,  8.00, 11.00
+   2 ,      gen0_f3 ,     14.0  ,    8.0 (       ----    * ----         ), 7.00, 10.00, 14.00, 16.00, 19.00
 ```
-### Time Taken : 5.34706497192
+### Time Taken : 6.12634396553
 ![1](../../../src/img/no_conflict/CSCounsellingManagementSD.png)
 ```
 
 +------+----------------------------------+----------+-------+------+
 | rank |               name               |   type   | value | cost |
 +------+----------------------------------+----------+-------+------+
-|  1   |      Web Moderator Meetings      | resource |   -1  |  5   |
-|  2   |         Call Statistics          | resource |   -1  |  5   |
-|  3   |     Analyze Call Statistics      |   task   |   -1  |  4   |
-|  4   | Negotiate with Counsellors Union |   task   |   1   |  2   |
-|  5   |      Counselling Resources       | resource |   -1  |  5   |
-|  6   |   Second Reading of Web Posts    |   task   |   1   |  4   |
-|  7   |         Double Head Set          | resource |   -1  |  4   |
-|  8   | Historical Data of Call Volumes  | resource |   -1  |  2   |
-|  9   |       Counselling Policies       | resource |   -1  |  1   |
+|  1   | Negotiate with Counsellors Union |   task   |   1   |  4   |
+|  2   |   Second Reading of Web Posts    |   task   |   1   |  1   |
+|  3   |         Call Statistics          | resource |   -1  |  5   |
+|  4   |         Double Head Set          | resource |   -1  |  5   |
+|  5   |      Counselling Resources       | resource |   -1  |  3   |
+|  6   | Historical Data of Call Volumes  | resource |   -1  |  4   |
+|  7   |       Counselling Policies       | resource |   -1  |  1   |
+|  8   |     Analyze Call Statistics      |   task   |   -1  |  2   |
+|  9   |      Web Moderator Meetings      | resource |   -1  |  2   |
 +------+----------------------------------+----------+-------+------+
 ```

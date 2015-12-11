@@ -7,5 +7,6 @@ array=('CSServices' 'CSCounselling' 'CSCounsellingManagement' 'CSCounsellingMana
 #array=('OOOChatRooms' 'DelayModeratedBulletinBoard')
 for  i in ${array[*]}; do
 	echo model: $i
-	python runner.py $i > ../weekly-reports/2015-12-10/no-conflict/$i.md
+	python runner.py $i > ../weekly-reports/2015-12-10/
+	conflict/$i.md
 done
