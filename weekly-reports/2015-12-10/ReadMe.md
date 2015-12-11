@@ -5,6 +5,8 @@
 - **no_conflict**: Conflicting nodes are randomly assigned a value of -1 or 1. <br/>
   i.e, #decisions = #leafdecisions
 
+Models are sorted below w.r.t to their sizes in descending order
+
 
 | Rank | Model | PDF |Conflict | No-Conflict |
 |------|-------|-----|---------|-------------|
