@@ -138,8 +138,8 @@ class Star1(O):
       decisions = support[:i]
       population = self.generate(decisions)
       for point in population:
-        # TODO - Make change here
         self.evaluate(point, decisions)
+        # TODO - Mark Best objective model here
         #self.de.settings.evaluation(point, self.model, self.de.settings.obj_funcs)
       gens.append(population)
     obj_stats = self.objective_stats(gens)

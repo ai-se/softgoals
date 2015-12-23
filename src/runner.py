@@ -90,7 +90,7 @@ def test_ome_trees():
 def test_star1(model_name):
   from pystar.models.dot_models import modelers
   from star1 import star1
-  subfolder = "conflict"
+  subfolder = "unit_cost"
   for model in modelers:
     if model.__name__ == model_name:
       star1.run(model(), subfolder)

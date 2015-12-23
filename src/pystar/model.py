@@ -35,10 +35,18 @@ class Model(O):
     self.assign_costs()
 
   def assign_costs(self):
-    rands = range(1,6)
     cost_map = {}
+    """
+    Random Costs Below
+    """
+    # rands = range(1,6)
+    # for base in self.bases:
+    #   cost_map[base.id] = random.choice(rands)
+    """
+    Fixed cost of 1
+    """
     for base in self.bases:
-      cost_map[base.id] = random.choice(rands)
+      cost_map[base.id] = 1
     self.cost_map = cost_map
 
 
