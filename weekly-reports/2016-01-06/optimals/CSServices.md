@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 273.054708004
 ![1](../../../src/img/optimals/CSServices.png)
+
+### Decisions Ranked
 ```
 +------+------------------------------------------------------------+----------+-------+------+
 | rank |                            name                            |   type   | value | cost |
