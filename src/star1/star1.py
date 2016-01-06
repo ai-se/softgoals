@@ -129,7 +129,6 @@ class Star1(O):
       point.objectives = [func(model) for func in self.de.settings.obj_funcs[:2]]
       point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
       point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
-
     return point.objectives
 
   def prune(self, support):
@@ -143,11 +142,17 @@ class Star1(O):
         #self.de.settings.evaluation(point, self.model, self.de.settings.obj_funcs)
       gens.append(population)
     obj_stats = self.objective_stats(gens)
-    return obj_stats
+    return obj_stats, gens
 
   def report(self, stats, subfolder):
     headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
     med_spread_plot(stats, headers, fig_name="img/"+subfolder+"/"+self.model.get_tree().name+".png")
+
+  def get_elbow(self, gens, index, obj_index=None):
+    pop = gens[index]
+    pop = sorted(pop, key=lambda x: x.objectives[obj_index])
+    point = pop[len(pop)//2]
+    return point
 
 def print_decisions(decisions):
   columns = ["rank", "name", "type", "value", "cost"]
@@ -158,7 +163,7 @@ def print_decisions(decisions):
   print("")
   print(table)
 
-def run(graph, subfolder):
+def run(graph, subfolder, index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
   start = time.time()
@@ -168,7 +173,7 @@ def run(graph, subfolder):
   star = Star1(model)
   best, rest = star.sample()
   decisions = star.rank(best, rest)
-  obj_stats = star.prune(decisions)
+  obj_stats, gens = star.prune(decisions)
   delta = time.time() - start
   star.report(obj_stats, subfolder)
   print("```")
@@ -177,6 +182,14 @@ def run(graph, subfolder):
   print("```")
   print_decisions(decisions)
   print("```")
-
-
-
+  if index is not None:
+    print("### Top %d Decisions from above table."%index)
+    print("```")
+    point = star.get_elbow(gens, index, obj_index = 0)
+    columns = ["name", "type", "value"]
+    table = PrettyTable(columns)
+    for node in point.get_nodes():
+      row = [node.name, node.type, node.value]
+      table.add_row(row)
+    print(table)
+    print("```")
