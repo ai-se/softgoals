@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 33.7843060493
 ![1](../../../src/img/optimals/CSSAProgram.png)
+
+### Decisions Ranked
 ```
 +------+-------------------------------+----------+-------+------+
 | rank |              name             |   type   | value | cost |
