@@ -2,7 +2,7 @@
     "edges": [
         {
             "component": "edge", 
-            "id": 900, 
+            "id": 66, 
             "source": "Regional\\nContact management", 
             "target": "Event coordination", 
             "type": "dependency", 
@@ -10,7 +10,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 901, 
+            "id": 67, 
             "source": "Get Corporate Partner Information from DL", 
             "target": "Regional\\nContact management", 
             "type": "dependency", 
@@ -18,7 +18,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 902, 
+            "id": 68, 
             "source": "Single charitable registration number", 
             "target": "Regional\\nContact management", 
             "type": "dependency", 
@@ -26,7 +26,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 903, 
+            "id": 69, 
             "source": "Provide free services", 
             "target": " Free services", 
             "type": "dependency", 
@@ -34,7 +34,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 904, 
+            "id": 70, 
             "source": "Regional\\nContact management", 
             "target": "Regional Staff feel included", 
             "type": "dependency", 
@@ -42,7 +42,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 905, 
+            "id": 71, 
             "source": "Up to date corporate partner information", 
             "target": "Regional\\nContact management", 
             "type": "dependency", 
@@ -50,7 +50,7 @@
         }, 
         {
             "component": "edge", 
-            "id": 906, 
+            "id": 72, 
             "source": "Regional\\nContact management", 
             "target": "Communicate with head office ", 
             "type": "dependency", 
@@ -84,7 +84,7 @@
             "id": "Up to date corporate partner information", 
             "name": "Up to date corporate partner information", 
             "to_edges": [
-                905
+                71
             ], 
             "type": "softgoal"
         }, 
@@ -158,7 +158,7 @@
             "id": "Single charitable registration number", 
             "name": "Single charitable registration number", 
             "to_edges": [
-                902
+                68
             ], 
             "type": "resource"
         }, 
@@ -265,7 +265,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                904
+                70
             ], 
             "id": "Regional Staff feel included", 
             "name": "Regional Staff feel included", 
@@ -285,7 +285,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                900
+                66
             ], 
             "id": "Event coordination", 
             "name": "Event coordination", 
@@ -332,16 +332,16 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                901, 
-                902, 
-                905
+                67, 
+                68, 
+                71
             ], 
             "id": "Regional\\nContact management", 
             "name": "Regional\\nContact management", 
             "to_edges": [
-                900, 
-                904, 
-                906
+                66, 
+                70, 
+                72
             ], 
             "type": "softgoal"
         }, 
@@ -367,7 +367,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                903
+                69
             ], 
             "id": " Free services", 
             "name": " Free services", 
@@ -390,7 +390,7 @@
             "id": "Get Corporate Partner Information from DL", 
             "name": "Get Corporate Partner Information from DL", 
             "to_edges": [
-                901
+                67
             ], 
             "type": "task"
         }, 
@@ -500,7 +500,7 @@
             "id": "Provide free services", 
             "name": "Provide free services", 
             "to_edges": [
-                903
+                69
             ], 
             "type": "task"
         }, 
@@ -625,7 +625,7 @@
             "component": "node", 
             "container": null, 
             "from_edges": [
-                906
+                72
             ], 
             "id": "Communicate with head office ", 
             "name": "Communicate with head office ", 

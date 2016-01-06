@@ -1,10 +1,8 @@
 from __future__ import print_function, division
-from StdSuites.Type_Names_Suite import point
 
 __author__ = 'george'
 
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 from lib import *
 
@@ -117,7 +115,7 @@ def bar_plot(vals, fig_name="temp.png", label=None, **settings):
   ax.set_ylabel("Models")
   ax.set_yticks(ind)
   ax.set_yticklabels(vals.keys())
-  # We change the fontsize of minor ticks label
+  # We change the font size of minor ticks label
   ax.tick_params(axis='both', which='major', labelsize=8)
   ax.tick_params(axis='both', which='minor', labelsize=7)
   plt.savefig(fig_name)
@@ -125,6 +123,8 @@ def bar_plot(vals, fig_name="temp.png", label=None, **settings):
 
 def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
   plt.figure(1)
+  directory = fig_name.rsplit("/", 1)[0]
+  mkdir(directory)
   for i, data_map in enumerate(data):
     meds = data_map["meds"]
     iqrs = data_map.get("iqrs", None)

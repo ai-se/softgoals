@@ -1,5 +1,5 @@
 from __future__ import division, print_function
-import sys, random, json, sk
+import sys, random, json, sk, os
 from prettytable import PrettyTable
 
 t = +1
@@ -154,6 +154,15 @@ def percent(num, den):
     return 0
   return round(num*100/den, 2)
 
+def mkdir(directory):
+  """
+  Implements the "mkdir" linux function
+  :param directory:
+  :return:
+  """
+  if not os.path.exists(directory):
+    os.makedirs(directory)
+
 class Statistics(O):
   @staticmethod
   def default_settings():
@@ -218,3 +227,4 @@ class Statistics(O):
         row.append(node.has()[key])
       tab.add_row(row)
     print(tab)
+

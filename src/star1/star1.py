@@ -4,12 +4,10 @@ sys.path.append(os.path.abspath("."))
 __author__ = 'george'
 sys.dont_write_bytecode = True
 from utilities.lib import *
-from pystar.models.CSServices import graph as cs_agent_sr_graph
 from pystar.model import Model
 import pystar.template as template
 from utilities.de import DE, Point
 from utilities.plotter import med_spread_plot
-from pystar.models.dot_models import *
 from prettytable import PrettyTable
 
 def default():
@@ -144,11 +142,12 @@ class Star1(O):
     obj_stats = self.objective_stats(gens)
     return obj_stats, gens
 
-  def report(self, stats, subfolder):
+  def report(self, stats, sub_folder):
     headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
-    med_spread_plot(stats, headers, fig_name="img/"+subfolder+"/"+self.model.get_tree().name+".png")
+    med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
 
-  def get_elbow(self, gens, index, obj_index=None):
+  @staticmethod
+  def get_elbow(gens, index, obj_index=None):
     pop = gens[index]
     pop = sorted(pop, key=lambda x: x.objectives[obj_index])
     point = pop[len(pop)//2]
@@ -160,10 +159,11 @@ def print_decisions(decisions):
   for i, decision in enumerate(decisions):
     row = [i+1, decision.name, decision.type, decision.value, decision.cost]
     table.add_row(row)
-  print("")
+  print("```")
   print(table)
+  print("```")
 
-def run(graph, subfolder, index = None):
+def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
   start = time.time()
@@ -177,19 +177,18 @@ def run(graph, subfolder, index = None):
   delta = time.time() - start
   star.report(obj_stats, subfolder)
   print("```")
-  print("### Time Taken : %s"%delta)
+  print("\n### Time Taken : %s"%delta)
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
-  print("```")
   print_decisions(decisions)
-  print("```")
-  if index is not None:
-    print("### Top %d Decisions from above table."%index)
+  if optimal_index is not None:
+    print("\n### Top %d Decisions from above table."%optimal_index)
     print("```")
-    point = star.get_elbow(gens, index, obj_index = 0)
+    point = star.get_elbow(gens, optimal_index, obj_index = 0)
     columns = ["name", "type", "value"]
     table = PrettyTable(columns)
     for node in point.get_nodes():
-      row = [node.name, node.type, node.value]
-      table.add_row(row)
+      if node.value:
+        row = [node.name, node.type, node.value]
+        table.add_row(row)
     print(table)
     print("```")

@@ -7,7 +7,7 @@ from utilities.de import DE
 from utilities.plotter import plot_clusters, bar_plot, med_spread_plot
 from utilities.kmeans import KMeans
 
-def process_OOD(file_name):
+def process_ood(file_name):
   name = os.path.basename(file_name).split(".")[0]
   print("### " + name)
   print("```")
@@ -33,7 +33,7 @@ def process_OOD(file_name):
   return stat.runtime
 
 
-def process_Visio(file_name):
+def process_visio(file_name):
   from parser.VisioTree import VisioParser
   parser = VisioParser(file_name)
   parser.parse()
@@ -46,10 +46,10 @@ def test_pystar():
   de = DE(model)
   stat = de.run()
   stat.tiles()
-  lastgen = stat.generations[-1]
-  maxs = [-1]*len(lastgen[0].objectives)
-  bests = [None]*len(lastgen[0].objectives)
-  for point in lastgen:
+  last_gen = stat.generations[-1]
+  maxs = [-1]*len(last_gen[0].objectives)
+  bests = [None]*len(last_gen[0].objectives)
+  for point in last_gen:
     for i in range(len(maxs)):
       if point.objectives[i] > maxs[i]:
         maxs[i] = point.objectives[i]
@@ -60,11 +60,11 @@ def test_pystar():
 
 
 def test_ome_tree():
-  process_OOD('../GMRepo/CMA12/bCMS_SR_Witness.ood')
+  process_ood('../GMRepo/CMA12/bCMS_SR_Witness.ood')
 
 def test_visio_tree():
-  process_Visio('../GMRepo/Counseling Service/Stage1_UnderstandingCS/XML/ParentsSD.vdx')
-  #process_Visio('../GMRepo/CMA12/bCMS_SR_CommunicationCompromiser.ood')
+  process_visio('../GMRepo/Counseling Service/Stage1_UnderstandingCS/XML/ParentsSD.vdx')
+  #process_visio('../GMRepo/CMA12/bCMS_SR_CommunicationCompromiser.ood')
 
 
 def test_ome_trees():
@@ -72,13 +72,13 @@ def test_ome_trees():
   times = {}
   for file_name in os.listdir(directory):
     if file_name.endswith(".ood"):
-      file_name = directory + "/" + file_name
-      name = os.path.basename(file_name).split(".")[0]
+      dir_file_name = directory + "/" + file_name
+      name = os.path.basename(dir_file_name).split(".")[0]
       try:
-        times[name] = process_OOD(file_name)
+        times[name] = process_ood(dir_file_name)
       except RuntimeError as e:
         if e[0] == 500:
-          print(file_name)
+          print(dir_file_name)
           print(e[1])
           print("```")
         else:
@@ -87,13 +87,14 @@ def test_ome_trees():
       print("")
   bar_plot(times, 'img/random_runtimes.png')
 
-def test_star1(model_name):
-  from pystar.models.dot_models import modelers
+def test_star1(model_name, show_optimal_index = True):
+  from pystar.models.dot_models import modelers, optimal_indices
   from star1 import star1
-  subfolder = "unit_cost"
+  sub_folder = "optimals"
   for model in modelers:
     if model.__name__ == model_name:
-      star1.run(model(), subfolder)
+      optimal_index = optimal_indices.get(model_name, None) if show_optimal_index else None
+      star1.run(model(), sub_folder, optimal_index=optimal_index)
 
 def _test():
   from pystar.models.dot_models import modelers
@@ -103,17 +104,21 @@ def _test():
   eval_costs(model)
 
 
-if __name__ == "__main__":
+def main():
   # test_ome_trees()
   # #test_ome_tree()
   # # #test_visio_tree()
   #test_pystar()
   args = sys.argv
-  if len(args) != 2:
+  if len(args) <= 2:
     print("Invalid args")
     exit()
-  test_star1(args[1])
+  show_optimal_index = True if args[2] is not None and args[2] == 'y' else False
+  test_star1(args[1], show_optimal_index)
   #_test()
+
+if __name__ == "__main__":
+  main()
 
 
 

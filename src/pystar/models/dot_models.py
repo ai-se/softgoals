@@ -182,3 +182,17 @@ modelers = [CSServices, CSCounselling, CSCounsellingManagement,
           CSCounsellingManagementSD, CSCounsellingSD, CSFDandMarketing, CSFDandMarketingSD,
           CSITDepartment, CSSAProgram, CSSimplified, KidsAndYouth, Parents, OOOChatRooms,
           DelayModeratedBulletinBoard]
+
+optimal_indices = {
+  "CSServices" : 21,
+  "CSCounselling" : 9,
+  "CSCounsellingManagement" : 6,
+  "CSCounsellingManagementSD" : 5,
+  "CSCounsellingSD" : 18,
+  "CSFDandMarketing": 28,
+  "CSFDandMarketingSD": 26,
+  "CSITDepartment": 14,
+  "CSSAProgram": 6,
+  "CSSimplified": 42,
+  "KidsAndYouth": 4
+}
