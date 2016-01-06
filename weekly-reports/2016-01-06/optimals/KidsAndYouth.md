@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 10.1351120472
 ![1](../../../src/img/optimals/Kids and Youth.png)
+
+### Decisions Ranked
 ```
 +------+-------------------------------------------+------+-------+------+
 | rank |                    name                   | type | value | cost |
