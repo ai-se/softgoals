@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 7.69220614433
 ![1](../../../src/img/optimals/CSFDandMarketingSD.png)
+
+### Decisions Ranked
 ```
 +------+----------------------------------------------+----------+-------+------+
 | rank |                     name                     |   type   | value | cost |
