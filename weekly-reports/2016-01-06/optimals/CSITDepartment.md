@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 28.5812339783
 ![1](../../../src/img/optimals/CSITDepartment.png)
+
+### Decisions Ranked
 ```
 +------+-------------------------------------------------+----------+-------+------+
 | rank |                       name                      |   type   | value | cost |

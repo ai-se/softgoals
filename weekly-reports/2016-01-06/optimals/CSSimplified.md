@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 123.960829973
 ![1](../../../src/img/optimals/CSSimplified.png)
+
+### Decisions Ranked
 ```
 +------+----------------------------------------------------------+----------+-------+------+
 | rank |                           name                           |   type   | value | cost |

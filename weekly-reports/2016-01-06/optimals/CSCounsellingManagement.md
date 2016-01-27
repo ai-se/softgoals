@@ -31,6 +31,8 @@ rank ,         name ,    med   ,   iqr
 
 ### Time Taken : 61.7422480583
 ![1](../../../src/img/optimals/CSCounsellingManagement.png)
+
+### Decisions Ranked
 ```
 +------+-----------------------------------------------------+----------+-------+------+
 | rank |                         name                        |   type   | value | cost |
