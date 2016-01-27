@@ -6,13 +6,13 @@ sys.dont_write_bytecode = True
 from utilities.lib import *
 from pystar.model import Model
 import pystar.template as template
-from utilities.de import DE, Point
+from utilities.de import DE, Point, eval_goals, eval_softgoals, eval_paths
 from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
 
 def default():
   return O(
-    k1 = 100,
+    k1 = 20,
     k2 = 100
   )
 
@@ -48,6 +48,7 @@ class Star1(O):
 
   def sample(self):
     stat = self.de.run()
+    stat.settings.gen_step = 4
     stat.tiles()
     best = set()
     for obj_index in range(len(self.de.settings.obj_funcs)):
@@ -105,7 +106,8 @@ class Star1(O):
 
   def objective_stats(self, generations):
     stats = []
-    for i in range(len(self.de.settings.obj_funcs)):
+    obj_len = len(generations[0][0].objectives)
+    for i in range(obj_len):
       data_map = {}
       meds = []
       iqrs = []
@@ -123,7 +125,8 @@ class Star1(O):
     model = self.model
     if not point.objectives:
       model.reset_nodes(point.decisions)
-      point.objectives = [func(model) for func in self.de.settings.obj_funcs[:2]]
+      funcs = [eval_goals, eval_softgoals, eval_paths]
+      point.objectives = [func(model) for func in funcs]
       point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
       point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
     return point.objectives
@@ -142,7 +145,8 @@ class Star1(O):
     return obj_stats, gens
 
   def report(self, stats, sub_folder):
-    headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
+    #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
+    headers = ["softgoals", "goals", "paths", "costs"]
     med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
 
   @staticmethod
