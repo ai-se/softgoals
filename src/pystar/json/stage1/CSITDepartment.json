@@ -1302,8 +1302,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easily Accessable Technology Instructions1", 
+            "is_random": false, 
             "name": "Easily Accessable Technology Instructions1", 
             "to_edges": [
                 270
@@ -1313,10 +1315,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 176
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]1", 
+            "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1324,8 +1328,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Upgrades", 
+            "is_random": false, 
             "name": "Free Upgrades", 
             "to_edges": [
                 249
@@ -1335,10 +1341,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 258
             ], 
             "id": "Provide Online Donor Technology", 
+            "is_random": false, 
             "name": "Provide Online Donor Technology", 
             "to_edges": [], 
             "type": "task"
@@ -1346,10 +1354,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 178
             ], 
             "id": "Increase Access Speed [  Regional Offices to DL]", 
+            "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to DL]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1357,8 +1367,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put Content Onto Website1", 
+            "is_random": false, 
             "name": "Put Content Onto Website1", 
             "to_edges": [
                 162, 
@@ -1369,10 +1381,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 141
             ], 
             "id": "Improve Quality Assurance Technology", 
+            "is_random": false, 
             "name": "Improve Quality Assurance Technology", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1380,10 +1394,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 135
             ], 
             "id": "Hardware Be Acquired for Free", 
+            "is_random": false, 
             "name": "Hardware Be Acquired for Free", 
             "to_edges": [
                 134, 
@@ -1394,8 +1410,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Use VPN", 
+            "is_random": false, 
             "name": "Use VPN", 
             "to_edges": [
                 157
@@ -1405,11 +1423,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 169, 
                 171
             ], 
             "id": "Sensitive to the Environment IT Equipment will Be Introduced to", 
+            "is_random": false, 
             "name": "Sensitive to the Environment IT Equipment will Be Introduced to", 
             "to_edges": [
                 222
@@ -1419,8 +1439,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Calls Be Recorded into a Data Base1", 
+            "is_random": false, 
             "name": "!Calls Be Recorded into a Data Base1", 
             "to_edges": [
                 201, 
@@ -1431,6 +1453,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 129, 
                 205, 
@@ -1440,6 +1463,7 @@
                 261
             ], 
             "id": "*Implement/Maintain Computer Systems for Employee Use ", 
+            "is_random": false, 
             "name": "*Implement/Maintain Computer Systems for Employee Use ", 
             "to_edges": [
                 152
@@ -1449,11 +1473,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 184, 
                 202
             ], 
             "id": "IT Training/Support Be Given to Employees", 
+            "is_random": false, 
             "name": "IT Training/Support Be Given to Employees", 
             "to_edges": [
                 181
@@ -1463,8 +1489,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "IT Resources", 
+            "is_random": false, 
             "name": "IT Resources", 
             "to_edges": [
                 160
@@ -1474,6 +1502,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 127, 
                 128, 
@@ -1487,6 +1516,7 @@
                 271
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
+            "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish Service Goals]", 
             "to_edges": [
                 196
@@ -1496,8 +1526,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Oracle", 
+            "is_random": false, 
             "name": "Oracle", 
             "to_edges": [
                 248
@@ -1507,10 +1539,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 252
             ], 
             "id": "Decrease Clumsiness [Technology]", 
+            "is_random": false, 
             "name": "Decrease Clumsiness [Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1518,10 +1552,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 248
             ], 
             "id": "Use Oracle for Data Base", 
+            "is_random": false, 
             "name": "Use Oracle for Data Base", 
             "to_edges": [
                 262, 
@@ -1532,10 +1568,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 148
             ], 
             "id": "Provide Document Library System1", 
+            "is_random": false, 
             "name": "Provide Document Library System1", 
             "to_edges": [
                 177, 
@@ -1547,6 +1585,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 134, 
                 147, 
@@ -1559,6 +1598,7 @@
                 282
             ], 
             "id": "Cost Effective Technology", 
+            "is_random": false, 
             "name": "Cost Effective Technology", 
             "to_edges": [
                 273, 
@@ -1569,6 +1609,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 179, 
                 187, 
@@ -1577,6 +1618,7 @@
                 285
             ], 
             "id": "Manage and Implement Web Site", 
+            "is_random": false, 
             "name": "Manage and Implement Web Site", 
             "to_edges": [
                 132
@@ -1586,10 +1628,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 269
             ], 
             "id": "! Provide compiled call data ", 
+            "is_random": false, 
             "name": "! Provide compiled call data ", 
             "to_edges": [], 
             "type": "task"
@@ -1597,10 +1641,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 207
             ], 
             "id": "*Pay for Upgrades", 
+            "is_random": false, 
             "name": "*Pay for Upgrades", 
             "to_edges": [
                 188
@@ -1610,8 +1656,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Call Center Server and Scheduling System Be Integrated", 
+            "is_random": false, 
             "name": "Call Center Server and Scheduling System Be Integrated", 
             "to_edges": [
                 268
@@ -1621,8 +1669,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve [Call Recording Equipment]1", 
+            "is_random": false, 
             "name": "Improve [Call Recording Equipment]1", 
             "to_edges": [
                 214, 
@@ -1633,10 +1683,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 164
             ], 
             "id": "Fit Between System Capabilities and CS Requirements", 
+            "is_random": false, 
             "name": "Fit Between System Capabilities and CS Requirements", 
             "to_edges": [
                 180
@@ -1646,6 +1698,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 126, 
                 133, 
@@ -1658,6 +1711,7 @@
                 286
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
+            "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "to_edges": [
                 176
@@ -1667,10 +1721,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 268
             ], 
             "id": "!Integrate IT Systems", 
+            "is_random": false, 
             "name": "!Integrate IT Systems", 
             "to_edges": [
                 131, 
@@ -1681,10 +1737,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 139
             ], 
             "id": "Feedback Form Software", 
+            "is_random": false, 
             "name": "Feedback Form Software", 
             "to_edges": [], 
             "type": "resource"
@@ -1692,10 +1750,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 175
             ], 
             "id": "!Performance Review Information Be Collected in Data Base", 
+            "is_random": false, 
             "name": "!Performance Review Information Be Collected in Data Base", 
             "to_edges": [], 
             "type": "goal"
@@ -1703,8 +1763,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "CS Be Not for Profit", 
+            "is_random": false, 
             "name": "CS Be Not for Profit", 
             "to_edges": [
                 254
@@ -1714,10 +1776,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 246
             ], 
             "id": "Web Server", 
+            "is_random": false, 
             "name": "Web Server", 
             "to_edges": [], 
             "type": "resource"
@@ -1725,10 +1789,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 249
             ], 
             "id": "*Acquire Upgrades for Free", 
+            "is_random": false, 
             "name": "*Acquire Upgrades for Free", 
             "to_edges": [], 
             "type": "task"
@@ -1736,12 +1802,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 163, 
                 215, 
                 232
             ], 
             "id": "*Increase [IT Training for Counsellors]1", 
+            "is_random": false, 
             "name": "*Increase [IT Training for Counsellors]1", 
             "to_edges": [
                 267
@@ -1751,10 +1819,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 216
             ], 
             "id": "*Implement Bulletin Board1", 
+            "is_random": false, 
             "name": "*Implement Bulletin Board1", 
             "to_edges": [], 
             "type": "task"
@@ -1762,8 +1832,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!An IT Trainer Be Present1", 
+            "is_random": false, 
             "name": "!An IT Trainer Be Present1", 
             "to_edges": [
                 150, 
@@ -1776,12 +1848,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 158, 
                 159, 
                 173
             ], 
             "id": "*Cost Effective Training", 
+            "is_random": false, 
             "name": "*Cost Effective Training", 
             "to_edges": [
                 220
@@ -1791,8 +1865,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*IT Providers have Knowledge of Fundraising and Marketing", 
+            "is_random": false, 
             "name": "*IT Providers have Knowledge of Fundraising and Marketing", 
             "to_edges": [
                 171
@@ -1802,8 +1878,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Web Server", 
+            "is_random": false, 
             "name": "Free Web Server", 
             "to_edges": [
                 161
@@ -1813,10 +1891,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 270
             ], 
             "id": "Easily Accessable Technology Instructions", 
+            "is_random": false, 
             "name": "Easily Accessable Technology Instructions", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1824,11 +1904,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 156, 
                 250
             ], 
             "id": "*Hardware Be Acquired", 
+            "is_random": false, 
             "name": "*Hardware Be Acquired", 
             "to_edges": [
                 136, 
@@ -1839,10 +1921,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 244
             ], 
             "id": "!Implement Phone Feedback", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback", 
             "to_edges": [], 
             "type": "task"
@@ -1850,10 +1934,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 266
             ], 
             "id": "*Implement Categorization Tool", 
+            "is_random": false, 
             "name": "*Implement Categorization Tool", 
             "to_edges": [
                 174, 
@@ -1866,10 +1952,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 153
             ], 
             "id": "!An IT Trainer Be Present", 
+            "is_random": false, 
             "name": "!An IT Trainer Be Present", 
             "to_edges": [], 
             "type": "goal"
@@ -1877,10 +1965,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 256
             ], 
             "id": "Feedback Form Be Implemented", 
+            "is_random": false, 
             "name": "Feedback Form Be Implemented", 
             "to_edges": [
                 139, 
@@ -1891,8 +1981,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Phone Feedback1", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback1", 
             "to_edges": [
                 244, 
@@ -1903,11 +1995,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 146, 
                 210
             ], 
             "id": "Support Analysis [Counsellors Time]1", 
+            "is_random": false, 
             "name": "Support Analysis [Counsellors Time]1", 
             "to_edges": [
                 228
@@ -1917,10 +2011,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 174
             ], 
             "id": "*Implement Categorization Tool1", 
+            "is_random": false, 
             "name": "*Implement Categorization Tool1", 
             "to_edges": [], 
             "type": "task"
@@ -1928,8 +2024,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Technology to Create and Send Documents", 
+            "is_random": false, 
             "name": "Provide Technology to Create and Send Documents", 
             "to_edges": [
                 227
@@ -1939,8 +2037,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Network PCs", 
+            "is_random": false, 
             "name": "Network PCs", 
             "to_edges": [
                 225
@@ -1950,10 +2050,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 287
             ], 
             "id": "Get web event technology1", 
+            "is_random": false, 
             "name": "Get web event technology1", 
             "to_edges": [], 
             "type": "task"
@@ -1961,8 +2063,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Software", 
+            "is_random": false, 
             "name": "Free Software", 
             "to_edges": [
                 217
@@ -1972,10 +2076,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 237
             ], 
             "id": "Simple [Technology]1", 
+            "is_random": false, 
             "name": "Simple [Technology]1", 
             "to_edges": [
                 241
@@ -1985,10 +2091,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 280
             ], 
             "id": "Increase IT Methods to Acquire Feedback", 
+            "is_random": false, 
             "name": "Increase IT Methods to Acquire Feedback", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1996,10 +2104,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 212
             ], 
             "id": "*Pay for Software", 
+            "is_random": false, 
             "name": "*Pay for Software", 
             "to_edges": [
                 155, 
@@ -2011,10 +2121,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 144
             ], 
             "id": "Implement Director Enterprise through Blue Pumpkin ", 
+            "is_random": false, 
             "name": "Implement Director Enterprise through Blue Pumpkin ", 
             "to_edges": [
                 146, 
@@ -2026,10 +2138,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 209
             ], 
             "id": "Telephony Be Implemented and Managed1", 
+            "is_random": false, 
             "name": "Telephony Be Implemented and Managed1", 
             "to_edges": [], 
             "type": "goal"
@@ -2037,10 +2151,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 142
             ], 
             "id": "*Implement Activity Manager", 
+            "is_random": false, 
             "name": "*Implement Activity Manager", 
             "to_edges": [
                 189, 
@@ -2053,8 +2169,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Adequately Customizable [CS Technology]", 
+            "is_random": false, 
             "name": "Adequately Customizable [CS Technology]", 
             "to_edges": [
                 164
@@ -2064,10 +2182,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 167
             ], 
             "id": "Implement IVR", 
+            "is_random": false, 
             "name": "Implement IVR", 
             "to_edges": [
                 192
@@ -2077,10 +2197,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 241
             ], 
             "id": "Simple [Technology]", 
+            "is_random": false, 
             "name": "Simple [Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2088,8 +2210,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Use Current Method", 
+            "is_random": false, 
             "name": "Use Current Method", 
             "to_edges": [
                 229, 
@@ -2100,11 +2224,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 177, 
                 224
             ], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
+            "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish Fundraising Needs]", 
             "to_edges": [
                 126
@@ -2114,6 +2240,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 137, 
                 138, 
@@ -2121,6 +2248,7 @@
                 238
             ], 
             "id": "Improve Quality Assurance Technology1", 
+            "is_random": false, 
             "name": "Improve Quality Assurance Technology1", 
             "to_edges": [
                 141
@@ -2130,10 +2258,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 162
             ], 
             "id": "Put Content Onto Website", 
+            "is_random": false, 
             "name": "Put Content Onto Website", 
             "to_edges": [], 
             "type": "task"
@@ -2141,8 +2271,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
+            "is_random": false, 
             "name": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
             "to_edges": [
                 198
@@ -2152,10 +2284,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 194
             ], 
             "id": "Increase Access Speed [  Regional Offices to DL]1", 
+            "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to DL]1", 
             "to_edges": [
                 178
@@ -2165,8 +2299,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Implement Email for Counsellors", 
+            "is_random": false, 
             "name": "*Implement Email for Counsellors", 
             "to_edges": [
                 127, 
@@ -2178,12 +2314,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 166, 
                 185, 
                 254
             ], 
             "id": "Keep Up With New Technology", 
+            "is_random": false, 
             "name": "Keep Up With New Technology", 
             "to_edges": [
                 286
@@ -2193,10 +2331,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 160
             ], 
             "id": "Acquire IT Resources", 
+            "is_random": false, 
             "name": "Acquire IT Resources", 
             "to_edges": [
                 143
@@ -2206,8 +2346,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Use T1", 
+            "is_random": false, 
             "name": "Use T1", 
             "to_edges": [
                 194, 
@@ -2219,6 +2361,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 183, 
                 197, 
@@ -2226,6 +2369,7 @@
                 251
             ], 
             "id": "*Effective IT Training", 
+            "is_random": false, 
             "name": "*Effective IT Training", 
             "to_edges": [
                 133
@@ -2235,10 +2379,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 218
             ], 
             "id": "Install Desktop Software", 
+            "is_random": false, 
             "name": "Install Desktop Software", 
             "to_edges": [
                 128, 
@@ -2250,8 +2396,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Decrease Clumsiness [Technology]1", 
+            "is_random": false, 
             "name": "Decrease Clumsiness [Technology]1", 
             "to_edges": [
                 252
@@ -2261,8 +2409,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Use Informal Buddy System for Training", 
+            "is_random": false, 
             "name": "Use Informal Buddy System for Training", 
             "to_edges": [
                 159, 
@@ -2273,10 +2423,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 217
             ], 
             "id": "*Acquire Software for Free", 
+            "is_random": false, 
             "name": "*Acquire Software for Free", 
             "to_edges": [
                 147, 
@@ -2288,8 +2440,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!A Training Computer Be Present1", 
+            "is_random": false, 
             "name": "!A Training Computer Be Present1", 
             "to_edges": [
                 158, 
@@ -2302,10 +2456,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 199
             ], 
             "id": "Adjust to Software Changes", 
+            "is_random": false, 
             "name": "Adjust to Software Changes", 
             "to_edges": [
                 186
@@ -2315,8 +2471,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Hardware", 
+            "is_random": false, 
             "name": "Free Hardware", 
             "to_edges": [
                 135
@@ -2326,11 +2484,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 157, 
                 247
             ], 
             "id": "Implement and Manage Technology in Regional Offices", 
+            "is_random": false, 
             "name": "Implement and Manage Technology in Regional Offices", 
             "to_edges": [
                 205
@@ -2340,6 +2500,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 149, 
                 189, 
@@ -2350,6 +2511,7 @@
                 283
             ], 
             "id": "Acquire and Implement Employee Software", 
+            "is_random": false, 
             "name": "Acquire and Implement Employee Software", 
             "to_edges": [
                 129
@@ -2359,10 +2521,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 275
             ], 
             "id": "Consideration of Feedback [IT Providers]", 
+            "is_random": false, 
             "name": "Consideration of Feedback [IT Providers]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2370,10 +2534,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 208
             ], 
             "id": "Donor/Accounting Data Base", 
+            "is_random": false, 
             "name": "Donor/Accounting Data Base", 
             "to_edges": [], 
             "type": "resource"
@@ -2381,8 +2547,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase IT Resources1", 
+            "is_random": false, 
             "name": "Increase IT Resources1", 
             "to_edges": [
                 279
@@ -2392,10 +2560,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 255
             ], 
             "id": "Implement Desktops", 
+            "is_random": false, 
             "name": "Implement Desktops", 
             "to_edges": [
                 261
@@ -2405,12 +2575,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 192, 
                 223, 
                 257
             ], 
             "id": "Telephony Be Implemented and Managed", 
+            "is_random": false, 
             "name": "Telephony Be Implemented and Managed", 
             "to_edges": [
                 140, 
@@ -2421,10 +2593,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 151
             ], 
             "id": "*Implement Symposium System", 
+            "is_random": false, 
             "name": "*Implement Symposium System", 
             "to_edges": [
                 257
@@ -2434,8 +2608,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Software", 
+            "is_random": false, 
             "name": "Software", 
             "to_edges": [
                 212
@@ -2445,10 +2621,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 165
             ], 
             "id": "Pay for Hardware", 
+            "is_random": false, 
             "name": "Pay for Hardware", 
             "to_edges": [
                 168, 
@@ -2459,10 +2637,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 272
             ], 
             "id": "Provide Document Library System", 
+            "is_random": false, 
             "name": "Provide Document Library System", 
             "to_edges": [], 
             "type": "task"
@@ -2470,11 +2650,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 172, 
                 262
             ], 
             "id": "Manage Donor/ Accounting Data Base", 
+            "is_random": false, 
             "name": "Manage Donor/ Accounting Data Base", 
             "to_edges": [
                 170, 
@@ -2486,8 +2668,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Server1", 
+            "is_random": false, 
             "name": "Web Server1", 
             "to_edges": [
                 145
@@ -2497,10 +2681,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 154
             ], 
             "id": "*Implement Email for Counsellors1", 
+            "is_random": false, 
             "name": "*Implement Email for Counsellors1", 
             "to_edges": [], 
             "type": "task"
@@ -2508,8 +2694,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*IT Providers have Knowledge of Counselling", 
+            "is_random": false, 
             "name": "*IT Providers have Knowledge of Counselling", 
             "to_edges": [
                 169
@@ -2519,8 +2707,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Performance Review Information Be Collected in Data Base1", 
+            "is_random": false, 
             "name": "!Performance Review Information Be Collected in Data Base1", 
             "to_edges": [
                 138, 
@@ -2531,10 +2721,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 131
             ], 
             "id": "!IT Systems Be Integrated", 
+            "is_random": false, 
             "name": "!IT Systems Be Integrated", 
             "to_edges": [], 
             "type": "goal"
@@ -2542,11 +2734,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 243, 
                 284
             ], 
             "id": "Expand IT Department", 
+            "is_random": false, 
             "name": "Expand IT Department", 
             "to_edges": [
                 182
@@ -2556,11 +2750,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 242, 
                 276
             ], 
             "id": "Acquire Software", 
+            "is_random": false, 
             "name": "Acquire Software", 
             "to_edges": [
                 130, 
@@ -2579,11 +2775,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 206, 
                 265
             ], 
             "id": "*Web Server Be Acquired", 
+            "is_random": false, 
             "name": "*Web Server Be Acquired", 
             "to_edges": [
                 246, 
@@ -2594,8 +2792,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "CS Be Not for Profit1", 
+            "is_random": false, 
             "name": "CS Be Not for Profit1", 
             "to_edges": [], 
             "type": "goal"
@@ -2603,10 +2803,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 198
             ], 
             "id": "Increased Emphasis on IT in Hiring Process [of Counsellors]1", 
+            "is_random": false, 
             "name": "Increased Emphasis on IT in Hiring Process [of Counsellors]1", 
             "to_edges": [
                 183
@@ -2616,10 +2818,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 236
             ], 
             "id": "Web Software", 
+            "is_random": false, 
             "name": "Web Software", 
             "to_edges": [], 
             "type": "resource"
@@ -2627,10 +2831,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 281
             ], 
             "id": "Web Counselling Software Be Implemented", 
+            "is_random": false, 
             "name": "Web Counselling Software Be Implemented", 
             "to_edges": [
                 179
@@ -2640,11 +2846,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 220, 
                 279
             ], 
             "id": "Increase IT Resources", 
+            "is_random": false, 
             "name": "Increase IT Resources", 
             "to_edges": [
                 166, 
@@ -2656,10 +2864,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 161
             ], 
             "id": "*Acquire Web Server for Free", 
+            "is_random": false, 
             "name": "*Acquire Web Server for Free", 
             "to_edges": [
                 206, 
@@ -2670,10 +2880,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 214
             ], 
             "id": "Improve [Call Recording Equipment]", 
+            "is_random": false, 
             "name": "Improve [Call Recording Equipment]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2681,8 +2893,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Hardware", 
+            "is_random": false, 
             "name": "Hardware", 
             "to_edges": [
                 165
@@ -2692,8 +2906,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Upgrades", 
+            "is_random": false, 
             "name": "Upgrades", 
             "to_edges": [
                 207
@@ -2703,10 +2919,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 201
             ], 
             "id": "!Calls Be Recorded into a Data Base", 
+            "is_random": false, 
             "name": "!Calls Be Recorded into a Data Base", 
             "to_edges": [], 
             "type": "goal"
@@ -2714,10 +2932,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 203
             ], 
             "id": "Get web event technology", 
+            "is_random": false, 
             "name": "Get web event technology", 
             "to_edges": [
                 200, 
@@ -2728,10 +2948,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 130
             ], 
             "id": "*Implement Bulletin Board", 
+            "is_random": false, 
             "name": "*Implement Bulletin Board", 
             "to_edges": [
                 216, 
@@ -2744,10 +2966,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 188
             ], 
             "id": "IT Be Upgraded", 
+            "is_random": false, 
             "name": "IT Be Upgraded", 
             "to_edges": [
                 185, 
@@ -2759,6 +2983,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 132, 
                 140, 
@@ -2767,6 +2992,7 @@
                 181
             ], 
             "id": "Satisfy CS IT Needs", 
+            "is_random": false, 
             "name": "Satisfy CS IT Needs", 
             "to_edges": [], 
             "type": "task"
@@ -2774,8 +3000,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Perform Donor/Accounting Data Base Maintenance", 
+            "is_random": false, 
             "name": "Perform Donor/Accounting Data Base Maintenance", 
             "to_edges": [
                 172
@@ -2785,10 +3013,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 136
             ], 
             "id": "Acquire Telephone Switch", 
+            "is_random": false, 
             "name": "Acquire Telephone Switch", 
             "to_edges": [
                 223
@@ -2798,8 +3028,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Consideration of Feedback [from Counsellors]", 
+            "is_random": false, 
             "name": "Consideration of Feedback [from Counsellors]", 
             "to_edges": [
                 264, 
@@ -2810,10 +3042,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 267
             ], 
             "id": "*Increase [IT Training for Counsellors]", 
+            "is_random": false, 
             "name": "*Increase [IT Training for Counsellors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2821,10 +3055,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 145
             ], 
             "id": "*Pay for Web Server", 
+            "is_random": false, 
             "name": "*Pay for Web Server", 
             "to_edges": [
                 265, 
@@ -2835,10 +3071,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 228
             ], 
             "id": "Support Analysis [Counsellors Time]", 
+            "is_random": false, 
             "name": "Support Analysis [Counsellors Time]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2846,8 +3084,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Online Donor Technology1", 
+            "is_random": false, 
             "name": "Provide Online Donor Technology1", 
             "to_edges": [
                 187, 
@@ -2858,10 +3098,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 150
             ], 
             "id": "IT Dept Provides Orientation and Training", 
+            "is_random": false, 
             "name": "IT Dept Provides Orientation and Training", 
             "to_edges": [
                 184, 
@@ -2872,11 +3114,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 155, 
                 240
             ], 
             "id": "*Web Software Be Acquired", 
+            "is_random": false, 
             "name": "*Web Software Be Acquired", 
             "to_edges": [
                 236, 
@@ -2887,10 +3131,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 195
             ], 
             "id": "!A Training Computer Be Present", 
+            "is_random": false, 
             "name": "!A Training Computer Be Present", 
             "to_edges": [], 
             "type": "goal"
@@ -2898,12 +3144,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 182, 
                 263, 
                 273
             ], 
             "id": "Increase IT Training Resources", 
+            "is_random": false, 
             "name": "Increase IT Training Resources", 
             "to_edges": [
                 163, 
@@ -2914,11 +3162,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 229, 
                 277
             ], 
             "id": "Provide Peer-to-Peer Access Regional Offices", 
+            "is_random": false, 
             "name": "Provide Peer-to-Peer Access Regional Offices", 
             "to_edges": [
                 247
@@ -2928,10 +3178,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 260
             ], 
             "id": "Increase IT Methods to Acquire Feedback1", 
+            "is_random": false, 
             "name": "Increase IT Methods to Acquire Feedback1", 
             "to_edges": [
                 137, 

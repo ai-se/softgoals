@@ -37,6 +37,7 @@ class Model(O):
     for node in self._tree.nodes:
       node.value = None
       node.is_random = False
+      node.cost = 0
 
   def reset_nodes(self, initial_node_map):
     self.clear_nodes()

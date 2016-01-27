@@ -14,8 +14,8 @@ def default():
     f = 0.75,
     cr = 0.3,
     seed = 1,
-    better = [gt, gt, lt],
-    obj_funcs = [eval_softgoals, eval_goals, eval_costs],
+    better = [gt, lt, lt],
+    obj_funcs = [eval_all_goals, eval_paths, eval_costs],
     evaluation = Point.evaluate,
     is_percent = True,
     binary = True
@@ -45,6 +45,13 @@ def eval_costs(model):
   for node in model.bases:
     if node.value and node.value > 0:
       total_cost += model.cost_map[node.id]
+  return total_cost
+
+def eval_paths(model):
+  total_cost = 0
+  for node in model.get_tree().get_nodes(node_type=["softgoal", "goal"]):
+    if node.value and node.value > 0:
+      total_cost += node.cost
   return total_cost
 
 
@@ -92,7 +99,6 @@ class Point(O):
     point.objectives = [func(model) for func in obj_funcs]
     point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
     return point.objectives
-
 
   @staticmethod
   def trim(val):

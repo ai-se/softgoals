@@ -63,6 +63,7 @@ class Model(O):
     for node in self._tree.nodes:
       node.value = None
       node.is_random = False
+      node.cost = 0
 
   def reset_nodes(self, initial_node_map):
     self.clear_nodes()
@@ -174,12 +175,16 @@ class Model(O):
     if node.id in self.chain:
       node.value = Model.random_node_val(node)
       node.is_random = True
+      if node.value > 0:
+        node.cost = 1
       return
     self.recursions += 1
     self.chain.add(node.id)
     if not node.from_edges:
       node.value = Model.random_node_val(node)
       node.is_random = True
+      if node.value > 0:
+        node.cost = 1
       return
     else:
       # First check for dependencies from the edges and evaluate it
@@ -193,27 +198,31 @@ class Model(O):
 
 
       if not rest:
-        node.value = self.eval_and(dep_nodes)
+        node.value, temp_cost = self.eval_and(dep_nodes)
         return
 
       # Evaluate the rest. We assume the rest are of same kind
       edge_type = rest[0].type
       if edge_type == "decompositions":
-        status = self.eval_and(dep_nodes)
+        status, cost = self.eval_and(dep_nodes)
         if status < 0:
           node.value = status
           return
         kids = [self._tree.get_node(edge.source) for edge in rest]
+        temp_cost = 0
         if rest[0].value == "and":
           # Evaluate all children
-          status = self.eval_and(kids)
+          status, temp_cost = self.eval_and(kids)
         elif rest[0].value == "or":
-          status = self.eval_or(kids)
+          status, temp_cost = self.eval_or(kids)
+        cost += temp_cost
       elif edge_type == "contribution":
-        status = self.eval_contribs(rest, deps)
+        status, cost = self.eval_contribs(rest, deps)
       else:
         raise Exception("Unexpected edge type %s"%edge_type)
       node.value = status
+      if node.value > 0:
+        node.cost = cost
       return
 
   def eval_and(self, nodes):
@@ -223,11 +232,16 @@ class Model(O):
     :return: status
     """
     status = t
+    cost = 0
     for node in nodes:
-      if status <= 0: break
       self.eval(node)
-      status = node.value
-    return status
+      status, temp_cost = node.value, node.cost
+      if status <= 0: return status, 0
+      if not cost:
+        cost = temp_cost
+      else:
+        cost = min(cost, temp_cost)
+    return status, cost + 1
 
   def eval_or(self, nodes):
     """
@@ -238,10 +252,9 @@ class Model(O):
     """
     for node in nodes:
       self.eval(node)
-      status = node.value
-      if status > 0:
-        return status
-    return f
+      if node.value > 0:
+        return node.value, node.cost + 1
+    return f, 0
 
   def eval_contribs(self, edges, dependencies=None):
     """
@@ -256,16 +269,16 @@ class Model(O):
         continue
       node = self._tree.get_node(edge.source)
       self.eval(node)
-      kids += [Model.soft_goal_val(node.value, edge.value)]
+      kids += [Model.soft_goal_val(node.value, edge.value, node.cost)]
     if dependencies:
       for dep in dependencies:
         dep_node = self._tree.get_node(dep.source)
         self.eval(dep_node)
-        kids += [Model.soft_goal_val(dep_node.value, "make")]
+        kids += [Model.soft_goal_val(dep_node.value, "make", dep_node.cost)]
     return random.choice(kids)
 
   @staticmethod
-  def soft_goal_val(kid, edge):
+  def soft_goal_val(kid, edge, cost):
     """
     Check out src/img/prop_rules.png
     :param kid:
@@ -273,26 +286,30 @@ class Model(O):
     :return:
     """
     if edge in ["someplus", "someminus"]:
-      return random.choice([t/2, f/2])
+      rand_val = random.choice([t/2, f/2])
+      if rand_val > 0:
+        return rand_val, cost+1
+      else:
+        return rand_val, cost
     if kid == t:
-      if edge == "make"   : return t
-      if edge == "help"   : return t/2
-      if edge == "hurt"   : return f/2
-      if edge == "break"  : return f
+      if edge == "make"   : return t, cost + 1
+      if edge == "help"   : return t/2, cost + 1
+      if edge == "hurt"   : return f/2, cost
+      if edge == "break"  : return f, cost
     elif kid == t/2:
-      if edge == "make"   : return t/2
-      if edge == "help"   : return t/2
-      if edge == "hurt"   : return f/2
-      if edge == "break"  : return f/2
+      if edge == "make"   : return t/2, cost + 1
+      if edge == "help"   : return t/2, cost + 1
+      if edge == "hurt"   : return f/2, cost
+      if edge == "break"  : return f/2, cost
     elif kid == f/2:
-      if edge == "make"   : return f/2
-      if edge == "help"   : return f/2
-      if edge == "hurt"   : return t/2
-      if edge == "break"  : return t/2
+      if edge == "make"   : return f/2, cost
+      if edge == "help"   : return f/2, cost
+      if edge == "hurt"   : return t/2, cost + 1
+      if edge == "break"  : return t/2, cost + 1
     elif kid == f:
-      if edge == "make"   : return f
-      if edge == "help"   : return f/2
-      if edge == "hurt"   : return t/2
-      if edge == "break"  : return t/2
+      if edge == "make"   : return f, cost
+      if edge == "help"   : return f/2, cost
+      if edge == "hurt"   : return t/2, cost + 1
+      if edge == "break"  : return t/2, cost + 1
 
     raise RuntimeError("Either node value %s or edge %s is unknown"%(kid, edge))

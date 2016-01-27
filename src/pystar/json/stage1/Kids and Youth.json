@@ -654,10 +654,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 96
             ], 
             "id": "Kids Use Ask a Counsellor Section\\ns", 
+            "is_random": false, 
             "name": "Kids Use Ask a Counsellor Section\\ns", 
             "to_edges": [], 
             "type": "task"
@@ -665,6 +667,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 82, 
                 90, 
@@ -676,6 +679,7 @@
                 161
             ], 
             "id": "*Get Effective Help", 
+            "is_random": false, 
             "name": "*Get Effective Help", 
             "to_edges": [], 
             "type": "softgoal"
@@ -683,10 +687,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 114
             ], 
             "id": "Kids Use Phone Counselling", 
+            "is_random": false, 
             "name": "Kids Use Phone Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -694,6 +700,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 83, 
                 86, 
@@ -705,6 +712,7 @@
                 149
             ], 
             "id": "Help be acquired", 
+            "is_random": false, 
             "name": "Help be acquired", 
             "to_edges": [], 
             "type": "goal"
@@ -712,10 +720,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 133
             ], 
             "id": "Use Phone Counselling", 
+            "is_random": false, 
             "name": "Use Phone Counselling", 
             "to_edges": [
                 107, 
@@ -726,10 +736,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 112
             ], 
             "id": "Services Be Free", 
+            "is_random": false, 
             "name": "Services Be Free", 
             "to_edges": [], 
             "type": "goal"
@@ -737,8 +749,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Voice Counselling", 
+            "is_random": false, 
             "name": "Implement Voice Counselling", 
             "to_edges": [
                 121
@@ -748,8 +762,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Phone Counselling", 
+            "is_random": false, 
             "name": "Maintain Phone Counselling", 
             "to_edges": [
                 133
@@ -759,12 +775,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 85, 
                 100, 
                 119
             ], 
             "id": "*Safety of service usage", 
+            "is_random": false, 
             "name": "*Safety of service usage", 
             "to_edges": [], 
             "type": "softgoal"
@@ -772,8 +790,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Video Counselling", 
+            "is_random": false, 
             "name": "Implement Video Counselling", 
             "to_edges": [
                 157
@@ -783,8 +803,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Email Counselling", 
+            "is_random": false, 
             "name": "Implement Email Counselling", 
             "to_edges": [
                 117
@@ -794,10 +816,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 150
             ], 
             "id": "High Quality [Service] ", 
+            "is_random": false, 
             "name": "High Quality [Service] ", 
             "to_edges": [
                 91
@@ -807,10 +831,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 157
             ], 
             "id": "Use Video Counselling", 
+            "is_random": false, 
             "name": "Use Video Counselling", 
             "to_edges": [
                 122, 
@@ -821,8 +847,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Ask a Counsellor Section", 
+            "is_random": false, 
             "name": "Maintain Ask a Counsellor Section", 
             "to_edges": [
                 118
@@ -832,10 +860,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 106
             ], 
             "id": "Ownership of Service [Kids] ", 
+            "is_random": false, 
             "name": "Ownership of Service [Kids] ", 
             "to_edges": [
                 88, 
@@ -846,10 +876,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 152
             ], 
             "id": "Easy [Access to Post Reply] ", 
+            "is_random": false, 
             "name": "Easy [Access to Post Reply] ", 
             "to_edges": [
                 104
@@ -859,10 +891,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 154
             ], 
             "id": "Vent Emotions ", 
+            "is_random": false, 
             "name": "Vent Emotions ", 
             "to_edges": [
                 135
@@ -872,8 +906,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [
                 111
@@ -883,6 +919,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 98, 
                 115, 
@@ -890,6 +927,7 @@
                 145
             ], 
             "id": "*Privacy", 
+            "is_random": false, 
             "name": "*Privacy", 
             "to_edges": [], 
             "type": "softgoal"
@@ -897,8 +935,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Patient [Counselor] ", 
+            "is_random": false, 
             "name": "Patient [Counselor] ", 
             "to_edges": [
                 89
@@ -908,8 +948,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Contact CS about Non-Crisis Situation ", 
+            "is_random": false, 
             "name": "Contact CS about Non-Crisis Situation ", 
             "to_edges": [], 
             "type": "task"
@@ -917,8 +959,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Confidentiality [Services] ", 
+            "is_random": false, 
             "name": "Confidentiality [Services] ", 
             "to_edges": [
                 159
@@ -928,10 +972,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 92
             ], 
             "id": "Read Polls about Kids", 
+            "is_random": false, 
             "name": "Read Polls about Kids", 
             "to_edges": [
                 113, 
@@ -942,10 +988,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 123
             ], 
             "id": "Decrease [Phone Waiting Time] ", 
+            "is_random": false, 
             "name": "Decrease [Phone Waiting Time] ", 
             "to_edges": [
                 94
@@ -955,10 +1003,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 159
             ], 
             "id": "Confidentiality [Service] ", 
+            "is_random": false, 
             "name": "Confidentiality [Service] ", 
             "to_edges": [
                 85, 
@@ -970,10 +1020,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 128
             ], 
             "id": "Kids use get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Kids use get Informed Section of Web Site", 
             "to_edges": [], 
             "type": "task"
@@ -981,8 +1033,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Text Messaging", 
+            "is_random": false, 
             "name": "!Implement Text Messaging", 
             "to_edges": [
                 160
@@ -992,10 +1046,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 160
             ], 
             "id": "Use Text Messaging", 
+            "is_random": false, 
             "name": "Use Text Messaging", 
             "to_edges": [
                 84, 
@@ -1006,10 +1062,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 117
             ], 
             "id": "Use Email Counselling", 
+            "is_random": false, 
             "name": "Use Email Counselling", 
             "to_edges": [
                 125, 
@@ -1020,10 +1078,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 101
             ], 
             "id": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [], 
             "type": "task"
@@ -1031,10 +1091,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 155
             ], 
             "id": "Children Decide When to Hang Up and Call", 
+            "is_random": false, 
             "name": "Children Decide When to Hang Up and Call", 
             "to_edges": [
                 115
@@ -1044,8 +1106,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Maintain Get Informed Section of Web Site", 
             "to_edges": [
                 153
@@ -1055,10 +1119,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 121
             ], 
             "id": "Use voice Counselling", 
+            "is_random": false, 
             "name": "Use voice Counselling", 
             "to_edges": [
                 131, 
@@ -1069,8 +1135,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Friendly [Web site] 1", 
+            "is_random": false, 
             "name": "Friendly [Web site] 1", 
             "to_edges": [
                 87
@@ -1080,8 +1148,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "High Quality [Services] ", 
+            "is_random": false, 
             "name": "High Quality [Services] ", 
             "to_edges": [
                 150
@@ -1091,10 +1161,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 137
             ], 
             "id": "Availability [Service] ", 
+            "is_random": false, 
             "name": "Availability [Service] ", 
             "to_edges": [
                 103
@@ -1104,10 +1176,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 147
             ], 
             "id": "Kids Use Voice Counselling", 
+            "is_random": false, 
             "name": "Kids Use Voice Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -1115,8 +1189,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Connect Back to the Community 1", 
+            "is_random": false, 
             "name": "Connect Back to the Community 1", 
             "to_edges": [
                 93
@@ -1126,10 +1202,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 102
             ], 
             "id": "Anonymity [Service] ", 
+            "is_random": false, 
             "name": "Anonymity [Service] ", 
             "to_edges": [
                 100, 
@@ -1141,10 +1219,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 156
             ], 
             "id": "Immediacy [Service] ", 
+            "is_random": false, 
             "name": "Immediacy [Service] ", 
             "to_edges": [
                 108, 
@@ -1156,8 +1236,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Polls about Kids", 
+            "is_random": false, 
             "name": "!Implement Polls about Kids", 
             "to_edges": [
                 92
@@ -1167,8 +1249,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Similarity with other kids  problems ", 
+            "is_random": false, 
             "name": "Similarity with other kids  problems ", 
             "to_edges": [
                 81
@@ -1178,8 +1262,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "!Implement Bulletin Board with Replies", 
             "to_edges": [
                 141
@@ -1189,10 +1275,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 120
             ], 
             "id": "Kids read Polls about Kids", 
+            "is_random": false, 
             "name": "Kids read Polls about Kids", 
             "to_edges": [], 
             "type": "task"
@@ -1200,10 +1288,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 138
             ], 
             "id": "Support and Be Supported By Other Kids ", 
+            "is_random": false, 
             "name": "Support and Be Supported By Other Kids ", 
             "to_edges": [
                 105
@@ -1213,10 +1303,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 116
             ], 
             "id": "Read General Questions and Answers", 
+            "is_random": false, 
             "name": "Read General Questions and Answers", 
             "to_edges": [
                 99, 
@@ -1227,10 +1319,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 81
             ], 
             "id": "Similarity with other kids  problems 1", 
+            "is_random": false, 
             "name": "Similarity with other kids  problems 1", 
             "to_edges": [
                 129
@@ -1240,8 +1334,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Ownership of Services [Kids] ", 
+            "is_random": false, 
             "name": "Ownership of Services [Kids] ", 
             "to_edges": [
                 106
@@ -1251,8 +1347,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Availability [Services] ", 
+            "is_random": false, 
             "name": "Availability [Services] ", 
             "to_edges": [
                 137
@@ -1262,8 +1360,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Decrease [Phone Waiting Time] 1", 
+            "is_random": false, 
             "name": "Decrease [Phone Waiting Time] 1", 
             "to_edges": [
                 123
@@ -1273,10 +1373,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 99
             ], 
             "id": "Kids read General Questions and Answers", 
+            "is_random": false, 
             "name": "Kids read General Questions and Answers", 
             "to_edges": [], 
             "type": "task"
@@ -1284,10 +1386,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 111
             ], 
             "id": "Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "Use Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [
                 86, 
@@ -1298,8 +1402,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement General Questions and Answers", 
+            "is_random": false, 
             "name": "!Implement General Questions and Answers", 
             "to_edges": [
                 116
@@ -1309,12 +1415,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 113, 
                 126, 
                 142
             ], 
             "id": "Information be acquired on website", 
+            "is_random": false, 
             "name": "Information be acquired on website", 
             "to_edges": [], 
             "type": "goal"
@@ -1322,10 +1430,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 84
             ], 
             "id": "Kids Use Text Messaging", 
+            "is_random": false, 
             "name": "Kids Use Text Messaging", 
             "to_edges": [], 
             "type": "task"
@@ -1333,8 +1443,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "!Implement One-On-One Chat Rooms", 
             "to_edges": [
                 95
@@ -1344,8 +1456,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Feedback", 
+            "is_random": false, 
             "name": "Provide Feedback", 
             "to_edges": [
                 97, 
@@ -1357,10 +1471,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 118
             ], 
             "id": "Use Ask a Counsellor Section", 
+            "is_random": false, 
             "name": "Use Ask a Counsellor Section", 
             "to_edges": [
                 83, 
@@ -1371,8 +1487,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Anonymity [Services] ", 
+            "is_random": false, 
             "name": "Anonymity [Services] ", 
             "to_edges": [
                 102
@@ -1382,8 +1500,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Services Be Free1", 
+            "is_random": false, 
             "name": "Services Be Free1", 
             "to_edges": [
                 109, 
@@ -1394,8 +1514,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Contact CS in Crisis ", 
+            "is_random": false, 
             "name": "Contact CS in Crisis ", 
             "to_edges": [], 
             "type": "task"
@@ -1403,11 +1525,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 94, 
                 108
             ], 
             "id": "Effective Help in Crisis", 
+            "is_random": false, 
             "name": "Effective Help in Crisis", 
             "to_edges": [
                 90
@@ -1417,10 +1541,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 110
             ], 
             "id": "Effective Help in Non Crisis Situation", 
+            "is_random": false, 
             "name": "Effective Help in Non Crisis Situation", 
             "to_edges": [
                 161
@@ -1430,10 +1556,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 93
             ], 
             "id": "Connect Back to the Community ", 
+            "is_random": false, 
             "name": "Connect Back to the Community ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1441,10 +1569,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 127
             ], 
             "id": "Kids Use Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Kids Use Bulletin Board with Replies", 
             "to_edges": [], 
             "type": "task"
@@ -1452,10 +1582,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 95
             ], 
             "id": "Use One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "Use One-On-One Chat Rooms", 
             "to_edges": [
                 146, 
@@ -1466,8 +1598,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Connect with Other Kids 1", 
+            "is_random": false, 
             "name": "Connect with Other Kids 1", 
             "to_edges": [
                 151
@@ -1477,10 +1611,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 87
             ], 
             "id": "Friendly [Web site] ", 
+            "is_random": false, 
             "name": "Friendly [Web site] ", 
             "to_edges": [
                 130
@@ -1490,10 +1626,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 146
             ], 
             "id": "Kids Use One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "Kids Use One-On-One Chat Rooms", 
             "to_edges": [], 
             "type": "task"
@@ -1501,10 +1639,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 140
             ], 
             "id": "Inform kids about anonymity of service", 
+            "is_random": false, 
             "name": "Inform kids about anonymity of service", 
             "to_edges": [], 
             "type": "task"
@@ -1512,8 +1652,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Immediacy [Services] ", 
+            "is_random": false, 
             "name": "Immediacy [Services] ", 
             "to_edges": [
                 156
@@ -1523,10 +1665,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 89
             ], 
             "id": "Patient [Counselor] 1", 
+            "is_random": false, 
             "name": "Patient [Counselor] 1", 
             "to_edges": [
                 82, 
@@ -1538,10 +1682,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 97
             ], 
             "id": "Feedback", 
+            "is_random": false, 
             "name": "Feedback", 
             "to_edges": [], 
             "type": "resource"
@@ -1549,8 +1695,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easy [Access to Post Reply] 1", 
+            "is_random": false, 
             "name": "Easy [Access to Post Reply] 1", 
             "to_edges": [
                 152
@@ -1560,8 +1708,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Be informed of service anonymity", 
+            "is_random": false, 
             "name": "Be informed of service anonymity", 
             "to_edges": [
                 136, 
@@ -1572,10 +1722,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 132
             ], 
             "id": "Kids Use Video Counselling", 
+            "is_random": false, 
             "name": "Kids Use Video Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -1583,10 +1735,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 158
             ], 
             "id": "Kids Use Email Counselling", 
+            "is_random": false, 
             "name": "Kids Use Email Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -1594,6 +1748,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 88, 
                 105, 
@@ -1606,6 +1761,7 @@
                 144
             ], 
             "id": "Comfortableness with service ", 
+            "is_random": false, 
             "name": "Comfortableness with service ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1613,10 +1769,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 141
             ], 
             "id": "Use bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Use bulletin Board with Replies", 
             "to_edges": [
                 127
@@ -1626,10 +1784,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 151
             ], 
             "id": "Connect with Other Kids ", 
+            "is_random": false, 
             "name": "Connect with Other Kids ", 
             "to_edges": [
                 138
@@ -1639,10 +1799,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 153
             ], 
             "id": "Read Get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Read Get Informed Section of Web Site", 
             "to_edges": [
                 128, 

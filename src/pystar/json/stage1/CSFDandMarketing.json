@@ -3382,12 +3382,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 394, 
                 536, 
                 682
             ], 
             "id": "Sponsorship Be Beneficial ", 
+            "is_random": false, 
             "name": "Sponsorship Be Beneficial ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -3395,10 +3397,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 429
             ], 
             "id": "Market fundraising events2", 
+            "is_random": false, 
             "name": "Market fundraising events2", 
             "to_edges": [
                 421
@@ -3408,8 +3412,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Online Donor Technology", 
+            "is_random": false, 
             "name": "Provide Online Donor Technology", 
             "to_edges": [
                 469
@@ -3419,10 +3425,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 541
             ], 
             "id": "Counselors attend fundraising events", 
+            "is_random": false, 
             "name": "Counselors attend fundraising events", 
             "to_edges": [
                 740
@@ -3432,12 +3440,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 477, 
                 508, 
                 580
             ], 
             "id": "Manage\\nprojects", 
+            "is_random": false, 
             "name": "Manage\\nprojects", 
             "to_edges": [
                 405, 
@@ -3448,10 +3458,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 667
             ], 
             "id": "Acquire\\n [CS Stories] ", 
+            "is_random": false, 
             "name": "Acquire\\n [CS Stories] ", 
             "to_edges": [
                 411
@@ -3461,10 +3473,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 402
             ], 
             "id": "Up to Date [Corporate Partner Information] ", 
+            "is_random": false, 
             "name": "Up to Date [Corporate Partner Information] ", 
             "to_edges": [
                 371, 
@@ -3475,11 +3489,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 354, 
                 619
             ], 
             "id": "Regional Staff feel included", 
+            "is_random": false, 
             "name": "Regional Staff feel included", 
             "to_edges": [
                 554
@@ -3489,8 +3505,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Bring Regional Fundraising Staff Together Once a Year ", 
+            "is_random": false, 
             "name": "Bring Regional Fundraising Staff Together Once a Year ", 
             "to_edges": [
                 609
@@ -3500,11 +3518,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 328, 
                 589
             ], 
             "id": "Proactive [Media relationship]", 
+            "is_random": false, 
             "name": "Proactive [Media relationship]", 
             "to_edges": [
                 506, 
@@ -3515,8 +3535,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "CS\\nServices", 
+            "is_random": false, 
             "name": "CS\\nServices", 
             "to_edges": [
                 357
@@ -3526,10 +3548,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 453
             ], 
             "id": "High Response [Individual Donors] ", 
+            "is_random": false, 
             "name": "High Response [Individual Donors] ", 
             "to_edges": [
                 717
@@ -3539,6 +3563,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 522, 
                 564, 
@@ -3546,6 +3571,7 @@
                 656
             ], 
             "id": "Record donor information", 
+            "is_random": false, 
             "name": "Record donor information", 
             "to_edges": [
                 511
@@ -3555,8 +3581,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Accountability of services1", 
+            "is_random": false, 
             "name": "Accountability of services1", 
             "to_edges": [
                 562, 
@@ -3567,8 +3595,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Promotional Material to Student Ambassadors ", 
+            "is_random": false, 
             "name": "Provide Promotional Material to Student Ambassadors ", 
             "to_edges": [
                 381, 
@@ -3579,12 +3609,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 419, 
                 605, 
                 651
             ], 
             "id": "Contribute online", 
+            "is_random": false, 
             "name": "Contribute online", 
             "to_edges": [
                 575
@@ -3594,6 +3626,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 383, 
                 475, 
@@ -3602,6 +3635,7 @@
                 737
             ], 
             "id": "Happiness [Staff]", 
+            "is_random": false, 
             "name": "Happiness [Staff]", 
             "to_edges": [
                 346, 
@@ -3612,8 +3646,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "CS Stories", 
+            "is_random": false, 
             "name": "CS Stories", 
             "to_edges": [
                 667
@@ -3623,12 +3659,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 606, 
                 657, 
                 719
             ], 
             "id": "Contribute [to a  Cause] ", 
+            "is_random": false, 
             "name": "Contribute [to a  Cause] ", 
             "to_edges": [
                 569
@@ -3638,11 +3676,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 424, 
                 610
             ], 
             "id": "Exclusive Relationships [Official Partners] ", 
+            "is_random": false, 
             "name": "Exclusive Relationships [Official Partners] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -3650,8 +3690,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Conflicts Be Managed ", 
+            "is_random": false, 
             "name": "Conflicts Be Managed ", 
             "to_edges": [
                 475
@@ -3661,10 +3703,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 685
             ], 
             "id": "Receipt be provided", 
+            "is_random": false, 
             "name": "Receipt be provided", 
             "to_edges": [
                 406, 
@@ -3675,11 +3719,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 375, 
                 434
             ], 
             "id": "Reach More Kids [Sponsors]", 
+            "is_random": false, 
             "name": "Reach More Kids [Sponsors]", 
             "to_edges": [
                 394
@@ -3689,12 +3735,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 359, 
                 598, 
                 613
             ], 
             "id": "*Manage projects", 
+            "is_random": false, 
             "name": "*Manage projects", 
             "to_edges": [
                 356, 
@@ -3705,11 +3753,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 410, 
                 491
             ], 
             "id": "Attend fundraising event", 
+            "is_random": false, 
             "name": "Attend fundraising event", 
             "to_edges": [
                 643
@@ -3719,8 +3769,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Use volunteer services", 
+            "is_random": false, 
             "name": "Use volunteer services", 
             "to_edges": [
                 376, 
@@ -3731,11 +3783,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 468, 
                 470
             ], 
             "id": "Pledges be collected", 
+            "is_random": false, 
             "name": "Pledges be collected", 
             "to_edges": [
                 484
@@ -3745,10 +3799,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 363
             ], 
             "id": "Sponsorship proposal", 
+            "is_random": false, 
             "name": "Sponsorship proposal", 
             "to_edges": [
                 691
@@ -3758,10 +3814,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 561
             ], 
             "id": "Follow Highest Ethical Guidelines ", 
+            "is_random": false, 
             "name": "Follow Highest Ethical Guidelines ", 
             "to_edges": [
                 397
@@ -3771,10 +3829,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 355
             ], 
             "id": "Reduce Internal Communication Confusion ", 
+            "is_random": false, 
             "name": "Reduce Internal Communication Confusion ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -3782,10 +3842,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 356
             ], 
             "id": "Project deadlines be met1", 
+            "is_random": false, 
             "name": "Project deadlines be met1", 
             "to_edges": [
                 633, 
@@ -3796,8 +3858,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Provide compiled call data ", 
+            "is_random": false, 
             "name": "! Provide compiled call data ", 
             "to_edges": [
                 718
@@ -3807,8 +3871,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Pay Fund Development and Marketing Staff ", 
+            "is_random": false, 
             "name": "Pay Fund Development and Marketing Staff ", 
             "to_edges": [
                 555
@@ -3818,10 +3884,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 382
             ], 
             "id": "Use sponsor marketing channels", 
+            "is_random": false, 
             "name": "Use sponsor marketing channels", 
             "to_edges": [], 
             "type": "task"
@@ -3829,10 +3897,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 601
             ], 
             "id": "Get Corporate Partner Information from DL", 
+            "is_random": false, 
             "name": "Get Corporate Partner Information from DL", 
             "to_edges": [
                 703
@@ -3842,8 +3912,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Manage Receivables ", 
+            "is_random": false, 
             "name": "Manage Receivables ", 
             "to_edges": [
                 467, 
@@ -3854,12 +3926,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 464, 
                 626, 
                 723
             ], 
             "id": "Become a Major patron", 
+            "is_random": false, 
             "name": "Become a Major patron", 
             "to_edges": [
                 606
@@ -3869,8 +3943,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create Thank you ads ", 
+            "is_random": false, 
             "name": "Create Thank you ads ", 
             "to_edges": [
                 333
@@ -3880,8 +3956,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reach agreement", 
+            "is_random": false, 
             "name": "Reach agreement", 
             "to_edges": [
                 510, 
@@ -3893,8 +3971,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get web event technology1", 
+            "is_random": false, 
             "name": "Get web event technology1", 
             "to_edges": [
                 686
@@ -3904,8 +3984,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Provide money for services", 
+            "is_random": false, 
             "name": "! Provide money for services", 
             "to_edges": [
                 629
@@ -3915,11 +3997,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 660, 
                 664
             ], 
             "id": "Commitment [To CS Cause from Sponsors Employees] ", 
+            "is_random": false, 
             "name": "Commitment [To CS Cause from Sponsors Employees] ", 
             "to_edges": [
                 513, 
@@ -3930,10 +4014,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 501
             ], 
             "id": "Present proposal convincingly to sponsors", 
+            "is_random": false, 
             "name": "Present proposal convincingly to sponsors", 
             "to_edges": [
                 363, 
@@ -3944,6 +4030,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 370, 
                 432, 
@@ -3959,6 +4046,7 @@
                 746
             ], 
             "id": "Successful events", 
+            "is_random": false, 
             "name": "Successful events", 
             "to_edges": [
                 638
@@ -3968,11 +4056,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 654, 
                 680
             ], 
             "id": "Collect donations online", 
+            "is_random": false, 
             "name": "Collect donations online", 
             "to_edges": [
                 530
@@ -3982,8 +4072,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create posters, flyers and informational material ", 
+            "is_random": false, 
             "name": "Create posters, flyers and informational material ", 
             "to_edges": [
                 486
@@ -3993,11 +4085,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 585, 
                 621
             ], 
             "id": "*Good media exposure", 
+            "is_random": false, 
             "name": "*Good media exposure", 
             "to_edges": [
                 350, 
@@ -4008,10 +4102,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 745
             ], 
             "id": "Quick [Response to questions and concerns] ", 
+            "is_random": false, 
             "name": "Quick [Response to questions and concerns] ", 
             "to_edges": [
                 679
@@ -4021,10 +4117,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 630
             ], 
             "id": "Positive Internal Opinion", 
+            "is_random": false, 
             "name": "Positive Internal Opinion", 
             "to_edges": [
                 616
@@ -4034,8 +4132,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Document Library System", 
+            "is_random": false, 
             "name": "Provide Document Library System", 
             "to_edges": [
                 351, 
@@ -4047,10 +4147,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 599
             ], 
             "id": "Credibility [CS Brand] ", 
+            "is_random": false, 
             "name": "Credibility [CS Brand] ", 
             "to_edges": [
                 409, 
@@ -4061,10 +4163,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 721
             ], 
             "id": "Elaborate Fundraising targets", 
+            "is_random": false, 
             "name": "Elaborate Fundraising targets", 
             "to_edges": [
                 454
@@ -4074,11 +4178,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 734, 
                 743
             ], 
             "id": "*Engage employees in events1", 
+            "is_random": false, 
             "name": "*Engage employees in events1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4086,10 +4192,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 548
             ], 
             "id": "Sponsors for events be found", 
+            "is_random": false, 
             "name": "Sponsors for events be found", 
             "to_edges": [
                 368, 
@@ -4100,8 +4208,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sponsor partner\\ncontacts2", 
+            "is_random": false, 
             "name": "Sponsor partner\\ncontacts2", 
             "to_edges": [
                 342, 
@@ -4114,10 +4224,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 670
             ], 
             "id": "! Marketing from government be acquired", 
+            "is_random": false, 
             "name": "! Marketing from government be acquired", 
             "to_edges": [
                 517
@@ -4127,12 +4239,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 425, 
                 490, 
                 696
             ], 
             "id": "Become a patron", 
+            "is_random": false, 
             "name": "Become a patron", 
             "to_edges": [
                 719
@@ -4142,12 +4256,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 600, 
                 612, 
                 705
             ], 
             "id": "Become a Official Partner", 
+            "is_random": false, 
             "name": "Become a Official Partner", 
             "to_edges": [
                 610, 
@@ -4159,8 +4275,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Presentation Skills 1", 
+            "is_random": false, 
             "name": "Presentation Skills 1", 
             "to_edges": [
                 729
@@ -4170,10 +4288,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 603
             ], 
             "id": "Provide partner contacts to CS", 
+            "is_random": false, 
             "name": "Provide partner contacts to CS", 
             "to_edges": [], 
             "type": "task"
@@ -4181,8 +4301,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create branded products", 
+            "is_random": false, 
             "name": "Create branded products", 
             "to_edges": [
                 345
@@ -4192,8 +4314,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Run Fundraiser in Schools", 
+            "is_random": false, 
             "name": "Run Fundraiser in Schools", 
             "to_edges": [
                 400
@@ -4203,12 +4327,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 487, 
                 569, 
                 593
             ], 
             "id": "Recognition", 
+            "is_random": false, 
             "name": "Recognition", 
             "to_edges": [
                 375, 
@@ -4221,10 +4347,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 642
             ], 
             "id": "Sponsors marketing channels be used", 
+            "is_random": false, 
             "name": "Sponsors marketing channels be used", 
             "to_edges": [
                 551, 
@@ -4236,10 +4364,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 496
             ], 
             "id": "Credibility [CS Brand] 2", 
+            "is_random": false, 
             "name": "Credibility [CS Brand] 2", 
             "to_edges": [
                 403
@@ -4249,10 +4379,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 689
             ], 
             "id": "Sponsor partner\\ncontacts", 
+            "is_random": false, 
             "name": "Sponsor partner\\ncontacts", 
             "to_edges": [
                 603
@@ -4262,8 +4394,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reallocate resources", 
+            "is_random": false, 
             "name": "Reallocate resources", 
             "to_edges": [
                 477
@@ -4273,10 +4407,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 417
             ], 
             "id": "Create Life Long Volunteer Spirit1", 
+            "is_random": false, 
             "name": "Create Life Long Volunteer Spirit1", 
             "to_edges": [
                 365
@@ -4286,10 +4422,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 652
             ], 
             "id": "!Acquire public speaking skills", 
+            "is_random": false, 
             "name": "!Acquire public speaking skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4297,10 +4435,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 662
             ], 
             "id": "Company Relationship be retained  after Mergers", 
+            "is_random": false, 
             "name": "Company Relationship be retained  after Mergers", 
             "to_edges": [
                 367
@@ -4310,6 +4450,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 372, 
                 438, 
@@ -4317,6 +4458,7 @@
                 700
             ], 
             "id": "Increase [Awareness]", 
+            "is_random": false, 
             "name": "Increase [Awareness]", 
             "to_edges": [
                 390
@@ -4326,8 +4468,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Not for Profit Partners Be Involved in Events", 
+            "is_random": false, 
             "name": "Not for Profit Partners Be Involved in Events", 
             "to_edges": [
                 678
@@ -4337,10 +4481,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 377
             ], 
             "id": "*Engagement Student Ambassadors in promoting awareness", 
+            "is_random": false, 
             "name": "*Engagement Student Ambassadors in promoting awareness", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4348,10 +4494,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 465
             ], 
             "id": "Responsible Usage [Sponsor Funds] ", 
+            "is_random": false, 
             "name": "Responsible Usage [Sponsor Funds] ", 
             "to_edges": [
                 666
@@ -4361,10 +4509,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 346
             ], 
             "id": "Happiness [Staff]3", 
+            "is_random": false, 
             "name": "Happiness [Staff]3", 
             "to_edges": [
                 560, 
@@ -4375,10 +4525,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 389
             ], 
             "id": "SA Give CS Presentations", 
+            "is_random": false, 
             "name": "SA Give CS Presentations", 
             "to_edges": [
                 378, 
@@ -4389,11 +4541,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 530, 
                 687
             ], 
             "id": "Put on fundraising web events", 
+            "is_random": false, 
             "name": "Put on fundraising web events", 
             "to_edges": [], 
             "type": "task"
@@ -4401,11 +4555,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 362, 
                 717
             ], 
             "id": "High Response [Individual Donors] 1", 
+            "is_random": false, 
             "name": "High Response [Individual Donors] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4413,8 +4569,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Elaborate Fundraising targets1", 
+            "is_random": false, 
             "name": "Elaborate Fundraising targets1", 
             "to_edges": [
                 721
@@ -4424,12 +4582,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 329, 
                 631, 
                 693
             ], 
             "id": "Staff Be Supported ", 
+            "is_random": false, 
             "name": "Staff Be Supported ", 
             "to_edges": [
                 737
@@ -4439,8 +4599,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Give CS Presentations", 
+            "is_random": false, 
             "name": "Give CS Presentations", 
             "to_edges": [
                 389
@@ -4450,8 +4612,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Speak at Fundraisers", 
+            "is_random": false, 
             "name": "Speak at Fundraisers", 
             "to_edges": [
                 516
@@ -4461,10 +4625,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 457
             ], 
             "id": "Avoid Over-Marketing Services ", 
+            "is_random": false, 
             "name": "Avoid Over-Marketing Services ", 
             "to_edges": [
                 738
@@ -4474,11 +4640,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 373, 
                 694
             ], 
             "id": "Get Corporate Partner Information from Document Library1", 
+            "is_random": false, 
             "name": "Get Corporate Partner Information from Document Library1", 
             "to_edges": [
                 336
@@ -4488,11 +4656,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 485, 
                 747
             ], 
             "id": "Engagement [Sponsors in the Cause of CS] ", 
+            "is_random": false, 
             "name": "Engagement [Sponsors in the Cause of CS] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4500,11 +4670,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 482, 
                 695
             ], 
             "id": "Positive [Reputation] ", 
+            "is_random": false, 
             "name": "Positive [Reputation] ", 
             "to_edges": [
                 472, 
@@ -4515,10 +4687,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 510
             ], 
             "id": "Agreement", 
+            "is_random": false, 
             "name": "Agreement", 
             "to_edges": [
                 681
@@ -4528,10 +4702,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 702
             ], 
             "id": "Single charitable registration number", 
+            "is_random": false, 
             "name": "Single charitable registration number", 
             "to_edges": [
                 352
@@ -4541,10 +4717,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 360
             ], 
             "id": "National Event Calendar", 
+            "is_random": false, 
             "name": "National Event Calendar", 
             "to_edges": [
                 710
@@ -4554,8 +4732,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Inform Sponsors of Progress ", 
+            "is_random": false, 
             "name": "Inform Sponsors of Progress ", 
             "to_edges": [
                 331
@@ -4565,8 +4745,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get donor database", 
+            "is_random": false, 
             "name": "Get donor database", 
             "to_edges": [
                 607, 
@@ -4577,10 +4759,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 352
             ], 
             "id": "*Single charitable registration number be used", 
+            "is_random": false, 
             "name": "*Single charitable registration number be used", 
             "to_edges": [], 
             "type": "goal"
@@ -4588,8 +4772,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free advertisement", 
+            "is_random": false, 
             "name": "Free advertisement", 
             "to_edges": [
                 497
@@ -4599,10 +4785,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 602
             ], 
             "id": "Use sponsor logo", 
+            "is_random": false, 
             "name": "Use sponsor logo", 
             "to_edges": [
                 349, 
@@ -4613,8 +4801,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Stay in Touch program", 
+            "is_random": false, 
             "name": "Implement Stay in Touch program", 
             "to_edges": [
                 329
@@ -4624,10 +4814,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 449
             ], 
             "id": "Involvement [Not For Profit Partners in Events]", 
+            "is_random": false, 
             "name": "Involvement [Not For Profit Partners in Events]", 
             "to_edges": [
                 504
@@ -4637,11 +4829,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 340, 
                 521
             ], 
             "id": "Engagement of Sponsor Employees in Fund Development", 
+            "is_random": false, 
             "name": "Engagement of Sponsor Employees in Fund Development", 
             "to_edges": [
                 439, 
@@ -4654,8 +4848,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Credibility [CS Brand] 1", 
+            "is_random": false, 
             "name": "Credibility [CS Brand] 1", 
             "to_edges": [
                 496, 
@@ -4666,8 +4862,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reallocate resources1", 
+            "is_random": false, 
             "name": "Reallocate resources1", 
             "to_edges": [
                 613
@@ -4677,10 +4875,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 736
             ], 
             "id": "Exclusive Relationships [Official Partners] 1", 
+            "is_random": false, 
             "name": "Exclusive Relationships [Official Partners] 1", 
             "to_edges": [
                 424
@@ -4690,12 +4890,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 380, 
                 575, 
                 643
             ], 
             "id": "Contribution be made", 
+            "is_random": false, 
             "name": "Contribution be made", 
             "to_edges": [], 
             "type": "goal"
@@ -4703,10 +4905,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 461
             ], 
             "id": "Quick [Response to Sponsors] 1", 
+            "is_random": false, 
             "name": "Quick [Response to Sponsors] 1", 
             "to_edges": [
                 745
@@ -4716,12 +4920,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 445, 
                 446, 
                 537
             ], 
             "id": "Appear as Good Corporate Citizens ", 
+            "is_random": false, 
             "name": "Appear as Good Corporate Citizens ", 
             "to_edges": [
                 682
@@ -4731,10 +4937,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 439
             ], 
             "id": "Engage Employees in events", 
+            "is_random": false, 
             "name": "Engage Employees in events", 
             "to_edges": [
                 458
@@ -4744,11 +4952,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 559, 
                 623
             ], 
             "id": "*Good project management", 
+            "is_random": false, 
             "name": "*Good project management", 
             "to_edges": [
                 330
@@ -4758,8 +4968,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put on Orientation Process for Fund Development and Marketing Staff ", 
+            "is_random": false, 
             "name": "Put on Orientation Process for Fund Development and Marketing Staff ", 
             "to_edges": [
                 631
@@ -4769,12 +4981,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 480, 
                 697, 
                 728
             ], 
             "id": "Cobranding", 
+            "is_random": false, 
             "name": "Cobranding", 
             "to_edges": [
                 434, 
@@ -4786,8 +5000,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Organize discussions with Sponsors", 
+            "is_random": false, 
             "name": "Organize discussions with Sponsors", 
             "to_edges": [
                 701
@@ -4797,11 +5013,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 420, 
                 739
             ], 
             "id": "Provide PAP to Staff\\nUsing the Document Library", 
+            "is_random": false, 
             "name": "Provide PAP to Staff\\nUsing the Document Library", 
             "to_edges": [
                 581
@@ -4811,6 +5029,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 450, 
                 452, 
@@ -4823,6 +5042,7 @@
                 641
             ], 
             "id": "Match fundraising targets", 
+            "is_random": false, 
             "name": "Match fundraising targets", 
             "to_edges": [
                 427
@@ -4832,12 +5052,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 369, 
                 525, 
                 527
             ], 
             "id": "Funds Be Raised ", 
+            "is_random": false, 
             "name": "Funds Be Raised ", 
             "to_edges": [
                 627, 
@@ -4849,10 +5071,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 718
             ], 
             "id": "! Provide compiled call data to Media", 
+            "is_random": false, 
             "name": "! Provide compiled call data to Media", 
             "to_edges": [], 
             "type": "task"
@@ -4860,8 +5084,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "National Marketing Strategy ", 
+            "is_random": false, 
             "name": "National Marketing Strategy ", 
             "to_edges": [
                 598
@@ -4871,6 +5097,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 387, 
                 520, 
@@ -4879,6 +5106,7 @@
                 676
             ], 
             "id": "Market CS Brand ", 
+            "is_random": false, 
             "name": "Market CS Brand ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4886,10 +5114,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 574
             ], 
             "id": "Long Term [Funding] ", 
+            "is_random": false, 
             "name": "Long Term [Funding] ", 
             "to_edges": [
                 540
@@ -4899,11 +5129,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 447, 
                 663
             ], 
             "id": " Free services", 
+            "is_random": false, 
             "name": " Free services", 
             "to_edges": [
                 395
@@ -4913,6 +5145,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 334, 
                 378, 
@@ -4920,6 +5153,7 @@
                 714
             ], 
             "id": "Improve Image to Kids", 
+            "is_random": false, 
             "name": "Improve Image to Kids", 
             "to_edges": [
                 483
@@ -4929,10 +5163,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 629
             ], 
             "id": "Acquire [Government funding] ", 
+            "is_random": false, 
             "name": "Acquire [Government funding] ", 
             "to_edges": [
                 583
@@ -4942,6 +5178,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 435, 
                 506, 
@@ -4949,6 +5186,7 @@
                 708
             ], 
             "id": "Market fundraising events1", 
+            "is_random": false, 
             "name": "Market fundraising events1", 
             "to_edges": [
                 429, 
@@ -4959,10 +5197,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 458
             ], 
             "id": "Engage Employees in Fundraising events", 
+            "is_random": false, 
             "name": "Engage Employees in Fundraising events", 
             "to_edges": [
                 660
@@ -4972,10 +5212,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 720
             ], 
             "id": "Get PAP Information  1", 
+            "is_random": false, 
             "name": "Get PAP Information  1", 
             "to_edges": [
                 418
@@ -4985,6 +5227,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 488, 
                 590, 
@@ -4992,6 +5235,7 @@
                 650
             ], 
             "id": "Meet Corporate Sponsors Needs ", 
+            "is_random": false, 
             "name": "Meet Corporate Sponsors Needs ", 
             "to_edges": [
                 326, 
@@ -5002,10 +5246,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 376
             ], 
             "id": "Provide fundraising services", 
+            "is_random": false, 
             "name": "Provide fundraising services", 
             "to_edges": [], 
             "type": "task"
@@ -5013,10 +5259,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 673
             ], 
             "id": "Trust [of Sponsors towards CS] 2", 
+            "is_random": false, 
             "name": "Trust [of Sponsors towards CS] 2", 
             "to_edges": [
                 344
@@ -5026,11 +5274,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 523, 
                 607
             ], 
             "id": "Get donor /accounting database", 
+            "is_random": false, 
             "name": "Get donor /accounting database", 
             "to_edges": [
                 358
@@ -5040,10 +5290,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 509
             ], 
             "id": "Collect pledge online ", 
+            "is_random": false, 
             "name": "Collect pledge online ", 
             "to_edges": [
                 468, 
@@ -5054,6 +5306,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 384, 
                 451, 
@@ -5061,6 +5314,7 @@
                 672
             ], 
             "id": "Make contribution to charity", 
+            "is_random": false, 
             "name": "Make contribution to charity", 
             "to_edges": [
                 490, 
@@ -5072,10 +5326,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 374
             ], 
             "id": "Contribute [to a Good Cause] ", 
+            "is_random": false, 
             "name": "Contribute [to a Good Cause] ", 
             "to_edges": [
                 487, 
@@ -5087,8 +5343,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Volunteers1", 
+            "is_random": false, 
             "name": "Increase Volunteers1", 
             "to_edges": [
                 653
@@ -5098,8 +5356,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Collect donor information", 
+            "is_random": false, 
             "name": "Collect donor information", 
             "to_edges": [
                 564
@@ -5109,10 +5369,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 691
             ], 
             "id": "Get sponsorship proposal", 
+            "is_random": false, 
             "name": "Get sponsorship proposal", 
             "to_edges": [
                 464, 
@@ -5124,8 +5386,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Write Articles for Website 1", 
+            "is_random": false, 
             "name": "! Write Articles for Website 1", 
             "to_edges": [
                 604
@@ -5135,11 +5399,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 567, 
                 703
             ], 
             "id": "Agreement [Staff Over Corporate Partner Expectations] ", 
+            "is_random": false, 
             "name": "Agreement [Staff Over Corporate Partner Expectations] ", 
             "to_edges": [
                 355
@@ -5149,10 +5415,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 405
             ], 
             "id": "Project deadlines be met", 
+            "is_random": false, 
             "name": "Project deadlines be met", 
             "to_edges": [
                 518
@@ -5162,8 +5430,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide free services", 
+            "is_random": false, 
             "name": "Provide free services", 
             "to_edges": [
                 663, 
@@ -5174,10 +5444,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 557
             ], 
             "id": "Manage Accounts 1", 
+            "is_random": false, 
             "name": "Manage Accounts 1", 
             "to_edges": [], 
             "type": "task"
@@ -5185,10 +5457,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 427
             ], 
             "id": "Match Fundraising targets", 
+            "is_random": false, 
             "name": "Match Fundraising targets", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5196,8 +5470,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Engagement [Sponsor Employees in Promoting Awareness] 1", 
+            "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] 1", 
             "to_edges": [
                 495
@@ -5207,8 +5483,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Work with the Regions to Implement Events ", 
+            "is_random": false, 
             "name": "Work with the Regions to Implement Events ", 
             "to_edges": [
                 391, 
@@ -5219,8 +5497,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Project Management Skills ", 
+            "is_random": false, 
             "name": "Project Management Skills ", 
             "to_edges": [
                 559, 
@@ -5231,10 +5511,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 635
             ], 
             "id": "Create General Ledgers 1", 
+            "is_random": false, 
             "name": "Create General Ledgers 1", 
             "to_edges": [], 
             "type": "task"
@@ -5242,8 +5524,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Positive Internal Opinion1", 
+            "is_random": false, 
             "name": "Positive Internal Opinion1", 
             "to_edges": [
                 630
@@ -5253,6 +5537,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 344, 
                 367, 
@@ -5261,6 +5546,7 @@
                 513
             ], 
             "id": "Retain [Sponsors] 1", 
+            "is_random": false, 
             "name": "Retain [Sponsors] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5268,10 +5554,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 713
             ], 
             "id": "Up to Date [Information on programs] 1", 
+            "is_random": false, 
             "name": "Up to Date [Information on programs] 1", 
             "to_edges": [
                 428
@@ -5281,10 +5569,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 519
             ], 
             "id": "Get sponsors for events", 
+            "is_random": false, 
             "name": "Get sponsors for events", 
             "to_edges": [
                 548
@@ -5294,10 +5584,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 622
             ], 
             "id": "Increased Involvement [Counselors in Events] ", 
+            "is_random": false, 
             "name": "Increased Involvement [Counselors in Events] ", 
             "to_edges": [
                 431
@@ -5307,11 +5599,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 423, 
                 502
             ], 
             "id": "Unite volunteers and sponsors", 
+            "is_random": false, 
             "name": "Unite volunteers and sponsors", 
             "to_edges": [
                 408, 
@@ -5322,11 +5616,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 479, 
                 674
             ], 
             "id": "*Good project management ", 
+            "is_random": false, 
             "name": "*Good project management ", 
             "to_edges": [
                 746
@@ -5336,6 +5632,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 364, 
                 436, 
@@ -5344,6 +5641,7 @@
                 608
             ], 
             "id": "Put on Fundraising Events ", 
+            "is_random": false, 
             "name": "Put on Fundraising Events ", 
             "to_edges": [
                 525
@@ -5353,8 +5651,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Donor/Accounting Database", 
+            "is_random": false, 
             "name": "Donor/Accounting Database", 
             "to_edges": [
                 523
@@ -5364,10 +5664,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 729
             ], 
             "id": "Presentation Skills ", 
+            "is_random": false, 
             "name": "Presentation Skills ", 
             "to_edges": [
                 501
@@ -5377,10 +5679,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 727
             ], 
             "id": "Get web technology", 
+            "is_random": false, 
             "name": "Get web technology", 
             "to_edges": [
                 687
@@ -5390,10 +5694,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 544
             ], 
             "id": "! Market CS Service", 
+            "is_random": false, 
             "name": "! Market CS Service", 
             "to_edges": [
                 670
@@ -5403,10 +5709,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 645
             ], 
             "id": "Quality [Services] 1", 
+            "is_random": false, 
             "name": "Quality [Services] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5414,10 +5722,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 678
             ], 
             "id": "Involve Not for Profit Partners in Events", 
+            "is_random": false, 
             "name": "Involve Not for Profit Partners in Events", 
             "to_edges": [
                 579
@@ -5427,10 +5737,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 681
             ], 
             "id": "Reach agreement1", 
+            "is_random": false, 
             "name": "Reach agreement1", 
             "to_edges": [
                 425, 
@@ -5442,10 +5754,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 740
             ], 
             "id": "Increased Involvement [Counselors in Events] 1", 
+            "is_random": false, 
             "name": "Increased Involvement [Counselors in Events] 1", 
             "to_edges": [
                 413, 
@@ -5457,11 +5771,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 326, 
                 730
             ], 
             "id": "*Corporate sponsors feel included", 
+            "is_random": false, 
             "name": "*Corporate sponsors feel included", 
             "to_edges": [
                 444
@@ -5471,10 +5787,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 437
             ], 
             "id": "Recognize\\nSponsor contribution 1", 
+            "is_random": false, 
             "name": "Recognize\\nSponsor contribution 1", 
             "to_edges": [
                 650
@@ -5484,10 +5802,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 712
             ], 
             "id": "Happiness [Staff]1", 
+            "is_random": false, 
             "name": "Happiness [Staff]1", 
             "to_edges": [
                 455
@@ -5497,8 +5817,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Quick [Response to Sponsors] ", 
+            "is_random": false, 
             "name": "Quick [Response to Sponsors] ", 
             "to_edges": [
                 461, 
@@ -5509,8 +5831,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Logo to CS", 
+            "is_random": false, 
             "name": "Provide Logo to CS", 
             "to_edges": [
                 480, 
@@ -5521,10 +5845,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 431
             ], 
             "id": "Increase Connection [Counselors and Community] ", 
+            "is_random": false, 
             "name": "Increase Connection [Counselors and Community] ", 
             "to_edges": [
                 453
@@ -5534,8 +5860,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Timely services", 
+            "is_random": false, 
             "name": "Timely services", 
             "to_edges": [
                 396
@@ -5545,8 +5873,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Share PAP in Document Library", 
+            "is_random": false, 
             "name": "Share PAP in Document Library", 
             "to_edges": [
                 739
@@ -5556,10 +5886,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 540
             ], 
             "id": "Long Term [Funding] 1", 
+            "is_random": false, 
             "name": "Long Term [Funding] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5567,8 +5899,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get Corporate Partner Information from DL1", 
+            "is_random": false, 
             "name": "Get Corporate Partner Information from DL1", 
             "to_edges": [
                 601
@@ -5578,8 +5912,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Retain [Sponsors] 2", 
+            "is_random": false, 
             "name": "Retain [Sponsors] 2", 
             "to_edges": [
                 388
@@ -5589,10 +5925,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 416
             ], 
             "id": "Experienced [Marketing Partners] ", 
+            "is_random": false, 
             "name": "Experienced [Marketing Partners] ", 
             "to_edges": [
                 404, 
@@ -5604,8 +5942,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sponsors Include CS Logos and Descriptions on their Products ", 
+            "is_random": false, 
             "name": "Sponsors Include CS Logos and Descriptions on their Products ", 
             "to_edges": [
                 642
@@ -5615,10 +5955,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 412
             ], 
             "id": "Regional Staff feel included1", 
+            "is_random": false, 
             "name": "Regional Staff feel included1", 
             "to_edges": [
                 383
@@ -5628,8 +5970,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Bi-Weekly Conference Calls ", 
+            "is_random": false, 
             "name": "Bi-Weekly Conference Calls ", 
             "to_edges": [
                 456, 
@@ -5640,10 +5984,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 335
             ], 
             "id": "Recognize\\nSponsor contribution ", 
+            "is_random": false, 
             "name": "Recognize\\nSponsor contribution ", 
             "to_edges": [
                 437, 
@@ -5654,12 +6000,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 327, 
                 460, 
                 665
             ], 
             "id": "! Marketing be made using dedicated counselor", 
+            "is_random": false, 
             "name": "! Marketing be made using dedicated counselor", 
             "to_edges": [
                 589
@@ -5669,8 +6017,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Give philanthropic donation", 
+            "is_random": false, 
             "name": "Give philanthropic donation", 
             "to_edges": [
                 380, 
@@ -5681,10 +6031,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 332
             ], 
             "id": "! Write Articles for Magazines ", 
+            "is_random": false, 
             "name": "! Write Articles for Magazines ", 
             "to_edges": [
                 665
@@ -5694,8 +6046,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Exclusive Brand and Logo use", 
+            "is_random": false, 
             "name": "Exclusive Brand and Logo use", 
             "to_edges": [
                 620, 
@@ -5706,8 +6060,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Quality [Services] ", 
+            "is_random": false, 
             "name": "Quality [Services] ", 
             "to_edges": [
                 512, 
@@ -5718,6 +6074,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 358, 
                 476, 
@@ -5727,6 +6084,7 @@
                 690
             ], 
             "id": "Put on Fundraising Events on the Web", 
+            "is_random": false, 
             "name": "Put on Fundraising Events on the Web", 
             "to_edges": [
                 369
@@ -5736,10 +6094,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 400
             ], 
             "id": "SA Run Fundraiser in Schools", 
+            "is_random": false, 
             "name": "SA Run Fundraiser in Schools", 
             "to_edges": [
                 527
@@ -5749,10 +6109,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 556
             ], 
             "id": "Responsible Usage [Sponsor Funds] 2", 
+            "is_random": false, 
             "name": "Responsible Usage [Sponsor Funds] 2", 
             "to_edges": [
                 704
@@ -5762,10 +6124,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 655
             ], 
             "id": "Collect  pledge during event", 
+            "is_random": false, 
             "name": "Collect  pledge during event", 
             "to_edges": [
                 364, 
@@ -5776,10 +6140,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 588
             ], 
             "id": "Get [Corporate Sponsor Funds] ", 
+            "is_random": false, 
             "name": "Get [Corporate Sponsor Funds] ", 
             "to_edges": [
                 448, 
@@ -5790,6 +6156,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 341, 
                 347, 
@@ -5800,6 +6167,7 @@
                 701
             ], 
             "id": "Manage PAP", 
+            "is_random": false, 
             "name": "Manage PAP", 
             "to_edges": [
                 443
@@ -5809,8 +6177,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Involvement [Not For Profit Partners in Events]1", 
+            "is_random": false, 
             "name": "Involvement [Not For Profit Partners in Events]1", 
             "to_edges": [
                 449
@@ -5820,10 +6190,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 415
             ], 
             "id": "*Events be marketed", 
+            "is_random": false, 
             "name": "*Events be marketed", 
             "to_edges": [
                 393, 
@@ -5835,8 +6207,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create General Ledgers ", 
+            "is_random": false, 
             "name": "Create General Ledgers ", 
             "to_edges": [
                 635, 
@@ -5847,8 +6221,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Access Speed [  Regional Offices to Document Library]", 
+            "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to Document Library]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5856,12 +6232,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 345, 
                 486, 
                 563
             ], 
             "id": "Develop external comunications", 
+            "is_random": false, 
             "name": "Develop external comunications", 
             "to_edges": [
                 534, 
@@ -5874,8 +6252,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased availability to sponsors", 
+            "is_random": false, 
             "name": "Increased availability to sponsors", 
             "to_edges": [
                 422
@@ -5885,10 +6265,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 562
             ], 
             "id": "Accountability of services", 
+            "is_random": false, 
             "name": "Accountability of services", 
             "to_edges": [
                 339
@@ -5898,10 +6280,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 582
             ], 
             "id": "High Response [Individual Donors] 2", 
+            "is_random": false, 
             "name": "High Response [Individual Donors] 2", 
             "to_edges": [
                 348, 
@@ -5912,10 +6296,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 421
             ], 
             "id": "Be informed of fundraising events ", 
+            "is_random": false, 
             "name": "Be informed of fundraising events ", 
             "to_edges": [
                 419, 
@@ -5926,10 +6312,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 516
             ], 
             "id": "SA Speak at Fundraisers", 
+            "is_random": false, 
             "name": "SA Speak at Fundraisers", 
             "to_edges": [
                 334, 
@@ -5941,10 +6329,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 711
             ], 
             "id": "Happiness [Staff]2", 
+            "is_random": false, 
             "name": "Happiness [Staff]2", 
             "to_edges": [
                 712
@@ -5954,10 +6344,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 391
             ], 
             "id": "Event coordination", 
+            "is_random": false, 
             "name": "Event coordination", 
             "to_edges": [], 
             "type": "task"
@@ -5965,11 +6357,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 418, 
                 573
             ], 
             "id": "Get Corporate Partner Information from Document Library", 
+            "is_random": false, 
             "name": "Get Corporate Partner Information from Document Library", 
             "to_edges": [
                 683
@@ -5979,10 +6373,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 343
             ], 
             "id": "Increase [Free Services]", 
+            "is_random": false, 
             "name": "Increase [Free Services]", 
             "to_edges": [
                 688
@@ -5992,6 +6388,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 379, 
                 403, 
@@ -6002,6 +6399,7 @@
                 725
             ], 
             "id": "Trust [of Donor] ", 
+            "is_random": false, 
             "name": "Trust [of Donor] ", 
             "to_edges": [
                 426
@@ -6011,11 +6409,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 535, 
                 625
             ], 
             "id": "Positive Image [To Employees] ", 
+            "is_random": false, 
             "name": "Positive Image [To Employees] ", 
             "to_edges": [
                 536
@@ -6025,12 +6425,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 333, 
                 684, 
                 716
             ], 
             "id": "Recognize\\nSponsor contribution 2", 
+            "is_random": false, 
             "name": "Recognize\\nSponsor contribution 2", 
             "to_edges": [
                 335
@@ -6040,10 +6442,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 668
             ], 
             "id": "Engagement [Sponsor Employees in Promoting Awareness] 2", 
+            "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] 2", 
             "to_edges": [
                 617
@@ -6053,10 +6457,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 722
             ], 
             "id": "Collect pledge online", 
+            "is_random": false, 
             "name": "Collect pledge online", 
             "to_edges": [
                 514, 
@@ -6067,10 +6473,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 381
             ], 
             "id": "Promotion Resources", 
+            "is_random": false, 
             "name": "Promotion Resources", 
             "to_edges": [], 
             "type": "resource"
@@ -6078,8 +6486,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Include Corporate Partners [In the Development of Press Releases]  ", 
+            "is_random": false, 
             "name": "Include Corporate Partners [In the Development of Press Releases]  ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6087,10 +6497,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 467
             ], 
             "id": "Manage Receivables 1", 
+            "is_random": false, 
             "name": "Manage Receivables 1", 
             "to_edges": [], 
             "type": "task"
@@ -6098,8 +6510,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide free services1", 
+            "is_random": false, 
             "name": "Provide free services1", 
             "to_edges": [
                 447, 
@@ -6110,8 +6524,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Place Sponsor Logos in Events ", 
+            "is_random": false, 
             "name": "Place Sponsor Logos in Events ", 
             "to_edges": [], 
             "type": "task"
@@ -6119,8 +6535,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Follow Highest Ethical Guidelines 1", 
+            "is_random": false, 
             "name": "Follow Highest Ethical Guidelines 1", 
             "to_edges": [
                 499, 
@@ -6131,10 +6549,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 647
             ], 
             "id": "Get PAP Information  ", 
+            "is_random": false, 
             "name": "Get PAP Information  ", 
             "to_edges": [
                 373
@@ -6144,8 +6564,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Answers be provided to media queries", 
+            "is_random": false, 
             "name": "Answers be provided to media queries", 
             "to_edges": [
                 585
@@ -6155,10 +6577,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 426
             ], 
             "id": "Contribute [to a Good Cause] 1", 
+            "is_random": false, 
             "name": "Contribute [to a Good Cause] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6166,10 +6590,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 731
             ], 
             "id": "Trust [of Sponsors towards CS] 1", 
+            "is_random": false, 
             "name": "Trust [of Sponsors towards CS] 1", 
             "to_edges": [
                 673
@@ -6179,8 +6605,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Pledge\\nonline", 
+            "is_random": false, 
             "name": "Pledge\\nonline", 
             "to_edges": [
                 392, 
@@ -6191,11 +6619,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 348, 
                 546
             ], 
             "id": "Increase [Philanthropic Donations]", 
+            "is_random": false, 
             "name": "Increase [Philanthropic Donations]", 
             "to_edges": [
                 452
@@ -6205,11 +6635,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 337, 
                 636
             ], 
             "id": "Increased Interaction [Counselors with Media] ", 
+            "is_random": false, 
             "name": "Increased Interaction [Counselors with Media] ", 
             "to_edges": [
                 328
@@ -6219,8 +6651,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Share PAP in Document Library1", 
+            "is_random": false, 
             "name": "Share PAP in Document Library1", 
             "to_edges": [
                 647, 
@@ -6231,8 +6665,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Store donor transactions into database", 
+            "is_random": false, 
             "name": "Store donor transactions into database", 
             "to_edges": [
                 522, 
@@ -6243,8 +6679,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sponsor partner\\ncontacts1", 
+            "is_random": false, 
             "name": "Sponsor partner\\ncontacts1", 
             "to_edges": [
                 343, 
@@ -6256,10 +6694,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 592
             ], 
             "id": "Provincial government", 
+            "is_random": false, 
             "name": "Provincial government", 
             "to_edges": [
                 544
@@ -6269,8 +6709,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Responsible Usage [Sponsor Funds] 1", 
+            "is_random": false, 
             "name": "Responsible Usage [Sponsor Funds] 1", 
             "to_edges": [
                 465, 
@@ -6281,6 +6723,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 474, 
                 481, 
@@ -6290,6 +6733,7 @@
                 724
             ], 
             "id": "Minimize expenses", 
+            "is_random": false, 
             "name": "Minimize expenses", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6297,8 +6741,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Track budgets", 
+            "is_random": false, 
             "name": "Track budgets", 
             "to_edges": [
                 580
@@ -6308,10 +6754,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 715
             ], 
             "id": "Accountability of services2", 
+            "is_random": false, 
             "name": "Accountability of services2", 
             "to_edges": [
                 471
@@ -6321,6 +6769,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 353, 
                 385, 
@@ -6329,6 +6778,7 @@
                 632
             ], 
             "id": "Market PHL Brand ", 
+            "is_random": false, 
             "name": "Market PHL Brand ", 
             "to_edges": [
                 372
@@ -6338,10 +6788,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 483
             ], 
             "id": "Improve Image to Kids1", 
+            "is_random": false, 
             "name": "Improve Image to Kids1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6349,10 +6801,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 392
             ], 
             "id": "Pledge online", 
+            "is_random": false, 
             "name": "Pledge online", 
             "to_edges": [
                 722
@@ -6362,10 +6816,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 614
             ], 
             "id": "Counselors who want a public voice be trained ", 
+            "is_random": false, 
             "name": "Counselors who want a public voice be trained ", 
             "to_edges": [
                 337
@@ -6375,10 +6831,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 390
             ], 
             "id": "Increase [Awareness]1", 
+            "is_random": false, 
             "name": "Increase [Awareness]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6386,8 +6844,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Email Corporate Partners Interesting and Relevant News Pieces ", 
+            "is_random": false, 
             "name": "Email Corporate Partners Interesting and Relevant News Pieces ", 
             "to_edges": [
                 669
@@ -6397,8 +6857,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Send recognition letters", 
+            "is_random": false, 
             "name": "Send recognition letters", 
             "to_edges": [
                 716
@@ -6408,12 +6870,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 430, 
                 478, 
                 726
             ], 
             "id": "Philanthropic donations ", 
+            "is_random": false, 
             "name": "Philanthropic donations ", 
             "to_edges": [], 
             "type": "task"
@@ -6421,11 +6885,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 386, 
                 443
             ], 
             "id": "Manage\\nPartner Relationship", 
+            "is_random": false, 
             "name": "Manage\\nPartner Relationship", 
             "to_edges": [
                 662, 
@@ -6436,10 +6902,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 604
             ], 
             "id": "! Write Articles for Website ", 
+            "is_random": false, 
             "name": "! Write Articles for Website ", 
             "to_edges": [
                 327
@@ -6449,10 +6917,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 428
             ], 
             "id": "Up to Date [Information on programs] ", 
+            "is_random": false, 
             "name": "Up to Date [Information on programs] ", 
             "to_edges": [
                 578
@@ -6462,10 +6932,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 671
             ], 
             "id": "Increase\\n[Awareness]", 
+            "is_random": false, 
             "name": "Increase\\n[Awareness]", 
             "to_edges": [
                 366, 
@@ -6476,8 +6948,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "[Increase] Awareness", 
+            "is_random": false, 
             "name": "[Increase] Awareness", 
             "to_edges": [
                 671
@@ -6487,11 +6961,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 331, 
                 669
             ], 
             "id": "Information be shared with sponsors", 
+            "is_random": false, 
             "name": "Information be shared with sponsors", 
             "to_edges": [
                 386, 
@@ -6503,10 +6979,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 554
             ], 
             "id": "Regional Staff feel included2", 
+            "is_random": false, 
             "name": "Regional Staff feel included2", 
             "to_edges": [
                 412
@@ -6516,11 +6994,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 368, 
                 459
             ], 
             "id": "Increase Involvement [Sponsors in Putting on Events] ", 
+            "is_random": false, 
             "name": "Increase Involvement [Sponsors in Putting on Events] ", 
             "to_edges": [
                 401, 
@@ -6535,8 +7015,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Exclusive Relationships [Official Partners] 2", 
+            "is_random": false, 
             "name": "Exclusive Relationships [Official Partners] 2", 
             "to_edges": [
                 488, 
@@ -6547,8 +7029,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Single charitable registration number1", 
+            "is_random": false, 
             "name": "Single charitable registration number1", 
             "to_edges": [
                 482, 
@@ -6559,11 +7043,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 503, 
                 587
             ], 
             "id": "Maintain 20% costs against revenues ratio", 
+            "is_random": false, 
             "name": "Maintain 20% costs against revenues ratio", 
             "to_edges": [
                 436, 
@@ -6575,12 +7061,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 515, 
                 526, 
                 742
             ], 
             "id": "Acquire free services", 
+            "is_random": false, 
             "name": "Acquire free services", 
             "to_edges": [
                 474
@@ -6590,10 +7078,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 524
             ], 
             "id": "Market fundraising events", 
+            "is_random": false, 
             "name": "Market fundraising events", 
             "to_edges": [
                 415
@@ -6603,8 +7093,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Timely provision of free services1", 
+            "is_random": false, 
             "name": "Timely provision of free services1", 
             "to_edges": [
                 432, 
@@ -6615,8 +7107,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Pitch to National Corporate Sponsors the Sponsorship of Regional Events ", 
+            "is_random": false, 
             "name": "Pitch to National Corporate Sponsors the Sponsorship of Regional Events ", 
             "to_edges": [
                 542
@@ -6626,8 +7120,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide philanthropic donation", 
+            "is_random": false, 
             "name": "Provide philanthropic donation", 
             "to_edges": [
                 547, 
@@ -6638,6 +7134,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 330, 
                 455, 
@@ -6647,6 +7144,7 @@
                 744
             ], 
             "id": "*Successful marketing campaign", 
+            "is_random": false, 
             "name": "*Successful marketing campaign", 
             "to_edges": [
                 385, 
@@ -6660,10 +7158,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 492
             ], 
             "id": "Engagement of Sponsor Employees in Fund Development1", 
+            "is_random": false, 
             "name": "Engagement of Sponsor Employees in Fund Development1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6671,8 +7171,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Pledge\\nDuring event", 
+            "is_random": false, 
             "name": "Pledge\\nDuring event", 
             "to_edges": [
                 410, 
@@ -6683,11 +7185,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 578, 
                 679
             ], 
             "id": "* Corporate sponsor feel included ", 
+            "is_random": false, 
             "name": "* Corporate sponsor feel included ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6695,10 +7199,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 620
             ], 
             "id": "Grant exclusive use of brand and logo", 
+            "is_random": false, 
             "name": "Grant exclusive use of brand and logo", 
             "to_edges": [
                 684
@@ -6708,10 +7214,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 683
             ], 
             "id": "Corporate Partner fundraising expectations be known ", 
+            "is_random": false, 
             "name": "Corporate Partner fundraising expectations be known ", 
             "to_edges": [
                 637
@@ -6721,8 +7229,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put Together Proposals for Corporate Sponsors", 
+            "is_random": false, 
             "name": "Put Together Proposals for Corporate Sponsors", 
             "to_edges": [
                 341
@@ -6732,10 +7242,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 741
             ], 
             "id": "Manage\\nPartner Relationship1", 
+            "is_random": false, 
             "name": "Manage\\nPartner Relationship1", 
             "to_edges": [
                 538
@@ -6745,10 +7257,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 442
             ], 
             "id": "Communicate with head office ", 
+            "is_random": false, 
             "name": "Communicate with head office ", 
             "to_edges": [], 
             "type": "task"
@@ -6756,10 +7270,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 351
             ], 
             "id": "Subscribe to Document Library Folders 2", 
+            "is_random": false, 
             "name": "Subscribe to Document Library Folders 2", 
             "to_edges": [
                 573
@@ -6769,10 +7285,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 499
             ], 
             "id": "Follow Highest Ethical Guidelines 2", 
+            "is_random": false, 
             "name": "Follow Highest Ethical Guidelines 2", 
             "to_edges": [
                 725
@@ -6782,8 +7300,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Engage employees in events", 
+            "is_random": false, 
             "name": "*Engage employees in events", 
             "to_edges": [
                 535, 
@@ -6794,8 +7314,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Counselor Speak on Kids Issues in General 1", 
+            "is_random": false, 
             "name": "! Counselor Speak on Kids Issues in General 1", 
             "to_edges": [
                 545
@@ -6805,8 +7327,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Real Time Tax Receipts ", 
+            "is_random": false, 
             "name": "Provide Real Time Tax Receipts ", 
             "to_edges": [
                 628, 
@@ -6817,10 +7341,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 628
             ], 
             "id": "Provide receipts", 
+            "is_random": false, 
             "name": "Provide receipts", 
             "to_edges": [
                 685
@@ -6830,10 +7356,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 710
             ], 
             "id": "Use national event calendar ", 
+            "is_random": false, 
             "name": "Use national event calendar ", 
             "to_edges": [
                 347
@@ -6843,10 +7371,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 357
             ], 
             "id": "Demonstrable Services 1", 
+            "is_random": false, 
             "name": "Demonstrable Services 1", 
             "to_edges": [
                 338, 
@@ -6857,10 +7387,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 514
             ], 
             "id": "Collect Pledge online", 
+            "is_random": false, 
             "name": "Collect Pledge online", 
             "to_edges": [
                 509
@@ -6870,11 +7402,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 422, 
                 594
             ], 
             "id": "Increased Availability [Counselors to Public/Sponsors]", 
+            "is_random": false, 
             "name": "Increased Availability [Counselors to Public/Sponsors]", 
             "to_edges": [
                 549, 
@@ -6885,11 +7419,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 441, 
                 473
             ], 
             "id": "Availability for Administration and Accounting Purposes Across CS ", 
+            "is_random": false, 
             "name": "Availability for Administration and Accounting Purposes Across CS ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6897,10 +7433,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 411
             ], 
             "id": "Published CS Stories", 
+            "is_random": false, 
             "name": "Published CS Stories", 
             "to_edges": [
                 732
@@ -6910,10 +7448,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 639
             ], 
             "id": "Attract [Sponsors]1", 
+            "is_random": false, 
             "name": "Attract [Sponsors]1", 
             "to_edges": [
                 543
@@ -6923,12 +7463,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 543, 
                 565, 
                 699
             ], 
             "id": "Attract [Sponsors]", 
+            "is_random": false, 
             "name": "Attract [Sponsors]", 
             "to_edges": [
                 370, 
@@ -6939,10 +7481,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 707
             ], 
             "id": "Funds", 
+            "is_random": false, 
             "name": "Funds", 
             "to_edges": [], 
             "type": "resource"
@@ -6950,12 +7494,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 365, 
                 408, 
                 653
             ], 
             "id": "Increase Volunteers", 
+            "is_random": false, 
             "name": "Increase Volunteers", 
             "to_edges": [
                 533
@@ -6965,8 +7511,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Up to date corporate partner information", 
+            "is_random": false, 
             "name": "Up to date corporate partner information", 
             "to_edges": [
                 361
@@ -6976,10 +7524,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 532
             ], 
             "id": "Subscribe to Document Library Folders ", 
+            "is_random": false, 
             "name": "Subscribe to Document Library Folders ", 
             "to_edges": [
                 420
@@ -6989,10 +7539,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 686
             ], 
             "id": "Get web event technology", 
+            "is_random": false, 
             "name": "Get web event technology", 
             "to_edges": [
                 476, 
@@ -7003,10 +7555,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 495
             ], 
             "id": "Engagement [Sponsor Employees in Promoting Awareness] ", 
+            "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] ", 
             "to_edges": [
                 387, 
@@ -7017,8 +7571,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put on orientation for volunteers", 
+            "is_random": false, 
             "name": "Put on orientation for volunteers", 
             "to_edges": [
                 693
@@ -7028,8 +7584,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Write Down Corporate Sponsors Objectives ", 
+            "is_random": false, 
             "name": "Write Down Corporate Sponsors Objectives ", 
             "to_edges": [
                 568
@@ -7039,10 +7597,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 396
             ], 
             "id": "Timely provision of free services", 
+            "is_random": false, 
             "name": "Timely provision of free services", 
             "to_edges": [
                 359
@@ -7052,10 +7612,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 469
             ], 
             "id": "Get donor technology", 
+            "is_random": false, 
             "name": "Get donor technology", 
             "to_edges": [
                 528
@@ -7065,10 +7627,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 617
             ], 
             "id": "Engage Employees in Promoting Awareness", 
+            "is_random": false, 
             "name": "Engage Employees in Promoting Awareness", 
             "to_edges": [
                 664
@@ -7078,10 +7642,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 336
             ], 
             "id": "Corporate Partner Marketing Expectations be known ", 
+            "is_random": false, 
             "name": "Corporate Partner Marketing Expectations be known ", 
             "to_edges": [
                 744
@@ -7091,10 +7657,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 529
             ], 
             "id": "Sponsor Logo", 
+            "is_random": false, 
             "name": "Sponsor Logo", 
             "to_edges": [
                 602
@@ -7104,8 +7672,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Develop national event calendar ", 
+            "is_random": false, 
             "name": "Develop national event calendar ", 
             "to_edges": [
                 360, 
@@ -7116,10 +7686,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 615
             ], 
             "id": "Demonstrable Services ", 
+            "is_random": false, 
             "name": "Demonstrable Services ", 
             "to_edges": [
                 505
@@ -7129,12 +7701,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 456, 
                 493, 
                 609
             ], 
             "id": "*Periodical Communication with regional staff be maintained", 
+            "is_random": false, 
             "name": "*Periodical Communication with regional staff be maintained", 
             "to_edges": [
                 354, 
@@ -7146,10 +7720,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 733
             ], 
             "id": "Provide funds1", 
+            "is_random": false, 
             "name": "Provide funds1", 
             "to_edges": [
                 588
@@ -7159,12 +7735,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 366, 
                 393, 
                 658
             ], 
             "id": "Attract event participants", 
+            "is_random": false, 
             "name": "Attract event participants", 
             "to_edges": [
                 340, 
@@ -7176,10 +7754,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 732
             ], 
             "id": "Hear CS stories", 
+            "is_random": false, 
             "name": "Hear CS stories", 
             "to_edges": [
                 649
@@ -7189,8 +7769,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Manage Accounts ", 
+            "is_random": false, 
             "name": "Manage Accounts ", 
             "to_edges": [
                 557, 
@@ -7201,10 +7783,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 545
             ], 
             "id": "! Counselor Speak on Kids Issues in General ", 
+            "is_random": false, 
             "name": "! Counselor Speak on Kids Issues in General ", 
             "to_edges": [
                 460, 
@@ -7216,8 +7800,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create Life Long Volunteer Spirit", 
+            "is_random": false, 
             "name": "Create Life Long Volunteer Spirit", 
             "to_edges": [
                 417
@@ -7227,8 +7813,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Communicate through Internet and phone", 
+            "is_random": false, 
             "name": "Communicate through Internet and phone", 
             "to_edges": [
                 440, 
@@ -7239,10 +7827,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 538
             ], 
             "id": "Sponsor Relationships Be Managed ", 
+            "is_random": false, 
             "name": "Sponsor Relationships Be Managed ", 
             "to_edges": [
                 414, 
@@ -7253,8 +7843,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide funds", 
+            "is_random": false, 
             "name": "Provide funds", 
             "to_edges": [
                 384, 
@@ -7265,6 +7857,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 586, 
                 644, 
@@ -7272,6 +7865,7 @@
                 677
             ], 
             "id": "Front End for Income Recording be supported", 
+            "is_random": false, 
             "name": "Front End for Income Recording be supported", 
             "to_edges": [
                 441
@@ -7281,12 +7875,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 401, 
                 675, 
                 688
             ], 
             "id": "Minimize [Cost of Events]", 
+            "is_random": false, 
             "name": "Minimize [Cost of Events]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7294,10 +7890,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 735
             ], 
             "id": "Pledge\\nDuring event1", 
+            "is_random": false, 
             "name": "Pledge\\nDuring event1", 
             "to_edges": [
                 655
@@ -7307,10 +7905,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 581
             ], 
             "id": " Corporate Partner Expectations be shared with staff", 
+            "is_random": false, 
             "name": " Corporate Partner Expectations be shared with staff", 
             "to_edges": [
                 590
@@ -7320,10 +7920,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 407
             ], 
             "id": "Subscribe to Document Library Folders 1", 
+            "is_random": false, 
             "name": "Subscribe to Document Library Folders 1", 
             "to_edges": [
                 694
@@ -7333,6 +7935,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 339, 
                 397, 
@@ -7342,6 +7945,7 @@
                 666
             ], 
             "id": "Trust [of Sponsors towards CS] ", 
+            "is_random": false, 
             "name": "Trust [of Sponsors towards CS] ", 
             "to_edges": [
                 374, 
@@ -7352,8 +7956,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Services be provided for Kids Bullying Line", 
+            "is_random": false, 
             "name": "! Services be provided for Kids Bullying Line", 
             "to_edges": [
                 592
@@ -7363,8 +7969,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Market [Only For Serious Issues] ", 
+            "is_random": false, 
             "name": "Market [Only For Serious Issues] ", 
             "to_edges": [
                 457
@@ -7374,6 +7982,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 388, 
                 414, 
@@ -7384,6 +7993,7 @@
                 638
             ], 
             "id": "Retain [Sponsors] ", 
+            "is_random": false, 
             "name": "Retain [Sponsors] ", 
             "to_edges": [
                 450, 
@@ -7394,8 +8004,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Experienced [marketing partners]", 
+            "is_random": false, 
             "name": "Experienced [marketing partners]", 
             "to_edges": [
                 416
@@ -7405,8 +8017,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Train counselors on public speaking", 
+            "is_random": false, 
             "name": "!Train counselors on public speaking", 
             "to_edges": [
                 614, 
@@ -7417,10 +8031,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 338
             ], 
             "id": "Demonstrable Services 2", 
+            "is_random": false, 
             "name": "Demonstrable Services 2", 
             "to_edges": [
                 379
@@ -7430,8 +8046,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Write Articles for Magazines 1", 
+            "is_random": false, 
             "name": "! Write Articles for Magazines 1", 
             "to_edges": [
                 332
@@ -7441,8 +8059,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Store donor information into database", 
+            "is_random": false, 
             "name": "Store donor information into database", 
             "to_edges": [
                 640
@@ -7452,8 +8072,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Engagement Student Ambassadors in promoting awareness1", 
+            "is_random": false, 
             "name": "*Engagement Student Ambassadors in promoting awareness1", 
             "to_edges": [
                 377
@@ -7463,10 +8085,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 512
             ], 
             "id": " Quality [Services] ", 
+            "is_random": false, 
             "name": " Quality [Services] ", 
             "to_edges": [
                 433
@@ -7476,11 +8100,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 342, 
                 497
             ], 
             "id": "Get free advertisement", 
+            "is_random": false, 
             "name": "Get free advertisement", 
             "to_edges": [
                 353, 
@@ -7491,8 +8117,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Positive [Reputation of CS]", 
+            "is_random": false, 
             "name": "Positive [Reputation of CS]", 
             "to_edges": [
                 466, 
@@ -7503,8 +8131,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Market through own channels", 
+            "is_random": false, 
             "name": "Market through own channels", 
             "to_edges": [
                 382, 
@@ -7515,12 +8145,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 361, 
                 440, 
                 698
             ], 
             "id": "Up to Date [ Information on Corporate Sponsors] ", 
+            "is_random": false, 
             "name": "Up to Date [ Information on Corporate Sponsors] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7528,6 +8160,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 463, 
                 558, 
@@ -7535,6 +8168,7 @@
                 618
             ], 
             "id": "Positive Association\\n[by Consumers] ", 
+            "is_random": false, 
             "name": "Positive Association\\n[by Consumers] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7542,6 +8176,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 349, 
                 350, 
@@ -7550,6 +8185,7 @@
                 634
             ], 
             "id": "Attract                 [Sponsors] ", 
+            "is_random": false, 
             "name": "Attract                 [Sponsors] ", 
             "to_edges": [
                 481, 
@@ -7561,8 +8197,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get philanthropic donations ", 
+            "is_random": false, 
             "name": "Get philanthropic donations ", 
             "to_edges": [
                 430, 
@@ -7574,10 +8212,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 395
             ], 
             "id": "Use free services", 
+            "is_random": false, 
             "name": "Use free services", 
             "to_edges": [
                 503
@@ -7587,6 +8227,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 462, 
                 466, 
@@ -7594,6 +8235,7 @@
                 504
             ], 
             "id": "Positive [Reputation of CS] ", 
+            "is_random": false, 
             "name": "Positive [Reputation of CS] ", 
             "to_edges": [
                 632, 
@@ -7604,12 +8246,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 413, 
                 454, 
                 560
             ], 
             "id": "Inspired staff", 
+            "is_random": false, 
             "name": "Inspired staff", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7617,10 +8261,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 511
             ], 
             "id": "Donor Information be recorded ", 
+            "is_random": false, 
             "name": "Donor Information be recorded ", 
             "to_edges": [
                 473
@@ -7630,12 +8276,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 448, 
                 591, 
                 611
             ], 
             "id": "Increased [Corporate sponsor funds]", 
+            "is_random": false, 
             "name": "Increased [Corporate sponsor funds]", 
             "to_edges": [
                 531
@@ -7645,10 +8293,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 738
             ], 
             "id": "Avoid Over-Marketing Services 1", 
+            "is_random": false, 
             "name": "Avoid Over-Marketing Services 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7656,8 +8306,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Participate in events", 
+            "is_random": false, 
             "name": "Participate in events", 
             "to_edges": [
                 541

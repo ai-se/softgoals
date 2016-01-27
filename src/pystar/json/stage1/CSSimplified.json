@@ -62,8 +62,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Consideration of Feedback [Managers]", 
+            "is_random": false, 
             "name": "Consideration of Feedback [Managers]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -71,8 +73,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Access Speed [  Regional Offices to DL]", 
+            "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to DL]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -80,8 +84,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Engagement Student Ambassadors in promoting awareness", 
+            "is_random": false, 
             "name": "*Engagement Student Ambassadors in promoting awareness", 
             "to_edges": [], 
             "type": "softgoal"
@@ -89,8 +95,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easily Accessible Technology Instructions1", 
+            "is_random": false, 
             "name": "Easily Accessible Technology Instructions1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -98,8 +106,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [], 
             "type": "task"
@@ -107,8 +117,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Follow Highest Ethical Guidelines ", 
+            "is_random": false, 
             "name": "Follow Highest Ethical Guidelines ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -116,8 +128,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Voice Counselling", 
+            "is_random": false, 
             "name": "Kids Use Voice Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -125,8 +139,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Help Put on SA Training Conferences", 
+            "is_random": false, 
             "name": "Help Put on SA Training Conferences", 
             "to_edges": [], 
             "type": "task"
@@ -134,8 +150,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Ask a Counsellor Section\\ns", 
+            "is_random": false, 
             "name": "Kids Use Ask a Counsellor Section\\ns", 
             "to_edges": [], 
             "type": "task"
@@ -143,8 +161,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "CS Be Not for Profit", 
+            "is_random": false, 
             "name": "CS Be Not for Profit", 
             "to_edges": [], 
             "type": "goal"
@@ -152,8 +172,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "Kids Use One-On-One Chat Rooms", 
             "to_edges": [], 
             "type": "task"
@@ -161,8 +183,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sponsor partner\\ncontacts", 
+            "is_random": false, 
             "name": "Sponsor partner\\ncontacts", 
             "to_edges": [], 
             "type": "softgoal"
@@ -170,8 +194,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Strategic Blue Print", 
+            "is_random": false, 
             "name": "Strategic Blue Print", 
             "to_edges": [], 
             "type": "resource"
@@ -179,8 +205,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Phone Feedback", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback", 
             "to_edges": [], 
             "type": "task"
@@ -188,8 +216,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sign Contract", 
+            "is_random": false, 
             "name": "Sign Contract", 
             "to_edges": [], 
             "type": "task"
@@ -197,8 +227,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Training CDs", 
+            "is_random": false, 
             "name": "Training CDs", 
             "to_edges": [], 
             "type": "resource"
@@ -206,8 +238,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain/Implement CS Services", 
+            "is_random": false, 
             "name": "Maintain/Implement CS Services", 
             "to_edges": [], 
             "type": "task"
@@ -215,8 +249,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Agreement", 
+            "is_random": false, 
             "name": "Agreement", 
             "to_edges": [], 
             "type": "resource"
@@ -224,8 +260,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "SA s are Organized", 
+            "is_random": false, 
             "name": "SA s are Organized", 
             "to_edges": [], 
             "type": "softgoal"
@@ -233,8 +271,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "National Event Calendar", 
+            "is_random": false, 
             "name": "National Event Calendar", 
             "to_edges": [], 
             "type": "softgoal"
@@ -242,8 +282,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Implement Email for Counsellors", 
+            "is_random": false, 
             "name": "*Implement Email for Counsellors", 
             "to_edges": [], 
             "type": "task"
@@ -251,8 +293,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Similarity with other parents  problems ", 
+            "is_random": false, 
             "name": "Similarity with other parents  problems ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -260,8 +304,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Text Messaging", 
+            "is_random": false, 
             "name": "!Implement Text Messaging", 
             "to_edges": [], 
             "type": "task"
@@ -269,8 +315,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Patient [Counselor] ", 
+            "is_random": false, 
             "name": "Patient [Counselor] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -278,8 +326,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Immediacy [Services] 1", 
+            "is_random": false, 
             "name": "Immediacy [Services] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -287,8 +337,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Moderate Discussion Boards", 
+            "is_random": false, 
             "name": "!Moderate Discussion Boards", 
             "to_edges": [], 
             "type": "task"
@@ -296,8 +348,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide free services", 
+            "is_random": false, 
             "name": "Provide free services", 
             "to_edges": [
                 322
@@ -307,8 +361,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create General Ledgers ", 
+            "is_random": false, 
             "name": "Create General Ledgers ", 
             "to_edges": [], 
             "type": "task"
@@ -316,8 +372,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Presentation Skills ", 
+            "is_random": false, 
             "name": "Presentation Skills ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -325,8 +383,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Accessible Resources for Counselors", 
+            "is_random": false, 
             "name": "Accessible Resources for Counselors", 
             "to_edges": [], 
             "type": "softgoal"
@@ -334,8 +394,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Email Counselling", 
+            "is_random": false, 
             "name": "Implement Email Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -343,8 +405,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Connect with Other Kids ", 
+            "is_random": false, 
             "name": "Connect with Other Kids ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -352,8 +416,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Acquire Public Speaking Skills", 
+            "is_random": false, 
             "name": "Acquire Public Speaking Skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -361,8 +427,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Counselling Resource", 
+            "is_random": false, 
             "name": "Increase Counselling Resource", 
             "to_edges": [], 
             "type": "softgoal"
@@ -370,8 +438,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Write Articles for Magazines ", 
+            "is_random": false, 
             "name": "! Write Articles for Magazines ", 
             "to_edges": [], 
             "type": "task"
@@ -379,8 +449,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "SA s are Confident", 
+            "is_random": false, 
             "name": "SA s are Confident", 
             "to_edges": [], 
             "type": "softgoal"
@@ -388,8 +460,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Have Time for School", 
+            "is_random": false, 
             "name": "Have Time for School", 
             "to_edges": [], 
             "type": "softgoal"
@@ -397,8 +471,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Promote CS", 
+            "is_random": false, 
             "name": "Promote CS", 
             "to_edges": [], 
             "type": "task"
@@ -406,8 +482,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Increase Writing Skills", 
+            "is_random": false, 
             "name": "*Increase Writing Skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -415,8 +493,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids read Polls about Kids", 
+            "is_random": false, 
             "name": "Kids read Polls about Kids", 
             "to_edges": [], 
             "type": "task"
@@ -424,8 +504,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Web Counselling with Video", 
+            "is_random": false, 
             "name": "Provide Web Counselling with Video", 
             "to_edges": [], 
             "type": "task"
@@ -433,8 +515,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*High Quality Counselling", 
+            "is_random": false, 
             "name": "*High Quality Counselling", 
             "to_edges": [], 
             "type": "softgoal"
@@ -442,8 +526,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Send out Emails", 
+            "is_random": false, 
             "name": "Send out Emails", 
             "to_edges": [], 
             "type": "task"
@@ -451,8 +537,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Software", 
+            "is_random": false, 
             "name": "Software", 
             "to_edges": [], 
             "type": "resource"
@@ -460,8 +548,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Up to Date [Information on programs] ", 
+            "is_random": false, 
             "name": "Up to Date [Information on programs] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -469,8 +559,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Web Counselling with Audio", 
+            "is_random": false, 
             "name": "Provide Web Counselling with Audio", 
             "to_edges": [], 
             "type": "task"
@@ -478,10 +570,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 323
             ], 
             "id": "Communicate with head office ", 
+            "is_random": false, 
             "name": "Communicate with head office ", 
             "to_edges": [], 
             "type": "task"
@@ -489,8 +583,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Services Be Bilingual", 
+            "is_random": false, 
             "name": "Services Be Bilingual", 
             "to_edges": [], 
             "type": "goal"
@@ -498,8 +594,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [], 
             "type": "task"
@@ -507,8 +605,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide receipts", 
+            "is_random": false, 
             "name": "Provide receipts", 
             "to_edges": [], 
             "type": "task"
@@ -516,8 +616,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Collect Pledge online", 
+            "is_random": false, 
             "name": "Collect Pledge online", 
             "to_edges": [], 
             "type": "task"
@@ -525,8 +627,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Parents Use Service to Talk to Each Other ", 
+            "is_random": false, 
             "name": "!Parents Use Service to Talk to Each Other ", 
             "to_edges": [], 
             "type": "task"
@@ -534,8 +638,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Write Articles for Newspaper", 
+            "is_random": false, 
             "name": "Write Articles for Newspaper", 
             "to_edges": [], 
             "type": "task"
@@ -543,8 +649,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Staggering of Schedules", 
+            "is_random": false, 
             "name": "Reduce Staggering of Schedules", 
             "to_edges": [], 
             "type": "softgoal"
@@ -552,8 +660,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Calls Be Recorded into a Data Base", 
+            "is_random": false, 
             "name": "!Calls Be Recorded into a Data Base", 
             "to_edges": [], 
             "type": "goal"
@@ -561,8 +671,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Engagement [Sponsor Employees in Promoting Awareness] ", 
+            "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -570,8 +682,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Services Self Serve", 
+            "is_random": false, 
             "name": "Web Services Self Serve", 
             "to_edges": [], 
             "type": "softgoal"
@@ -579,8 +693,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Services above Competition", 
+            "is_random": false, 
             "name": "Maintain Services above Competition", 
             "to_edges": [], 
             "type": "softgoal"
@@ -588,8 +704,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Positive [Reputation of CS]", 
+            "is_random": false, 
             "name": "Positive [Reputation of CS]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -597,8 +715,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Increase [IT Training for Counsellors]", 
+            "is_random": false, 
             "name": "*Increase [IT Training for Counsellors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -606,8 +726,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Project Management Skills ", 
+            "is_random": false, 
             "name": "Project Management Skills ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -615,8 +737,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Support Analysis [Counsellors Time]", 
+            "is_random": false, 
             "name": "Support Analysis [Counsellors Time]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -624,8 +748,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Happiness [Counsellors]", 
+            "is_random": false, 
             "name": "Happiness [Counsellors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -633,8 +759,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Information Section", 
+            "is_random": false, 
             "name": "Implement Information Section", 
             "to_edges": [], 
             "type": "task"
@@ -642,8 +770,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement General Questions and Answers", 
+            "is_random": false, 
             "name": "!Implement General Questions and Answers", 
             "to_edges": [], 
             "type": "task"
@@ -651,8 +781,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Services be provided for Kids Bullying Line", 
+            "is_random": false, 
             "name": "! Services be provided for Kids Bullying Line", 
             "to_edges": [], 
             "type": "goal"
@@ -660,8 +792,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Experienced [marketing partners]", 
+            "is_random": false, 
             "name": "Experienced [marketing partners]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -669,8 +803,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Video Counselling", 
+            "is_random": false, 
             "name": "Kids Use Video Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -678,8 +814,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Hardware", 
+            "is_random": false, 
             "name": "Hardware", 
             "to_edges": [], 
             "type": "resource"
@@ -687,8 +825,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Ownership of Services [Kids] ", 
+            "is_random": false, 
             "name": "Ownership of Services [Kids] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -696,8 +836,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Video Counselling", 
+            "is_random": false, 
             "name": "Implement Video Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -705,8 +847,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Ask a Counsellor Section", 
+            "is_random": false, 
             "name": "Maintain Ask a Counsellor Section", 
             "to_edges": [], 
             "type": "task"
@@ -714,8 +858,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Maintain Phone Services", 
+            "is_random": false, 
             "name": "*Maintain Phone Services", 
             "to_edges": [], 
             "type": "task"
@@ -723,8 +869,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Services Be Free", 
+            "is_random": false, 
             "name": "Services Be Free", 
             "to_edges": [], 
             "type": "goal"
@@ -732,8 +880,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased SA Resources", 
+            "is_random": false, 
             "name": "Increased SA Resources", 
             "to_edges": [], 
             "type": "softgoal"
@@ -741,8 +891,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "CS Stories", 
+            "is_random": false, 
             "name": "CS Stories", 
             "to_edges": [], 
             "type": "softgoal"
@@ -750,8 +902,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Confidentiality [Services] ", 
+            "is_random": false, 
             "name": "Confidentiality [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -759,10 +913,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 318
             ], 
             "id": "Event coordination", 
+            "is_random": false, 
             "name": "Event coordination", 
             "to_edges": [], 
             "type": "task"
@@ -770,8 +926,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Acquire Fundraising Skills", 
+            "is_random": false, 
             "name": "Acquire Fundraising Skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -779,8 +937,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Oracle", 
+            "is_random": false, 
             "name": "Oracle", 
             "to_edges": [], 
             "type": "resource"
@@ -788,8 +948,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sponsorship proposal", 
+            "is_random": false, 
             "name": "Sponsorship proposal", 
             "to_edges": [], 
             "type": "task"
@@ -797,8 +959,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get Corporate Partner Information from DL", 
+            "is_random": false, 
             "name": "Get Corporate Partner Information from DL", 
             "to_edges": [
                 319
@@ -808,8 +972,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Development of Public Education Program", 
+            "is_random": false, 
             "name": "Increase Development of Public Education Program", 
             "to_edges": [], 
             "type": "softgoal"
@@ -817,8 +983,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Funds", 
+            "is_random": false, 
             "name": "Funds", 
             "to_edges": [], 
             "type": "resource"
@@ -826,8 +994,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Encourage Kids Using Web Services to Use Phone Services", 
+            "is_random": false, 
             "name": "Encourage Kids Using Web Services to Use Phone Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -835,8 +1005,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create Life Long Volunteer Spirit", 
+            "is_random": false, 
             "name": "Create Life Long Volunteer Spirit", 
             "to_edges": [], 
             "type": "softgoal"
@@ -844,8 +1016,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "!Implement One-On-One Chat Rooms", 
             "to_edges": [], 
             "type": "task"
@@ -853,8 +1027,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improved Writing Skills [Counsellors]", 
+            "is_random": false, 
             "name": "Improved Writing Skills [Counsellors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -862,8 +1038,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Run Fundraiser in Schools", 
+            "is_random": false, 
             "name": "Run Fundraiser in Schools", 
             "to_edges": [], 
             "type": "task"
@@ -871,8 +1049,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Friendly [Web site] ", 
+            "is_random": false, 
             "name": "Friendly [Web site] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -880,8 +1060,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Facilitate Faster Changes in Counsellor Duties", 
+            "is_random": false, 
             "name": "Facilitate Faster Changes in Counsellor Duties", 
             "to_edges": [], 
             "type": "softgoal"
@@ -889,8 +1071,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase [Awareness]", 
+            "is_random": false, 
             "name": "Increase [Awareness]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -898,8 +1082,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Phone Counselling", 
+            "is_random": false, 
             "name": "Maintain Phone Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -907,8 +1093,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Demonstrable Services ", 
+            "is_random": false, 
             "name": "Demonstrable Services ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -916,8 +1104,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Up to date corporate partner information", 
+            "is_random": false, 
             "name": "Up to date corporate partner information", 
             "to_edges": [
                 321
@@ -927,8 +1117,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Accommodate Schedules [Counselling Managers]", 
+            "is_random": false, 
             "name": "Accommodate Schedules [Counselling Managers]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -936,8 +1128,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Anonymity [Counsellors]", 
+            "is_random": false, 
             "name": "Anonymity [Counsellors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -945,8 +1139,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Negotiate with Counsellors Union", 
+            "is_random": false, 
             "name": "Negotiate with Counsellors Union", 
             "to_edges": [], 
             "type": "task"
@@ -954,8 +1150,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Find Help with Presentations", 
+            "is_random": false, 
             "name": "Find Help with Presentations", 
             "to_edges": [], 
             "type": "task"
@@ -963,8 +1161,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Give CS Presentations1", 
+            "is_random": false, 
             "name": "Give CS Presentations1", 
             "to_edges": [], 
             "type": "task"
@@ -972,8 +1172,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve Image to Kids2", 
+            "is_random": false, 
             "name": "Improve Image to Kids2", 
             "to_edges": [], 
             "type": "softgoal"
@@ -981,8 +1183,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Perform Counselling as Instructed By Supervisor", 
+            "is_random": false, 
             "name": "Perform Counselling as Instructed By Supervisor", 
             "to_edges": [], 
             "type": "softgoal"
@@ -990,8 +1194,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Match Fundraising targets", 
+            "is_random": false, 
             "name": "Match Fundraising targets", 
             "to_edges": [], 
             "type": "softgoal"
@@ -999,8 +1205,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Engagement [Sponsor Employees in Promoting Awareness] 1", 
+            "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1008,8 +1216,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "High Quality [Services] 1", 
+            "is_random": false, 
             "name": "High Quality [Services] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1017,8 +1227,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get sponsors for events", 
+            "is_random": false, 
             "name": "Get sponsors for events", 
             "to_edges": [], 
             "type": "task"
@@ -1026,8 +1238,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Counselling Workshops", 
+            "is_random": false, 
             "name": "Counselling Workshops", 
             "to_edges": [], 
             "type": "resource"
@@ -1035,8 +1249,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Available [Services] ", 
+            "is_random": false, 
             "name": "Available [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1044,8 +1260,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put Content Onto Website", 
+            "is_random": false, 
             "name": "Put Content Onto Website", 
             "to_edges": [], 
             "type": "task"
@@ -1053,8 +1271,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "High Degree of Similarity [Between Services Provided]", 
+            "is_random": false, 
             "name": "High Degree of Similarity [Between Services Provided]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1062,8 +1282,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Promotion Resources", 
+            "is_random": false, 
             "name": "Promotion Resources", 
             "to_edges": [], 
             "type": "resource"
@@ -1071,8 +1293,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Help As Many Kids as Possible", 
+            "is_random": false, 
             "name": "*Help As Many Kids as Possible", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1080,8 +1304,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Regional Offices Resources", 
+            "is_random": false, 
             "name": "Regional Offices Resources", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1089,8 +1315,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Decrease [Phone Waiting Time] ", 
+            "is_random": false, 
             "name": "Decrease [Phone Waiting Time] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1098,8 +1326,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Counselling Policies Be Followed", 
+            "is_random": false, 
             "name": "Counselling Policies Be Followed", 
             "to_edges": [], 
             "type": "goal"
@@ -1107,8 +1337,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Donor/Accounting Data Base", 
+            "is_random": false, 
             "name": "Donor/Accounting Data Base", 
             "to_edges": [], 
             "type": "resource"
@@ -1116,8 +1348,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Research on Kids Be Acquired", 
+            "is_random": false, 
             "name": "Research on Kids Be Acquired", 
             "to_edges": [], 
             "type": "goal"
@@ -1125,8 +1359,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Moderator Meetings", 
+            "is_random": false, 
             "name": "Web Moderator Meetings", 
             "to_edges": [], 
             "type": "resource"
@@ -1134,8 +1370,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Trust [of Sponsors towards CS] ", 
+            "is_random": false, 
             "name": "Trust [of Sponsors towards CS] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1143,8 +1381,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Sufficient Counselling Resources", 
+            "is_random": false, 
             "name": "*Sufficient Counselling Resources", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1152,8 +1392,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Maintain PHL Phone Services", 
+            "is_random": false, 
             "name": "*Maintain PHL Phone Services", 
             "to_edges": [], 
             "type": "task"
@@ -1161,8 +1403,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Decrease [Phone Waiting Time] 1", 
+            "is_random": false, 
             "name": "Decrease [Phone Waiting Time] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1170,8 +1414,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve Counselling Skills", 
+            "is_random": false, 
             "name": "Improve Counselling Skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1179,8 +1425,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Counselling Policies", 
+            "is_random": false, 
             "name": "Counselling Policies", 
             "to_edges": [], 
             "type": "resource"
@@ -1188,8 +1436,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement\\nTool to Allow Parents to Talk to Each Other ", 
+            "is_random": false, 
             "name": "!Implement\\nTool to Allow Parents to Talk to Each Other ", 
             "to_edges": [], 
             "type": "task"
@@ -1197,8 +1447,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Connect Back to the Community ", 
+            "is_random": false, 
             "name": "Connect Back to the Community ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1206,8 +1458,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Document Library System", 
+            "is_random": false, 
             "name": "Provide Document Library System", 
             "to_edges": [], 
             "type": "task"
@@ -1215,8 +1469,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Write Articles for Website ", 
+            "is_random": false, 
             "name": "! Write Articles for Website ", 
             "to_edges": [], 
             "type": "task"
@@ -1224,8 +1480,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Server1", 
+            "is_random": false, 
             "name": "Web Server1", 
             "to_edges": [], 
             "type": "resource"
@@ -1233,8 +1491,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!IT Systems Be Integrated", 
+            "is_random": false, 
             "name": "!IT Systems Be Integrated", 
             "to_edges": [], 
             "type": "goal"
@@ -1242,8 +1502,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Phone Counselling", 
+            "is_random": false, 
             "name": "Kids Use Phone Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -1251,8 +1513,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids read General Questions and Answers", 
+            "is_random": false, 
             "name": "Kids read General Questions and Answers", 
             "to_edges": [], 
             "type": "task"
@@ -1260,8 +1524,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Voice Counselling be Performed", 
+            "is_random": false, 
             "name": "Voice Counselling be Performed", 
             "to_edges": [], 
             "type": "task"
@@ -1269,8 +1535,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Anonymity [Services] ", 
+            "is_random": false, 
             "name": "Anonymity [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1278,8 +1546,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Tape Recording Technology", 
+            "is_random": false, 
             "name": "Tape Recording Technology", 
             "to_edges": [], 
             "type": "resource"
@@ -1287,8 +1557,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve [Call Recording Equipment]", 
+            "is_random": false, 
             "name": "Improve [Call Recording Equipment]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1296,8 +1568,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Web Services", 
+            "is_random": false, 
             "name": "Maintain Web Services", 
             "to_edges": [], 
             "type": "task"
@@ -1305,8 +1579,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids use get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Kids use get Informed Section of Web Site", 
             "to_edges": [], 
             "type": "task"
@@ -1314,8 +1590,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*High Quality Counselling1", 
+            "is_random": false, 
             "name": "*High Quality Counselling1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1323,12 +1601,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 317, 
                 319, 
                 321
             ], 
             "id": "Regional\\nContact management", 
+            "is_random": false, 
             "name": "Regional\\nContact management", 
             "to_edges": [
                 318, 
@@ -1340,8 +1620,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Counsellor Experience", 
+            "is_random": false, 
             "name": "Counsellor Experience", 
             "to_edges": [], 
             "type": "resource"
@@ -1349,8 +1631,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Call Statistics", 
+            "is_random": false, 
             "name": "Call Statistics", 
             "to_edges": [], 
             "type": "resource"
@@ -1358,8 +1642,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Parents Use Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Parents Use Bulletin Board with Replies", 
             "to_edges": [], 
             "type": "task"
@@ -1367,8 +1653,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Involve CS in Events", 
+            "is_random": false, 
             "name": "Involve CS in Events", 
             "to_edges": [], 
             "type": "goal"
@@ -1376,8 +1664,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Perform Email Counselling", 
+            "is_random": false, 
             "name": "!Perform Email Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -1385,8 +1675,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Service Resources", 
+            "is_random": false, 
             "name": "Service Resources", 
             "to_edges": [], 
             "type": "resource"
@@ -1394,8 +1686,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Retain [Sponsors] ", 
+            "is_random": false, 
             "name": "Retain [Sponsors] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1403,8 +1697,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Timely services", 
+            "is_random": false, 
             "name": "Timely services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1412,8 +1708,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!A Training Computer Be Present", 
+            "is_random": false, 
             "name": "!A Training Computer Be Present", 
             "to_edges": [], 
             "type": "goal"
@@ -1421,8 +1719,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Speak at Fundraisers1", 
+            "is_random": false, 
             "name": "Speak at Fundraisers1", 
             "to_edges": [], 
             "type": "task"
@@ -1430,8 +1730,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Involvement [Not For Profit Partners in Events]", 
+            "is_random": false, 
             "name": "Involvement [Not For Profit Partners in Events]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1439,8 +1741,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Participate in events", 
+            "is_random": false, 
             "name": "Participate in events", 
             "to_edges": [], 
             "type": "task"
@@ -1448,8 +1752,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Control of Counselling Work", 
+            "is_random": false, 
             "name": "Control of Counselling Work", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1457,8 +1763,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Exclusive Relationships [Official Partners] ", 
+            "is_random": false, 
             "name": "Exclusive Relationships [Official Partners] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1466,8 +1774,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Contagion Effect [Of Harmful Actions]1", 
+            "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1475,8 +1785,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
+            "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1484,8 +1796,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Second Reading of Web Posts", 
+            "is_random": false, 
             "name": "Second Reading of Web Posts", 
             "to_edges": [], 
             "type": "task"
@@ -1493,8 +1807,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve Image to Kids1", 
+            "is_random": false, 
             "name": "Improve Image to Kids1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1502,8 +1818,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Avoid Presence of Pedofiles", 
+            "is_random": false, 
             "name": "Avoid Presence of Pedofiles", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1511,8 +1829,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Professional Counsellors Be Used", 
+            "is_random": false, 
             "name": "Professional Counsellors Be Used", 
             "to_edges": [], 
             "type": "goal"
@@ -1520,8 +1840,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Measure Success of Services", 
+            "is_random": false, 
             "name": "Measure Success of Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1529,8 +1851,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Online Donor Technology", 
+            "is_random": false, 
             "name": "Provide Online Donor Technology", 
             "to_edges": [], 
             "type": "task"
@@ -1538,8 +1862,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Provide compiled call data ", 
+            "is_random": false, 
             "name": "! Provide compiled call data ", 
             "to_edges": [], 
             "type": "task"
@@ -1547,8 +1873,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Manage Receivables ", 
+            "is_random": false, 
             "name": "Manage Receivables ", 
             "to_edges": [], 
             "type": "task"
@@ -1556,8 +1884,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve Quality Assurance Technology", 
+            "is_random": false, 
             "name": "Improve Quality Assurance Technology", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1565,8 +1895,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Help Plan and Put on Reconnection Conferences", 
+            "is_random": false, 
             "name": "Help Plan and Put on Reconnection Conferences", 
             "to_edges": [], 
             "type": "task"
@@ -1574,8 +1906,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Confidentiality [Services] 1", 
+            "is_random": false, 
             "name": "Confidentiality [Services] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1583,8 +1917,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Performance Review Information Be Collected in Data Base", 
+            "is_random": false, 
             "name": "!Performance Review Information Be Collected in Data Base", 
             "to_edges": [], 
             "type": "goal"
@@ -1592,8 +1928,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Server", 
+            "is_random": false, 
             "name": "Web Server", 
             "to_edges": [], 
             "type": "resource"
@@ -1601,8 +1939,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Long Term [Funding] ", 
+            "is_random": false, 
             "name": "Long Term [Funding] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1610,10 +1950,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 322
             ], 
             "id": " Free services", 
+            "is_random": false, 
             "name": " Free services", 
             "to_edges": [], 
             "type": "resource"
@@ -1621,8 +1963,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Friendly Web Site", 
+            "is_random": false, 
             "name": "Friendly Web Site", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1630,8 +1974,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Web Server", 
+            "is_random": false, 
             "name": "Free Web Server", 
             "to_edges": [], 
             "type": "resource"
@@ -1639,8 +1985,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Responsible Usage [Sponsor Funds] ", 
+            "is_random": false, 
             "name": "Responsible Usage [Sponsor Funds] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1648,8 +1996,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Feedback", 
+            "is_random": false, 
             "name": "Feedback", 
             "to_edges": [], 
             "type": "resource"
@@ -1657,8 +2007,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Give CS Presentations", 
+            "is_random": false, 
             "name": "Give CS Presentations", 
             "to_edges": [], 
             "type": "task"
@@ -1666,8 +2018,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Avoid Over-Marketing Services ", 
+            "is_random": false, 
             "name": "Avoid Over-Marketing Services ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1675,8 +2029,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*High Quality Services", 
+            "is_random": false, 
             "name": "*High Quality Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1684,8 +2040,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Implement Categorization Tool", 
+            "is_random": false, 
             "name": "*Implement Categorization Tool", 
             "to_edges": [], 
             "type": "task"
@@ -1693,8 +2051,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Happiness [Student Ambassadors]", 
+            "is_random": false, 
             "name": "Happiness [Student Ambassadors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1702,8 +2062,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "!Implement Bulletin Board with Replies", 
             "to_edges": [], 
             "type": "task"
@@ -1711,8 +2073,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve [IT Skills]", 
+            "is_random": false, 
             "name": "Improve [IT Skills]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1720,8 +2084,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Engagement of Sponsor Employees in Fund Development", 
+            "is_random": false, 
             "name": "Engagement of Sponsor Employees in Fund Development", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1729,8 +2095,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Professional Work Environment", 
+            "is_random": false, 
             "name": "Professional Work Environment", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1738,8 +2106,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Funding for Training", 
+            "is_random": false, 
             "name": "Increase Funding for Training", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1747,8 +2117,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Share PAP in Document Library", 
+            "is_random": false, 
             "name": "Share PAP in Document Library", 
             "to_edges": [], 
             "type": "task"
@@ -1756,8 +2128,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Engage Employees in events", 
+            "is_random": false, 
             "name": "Engage Employees in events", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1765,8 +2139,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Software", 
+            "is_random": false, 
             "name": "Free Software", 
             "to_edges": [], 
             "type": "resource"
@@ -1774,8 +2150,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Empowering Kids to Help Themselves", 
+            "is_random": false, 
             "name": "Empowering Kids to Help Themselves", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1783,8 +2161,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Counselling Resources", 
+            "is_random": false, 
             "name": "Counselling Resources", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1792,8 +2172,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Connect Back to the Community 1", 
+            "is_random": false, 
             "name": "Connect Back to the Community 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1801,8 +2183,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Improve Image to Kids", 
+            "is_random": false, 
             "name": "Improve Image to Kids", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1810,8 +2194,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Current Resource Links", 
+            "is_random": false, 
             "name": "Current Resource Links", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1819,8 +2205,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Contagion Effect [Of Harmful Actions]", 
+            "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1828,8 +2216,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Undergo Clinical Review", 
+            "is_random": false, 
             "name": "Undergo Clinical Review", 
             "to_edges": [], 
             "type": "task"
@@ -1837,8 +2227,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Help Kids", 
+            "is_random": false, 
             "name": "Help Kids", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1846,8 +2238,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased Caution [Content of Online Services]", 
+            "is_random": false, 
             "name": "Increased Caution [Content of Online Services]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1855,8 +2249,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Acquire Volunteer Outreach Skills", 
+            "is_random": false, 
             "name": "Acquire Volunteer Outreach Skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1864,8 +2260,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Simple [Technology]", 
+            "is_random": false, 
             "name": "Simple [Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1873,8 +2271,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Market CS Service", 
+            "is_random": false, 
             "name": "! Market CS Service", 
             "to_edges": [], 
             "type": "task"
@@ -1882,8 +2282,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Quick [Response to Sponsors] ", 
+            "is_random": false, 
             "name": "Quick [Response to Sponsors] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1891,8 +2293,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Feedback1", 
+            "is_random": false, 
             "name": "Feedback1", 
             "to_edges": [], 
             "type": "resource"
@@ -1900,8 +2304,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Permission for Presentations Be Given", 
+            "is_random": false, 
             "name": "Permission for Presentations Be Given", 
             "to_edges": [], 
             "type": "goal"
@@ -1909,8 +2315,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Exclusive Brand and Logo use", 
+            "is_random": false, 
             "name": "Exclusive Brand and Logo use", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1918,8 +2326,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Salary", 
+            "is_random": false, 
             "name": "*Salary", 
             "to_edges": [], 
             "type": "resource"
@@ -1927,8 +2337,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Resources [Services]", 
+            "is_random": false, 
             "name": "Increase Resources [Services]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1936,8 +2348,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Prank Calls", 
+            "is_random": false, 
             "name": "Reduce Prank Calls", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1945,8 +2359,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Correct Interpretation of Counsel", 
+            "is_random": false, 
             "name": "Correct Interpretation of Counsel", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1954,8 +2370,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Accountability of services", 
+            "is_random": false, 
             "name": "Accountability of services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -1963,8 +2381,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Community Service Hours Completed", 
+            "is_random": false, 
             "name": "Community Service Hours Completed", 
             "to_edges": [], 
             "type": "goal"
@@ -1972,8 +2392,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Upgrades", 
+            "is_random": false, 
             "name": "Upgrades", 
             "to_edges": [], 
             "type": "resource"
@@ -1981,8 +2403,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Allow User to Log In", 
+            "is_random": false, 
             "name": "*Allow User to Log In", 
             "to_edges": [], 
             "type": "goal"
@@ -1990,8 +2414,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Diffuse Conflict with Parent", 
+            "is_random": false, 
             "name": "Diffuse Conflict with Parent", 
             "to_edges": [], 
             "type": "task"
@@ -1999,8 +2425,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Use sponsor marketing channels", 
+            "is_random": false, 
             "name": "Use sponsor marketing channels", 
             "to_edges": [], 
             "type": "task"
@@ -2008,8 +2436,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Philanthropic donations ", 
+            "is_random": false, 
             "name": "Philanthropic donations ", 
             "to_edges": [], 
             "type": "task"
@@ -2017,8 +2447,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "High Quality [Services] ", 
+            "is_random": false, 
             "name": "High Quality [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2026,8 +2458,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Promotion Resources1", 
+            "is_random": false, 
             "name": "Promotion Resources1", 
             "to_edges": [], 
             "type": "resource"
@@ -2035,8 +2469,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased availability to sponsors", 
+            "is_random": false, 
             "name": "Increased availability to sponsors", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2044,8 +2480,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Pledge\\nDuring event", 
+            "is_random": false, 
             "name": "Pledge\\nDuring event", 
             "to_edges": [], 
             "type": "task"
@@ -2053,8 +2491,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Software", 
+            "is_random": false, 
             "name": "Web Software", 
             "to_edges": [], 
             "type": "resource"
@@ -2062,8 +2502,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Tapes", 
+            "is_random": false, 
             "name": "Tapes", 
             "to_edges": [], 
             "type": "resource"
@@ -2071,8 +2513,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase IT Resources", 
+            "is_random": false, 
             "name": "Increase IT Resources", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2080,8 +2524,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Historical Data of Call Volumes", 
+            "is_random": false, 
             "name": "Historical Data of Call Volumes", 
             "to_edges": [], 
             "type": "resource"
@@ -2089,8 +2535,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Manage Accounts ", 
+            "is_random": false, 
             "name": "Manage Accounts ", 
             "to_edges": [], 
             "type": "task"
@@ -2098,8 +2546,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Inform kids about anonymity of service", 
+            "is_random": false, 
             "name": "Inform kids about anonymity of service", 
             "to_edges": [], 
             "type": "task"
@@ -2107,8 +2557,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "School Initiates Presenation", 
+            "is_random": false, 
             "name": "School Initiates Presenation", 
             "to_edges": [], 
             "type": "task"
@@ -2116,8 +2568,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Volunteers", 
+            "is_random": false, 
             "name": "Increase Volunteers", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2125,8 +2579,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Speaches", 
+            "is_random": false, 
             "name": "Speaches", 
             "to_edges": [], 
             "type": "resource"
@@ -2134,8 +2590,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Feedback Form Software", 
+            "is_random": false, 
             "name": "Feedback Form Software", 
             "to_edges": [], 
             "type": "resource"
@@ -2143,8 +2601,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide funds", 
+            "is_random": false, 
             "name": "Provide funds", 
             "to_edges": [], 
             "type": "task"
@@ -2152,8 +2612,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Training Be Received", 
+            "is_random": false, 
             "name": "Training Be Received", 
             "to_edges": [], 
             "type": "goal"
@@ -2161,8 +2623,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Emphasis on Online Feedback Form", 
+            "is_random": false, 
             "name": "Increase Emphasis on Online Feedback Form", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2170,8 +2634,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Written Counselling", 
+            "is_random": false, 
             "name": "Provide Written Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -2179,8 +2645,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Caller Statistics", 
+            "is_random": false, 
             "name": "Caller Statistics", 
             "to_edges": [], 
             "type": "resource"
@@ -2188,8 +2656,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Counselling", 
+            "is_random": false, 
             "name": "Provide Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -2197,8 +2667,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Phone Library of Recorded Messages", 
+            "is_random": false, 
             "name": "Phone Library of Recorded Messages", 
             "to_edges": [], 
             "type": "resource"
@@ -2206,8 +2678,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased Peer Support", 
+            "is_random": false, 
             "name": "Increased Peer Support", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2215,8 +2689,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Text Messaging", 
+            "is_random": false, 
             "name": "Kids Use Text Messaging", 
             "to_edges": [], 
             "type": "task"
@@ -2224,8 +2700,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!An IT Trainer Be Present", 
+            "is_random": false, 
             "name": "!An IT Trainer Be Present", 
             "to_edges": [], 
             "type": "goal"
@@ -2233,8 +2711,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Upgrades", 
+            "is_random": false, 
             "name": "Free Upgrades", 
             "to_edges": [], 
             "type": "resource"
@@ -2242,8 +2722,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Elaborate Fundraising targets", 
+            "is_random": false, 
             "name": "Elaborate Fundraising targets", 
             "to_edges": [], 
             "type": "task"
@@ -2251,8 +2733,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Speak at Fundraisers", 
+            "is_random": false, 
             "name": "Speak at Fundraisers", 
             "to_edges": [], 
             "type": "task"
@@ -2260,8 +2744,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Accountability of services1", 
+            "is_random": false, 
             "name": "Accountability of services1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2269,8 +2755,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Information", 
+            "is_random": false, 
             "name": "Information", 
             "to_edges": [], 
             "type": "resource"
@@ -2278,8 +2766,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Increase Number of Services", 
+            "is_random": false, 
             "name": "*Increase Number of Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2287,8 +2777,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Clearer Call Classification Categories", 
+            "is_random": false, 
             "name": "Clearer Call Classification Categories", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2296,8 +2788,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Decrease Clumsiness [Technology]", 
+            "is_random": false, 
             "name": "Decrease Clumsiness [Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2305,8 +2799,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Trust [of Kids]", 
+            "is_random": false, 
             "name": "Trust [of Kids]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2314,8 +2810,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Pledge online", 
+            "is_random": false, 
             "name": "Pledge online", 
             "to_edges": [], 
             "type": "task"
@@ -2323,8 +2821,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Polls about Kids", 
+            "is_random": false, 
             "name": "!Implement Polls about Kids", 
             "to_edges": [], 
             "type": "task"
@@ -2332,8 +2832,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Provide money for services", 
+            "is_random": false, 
             "name": "! Provide money for services", 
             "to_edges": [], 
             "type": "task"
@@ -2341,8 +2843,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "IT Resources", 
+            "is_random": false, 
             "name": "IT Resources", 
             "to_edges": [], 
             "type": "resource"
@@ -2350,8 +2854,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Positive Internal Opinion", 
+            "is_random": false, 
             "name": "Positive Internal Opinion", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2359,8 +2865,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Credibility [CS Brand] ", 
+            "is_random": false, 
             "name": "Credibility [CS Brand] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2368,8 +2876,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Double Head Set", 
+            "is_random": false, 
             "name": "Double Head Set", 
             "to_edges": [], 
             "type": "resource"
@@ -2377,8 +2887,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Kids Use Bulletin Board with Replies", 
             "to_edges": [], 
             "type": "task"
@@ -2386,8 +2898,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Recognition", 
+            "is_random": false, 
             "name": "Recognition", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2395,8 +2909,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Acquire public speaking skills", 
+            "is_random": false, 
             "name": "!Acquire public speaking skills", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2404,8 +2920,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Maintain Get Informed Section of Web Site", 
             "to_edges": [], 
             "type": "task"
@@ -2413,8 +2931,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Board with Replies", 
+            "is_random": false, 
             "name": "Implement Board with Replies", 
             "to_edges": [], 
             "type": "task"
@@ -2422,8 +2942,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Similarity with other kids  problems ", 
+            "is_random": false, 
             "name": "Similarity with other kids  problems ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2431,8 +2953,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Single charitable registration number", 
+            "is_random": false, 
             "name": "Single charitable registration number", 
             "to_edges": [
                 317
@@ -2442,8 +2966,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Collaborate with Not for Profit Partners on Services", 
+            "is_random": false, 
             "name": "Collaborate with Not for Profit Partners on Services", 
             "to_edges": [], 
             "type": "goal"
@@ -2451,8 +2977,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free advertisement", 
+            "is_random": false, 
             "name": "Free advertisement", 
             "to_edges": [], 
             "type": "resource"
@@ -2460,8 +2988,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain/ Implement PHL Services", 
+            "is_random": false, 
             "name": "Maintain/ Implement PHL Services", 
             "to_edges": [], 
             "type": "task"
@@ -2469,8 +2999,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Number of Steps [Web Posting Technology]", 
+            "is_random": false, 
             "name": "Reduce Number of Steps [Web Posting Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2478,10 +3010,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 320
             ], 
             "id": "Regional Staff feel included", 
+            "is_random": false, 
             "name": "Regional Staff feel included", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2489,8 +3023,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Anonymity [Parents]", 
+            "is_random": false, 
             "name": "Anonymity [Parents]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2498,8 +3034,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put on SA Training Conferences", 
+            "is_random": false, 
             "name": "Put on SA Training Conferences", 
             "to_edges": [], 
             "type": "task"
@@ -2507,8 +3045,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Parents Use Information Section", 
+            "is_random": false, 
             "name": "Parents Use Information Section", 
             "to_edges": [], 
             "type": "task"
@@ -2516,8 +3056,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easily Accessible Technology Instructions", 
+            "is_random": false, 
             "name": "Easily Accessible Technology Instructions", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2525,8 +3067,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide fundraising services", 
+            "is_random": false, 
             "name": "Provide fundraising services", 
             "to_edges": [], 
             "type": "task"
@@ -2534,8 +3078,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase IT Methods to Acquire Feedback", 
+            "is_random": false, 
             "name": "Increase IT Methods to Acquire Feedback", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2543,8 +3089,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Information", 
+            "is_random": false, 
             "name": "Provide Information", 
             "to_edges": [], 
             "type": "task"
@@ -2552,8 +3100,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Avoid Liability Problems", 
+            "is_random": false, 
             "name": "Avoid Liability Problems", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2561,8 +3111,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Success Be Tracked in Community Resources", 
+            "is_random": false, 
             "name": "Success Be Tracked in Community Resources", 
             "to_edges": [], 
             "type": "goal"
@@ -2570,8 +3122,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "SA s are Outgoing", 
+            "is_random": false, 
             "name": "SA s are Outgoing", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2579,8 +3133,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Email Counselling", 
+            "is_random": false, 
             "name": "Kids Use Email Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -2588,8 +3144,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Immediacy [Services] ", 
+            "is_random": false, 
             "name": "Immediacy [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2597,8 +3155,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Complete Resource Links", 
+            "is_random": false, 
             "name": "Complete Resource Links", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2606,8 +3166,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
+            "is_random": false, 
             "name": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2615,8 +3177,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Sponsor Logo", 
+            "is_random": false, 
             "name": "Sponsor Logo", 
             "to_edges": [], 
             "type": "resource"
@@ -2624,8 +3188,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Availability [Services] 1", 
+            "is_random": false, 
             "name": "Availability [Services] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2633,8 +3199,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Moderate a Chat", 
+            "is_random": false, 
             "name": "!Moderate a Chat", 
             "to_edges": [], 
             "type": "task"
@@ -2642,8 +3210,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Parents Use Phone Counselling", 
+            "is_random": false, 
             "name": "Parents Use Phone Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -2651,8 +3221,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Voice Counselling", 
+            "is_random": false, 
             "name": "Implement Voice Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -2660,8 +3232,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Recognize\\nSponsor contribution ", 
+            "is_random": false, 
             "name": "Recognize\\nSponsor contribution ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2669,8 +3243,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easy [Access to Post Reply] ", 
+            "is_random": false, 
             "name": "Easy [Access to Post Reply] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2678,8 +3254,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Avoid Dialogues", 
+            "is_random": false, 
             "name": "Avoid Dialogues", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2687,8 +3265,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create Counselling Posts", 
+            "is_random": false, 
             "name": "Create Counselling Posts", 
             "to_edges": [], 
             "type": "task"
@@ -2696,8 +3276,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Free Hardware", 
+            "is_random": false, 
             "name": "Free Hardware", 
             "to_edges": [], 
             "type": "resource"
@@ -2705,8 +3287,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Make New Friends", 
+            "is_random": false, 
             "name": "Make New Friends", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2714,8 +3298,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Plan and Put on Reconnection Conferences", 
+            "is_random": false, 
             "name": "Plan and Put on Reconnection Conferences", 
             "to_edges": [], 
             "type": "task"
@@ -2723,8 +3309,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Site Content", 
+            "is_random": false, 
             "name": "Web Site Content", 
             "to_edges": [], 
             "type": "resource"
@@ -2732,8 +3320,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Telephony Be Implemented and Managed", 
+            "is_random": false, 
             "name": "Telephony Be Implemented and Managed", 
             "to_edges": [], 
             "type": "goal"
@@ -2741,8 +3331,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Availability [Services] ", 
+            "is_random": false, 
             "name": "Availability [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2750,8 +3342,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easier to Find Posts [Web Posting Technology]", 
+            "is_random": false, 
             "name": "Easier to Find Posts [Web Posting Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2759,8 +3353,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Misconceptions", 
+            "is_random": false, 
             "name": "Reduce Misconceptions", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2768,8 +3364,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Accountability of services2", 
+            "is_random": false, 
             "name": "Accountability of services2", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2777,8 +3375,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Help with Presentations", 
+            "is_random": false, 
             "name": "Help with Presentations", 
             "to_edges": [], 
             "type": "task"
@@ -2786,8 +3386,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Manage\\nPartner Relationship", 
+            "is_random": false, 
             "name": "Manage\\nPartner Relationship", 
             "to_edges": [], 
             "type": "task"
@@ -2795,8 +3397,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Help As Many Kids as Possible1", 
+            "is_random": false, 
             "name": "*Help As Many Kids as Possible1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2804,8 +3408,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Market fundraising events", 
+            "is_random": false, 
             "name": "Market fundraising events", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2813,8 +3419,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Happiness [Counselling Management]", 
+            "is_random": false, 
             "name": "Happiness [Counselling Management]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2822,8 +3430,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Quality SA Services", 
+            "is_random": false, 
             "name": "Quality SA Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2831,8 +3441,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Published CS Stories", 
+            "is_random": false, 
             "name": "Published CS Stories", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2840,8 +3452,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Get web event technology", 
+            "is_random": false, 
             "name": "Get web event technology", 
             "to_edges": [], 
             "type": "task"
@@ -2849,8 +3463,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Give Back to Community", 
+            "is_random": false, 
             "name": "Give Back to Community", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2858,8 +3474,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Implement Bulletin Board", 
+            "is_random": false, 
             "name": "*Implement Bulletin Board", 
             "to_edges": [], 
             "type": "task"
@@ -2867,8 +3485,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "! Counselor Speak on Kids Issues in General ", 
+            "is_random": false, 
             "name": "! Counselor Speak on Kids Issues in General ", 
             "to_edges": [], 
             "type": "task"
@@ -2876,8 +3496,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Avoid Relationships with Specific Counsellor", 
+            "is_random": false, 
             "name": "Avoid Relationships with Specific Counsellor", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2885,8 +3507,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Remember Locations of Resouces", 
+            "is_random": false, 
             "name": "Remember Locations of Resouces", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2894,8 +3518,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Cost of Counselling HR", 
+            "is_random": false, 
             "name": "Reduce Cost of Counselling HR", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2903,8 +3529,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "SA s are Enthusiastic", 
+            "is_random": false, 
             "name": "SA s are Enthusiastic", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2912,8 +3540,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Patient [Counselor] 1", 
+            "is_random": false, 
             "name": "Patient [Counselor] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2921,8 +3551,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Easy [Access to Post Reply] 1", 
+            "is_random": false, 
             "name": "Easy [Access to Post Reply] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -2930,8 +3562,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Efficient Services", 
+            "is_random": false, 
             "name": "Efficient Services", 
             "to_edges": [], 
             "type": "softgoal"

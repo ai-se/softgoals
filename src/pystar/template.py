@@ -82,6 +82,8 @@ class Node(Component):
     Component.__init__(self, "node", name=name, type=type, **kwargs)
     self.from_edges = []
     self.to_edges = []
+    self.is_random = False
+    self.cost = 0
 
   def add_edge(self, edge_id, type):
     if type == "from":

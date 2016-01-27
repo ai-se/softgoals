@@ -98,10 +98,9 @@ class Star1(O):
     while len(population) < self.settings.k2:
       point = Point(self.model.generate())
       if not point in population:
+        for preset in presets:
+          point.decisions[preset.id] = preset.value
         population.append(point)
-    for point in population:
-      for preset in presets:
-        point.decisions[preset.id] = preset.value
     return population
 
   def objective_stats(self, generations):
@@ -159,6 +158,7 @@ def print_decisions(decisions):
   for i, decision in enumerate(decisions):
     row = [i+1, decision.name, decision.type, decision.value, decision.cost]
     table.add_row(row)
+  print("\n### Decisions Ranked")
   print("```")
   print(table)
   print("```")

@@ -4086,8 +4086,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Answer 80% of Calls within 30 Seconds of Message Ending", 
+            "is_random": false, 
             "name": "Answer 80% of Calls within 30 Seconds of Message Ending", 
             "to_edges": [
                 357, 
@@ -4098,10 +4100,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 376
             ], 
             "id": "Implement Feedback Form", 
+            "is_random": false, 
             "name": "Implement Feedback Form", 
             "to_edges": [
                 391, 
@@ -4112,10 +4116,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 473
             ], 
             "id": "Decrease Response TIme1", 
+            "is_random": false, 
             "name": "Decrease Response TIme1", 
             "to_edges": [
                 469
@@ -4125,10 +4131,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 488
             ], 
             "id": "*Increased Web Services3", 
+            "is_random": false, 
             "name": "*Increased Web Services3", 
             "to_edges": [
                 658
@@ -4138,8 +4146,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Web Resources2", 
+            "is_random": false, 
             "name": "Increase Web Resources2", 
             "to_edges": [
                 401, 
@@ -4150,10 +4160,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 517
             ], 
             "id": "!Implement\\nTool to Allow Parents to Talk to Each Other 1", 
+            "is_random": false, 
             "name": "!Implement\\nTool to Allow Parents to Talk to Each Other 1", 
             "to_edges": [], 
             "type": "task"
@@ -4161,10 +4173,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 457
             ], 
             "id": "Inform Kids about Anonymity [Kids] of Web Services", 
+            "is_random": false, 
             "name": "Inform Kids about Anonymity [Kids] of Web Services", 
             "to_edges": [], 
             "type": "task"
@@ -4172,8 +4186,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement One-On-One Chat Rooms1", 
+            "is_random": false, 
             "name": "!Implement One-On-One Chat Rooms1", 
             "to_edges": [
                 447
@@ -4183,11 +4199,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 456, 
                 711
             ], 
             "id": "Kids Read General Questions and Answers", 
+            "is_random": false, 
             "name": "Kids Read General Questions and Answers", 
             "to_edges": [
                 465, 
@@ -4199,10 +4217,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 764
             ], 
             "id": "Friendly Web Site1", 
+            "is_random": false, 
             "name": "Friendly Web Site1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4210,11 +4230,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 587, 
                 813
             ], 
             "id": "Kids Use Voice Counselling", 
+            "is_random": false, 
             "name": "Kids Use Voice Counselling", 
             "to_edges": [
                 547, 
@@ -4230,11 +4252,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 641, 
                 851
             ], 
             "id": "Kids Use Ask a Counsellor Section\\ns", 
+            "is_random": false, 
             "name": "Kids Use Ask a Counsellor Section\\ns", 
             "to_edges": [
                 396, 
@@ -4255,11 +4279,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 525, 
                 626
             ], 
             "id": "Maintain Web Services1", 
+            "is_random": false, 
             "name": "Maintain Web Services1", 
             "to_edges": [
                 606, 
@@ -4270,11 +4296,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 484, 
                 579
             ], 
             "id": "Confidentiality [Kids]6", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]6", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4282,10 +4310,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 687
             ], 
             "id": "Implement Board with Replies1", 
+            "is_random": false, 
             "name": "Implement Board with Replies1", 
             "to_edges": [], 
             "type": "task"
@@ -4293,10 +4323,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 645
             ], 
             "id": "Kids Use One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "Kids Use One-On-One Chat Rooms", 
             "to_edges": [
                 429, 
@@ -4315,10 +4347,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 523
             ], 
             "id": "Connect Back to the Community5", 
+            "is_random": false, 
             "name": "Connect Back to the Community5", 
             "to_edges": [
                 855
@@ -4328,8 +4362,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Cyber Caf\u00e9/Portal/Chat Room1", 
+            "is_random": false, 
             "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room1", 
             "to_edges": [
                 583
@@ -4339,8 +4375,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Strategic Blue Print", 
+            "is_random": false, 
             "name": "Strategic Blue Print", 
             "to_edges": [
                 753
@@ -4350,10 +4388,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 369
             ], 
             "id": "!Implement Phone Feedback", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback", 
             "to_edges": [
                 433, 
@@ -4364,10 +4404,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 390
             ], 
             "id": "Similarity of Problems1", 
+            "is_random": false, 
             "name": "Similarity of Problems1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4375,10 +4417,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 692
             ], 
             "id": "Immediacy2", 
+            "is_random": false, 
             "name": "Immediacy2", 
             "to_edges": [
                 392
@@ -4388,11 +4432,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 730, 
                 848
             ], 
             "id": "Maintain/Implement CS Services", 
+            "is_random": false, 
             "name": "Maintain/Implement CS Services", 
             "to_edges": [
                 368, 
@@ -4404,11 +4450,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 393, 
                 581
             ], 
             "id": "Accommodate Phone Traffic", 
+            "is_random": false, 
             "name": "Accommodate Phone Traffic", 
             "to_edges": [
                 527, 
@@ -4419,11 +4467,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 434, 
                 615
             ], 
             "id": "Similarity with other parents  problems ", 
+            "is_random": false, 
             "name": "Similarity with other parents  problems ", 
             "to_edges": [
                 476
@@ -4433,11 +4483,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 360, 
                 688
             ], 
             "id": "!Implement Text Messaging", 
+            "is_random": false, 
             "name": "!Implement Text Messaging", 
             "to_edges": [
                 612
@@ -4447,12 +4499,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 486, 
                 667, 
                 828
             ], 
             "id": "*Anonymous Technology Be Used", 
+            "is_random": false, 
             "name": "*Anonymous Technology Be Used", 
             "to_edges": [
                 605, 
@@ -4463,8 +4517,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Maintain Ask a Counsellor Section1", 
+            "is_random": false, 
             "name": "Maintain Ask a Counsellor Section1", 
             "to_edges": [
                 487
@@ -4474,11 +4530,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 400, 
                 560
             ], 
             "id": "Accommodate Web Site Traffic", 
+            "is_random": false, 
             "name": "Accommodate Web Site Traffic", 
             "to_edges": [
                 622
@@ -4488,8 +4546,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Maintain PHL Phone Services4", 
+            "is_random": false, 
             "name": "*Maintain PHL Phone Services4", 
             "to_edges": [
                 635
@@ -4499,10 +4559,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 840
             ], 
             "id": "Kids Have Ownership of Services1", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services1", 
             "to_edges": [
                 416
@@ -4512,8 +4574,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Services Be Bilingual1", 
+            "is_random": false, 
             "name": "Services Be Bilingual1", 
             "to_edges": [
                 657
@@ -4523,8 +4587,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Moderate Discussion Boards", 
+            "is_random": false, 
             "name": "!Moderate Discussion Boards", 
             "to_edges": [
                 472, 
@@ -4536,10 +4602,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 358
             ], 
             "id": "Easier Navigation [CS Web Services]1", 
+            "is_random": false, 
             "name": "Easier Navigation [CS Web Services]1", 
             "to_edges": [
                 459, 
@@ -4550,8 +4618,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Sufficient Counselling Resources1", 
+            "is_random": false, 
             "name": "*Sufficient Counselling Resources1", 
             "to_edges": [
                 664, 
@@ -4562,10 +4632,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 559
             ], 
             "id": "Measure Success of Services4", 
+            "is_random": false, 
             "name": "Measure Success of Services4", 
             "to_edges": [
                 778
@@ -4575,11 +4647,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 740, 
                 802
             ], 
             "id": "Anonymity [Kids]3", 
+            "is_random": false, 
             "name": "Anonymity [Kids]3", 
             "to_edges": [
                 377, 
@@ -4590,10 +4664,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 389
             ], 
             "id": "*High Quality Services2", 
+            "is_random": false, 
             "name": "*High Quality Services2", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4601,10 +4677,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 775
             ], 
             "id": "*Maintain Phone Services1", 
+            "is_random": false, 
             "name": "*Maintain Phone Services1", 
             "to_edges": [], 
             "type": "task"
@@ -4612,10 +4690,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 726
             ], 
             "id": "Implement Email Counselling", 
+            "is_random": false, 
             "name": "Implement Email Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -4623,10 +4703,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 843
             ], 
             "id": "Easier to Find Posts [Web Posting Technology]1", 
+            "is_random": false, 
             "name": "Easier to Find Posts [Web Posting Technology]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4634,11 +4716,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 583, 
                 619
             ], 
             "id": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [
                 478, 
@@ -4656,8 +4740,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Phone Feedback3", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback3", 
             "to_edges": [
                 369
@@ -4667,10 +4753,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 603
             ], 
             "id": "Quality [Services] ", 
+            "is_random": false, 
             "name": "Quality [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4678,8 +4766,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Phone Counselling1", 
+            "is_random": false, 
             "name": "Kids Use Phone Counselling1", 
             "to_edges": [
                 633
@@ -4689,10 +4779,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 439
             ], 
             "id": "Web Services Self Serve1", 
+            "is_random": false, 
             "name": "Web Services Self Serve1", 
             "to_edges": [
                 398
@@ -4702,10 +4794,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 709
             ], 
             "id": "*Efficient Phone Services", 
+            "is_random": false, 
             "name": "*Efficient Phone Services", 
             "to_edges": [
                 663
@@ -4715,10 +4809,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 474
             ], 
             "id": "Counsellors Be Professionally Trained", 
+            "is_random": false, 
             "name": "Counsellors Be Professionally Trained", 
             "to_edges": [
                 422
@@ -4728,8 +4824,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Site Content", 
+            "is_random": false, 
             "name": "Web Site Content", 
             "to_edges": [
                 425
@@ -4739,10 +4837,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 590
             ], 
             "id": "Maintain/Implement CS Services3", 
+            "is_random": false, 
             "name": "Maintain/Implement CS Services3", 
             "to_edges": [], 
             "type": "task"
@@ -4750,11 +4850,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 717, 
                 855
             ], 
             "id": "Connect Back to the Community8", 
+            "is_random": false, 
             "name": "Connect Back to the Community8", 
             "to_edges": [
                 723
@@ -4764,8 +4866,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Web Counselling with Video", 
+            "is_random": false, 
             "name": "Provide Web Counselling with Video", 
             "to_edges": [
                 774
@@ -4775,6 +4879,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 489, 
                 631, 
@@ -4782,6 +4887,7 @@
                 807
             ], 
             "id": "Non-Real Time E-Counselling Be Used", 
+            "is_random": false, 
             "name": "Non-Real Time E-Counselling Be Used", 
             "to_edges": [
                 496, 
@@ -4794,10 +4900,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 701
             ], 
             "id": "Control of Counselling Work1", 
+            "is_random": false, 
             "name": "Control of Counselling Work1", 
             "to_edges": [
                 792
@@ -4807,6 +4915,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 453, 
                 503, 
@@ -4819,6 +4928,7 @@
                 815
             ], 
             "id": "*Increased Web Services4", 
+            "is_random": false, 
             "name": "*Increased Web Services4", 
             "to_edges": [
                 488, 
@@ -4829,12 +4939,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 394, 
                 469, 
                 512
             ], 
             "id": "Decrease Response TIme2", 
+            "is_random": false, 
             "name": "Decrease Response TIme2", 
             "to_edges": [], 
             "type": "softgoal"
@@ -4842,10 +4954,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 586
             ], 
             "id": "Implement Get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Implement Get Informed Section of Web Site", 
             "to_edges": [
                 613, 
@@ -4856,10 +4970,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 498
             ], 
             "id": "Increase Web Resources1", 
+            "is_random": false, 
             "name": "Increase Web Resources1", 
             "to_edges": [
                 680
@@ -4869,11 +4985,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 399, 
                 637
             ], 
             "id": "!Implement Feedback Collection", 
+            "is_random": false, 
             "name": "!Implement Feedback Collection", 
             "to_edges": [
                 677
@@ -4883,10 +5001,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 741
             ], 
             "id": "Connect Back to the Community1", 
+            "is_random": false, 
             "name": "Connect Back to the Community1", 
             "to_edges": [
                 737
@@ -4896,10 +5016,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 683
             ], 
             "id": "Encourage Kids Using Web Services to Use Phone Services1", 
+            "is_random": false, 
             "name": "Encourage Kids Using Web Services to Use Phone Services1", 
             "to_edges": [
                 793
@@ -4909,11 +5031,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 426, 
                 543
             ], 
             "id": "Decrease Response TIme", 
+            "is_random": false, 
             "name": "Decrease Response TIme", 
             "to_edges": [
                 450, 
@@ -4925,11 +5049,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 754, 
                 814
             ], 
             "id": "Parents Use\\nTool to Allow Parents to Talk to Each Other ", 
+            "is_random": false, 
             "name": "Parents Use\\nTool to Allow Parents to Talk to Each Other ", 
             "to_edges": [
                 378, 
@@ -4942,12 +5068,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 374, 
                 609, 
                 678
             ], 
             "id": "Implement Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Implement Bulletin Board with Replies", 
             "to_edges": [
                 410
@@ -4957,8 +5085,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Web Counselling with Audio", 
+            "is_random": false, 
             "name": "Provide Web Counselling with Audio", 
             "to_edges": [
                 464
@@ -4968,10 +5098,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 703
             ], 
             "id": "Anonymity [Parents]4", 
+            "is_random": false, 
             "name": "Anonymity [Parents]4", 
             "to_edges": [
                 670
@@ -4981,10 +5113,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 657
             ], 
             "id": "Services Be Bilingual", 
+            "is_random": false, 
             "name": "Services Be Bilingual", 
             "to_edges": [], 
             "type": "goal"
@@ -4992,11 +5126,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 545, 
                 695
             ], 
             "id": "Confidentiality [Kids]1", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]1", 
             "to_edges": [
                 386, 
@@ -5007,6 +5143,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 381, 
                 428, 
@@ -5016,6 +5153,7 @@
                 649
             ], 
             "id": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
+            "is_random": false, 
             "name": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [
                 619, 
@@ -5026,10 +5164,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 572
             ], 
             "id": "Connect Back to the Community6", 
+            "is_random": false, 
             "name": "Connect Back to the Community6", 
             "to_edges": [
                 717
@@ -5039,11 +5179,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 551, 
                 668
             ], 
             "id": "Avoid Bad Advice2", 
+            "is_random": false, 
             "name": "Avoid Bad Advice2", 
             "to_edges": [
                 611
@@ -5053,10 +5195,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 691
             ], 
             "id": "*Obtain Needed Software", 
+            "is_random": false, 
             "name": "*Obtain Needed Software", 
             "to_edges": [
                 376
@@ -5066,8 +5210,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Effective Chat Room Filters", 
+            "is_random": false, 
             "name": "Effective Chat Room Filters", 
             "to_edges": [
                 530
@@ -5077,10 +5223,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 743
             ], 
             "id": "*Maintain/Implement CS Web Services2", 
+            "is_random": false, 
             "name": "*Maintain/Implement CS Web Services2", 
             "to_edges": [
                 734, 
@@ -5091,10 +5239,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 398
             ], 
             "id": "Web Services Self Serve", 
+            "is_random": false, 
             "name": "Web Services Self Serve", 
             "to_edges": [
                 400
@@ -5104,11 +5254,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 654, 
                 721
             ], 
             "id": "Available [Services] 2", 
+            "is_random": false, 
             "name": "Available [Services] 2", 
             "to_edges": [
                 591
@@ -5118,6 +5270,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 454, 
                 520, 
@@ -5126,6 +5279,7 @@
                 822
             ], 
             "id": "Non-Anonymous Technology Be Used", 
+            "is_random": false, 
             "name": "Non-Anonymous Technology Be Used", 
             "to_edges": [
                 740, 
@@ -5136,11 +5290,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 373, 
                 666
             ], 
             "id": "Kids Have Ownership of Services5", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services5", 
             "to_edges": [
                 630
@@ -5150,12 +5306,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 354, 
                 451, 
                 724
             ], 
             "id": "*Maintain PHL Web Services2", 
+            "is_random": false, 
             "name": "*Maintain PHL Web Services2", 
             "to_edges": [
                 674
@@ -5165,11 +5323,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 431, 
                 670
             ], 
             "id": "Anonymity [Kids]6", 
+            "is_random": false, 
             "name": "Anonymity [Kids]6", 
             "to_edges": [
                 795
@@ -5179,11 +5339,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 577, 
                 849
             ], 
             "id": "Improve Website Content1", 
+            "is_random": false, 
             "name": "Improve Website Content1", 
             "to_edges": [
                 834
@@ -5193,10 +5355,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 549
             ], 
             "id": "!Implement General Questions and Answers", 
+            "is_random": false, 
             "name": "!Implement General Questions and Answers", 
             "to_edges": [
                 669, 
@@ -5207,10 +5371,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 368
             ], 
             "id": "! Services be provided for Kids Bullying Line", 
+            "is_random": false, 
             "name": "! Services be provided for Kids Bullying Line", 
             "to_edges": [
                 761
@@ -5220,6 +5386,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 460, 
                 575, 
@@ -5228,6 +5395,7 @@
                 841
             ], 
             "id": "Confidential Technology Be Used", 
+            "is_random": false, 
             "name": "Confidential Technology Be Used", 
             "to_edges": [
                 545
@@ -5237,10 +5405,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 492
             ], 
             "id": "*Efficient Phone Services1", 
+            "is_random": false, 
             "name": "*Efficient Phone Services1", 
             "to_edges": [
                 709
@@ -5250,12 +5420,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 497, 
                 643, 
                 677
             ], 
             "id": "Acquire Feedback", 
+            "is_random": false, 
             "name": "Acquire Feedback", 
             "to_edges": [
                 402, 
@@ -5266,11 +5438,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 537, 
                 801
             ], 
             "id": "Maintain/ Implement PHL Services2", 
+            "is_random": false, 
             "name": "Maintain/ Implement PHL Services2", 
             "to_edges": [
                 437, 
@@ -5281,11 +5455,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 440, 
                 553
             ], 
             "id": "Kids Use Video Counselling", 
+            "is_random": false, 
             "name": "Kids Use Video Counselling", 
             "to_edges": [
                 353, 
@@ -5303,12 +5479,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 618, 
                 719, 
                 767
             ], 
             "id": "Immediacy7", 
+            "is_random": false, 
             "name": "Immediacy7", 
             "to_edges": [
                 578, 
@@ -5319,12 +5497,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 412, 
                 699, 
                 733
             ], 
             "id": "Reduce Prank Calls1", 
+            "is_random": false, 
             "name": "Reduce Prank Calls1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5332,10 +5512,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 732
             ], 
             "id": "Anonymity [Kids]5", 
+            "is_random": false, 
             "name": "Anonymity [Kids]5", 
             "to_edges": [
                 511
@@ -5345,10 +5527,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 664
             ], 
             "id": "*Sufficient Counselling Resources2", 
+            "is_random": false, 
             "name": "*Sufficient Counselling Resources2", 
             "to_edges": [
                 393
@@ -5358,10 +5542,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 384
             ], 
             "id": "Control [Web Services]2", 
+            "is_random": false, 
             "name": "Control [Web Services]2", 
             "to_edges": [
                 532
@@ -5371,8 +5557,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Email Counselling1", 
+            "is_random": false, 
             "name": "Kids Use Email Counselling1", 
             "to_edges": [
                 463
@@ -5382,12 +5570,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 472, 
                 487, 
                 698
             ], 
             "id": "Maintain Ask a Counsellor Section", 
+            "is_random": false, 
             "name": "Maintain Ask a Counsellor Section", 
             "to_edges": [
                 641, 
@@ -5398,12 +5588,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 424, 
                 504, 
                 824
             ], 
             "id": "*Maintain Phone Services", 
+            "is_random": false, 
             "name": "*Maintain Phone Services", 
             "to_edges": [
                 407, 
@@ -5415,6 +5607,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 513, 
                 601, 
@@ -5424,6 +5617,7 @@
                 858
             ], 
             "id": "Technology that Does Not Allow Dialogues Between Kids Be Used", 
+            "is_random": false, 
             "name": "Technology that Does Not Allow Dialogues Between Kids Be Used", 
             "to_edges": [
                 448, 
@@ -5436,10 +5630,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 550
             ], 
             "id": "Confidentiality [Services] ", 
+            "is_random": false, 
             "name": "Confidentiality [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5447,10 +5643,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 533
             ], 
             "id": "Implement Email Counselling1", 
+            "is_random": false, 
             "name": "Implement Email Counselling1", 
             "to_edges": [
                 500, 
@@ -5461,10 +5659,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 761
             ], 
             "id": "! Services be provided for Kids Bullying Line1", 
+            "is_random": false, 
             "name": "! Services be provided for Kids Bullying Line1", 
             "to_edges": [], 
             "type": "goal"
@@ -5472,11 +5672,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 464, 
                 714
             ], 
             "id": "Implement Voice Counselling", 
+            "is_random": false, 
             "name": "Implement Voice Counselling", 
             "to_edges": [
                 587
@@ -5486,8 +5688,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Delay", 
+            "is_random": false, 
             "name": "Implement Delay", 
             "to_edges": [
                 529, 
@@ -5498,11 +5702,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 625, 
                 736
             ], 
             "id": "Kids Read Get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Kids Read Get Informed Section of Web Site", 
             "to_edges": [
                 415, 
@@ -5514,8 +5720,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Anti-Pranking Message", 
+            "is_random": false, 
             "name": "Implement Anti-Pranking Message", 
             "to_edges": [
                 699
@@ -5525,10 +5733,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 793
             ], 
             "id": "Encourage Kids Using Web Services to Use Phone Services", 
+            "is_random": false, 
             "name": "Encourage Kids Using Web Services to Use Phone Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5536,8 +5746,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Feedback Form Software", 
+            "is_random": false, 
             "name": "Feedback Form Software", 
             "to_edges": [
                 691
@@ -5547,8 +5759,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Schedule Chat at Specific Times", 
+            "is_random": false, 
             "name": "Schedule Chat at Specific Times", 
             "to_edges": [
                 582, 
@@ -5559,10 +5773,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 574
             ], 
             "id": "Increase Phone Resources2", 
+            "is_random": false, 
             "name": "Increase Phone Resources2", 
             "to_edges": [
                 370
@@ -5572,11 +5788,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 447, 
                 842
             ], 
             "id": "!Implement One-On-One Chat Rooms", 
+            "is_random": false, 
             "name": "!Implement One-On-One Chat Rooms", 
             "to_edges": [
                 645
@@ -5586,12 +5804,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 663, 
                 735, 
                 777
             ], 
             "id": "Efficient Services1", 
+            "is_random": false, 
             "name": "Efficient Services1", 
             "to_edges": [
                 477, 
@@ -5602,11 +5822,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 385, 
                 655
             ], 
             "id": "Kids Use Bulletin Board with Delayed Moderation", 
+            "is_random": false, 
             "name": "Kids Use Bulletin Board with Delayed Moderation", 
             "to_edges": [
                 351, 
@@ -5630,10 +5852,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 617
             ], 
             "id": "Friendly [Web site] ", 
+            "is_random": false, 
             "name": "Friendly [Web site] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5641,10 +5865,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 794
             ], 
             "id": "Confidentiality [Parents]5", 
+            "is_random": false, 
             "name": "Confidentiality [Parents]5", 
             "to_edges": [
                 749
@@ -5654,10 +5880,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 722
             ], 
             "id": "Implement Feedback Form1", 
+            "is_random": false, 
             "name": "Implement Feedback Form1", 
             "to_edges": [
                 592
@@ -5667,10 +5895,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 432
             ], 
             "id": "Confidentiality [Kids]5", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]5", 
             "to_edges": [
                 535, 
@@ -5682,10 +5912,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 591
             ], 
             "id": "Available [Services] 1", 
+            "is_random": false, 
             "name": "Available [Services] 1", 
             "to_edges": [
                 430, 
@@ -5697,8 +5929,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Read General Questions and Answers1", 
+            "is_random": false, 
             "name": "Kids Read General Questions and Answers1", 
             "to_edges": [
                 456
@@ -5708,10 +5942,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 444
             ], 
             "id": "Implement Information Section1", 
+            "is_random": false, 
             "name": "Implement Information Section1", 
             "to_edges": [], 
             "type": "task"
@@ -5719,11 +5955,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 682, 
                 707
             ], 
             "id": "Relevance in Kids Lives", 
+            "is_random": false, 
             "name": "Relevance in Kids Lives", 
             "to_edges": [
                 455
@@ -5733,10 +5971,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 675
             ], 
             "id": "Maintain Services above Competition", 
+            "is_random": false, 
             "name": "Maintain Services above Competition", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5744,10 +5984,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 833
             ], 
             "id": "Acquire Service Resources", 
+            "is_random": false, 
             "name": "Acquire Service Resources", 
             "to_edges": [
                 537, 
@@ -5760,8 +6002,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Only Online Request from Canadians Accepted", 
+            "is_random": false, 
             "name": "Only Online Request from Canadians Accepted", 
             "to_edges": [
                 518
@@ -5771,6 +6015,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 375, 
                 388, 
@@ -5783,6 +6028,7 @@
                 700
             ], 
             "id": "Anonymity [Counsellors]", 
+            "is_random": false, 
             "name": "Anonymity [Counsellors]", 
             "to_edges": [
                 421
@@ -5792,10 +6038,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 729
             ], 
             "id": "Connect Back to the Community2", 
+            "is_random": false, 
             "name": "Connect Back to the Community2", 
             "to_edges": [
                 408
@@ -5805,10 +6053,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 774
             ], 
             "id": "Implement Video Counselling1", 
+            "is_random": false, 
             "name": "Implement Video Counselling1", 
             "to_edges": [
                 440, 
@@ -5819,6 +6069,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 580, 
                 584, 
@@ -5826,6 +6077,7 @@
                 853
             ], 
             "id": "Implement Services", 
+            "is_random": false, 
             "name": "Implement Services", 
             "to_edges": [], 
             "type": "task"
@@ -5833,10 +6085,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 355
             ], 
             "id": "Connect to Other Kids", 
+            "is_random": false, 
             "name": "Connect to Other Kids", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5844,11 +6098,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 528, 
                 705
             ], 
             "id": "Immediacy3", 
+            "is_random": false, 
             "name": "Immediacy3", 
             "to_edges": [
                 569
@@ -5858,10 +6114,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 847
             ], 
             "id": "Direct Response to Kids1", 
+            "is_random": false, 
             "name": "Direct Response to Kids1", 
             "to_edges": [
                 565
@@ -5871,10 +6129,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 780
             ], 
             "id": "Maintain CS Phone Services1", 
+            "is_random": false, 
             "name": "Maintain CS Phone Services1", 
             "to_edges": [
                 597, 
@@ -5885,10 +6145,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 481
             ], 
             "id": "Available [Services] ", 
+            "is_random": false, 
             "name": "Available [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -5896,11 +6158,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 526, 
                 798
             ], 
             "id": "Put Content Onto Website", 
+            "is_random": false, 
             "name": "Put Content Onto Website", 
             "to_edges": [
                 359, 
@@ -5912,10 +6176,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 436
             ], 
             "id": "*Maintain PHL Phone Services3", 
+            "is_random": false, 
             "name": "*Maintain PHL Phone Services3", 
             "to_edges": [
                 452
@@ -5925,6 +6191,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 605, 
                 690, 
@@ -5935,6 +6202,7 @@
                 820
             ], 
             "id": "Control [Web Services]", 
+            "is_random": false, 
             "name": "Control [Web Services]", 
             "to_edges": [
                 383, 
@@ -5945,8 +6213,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Bulletin Board with Replies1", 
+            "is_random": false, 
             "name": "Implement Bulletin Board with Replies1", 
             "to_edges": [
                 374
@@ -5956,10 +6226,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 834
             ], 
             "id": "Improve Website Content", 
+            "is_random": false, 
             "name": "Improve Website Content", 
             "to_edges": [
                 830
@@ -5969,6 +6241,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 478, 
                 556, 
@@ -5976,6 +6249,7 @@
                 758
             ], 
             "id": "Non-Confidential Technology Be Used", 
+            "is_random": false, 
             "name": "Non-Confidential Technology Be Used", 
             "to_edges": [
                 695
@@ -5985,10 +6259,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 570
             ], 
             "id": "*Efficient Phone Services2", 
+            "is_random": false, 
             "name": "*Efficient Phone Services2", 
             "to_edges": [
                 492
@@ -5998,10 +6274,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 674
             ], 
             "id": "*Maintain PHL Web Services1", 
+            "is_random": false, 
             "name": "*Maintain PHL Web Services1", 
             "to_edges": [
                 364, 
@@ -6012,10 +6290,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 527
             ], 
             "id": "Decrease [Phone Waiting Time] ", 
+            "is_random": false, 
             "name": "Decrease [Phone Waiting Time] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6023,10 +6303,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 830
             ], 
             "id": "Improve Website Content2", 
+            "is_random": false, 
             "name": "Improve Website Content2", 
             "to_edges": [
                 639
@@ -6036,10 +6318,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 662
             ], 
             "id": "*High Quality Services1", 
+            "is_random": false, 
             "name": "*High Quality Services1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6047,10 +6331,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 613
             ], 
             "id": "Implement Get Informed Section of Web Site1", 
+            "is_random": false, 
             "name": "Implement Get Informed Section of Web Site1", 
             "to_edges": [], 
             "type": "task"
@@ -6058,8 +6344,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Inform Kids about Anonymity [Kids] of Web Services1", 
+            "is_random": false, 
             "name": "Inform Kids about Anonymity [Kids] of Web Services1", 
             "to_edges": [
                 372, 
@@ -6070,11 +6358,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 413, 
                 511
             ], 
             "id": "Anonymity [Kids]2", 
+            "is_random": false, 
             "name": "Anonymity [Kids]2", 
             "to_edges": [
                 856
@@ -6084,11 +6374,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 760, 
                 788
             ], 
             "id": "Maintain CS Phone Services2", 
+            "is_random": false, 
             "name": "Maintain CS Phone Services2", 
             "to_edges": [
                 775, 
@@ -6100,6 +6392,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 409, 
                 420, 
@@ -6109,6 +6402,7 @@
                 811
             ], 
             "id": "Direct Response to Kids", 
+            "is_random": false, 
             "name": "Direct Response to Kids", 
             "to_edges": [
                 554, 
@@ -6121,10 +6415,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 759
             ], 
             "id": "Immediacy4", 
+            "is_random": false, 
             "name": "Immediacy4", 
             "to_edges": [
                 705
@@ -6134,10 +6430,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 505
             ], 
             "id": "Sufficiently Moderated Web Services1", 
+            "is_random": false, 
             "name": "Sufficiently Moderated Web Services1", 
             "to_edges": [
                 536
@@ -6147,10 +6445,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 844
             ], 
             "id": "Obtain Software", 
+            "is_random": false, 
             "name": "Obtain Software", 
             "to_edges": [
                 845
@@ -6160,10 +6460,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 809
             ], 
             "id": "*Sufficient Counselling Resources", 
+            "is_random": false, 
             "name": "*Sufficient Counselling Resources", 
             "to_edges": [
                 394, 
@@ -6176,8 +6478,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Have Ownership of Services6", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services6", 
             "to_edges": [
                 373
@@ -6187,10 +6491,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 568
             ], 
             "id": "!Implement Phone Feedback2", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback2", 
             "to_edges": [
                 637
@@ -6200,8 +6506,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement\\nTool to Allow Parents to Talk to Each Other ", 
+            "is_random": false, 
             "name": "!Implement\\nTool to Allow Parents to Talk to Each Other ", 
             "to_edges": [
                 354, 
@@ -6213,10 +6521,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 441
             ], 
             "id": "*Kids Get Information through E-Counselling", 
+            "is_random": false, 
             "name": "*Kids Get Information through E-Counselling", 
             "to_edges": [
                 819
@@ -6226,10 +6536,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 405
             ], 
             "id": "Connect Back to the Community ", 
+            "is_random": false, 
             "name": "Connect Back to the Community ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6237,10 +6549,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 685
             ], 
             "id": "Confidentiality [Parents]1", 
+            "is_random": false, 
             "name": "Confidentiality [Parents]1", 
             "to_edges": [
                 739
@@ -6250,11 +6564,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 576, 
                 795
             ], 
             "id": "Anonymity [Parents]2", 
+            "is_random": false, 
             "name": "Anonymity [Parents]2", 
             "to_edges": [
                 676
@@ -6264,10 +6580,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 531
             ], 
             "id": "Efficient Web Services", 
+            "is_random": false, 
             "name": "Efficient Web Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6275,11 +6593,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 356, 
                 796
             ], 
             "id": "Maintain/Implement CS Services2", 
+            "is_random": false, 
             "name": "Maintain/Implement CS Services2", 
             "to_edges": [
                 755
@@ -6289,11 +6609,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 493, 
                 725
             ], 
             "id": "!Kids Read Polls about Kids", 
+            "is_random": false, 
             "name": "!Kids Read Polls about Kids", 
             "to_edges": [
                 411, 
@@ -6306,11 +6628,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 633, 
                 826
             ], 
             "id": "Kids Use Phone Counselling", 
+            "is_random": false, 
             "name": "Kids Use Phone Counselling", 
             "to_edges": [
                 579, 
@@ -6323,10 +6647,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 501
             ], 
             "id": "Kids Use One-On-One Chat Rooms1", 
+            "is_random": false, 
             "name": "Kids Use One-On-One Chat Rooms1", 
             "to_edges": [], 
             "type": "task"
@@ -6334,8 +6660,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Voice Counselling be Performed", 
+            "is_random": false, 
             "name": "Voice Counselling be Performed", 
             "to_edges": [
                 475, 
@@ -6346,12 +6674,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 402, 
                 519, 
                 697
             ], 
             "id": "Confidentiality", 
+            "is_random": false, 
             "name": "Confidentiality", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6359,10 +6689,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 597
             ], 
             "id": "Maintain CS Phone Services3", 
+            "is_random": false, 
             "name": "Maintain CS Phone Services3", 
             "to_edges": [
                 356
@@ -6372,12 +6704,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 367, 
                 620, 
                 845
             ], 
             "id": "Maintain Web Services", 
+            "is_random": false, 
             "name": "Maintain Web Services", 
             "to_edges": [
                 387, 
@@ -6388,10 +6722,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 805
             ], 
             "id": "Decrease Response TIme3", 
+            "is_random": false, 
             "name": "Decrease Response TIme3", 
             "to_edges": [
                 512
@@ -6401,8 +6737,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids use get Informed Section of Web Site", 
+            "is_random": false, 
             "name": "Kids use get Informed Section of Web Site", 
             "to_edges": [
                 736
@@ -6412,8 +6750,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Decrease Response TIme4", 
+            "is_random": false, 
             "name": "Decrease Response TIme4", 
             "to_edges": [
                 777, 
@@ -6424,11 +6764,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 458, 
                 499
             ], 
             "id": "Avoid Dialogues [Between Kids]", 
+            "is_random": false, 
             "name": "Avoid Dialogues [Between Kids]", 
             "to_edges": [
                 510, 
@@ -6440,10 +6782,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 800
             ], 
             "id": "*Maintain PHL Phone Services", 
+            "is_random": false, 
             "name": "*Maintain PHL Phone Services", 
             "to_edges": [
                 504
@@ -6453,11 +6797,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 539, 
                 610
             ], 
             "id": "Parents Use Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Parents Use Bulletin Board with Replies", 
             "to_edges": [
                 406, 
@@ -6472,10 +6818,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 521
             ], 
             "id": "Anonymity [Parents]5", 
+            "is_random": false, 
             "name": "Anonymity [Parents]5", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6483,6 +6831,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 411, 
                 702, 
@@ -6490,6 +6839,7 @@
                 852
             ], 
             "id": "Kids Use Online Information Provided", 
+            "is_random": false, 
             "name": "Kids Use Online Information Provided", 
             "to_edges": [
                 380, 
@@ -6502,10 +6852,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 606
             ], 
             "id": "Maintain Web Services3", 
+            "is_random": false, 
             "name": "Maintain Web Services3", 
             "to_edges": [], 
             "type": "task"
@@ -6513,8 +6865,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Perform Email Counselling", 
+            "is_random": false, 
             "name": "!Perform Email Counselling", 
             "to_edges": [
                 533
@@ -6524,11 +6878,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 502, 
                 737
             ], 
             "id": "Connect Back to the Community7", 
+            "is_random": false, 
             "name": "Connect Back to the Community7", 
             "to_edges": [
                 572
@@ -6538,10 +6894,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 442
             ], 
             "id": "Avoid Bad Advice3", 
+            "is_random": false, 
             "name": "Avoid Bad Advice3", 
             "to_edges": [
                 551
@@ -6551,6 +6909,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 448, 
                 552, 
@@ -6559,6 +6918,7 @@
                 771
             ], 
             "id": "Similarity of Problems", 
+            "is_random": false, 
             "name": "Similarity of Problems", 
             "to_edges": [
                 390
@@ -6568,10 +6928,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 768
             ], 
             "id": "*Maintain/Implement CS Web Services1", 
+            "is_random": false, 
             "name": "*Maintain/Implement CS Web Services1", 
             "to_edges": [
                 620
@@ -6581,8 +6943,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Bulletin Board with Delayed Moderation1", 
+            "is_random": false, 
             "name": "Implement Bulletin Board with Delayed Moderation1", 
             "to_edges": [
                 766
@@ -6592,10 +6956,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 430
             ], 
             "id": "Available [Services] 5", 
+            "is_random": false, 
             "name": "Available [Services] 5", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6603,8 +6969,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Emphasis on Online Feedback Form1", 
+            "is_random": false, 
             "name": "Increase Emphasis on Online Feedback Form1", 
             "to_edges": [
                 468, 
@@ -6615,10 +6983,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 792
             ], 
             "id": "Control of Counselling Work", 
+            "is_random": false, 
             "name": "Control of Counselling Work", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6626,6 +6996,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 352, 
                 496, 
@@ -6635,6 +7006,7 @@
                 787
             ], 
             "id": "Avoid Bad Advice", 
+            "is_random": false, 
             "name": "Avoid Bad Advice", 
             "to_edges": [
                 668
@@ -6644,10 +7016,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 540
             ], 
             "id": "Kids Have Ownership of Services4", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services4", 
             "to_edges": [
                 666
@@ -6657,11 +7031,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 391, 
                 791
             ], 
             "id": "Measure Success of Services1", 
+            "is_random": false, 
             "name": "Measure Success of Services1", 
             "to_edges": [
                 696
@@ -6671,10 +7047,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 839
             ], 
             "id": "Reduce Contagion Effect [Of Harmful Actions]1", 
+            "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6682,10 +7060,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 831
             ], 
             "id": "Anonymity [Kids]1", 
+            "is_random": false, 
             "name": "Anonymity [Kids]1", 
             "to_edges": [
                 382
@@ -6695,10 +7075,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 563
             ], 
             "id": "Improve Image to Kids1", 
+            "is_random": false, 
             "name": "Improve Image to Kids1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6706,12 +7088,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 383, 
                 566, 
                 742
             ], 
             "id": "Avoid Presence of Pedofiles", 
+            "is_random": false, 
             "name": "Avoid Presence of Pedofiles", 
             "to_edges": [
                 352, 
@@ -6722,10 +7106,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 739
             ], 
             "id": "Confidentiality [Parents]", 
+            "is_random": false, 
             "name": "Confidentiality [Parents]", 
             "to_edges": [
                 519, 
@@ -6736,10 +7122,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 538
             ], 
             "id": "*Maintain Phone Services4", 
+            "is_random": false, 
             "name": "*Maintain Phone Services4", 
             "to_edges": [], 
             "type": "task"
@@ -6747,11 +7135,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 490, 
                 696
             ], 
             "id": "Measure Success of Services", 
+            "is_random": false, 
             "name": "Measure Success of Services", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6759,10 +7149,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 476
             ], 
             "id": "Similarity with other parents  problems 1", 
+            "is_random": false, 
             "name": "Similarity with other parents  problems 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6770,10 +7162,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 506
             ], 
             "id": "Avoid Bad Advice4", 
+            "is_random": false, 
             "name": "Avoid Bad Advice4", 
             "to_edges": [
                 608
@@ -6783,10 +7177,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 588
             ], 
             "id": "Maintain/ Implement PHL Services1", 
+            "is_random": false, 
             "name": "Maintain/ Implement PHL Services1", 
             "to_edges": [
                 801
@@ -6796,8 +7192,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Resources [Services]1", 
+            "is_random": false, 
             "name": "Increase Resources [Services]1", 
             "to_edges": [
                 686
@@ -6807,11 +7205,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 532, 
                 773
             ], 
             "id": "Control [Web Services]1", 
+            "is_random": false, 
             "name": "Control [Web Services]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6819,10 +7219,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 482
             ], 
             "id": "Implement Video Counselling", 
+            "is_random": false, 
             "name": "Implement Video Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -6830,8 +7232,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Server", 
+            "is_random": false, 
             "name": "Web Server", 
             "to_edges": [
                 363
@@ -6841,10 +7245,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 421
             ], 
             "id": "Anonymity [Counsellors]1", 
+            "is_random": false, 
             "name": "Anonymity [Counsellors]1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -6852,8 +7258,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Block Kids who Display Inappropriate Behavoir", 
+            "is_random": false, 
             "name": "Block Kids who Display Inappropriate Behavoir", 
             "to_edges": [
                 509
@@ -6863,10 +7271,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 417
             ], 
             "id": "*Maintain Phone Services3", 
+            "is_random": false, 
             "name": "*Maintain Phone Services3", 
             "to_edges": [
                 365
@@ -6876,12 +7286,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 443, 
                 524, 
                 838
             ], 
             "id": "Reduce Number of Steps [Web Posting Technology]1", 
+            "is_random": false, 
             "name": "Reduce Number of Steps [Web Posting Technology]1", 
             "to_edges": [
                 419
@@ -6891,6 +7303,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 459, 
                 578, 
@@ -6898,6 +7311,7 @@
                 651
             ], 
             "id": "Friendly Web Site", 
+            "is_random": false, 
             "name": "Friendly Web Site", 
             "to_edges": [
                 764
@@ -6907,11 +7321,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 518, 
                 680
             ], 
             "id": "Increase Web Resources", 
+            "is_random": false, 
             "name": "Increase Web Resources", 
             "to_edges": [
                 849
@@ -6921,10 +7337,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 370
             ], 
             "id": "Increase Phone Resources1", 
+            "is_random": false, 
             "name": "Increase Phone Resources1", 
             "to_edges": [
                 581
@@ -6934,8 +7352,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Feedback", 
+            "is_random": false, 
             "name": "Feedback", 
             "to_edges": [
                 643
@@ -6945,6 +7365,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 379, 
                 422, 
@@ -6962,6 +7383,7 @@
                 850
             ], 
             "id": "*High Quality Services", 
+            "is_random": false, 
             "name": "*High Quality Services", 
             "to_edges": [
                 389, 
@@ -6974,10 +7396,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 600
             ], 
             "id": "!Implement Polls about Kids1", 
+            "is_random": false, 
             "name": "!Implement Polls about Kids1", 
             "to_edges": [], 
             "type": "task"
@@ -6985,10 +7409,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 745
             ], 
             "id": "*Increased Web Services1", 
+            "is_random": false, 
             "name": "*Increased Web Services1", 
             "to_edges": [
                 483
@@ -6998,8 +7424,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Information Section", 
+            "is_random": false, 
             "name": "Implement Information Section", 
             "to_edges": [
                 444, 
@@ -7011,10 +7439,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 433
             ], 
             "id": "!Implement Phone Feedback1", 
+            "is_random": false, 
             "name": "!Implement Phone Feedback1", 
             "to_edges": [
                 568
@@ -7024,10 +7454,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 536
             ], 
             "id": "Sufficiently Moderated Web Services", 
+            "is_random": false, 
             "name": "Sufficiently Moderated Web Services", 
             "to_edges": [
                 850
@@ -7037,12 +7469,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 548, 
                 555, 
                 784
             ], 
             "id": "Technology that Allows Dialogues Between Kids Be Used", 
+            "is_random": false, 
             "name": "Technology that Allows Dialogues Between Kids Be Used", 
             "to_edges": [
                 355, 
@@ -7056,10 +7490,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 753
             ], 
             "id": "Strategic Blue Print for Website Be Followed", 
+            "is_random": false, 
             "name": "Strategic Blue Print for Website Be Followed", 
             "to_edges": [], 
             "type": "goal"
@@ -7067,6 +7503,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 353, 
                 361, 
@@ -7079,6 +7516,7 @@
                 859
             ], 
             "id": "Avoid Dialogues Between [Kids and Counsellors on the Web]", 
+            "is_random": false, 
             "name": "Avoid Dialogues Between [Kids and Counsellors on the Web]", 
             "to_edges": [
                 683
@@ -7088,10 +7526,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 748
             ], 
             "id": "Friendly [Web site] 1", 
+            "is_random": false, 
             "name": "Friendly [Web site] 1", 
             "to_edges": [
                 617
@@ -7101,10 +7541,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 825
             ], 
             "id": "Confidentiality [Parents]4", 
+            "is_random": false, 
             "name": "Confidentiality [Parents]4", 
             "to_edges": [
                 827
@@ -7114,10 +7556,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 363
             ], 
             "id": "*Obtain Web Server", 
+            "is_random": false, 
             "name": "*Obtain Web Server", 
             "to_edges": [], 
             "type": "task"
@@ -7125,6 +7569,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 377, 
                 386, 
@@ -7138,6 +7583,7 @@
                 750
             ], 
             "id": "Improve Image to Kids", 
+            "is_random": false, 
             "name": "Improve Image to Kids", 
             "to_edges": [
                 563
@@ -7147,10 +7593,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 592
             ], 
             "id": "Implement Feedback Form2", 
+            "is_random": false, 
             "name": "Implement Feedback Form2", 
             "to_edges": [
                 399
@@ -7160,10 +7608,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 598
             ], 
             "id": "*Increase Number of Services1", 
+            "is_random": false, 
             "name": "*Increase Number of Services1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7171,10 +7621,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 846
             ], 
             "id": "Confidentiality [Kids]4", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]4", 
             "to_edges": [
                 432
@@ -7184,6 +7636,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 485, 
                 529, 
@@ -7192,6 +7645,7 @@
                 673
             ], 
             "id": "Reduce Contagion Effect [Of Harmful Actions]", 
+            "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]", 
             "to_edges": [
                 839
@@ -7201,11 +7655,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 638, 
                 829
             ], 
             "id": "Confidentiality [Parents]2", 
+            "is_random": false, 
             "name": "Confidentiality [Parents]2", 
             "to_edges": [
                 685
@@ -7215,11 +7671,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 372, 
                 491
             ], 
             "id": "Kids Have Ownership of Services", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services", 
             "to_edges": [
                 776
@@ -7229,8 +7687,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Site Content Be Updated Daily", 
+            "is_random": false, 
             "name": "Web Site Content Be Updated Daily", 
             "to_edges": [
                 577
@@ -7240,8 +7700,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Voice Counselling1", 
+            "is_random": false, 
             "name": "Implement Voice Counselling1", 
             "to_edges": [
                 714
@@ -7251,12 +7713,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 378, 
                 684, 
                 689
             ], 
             "id": "Connect Back to the Community3", 
+            "is_random": false, 
             "name": "Connect Back to the Community3", 
             "to_edges": [
                 708
@@ -7266,8 +7730,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Kids Read Polls about Kids1", 
+            "is_random": false, 
             "name": "!Kids Read Polls about Kids1", 
             "to_edges": [
                 493
@@ -7277,10 +7743,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 786
             ], 
             "id": "Empowering Kids to Help Themselves", 
+            "is_random": false, 
             "name": "Empowering Kids to Help Themselves", 
             "to_edges": [
                 362
@@ -7290,8 +7758,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Feedback1", 
+            "is_random": false, 
             "name": "Feedback1", 
             "to_edges": [
                 497
@@ -7301,10 +7771,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 565
             ], 
             "id": "Direct Response to Kids2", 
+            "is_random": false, 
             "name": "Direct Response to Kids2", 
             "to_edges": [
                 710
@@ -7314,10 +7786,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 769
             ], 
             "id": "Confidentiality [Kids]3", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]3", 
             "to_edges": [
                 846
@@ -7327,10 +7801,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 382
             ], 
             "id": "Anonymity [Kids]", 
+            "is_random": false, 
             "name": "Anonymity [Kids]", 
             "to_edges": [
                 479, 
@@ -7341,12 +7817,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 401, 
                 446, 
                 686
             ], 
             "id": "Increase Resources [Services]", 
+            "is_random": false, 
             "name": "Increase Resources [Services]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7354,8 +7832,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Reduce Prank Calls", 
+            "is_random": false, 
             "name": "Reduce Prank Calls", 
             "to_edges": [
                 733
@@ -7365,10 +7845,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 364
             ], 
             "id": "*Maintain PHL Web Services", 
+            "is_random": false, 
             "name": "*Maintain PHL Web Services", 
             "to_edges": [
                 367
@@ -7378,6 +7860,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 351, 
                 547, 
@@ -7391,6 +7874,7 @@
                 860
             ], 
             "id": "Correct Interpretation of Counsel", 
+            "is_random": false, 
             "name": "Correct Interpretation of Counsel", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7398,12 +7882,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 427, 
                 475, 
                 635
             ], 
             "id": "*Maintain PHL Phone Services2", 
+            "is_random": false, 
             "name": "*Maintain PHL Phone Services2", 
             "to_edges": [
                 404, 
@@ -7414,10 +7900,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 508
             ], 
             "id": "Kids Have Ownership of Services3", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services3", 
             "to_edges": [
                 540
@@ -7427,10 +7915,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 856
             ], 
             "id": "Anonymity [Kids]4", 
+            "is_random": false, 
             "name": "Anonymity [Kids]4", 
             "to_edges": [
                 831
@@ -7440,10 +7930,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 832
             ], 
             "id": "Measure Success of Services2", 
+            "is_random": false, 
             "name": "Measure Success of Services2", 
             "to_edges": [
                 490
@@ -7453,10 +7945,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 812
             ], 
             "id": "Easier Access to Post Reply", 
+            "is_random": false, 
             "name": "Easier Access to Post Reply", 
             "to_edges": [
                 358, 
@@ -7469,10 +7963,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 723
             ], 
             "id": "Connect Back to the Community9", 
+            "is_random": false, 
             "name": "Connect Back to the Community9", 
             "to_edges": [
                 405, 
@@ -7484,6 +7980,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 541, 
                 557, 
@@ -7491,6 +7988,7 @@
                 823
             ], 
             "id": "Real Time E-Counselling Be Used", 
+            "is_random": false, 
             "name": "Real Time E-Counselling Be Used", 
             "to_edges": [
                 426, 
@@ -7504,10 +8002,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 403
             ], 
             "id": "Easier Navigation [CS Web Services]2", 
+            "is_random": false, 
             "name": "Easier Navigation [CS Web Services]2", 
             "to_edges": [
                 594
@@ -7517,10 +8017,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 647
             ], 
             "id": "Easier Navigation [CS Web Services]", 
+            "is_random": false, 
             "name": "Easier Navigation [CS Web Services]", 
             "to_edges": [
                 403
@@ -7530,10 +8032,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 781
             ], 
             "id": "Immediacy5", 
+            "is_random": false, 
             "name": "Immediacy5", 
             "to_edges": [
                 528
@@ -7543,10 +8047,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 425
             ], 
             "id": "*Acquire Web Content", 
+            "is_random": false, 
             "name": "*Acquire Web Content", 
             "to_edges": [
                 526
@@ -7556,8 +8062,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Software", 
+            "is_random": false, 
             "name": "Web Software", 
             "to_edges": [
                 844
@@ -7567,11 +8075,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 514, 
                 602
             ], 
             "id": "Sufficiently Moderated Web Services2", 
+            "is_random": false, 
             "name": "Sufficiently Moderated Web Services2", 
             "to_edges": [
                 505
@@ -7581,10 +8091,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 616
             ], 
             "id": "Easier Access to Post Reply1", 
+            "is_random": false, 
             "name": "Easier Access to Post Reply1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7592,10 +8104,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 676
             ], 
             "id": "Anonymity [Parents]1", 
+            "is_random": false, 
             "name": "Anonymity [Parents]1", 
             "to_edges": [
                 366
@@ -7605,8 +8119,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Parents Use Information Section1", 
+            "is_random": false, 
             "name": "Parents Use Information Section1", 
             "to_edges": [
                 704
@@ -7616,10 +8132,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 803
             ], 
             "id": "Relevance in Kids Lives1", 
+            "is_random": false, 
             "name": "Relevance in Kids Lives1", 
             "to_edges": [
                 682
@@ -7629,8 +8147,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Avoid Presence of Pedofiles1", 
+            "is_random": false, 
             "name": "Avoid Presence of Pedofiles1", 
             "to_edges": [
                 713, 
@@ -7641,8 +8161,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Web Services Self Serve3", 
+            "is_random": false, 
             "name": "Web Services Self Serve3", 
             "to_edges": [
                 738
@@ -7652,8 +8174,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Increase Phone Resources", 
+            "is_random": false, 
             "name": "Increase Phone Resources", 
             "to_edges": [
                 446, 
@@ -7664,10 +8188,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 755
             ], 
             "id": "Maintain/Implement CS Services1", 
+            "is_random": false, 
             "name": "Maintain/Implement CS Services1", 
             "to_edges": [
                 848
@@ -7677,8 +8203,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Counsellors Be Professionally Trained1", 
+            "is_random": false, 
             "name": "Counsellors Be Professionally Trained1", 
             "to_edges": [
                 474
@@ -7688,10 +8216,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 810
             ], 
             "id": "!Implement Cyber Caf\u00e9/Portal/Chat Room1", 
+            "is_random": false, 
             "name": "!Implement Cyber Caf\u00e9/Portal/Chat Room1", 
             "to_edges": [], 
             "type": "task"
@@ -7699,8 +8229,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Trace Calls", 
+            "is_random": false, 
             "name": "Trace Calls", 
             "to_edges": [
                 576, 
@@ -7711,10 +8243,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 658
             ], 
             "id": "*Increased Web Services2", 
+            "is_random": false, 
             "name": "*Increased Web Services2", 
             "to_edges": [
                 745
@@ -7724,11 +8258,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 594, 
                 622
             ], 
             "id": "Efficient Web Services2", 
+            "is_random": false, 
             "name": "Efficient Web Services2", 
             "to_edges": [
                 397
@@ -7738,10 +8274,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 468
             ], 
             "id": "Increase Emphasis on Online Feedback Form", 
+            "is_random": false, 
             "name": "Increase Emphasis on Online Feedback Form", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7749,8 +8287,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Provide Written Counselling", 
+            "is_random": false, 
             "name": "Provide Written Counselling", 
             "to_edges": [
                 428, 
@@ -7762,10 +8302,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 380
             ], 
             "id": "Connect Back to the Community", 
+            "is_random": false, 
             "name": "Connect Back to the Community", 
             "to_edges": [
                 502
@@ -7775,8 +8317,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "*Provide Recorded Messages", 
+            "is_random": false, 
             "name": "*Provide Recorded Messages", 
             "to_edges": [
                 427, 
@@ -7787,10 +8331,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 790
             ], 
             "id": "Phone Library of Recorded Messages", 
+            "is_random": false, 
             "name": "Phone Library of Recorded Messages", 
             "to_edges": [], 
             "type": "resource"
@@ -7798,8 +8344,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Put Content Onto Website1", 
+            "is_random": false, 
             "name": "Put Content Onto Website1", 
             "to_edges": [
                 798
@@ -7809,10 +8357,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 640
             ], 
             "id": "Confidentiality [Kids]7", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]7", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7820,8 +8370,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Video Counselling1", 
+            "is_random": false, 
             "name": "Kids Use Video Counselling1", 
             "to_edges": [
                 553
@@ -7831,10 +8383,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 387
             ], 
             "id": "Maintain Web Services2", 
+            "is_random": false, 
             "name": "Maintain Web Services2", 
             "to_edges": [
                 525
@@ -7844,10 +8398,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 462
             ], 
             "id": "Immediacy8", 
+            "is_random": false, 
             "name": "Immediacy8", 
             "to_edges": [], 
             "type": "softgoal"
@@ -7855,10 +8411,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 544
             ], 
             "id": "*Increase Number of Services", 
+            "is_random": false, 
             "name": "*Increase Number of Services", 
             "to_edges": [
                 598
@@ -7868,11 +8426,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 408, 
                 708
             ], 
             "id": "Connect Back to the Community4", 
+            "is_random": false, 
             "name": "Connect Back to the Community4", 
             "to_edges": [
                 523
@@ -7882,8 +8442,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Confidentiality [Kids]", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]", 
             "to_edges": [
                 412
@@ -7893,10 +8455,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 494
             ], 
             "id": "Available [Services] 4", 
+            "is_random": false, 
             "name": "Available [Services] 4", 
             "to_edges": [
                 654
@@ -7906,10 +8470,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 359
             ], 
             "id": "!Implement Polls about Kids", 
+            "is_random": false, 
             "name": "!Implement Polls about Kids", 
             "to_edges": [
                 725
@@ -7919,10 +8485,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 483
             ], 
             "id": "*Increased Web Services", 
+            "is_random": false, 
             "name": "*Increased Web Services", 
             "to_edges": [
                 544
@@ -7932,10 +8500,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 466
             ], 
             "id": "Maintain Services above Competition1", 
+            "is_random": false, 
             "name": "Maintain Services above Competition1", 
             "to_edges": [
                 564, 
@@ -7946,10 +8516,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 612
             ], 
             "id": "Kids Use Text Messaging", 
+            "is_random": false, 
             "name": "Kids Use Text Messaging", 
             "to_edges": [
                 453, 
@@ -7968,10 +8540,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 404
             ], 
             "id": "Parents Use Phone Counselling1", 
+            "is_random": false, 
             "name": "Parents Use Phone Counselling1", 
             "to_edges": [
                 585, 
@@ -7984,11 +8558,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 410, 
                 718
             ], 
             "id": "Kids Use Bulletin Board with Replies", 
+            "is_random": false, 
             "name": "Kids Use Bulletin Board with Replies", 
             "to_edges": [
                 361, 
@@ -8009,11 +8585,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 392, 
                 569
             ], 
             "id": "Immediacy1", 
+            "is_random": false, 
             "name": "Immediacy1", 
             "to_edges": [
                 681
@@ -8023,10 +8601,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 573
             ], 
             "id": "Avoid Bad Advice5", 
+            "is_random": false, 
             "name": "Avoid Bad Advice5", 
             "to_edges": [
                 506
@@ -8036,8 +8616,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Board with Replies", 
+            "is_random": false, 
             "name": "Implement Board with Replies", 
             "to_edges": [
                 451, 
@@ -8049,8 +8631,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Implement Text Messaging1", 
+            "is_random": false, 
             "name": "!Implement Text Messaging1", 
             "to_edges": [
                 360
@@ -8060,8 +8644,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Voice Counselling1", 
+            "is_random": false, 
             "name": "Kids Use Voice Counselling1", 
             "to_edges": [
                 813
@@ -8071,10 +8657,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 561
             ], 
             "id": "Kids Use Text Messaging1", 
+            "is_random": false, 
             "name": "Kids Use Text Messaging1", 
             "to_edges": [], 
             "type": "task"
@@ -8082,11 +8670,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 452, 
                 546
             ], 
             "id": "Maintain/ Implement PHL Services", 
+            "is_random": false, 
             "name": "Maintain/ Implement PHL Services", 
             "to_edges": [
                 588
@@ -8096,10 +8686,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 669
             ], 
             "id": "!Implement General Questions and Answers1", 
+            "is_random": false, 
             "name": "!Implement General Questions and Answers1", 
             "to_edges": [], 
             "type": "task"
@@ -8107,10 +8699,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 419
             ], 
             "id": "Reduce Number of Steps [Web Posting Technology]", 
+            "is_random": false, 
             "name": "Reduce Number of Steps [Web Posting Technology]", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8118,10 +8712,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 366
             ], 
             "id": "Anonymity [Parents]", 
+            "is_random": false, 
             "name": "Anonymity [Parents]", 
             "to_edges": [
                 438, 
@@ -8132,11 +8728,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 365, 
                 660
             ], 
             "id": "*Maintain Phone Services2", 
+            "is_random": false, 
             "name": "*Maintain Phone Services2", 
             "to_edges": [
                 538, 
@@ -8147,11 +8745,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 461, 
                 704
             ], 
             "id": "Parents Use Information Section", 
+            "is_random": false, 
             "name": "Parents Use Information Section", 
             "to_edges": [
                 684
@@ -8161,10 +8761,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 362
             ], 
             "id": "Empowering Kids to Help Themselves1", 
+            "is_random": false, 
             "name": "Empowering Kids to Help Themselves1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8172,8 +8774,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Service Resources", 
+            "is_random": false, 
             "name": "Service Resources", 
             "to_edges": [
                 833
@@ -8183,8 +8787,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Telephony Be Implemented and Managed1", 
+            "is_random": false, 
             "name": "Telephony Be Implemented and Managed1", 
             "to_edges": [
                 534
@@ -8194,8 +8800,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Implement Filters", 
+            "is_random": false, 
             "name": "Implement Filters", 
             "to_edges": [
                 381
@@ -8205,6 +8813,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 558, 
                 596, 
@@ -8217,6 +8826,7 @@
                 857
             ], 
             "id": "Moderated E-Counselling Be Used", 
+            "is_random": false, 
             "name": "Moderated E-Counselling Be Used", 
             "to_edges": [
                 441, 
@@ -8231,11 +8841,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 463, 
                 500
             ], 
             "id": "Kids Use Email Counselling", 
+            "is_random": false, 
             "name": "Kids Use Email Counselling", 
             "to_edges": [
                 423, 
@@ -8254,8 +8866,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Relevance in Kids Lives2", 
+            "is_random": false, 
             "name": "Relevance in Kids Lives2", 
             "to_edges": [
                 471, 
@@ -8266,10 +8880,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 495
             ], 
             "id": "Immediacy [Services] ", 
+            "is_random": false, 
             "name": "Immediacy [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8277,10 +8893,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 406
             ], 
             "id": "Anonymity [Parents]3", 
+            "is_random": false, 
             "name": "Anonymity [Parents]3", 
             "to_edges": [
                 431
@@ -8290,8 +8908,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "!Moderate a Chat", 
+            "is_random": false, 
             "name": "!Moderate a Chat", 
             "to_edges": [
                 445
@@ -8301,10 +8921,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 585
             ], 
             "id": "Parents Use Phone Counselling", 
+            "is_random": false, 
             "name": "Parents Use Phone Counselling", 
             "to_edges": [], 
             "type": "task"
@@ -8312,12 +8934,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 438, 
                 589, 
                 797
             ], 
             "id": "Anonymity", 
+            "is_random": false, 
             "name": "Anonymity", 
             "to_edges": [
                 515
@@ -8327,10 +8951,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 407
             ], 
             "id": "Available [Services] 3", 
+            "is_random": false, 
             "name": "Available [Services] 3", 
             "to_edges": [
                 721
@@ -8340,10 +8966,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 720
             ], 
             "id": "Maintain CS Phone Services", 
+            "is_random": false, 
             "name": "Maintain CS Phone Services", 
             "to_edges": [
                 424
@@ -8353,10 +8981,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 624
             ], 
             "id": "Connect Back to the Community10", 
+            "is_random": false, 
             "name": "Connect Back to the Community10", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8364,10 +8994,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 731
             ], 
             "id": "Easy [Access to Post Reply] ", 
+            "is_random": false, 
             "name": "Easy [Access to Post Reply] ", 
             "to_edges": [
                 816
@@ -8377,10 +9009,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 510
             ], 
             "id": "Avoid Dialogues", 
+            "is_random": false, 
             "name": "Avoid Dialogues", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8388,8 +9022,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Create Counselling Posts", 
+            "is_random": false, 
             "name": "Create Counselling Posts", 
             "to_edges": [
                 609, 
@@ -8401,10 +9037,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 397
             ], 
             "id": "Efficient Web Services1", 
+            "is_random": false, 
             "name": "Efficient Web Services1", 
             "to_edges": [
                 531
@@ -8414,8 +9052,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Parents Use\\nTool to Allow Parents to Talk to Each Other 1", 
+            "is_random": false, 
             "name": "Parents Use\\nTool to Allow Parents to Talk to Each Other 1", 
             "to_edges": [
                 754
@@ -8425,10 +9065,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 357
             ], 
             "id": "Decrease Phone Waiting Time", 
+            "is_random": false, 
             "name": "Decrease Phone Waiting Time", 
             "to_edges": [
                 665
@@ -8438,10 +9080,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 534
             ], 
             "id": "Telephony Be Implemented and Managed", 
+            "is_random": false, 
             "name": "Telephony Be Implemented and Managed", 
             "to_edges": [
                 824
@@ -8451,10 +9095,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 480
             ], 
             "id": "Availability [Services] ", 
+            "is_random": false, 
             "name": "Availability [Services] ", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8462,12 +9108,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 396, 
                 414, 
                 623
             ], 
             "id": "Easier to Find Posts [Web Posting Technology]", 
+            "is_random": false, 
             "name": "Easier to Find Posts [Web Posting Technology]", 
             "to_edges": [
                 843
@@ -8477,10 +9125,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 747
             ], 
             "id": "Confidentiality [Kids]2", 
+            "is_random": false, 
             "name": "Confidentiality [Kids]2", 
             "to_edges": [
                 484, 
@@ -8491,11 +9141,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 435, 
                 727
             ], 
             "id": "*Maintain/Implement CS Web Services", 
+            "is_random": false, 
             "name": "*Maintain/Implement CS Web Services", 
             "to_edges": [
                 743
@@ -8505,10 +9157,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 646
             ], 
             "id": "*Maintain PHL Phone Services1", 
+            "is_random": false, 
             "name": "*Maintain PHL Phone Services1", 
             "to_edges": [
                 436, 
@@ -8519,10 +9173,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 734
             ], 
             "id": "*Maintain/Implement CS Web Services3", 
+            "is_random": false, 
             "name": "*Maintain/Implement CS Web Services3", 
             "to_edges": [
                 796
@@ -8532,10 +9188,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 611
             ], 
             "id": "Avoid Bad Advice1", 
+            "is_random": false, 
             "name": "Avoid Bad Advice1", 
             "to_edges": [
                 573
@@ -8545,11 +9203,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 416, 
                 776
             ], 
             "id": "Kids Have Ownership of Services2", 
+            "is_random": false, 
             "name": "Kids Have Ownership of Services2", 
             "to_edges": [
                 508
@@ -8559,10 +9219,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 479
             ], 
             "id": "Anonymity [Kids]7", 
+            "is_random": false, 
             "name": "Anonymity [Kids]7", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8570,10 +9232,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 418
             ], 
             "id": "*Maintain PHL Web Services3", 
+            "is_random": false, 
             "name": "*Maintain PHL Web Services3", 
             "to_edges": [
                 546
@@ -8583,8 +9247,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Correct Interpretation of Counsel1", 
+            "is_random": false, 
             "name": "Correct Interpretation of Counsel1", 
             "to_edges": [
                 636
@@ -8594,10 +9260,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 665
             ], 
             "id": "Decrease Phone Waiting Time1", 
+            "is_random": false, 
             "name": "Decrease Phone Waiting Time1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8605,8 +9273,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Service Levels Be Met", 
+            "is_random": false, 
             "name": "Service Levels Be Met", 
             "to_edges": [
                 379, 
@@ -8617,10 +9287,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 778
             ], 
             "id": "Measure Success of Services3", 
+            "is_random": false, 
             "name": "Measure Success of Services3", 
             "to_edges": [
                 791
@@ -8630,8 +9302,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Ask a Counsellor Section\\ns1", 
+            "is_random": false, 
             "name": "Kids Use Ask a Counsellor Section\\ns1", 
             "to_edges": [
                 851
@@ -8641,12 +9315,14 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 746, 
                 766, 
                 837
             ], 
             "id": "Implement Bulletin Board with Delayed Moderation", 
+            "is_random": false, 
             "name": "Implement Bulletin Board with Delayed Moderation", 
             "to_edges": [
                 655
@@ -8656,10 +9332,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 681
             ], 
             "id": "Immediacy", 
+            "is_random": false, 
             "name": "Immediacy", 
             "to_edges": [
                 462, 
@@ -8671,10 +9349,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 437
             ], 
             "id": "Maintain/ Implement PHL Services3", 
+            "is_random": false, 
             "name": "Maintain/ Implement PHL Services3", 
             "to_edges": [], 
             "type": "task"
@@ -8682,11 +9362,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 783, 
                 806
             ], 
             "id": "Immediacy6", 
+            "is_random": false, 
             "name": "Immediacy6", 
             "to_edges": [
                 748, 
@@ -8697,10 +9379,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 470
             ], 
             "id": "Sufficiently Moderated Web Services3", 
+            "is_random": false, 
             "name": "Sufficiently Moderated Web Services3", 
             "to_edges": [
                 602
@@ -8710,8 +9394,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Parents Use Bulletin Board with Replies1", 
+            "is_random": false, 
             "name": "Parents Use Bulletin Board with Replies1", 
             "to_edges": [
                 539
@@ -8721,8 +9407,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Bulletin Board with Delayed Moderation1", 
+            "is_random": false, 
             "name": "Kids Use Bulletin Board with Delayed Moderation1", 
             "to_edges": [
                 385
@@ -8732,6 +9420,7 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 415, 
                 465, 
@@ -8739,6 +9428,7 @@
                 738
             ], 
             "id": "Web Services Self Serve2", 
+            "is_random": false, 
             "name": "Web Services Self Serve2", 
             "to_edges": [
                 439
@@ -8748,11 +9438,13 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 749, 
                 827
             ], 
             "id": "Confidentiality [Parents]3", 
+            "is_random": false, 
             "name": "Confidentiality [Parents]3", 
             "to_edges": [
                 829
@@ -8762,10 +9454,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 713
             ], 
             "id": "Avoid Presence of Pedofiles2", 
+            "is_random": false, 
             "name": "Avoid Presence of Pedofiles2", 
             "to_edges": [
                 661
@@ -8775,10 +9469,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 816
             ], 
             "id": "Easy [Access to Post Reply] 1", 
+            "is_random": false, 
             "name": "Easy [Access to Post Reply] 1", 
             "to_edges": [], 
             "type": "softgoal"
@@ -8786,8 +9482,10 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [], 
             "id": "Kids Use Bulletin Board with Replies1", 
+            "is_random": false, 
             "name": "Kids Use Bulletin Board with Replies1", 
             "to_edges": [
                 718
@@ -8797,10 +9495,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 621
             ], 
             "id": "Sufficiently Moderated Web Services4", 
+            "is_random": false, 
             "name": "Sufficiently Moderated Web Services4", 
             "to_edges": [
                 470
@@ -8810,10 +9510,12 @@
         {
             "component": "node", 
             "container": null, 
+            "cost": 0, 
             "from_edges": [
                 477
             ], 
             "id": "Efficient Services", 
+            "is_random": false, 
             "name": "Efficient Services", 
             "to_edges": [], 
             "type": "softgoal"

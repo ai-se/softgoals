@@ -90,11 +90,10 @@ def test_ome_trees():
 def test_star1(model_name, show_optimal_index = True):
   from pystar.models.dot_models import modelers, optimal_indices
   from star1 import star1
-  sub_folder = "optimals"
   for model in modelers:
     if model.__name__ == model_name:
       optimal_index = optimal_indices.get(model_name, None) if show_optimal_index else None
-      star1.run(model(), sub_folder, optimal_index=optimal_index)
+      star1.run(model(), SUB_FOLDER, optimal_index=optimal_index)
 
 def _test():
   from pystar.models.dot_models import modelers
@@ -116,6 +115,8 @@ def main():
   show_optimal_index = True if args[2] is not None and args[2] == 'y' else False
   test_star1(args[1], show_optimal_index)
   #_test()
+
+SUB_FOLDER = "paths"
 
 if __name__ == "__main__":
   main()
