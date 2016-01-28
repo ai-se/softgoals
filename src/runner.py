@@ -116,7 +116,7 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "minimals"
+SUB_FOLDER = "even_smaller"
 
 if __name__ == "__main__":
   main()
