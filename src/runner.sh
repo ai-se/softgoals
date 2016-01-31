@@ -5,8 +5,8 @@ array=('CSServices' 'CSCounselling' 'CSCounsellingManagement' 'CSCounsellingMana
 		'OOOChatRooms' 'DelayModeratedBulletinBoard'
 		)
 #array=('OOOChatRooms' 'DelayModeratedBulletinBoard')
-date='2016-01-30'
-sub_folder='cdom'
+date='2016-01-31'
+sub_folder='vary_cost'
 for i in ${array[*]}; do
 	echo model: $i
 	python runner.py $i y > ../weekly-reports/$date/$sub_folder/$i.md

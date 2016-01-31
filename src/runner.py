@@ -116,7 +116,7 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "cdom"
+SUB_FOLDER = "vary_cost"
 
 if __name__ == "__main__":
   main()
