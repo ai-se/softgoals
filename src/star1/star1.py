@@ -12,7 +12,7 @@ from prettytable import PrettyTable
 
 def default():
   return O(
-    k1 = 10,
+    k1 = 100,
     k2 = 100
   )
 
@@ -48,7 +48,7 @@ class Star1(O):
 
   def sample(self):
     stat = self.de.run()
-    stat.settings.gen_step = 1
+    stat.settings.gen_step = 20
     stat.tiles()
     best = set()
     for obj_index in range(len(self.de.settings.obj_funcs)):

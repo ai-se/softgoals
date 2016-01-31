@@ -4,6 +4,7 @@ __author__ = 'george'
 sys.dont_write_bytecode = True
 from lib import *
 import time
+from math import exp
 
 MIN_FRONTIER_SIZE=10
 
@@ -18,7 +19,9 @@ def default():
     obj_funcs = [eval_all_goals, eval_paths, eval_costs],
     evaluation = Point.evaluate,
     is_percent = True,
-    binary = True
+    binary = True,
+    dominates = "cdom",
+    cdom_delta = 0.01
   )
 
 def eval_roots(model):
@@ -114,6 +117,46 @@ class DE(O):
     self.model = model
     self.settings = default().update(candidates=self.assign_frontier_size()).update(**settings)
     seed(self.settings.seed)
+    if self.settings.dominates == "bdom":
+      self.dominates = self.bdom
+    else:
+      self.dominates = self.cdom
+      self.limits = self.set_limits()
+
+  def set_limits(self):
+    mins = []
+    maxs = []
+    weights = []
+    model = self.model
+    for comp, func in zip(self.settings.better, self.settings.obj_funcs):
+      weights.append(-1 if comp==lt else 1)
+      if func == eval_all_goals:
+        mins.append(0)
+        if self.settings.is_percent: maxs.append(100)
+        else:
+          maxs.append(len(model.get_tree().get_nodes(node_type=["softgoal", "goal"])))
+      elif func == eval_softgoals:
+        mins.append(0)
+        if self.settings.is_percent: maxs.append(100)
+        else:
+          maxs.append(len(model.get_tree().get_nodes(node_type=["softgoal"])))
+      elif func == eval_goals:
+        mins.append(0)
+        if self.settings.is_percent: maxs.append(100)
+        else:
+          maxs.append(len(model.get_tree().get_nodes(node_type=["goal"])))
+      elif func == eval_coverage:
+        mins.append(0)
+        if self.settings.is_percent: maxs.append(100)
+        else:
+          maxs.append(len(model.get_tree().get_nodes()))
+      elif func == eval_costs:
+        mins.append(0)
+        maxs.append(sum(model.cost_map.values()))
+      elif func == eval_paths:
+        mins.append(0)
+        maxs.append(sum(model.cost_map.values())*len(model.get_tree().get_nodes()))
+    return O(mins=mins, maxs=maxs, weights=weights)
 
   def assign_frontier_size(self):
     num_decs = len(self.model.generate().keys())
@@ -158,7 +201,13 @@ class DE(O):
     stat.runtime = time.time() - start
     return stat
 
-  def dominates(self, obj1, obj2):
+  def bdom(self, obj1, obj2):
+    """
+    Binary Domination
+    :param obj1: Objective 1
+    :param obj2: Objective 2
+    :return: Check objective 1 dominates objective 2
+    """
     at_least = False
     for i,(a, b) in enumerate(zip(obj1, obj2)):
       if self.settings.better[i](a,b):
@@ -168,6 +217,31 @@ class DE(O):
       else:
         return False
     return at_least
+
+  def cdom(self, obj1, obj2):
+    """
+    Continuous Domination
+    :param obj1: Objective 1
+    :param obj2: Objective 2
+    :return: Check if objective 1 dominates objective 2 based on exponential loss.
+    """
+    def norm(val, least, most):
+      least = min(least, val)
+      most = max(most, val)
+      return (val - least) / (most - least + 0.0001)
+    def exp_loss(x_i, y_i, w_i, n):
+      return -1*exp(w_i*(x_i-y_i)/n)
+    def loss(x, y):
+      x_norm = [norm(v,lo,hi) for v,lo,hi in zip(x, self.limits.mins, self.limits.maxs)]
+      y_norm = [norm(v,lo,hi) for v,lo,hi in zip(y, self.limits.mins, self.limits.maxs)]
+      n = len(x)
+      losses = [exp_loss(x_i, y_i, w_i, n) for x_i, y_i, w_i in zip(x_norm, y_norm, self.limits.weights)]
+      return sum(losses)/n
+    l1 = loss(obj1, obj2)
+    l2 = loss(obj2, obj1)
+    return abs(l1 - l2) > self.settings.cdom_delta and l1 < l2
+
+
 
   def mutate(self, one, pop):
     """
