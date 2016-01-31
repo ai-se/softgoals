@@ -84,6 +84,7 @@ class Node(Component):
     self.to_edges = []
     self.is_random = False
     self.cost = 0
+    self.weighted_cost = 0
 
   def add_edge(self, edge_id, type):
     if type == "from":

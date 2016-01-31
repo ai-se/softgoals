@@ -68,7 +68,8 @@
             "is_random": false, 
             "name": "Consideration of Feedback [Managers]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -79,7 +80,8 @@
             "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to DL]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -90,7 +92,8 @@
             "is_random": false, 
             "name": "*Engagement Student Ambassadors in promoting awareness", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -101,7 +104,8 @@
             "is_random": false, 
             "name": "Easily Accessible Technology Instructions1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -112,7 +116,8 @@
             "is_random": false, 
             "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -123,7 +128,8 @@
             "is_random": false, 
             "name": "Follow Highest Ethical Guidelines ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -134,7 +140,8 @@
             "is_random": false, 
             "name": "Kids Use Voice Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -145,7 +152,8 @@
             "is_random": false, 
             "name": "Help Put on SA Training Conferences", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -156,7 +164,8 @@
             "is_random": false, 
             "name": "Kids Use Ask a Counsellor Section\\ns", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -167,7 +176,8 @@
             "is_random": false, 
             "name": "CS Be Not for Profit", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -178,7 +188,8 @@
             "is_random": false, 
             "name": "Kids Use One-On-One Chat Rooms", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -189,7 +200,8 @@
             "is_random": false, 
             "name": "Sponsor partner\\ncontacts", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -200,7 +212,8 @@
             "is_random": false, 
             "name": "Strategic Blue Print", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -211,7 +224,8 @@
             "is_random": false, 
             "name": "!Implement Phone Feedback", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -222,7 +236,8 @@
             "is_random": false, 
             "name": "Sign Contract", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -233,7 +248,8 @@
             "is_random": false, 
             "name": "Training CDs", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -244,7 +260,8 @@
             "is_random": false, 
             "name": "Maintain/Implement CS Services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -255,7 +272,8 @@
             "is_random": false, 
             "name": "Agreement", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -266,7 +284,8 @@
             "is_random": false, 
             "name": "SA s are Organized", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -277,7 +296,8 @@
             "is_random": false, 
             "name": "National Event Calendar", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -288,7 +308,8 @@
             "is_random": false, 
             "name": "*Implement Email for Counsellors", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -299,7 +320,8 @@
             "is_random": false, 
             "name": "Similarity with other parents  problems ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -310,7 +332,8 @@
             "is_random": false, 
             "name": "!Implement Text Messaging", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -321,7 +344,8 @@
             "is_random": false, 
             "name": "Patient [Counselor] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -332,7 +356,8 @@
             "is_random": false, 
             "name": "Immediacy [Services] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -343,7 +368,8 @@
             "is_random": false, 
             "name": "!Moderate Discussion Boards", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -356,7 +382,8 @@
             "to_edges": [
                 322
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -367,7 +394,8 @@
             "is_random": false, 
             "name": "Create General Ledgers ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -378,7 +406,8 @@
             "is_random": false, 
             "name": "Presentation Skills ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -389,7 +418,8 @@
             "is_random": false, 
             "name": "Accessible Resources for Counselors", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -400,7 +430,8 @@
             "is_random": false, 
             "name": "Implement Email Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -411,7 +442,8 @@
             "is_random": false, 
             "name": "Connect with Other Kids ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -422,7 +454,8 @@
             "is_random": false, 
             "name": "Acquire Public Speaking Skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -433,7 +466,8 @@
             "is_random": false, 
             "name": "Increase Counselling Resource", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -444,7 +478,8 @@
             "is_random": false, 
             "name": "! Write Articles for Magazines ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -455,7 +490,8 @@
             "is_random": false, 
             "name": "SA s are Confident", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -466,7 +502,8 @@
             "is_random": false, 
             "name": "Have Time for School", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -477,7 +514,8 @@
             "is_random": false, 
             "name": "Promote CS", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -488,7 +526,8 @@
             "is_random": false, 
             "name": "*Increase Writing Skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -499,7 +538,8 @@
             "is_random": false, 
             "name": "Kids read Polls about Kids", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -510,7 +550,8 @@
             "is_random": false, 
             "name": "Provide Web Counselling with Video", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -521,7 +562,8 @@
             "is_random": false, 
             "name": "*High Quality Counselling", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -532,7 +574,8 @@
             "is_random": false, 
             "name": "Send out Emails", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -543,7 +586,8 @@
             "is_random": false, 
             "name": "Software", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -554,7 +598,8 @@
             "is_random": false, 
             "name": "Up to Date [Information on programs] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -565,7 +610,8 @@
             "is_random": false, 
             "name": "Provide Web Counselling with Audio", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -578,7 +624,8 @@
             "is_random": false, 
             "name": "Communicate with head office ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -589,7 +636,8 @@
             "is_random": false, 
             "name": "Services Be Bilingual", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -600,7 +648,8 @@
             "is_random": false, 
             "name": "!Implement Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -611,7 +660,8 @@
             "is_random": false, 
             "name": "Provide receipts", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -622,7 +672,8 @@
             "is_random": false, 
             "name": "Collect Pledge online", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -633,7 +684,8 @@
             "is_random": false, 
             "name": "!Parents Use Service to Talk to Each Other ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -644,7 +696,8 @@
             "is_random": false, 
             "name": "Write Articles for Newspaper", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -655,7 +708,8 @@
             "is_random": false, 
             "name": "Reduce Staggering of Schedules", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -666,7 +720,8 @@
             "is_random": false, 
             "name": "!Calls Be Recorded into a Data Base", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -677,7 +732,8 @@
             "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -688,7 +744,8 @@
             "is_random": false, 
             "name": "Web Services Self Serve", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -699,7 +756,8 @@
             "is_random": false, 
             "name": "Maintain Services above Competition", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -710,7 +768,8 @@
             "is_random": false, 
             "name": "Positive [Reputation of CS]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -721,7 +780,8 @@
             "is_random": false, 
             "name": "*Increase [IT Training for Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -732,7 +792,8 @@
             "is_random": false, 
             "name": "Project Management Skills ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -743,7 +804,8 @@
             "is_random": false, 
             "name": "Support Analysis [Counsellors Time]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -754,7 +816,8 @@
             "is_random": false, 
             "name": "Happiness [Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -765,7 +828,8 @@
             "is_random": false, 
             "name": "Implement Information Section", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -776,7 +840,8 @@
             "is_random": false, 
             "name": "!Implement General Questions and Answers", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -787,7 +852,8 @@
             "is_random": false, 
             "name": "! Services be provided for Kids Bullying Line", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -798,7 +864,8 @@
             "is_random": false, 
             "name": "Experienced [marketing partners]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -809,7 +876,8 @@
             "is_random": false, 
             "name": "Kids Use Video Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -820,7 +888,8 @@
             "is_random": false, 
             "name": "Hardware", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -831,7 +900,8 @@
             "is_random": false, 
             "name": "Ownership of Services [Kids] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -842,7 +912,8 @@
             "is_random": false, 
             "name": "Implement Video Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -853,7 +924,8 @@
             "is_random": false, 
             "name": "Maintain Ask a Counsellor Section", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -864,7 +936,8 @@
             "is_random": false, 
             "name": "*Maintain Phone Services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -875,7 +948,8 @@
             "is_random": false, 
             "name": "Services Be Free", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -886,7 +960,8 @@
             "is_random": false, 
             "name": "Increased SA Resources", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -897,7 +972,8 @@
             "is_random": false, 
             "name": "CS Stories", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -908,7 +984,8 @@
             "is_random": false, 
             "name": "Confidentiality [Services] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -921,7 +998,8 @@
             "is_random": false, 
             "name": "Event coordination", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -932,7 +1010,8 @@
             "is_random": false, 
             "name": "Acquire Fundraising Skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -943,7 +1022,8 @@
             "is_random": false, 
             "name": "Oracle", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -954,7 +1034,8 @@
             "is_random": false, 
             "name": "Sponsorship proposal", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -967,7 +1048,8 @@
             "to_edges": [
                 319
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -978,7 +1060,8 @@
             "is_random": false, 
             "name": "Increase Development of Public Education Program", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -989,7 +1072,8 @@
             "is_random": false, 
             "name": "Funds", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1000,7 +1084,8 @@
             "is_random": false, 
             "name": "Encourage Kids Using Web Services to Use Phone Services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1011,7 +1096,8 @@
             "is_random": false, 
             "name": "Create Life Long Volunteer Spirit", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1022,7 +1108,8 @@
             "is_random": false, 
             "name": "!Implement One-On-One Chat Rooms", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1033,7 +1120,8 @@
             "is_random": false, 
             "name": "Improved Writing Skills [Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1044,7 +1132,8 @@
             "is_random": false, 
             "name": "Run Fundraiser in Schools", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1055,7 +1144,8 @@
             "is_random": false, 
             "name": "Friendly [Web site] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1066,7 +1156,8 @@
             "is_random": false, 
             "name": "Facilitate Faster Changes in Counsellor Duties", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1077,7 +1168,8 @@
             "is_random": false, 
             "name": "Increase [Awareness]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1088,7 +1180,8 @@
             "is_random": false, 
             "name": "Maintain Phone Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1099,7 +1192,8 @@
             "is_random": false, 
             "name": "Demonstrable Services ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1112,7 +1206,8 @@
             "to_edges": [
                 321
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1123,7 +1218,8 @@
             "is_random": false, 
             "name": "Accommodate Schedules [Counselling Managers]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1134,7 +1230,8 @@
             "is_random": false, 
             "name": "Anonymity [Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1145,7 +1242,8 @@
             "is_random": false, 
             "name": "Negotiate with Counsellors Union", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1156,7 +1254,8 @@
             "is_random": false, 
             "name": "Find Help with Presentations", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1167,7 +1266,8 @@
             "is_random": false, 
             "name": "Give CS Presentations1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1178,7 +1278,8 @@
             "is_random": false, 
             "name": "Improve Image to Kids2", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1189,7 +1290,8 @@
             "is_random": false, 
             "name": "Perform Counselling as Instructed By Supervisor", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1200,7 +1302,8 @@
             "is_random": false, 
             "name": "Match Fundraising targets", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1211,7 +1314,8 @@
             "is_random": false, 
             "name": "Engagement [Sponsor Employees in Promoting Awareness] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1222,7 +1326,8 @@
             "is_random": false, 
             "name": "High Quality [Services] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1233,7 +1338,8 @@
             "is_random": false, 
             "name": "Get sponsors for events", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1244,7 +1350,8 @@
             "is_random": false, 
             "name": "Counselling Workshops", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1255,7 +1362,8 @@
             "is_random": false, 
             "name": "Available [Services] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1266,7 +1374,8 @@
             "is_random": false, 
             "name": "Put Content Onto Website", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1277,7 +1386,8 @@
             "is_random": false, 
             "name": "High Degree of Similarity [Between Services Provided]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1288,7 +1398,8 @@
             "is_random": false, 
             "name": "Promotion Resources", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1299,7 +1410,8 @@
             "is_random": false, 
             "name": "*Help As Many Kids as Possible", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1310,7 +1422,8 @@
             "is_random": false, 
             "name": "Regional Offices Resources", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1321,7 +1434,8 @@
             "is_random": false, 
             "name": "Decrease [Phone Waiting Time] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1332,7 +1446,8 @@
             "is_random": false, 
             "name": "Counselling Policies Be Followed", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1343,7 +1458,8 @@
             "is_random": false, 
             "name": "Donor/Accounting Data Base", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1354,7 +1470,8 @@
             "is_random": false, 
             "name": "Research on Kids Be Acquired", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1365,7 +1482,8 @@
             "is_random": false, 
             "name": "Web Moderator Meetings", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1376,7 +1494,8 @@
             "is_random": false, 
             "name": "Trust [of Sponsors towards CS] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1387,7 +1506,8 @@
             "is_random": false, 
             "name": "*Sufficient Counselling Resources", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1398,7 +1518,8 @@
             "is_random": false, 
             "name": "*Maintain PHL Phone Services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1409,7 +1530,8 @@
             "is_random": false, 
             "name": "Decrease [Phone Waiting Time] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1420,7 +1542,8 @@
             "is_random": false, 
             "name": "Improve Counselling Skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1431,7 +1554,8 @@
             "is_random": false, 
             "name": "Counselling Policies", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1442,7 +1566,8 @@
             "is_random": false, 
             "name": "!Implement\\nTool to Allow Parents to Talk to Each Other ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1453,7 +1578,8 @@
             "is_random": false, 
             "name": "Connect Back to the Community ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1464,7 +1590,8 @@
             "is_random": false, 
             "name": "Provide Document Library System", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1475,7 +1602,8 @@
             "is_random": false, 
             "name": "! Write Articles for Website ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1486,7 +1614,8 @@
             "is_random": false, 
             "name": "Web Server1", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1497,7 +1626,8 @@
             "is_random": false, 
             "name": "!IT Systems Be Integrated", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1508,7 +1638,8 @@
             "is_random": false, 
             "name": "Kids Use Phone Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1519,7 +1650,8 @@
             "is_random": false, 
             "name": "Kids read General Questions and Answers", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1530,7 +1662,8 @@
             "is_random": false, 
             "name": "Voice Counselling be Performed", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1541,7 +1674,8 @@
             "is_random": false, 
             "name": "Anonymity [Services] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1552,7 +1686,8 @@
             "is_random": false, 
             "name": "Tape Recording Technology", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1563,7 +1698,8 @@
             "is_random": false, 
             "name": "Improve [Call Recording Equipment]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1574,7 +1710,8 @@
             "is_random": false, 
             "name": "Maintain Web Services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1585,7 +1722,8 @@
             "is_random": false, 
             "name": "Kids use get Informed Section of Web Site", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1596,7 +1734,8 @@
             "is_random": false, 
             "name": "*High Quality Counselling1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1615,7 +1754,8 @@
                 320, 
                 323
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1626,7 +1766,8 @@
             "is_random": false, 
             "name": "Counsellor Experience", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1637,7 +1778,8 @@
             "is_random": false, 
             "name": "Call Statistics", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1648,7 +1790,8 @@
             "is_random": false, 
             "name": "Parents Use Bulletin Board with Replies", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1659,7 +1802,8 @@
             "is_random": false, 
             "name": "Involve CS in Events", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1670,7 +1814,8 @@
             "is_random": false, 
             "name": "!Perform Email Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1681,7 +1826,8 @@
             "is_random": false, 
             "name": "Service Resources", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1692,7 +1838,8 @@
             "is_random": false, 
             "name": "Retain [Sponsors] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1703,7 +1850,8 @@
             "is_random": false, 
             "name": "Timely services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1714,7 +1862,8 @@
             "is_random": false, 
             "name": "!A Training Computer Be Present", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1725,7 +1874,8 @@
             "is_random": false, 
             "name": "Speak at Fundraisers1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1736,7 +1886,8 @@
             "is_random": false, 
             "name": "Involvement [Not For Profit Partners in Events]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1747,7 +1898,8 @@
             "is_random": false, 
             "name": "Participate in events", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1758,7 +1910,8 @@
             "is_random": false, 
             "name": "Control of Counselling Work", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1769,7 +1922,8 @@
             "is_random": false, 
             "name": "Exclusive Relationships [Official Partners] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1780,7 +1934,8 @@
             "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1791,7 +1946,8 @@
             "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1802,7 +1958,8 @@
             "is_random": false, 
             "name": "Second Reading of Web Posts", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1813,7 +1970,8 @@
             "is_random": false, 
             "name": "Improve Image to Kids1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1824,7 +1982,8 @@
             "is_random": false, 
             "name": "Avoid Presence of Pedofiles", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1835,7 +1994,8 @@
             "is_random": false, 
             "name": "Professional Counsellors Be Used", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1846,7 +2006,8 @@
             "is_random": false, 
             "name": "Measure Success of Services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1857,7 +2018,8 @@
             "is_random": false, 
             "name": "Provide Online Donor Technology", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1868,7 +2030,8 @@
             "is_random": false, 
             "name": "! Provide compiled call data ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1879,7 +2042,8 @@
             "is_random": false, 
             "name": "Manage Receivables ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1890,7 +2054,8 @@
             "is_random": false, 
             "name": "Improve Quality Assurance Technology", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1901,7 +2066,8 @@
             "is_random": false, 
             "name": "Help Plan and Put on Reconnection Conferences", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1912,7 +2078,8 @@
             "is_random": false, 
             "name": "Confidentiality [Services] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1923,7 +2090,8 @@
             "is_random": false, 
             "name": "!Performance Review Information Be Collected in Data Base", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1934,7 +2102,8 @@
             "is_random": false, 
             "name": "Web Server", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1945,7 +2114,8 @@
             "is_random": false, 
             "name": "Long Term [Funding] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1958,7 +2128,8 @@
             "is_random": false, 
             "name": " Free services", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1969,7 +2140,8 @@
             "is_random": false, 
             "name": "Friendly Web Site", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1980,7 +2152,8 @@
             "is_random": false, 
             "name": "Free Web Server", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1991,7 +2164,8 @@
             "is_random": false, 
             "name": "Responsible Usage [Sponsor Funds] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2002,7 +2176,8 @@
             "is_random": false, 
             "name": "Feedback", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2013,7 +2188,8 @@
             "is_random": false, 
             "name": "Give CS Presentations", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2024,7 +2200,8 @@
             "is_random": false, 
             "name": "Avoid Over-Marketing Services ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2035,7 +2212,8 @@
             "is_random": false, 
             "name": "*High Quality Services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2046,7 +2224,8 @@
             "is_random": false, 
             "name": "*Implement Categorization Tool", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2057,7 +2236,8 @@
             "is_random": false, 
             "name": "Happiness [Student Ambassadors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2068,7 +2248,8 @@
             "is_random": false, 
             "name": "!Implement Bulletin Board with Replies", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2079,7 +2260,8 @@
             "is_random": false, 
             "name": "Improve [IT Skills]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2090,7 +2272,8 @@
             "is_random": false, 
             "name": "Engagement of Sponsor Employees in Fund Development", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2101,7 +2284,8 @@
             "is_random": false, 
             "name": "Professional Work Environment", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2112,7 +2296,8 @@
             "is_random": false, 
             "name": "Increase Funding for Training", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2123,7 +2308,8 @@
             "is_random": false, 
             "name": "Share PAP in Document Library", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2134,7 +2320,8 @@
             "is_random": false, 
             "name": "Engage Employees in events", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2145,7 +2332,8 @@
             "is_random": false, 
             "name": "Free Software", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2156,7 +2344,8 @@
             "is_random": false, 
             "name": "Empowering Kids to Help Themselves", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2167,7 +2356,8 @@
             "is_random": false, 
             "name": "Counselling Resources", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2178,7 +2368,8 @@
             "is_random": false, 
             "name": "Connect Back to the Community 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2189,7 +2380,8 @@
             "is_random": false, 
             "name": "Improve Image to Kids", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2200,7 +2392,8 @@
             "is_random": false, 
             "name": "Current Resource Links", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2211,7 +2404,8 @@
             "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2222,7 +2416,8 @@
             "is_random": false, 
             "name": "Undergo Clinical Review", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2233,7 +2428,8 @@
             "is_random": false, 
             "name": "Help Kids", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2244,7 +2440,8 @@
             "is_random": false, 
             "name": "Increased Caution [Content of Online Services]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2255,7 +2452,8 @@
             "is_random": false, 
             "name": "Acquire Volunteer Outreach Skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2266,7 +2464,8 @@
             "is_random": false, 
             "name": "Simple [Technology]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2277,7 +2476,8 @@
             "is_random": false, 
             "name": "! Market CS Service", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2288,7 +2488,8 @@
             "is_random": false, 
             "name": "Quick [Response to Sponsors] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2299,7 +2500,8 @@
             "is_random": false, 
             "name": "Feedback1", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2310,7 +2512,8 @@
             "is_random": false, 
             "name": "Permission for Presentations Be Given", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2321,7 +2524,8 @@
             "is_random": false, 
             "name": "Exclusive Brand and Logo use", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2332,7 +2536,8 @@
             "is_random": false, 
             "name": "*Salary", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2343,7 +2548,8 @@
             "is_random": false, 
             "name": "Increase Resources [Services]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2354,7 +2560,8 @@
             "is_random": false, 
             "name": "Reduce Prank Calls", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2365,7 +2572,8 @@
             "is_random": false, 
             "name": "Correct Interpretation of Counsel", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2376,7 +2584,8 @@
             "is_random": false, 
             "name": "Accountability of services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2387,7 +2596,8 @@
             "is_random": false, 
             "name": "Community Service Hours Completed", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2398,7 +2608,8 @@
             "is_random": false, 
             "name": "Upgrades", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2409,7 +2620,8 @@
             "is_random": false, 
             "name": "*Allow User to Log In", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2420,7 +2632,8 @@
             "is_random": false, 
             "name": "Diffuse Conflict with Parent", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2431,7 +2644,8 @@
             "is_random": false, 
             "name": "Use sponsor marketing channels", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2442,7 +2656,8 @@
             "is_random": false, 
             "name": "Philanthropic donations ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2453,7 +2668,8 @@
             "is_random": false, 
             "name": "High Quality [Services] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2464,7 +2680,8 @@
             "is_random": false, 
             "name": "Promotion Resources1", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2475,7 +2692,8 @@
             "is_random": false, 
             "name": "Increased availability to sponsors", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2486,7 +2704,8 @@
             "is_random": false, 
             "name": "Pledge\\nDuring event", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2497,7 +2716,8 @@
             "is_random": false, 
             "name": "Web Software", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2508,7 +2728,8 @@
             "is_random": false, 
             "name": "Tapes", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2519,7 +2740,8 @@
             "is_random": false, 
             "name": "Increase IT Resources", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2530,7 +2752,8 @@
             "is_random": false, 
             "name": "Historical Data of Call Volumes", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2541,7 +2764,8 @@
             "is_random": false, 
             "name": "Manage Accounts ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2552,7 +2776,8 @@
             "is_random": false, 
             "name": "Inform kids about anonymity of service", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2563,7 +2788,8 @@
             "is_random": false, 
             "name": "School Initiates Presenation", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2574,7 +2800,8 @@
             "is_random": false, 
             "name": "Increase Volunteers", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2585,7 +2812,8 @@
             "is_random": false, 
             "name": "Speaches", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2596,7 +2824,8 @@
             "is_random": false, 
             "name": "Feedback Form Software", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2607,7 +2836,8 @@
             "is_random": false, 
             "name": "Provide funds", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2618,7 +2848,8 @@
             "is_random": false, 
             "name": "Training Be Received", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2629,7 +2860,8 @@
             "is_random": false, 
             "name": "Increase Emphasis on Online Feedback Form", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2640,7 +2872,8 @@
             "is_random": false, 
             "name": "Provide Written Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2651,7 +2884,8 @@
             "is_random": false, 
             "name": "Caller Statistics", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2662,7 +2896,8 @@
             "is_random": false, 
             "name": "Provide Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2673,7 +2908,8 @@
             "is_random": false, 
             "name": "Phone Library of Recorded Messages", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2684,7 +2920,8 @@
             "is_random": false, 
             "name": "Increased Peer Support", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2695,7 +2932,8 @@
             "is_random": false, 
             "name": "Kids Use Text Messaging", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2706,7 +2944,8 @@
             "is_random": false, 
             "name": "!An IT Trainer Be Present", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2717,7 +2956,8 @@
             "is_random": false, 
             "name": "Free Upgrades", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2728,7 +2968,8 @@
             "is_random": false, 
             "name": "Elaborate Fundraising targets", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2739,7 +2980,8 @@
             "is_random": false, 
             "name": "Speak at Fundraisers", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2750,7 +2992,8 @@
             "is_random": false, 
             "name": "Accountability of services1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2761,7 +3004,8 @@
             "is_random": false, 
             "name": "Information", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2772,7 +3016,8 @@
             "is_random": false, 
             "name": "*Increase Number of Services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2783,7 +3028,8 @@
             "is_random": false, 
             "name": "Clearer Call Classification Categories", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2794,7 +3040,8 @@
             "is_random": false, 
             "name": "Decrease Clumsiness [Technology]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2805,7 +3052,8 @@
             "is_random": false, 
             "name": "Trust [of Kids]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2816,7 +3064,8 @@
             "is_random": false, 
             "name": "Pledge online", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2827,7 +3076,8 @@
             "is_random": false, 
             "name": "!Implement Polls about Kids", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2838,7 +3088,8 @@
             "is_random": false, 
             "name": "! Provide money for services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2849,7 +3100,8 @@
             "is_random": false, 
             "name": "IT Resources", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2860,7 +3112,8 @@
             "is_random": false, 
             "name": "Positive Internal Opinion", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2871,7 +3124,8 @@
             "is_random": false, 
             "name": "Credibility [CS Brand] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2882,7 +3136,8 @@
             "is_random": false, 
             "name": "Double Head Set", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2893,7 +3148,8 @@
             "is_random": false, 
             "name": "Kids Use Bulletin Board with Replies", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2904,7 +3160,8 @@
             "is_random": false, 
             "name": "Recognition", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2915,7 +3172,8 @@
             "is_random": false, 
             "name": "!Acquire public speaking skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2926,7 +3184,8 @@
             "is_random": false, 
             "name": "Maintain Get Informed Section of Web Site", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2937,7 +3196,8 @@
             "is_random": false, 
             "name": "Implement Board with Replies", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2948,7 +3208,8 @@
             "is_random": false, 
             "name": "Similarity with other kids  problems ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2961,7 +3222,8 @@
             "to_edges": [
                 317
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2972,7 +3234,8 @@
             "is_random": false, 
             "name": "Collaborate with Not for Profit Partners on Services", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2983,7 +3246,8 @@
             "is_random": false, 
             "name": "Free advertisement", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2994,7 +3258,8 @@
             "is_random": false, 
             "name": "Maintain/ Implement PHL Services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3005,7 +3270,8 @@
             "is_random": false, 
             "name": "Reduce Number of Steps [Web Posting Technology]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3018,7 +3284,8 @@
             "is_random": false, 
             "name": "Regional Staff feel included", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3029,7 +3296,8 @@
             "is_random": false, 
             "name": "Anonymity [Parents]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3040,7 +3308,8 @@
             "is_random": false, 
             "name": "Put on SA Training Conferences", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3051,7 +3320,8 @@
             "is_random": false, 
             "name": "Parents Use Information Section", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3062,7 +3332,8 @@
             "is_random": false, 
             "name": "Easily Accessible Technology Instructions", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3073,7 +3344,8 @@
             "is_random": false, 
             "name": "Provide fundraising services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3084,7 +3356,8 @@
             "is_random": false, 
             "name": "Increase IT Methods to Acquire Feedback", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3095,7 +3368,8 @@
             "is_random": false, 
             "name": "Provide Information", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3106,7 +3380,8 @@
             "is_random": false, 
             "name": "Avoid Liability Problems", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3117,7 +3392,8 @@
             "is_random": false, 
             "name": "Success Be Tracked in Community Resources", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3128,7 +3404,8 @@
             "is_random": false, 
             "name": "SA s are Outgoing", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3139,7 +3416,8 @@
             "is_random": false, 
             "name": "Kids Use Email Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3150,7 +3428,8 @@
             "is_random": false, 
             "name": "Immediacy [Services] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3161,7 +3440,8 @@
             "is_random": false, 
             "name": "Complete Resource Links", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3172,7 +3452,8 @@
             "is_random": false, 
             "name": "Increased Emphasis on IT in Hiring Process [of Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3183,7 +3464,8 @@
             "is_random": false, 
             "name": "Sponsor Logo", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3194,7 +3476,8 @@
             "is_random": false, 
             "name": "Availability [Services] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3205,7 +3488,8 @@
             "is_random": false, 
             "name": "!Moderate a Chat", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3216,7 +3500,8 @@
             "is_random": false, 
             "name": "Parents Use Phone Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3227,7 +3512,8 @@
             "is_random": false, 
             "name": "Implement Voice Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3238,7 +3524,8 @@
             "is_random": false, 
             "name": "Recognize\\nSponsor contribution ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3249,7 +3536,8 @@
             "is_random": false, 
             "name": "Easy [Access to Post Reply] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3260,7 +3548,8 @@
             "is_random": false, 
             "name": "Avoid Dialogues", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3271,7 +3560,8 @@
             "is_random": false, 
             "name": "Create Counselling Posts", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3282,7 +3572,8 @@
             "is_random": false, 
             "name": "Free Hardware", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3293,7 +3584,8 @@
             "is_random": false, 
             "name": "Make New Friends", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3304,7 +3596,8 @@
             "is_random": false, 
             "name": "Plan and Put on Reconnection Conferences", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3315,7 +3608,8 @@
             "is_random": false, 
             "name": "Web Site Content", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3326,7 +3620,8 @@
             "is_random": false, 
             "name": "Telephony Be Implemented and Managed", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3337,7 +3632,8 @@
             "is_random": false, 
             "name": "Availability [Services] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3348,7 +3644,8 @@
             "is_random": false, 
             "name": "Easier to Find Posts [Web Posting Technology]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3359,7 +3656,8 @@
             "is_random": false, 
             "name": "Reduce Misconceptions", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3370,7 +3668,8 @@
             "is_random": false, 
             "name": "Accountability of services2", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3381,7 +3680,8 @@
             "is_random": false, 
             "name": "Help with Presentations", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3392,7 +3692,8 @@
             "is_random": false, 
             "name": "Manage\\nPartner Relationship", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3403,7 +3704,8 @@
             "is_random": false, 
             "name": "*Help As Many Kids as Possible1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3414,7 +3716,8 @@
             "is_random": false, 
             "name": "Market fundraising events", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3425,7 +3728,8 @@
             "is_random": false, 
             "name": "Happiness [Counselling Management]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3436,7 +3740,8 @@
             "is_random": false, 
             "name": "Quality SA Services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3447,7 +3752,8 @@
             "is_random": false, 
             "name": "Published CS Stories", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3458,7 +3764,8 @@
             "is_random": false, 
             "name": "Get web event technology", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3469,7 +3776,8 @@
             "is_random": false, 
             "name": "Give Back to Community", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3480,7 +3788,8 @@
             "is_random": false, 
             "name": "*Implement Bulletin Board", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3491,7 +3800,8 @@
             "is_random": false, 
             "name": "! Counselor Speak on Kids Issues in General ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3502,7 +3812,8 @@
             "is_random": false, 
             "name": "Avoid Relationships with Specific Counsellor", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3513,7 +3824,8 @@
             "is_random": false, 
             "name": "Remember Locations of Resouces", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3524,7 +3836,8 @@
             "is_random": false, 
             "name": "Reduce Cost of Counselling HR", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3535,7 +3848,8 @@
             "is_random": false, 
             "name": "SA s are Enthusiastic", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3546,7 +3860,8 @@
             "is_random": false, 
             "name": "Patient [Counselor] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3557,7 +3872,8 @@
             "is_random": false, 
             "name": "Easy [Access to Post Reply] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3568,7 +3884,8 @@
             "is_random": false, 
             "name": "Efficient Services", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }
     ]
 }

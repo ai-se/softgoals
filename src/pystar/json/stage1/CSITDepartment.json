@@ -1310,7 +1310,8 @@
             "to_edges": [
                 270
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1323,7 +1324,8 @@
             "is_random": false, 
             "name": "Properly and Suitably Equipped in IT [to Accomplish CS Needs]1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1336,7 +1338,8 @@
             "to_edges": [
                 249
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1349,7 +1352,8 @@
             "is_random": false, 
             "name": "Provide Online Donor Technology", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1362,7 +1366,8 @@
             "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to DL]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1376,7 +1381,8 @@
                 162, 
                 226
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1389,7 +1395,8 @@
             "is_random": false, 
             "name": "Improve Quality Assurance Technology", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1405,7 +1412,8 @@
                 134, 
                 156
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1418,7 +1426,8 @@
             "to_edges": [
                 157
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1434,7 +1443,8 @@
             "to_edges": [
                 222
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1448,7 +1458,8 @@
                 201, 
                 213
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1468,7 +1479,8 @@
             "to_edges": [
                 152
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1484,7 +1496,8 @@
             "to_edges": [
                 181
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1497,7 +1510,8 @@
             "to_edges": [
                 160
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1521,7 +1535,8 @@
             "to_edges": [
                 196
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1534,7 +1549,8 @@
             "to_edges": [
                 248
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1547,7 +1563,8 @@
             "is_random": false, 
             "name": "Decrease Clumsiness [Technology]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1563,7 +1580,8 @@
                 262, 
                 274
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1580,7 +1598,8 @@
                 245, 
                 272
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1604,7 +1623,8 @@
                 273, 
                 284
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1623,7 +1643,8 @@
             "to_edges": [
                 132
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1636,7 +1657,8 @@
             "is_random": false, 
             "name": "! Provide compiled call data ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1651,7 +1673,8 @@
             "to_edges": [
                 188
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1664,7 +1687,8 @@
             "to_edges": [
                 268
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1678,7 +1702,8 @@
                 214, 
                 238
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1693,7 +1718,8 @@
             "to_edges": [
                 180
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1716,7 +1742,8 @@
             "to_edges": [
                 176
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1732,7 +1759,8 @@
                 131, 
                 237
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1745,7 +1773,8 @@
             "is_random": false, 
             "name": "Feedback Form Software", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1758,7 +1787,8 @@
             "is_random": false, 
             "name": "!Performance Review Information Be Collected in Data Base", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1771,7 +1801,8 @@
             "to_edges": [
                 254
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1784,7 +1815,8 @@
             "is_random": false, 
             "name": "Web Server", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1797,7 +1829,8 @@
             "is_random": false, 
             "name": "*Acquire Upgrades for Free", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1814,7 +1847,8 @@
             "to_edges": [
                 267
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1827,7 +1861,8 @@
             "is_random": false, 
             "name": "*Implement Bulletin Board1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1843,7 +1878,8 @@
                 173, 
                 232
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1860,7 +1896,8 @@
             "to_edges": [
                 220
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1873,7 +1910,8 @@
             "to_edges": [
                 171
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1886,7 +1924,8 @@
             "to_edges": [
                 161
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1899,7 +1938,8 @@
             "is_random": false, 
             "name": "Easily Accessable Technology Instructions", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1916,7 +1956,8 @@
                 136, 
                 219
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1929,7 +1970,8 @@
             "is_random": false, 
             "name": "!Implement Phone Feedback", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1947,7 +1989,8 @@
                 235, 
                 269
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1960,7 +2003,8 @@
             "is_random": false, 
             "name": "!An IT Trainer Be Present", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1976,7 +2020,8 @@
                 139, 
                 260
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1990,7 +2035,8 @@
                 244, 
                 271
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2006,7 +2052,8 @@
             "to_edges": [
                 228
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2019,7 +2066,8 @@
             "is_random": false, 
             "name": "*Implement Categorization Tool1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2032,7 +2080,8 @@
             "to_edges": [
                 227
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2045,7 +2094,8 @@
             "to_edges": [
                 225
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2058,7 +2108,8 @@
             "is_random": false, 
             "name": "Get web event technology1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2071,7 +2122,8 @@
             "to_edges": [
                 217
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2086,7 +2138,8 @@
             "to_edges": [
                 241
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2099,7 +2152,8 @@
             "is_random": false, 
             "name": "Increase IT Methods to Acquire Feedback", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2116,7 +2170,8 @@
                 253, 
                 276
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2133,7 +2188,8 @@
                 149, 
                 191
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2146,7 +2202,8 @@
             "is_random": false, 
             "name": "Telephony Be Implemented and Managed1", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2164,7 +2221,8 @@
                 233, 
                 234
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2177,7 +2235,8 @@
             "to_edges": [
                 164
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2192,7 +2251,8 @@
             "to_edges": [
                 192
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2205,7 +2265,8 @@
             "is_random": false, 
             "name": "Simple [Technology]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2219,7 +2280,8 @@
                 229, 
                 259
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2235,7 +2297,8 @@
             "to_edges": [
                 126
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2253,7 +2316,8 @@
             "to_edges": [
                 141
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2266,7 +2330,8 @@
             "is_random": false, 
             "name": "Put Content Onto Website", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2279,7 +2344,8 @@
             "to_edges": [
                 198
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2294,7 +2360,8 @@
             "to_edges": [
                 178
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2309,7 +2376,8 @@
                 154, 
                 190
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2326,7 +2394,8 @@
             "to_edges": [
                 286
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2341,7 +2410,8 @@
             "to_edges": [
                 143
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2356,7 +2426,8 @@
                 204, 
                 277
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2374,7 +2445,8 @@
             "to_edges": [
                 133
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2391,7 +2463,8 @@
                 239, 
                 255
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2404,7 +2477,8 @@
             "to_edges": [
                 252
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2418,7 +2492,8 @@
                 159, 
                 202
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2435,7 +2510,8 @@
                 240, 
                 242
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2451,7 +2527,8 @@
                 197, 
                 215
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2466,7 +2543,8 @@
             "to_edges": [
                 186
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2479,7 +2557,8 @@
             "to_edges": [
                 135
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2495,7 +2574,8 @@
             "to_edges": [
                 205
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2516,7 +2596,8 @@
             "to_edges": [
                 129
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2529,7 +2610,8 @@
             "is_random": false, 
             "name": "Consideration of Feedback [IT Providers]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2542,7 +2624,8 @@
             "is_random": false, 
             "name": "Donor/Accounting Data Base", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2555,7 +2638,8 @@
             "to_edges": [
                 279
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2570,7 +2654,8 @@
             "to_edges": [
                 261
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2588,7 +2673,8 @@
                 140, 
                 209
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2603,7 +2689,8 @@
             "to_edges": [
                 257
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2616,7 +2703,8 @@
             "to_edges": [
                 212
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2632,7 +2720,8 @@
                 168, 
                 250
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2645,7 +2734,8 @@
             "is_random": false, 
             "name": "Provide Document Library System", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2663,7 +2753,8 @@
                 208, 
                 224
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2676,7 +2767,8 @@
             "to_edges": [
                 145
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2689,7 +2781,8 @@
             "is_random": false, 
             "name": "*Implement Email for Counsellors1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2702,7 +2795,8 @@
             "to_edges": [
                 169
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2716,7 +2810,8 @@
                 138, 
                 175
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2729,7 +2824,8 @@
             "is_random": false, 
             "name": "!IT Systems Be Integrated", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2745,7 +2841,8 @@
             "to_edges": [
                 182
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2770,7 +2867,8 @@
                 256, 
                 266
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2787,7 +2885,8 @@
                 246, 
                 285
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2798,7 +2897,8 @@
             "is_random": false, 
             "name": "CS Be Not for Profit1", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2813,7 +2913,8 @@
             "to_edges": [
                 183
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2826,7 +2927,8 @@
             "is_random": false, 
             "name": "Web Software", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2841,7 +2943,8 @@
             "to_edges": [
                 179
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2859,7 +2962,8 @@
                 243, 
                 263
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2875,7 +2979,8 @@
                 206, 
                 278
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2888,7 +2993,8 @@
             "is_random": false, 
             "name": "Improve [Call Recording Equipment]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2901,7 +3007,8 @@
             "to_edges": [
                 165
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2914,7 +3021,8 @@
             "to_edges": [
                 207
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2927,7 +3035,8 @@
             "is_random": false, 
             "name": "!Calls Be Recorded into a Data Base", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2943,7 +3052,8 @@
                 200, 
                 287
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2961,7 +3071,8 @@
                 231, 
                 283
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2978,7 +3089,8 @@
                 199, 
                 221
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -2995,7 +3107,8 @@
             "is_random": false, 
             "name": "Satisfy CS IT Needs", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3008,7 +3121,8 @@
             "to_edges": [
                 172
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3023,7 +3137,8 @@
             "to_edges": [
                 223
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3037,7 +3152,8 @@
                 264, 
                 275
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3050,7 +3166,8 @@
             "is_random": false, 
             "name": "*Increase [IT Training for Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3066,7 +3183,8 @@
                 265, 
                 282
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3079,7 +3197,8 @@
             "is_random": false, 
             "name": "Support Analysis [Counsellors Time]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3093,7 +3212,8 @@
                 187, 
                 258
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3109,7 +3229,8 @@
                 184, 
                 211
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3126,7 +3247,8 @@
                 236, 
                 281
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3139,7 +3261,8 @@
             "is_random": false, 
             "name": "!A Training Computer Be Present", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3157,7 +3280,8 @@
                 163, 
                 251
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3173,7 +3297,8 @@
             "to_edges": [
                 247
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3189,7 +3314,8 @@
                 137, 
                 280
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }
     ]
 }

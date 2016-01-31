@@ -8,6 +8,7 @@ import random
 
 t =  1
 f = -1
+wt_delta = 0.1
 
 def coin_toss():
   return random.choice([t, f])
@@ -169,8 +170,7 @@ class Model(O):
     return coin_toss()
 
   def eval(self, node):
-    if not (node.value is None):
-      return node.value
+    if not (node.value is None): return
 
     if node.id in self.chain:
       node.value = Model.random_node_val(node)
@@ -241,7 +241,8 @@ class Model(O):
         cost = temp_cost
       else:
         cost = min(cost, temp_cost)
-    return status, cost + 1
+    weight = len(nodes)
+    return status, weight*(cost + 1)
 
   def eval_or(self, nodes):
     """
@@ -250,10 +251,12 @@ class Model(O):
     :param nodes: Nodes to be evaluated
     :return: status
     """
+    weight = 1
     for node in nodes:
+      weight += wt_delta
       self.eval(node)
       if node.value > 0:
-        return node.value, node.cost + 1
+        return node.value, weight*(node.cost + 1)
     return f, 0
 
   def eval_contribs(self, edges, dependencies=None):
@@ -264,18 +267,23 @@ class Model(O):
     :return: status
     """
     kids = []
+    weight = 1
     for edge in edges:
       if edge.type != "contribution":
         continue
+      weight += wt_delta
       node = self._tree.get_node(edge.source)
       self.eval(node)
       kids += [Model.soft_goal_val(node.value, edge.value, node.cost)]
     if dependencies:
       for dep in dependencies:
+        weight += wt_delta
         dep_node = self._tree.get_node(dep.source)
         self.eval(dep_node)
-        kids += [Model.soft_goal_val(dep_node.value, "make", dep_node.cost)]
-    return random.choice(kids)
+        val, cost = Model.soft_goal_val(dep_node.value, "make", dep_node.cost)
+        if val <= 0: return val, 0
+    val, cost = random.choice(kids)
+    return val, weight*cost
 
   @staticmethod
   def soft_goal_val(kid, edge, cost):

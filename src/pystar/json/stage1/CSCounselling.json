@@ -3781,7 +3781,8 @@
                 650, 
                 762
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3795,7 +3796,8 @@
                 364, 
                 681
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3808,7 +3810,8 @@
             "is_random": false, 
             "name": "Provide Written Counselling1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3823,7 +3826,8 @@
             "to_edges": [
                 439
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3836,7 +3840,8 @@
             "to_edges": [
                 798
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3851,7 +3856,8 @@
             "to_edges": [
                 496
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3873,7 +3879,8 @@
                 657, 
                 714
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3891,7 +3898,8 @@
                 560, 
                 787
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3904,7 +3912,8 @@
             "to_edges": [
                 407
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3919,7 +3928,8 @@
                 690, 
                 793
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3936,7 +3946,8 @@
                 418, 
                 565
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3951,7 +3962,8 @@
             "to_edges": [
                 483
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3965,7 +3977,8 @@
                 534, 
                 717
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3982,7 +3995,8 @@
             "to_edges": [
                 450
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3997,7 +4011,8 @@
             "to_edges": [
                 777
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4014,7 +4029,8 @@
             "to_edges": [
                 664
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4028,7 +4044,8 @@
             "is_random": false, 
             "name": "Move on to Better Job", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4043,7 +4060,8 @@
             "to_edges": [
                 741
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4060,7 +4078,8 @@
                 533, 
                 745
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4075,7 +4094,8 @@
             "to_edges": [
                 360
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4089,7 +4109,8 @@
                 546, 
                 750
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4102,7 +4123,8 @@
             "to_edges": [
                 687
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4115,7 +4137,8 @@
             "is_random": false, 
             "name": "Sign Contract", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4130,7 +4153,8 @@
                 658, 
                 702
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4143,7 +4167,8 @@
             "to_edges": [
                 759
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4158,7 +4183,8 @@
             "to_edges": [
                 493
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4171,7 +4197,8 @@
             "to_edges": [
                 771
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4186,7 +4213,8 @@
             "to_edges": [
                 494
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4203,7 +4231,8 @@
             "to_edges": [
                 358
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4217,7 +4246,8 @@
                 556, 
                 744
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4232,7 +4262,8 @@
             "to_edges": [
                 810
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4245,7 +4276,8 @@
             "to_edges": [
                 558
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4259,7 +4291,8 @@
                 436, 
                 655
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4274,7 +4307,8 @@
             "to_edges": [
                 440
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4291,7 +4325,8 @@
             "is_random": false, 
             "name": "Recognition2", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4306,7 +4341,8 @@
             "to_edges": [
                 734
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4320,7 +4356,8 @@
                 373, 
                 575
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4335,7 +4372,8 @@
             "to_edges": [
                 705
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4355,7 +4393,8 @@
                 648, 
                 800
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4372,7 +4411,8 @@
             "to_edges": [
                 352
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4387,7 +4427,8 @@
             "to_edges": [
                 773
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4405,7 +4446,8 @@
             "to_edges": [
                 721
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4421,7 +4463,8 @@
                 414, 
                 812
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4437,7 +4480,8 @@
             "to_edges": [
                 756
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4454,7 +4498,8 @@
             "to_edges": [
                 686
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4468,7 +4513,8 @@
                 517, 
                 572
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4483,7 +4529,8 @@
             "to_edges": [
                 749
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4498,7 +4545,8 @@
             "to_edges": [
                 419
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4511,7 +4559,8 @@
             "to_edges": [
                 733
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4526,7 +4575,8 @@
             "to_edges": [
                 525
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4539,7 +4589,8 @@
             "is_random": false, 
             "name": "! Write Articles for Magazines ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4554,7 +4605,8 @@
             "to_edges": [
                 607
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4570,7 +4622,8 @@
             "to_edges": [
                 443
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4594,7 +4647,8 @@
                 383, 
                 416
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4609,7 +4663,8 @@
             "to_edges": [
                 559
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4623,7 +4678,8 @@
                 437, 
                 505
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4636,7 +4692,8 @@
             "to_edges": [
                 632
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4649,7 +4706,8 @@
             "is_random": false, 
             "name": "Web Site Content", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4665,7 +4723,8 @@
                 547, 
                 626
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4695,7 +4754,8 @@
                 485, 
                 676
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4708,7 +4768,8 @@
             "is_random": false, 
             "name": "Remember Locations of Resouces2", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4725,7 +4786,8 @@
                 390, 
                 775
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4738,7 +4800,8 @@
             "to_edges": [
                 473
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4753,7 +4816,8 @@
             "to_edges": [
                 561
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4766,7 +4830,8 @@
             "to_edges": [
                 716
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4779,7 +4844,8 @@
             "to_edges": [
                 722
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4796,7 +4862,8 @@
             "to_edges": [
                 770
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4822,7 +4889,8 @@
                 712, 
                 758
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4838,7 +4906,8 @@
                 451, 
                 596
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4853,7 +4922,8 @@
             "to_edges": [
                 550
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4871,7 +4941,8 @@
                 661, 
                 791
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4890,7 +4961,8 @@
                 468, 
                 480
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4903,7 +4975,8 @@
             "to_edges": [
                 458
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4916,7 +4989,8 @@
             "is_random": false, 
             "name": "!IT Systems Be Integrated1", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4931,7 +5005,8 @@
             "to_edges": [
                 673
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4944,7 +5019,8 @@
             "is_random": false, 
             "name": "!Retain Job", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4959,7 +5035,8 @@
             "to_edges": [
                 499
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4974,7 +5051,8 @@
             "to_edges": [
                 453
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4987,7 +5065,8 @@
             "is_random": false, 
             "name": "!Perform Email Counselling1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5002,7 +5081,8 @@
             "to_edges": [
                 354
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5015,7 +5095,8 @@
             "to_edges": [
                 704
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5031,7 +5112,8 @@
                 683, 
                 789
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5068,7 +5150,8 @@
                 732, 
                 753
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5081,7 +5164,8 @@
             "to_edges": [
                 622
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5097,7 +5181,8 @@
             "to_edges": [
                 406
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5112,7 +5197,8 @@
             "to_edges": [
                 601
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5127,7 +5213,8 @@
             "to_edges": [
                 491
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5142,7 +5229,8 @@
             "to_edges": [
                 445
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5158,7 +5246,8 @@
                 588, 
                 797
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5177,7 +5266,8 @@
             "to_edges": [
                 680
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5190,7 +5280,8 @@
             "to_edges": [
                 693
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5205,7 +5296,8 @@
             "to_edges": [
                 580
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5220,7 +5312,8 @@
             "to_edges": [
                 481
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5236,7 +5329,8 @@
                 740, 
                 816
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5258,7 +5352,8 @@
                 476, 
                 819
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5275,7 +5370,8 @@
                 599, 
                 641
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5289,7 +5385,8 @@
                 449, 
                 699
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5302,7 +5399,8 @@
             "to_edges": [
                 374
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5317,7 +5415,8 @@
             "to_edges": [
                 729
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5330,7 +5429,8 @@
             "is_random": false, 
             "name": "CS Stories", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5344,7 +5444,8 @@
                 549, 
                 672
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5360,7 +5461,8 @@
                 563, 
                 654
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5379,7 +5481,8 @@
             "is_random": false, 
             "name": "*Perform the Job of Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5392,7 +5495,8 @@
             "to_edges": [
                 543
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5406,7 +5510,8 @@
                 595, 
                 709
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5428,7 +5533,8 @@
                 448, 
                 738
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5439,7 +5545,8 @@
             "is_random": false, 
             "name": "Voice Counselling", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5454,7 +5561,8 @@
             "to_edges": [
                 640
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5469,7 +5577,8 @@
             "to_edges": [
                 471
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5485,7 +5594,8 @@
             "is_random": false, 
             "name": "Manage Counselling Resources", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5498,7 +5608,8 @@
             "is_random": false, 
             "name": "Improved Writing Skills [Counsellors]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5512,7 +5623,8 @@
                 447, 
                 574
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5534,7 +5646,8 @@
             "to_edges": [
                 420
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5547,7 +5660,8 @@
             "is_random": false, 
             "name": "Facilitate Faster Changes in Counsellor Duties", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5560,7 +5674,8 @@
             "to_edges": [
                 637
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5575,7 +5690,8 @@
             "to_edges": [
                 786
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5588,7 +5704,8 @@
             "is_random": false, 
             "name": "Avoid Liability Problems1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5603,7 +5720,8 @@
             "to_edges": [
                 529
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5616,7 +5734,8 @@
             "to_edges": [
                 380
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5631,7 +5750,8 @@
             "to_edges": [
                 795
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5644,7 +5764,8 @@
             "to_edges": [
                 808
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5657,7 +5778,8 @@
             "to_edges": [
                 540
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5672,7 +5794,8 @@
             "to_edges": [
                 509
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5686,7 +5809,8 @@
                 569, 
                 776
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5701,7 +5825,8 @@
             "to_edges": [
                 767
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5716,7 +5841,8 @@
             "to_edges": [
                 792
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5729,7 +5855,8 @@
             "to_edges": [
                 508
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5744,7 +5871,8 @@
             "to_edges": [
                 621
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5758,7 +5886,8 @@
                 469, 
                 685
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5771,7 +5900,8 @@
             "to_edges": [
                 774
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5787,7 +5917,8 @@
             "to_edges": [
                 404
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5802,7 +5933,8 @@
             "to_edges": [
                 668
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5815,7 +5947,8 @@
             "is_random": false, 
             "name": "*Help As Many Kids as Possible3", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5829,7 +5962,8 @@
                 424, 
                 799
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5845,7 +5979,8 @@
                 376, 
                 718
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5860,7 +5995,8 @@
             "to_edges": [
                 728
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5875,7 +6011,8 @@
             "to_edges": [
                 788
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5888,7 +6025,8 @@
             "to_edges": [
                 708
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5905,7 +6043,8 @@
                 470, 
                 528
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5919,7 +6058,8 @@
                 403, 
                 726
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5936,7 +6076,8 @@
             "to_edges": [
                 670
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5954,7 +6095,8 @@
                 527, 
                 720
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5971,7 +6113,8 @@
                 602, 
                 805
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5984,7 +6127,8 @@
             "to_edges": [
                 669
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6001,7 +6145,8 @@
                 785, 
                 802
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6016,7 +6161,8 @@
             "to_edges": [
                 649
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6035,7 +6181,8 @@
             "to_edges": [
                 456
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6050,7 +6197,8 @@
             "to_edges": [
                 398
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6067,7 +6215,8 @@
                 737, 
                 746
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6080,7 +6229,8 @@
             "to_edges": [
                 461
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6095,7 +6245,8 @@
             "to_edges": [
                 361
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6108,7 +6259,8 @@
             "is_random": false, 
             "name": "Happiness [Counsellors]1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6121,7 +6273,8 @@
             "is_random": false, 
             "name": "! Write Articles for Website ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6136,7 +6289,8 @@
             "to_edges": [
                 554
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6151,7 +6305,8 @@
             "to_edges": [
                 604
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6169,7 +6324,8 @@
             "to_edges": [
                 472
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6182,7 +6338,8 @@
             "is_random": false, 
             "name": "Provide Web Counselling with Video1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6207,7 +6364,8 @@
                 761, 
                 781
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6222,7 +6380,8 @@
             "to_edges": [
                 677
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6240,7 +6399,8 @@
                 769, 
                 804
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6254,7 +6414,8 @@
                 387, 
                 803
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6277,7 +6438,8 @@
             "to_edges": [
                 555
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6292,7 +6454,8 @@
             "to_edges": [
                 497
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6305,7 +6468,8 @@
             "to_edges": [
                 584
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6321,7 +6485,8 @@
                 384, 
                 487
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6334,7 +6499,8 @@
             "to_edges": [
                 754
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6349,7 +6515,8 @@
             "to_edges": [
                 719
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6364,7 +6531,8 @@
             "to_edges": [
                 765
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6377,7 +6545,8 @@
             "is_random": false, 
             "name": "Help Kids1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6392,7 +6561,8 @@
             "to_edges": [
                 484
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6405,7 +6575,8 @@
             "to_edges": [
                 425
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6423,7 +6594,8 @@
                 411, 
                 671
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6436,7 +6608,8 @@
             "is_random": false, 
             "name": "Counsellor Experience", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6452,7 +6625,8 @@
                 489, 
                 510
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6466,7 +6640,8 @@
                 427, 
                 779
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6481,7 +6656,8 @@
             "to_edges": [
                 520
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6496,7 +6672,8 @@
             "to_edges": [
                 568
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6512,7 +6689,8 @@
             "to_edges": [
                 441
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6528,7 +6706,8 @@
                 613, 
                 784
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6543,7 +6722,8 @@
             "is_random": false, 
             "name": "*High Quality Resources3", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6556,7 +6736,8 @@
             "is_random": false, 
             "name": "Counselling Policies Be Followed1", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6569,7 +6750,8 @@
             "to_edges": [
                 700
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6582,7 +6764,8 @@
             "to_edges": [
                 608
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6595,7 +6778,8 @@
             "to_edges": [
                 465
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6611,7 +6795,8 @@
                 464, 
                 467
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6624,7 +6809,8 @@
             "to_edges": [
                 743
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6637,7 +6823,8 @@
             "is_random": false, 
             "name": "Reduce Contagion Effect [Of Harmful Actions]1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6652,7 +6839,8 @@
             "to_edges": [
                 811
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6667,7 +6855,8 @@
             "to_edges": [
                 593
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6680,7 +6869,8 @@
             "to_edges": [
                 696
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6695,7 +6885,8 @@
             "to_edges": [
                 645
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6711,7 +6902,8 @@
                 522, 
                 739
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6724,7 +6916,8 @@
             "to_edges": [
                 651
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6739,7 +6932,8 @@
             "to_edges": [
                 388
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6752,7 +6946,8 @@
             "to_edges": [
                 402
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6768,7 +6963,8 @@
             "to_edges": [
                 506
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6781,7 +6977,8 @@
             "to_edges": [
                 417
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6796,7 +6993,8 @@
                 587, 
                 667
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6809,7 +7007,8 @@
             "is_random": false, 
             "name": "!Moderate Discussion Boards1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6823,7 +7022,8 @@
                 578, 
                 656
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6838,7 +7038,8 @@
             "to_edges": [
                 701
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6853,7 +7054,8 @@
             "to_edges": [
                 695
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6870,7 +7072,8 @@
                 379, 
                 620
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6883,7 +7086,8 @@
             "to_edges": [
                 623
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6896,7 +7100,8 @@
             "to_edges": [
                 633
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6909,7 +7114,8 @@
             "to_edges": [
                 421
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6924,7 +7130,8 @@
                 526, 
                 535
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6941,7 +7148,8 @@
                 666, 
                 772
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6954,7 +7162,8 @@
             "is_random": false, 
             "name": "Professional Work Environment", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6970,7 +7179,8 @@
             "to_edges": [
                 544
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6986,7 +7196,8 @@
             "to_edges": [
                 504
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7001,7 +7212,8 @@
             "to_edges": [
                 730
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7014,7 +7226,8 @@
             "to_edges": [
                 612
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7033,7 +7246,8 @@
                 368, 
                 768
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7046,7 +7260,8 @@
             "to_edges": [
                 551
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7063,7 +7278,8 @@
             "to_edges": [
                 809
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7077,7 +7293,8 @@
                 435, 
                 724
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7092,7 +7309,8 @@
             "to_edges": [
                 500
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7105,7 +7323,8 @@
             "to_edges": [
                 362
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7118,7 +7337,8 @@
             "to_edges": [
                 408
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7133,7 +7353,8 @@
             "to_edges": [
                 815
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7156,7 +7377,8 @@
                 660, 
                 675
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7171,7 +7393,8 @@
             "to_edges": [
                 542
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7184,7 +7407,8 @@
             "to_edges": [
                 405
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7199,7 +7423,8 @@
             "to_edges": [
                 742
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7212,7 +7437,8 @@
             "to_edges": [
                 516
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7227,7 +7453,8 @@
                 581, 
                 807
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7242,7 +7469,8 @@
             "to_edges": [
                 536
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7255,7 +7483,8 @@
             "to_edges": [
                 553
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7268,7 +7497,8 @@
             "to_edges": [
                 715
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7284,7 +7514,8 @@
                 459, 
                 610
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7299,7 +7530,8 @@
             "to_edges": [
                 710
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7314,7 +7546,8 @@
             "to_edges": [
                 507
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7329,7 +7562,8 @@
             "to_edges": [
                 369
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7344,7 +7578,8 @@
             "to_edges": [
                 514
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7360,7 +7595,8 @@
                 644, 
                 763
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7374,7 +7610,8 @@
                 631, 
                 659
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7387,7 +7624,8 @@
             "to_edges": [
                 778
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7400,7 +7638,8 @@
             "to_edges": [
                 566
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7417,7 +7656,8 @@
             "to_edges": [
                 564
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7431,7 +7671,8 @@
                 377, 
                 783
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7447,7 +7688,8 @@
                 495, 
                 652
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7462,7 +7704,8 @@
             "to_edges": [
                 478
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7475,7 +7718,8 @@
             "to_edges": [
                 356
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7490,7 +7734,8 @@
             "to_edges": [
                 382
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7503,7 +7748,8 @@
             "is_random": false, 
             "name": "Provide Web Counselling with Audio1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7516,7 +7762,8 @@
             "to_edges": [
                 523
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7532,7 +7779,8 @@
             "to_edges": [
                 723
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7548,7 +7796,8 @@
                 634, 
                 814
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7566,7 +7815,8 @@
                 524, 
                 662
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7581,7 +7831,8 @@
             "to_edges": [
                 682
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7594,7 +7845,8 @@
             "to_edges": [
                 747
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7613,7 +7865,8 @@
                 616, 
                 713
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7628,7 +7881,8 @@
             "to_edges": [
                 735
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7643,7 +7897,8 @@
             "to_edges": [
                 399
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7658,7 +7913,8 @@
             "to_edges": [
                 474
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7675,7 +7931,8 @@
                 455, 
                 579
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7688,7 +7945,8 @@
             "to_edges": [
                 647
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7703,7 +7961,8 @@
             "to_edges": [
                 492
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7719,7 +7978,8 @@
             "to_edges": [
                 479
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7739,7 +7999,8 @@
                 603, 
                 638
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7752,7 +8013,8 @@
             "is_random": false, 
             "name": "Caller Statistics", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7776,7 +8038,8 @@
                 423, 
                 757
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7796,7 +8059,8 @@
             "to_edges": [
                 538
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7810,7 +8074,8 @@
                 576, 
                 818
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7823,7 +8088,8 @@
             "is_random": false, 
             "name": "Voice Counselling be Performed3", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7836,7 +8102,8 @@
             "to_edges": [
                 570
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7852,7 +8119,8 @@
                 571, 
                 780
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7867,7 +8135,8 @@
             "to_edges": [
                 725
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7882,7 +8151,8 @@
             "to_edges": [
                 615
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7898,7 +8168,8 @@
             "to_edges": [
                 674
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7913,7 +8184,8 @@
             "to_edges": [
                 363
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7928,7 +8200,8 @@
             "to_edges": [
                 794
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7944,7 +8217,8 @@
                 519, 
                 586
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7959,7 +8233,8 @@
             "to_edges": [
                 614
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7974,7 +8249,8 @@
             "to_edges": [
                 460
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7990,7 +8266,8 @@
             "to_edges": [
                 438
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8004,7 +8281,8 @@
                 628, 
                 642
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8017,7 +8295,8 @@
             "to_edges": [
                 597
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8031,7 +8310,8 @@
                 618, 
                 755
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8047,7 +8327,8 @@
                 764, 
                 813
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8061,7 +8342,8 @@
                 391, 
                 428
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8074,7 +8356,8 @@
             "is_random": false, 
             "name": "!Moderate a Chat1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8089,7 +8372,8 @@
             "to_edges": [
                 591
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8102,7 +8386,8 @@
             "to_edges": [
                 643
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8117,7 +8402,8 @@
             "to_edges": [
                 611
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8130,7 +8416,8 @@
             "is_random": false, 
             "name": "Create Counselling Posts1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8147,7 +8434,8 @@
                 486, 
                 585
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8164,7 +8452,8 @@
                 422, 
                 796
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8179,7 +8468,8 @@
             "to_edges": [
                 731
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8192,7 +8482,8 @@
             "to_edges": [
                 665
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8205,7 +8496,8 @@
             "is_random": false, 
             "name": "Improve [IT Skills]2", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8221,7 +8513,8 @@
                 415, 
                 430
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8235,7 +8528,8 @@
                 545, 
                 801
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8250,7 +8544,8 @@
             "to_edges": [
                 381
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8265,7 +8560,8 @@
             "to_edges": [
                 366
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8280,7 +8576,8 @@
             "to_edges": [
                 698
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8297,7 +8594,8 @@
                 401, 
                 412
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8312,7 +8610,8 @@
             "to_edges": [
                 706
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8327,7 +8626,8 @@
             "to_edges": [
                 413
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8342,7 +8642,8 @@
             "to_edges": [
                 636
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8360,7 +8661,8 @@
                 444, 
                 582
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8375,7 +8677,8 @@
             "to_edges": [
                 567
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8388,7 +8691,8 @@
             "to_edges": [
                 409
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8406,7 +8710,8 @@
             "to_edges": [
                 378
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8421,7 +8726,8 @@
             "to_edges": [
                 629
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8436,7 +8742,8 @@
             "to_edges": [
                 397
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8454,7 +8761,8 @@
                 806, 
                 817
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8469,7 +8777,8 @@
             "to_edges": [
                 463
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8488,7 +8797,8 @@
             "to_edges": [
                 760
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8505,7 +8815,8 @@
                 386, 
                 502
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8519,7 +8830,8 @@
                 433, 
                 562
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8533,7 +8845,8 @@
                 605, 
                 630
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8546,7 +8859,8 @@
             "to_edges": [
                 518
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8563,7 +8877,8 @@
                 600, 
                 663
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8580,7 +8895,8 @@
                 594, 
                 639
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8595,7 +8911,8 @@
             "to_edges": [
                 370
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8608,7 +8925,8 @@
             "is_random": false, 
             "name": "*High Quality Counselling3", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8623,7 +8941,8 @@
             "to_edges": [
                 389
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8639,7 +8958,8 @@
             "to_edges": [
                 385
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8654,7 +8974,8 @@
             "to_edges": [
                 691
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8669,7 +8990,8 @@
             "to_edges": [
                 692
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8684,7 +9006,8 @@
             "to_edges": [
                 790
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8700,7 +9023,8 @@
             "to_edges": [
                 707
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8716,7 +9040,8 @@
                 372, 
                 457
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8731,7 +9056,8 @@
                 552, 
                 678
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8745,7 +9071,8 @@
                 400, 
                 689
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8762,7 +9089,8 @@
                 501, 
                 711
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8776,7 +9104,8 @@
                 355, 
                 590
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8794,7 +9123,8 @@
             "to_edges": [
                 684
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8809,7 +9139,8 @@
             "to_edges": [
                 703
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8822,7 +9153,8 @@
             "to_edges": [
                 531
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8837,7 +9169,8 @@
             "to_edges": [
                 697
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8852,7 +9185,8 @@
             "to_edges": [
                 679
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8867,7 +9201,8 @@
             "to_edges": [
                 521
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8889,7 +9224,8 @@
                 653, 
                 752
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8905,7 +9241,8 @@
                 537, 
                 592
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8920,7 +9257,8 @@
             "to_edges": [
                 577
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8935,7 +9273,8 @@
             "to_edges": [
                 512
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8948,7 +9287,8 @@
             "is_random": false, 
             "name": "! Counselor Speak on Kids Issues in General ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8964,7 +9304,8 @@
             "to_edges": [
                 736
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8980,7 +9321,8 @@
                 396, 
                 727
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8993,7 +9335,8 @@
             "is_random": false, 
             "name": "Avoid Relationships with Specific Counsellor", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9008,7 +9351,8 @@
                 515, 
                 694
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9027,7 +9371,8 @@
                 625, 
                 748
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9041,7 +9386,8 @@
                 357, 
                 541
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9054,7 +9400,8 @@
             "is_random": false, 
             "name": "Patient [Counselor] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9069,7 +9416,8 @@
             "to_edges": [
                 454
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9082,7 +9430,8 @@
             "is_random": false, 
             "name": "Participate in events", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -9097,7 +9446,8 @@
             "to_edges": [
                 598
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }
     ]
 }

@@ -3392,7 +3392,8 @@
             "is_random": false, 
             "name": "Sponsorship Be Beneficial ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3407,7 +3408,8 @@
             "to_edges": [
                 421
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3420,7 +3422,8 @@
             "to_edges": [
                 469
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3435,7 +3438,8 @@
             "to_edges": [
                 740
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3453,7 +3457,8 @@
                 405, 
                 479
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3468,7 +3473,8 @@
             "to_edges": [
                 411
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3484,7 +3490,8 @@
                 371, 
                 713
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3500,7 +3507,8 @@
             "to_edges": [
                 554
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3513,7 +3521,8 @@
             "to_edges": [
                 609
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3530,7 +3539,8 @@
                 506, 
                 621
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3543,7 +3553,8 @@
             "to_edges": [
                 357
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3558,7 +3569,8 @@
             "to_edges": [
                 717
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3576,7 +3588,8 @@
             "to_edges": [
                 511
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3590,7 +3603,8 @@
                 562, 
                 715
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3604,7 +3618,8 @@
                 381, 
                 563
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3621,7 +3636,8 @@
             "to_edges": [
                 575
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3641,7 +3657,8 @@
                 346, 
                 711
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3654,7 +3671,8 @@
             "to_edges": [
                 667
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3671,7 +3689,8 @@
             "to_edges": [
                 569
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3685,7 +3704,8 @@
             "is_random": false, 
             "name": "Exclusive Relationships [Official Partners] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3698,7 +3718,8 @@
             "to_edges": [
                 475
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3714,7 +3735,8 @@
                 406, 
                 651
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3730,7 +3752,8 @@
             "to_edges": [
                 394
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3748,7 +3771,8 @@
                 356, 
                 623
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3764,7 +3788,8 @@
             "to_edges": [
                 643
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3778,7 +3803,8 @@
                 376, 
                 587
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3794,7 +3820,8 @@
             "to_edges": [
                 484
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3809,7 +3836,8 @@
             "to_edges": [
                 691
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3824,7 +3852,8 @@
             "to_edges": [
                 397
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3837,7 +3866,8 @@
             "is_random": false, 
             "name": "Reduce Internal Communication Confusion ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3853,7 +3883,8 @@
                 633, 
                 708
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3866,7 +3897,8 @@
             "to_edges": [
                 718
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3879,7 +3911,8 @@
             "to_edges": [
                 555
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3892,7 +3925,8 @@
             "is_random": false, 
             "name": "Use sponsor marketing channels", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3907,7 +3941,8 @@
             "to_edges": [
                 703
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3921,7 +3956,8 @@
                 467, 
                 644
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3938,7 +3974,8 @@
             "to_edges": [
                 606
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3951,7 +3988,8 @@
             "to_edges": [
                 333
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3966,7 +4004,8 @@
                 519, 
                 552
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3979,7 +4018,8 @@
             "to_edges": [
                 686
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -3992,7 +4032,8 @@
             "to_edges": [
                 629
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4009,7 +4050,8 @@
                 513, 
                 747
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4025,7 +4067,8 @@
                 363, 
                 648
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4051,7 +4094,8 @@
             "to_edges": [
                 638
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4067,7 +4111,8 @@
             "to_edges": [
                 530
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4080,7 +4125,8 @@
             "to_edges": [
                 486
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4097,7 +4143,8 @@
                 350, 
                 659
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4112,7 +4159,8 @@
             "to_edges": [
                 679
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4127,7 +4175,8 @@
             "to_edges": [
                 616
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4142,7 +4191,8 @@
                 407, 
                 532
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4158,7 +4208,8 @@
                 409, 
                 572
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4173,7 +4224,8 @@
             "to_edges": [
                 454
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4187,7 +4239,8 @@
             "is_random": false, 
             "name": "*Engage employees in events1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4203,7 +4256,8 @@
                 368, 
                 489
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4219,7 +4273,8 @@
                 399, 
                 742
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4234,7 +4289,8 @@
             "to_edges": [
                 517
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4251,7 +4307,8 @@
             "to_edges": [
                 719
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4270,7 +4327,8 @@
                 657, 
                 728
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4283,7 +4341,8 @@
             "to_edges": [
                 729
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4296,7 +4355,8 @@
             "is_random": false, 
             "name": "Provide partner contacts to CS", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4309,7 +4369,8 @@
             "to_edges": [
                 345
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4322,7 +4383,8 @@
             "to_edges": [
                 400
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4342,7 +4404,8 @@
                 446, 
                 558
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4359,7 +4422,8 @@
                 595, 
                 624
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4374,7 +4438,8 @@
             "to_edges": [
                 403
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4389,7 +4454,8 @@
             "to_edges": [
                 603
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4402,7 +4468,8 @@
             "to_edges": [
                 477
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4417,7 +4484,8 @@
             "to_edges": [
                 365
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4430,7 +4498,8 @@
             "is_random": false, 
             "name": "!Acquire public speaking skills", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4445,7 +4514,8 @@
             "to_edges": [
                 367
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4463,7 +4533,8 @@
             "to_edges": [
                 390
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4476,7 +4547,8 @@
             "to_edges": [
                 678
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4489,7 +4561,8 @@
             "is_random": false, 
             "name": "*Engagement Student Ambassadors in promoting awareness", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4504,7 +4577,8 @@
             "to_edges": [
                 666
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4520,7 +4594,8 @@
                 560, 
                 709
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4536,7 +4611,8 @@
                 378, 
                 700
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4550,7 +4626,8 @@
             "is_random": false, 
             "name": "Put on fundraising web events", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4564,7 +4641,8 @@
             "is_random": false, 
             "name": "High Response [Individual Donors] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4577,7 +4655,8 @@
             "to_edges": [
                 721
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4594,7 +4673,8 @@
             "to_edges": [
                 737
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4607,7 +4687,8 @@
             "to_edges": [
                 389
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4620,7 +4701,8 @@
             "to_edges": [
                 516
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4635,7 +4717,8 @@
             "to_edges": [
                 738
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4651,7 +4734,8 @@
             "to_edges": [
                 336
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4665,7 +4749,8 @@
             "is_random": false, 
             "name": "Engagement [Sponsors in the Cause of CS] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4682,7 +4767,8 @@
                 472, 
                 658
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4697,7 +4783,8 @@
             "to_edges": [
                 681
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4712,7 +4799,8 @@
             "to_edges": [
                 352
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4727,7 +4815,8 @@
             "to_edges": [
                 710
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4740,7 +4829,8 @@
             "to_edges": [
                 331
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4754,7 +4844,8 @@
                 607, 
                 656
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4767,7 +4858,8 @@
             "is_random": false, 
             "name": "*Single charitable registration number be used", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4780,7 +4872,8 @@
             "to_edges": [
                 497
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4796,7 +4889,8 @@
                 349, 
                 462
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4809,7 +4903,8 @@
             "to_edges": [
                 329
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4824,7 +4919,8 @@
             "to_edges": [
                 504
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4843,7 +4939,8 @@
                 577, 
                 734
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4857,7 +4954,8 @@
                 496, 
                 599
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4870,7 +4968,8 @@
             "to_edges": [
                 613
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4885,7 +4984,8 @@
             "to_edges": [
                 424
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4900,7 +5000,8 @@
             "is_random": false, 
             "name": "Contribution be made", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4915,7 +5016,8 @@
             "to_edges": [
                 745
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4932,7 +5034,8 @@
             "to_edges": [
                 682
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4947,7 +5050,8 @@
             "to_edges": [
                 458
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4963,7 +5067,8 @@
             "to_edges": [
                 330
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4976,7 +5081,8 @@
             "to_edges": [
                 631
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -4995,7 +5101,8 @@
                 463, 
                 537
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5008,7 +5115,8 @@
             "to_edges": [
                 701
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5024,7 +5132,8 @@
             "to_edges": [
                 581
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5047,7 +5156,8 @@
             "to_edges": [
                 427
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5066,7 +5176,8 @@
                 641, 
                 707
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5079,7 +5190,8 @@
             "is_random": false, 
             "name": "! Provide compiled call data to Media", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5092,7 +5204,8 @@
             "to_edges": [
                 598
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5109,7 +5222,8 @@
             "is_random": false, 
             "name": "Market CS Brand ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5124,7 +5238,8 @@
             "to_edges": [
                 540
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5140,7 +5255,8 @@
             "to_edges": [
                 395
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5158,7 +5274,8 @@
             "to_edges": [
                 483
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5173,7 +5290,8 @@
             "to_edges": [
                 583
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5192,7 +5310,8 @@
                 429, 
                 524
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5207,7 +5326,8 @@
             "to_edges": [
                 660
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5222,7 +5342,8 @@
             "to_edges": [
                 418
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5241,7 +5362,8 @@
                 326, 
                 485
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5254,7 +5376,8 @@
             "is_random": false, 
             "name": "Provide fundraising services", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5269,7 +5392,8 @@
             "to_edges": [
                 344
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5285,7 +5409,8 @@
             "to_edges": [
                 358
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5301,7 +5426,8 @@
                 468, 
                 584
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5321,7 +5447,8 @@
                 612, 
                 723
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5338,7 +5465,8 @@
                 618, 
                 625
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5351,7 +5479,8 @@
             "to_edges": [
                 653
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5364,7 +5493,8 @@
             "to_edges": [
                 564
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5381,7 +5511,8 @@
                 696, 
                 705
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5394,7 +5525,8 @@
             "to_edges": [
                 604
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5410,7 +5542,8 @@
             "to_edges": [
                 355
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5425,7 +5558,8 @@
             "to_edges": [
                 518
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5439,7 +5573,8 @@
                 663, 
                 672
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5452,7 +5587,8 @@
             "is_random": false, 
             "name": "Manage Accounts 1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5465,7 +5601,8 @@
             "is_random": false, 
             "name": "Match Fundraising targets", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5478,7 +5615,8 @@
             "to_edges": [
                 495
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5492,7 +5630,8 @@
                 391, 
                 619
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5506,7 +5645,8 @@
                 559, 
                 674
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5519,7 +5659,8 @@
             "is_random": false, 
             "name": "Create General Ledgers 1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5532,7 +5673,8 @@
             "to_edges": [
                 630
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5549,7 +5691,8 @@
             "is_random": false, 
             "name": "Retain [Sponsors] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5564,7 +5707,8 @@
             "to_edges": [
                 428
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5579,7 +5723,8 @@
             "to_edges": [
                 548
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5594,7 +5739,8 @@
             "to_edges": [
                 431
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5611,7 +5757,8 @@
                 408, 
                 571
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5627,7 +5774,8 @@
             "to_edges": [
                 746
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5646,7 +5794,8 @@
             "to_edges": [
                 525
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5659,7 +5808,8 @@
             "to_edges": [
                 523
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5674,7 +5824,8 @@
             "to_edges": [
                 501
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5689,7 +5840,8 @@
             "to_edges": [
                 687
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5704,7 +5856,8 @@
             "to_edges": [
                 670
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5717,7 +5870,8 @@
             "is_random": false, 
             "name": "Quality [Services] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5732,7 +5886,8 @@
             "to_edges": [
                 579
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5749,7 +5904,8 @@
                 600, 
                 626
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5766,7 +5922,8 @@
                 582, 
                 594
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5782,7 +5939,8 @@
             "to_edges": [
                 444
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5797,7 +5955,8 @@
             "to_edges": [
                 650
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5812,7 +5971,8 @@
             "to_edges": [
                 455
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5826,7 +5986,8 @@
                 461, 
                 646
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5840,7 +6001,8 @@
                 480, 
                 529
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5855,7 +6017,8 @@
             "to_edges": [
                 453
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5868,7 +6031,8 @@
             "to_edges": [
                 396
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5881,7 +6045,8 @@
             "to_edges": [
                 739
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5894,7 +6059,8 @@
             "is_random": false, 
             "name": "Long Term [Funding] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5907,7 +6073,8 @@
             "to_edges": [
                 601
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5920,7 +6087,8 @@
             "to_edges": [
                 388
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5937,7 +6105,8 @@
                 570, 
                 596
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5950,7 +6119,8 @@
             "to_edges": [
                 642
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5965,7 +6135,8 @@
             "to_edges": [
                 383
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5979,7 +6150,8 @@
                 456, 
                 698
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -5995,7 +6167,8 @@
                 437, 
                 593
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6012,7 +6185,8 @@
             "to_edges": [
                 589
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6026,7 +6200,8 @@
                 380, 
                 478
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6041,7 +6216,8 @@
             "to_edges": [
                 665
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6055,7 +6231,8 @@
                 620, 
                 697
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6069,7 +6246,8 @@
                 512, 
                 645
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6089,7 +6267,8 @@
             "to_edges": [
                 369
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6104,7 +6283,8 @@
             "to_edges": [
                 527
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6119,7 +6299,8 @@
             "to_edges": [
                 704
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6135,7 +6316,8 @@
                 364, 
                 470
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6151,7 +6333,8 @@
                 448, 
                 507
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6172,7 +6355,8 @@
             "to_edges": [
                 443
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6185,7 +6369,8 @@
             "to_edges": [
                 449
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6202,7 +6387,8 @@
                 608, 
                 690
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6216,7 +6402,8 @@
                 635, 
                 677
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6227,7 +6414,8 @@
             "is_random": false, 
             "name": "Increase Access Speed [  Regional Offices to Document Library]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6247,7 +6435,8 @@
                 692, 
                 724
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6260,7 +6449,8 @@
             "to_edges": [
                 422
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6275,7 +6465,8 @@
             "to_edges": [
                 339
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6291,7 +6482,8 @@
                 348, 
                 362
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6307,7 +6499,8 @@
                 419, 
                 491
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6324,7 +6517,8 @@
                 435, 
                 438
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6339,7 +6533,8 @@
             "to_edges": [
                 712
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6352,7 +6547,8 @@
             "is_random": false, 
             "name": "Event coordination", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6368,7 +6564,8 @@
             "to_edges": [
                 683
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6383,7 +6580,8 @@
             "to_edges": [
                 688
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6404,7 +6602,8 @@
             "to_edges": [
                 426
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6420,7 +6619,8 @@
             "to_edges": [
                 536
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6437,7 +6637,8 @@
             "to_edges": [
                 335
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6452,7 +6653,8 @@
             "to_edges": [
                 617
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6468,7 +6670,8 @@
                 514, 
                 680
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6481,7 +6684,8 @@
             "is_random": false, 
             "name": "Promotion Resources", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6492,7 +6696,8 @@
             "is_random": false, 
             "name": "Include Corporate Partners [In the Development of Press Releases]  ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6505,7 +6710,8 @@
             "is_random": false, 
             "name": "Manage Receivables 1", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6519,7 +6725,8 @@
                 447, 
                 526
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6530,7 +6737,8 @@
             "is_random": false, 
             "name": "Place Sponsor Logos in Events ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6544,7 +6752,8 @@
                 499, 
                 561
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6559,7 +6768,8 @@
             "to_edges": [
                 373
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6572,7 +6782,8 @@
             "to_edges": [
                 585
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6585,7 +6796,8 @@
             "is_random": false, 
             "name": "Contribute [to a Good Cause] 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6600,7 +6812,8 @@
             "to_edges": [
                 673
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6614,7 +6827,8 @@
                 392, 
                 605
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6630,7 +6844,8 @@
             "to_edges": [
                 452
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6646,7 +6861,8 @@
             "to_edges": [
                 328
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6660,7 +6876,8 @@
                 647, 
                 720
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6674,7 +6891,8 @@
                 522, 
                 586
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6689,7 +6907,8 @@
                 689, 
                 699
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6704,7 +6923,8 @@
             "to_edges": [
                 544
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6718,7 +6938,8 @@
                 465, 
                 556
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6736,7 +6957,8 @@
             "is_random": false, 
             "name": "Minimize expenses", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6749,7 +6971,8 @@
             "to_edges": [
                 580
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6764,7 +6987,8 @@
             "to_edges": [
                 471
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6783,7 +7007,8 @@
             "to_edges": [
                 372
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6796,7 +7021,8 @@
             "is_random": false, 
             "name": "Improve Image to Kids1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6811,7 +7037,8 @@
             "to_edges": [
                 722
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6826,7 +7053,8 @@
             "to_edges": [
                 337
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6839,7 +7067,8 @@
             "is_random": false, 
             "name": "Increase [Awareness]1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6852,7 +7081,8 @@
             "to_edges": [
                 669
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6865,7 +7095,8 @@
             "to_edges": [
                 716
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6880,7 +7111,8 @@
             "is_random": false, 
             "name": "Philanthropic donations ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6897,7 +7129,8 @@
                 662, 
                 741
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6912,7 +7145,8 @@
             "to_edges": [
                 327
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6927,7 +7161,8 @@
             "to_edges": [
                 578
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6943,7 +7178,8 @@
                 366, 
                 550
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6956,7 +7192,8 @@
             "to_edges": [
                 671
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6974,7 +7211,8 @@
                 402, 
                 730
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -6989,7 +7227,8 @@
             "to_edges": [
                 412
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7010,7 +7249,8 @@
                 566, 
                 611
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7024,7 +7264,8 @@
                 488, 
                 736
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7038,7 +7279,8 @@
                 482, 
                 702
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7056,7 +7298,8 @@
                 597, 
                 675
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7073,7 +7316,8 @@
             "to_edges": [
                 474
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7088,7 +7332,8 @@
             "to_edges": [
                 415
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7102,7 +7347,8 @@
                 432, 
                 508
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7115,7 +7361,8 @@
             "to_edges": [
                 542
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7129,7 +7376,8 @@
                 547, 
                 726
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7153,7 +7401,8 @@
                 634, 
                 714
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7166,7 +7415,8 @@
             "is_random": false, 
             "name": "Engagement of Sponsor Employees in Fund Development1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7180,7 +7430,8 @@
                 410, 
                 735
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7194,7 +7445,8 @@
             "is_random": false, 
             "name": "* Corporate sponsor feel included ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7209,7 +7461,8 @@
             "to_edges": [
                 684
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7224,7 +7477,8 @@
             "to_edges": [
                 637
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7237,7 +7491,8 @@
             "to_edges": [
                 341
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7252,7 +7507,8 @@
             "to_edges": [
                 538
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7265,7 +7521,8 @@
             "is_random": false, 
             "name": "Communicate with head office ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7280,7 +7537,8 @@
             "to_edges": [
                 573
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7295,7 +7553,8 @@
             "to_edges": [
                 725
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7309,7 +7568,8 @@
                 535, 
                 743
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7322,7 +7582,8 @@
             "to_edges": [
                 545
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7336,7 +7597,8 @@
                 628, 
                 654
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7351,7 +7613,8 @@
             "to_edges": [
                 685
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7366,7 +7629,8 @@
             "to_edges": [
                 347
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7382,7 +7646,8 @@
                 338, 
                 615
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7397,7 +7662,8 @@
             "to_edges": [
                 509
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7414,7 +7680,8 @@
                 549, 
                 565
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7428,7 +7695,8 @@
             "is_random": false, 
             "name": "Availability for Administration and Accounting Purposes Across CS ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7443,7 +7711,8 @@
             "to_edges": [
                 732
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7458,7 +7727,8 @@
             "to_edges": [
                 543
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7476,7 +7746,8 @@
                 370, 
                 591
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7489,7 +7760,8 @@
             "is_random": false, 
             "name": "Funds", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7506,7 +7778,8 @@
             "to_edges": [
                 533
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7519,7 +7792,8 @@
             "to_edges": [
                 361
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7534,7 +7808,8 @@
             "to_edges": [
                 420
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7550,7 +7825,8 @@
                 476, 
                 727
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7566,7 +7842,8 @@
                 387, 
                 668
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7579,7 +7856,8 @@
             "to_edges": [
                 693
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7592,7 +7870,8 @@
             "to_edges": [
                 568
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7607,7 +7886,8 @@
             "to_edges": [
                 359
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7622,7 +7902,8 @@
             "to_edges": [
                 528
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7637,7 +7918,8 @@
             "to_edges": [
                 664
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7652,7 +7934,8 @@
             "to_edges": [
                 744
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7667,7 +7950,8 @@
             "to_edges": [
                 602
             ], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7681,7 +7965,8 @@
                 360, 
                 494
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7696,7 +7981,8 @@
             "to_edges": [
                 505
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7715,7 +8001,8 @@
                 442, 
                 567
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7730,7 +8017,8 @@
             "to_edges": [
                 588
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7749,7 +8037,8 @@
                 423, 
                 576
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7764,7 +8053,8 @@
             "to_edges": [
                 649
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7778,7 +8068,8 @@
                 557, 
                 661
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7795,7 +8086,8 @@
                 622, 
                 636
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7808,7 +8100,8 @@
             "to_edges": [
                 417
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7822,7 +8115,8 @@
                 440, 
                 493
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7838,7 +8132,8 @@
                 414, 
                 459
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7852,7 +8147,8 @@
                 384, 
                 733
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7870,7 +8166,8 @@
             "to_edges": [
                 441
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7885,7 +8182,8 @@
             "is_random": false, 
             "name": "Minimize [Cost of Events]", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7900,7 +8198,8 @@
             "to_edges": [
                 655
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7915,7 +8214,8 @@
             "to_edges": [
                 590
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7930,7 +8230,8 @@
             "to_edges": [
                 694
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7951,7 +8252,8 @@
                 374, 
                 731
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7964,7 +8266,8 @@
             "to_edges": [
                 592
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7977,7 +8280,8 @@
             "to_edges": [
                 457
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -7999,7 +8303,8 @@
                 450, 
                 574
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8012,7 +8317,8 @@
             "to_edges": [
                 416
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8026,7 +8332,8 @@
                 614, 
                 652
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8041,7 +8348,8 @@
             "to_edges": [
                 379
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8054,7 +8362,8 @@
             "to_edges": [
                 332
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8067,7 +8376,8 @@
             "to_edges": [
                 640
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8080,7 +8390,8 @@
             "to_edges": [
                 377
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8095,7 +8406,8 @@
             "to_edges": [
                 433
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8112,7 +8424,8 @@
                 353, 
                 706
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8126,7 +8439,8 @@
                 466, 
                 695
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8140,7 +8454,8 @@
                 382, 
                 451
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8155,7 +8470,8 @@
             "is_random": false, 
             "name": "Up to Date [ Information on Corporate Sponsors] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8171,7 +8487,8 @@
             "is_random": false, 
             "name": "Positive Association\\n[by Consumers] ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8192,7 +8509,8 @@
                 515, 
                 639
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8207,7 +8525,8 @@
                 539, 
                 546
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8222,7 +8541,8 @@
             "to_edges": [
                 503
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8241,7 +8561,8 @@
                 632, 
                 676
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8256,7 +8577,8 @@
             "is_random": false, 
             "name": "Inspired staff", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8271,7 +8593,8 @@
             "to_edges": [
                 473
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8288,7 +8611,8 @@
             "to_edges": [
                 531
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8301,7 +8625,8 @@
             "is_random": false, 
             "name": "Avoid Over-Marketing Services 1", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -8314,7 +8639,8 @@
             "to_edges": [
                 541
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }
     ]
 }

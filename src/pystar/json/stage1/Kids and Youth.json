@@ -662,7 +662,8 @@
             "is_random": false, 
             "name": "Kids Use Ask a Counsellor Section\\ns", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -682,7 +683,8 @@
             "is_random": false, 
             "name": "*Get Effective Help", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -695,7 +697,8 @@
             "is_random": false, 
             "name": "Kids Use Phone Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -715,7 +718,8 @@
             "is_random": false, 
             "name": "Help be acquired", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -731,7 +735,8 @@
                 107, 
                 114
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -744,7 +749,8 @@
             "is_random": false, 
             "name": "Services Be Free", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -757,7 +763,8 @@
             "to_edges": [
                 121
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -770,7 +777,8 @@
             "to_edges": [
                 133
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -785,7 +793,8 @@
             "is_random": false, 
             "name": "*Safety of service usage", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -798,7 +807,8 @@
             "to_edges": [
                 157
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -811,7 +821,8 @@
             "to_edges": [
                 117
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -826,7 +837,8 @@
             "to_edges": [
                 91
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -842,7 +854,8 @@
                 122, 
                 132
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -855,7 +868,8 @@
             "to_edges": [
                 118
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -871,7 +885,8 @@
                 88, 
                 155
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -886,7 +901,8 @@
             "to_edges": [
                 104
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -901,7 +917,8 @@
             "to_edges": [
                 135
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -914,7 +931,8 @@
             "to_edges": [
                 111
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -930,7 +948,8 @@
             "is_random": false, 
             "name": "*Privacy", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -943,7 +962,8 @@
             "to_edges": [
                 89
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -954,7 +974,8 @@
             "is_random": false, 
             "name": "Contact CS about Non-Crisis Situation ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -967,7 +988,8 @@
             "to_edges": [
                 159
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -983,7 +1005,8 @@
                 113, 
                 120
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -998,7 +1021,8 @@
             "to_edges": [
                 94
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1015,7 +1039,8 @@
                 134, 
                 143
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1028,7 +1053,8 @@
             "is_random": false, 
             "name": "Kids use get Informed Section of Web Site", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1041,7 +1067,8 @@
             "to_edges": [
                 160
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1057,7 +1084,8 @@
                 84, 
                 148
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1073,7 +1101,8 @@
                 125, 
                 158
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1086,7 +1115,8 @@
             "is_random": false, 
             "name": "Kids Use Cyber Caf\u00e9/Portal/Chat Room", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1101,7 +1131,8 @@
             "to_edges": [
                 115
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1114,7 +1145,8 @@
             "to_edges": [
                 153
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1130,7 +1162,8 @@
                 131, 
                 147
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1143,7 +1176,8 @@
             "to_edges": [
                 87
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1156,7 +1190,8 @@
             "to_edges": [
                 150
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1171,7 +1206,8 @@
             "to_edges": [
                 103
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1184,7 +1220,8 @@
             "is_random": false, 
             "name": "Kids Use Voice Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1197,7 +1234,8 @@
             "to_edges": [
                 93
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1214,7 +1252,8 @@
                 124, 
                 145
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1231,7 +1270,8 @@
                 110, 
                 119
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1244,7 +1284,8 @@
             "to_edges": [
                 92
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1257,7 +1298,8 @@
             "to_edges": [
                 81
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1270,7 +1312,8 @@
             "to_edges": [
                 141
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1283,7 +1326,8 @@
             "is_random": false, 
             "name": "Kids read Polls about Kids", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1298,7 +1342,8 @@
             "to_edges": [
                 105
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1314,7 +1359,8 @@
                 99, 
                 126
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1329,7 +1375,8 @@
             "to_edges": [
                 129
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1342,7 +1389,8 @@
             "to_edges": [
                 106
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1355,7 +1403,8 @@
             "to_edges": [
                 137
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1368,7 +1417,8 @@
             "to_edges": [
                 123
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1381,7 +1431,8 @@
             "is_random": false, 
             "name": "Kids read General Questions and Answers", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1397,7 +1448,8 @@
                 86, 
                 101
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1410,7 +1462,8 @@
             "to_edges": [
                 116
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1425,7 +1478,8 @@
             "is_random": false, 
             "name": "Information be acquired on website", 
             "to_edges": [], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1438,7 +1492,8 @@
             "is_random": false, 
             "name": "Kids Use Text Messaging", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1451,7 +1506,8 @@
             "to_edges": [
                 95
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1466,7 +1522,8 @@
                 98, 
                 139
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1482,7 +1539,8 @@
                 83, 
                 96
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1495,7 +1553,8 @@
             "to_edges": [
                 102
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1509,7 +1568,8 @@
                 109, 
                 112
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1520,7 +1580,8 @@
             "is_random": false, 
             "name": "Contact CS in Crisis ", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1536,7 +1597,8 @@
             "to_edges": [
                 90
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1551,7 +1613,8 @@
             "to_edges": [
                 161
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1564,7 +1627,8 @@
             "is_random": false, 
             "name": "Connect Back to the Community ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1577,7 +1641,8 @@
             "is_random": false, 
             "name": "Kids Use Bulletin Board with Replies", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1593,7 +1658,8 @@
                 146, 
                 149
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1606,7 +1672,8 @@
             "to_edges": [
                 151
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1621,7 +1688,8 @@
             "to_edges": [
                 130
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1634,7 +1702,8 @@
             "is_random": false, 
             "name": "Kids Use One-On-One Chat Rooms", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1647,7 +1716,8 @@
             "is_random": false, 
             "name": "Inform kids about anonymity of service", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1660,7 +1730,8 @@
             "to_edges": [
                 156
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1677,7 +1748,8 @@
                 144, 
                 154
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1690,7 +1762,8 @@
             "is_random": false, 
             "name": "Feedback", 
             "to_edges": [], 
-            "type": "resource"
+            "type": "resource", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1703,7 +1776,8 @@
             "to_edges": [
                 152
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1717,7 +1791,8 @@
                 136, 
                 140
             ], 
-            "type": "goal"
+            "type": "goal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1730,7 +1805,8 @@
             "is_random": false, 
             "name": "Kids Use Video Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1743,7 +1819,8 @@
             "is_random": false, 
             "name": "Kids Use Email Counselling", 
             "to_edges": [], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1764,7 +1841,8 @@
             "is_random": false, 
             "name": "Comfortableness with service ", 
             "to_edges": [], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1779,7 +1857,8 @@
             "to_edges": [
                 127
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1794,7 +1873,8 @@
             "to_edges": [
                 138
             ], 
-            "type": "softgoal"
+            "type": "softgoal", 
+            "weighted_cost": 0
         }, 
         {
             "component": "node", 
@@ -1810,7 +1890,8 @@
                 128, 
                 142
             ], 
-            "type": "task"
+            "type": "task", 
+            "weighted_cost": 0
         }
     ]
 }
