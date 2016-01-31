@@ -1,4 +1,4 @@
-### DE - 10 generations at interval of 1
+### Results utilizing continuous domination instead of binary domination
 
 Models are sorted below w.r.t to their sizes in descending order
 
