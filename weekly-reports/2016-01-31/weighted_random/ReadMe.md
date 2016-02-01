@@ -3,6 +3,8 @@
 - random cost between 1-5 for decisions
 - 4 objectivs(softgoals, goals, path_cost and decision_cost)
 - Cost of node weight proportional to number of leaves under the node 
+  - Weight = (1 + 0.1 * number of incoming edges)
+
 
 Models are sorted below w.r.t to their sizes in descending order
 
