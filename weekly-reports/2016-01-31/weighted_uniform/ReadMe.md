@@ -2,8 +2,8 @@
 - continuous domination
 - uniform cost of 1 for each decision
 - 4 objectivs(softgoals, goals, path_cost and decision_cost)
-- Cost of a node is weighted proportional to the number of leaves the node has
-  under it
+- Cost of a node is weighted proportional to the number of leaves the node has under it
+  - Weight = (1 + 0.1 * number of incoming edges)
 
 Models are sorted below w.r.t to their sizes in descending order
 
