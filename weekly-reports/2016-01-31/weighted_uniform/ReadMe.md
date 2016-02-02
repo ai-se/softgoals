@@ -21,3 +21,8 @@ Models are sorted below w.r.t to their sizes in descending order
 | 10|OOOChatRooms| [pdf](../../../GMRepo/pdfs/OOOChatRooms.pdf)|[report](OOOChatRooms.md)|
 | 11|CSCounsellingManagementSD| [pdf](../../../GMRepo/pdfs/CSCounsellingManagementSD.pdf)| [report](CSCounsellingManagementSD.md)|
 | 12|CSFDandMarketingSD| [pdf](../../../GMRepo/pdfs/CSFDandMarketingSD.pdf)|[report](CSFDandMarketingSD.md)|
+
+
+Few Take Aways:
+- Continous domination gives much better improvement compared to Binary Domination. Check the improvement rates in first 5 reports.
+- Path cost including debate weights provide better results compared to not using a debate factor.
