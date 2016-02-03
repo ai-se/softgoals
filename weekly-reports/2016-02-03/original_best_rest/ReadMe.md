@@ -2,8 +2,6 @@
 - continuous domination
 - uniform cost of 1 for each decision
 - 4 objectivs(softgoals, goals, path_cost and decision_cost)
-- Cost of a node is weighted proportional to the number of leaves the node has under it
-  - Weight = (1 + 0.1 * number of incoming edges)
 
 Models are sorted below w.r.t to their sizes in descending order
 
@@ -22,7 +20,3 @@ Models are sorted below w.r.t to their sizes in descending order
 | 11|CSCounsellingManagementSD| [pdf](../../../GMRepo/pdfs/CSCounsellingManagementSD.pdf)| [report](CSCounsellingManagementSD.md)|
 | 12|CSFDandMarketingSD| [pdf](../../../GMRepo/pdfs/CSFDandMarketingSD.pdf)|[report](CSFDandMarketingSD.md)|
 
-
-Few Take Aways:
-- Continous domination gives much better improvement compared to Binary Domination. Check the improvement rates in first 5 reports.
-- Path cost including debate weights provide better results compared to not using a debate factor.
