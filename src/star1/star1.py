@@ -4,21 +4,26 @@ sys.path.append(os.path.abspath("."))
 __author__ = 'george'
 sys.dont_write_bytecode = True
 from utilities.lib import *
-from pystar.model import Model
+from pystar.model import Model, Point
 import pystar.template as template
-from utilities.de import DE, Point, eval_goals, eval_softgoals, eval_paths
+from utilities.de import DE
+from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
 
 def default():
   return O(
     k1 = 100,
-    k2 = 100
+    k2 = 100,
+    best_percent = 20
   )
 
 class Decision(O):
   def __init__(self, **params):
     O.__init__(self, **params)
+
+  def __hash__(self):
+    return hash(self.id)
 
 class Star1(O):
   def __init__(self, model, **settings):
@@ -61,8 +66,20 @@ class Star1(O):
           rest.add(point)
     return best, rest
 
+  # def sample(self):
+  #   stat = self.de.run()
+  #   stat.settings.gen_step = 20
+  #   stat.tiles()
+  #   population = set()
+  #   for gen in stat.generations:
+  #     for point in gen:
+  #       population.add(point)
+  #   best_size = int(len(population) * self.settings.best_percent/100)
+  #   best = sel_nsga2(self.model, list(population), best_size)
+  #   rest = population - set(best)
+  #   return list(best), list(rest)
+
   def rank(self, best, rest):
-    # TODO - Change this method to include the value along with the decision
     best_size = len(best)
     rest_size = len(rest)
     p_best = best_size / (best_size + rest_size)
@@ -75,24 +92,39 @@ class Star1(O):
           pos_count += 1
         elif point.decisions[dec_node.id] < 0:
           neg_count += 1
-      node_value = 1 if pos_count > neg_count else -1
-      f_best = max(pos_count, neg_count)
-      f_best /= best_size
-      l_best = f_best * p_best
-      f_rest = 0
-      func = gt if node_value == 1 else lt
+      f_pos_best = pos_count / best_size
+      l_pos_best = f_pos_best * p_best
+      f_neg_best = neg_count / best_size
+      l_neg_best = f_neg_best * p_best
+      f_pos_rest, f_neg_rest = 0, 0
       for point in rest:
-        if func(point.decisions[dec_node.id], 0):
-          f_rest += 1
-      f_rest /= best_size
-      l_rest = f_rest * p_rest
-      sup_best = l_best**2 / (l_best + l_rest)
+        if point.decisions[dec_node.id] > 0:
+          f_pos_rest += 1
+        else:
+          f_neg_rest += 1
+      f_pos_rest /= rest_size
+      f_neg_rest /= rest_size
+      l_pos_rest = f_pos_rest * p_rest
+      l_neg_rest = f_neg_rest * p_rest
+      sup_pos = l_pos_best ** 2 / (l_pos_best + l_pos_rest)
+      sup_neg = l_neg_best ** 2 / (l_neg_best + l_neg_rest)
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
-                                support=sup_best, value = node_value,
+                                support=sup_pos, value = 1,
+                                type = dec_node.type, container=dec_node.container,
+                                cost = self.model.cost_map[dec_node.id]))
+      decisions.append(Decision(id = dec_node.id, name = dec_node.name,
+                                support=sup_neg, value = -1,
                                 type = dec_node.type, container=dec_node.container,
                                 cost = self.model.cost_map[dec_node.id]))
     decisions.sort(key=lambda x:x.support, reverse=True)
-    return decisions
+    sorted_decs = []
+    aux = set()
+    for dec in decisions:
+      if dec.id not in aux:
+        sorted_decs.append(dec)
+        aux.add(dec.id)
+    assert len(sorted_decs) == len(self.model.bases), "Mismatch after sorting support"
+    return sorted_decs
 
   def generate(self, presets = None):
     population = list()
@@ -104,7 +136,8 @@ class Star1(O):
         population.append(point)
     return population
 
-  def objective_stats(self, generations):
+  @staticmethod
+  def objective_stats(generations):
     stats = []
     obj_len = len(generations[0][0].objectives)
     for i in range(obj_len):
@@ -125,7 +158,7 @@ class Star1(O):
     model = self.model
     if not point.objectives:
       model.reset_nodes(point.decisions)
-      funcs = [eval_softgoals, eval_goals, eval_paths]
+      funcs = [Point.eval_softgoals, Point.eval_goals, Point.eval_paths]
       point.objectives = [func(model) for func in funcs]
       point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
       point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
@@ -157,10 +190,10 @@ class Star1(O):
     return point
 
 def print_decisions(decisions):
-  columns = ["rank", "name", "type", "value", "cost"]
+  columns = ["rank", "name", "type", "value", "cost", "support"]
   table = PrettyTable(columns)
   for i, decision in enumerate(decisions):
-    row = [i+1, decision.name, decision.type, decision.value, decision.cost]
+    row = [i+1, decision.name, decision.type, decision.value, decision.cost, round(decision.support, 5)]
     table.add_row(row)
   print("\n### Decisions Ranked")
   print("```")

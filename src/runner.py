@@ -95,13 +95,6 @@ def test_star1(model_name, show_optimal_index = True):
       optimal_index = optimal_indices.get(model_name, None) if show_optimal_index else None
       star1.run(model(), SUB_FOLDER, optimal_index=optimal_index)
 
-def _test():
-  from pystar.models.dot_models import modelers
-  from utilities.de import eval_softgoals, eval_costs
-  model = Py_Model(modelers[0]())
-  eval_softgoals(model)
-  eval_costs(model)
-
 
 def main():
   # test_ome_trees()
@@ -116,7 +109,7 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "weighted_random"
+SUB_FOLDER = "original_best_rest"
 
 if __name__ == "__main__":
   main()

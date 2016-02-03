@@ -5,6 +5,7 @@ sys.dont_write_bytecode = True
 from lib import *
 import time
 from math import exp
+from pystar.model import Model, Point
 
 MIN_FRONTIER_SIZE=10
 
@@ -16,100 +17,13 @@ def default():
     cr = 0.3,
     seed = 1,
     better = [gt, gt, lt, lt],
-    obj_funcs = [eval_softgoals, eval_goals, eval_paths, eval_costs],
+    obj_funcs = [Point.eval_softgoals, Point.eval_goals, Point.eval_paths, Point.eval_costs],
     evaluation = Point.evaluate,
     is_percent = True,
     binary = True,
     dominates = "cdom",
-    cdom_delta = 0.01
+    cdom_delta = 0.05
   )
-
-def eval_roots(model):
-  return model.evaluate_score()
-
-def eval_goals(model):
-  return model.evaluate_type(node_type="goal", is_percent=default().is_percent)
-
-def eval_softgoals(model):
-  return model.evaluate_type(node_type="softgoal", is_percent=default().is_percent)
-
-def eval_all_goals(model):
-  return model.evaluate_type(node_type=["softgoal", "goal"], is_percent=default().is_percent)
-
-def eval_coverage(model):
-  covered = len(model.get_tree().get_nodes_covered())
-  if default().is_percent:
-    return percent(covered, len(model.get_tree().get_nodes()))
-  else:
-    return len(model.get_tree().get_nodes_covered())
-
-def eval_costs(model):
-  total_cost = 0
-  for node in model.bases:
-    if node.value and node.value > 0:
-      total_cost += model.cost_map[node.id]
-  return total_cost
-
-def eval_paths(model):
-  total_cost = 0
-  for node in model.get_tree().get_nodes(node_type=["softgoal", "goal"]):
-    if node.value and node.value > 0:
-      total_cost += node.cost
-  return total_cost
-
-
-class Point(O):
-  id = 0
-  def __init__(self, decisions, objectives=None):
-    O.__init__(self)
-    Point.id += 1
-    self.id = Point.id
-    self.decisions = decisions
-    self.objectives = objectives
-    self._nodes = None
-
-  def get_nodes(self):
-    return self._nodes
-
-  def get_randomness(self):
-    count = 0
-    for node in self._nodes:
-      if node.is_random: count+=1
-    return percent(count, len(self._nodes))
-
-  def __hash__(self):
-    if type(self.decisions) == dict:
-      return hash(frozenset(self.decisions.items()))
-    return hash(frozenset(self.decisions))
-
-  def __eq__(self, other):
-    return cmp(self.decisions, other.decisions) == 0
-
-  @staticmethod
-  def evaluate(point, model, obj_funcs):
-    if not point.objectives:
-      model.reset_nodes(point.decisions)
-      point.objectives = [func(model) for func in obj_funcs]
-      point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
-    return point.objectives
-
-  @staticmethod
-  def evaluate_random(point, model, obj_funcs):
-    if point.objectives:
-      return point.objectives
-    model.reset_nodes(point.decisions)
-    model.evaluate_random()
-    point.objectives = [func(model) for func in obj_funcs]
-    point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
-    return point.objectives
-
-  @staticmethod
-  def trim(val):
-    if val > 0:
-      return t
-    else:
-      return f
-
 
 class DE(O):
   def __init__(self, model, **settings):
@@ -122,6 +36,9 @@ class DE(O):
     else:
       self.dominates = self.cdom
       self.limits = self.set_limits()
+    self.model.settings.obj_funcs = self.settings.obj_funcs
+    self.model.settings.better = self.settings.better
+    self.model.settings.is_percent = self.settings.is_percent
 
   def set_limits(self):
     mins = []
@@ -130,30 +47,30 @@ class DE(O):
     model = self.model
     for comp, func in zip(self.settings.better, self.settings.obj_funcs):
       weights.append(-1 if comp==lt else 1)
-      if func == eval_all_goals:
+      if func == Point.eval_all_goals:
         mins.append(0)
         if self.settings.is_percent: maxs.append(100)
         else:
           maxs.append(len(model.get_tree().get_nodes(node_type=["softgoal", "goal"])))
-      elif func == eval_softgoals:
+      elif func == Point.eval_softgoals:
         mins.append(0)
         if self.settings.is_percent: maxs.append(100)
         else:
           maxs.append(len(model.get_tree().get_nodes(node_type=["softgoal"])))
-      elif func == eval_goals:
+      elif func == Point.eval_goals:
         mins.append(0)
         if self.settings.is_percent: maxs.append(100)
         else:
           maxs.append(len(model.get_tree().get_nodes(node_type=["goal"])))
-      elif func == eval_coverage:
+      elif func == Point.eval_coverage:
         mins.append(0)
         if self.settings.is_percent: maxs.append(100)
         else:
           maxs.append(len(model.get_tree().get_nodes()))
-      elif func == eval_costs:
+      elif func == Point.eval_costs:
         mins.append(0)
         maxs.append(sum(model.cost_map.values()))
-      elif func == eval_paths:
+      elif func == Point.eval_paths:
         mins.append(0)
         maxs.append(sum(model.cost_map.values())*len(model.get_tree().get_nodes()))
     return O(mins=mins, maxs=maxs, weights=weights)

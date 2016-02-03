@@ -8,7 +8,8 @@ import random
 
 t =  1
 f = -1
-wt_delta = 0.1
+#wt_delta = 0.1
+wt_delta = 0
 
 def coin_toss():
   return random.choice([t, f])
@@ -25,8 +26,9 @@ def shuffle(lst):
   return lst
 
 class Model(O):
-  def __init__(self, tree):
+  def __init__(self, tree, **settings):
     O.__init__(self)
+    self.settings = O().update(**settings)
     self._tree = tree
     self.roots = self._tree.get_roots()
     self.bases = self._tree.get_bases()
@@ -40,16 +42,52 @@ class Model(O):
     """
     Random Costs Below
     """
-    rands = range(1,6)
-    for base in self.bases:
-      cost_map[base.id] = random.choice(rands)
+    # rands = range(1,6)
+    # for base in self.bases:
+    #   cost_map[base.id] = random.choice(rands)
     """
     Fixed cost of 1
     """
-    # for base in self.bases:
-    #   cost_map[base.id] = 1
+    for base in self.bases:
+      cost_map[base.id] = 1
     self.cost_map = cost_map
 
+  def better(self, one, two):
+    """
+    Check which of the points are better using bdom
+    :param one: Point 1
+    :param two: Point 2
+    :return:
+      0 - Non Dominated
+      1 - Point 1 dominates Point 2
+      2 - Point 2 dominates Point 1
+    """
+    def compare(i, j, func):
+      if i == j:
+        return 0
+      return 1 if func(i,j) else -1
+
+    obj1 = one.objectives
+    obj2 = two.objectives
+    one_at_least_once = False
+    two_at_least_once = False
+    for index, (a, b) in enumerate(zip(obj1, obj2)):
+      status = compare(a, b, self.settings.better[index])
+      if status == -1:
+        #obj2[i] better than obj1[i]
+        two_at_least_once = True
+      elif status == 1:
+        #obj1[i] better than obj2[i]
+        one_at_least_once = True
+      if one_at_least_once and two_at_least_once:
+        #neither dominates each other
+        return 0
+    if one_at_least_once:
+      return 1
+    elif two_at_least_once:
+      return 2
+    else:
+      return 0
 
   def get_tree(self):
     return self._tree
@@ -59,6 +97,9 @@ class Model(O):
     for node in self.bases:
       point_map[node.id] = random.choice([t, f])
     return point_map
+
+  def evaluate_constraints(self, decisions):
+    return True, 0
 
   def clear_nodes(self):
     for node in self._tree.nodes:
@@ -236,13 +277,9 @@ class Model(O):
     for node in nodes:
       self.eval(node)
       status, temp_cost = node.value, node.cost
+      cost += temp_cost
       if status <= 0: return status, 0
-      if not cost:
-        cost = temp_cost
-      else:
-        cost = min(cost, temp_cost)
-    weight = len(nodes)
-    return status, weight*(cost + 1)
+    return status, cost + 1
 
   def eval_or(self, nodes):
     """
@@ -251,12 +288,12 @@ class Model(O):
     :param nodes: Nodes to be evaluated
     :return: status
     """
-    weight = 1
-    for node in nodes:
-      weight += wt_delta
+    cost = 0
+    for node in shuffle(nodes):
       self.eval(node)
+      cost += node.cost
       if node.value > 0:
-        return node.value, weight*(node.cost + 1)
+        return node.value, cost + 1
     return f, 0
 
   def eval_contribs(self, edges, dependencies=None):
@@ -266,27 +303,27 @@ class Model(O):
     :param edges: Nodes to be evaluated
     :return: status
     """
-    kids = []
-    weight = 1
-    for edge in edges:
-      if edge.type != "contribution":
-        continue
-      weight += wt_delta
-      node = self._tree.get_node(edge.source)
-      self.eval(node)
-      kids += [Model.soft_goal_val(node.value, edge.value, node.cost)]
     if dependencies:
       for dep in dependencies:
-        weight += wt_delta
         dep_node = self._tree.get_node(dep.source)
         self.eval(dep_node)
-        val, cost = Model.soft_goal_val(dep_node.value, "make", dep_node.cost)
+        val = Model.soft_goal_val(dep_node.value, "make")
         if val <= 0: return val, 0
-    val, cost = random.choice(kids)
-    return val, weight*cost
+    val = f
+    cost = 0
+    for edge in shuffle(edges):
+      if edge.type != "contribution":
+        continue
+      node = self._tree.get_node(edge.source)
+      self.eval(node)
+      cost += node.cost
+      val = Model.soft_goal_val(node.value, edge.value)
+      if val > 0:
+        return val, cost + 1
+    return val, 0
 
   @staticmethod
-  def soft_goal_val(kid, edge, cost):
+  def soft_goal_val(kid, edge):
     """
     Check out src/img/prop_rules.png
     :param kid:
@@ -296,28 +333,126 @@ class Model(O):
     if edge in ["someplus", "someminus"]:
       rand_val = random.choice([t/2, f/2])
       if rand_val > 0:
-        return rand_val, cost+1
+        return rand_val
       else:
-        return rand_val, cost
+        return rand_val
     if kid == t:
-      if edge == "make"   : return t, cost + 1
-      if edge == "help"   : return t/2, cost + 1
-      if edge == "hurt"   : return f/2, cost
-      if edge == "break"  : return f, cost
+      if edge == "make"   : return t
+      if edge == "help"   : return t/2
+      if edge == "hurt"   : return f/2
+      if edge == "break"  : return f
     elif kid == t/2:
-      if edge == "make"   : return t/2, cost + 1
-      if edge == "help"   : return t/2, cost + 1
-      if edge == "hurt"   : return f/2, cost
-      if edge == "break"  : return f/2, cost
+      if edge == "make"   : return t/2
+      if edge == "help"   : return t/2
+      if edge == "hurt"   : return f/2
+      if edge == "break"  : return f/2
     elif kid == f/2:
-      if edge == "make"   : return f/2, cost
-      if edge == "help"   : return f/2, cost
-      if edge == "hurt"   : return t/2, cost + 1
-      if edge == "break"  : return t/2, cost + 1
+      if edge == "make"   : return f/2
+      if edge == "help"   : return f/2
+      if edge == "hurt"   : return t/2
+      if edge == "break"  : return t/2
     elif kid == f:
-      if edge == "make"   : return f, cost
-      if edge == "help"   : return f/2, cost
-      if edge == "hurt"   : return t/2, cost + 1
-      if edge == "break"  : return t/2, cost + 1
+      if edge == "make"   : return f
+      if edge == "help"   : return f/2
+      if edge == "hurt"   : return t/2
+      if edge == "break"  : return t/2
 
     raise RuntimeError("Either node value %s or edge %s is unknown"%(kid, edge))
+
+
+class Point(O):
+  id = 0
+  def __init__(self, decisions, objectives=None):
+    O.__init__(self)
+    Point.id += 1
+    self.id = Point.id
+    self.decisions = decisions
+    self.objectives = objectives
+    self._nodes = None
+    # Attributes for NSGA2
+    self.dominating = 0
+    self.dominated = []
+    self.crowd_dist = 0
+
+  def get_nodes(self):
+    return self._nodes
+
+  def get_randomness(self):
+    count = 0
+    for node in self._nodes:
+      if node.is_random: count+=1
+    return percent(count, len(self._nodes))
+
+  def __hash__(self):
+    if type(self.decisions) == dict:
+      return hash(frozenset(self.decisions.items()))
+    return hash(frozenset(self.decisions))
+
+  def __eq__(self, other):
+    return cmp(self.decisions, other.decisions) == 0
+
+  @staticmethod
+  def evaluate(point, model, obj_funcs):
+    if not point.objectives:
+      model.reset_nodes(point.decisions)
+      point.objectives = [func(model) for func in obj_funcs]
+      point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
+    return point.objectives
+
+  @staticmethod
+  def evaluate_random(point, model, obj_funcs):
+    if point.objectives:
+      return point.objectives
+    model.reset_nodes(point.decisions)
+    model.evaluate_random()
+    point.objectives = [func(model) for func in obj_funcs]
+    point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
+    return point.objectives
+
+  @staticmethod
+  def trim(val):
+    if val > 0:
+      return t
+    else:
+      return f
+
+  @staticmethod
+  def eval_roots(model):
+    return model.evaluate_score()
+
+  @staticmethod
+  def eval_goals(model):
+    return model.evaluate_type(node_type="goal", is_percent=model.settings.is_percent)
+
+  @staticmethod
+  def eval_softgoals(model):
+    return model.evaluate_type(node_type="softgoal", is_percent=model.settings.is_percent)
+
+  @staticmethod
+  def eval_all_goals(model):
+    return model.evaluate_type(node_type=["softgoal", "goal"], is_percent=model.settings.is_percent)
+
+  @staticmethod
+  def eval_coverage(model):
+    covered = len(model.get_tree().get_nodes_covered())
+    if model.setttings.is_percent:
+      return percent(covered, len(model.get_tree().get_nodes()))
+    else:
+      return len(model.get_tree().get_nodes_covered())
+
+  @staticmethod
+  def eval_costs(model):
+    total_cost = 0
+    for node in model.bases:
+      if node.value and node.value > 0:
+        total_cost += model.cost_map[node.id]
+    return total_cost
+
+  @staticmethod
+  def eval_paths(model):
+    total_cost = 0
+    for node in model.get_tree().get_nodes(node_type=["softgoal", "goal"]):
+      if node.value and node.value > 0:
+        total_cost += node.cost
+    return total_cost
+
