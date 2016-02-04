@@ -22,7 +22,7 @@ def default():
     is_percent = True,
     binary = True,
     dominates = "cdom",
-    cdom_delta = 0.05
+    cdom_delta = 0.01
   )
 
 class DE(O):
