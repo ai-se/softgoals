@@ -109,7 +109,7 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "original_best_rest"
+SUB_FOLDER = "cdom_delta_001"
 
 if __name__ == "__main__":
   main()
