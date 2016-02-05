@@ -1,12 +1,10 @@
 from __future__ import print_function, division
 import sys, os, time
 sys.path.append(os.path.abspath("."))
-__author__ = 'george'
-sys.dont_write_bytecode = True
+__author__ = 'panzer'
 from utilities.lib import *
-from pystar.model import Model, Point
-import pystar.template as template
-from utilities.de import DE
+from de import DE
+from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
@@ -29,42 +27,8 @@ class Star1(O):
   def __init__(self, model, **settings):
     O.__init__(self)
     self.model = model
-    #self.model.bases.extend(self.get_conflicts());self.model.assign_costs()
     self.settings = default().update(**settings)
     self.de = DE(model, gens = self.settings.k1)
-
-
-  def get_conflicts(self):
-    model = self.model
-    graph = model.get_tree()
-    nodes = []
-    for node in graph.get_nodes():
-      if node.type == "softgoal" and len(node.from_edges) > 1:
-        toggle = None
-        for edge_id in node.from_edges:
-          edge = graph.get_edge(edge_id)
-          if edge.type == "contribution":
-            temp_toggle = sign(template.Edge.get_contribution_weight(edge.value))
-            if toggle is None: toggle = temp_toggle
-            if temp_toggle != toggle:
-              nodes.append(node)
-              break
-    return nodes
-
-  # def sample(self):
-  #   stat = self.de.run()
-  #   stat.settings.gen_step = 20
-  #   stat.tiles()
-  #   best = set()
-  #   for obj_index in range(len(self.de.settings.obj_funcs)):
-  #     sorted_pop = sorted(stat.generations[-1], key=lambda x: x.objectives[obj_index], reverse=True)[:len(stat.generations[-1])//5]
-  #     best.update(sorted_pop)
-  #   rest = set()
-  #   for gen in stat.generations:
-  #     for point in gen:
-  #       if not point in best:
-  #         rest.add(point)
-  #   return best, rest
 
   def sample(self):
     stat = self.de.run()
@@ -158,10 +122,10 @@ class Star1(O):
     model = self.model
     if not point.objectives:
       model.reset_nodes(point.decisions)
-      funcs = [Point.eval_softgoals, Point.eval_goals, Point.eval_paths]
+      funcs = [Point.evaluate_cost, Point.evaluate_benefit]
       point.objectives = [func(model) for func in funcs]
       point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
-      point._nodes = [node.clone() for node in model.get_tree().get_nodes()]
+      point._nodes = [node.clone() for node in model.get_tree().nodes.values()]
     return point.objectives
 
   def prune(self, support):
@@ -172,14 +136,13 @@ class Star1(O):
       for point in population:
         self.evaluate(point, decisions)
         # TODO - Mark Best objective model here
-        #self.de.settings.evaluation(point, self.model, self.de.settings.obj_funcs)
       gens.append(population)
     obj_stats = self.objective_stats(gens)
     return obj_stats, gens
 
   def report(self, stats, sub_folder):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
-    headers = ["softgoals", "goals", "paths", "costs"]
+    headers = ["root cost", "root benefit", "decisions cost"]
     med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
 
   @staticmethod
@@ -217,15 +180,19 @@ def run(graph, subfolder, optimal_index = None):
   print("\n### Time Taken : %s"%delta)
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
   print_decisions(decisions)
-  if optimal_index is not None:
-    print("\n### Top %d Decisions from above table."%optimal_index)
-    print("```")
-    point = star.get_elbow(gens, optimal_index, obj_index = 0)
-    columns = ["name", "type", "value"]
-    table = PrettyTable(columns)
-    for node in point.get_nodes():
-      if node.value:
-        row = [node.name, node.type, node.value]
-        table.add_row(row)
-    print(table)
-    print("```")
+  # if optimal_index is not None:
+  #   print("\n### Top %d Decisions from above table."%optimal_index)
+  #   print("```")
+  #   point = star.get_elbow(gens, optimal_index, obj_index = 0)
+  #   columns = ["name", "type", "value"]
+  #   table = PrettyTable(columns)
+  #   for node in point.get_nodes():
+  #     if node.value:
+  #       row = [node.name, node.type, node.value]
+  #       table.add_row(row)
+  #   print(table)
+  #   print("```")
+
+if __name__ == "__main__":
+  from pyAHP.models.sample import tree
+  run(tree, "ahp")
