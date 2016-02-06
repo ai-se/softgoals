@@ -197,3 +197,27 @@ class Tree(O):
       if not node.from_edges:
         nodes.append(node)
     return nodes
+
+  def get_nodes(self, node_type=None):
+    """
+    Get nodes of a certain type
+    :param node_type:
+    :return:
+    """
+    if isinstance(node_type, list):
+      return [node for node in self.nodes.values() if node.type in node_type]
+    elif isinstance(node_type, str):
+      return [node for node in self.nodes.values() if node.type in [node_type]]
+    else: return self.nodes.values()
+
+  def get_node_by_name(self, name):
+    """
+
+    :param name:
+    :return:
+    """
+    nodes = self.nodes.values()
+    for node in nodes:
+      if node.name == name:
+        return node
+    return None

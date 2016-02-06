@@ -28,8 +28,6 @@ class Model(O):
     self.settings = O().update(**settings)
     self._tree = tree
     self.bases = self._tree.get_bases()
-    self.cost_map = self.generate_costs()
-    self.benefit_map = self.generate_benefits()
 
   def get_tree(self):
     return self._tree
@@ -73,8 +71,8 @@ class Model(O):
     for node in self._tree.nodes.values():
       node.value = None
       node.is_random = False
-      node.cost = self.cost_map[node.id]
-      node.benefit = self.benefit_map[node.id]
+      node.cost = node.base_cost
+      node.benefit = node.base_benefit
       node.selected = None
 
   def reset_nodes(self, initial_node_map):
@@ -93,6 +91,11 @@ class Model(O):
     else:
       return True, 0
 
+  def check_constraints(self, point, obj_funcs):
+    if not point.objectives:
+      Point.evaluate(point, self, obj_funcs)
+    root = self.get_tree().root
+    return root.cost > 0 and root.benefit > 0
 
   def eval(self, node):
     if not node.value is None: return
@@ -203,13 +206,31 @@ class Point(O):
   def get_nodes(self):
     return self._nodes
 
+  def get_node_by_name(self, name):
+    """
+
+    :param name:
+    :return:
+    """
+    for node in self._nodes:
+      if node.name == name:
+        return node
+    return None
+
   def __hash__(self):
+    objs = []
+    if self.objectives:
+      for obj in self.objectives:
+        if obj is None:
+          objs.append(0)
+        else:
+          objs.append(obj)
     if type(self.decisions) == dict:
-      return hash(frozenset(self.decisions.items()))
-    return hash(frozenset(self.decisions))
+      return hash(frozenset(self.decisions.items())) + hash(frozenset(objs))
+    return hash(frozenset(self.decisions)) + hash(frozenset(objs))
 
   def __eq__(self, other):
-    return cmp(self.decisions, other.decisions) == 0
+    return cmp(self.decisions, other.decisions) == 0 and self.objectives == other.objectives
 
   @staticmethod
   def evaluate(point, model, obj_funcs):
@@ -227,6 +248,16 @@ class Point(O):
   @staticmethod
   def evaluate_benefit(model):
     return model.get_tree().root.benefit
+
+  @staticmethod
+  def evaluate_softgoals(model):
+    softgoals = model.get_tree().get_nodes(node_type="softgoal")
+    satisfied = 0
+    for node in softgoals:
+      model.eval(node)
+      if node.value == t:
+        satisfied += 1
+    return satisfied
 
   @staticmethod
   def trim(val):

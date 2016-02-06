@@ -12,19 +12,21 @@ MIN_FRONTIER_SIZE=10
 
 def default():
   return O(
-    gens = 20,
-    candidates = 50,
+    gens = 10,
+    candidates = 1000,
     f = 0.75,
     cr = 0.3,
     seed = 1,
-    better = [lt, gt],
-    obj_funcs = [Point.evaluate_cost, Point.evaluate_benefit],
+    better = [lt, gt, gt],
+    obj_funcs = [Point.evaluate_cost, Point.evaluate_benefit, Point.evaluate_softgoals],
     evaluation = Point.evaluate,
     is_percent = True,
     binary = True,
     dominates = "bdom",
     cdom_delta = 0.01
   )
+
+
 
 class DE(O):
   def __init__(self, model, **settings):
@@ -40,17 +42,50 @@ class DE(O):
     self.model.settings.obj_funcs = self.settings.obj_funcs
     self.model.settings.better = self.settings.better
     self.model.settings.is_percent = self.settings.is_percent
+    self.global_set = set()
+    self.presets = self.get_presets()
+
+  def get_presets(self):
+    names = ["Access Control Assessed",
+             "Access Control Pilot",
+             "Monitoring Pilot"
+             ]
+    node_ids = []
+    for node in self.model.get_tree().nodes.values():
+      if node.name in names:
+        node_ids.append(node.id)
+    assert len(node_ids) == len(names), "Nodes and Names size mismatch"
+    return node_ids
+
+  def set_presets(self, point):
+    for preset in self.presets:
+      point.decisions[preset] = t
+    return point
 
   def set_limits(self):
     """
     Set Limit for each objectives
     :return:
     """
-    size = len(self.model.get_tree().nodes.keys())
-    mins = [1*size, 1*size]
-    maxs = [1000*size, 1000*size]
-    wts  = [-1, 1]
-    return O(mins=mins, maxs=maxs, weights=wts)
+    tot_cost, tot_benefit = 0, 0
+    for node in self.model.get_tree().nodes.values():
+      tot_cost += node.cost
+      tot_benefit += node.benefit
+    mins = []
+    maxs = []
+    weights = []
+    for comp, func in zip(self.settings.better, self.settings.obj_funcs):
+      weights.append(-1 if comp==lt else 1)
+      if func == Point.evaluate_cost:
+        mins.append(0)
+        maxs.append(tot_cost)
+      elif func == Point.evaluate_benefit:
+        mins.append(0)
+        maxs.append(tot_cost)
+      elif func == Point.evaluate_softgoals:
+        mins.append(0)
+        maxs.append(len(self.model.get_tree().get_nodes(node_type="softgoals")))
+    return O(mins=mins, maxs=maxs, weights=weights)
 
   def assign_frontier_size(self):
     """
@@ -64,7 +99,9 @@ class DE(O):
     population = set()
     while len(population) < size:
       point = Point(self.model.generate())
-      if (not point in population) and self.model.evaluate_constraints(point.decisions)[0]:
+      self.set_presets(point)
+      if (not point in self.global_set) and self.model.check_constraints(point, self.settings.obj_funcs):
+        self.global_set.add(point)
         population.add(point)
     return list(population)
 
@@ -83,16 +120,17 @@ class DE(O):
     population = self.generate(settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):
-      say(".")
       clones = population[:]
       for point in population:
         original_obj = settings.evaluation(point, self.model, settings.obj_funcs)
-        mutant = self.mutate(point, population)
+        mutant = self.set_presets(self.mutate(point, population))
         mutated_obj = settings.evaluation(mutant, self.model, settings.obj_funcs)
-        if None in mutated_obj: continue
-        if self.dominates(mutated_obj, original_obj) and (not mutant in clones):
+        if not self.model.check_constraints(mutant, self.settings.obj_funcs):
+          continue
+        if self.dominates(mutated_obj, original_obj) and (not mutant in self.global_set):
           clones.remove(point)
           clones.append(mutant)
+          self.global_set.add(mutant)
       population = clones
       stat.insert(population)
     stat.runtime = time.time() - start
@@ -217,8 +255,17 @@ def _main():
   model = Model(tree)
   de = DE(model)
   stat = de.run()
-  stat.settings.gen_step = 4
+  stat.settings.gen_step = 2
   stat.tiles()
+  last_gen = stat.generations[-1]
+  max_cost, max_benefit = -1, -1
+  for point in last_gen:
+    max_cost = max(max_cost, point.objectives[0])
+    max_benefit = max(max_benefit, point.objectives[1])
+  print(max_cost, max_benefit)
+
+
+
 
 if __name__ == "__main__":
   _main()

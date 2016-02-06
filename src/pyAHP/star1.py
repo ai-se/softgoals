@@ -8,12 +8,14 @@ from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
+import csv
 
 def default():
   return O(
-    k1 = 100,
+    k1 = 10,
     k2 = 100,
-    best_percent = 20
+    best_percent = 20,
+    gen_step = 2
   )
 
 class Decision(O):
@@ -30,17 +32,40 @@ class Star1(O):
     self.settings = default().update(**settings)
     self.de = DE(model, gens = self.settings.k1)
 
-  def sample(self):
+  # def sample(self):
+  #   stat = self.de.run()
+  #   stat.settings.gen_step = self.settings.gen_step
+  #   stat.tiles()
+  #   population = set()
+  #   # for gen in stat.generations:
+  #   #   for point in gen:
+  #   #     population.add(point)
+  #   for point in stat.generations[0]:
+  #     population.add(point)
+  #   for point in stat.generations[-1]:
+  #     population.add(point)
+  #   print(len(population))
+  #   best_size = int(len(population) * self.settings.best_percent/100)
+  #   best = sel_nsga2(self.model, list(population), best_size)
+  #   print(len(best))
+  #   rest = population - set(best)
+  #   return list(best), list(rest)
+
+  def sample(self, subfolder):
     stat = self.de.run()
-    stat.settings.gen_step = 20
+    self.to_csv(stat, "csv/"+subfolder+"/"+self.model.get_tree().name+".csv")
+    stat.settings.gen_step = self.settings.gen_step
     stat.tiles()
+    best = set()
     population = set()
-    for gen in stat.generations:
-      for point in gen:
-        population.add(point)
-    best_size = int(len(population) * self.settings.best_percent/100)
-    best = sel_nsga2(self.model, list(population), best_size)
-    rest = population - set(best)
+    for point in stat.generations[0]:
+      population.add(point)
+    for point in stat.generations[-1]:
+      population.add(point)
+    for obj_index in range(len(self.de.settings.obj_funcs)):
+      sorted_pop = sorted(list(population), key=lambda x: x.objectives[obj_index], reverse=True)[:len(stat.generations[-1])//5]
+      best.update(sorted_pop)
+    rest = population - best
     return list(best), list(rest)
 
   def rank(self, best, rest):
@@ -70,16 +95,22 @@ class Star1(O):
       f_neg_rest /= rest_size
       l_pos_rest = f_pos_rest * p_rest
       l_neg_rest = f_neg_rest * p_rest
-      sup_pos = l_pos_best ** 2 / (l_pos_best + l_pos_rest)
-      sup_neg = l_neg_best ** 2 / (l_neg_best + l_neg_rest)
+      if l_pos_best == 0 and l_pos_rest == 0:
+        sup_pos = 0
+      else:
+        sup_pos = l_pos_best ** 2 / (l_pos_best + l_pos_rest)
+      if l_neg_best == 0 and l_neg_rest == 0:
+        sup_neg = 0
+      else:
+        sup_neg = l_neg_best ** 2 / (l_neg_best + l_neg_rest)
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_pos, value = 1,
                                 type = dec_node.type, container=dec_node.container,
-                                cost = self.model.cost_map[dec_node.id]))
+                                cost = 1))
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_neg, value = -1,
                                 type = dec_node.type, container=dec_node.container,
-                                cost = self.model.cost_map[dec_node.id]))
+                                cost = 1))
     decisions.sort(key=lambda x:x.support, reverse=True)
     sorted_decs = []
     aux = set()
@@ -122,10 +153,12 @@ class Star1(O):
     model = self.model
     if not point.objectives:
       model.reset_nodes(point.decisions)
-      funcs = [Point.evaluate_cost, Point.evaluate_benefit]
+      self.model.eval(self.model.get_tree().root)
+      funcs = [Point.evaluate_cost, Point.evaluate_benefit, Point.evaluate_softgoals]
       point.objectives = [func(model) for func in funcs]
       point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
       point._nodes = [node.clone() for node in model.get_tree().nodes.values()]
+      point.objectives = [0 if one is None else one for one in point.objectives]
     return point.objectives
 
   def prune(self, support):
@@ -135,15 +168,34 @@ class Star1(O):
       population = self.generate(decisions)
       for point in population:
         self.evaluate(point, decisions)
-        # TODO - Mark Best objective model here
       gens.append(population)
     obj_stats = self.objective_stats(gens)
     return obj_stats, gens
 
   def report(self, stats, sub_folder):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
-    headers = ["root cost", "root benefit", "decisions cost"]
+    headers = ["root cost", "root benefit", "softgoals", "decisions cost"]
     med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
+
+  def to_csv(self, stats, fname):
+    directory = fname.rsplit("/", 1)[0]
+    mkdir(directory)
+    last_gen = stats.generations[-1]
+    ids = self.model.get_tree().nodes.keys()
+    names = [self.model.get_tree().nodes[key].name for key in ids] + ["?cost", "?benefit", "?softgoals"]
+    table = [names]
+    max_cost, max_benefit = -1, -1
+    for point in last_gen:
+      row = [point.get_nodes()[key].value for key in ids] + point.objectives
+      max_cost = max(point.objectives[0], max_cost)
+      max_benefit = max(point.objectives[1], max_benefit)
+      table.append(row)
+    print(max_cost, max_benefit)
+    with open(fname, "wb") as file_obj:
+      writer = csv.writer(file_obj)
+      writer.writerows(table)
+
+
 
   @staticmethod
   def get_elbow(gens, index, obj_index=None):
@@ -171,7 +223,7 @@ def run(graph, subfolder, optimal_index = None):
   print("## %s"%graph.name)
   print("```")
   star = Star1(model)
-  best, rest = star.sample()
+  best, rest = star.sample(subfolder)
   decisions = star.rank(best, rest)
   obj_stats, gens = star.prune(decisions)
   delta = time.time() - start
@@ -192,6 +244,7 @@ def run(graph, subfolder, optimal_index = None):
   #       table.add_row(row)
   #   print(table)
   #   print("```")
+
 
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
