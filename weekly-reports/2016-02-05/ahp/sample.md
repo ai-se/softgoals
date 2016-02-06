@@ -1,4 +1,4 @@
-## sample
+##Results
 ```
 24 38
 
@@ -29,6 +29,8 @@ rank ,         name ,    med   ,   iqr
    3 ,      gen8_f3 ,      2.0  ,    0.0 (       -------*|------------- ), 1.00,  2.00,  2.00,  2.00,  4.00
    3 ,     gen10_f3 ,      2.0  ,    1.0 (       -------*|------------- ), 1.00,  2.00,  2.00,  2.00,  4.00
 ```
+
+[Pareto Front](https://github.com/ai-se/softgoals/blob/master/src/csv/ahp/sample.csv)
 
 ### Time Taken : 24.4982769489
 ![1](../../../src/img/ahp/sample.png)
@@ -64,3 +66,7 @@ rank ,         name ,    med   ,   iqr
 |  24  | XXX coordinates and internal client does whatever(17) |   goal   |   1   |  1   | 0.03894 |
 +------+-------------------------------------------------------+----------+-------+------+---------+
 ```
+
+##Assumptions
+- There are 24 leaf nodes as a result the decision space has 2^24 options. Differential Evolution is not possible to find the ideal pareto frontier. Thus I had to assume 3 of the 24 nodes to be **always satisfied** to get the pareto frontier.
+- The three nodes considered were "Access Control Assessed", "Access Control Pilot" and "Monitoring Pilot"
