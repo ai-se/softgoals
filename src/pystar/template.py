@@ -264,7 +264,6 @@ class Graph(O):
       target = node_map.get(edge.target, None)
       if source is None or target is None:
         count +=1;
-        #print(edge)
         continue
       node_map[edge.source].add_edge(edge.id, "to")
       node_map[edge.target].add_edge(edge.id, "from")
@@ -293,6 +292,17 @@ class Graph(O):
         # We assume that decisions are either tasks or resources
         if not node.from_edges:
           nodes.append(node)
+    return nodes
+
+  def get_leaves(self):
+    """
+    Get the leaves of the graph
+    :return:
+    """
+    nodes = []
+    for node in self.nodes:
+      if not node.from_edges and len(node.to_edges) > 0:
+        nodes.append(node)
     return nodes
 
   def get_roots(self):

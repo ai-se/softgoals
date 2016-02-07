@@ -31,7 +31,8 @@ class Model(O):
     self.settings = O().update(**settings)
     self._tree = tree
     self.roots = self._tree.get_roots()
-    self.bases = self._tree.get_bases()
+    #self.bases = self._tree.get_bases()
+    self.bases = self._tree.get_leaves()
     self.chain = set()
     self.recursions = 0
     self.cost_map = {}

@@ -13,9 +13,10 @@ from prettytable import PrettyTable
 
 def default():
   return O(
-    k1 = 100,
-    k2 = 100,
-    best_percent = 20
+    k1 = 10,
+    k2 = 10,
+    best_percent = 20,
+    gen_step = 2
   )
 
 class Decision(O):
@@ -68,7 +69,7 @@ class Star1(O):
 
   def sample(self):
     stat = self.de.run()
-    stat.settings.gen_step = 20
+    stat.settings.gen_step = self.settings.gen_step
     stat.tiles()
     population = set()
     for gen in stat.generations:

@@ -7,21 +7,21 @@ import time
 from math import exp
 from pystar.model import Model, Point
 
-MIN_FRONTIER_SIZE=10
+MIN_FRONTIER_SIZE=1
 
 def default():
   return O(
-    gens = 100,
-    candidates = 50,
+    gens = 10,
+    candidates = 6,
     f = 0.75,
     cr = 0.3,
     seed = 1,
-    better = [gt, gt, lt, lt],
-    obj_funcs = [Point.eval_softgoals, Point.eval_goals, Point.eval_paths, Point.eval_costs],
+    better = [gt, gt],
+    obj_funcs = [Point.eval_softgoals, Point.eval_goals],
     evaluation = Point.evaluate,
-    is_percent = True,
+    is_percent = False,
     binary = True,
-    dominates = "cdom",
+    dominates = "bdom",
     cdom_delta = 0.01
   )
 
