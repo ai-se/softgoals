@@ -1,3 +1,5 @@
+![1](../../../discussions/AmazonDrone.png)
+
 ## AmazonDrone
 ```
 
