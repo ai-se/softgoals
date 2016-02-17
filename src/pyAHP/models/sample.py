@@ -9,247 +9,296 @@ N = Many()
 n1 = N + HardGoal(
   name = "Modernize",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 0
 )
 n2 = N + HardGoal(
   name = "Incremental Rewrite",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 1
 )
 n3 = N + HardGoal(
   name = "Big Bang Rewrite",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 1
 )
 n4 = N + HardGoal(
   name = "Layer Sequence",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n5 = N + HardGoal(
   name = "Support",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n6 = N + HardGoal(
   name = "Existing Apps",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n7 = N + HardGoal(
   name = "Data Service",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n8 = N + HardGoal(
   name = "Data Model",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n9 = N + HardGoal(
   name = "App Framework",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n10 = N + HardGoal(
   name = "Monitor",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 2
 )
 n11 = N + HardGoal(
   name = "New Database",
   base_cost = 6,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n12 = N + HardGoal(
   name = "Pnp Framework",
   base_cost = 5,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n13 = N + HardGoal(
   name = "Documentation",
   base_cost = 3,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n14 = N + HardGoal(
   name = "Regression Test",
   base_cost = 3,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n15 = N + HardGoal(
   name = "Number Tiers",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 3
 )
 n16 = N + HardGoal(
   name = "Data Service(7)",
   base_cost = 3,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n17 = N + HardGoal(
   name = "Comprehensive Data Model",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 3
 )
 n18 = N + HardGoal(
   name = "Extensible Data Model(16/19)",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 3
 )
 n19 = N + HardGoal(
   name = "Specific Data Model",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 3
 )
 n20 = N + HardGoal(
   name = "App Framework(6)",
   base_cost = 5,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n21 = N + HardGoal(
   name = "Monitor(11)",
   base_cost = 1,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 3
 )
 n22 = N + HardGoal(
   name = "ServiceLayer",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n23 = N + HardGoal(
   name = "2 Tier",
   base_cost = 5,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 4
 )
 n24 = N + HardGoal(
   name = "3 Tier",
   base_cost = 5,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 4
 )
 n25 = N + HardGoal(
   name = "Tiers w/ Service",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 5
 )
 n26 = N + Task(
   name = "Choose Doc Tool",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n27 = N + Task(
   name = "J2EE Specification",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n28 = N + Task(
   name = "Access Control Assessed",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n29 = N + Task(
   name = "Access Control Pilot",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n30 = N + Task(
   name = "Monitoring Pilot",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n31 = N + Resource(
   name = "Documentation Tool",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 5
 )
 n32 = N + Task(
   name = "Create Test Environment",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n33 = N + Task(
   name = "Choose Candidate System",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 3
 )
 n34 = N + Task(
   name = "Data Service Spec",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n35 = N + Task(
   name = "Data Service Pilot",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n36 = N + HardGoal(
   name = "Svc layer w/ extracted biz logic in DB(12)",
   base_cost = 3,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 6
 )
 n37 = N + HardGoal(
   name = "Svc layer w/ extracted biz logic(13)",
   base_cost = 5,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 6
 )
 n38 = N + Task(
   name = "DB Vendor Test Env",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 5
 )
 n39 = N + Task(
   name = "General Test Env",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 5
 )
 n40 = N + Task(
   name = "Bakeoff Result",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 4
 )
 n41 = N + HardGoal(
   name = "Provide logical data scheme internally(8)",
   base_cost = 3,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 4
 )
 n42 = N + HardGoal(
   name = "Define data model for all shared data(15)",
   base_cost = 3,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 4
 )
 n43 = N + HardGoal(
   name = "Define ext mandatory data std(18)",
   base_cost = 3,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 4
 )
 n44 = N + HardGoal(
   name = "External clients get exactly what they request(10)",
   base_cost = 4,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 4
 )
 n45 = N + HardGoal(
   name = "XXX coordinates and internal client does whatever(17)",
   base_cost = 3,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 4
 )
 n46 = N + HardGoal(
   name = "XXX coordinates and external client does whatever(20)",
   base_cost = 5,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 4
 )
 n47 = N + HardGoal(
   name = "Build internal extensible data model(16)",
   base_cost = 2,
-  base_benefit = 3
+  base_benefit = 3,
+  level = 4
 )
 n48 = N + HardGoal(
   name = "External data model can be extended(19)",
   base_cost = 4,
-  base_benefit = 5
+  base_benefit = 5,
+  level = 4
 )
 n49 = N + Task(
   name = "Data Model Pilot",
   base_cost = 0,
-  base_benefit = 0
+  base_benefit = 0,
+  level = 5
 )
 n50 = N + SoftGoal(
   name = "Quick Feature Delivery",
@@ -503,11 +552,11 @@ e57 = E + And(
   target = n53
 )
 
-tree = Tree(name="sample", nodes=N.all, edges=E.all, root=n1)
+tree = Tree(name="sample", nodes=N.all, edges=E.all, root=n1, max_level=6)
 
 if __name__ == "__main__":
   print(len(tree.get_bases()))
   # for base in tree.get_bases():
   #   print(base.name)
-  print(n43.base_cost)
+  print(n43.level)
   print(n43.base_benefit)

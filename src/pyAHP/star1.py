@@ -106,11 +106,11 @@ class Star1(O):
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_pos, value = 1,
                                 type = dec_node.type, container=dec_node.container,
-                                cost = 1))
+                                cost = dec_node.base_cost))
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_neg, value = -1,
                                 type = dec_node.type, container=dec_node.container,
-                                cost = 1))
+                                cost = dec_node.base_cost))
     decisions.sort(key=lambda x:x.support, reverse=True)
     sorted_decs = []
     aux = set()
@@ -248,4 +248,4 @@ def run(graph, subfolder, optimal_index = None):
 
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
-  run(tree, "ahp")
+  run(tree, "log_ahp")

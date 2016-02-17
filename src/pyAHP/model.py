@@ -5,6 +5,7 @@ sys.path.append(os.path.abspath("."))
 sys.dont_write_bytecode = True
 from template import *
 import random
+from math import exp
 
 t, f = 1, -1
 
@@ -67,12 +68,28 @@ class Model(O):
       point_map[node.id] = random.choice([t, f])
     return point_map
 
+  def get_node_base_cost(self, node):
+    if node.base_cost == 0:
+      return 0
+    level = 0
+    if hasattr(node, 'level'):
+      level = node.level
+    return exp(node.base_cost) * exp(self.get_tree().max_level-level)
+
+  def get_node_base_benefit(self, node):
+    if node.base_benefit == 0:
+      return 0
+    level = 0
+    if hasattr(node, 'level'):
+      level = node.level
+    return exp(node.base_benefit) * exp(self.get_tree().max_level-level)
+
   def clear_nodes(self):
     for node in self._tree.nodes.values():
       node.value = None
       node.is_random = False
-      node.cost = node.base_cost
-      node.benefit = node.base_benefit
+      node.cost = self.get_node_base_cost(node)
+      node.benefit = self.get_node_base_benefit(node)
       node.selected = None
 
   def reset_nodes(self, initial_node_map):

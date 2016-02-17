@@ -154,12 +154,13 @@ class Tree(O):
   """
   AHP Tree object
   """
-  def __init__(self, name, nodes, edges, root):
+  def __init__(self, name, nodes, edges, root, max_level):
     node_map, edge_map = {}, {}
     for node in nodes: node_map[node.id] = node
     for edge in edges: edge_map[edge.id] = edge
     O.__init__(self, name=name, nodes=node_map,
-               edges=edge_map, root = root)
+               edges=edge_map, root = root,
+               max_level = max_level)
     self.update_nodes()
 
   def update_nodes(self):
