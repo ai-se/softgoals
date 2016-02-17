@@ -5,6 +5,11 @@
 - BEST : REST = 1:4
 - BEST and REST selected by using non dominated(bdom) sort on ALL
 
+
+## TODO
+- Select BEST and REST using non-dominated sort cdom
+- Introduce eras between generations
+
 Models are sorted below w.r.t to their sizes in descending order
 
 | Rank | Model | PDF |Report |
