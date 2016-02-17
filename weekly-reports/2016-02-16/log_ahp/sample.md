@@ -1,6 +1,10 @@
+## Objective functions
+* Minimize cost - ```e^cost * e^(max_level-level)```
+* Maximize benefit - ```e^benefit * e^(max_level-level)```
+* Maximize softgoals satisfied
+
 ## sample
 ```
-
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
    1 ,      gen0_f1 ,    2980.96  ,  5122.12 (*              |              ),2980.96, 2980.96, 2980.96, 8103.08, 8103.08
