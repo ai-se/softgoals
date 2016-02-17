@@ -31,7 +31,7 @@ rank ,         name ,    med   ,   iqr
    3 ,     gen10_f3 ,      2.0  ,    1.0 (       -------*|------------- ), 1.00,  2.00,  2.00,  2.00,  4.00
 ```
 
-[Pareto Front](https://github.com/ai-se/softgoals/blob/master/src/csv/ahp/sample.csv)
+[Pareto Front](https://github.com/ai-se/softgoals/raw/master/src/csv/ahp/sample.csv)
 
 ### Time Taken : 24.4982769489
 ![1](../../../src/img/ahp/sample.png)

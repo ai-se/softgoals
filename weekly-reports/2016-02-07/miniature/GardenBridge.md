@@ -1,3 +1,5 @@
+![1](../../../discussions/GardenBridge.png)
+
 ## GardenBridge
 ```
 
