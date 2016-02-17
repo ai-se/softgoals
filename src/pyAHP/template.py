@@ -213,7 +213,6 @@ class Tree(O):
 
   def get_node_by_name(self, name):
     """
-
     :param name:
     :return:
     """
@@ -222,3 +221,15 @@ class Tree(O):
       if node.name == name:
         return node
     return None
+
+  def get_children(self, node):
+    """
+    Return Child nodes and the type of edge
+    :param node:
+    :return:
+    """
+    if not node.from_edges:
+      return None, None
+    edges = [self.get_edge(edge_id) for edge_id in node.from_edges]
+    nodes = [self.get_node(edge.source) for edge in edges]
+    return nodes, edges[0].value

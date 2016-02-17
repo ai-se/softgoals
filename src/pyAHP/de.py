@@ -13,7 +13,7 @@ MIN_FRONTIER_SIZE=10
 def default():
   return O(
     gens = 10,
-    candidates = 1000,
+    candidates = 100,
     f = 0.75,
     cr = 0.3,
     seed = 1,
@@ -27,11 +27,11 @@ def default():
   )
 
 
-
 class DE(O):
   def __init__(self, model, **settings):
     O.__init__(self)
     self.model = model
+    self.mutator = Mutator(model.get_tree())
     self.settings = default().update(candidates=self.assign_frontier_size()).update(**settings)
     seed(self.settings.seed)
     if self.settings.dominates == "bdom":
@@ -58,6 +58,7 @@ class DE(O):
     return node_ids
 
   def set_presets(self, point):
+    return point
     for preset in self.presets:
       point.decisions[preset] = t
     return point
@@ -98,8 +99,7 @@ class DE(O):
   def generate(self, size):
     population = set()
     while len(population) < size:
-      point = Point(self.model.generate())
-      self.set_presets(point)
+      point = Point(self.mutator.generate())
       if (not point in self.global_set) and self.model.check_constraints(point, self.settings.obj_funcs):
         self.global_set.add(point)
         population.add(point)
@@ -120,10 +120,11 @@ class DE(O):
     population = self.generate(settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):
+      say(".")
       clones = population[:]
       for point in population:
         original_obj = settings.evaluation(point, self.model, settings.obj_funcs)
-        mutant = self.set_presets(self.mutate(point, population))
+        mutant = self.mutate(point, population)
         mutated_obj = settings.evaluation(mutant, self.model, settings.obj_funcs)
         if not self.model.check_constraints(mutant, self.settings.obj_funcs):
           continue
@@ -249,6 +250,42 @@ def AND(a, b):
   if a==t and b==t:
     return t
   return f
+
+
+class Mutator(O):
+  """
+  Mutator to generate a valid solution based on tree structure
+  """
+  def __init__(self, tree):
+    O.__init__(self)
+    self.tree = tree
+
+  def generate(self):
+    return self.mutate(self.tree.root, t)
+
+  def mutate(self, node, value):
+    kids, edge_type = self.tree.get_children(node)
+    if kids is None:
+      return {node.id: value}
+    decisions = {}
+    kids = shuffle(kids)
+    if edge_type == "and" and value == t:
+      for kid in kids:
+        decisions.update(self.mutate(kid, value))
+    elif edge_type == "and" and value == f:
+      decisions.update(self.mutate(kids[0], f))
+      for kid in kids[1:]:
+        decisions.update(self.mutate(kid, choice([t, f])))
+    elif edge_type == "or" and value == t:
+      decisions.update(self.mutate(kids[0], t))
+      for kid in kids[1:]:
+        decisions.update(self.mutate(kid, choice([t, f])))
+    else:
+      for kid in kids:
+        decisions.update(self.mutate(kid, value))
+    return decisions
+
+
 
 def _main():
   from pyAHP.models.sample import tree

@@ -248,4 +248,5 @@ def run(graph, subfolder, optimal_index = None):
 
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
-  run(tree, "log_ahp")
+  tree.name = "sample_exp"
+  run(tree, "ahp_mutate")

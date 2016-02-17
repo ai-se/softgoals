@@ -69,6 +69,7 @@ class Model(O):
     return point_map
 
   def get_node_base_cost(self, node):
+    #return node.base_cost
     if node.base_cost == 0:
       return 0
     level = 0
@@ -77,6 +78,7 @@ class Model(O):
     return exp(node.base_cost) * exp(self.get_tree().max_level-level)
 
   def get_node_base_benefit(self, node):
+    #return node.base_benefit
     if node.base_benefit == 0:
       return 0
     level = 0
