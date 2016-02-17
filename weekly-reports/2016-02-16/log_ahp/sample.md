@@ -67,3 +67,7 @@ rank ,         name ,    med   ,   iqr
 |  24  |                         3 Tier                        |   goal   |   -1  |  5   | 0.03452 |
 +------+-------------------------------------------------------+----------+-------+------+---------+
 ```
+
+## This week
+* Continue on thesis
+* Using the knowledge of trees for mutation in AHP
