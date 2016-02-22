@@ -9,6 +9,7 @@ from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
 import csv
+from pyAHP.dotter import Grapher
 
 def default():
   return O(
@@ -51,7 +52,7 @@ class Star1(O):
   #   rest = population - set(best)
   #   return list(best), list(rest)
 
-  def sample(self, subfolder):
+  def  sample(self, subfolder):
     stat = self.de.run()
     self.to_csv(stat, "csv/"+subfolder+"/"+self.model.get_tree().name+".csv")
     stat.settings.gen_step = self.settings.gen_step
@@ -232,6 +233,8 @@ def run(graph, subfolder, optimal_index = None):
   print("\n### Time Taken : %s"%delta)
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
   print_decisions(decisions)
+  tree_name = Grapher(graph, decisions, subfolder).draw_tree()
+  print("![1](../../../src/img/%s/%s_tree.png)"%(subfolder,tree_name))
   # if optimal_index is not None:
   #   print("\n### Top %d Decisions from above table."%optimal_index)
   #   print("```")
@@ -248,5 +251,5 @@ def run(graph, subfolder, optimal_index = None):
 
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
-  tree.name = "sample_exp"
-  run(tree, "ahp_mutate")
+  tree.name = "sample"
+  run(tree, "ahp_dec_tree")
