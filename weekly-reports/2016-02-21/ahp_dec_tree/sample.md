@@ -64,4 +64,4 @@ rank ,         name ,    med   ,   iqr
 |  24  |        External data model can be extended(19)        |   goal   |   -1  |  4   | 0.05136 |
 +------+-------------------------------------------------------+----------+-------+------+---------+
 ```
-![1](../../../src/img/ahp_dec_tree/sample_tree_tree.png)
+![1](../../../src/img/ahp_dec_tree/sample_tree.png)
