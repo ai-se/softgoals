@@ -121,6 +121,15 @@ def bar_plot(vals, fig_name="temp.png", label=None, **settings):
   plt.savefig(fig_name)
   plt.clf()
 
+def line_plot(x_axis, y_axes, fig_name="temp.png"):
+  keys = y_axes.keys()
+  for y_axis in y_axes.values():
+    plt.plot(x_axis, y_axis)
+  plt.legend(keys, loc="upper right")
+  plt.xlabel("Ranked Decision")
+  plt.ylabel("Score")
+  plt.savefig(fig_name)
+
 def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
   plt.figure(1)
   directory = fig_name.rsplit("/", 1)[0]

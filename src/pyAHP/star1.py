@@ -6,7 +6,7 @@ from utilities.lib import *
 from de import DE
 from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
-from utilities.plotter import med_spread_plot
+from utilities.plotter import med_spread_plot, line_plot
 from prettytable import PrettyTable
 import csv
 from pyAHP.dotter import Grapher
@@ -216,6 +216,14 @@ def print_decisions(decisions):
   print(table)
   print("```")
 
+def plot_support(decisions, fig_name):
+  support = [d.support for d in decisions]
+  x = range(1, len(decisions)+1)
+  y = {"support": support}
+  line_plot(x, y, fig_name=fig_name)
+  print("\n### Support Chart")
+  print("![1](../../../src/%s)"%fig_name)
+
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
@@ -233,8 +241,9 @@ def run(graph, subfolder, optimal_index = None):
   print("\n### Time Taken : %s"%delta)
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
   print_decisions(decisions)
+  plot_support(decisions, "img/%s/%s_support.png"%(subfolder,graph.name))
   tree_name = Grapher(graph, decisions, subfolder).draw_tree()
-  print("![1](../../../src/img/%s/%s_tree.png)"%(subfolder,tree_name))
+  print("![1](../../../src/img/%s/%s.png)"%(subfolder,tree_name))
   # if optimal_index is not None:
   #   print("\n### Top %d Decisions from above table."%optimal_index)
   #   print("```")
@@ -252,4 +261,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   tree.name = "sample"
-  run(tree, "ahp_dec_tree")
+  run(tree, "ahp_support_chart")
