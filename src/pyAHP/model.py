@@ -7,8 +7,6 @@ from template import *
 import random
 from math import exp
 
-t, f = 1, -1
-
 def coin_toss():
   return random.choice([t, f])
 
@@ -110,9 +108,9 @@ class Model(O):
     else:
       return True, 0
 
-  def check_constraints(self, point, obj_funcs):
+  def check_constraints(self, point):
     if not point.objectives:
-      Point.evaluate(point, self, obj_funcs)
+      self.get_tree().evaluate(self, point)
     root = self.get_tree().root
     return root.cost > 0 and root.benefit > 0
 
@@ -190,7 +188,7 @@ class Model(O):
     one_at_least_once = False
     two_at_least_once = False
     for index, (a, b) in enumerate(zip(obj1, obj2)):
-      status = compare(a, b, self.settings.better[index])
+      status = compare(a, b, self.get_tree().better[index])
       if status == -1:
         #obj2[i] better than obj1[i]
         two_at_least_once = True

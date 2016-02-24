@@ -2,6 +2,7 @@ import os, sys
 sys.path.append(os.path.abspath("."))
 sys.dont_write_bytecode = True
 from pyAHP.template import *
+from utilities.lib import gt, lt
 __author__ = 'panzer'
 
 N = Many()
@@ -552,7 +553,53 @@ e57 = E + And(
   target = n53
 )
 
-tree = Tree(name="sample", nodes=N.all, edges=E.all, root=n1, max_level=6)
+class Modernize(Tree):
+  def __init__(self):
+    Tree.__init__(self, name="sample", nodes=N.all, edges=E.all, root=n1, max_level=6)
+    self.better = [lt, gt, gt]
+
+  def evaluate(self, model, point):
+    if not point.objectives:
+      model.reset_nodes(point.decisions)
+      model.eval(model.get_tree().root)
+      point.objectives = [self.evaluate_cost(), self.evaluate_benefit(), self.evaluate_softgoals(model)]
+      point._nodes = [node.clone() for node in tree.nodes.values()]
+    return point.objectives
+
+  def evaluate_cost(self):
+    return self.root.cost
+
+  def evaluate_benefit(self):
+    return self.root.benefit
+
+  def evaluate_softgoals(self, model):
+    softgoals = self.get_nodes(node_type="softgoal")
+    satisfied = 0
+    kids = [self.get_node(self.get_edge(edge_id).source) for edge_id in self.root.from_edges]
+    right = kids[1]
+    if right.cost == self.root.cost and right.benefit == self.root.benefit:
+      return 0
+    for node in softgoals:
+      model.eval(node)
+      if node.value == t:
+        satisfied += 1
+    return satisfied
+
+  def set_limits(self):
+    """
+    Set limit for each objective
+    :return:
+    """
+    tot_cost, tot_benefit = 0, 0
+    for node in self.nodes.values():
+      tot_cost += node.base_cost
+      tot_benefit += node.base_benefit
+    weights = [-1 if b == lt else 1 for b in self.better]
+    mins = [0]
+    maxs = [tot_cost, tot_benefit, len(self.get_nodes(node_type="softgoals"))]
+    return O(mins=mins, maxs=maxs, weights=weights)
+
+tree = Modernize()
 
 if __name__ == "__main__":
   print(len(tree.get_bases()))

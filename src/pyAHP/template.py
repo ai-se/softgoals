@@ -4,6 +4,8 @@ import os, sys, json
 sys.path.append(os.path.abspath("."))
 sys.dont_write_bytecode = True
 
+t, f = 1, -1
+
 class O(object):
   """
   Default class that gives

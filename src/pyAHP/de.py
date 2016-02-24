@@ -18,8 +18,6 @@ def default():
     cr = 0.3,
     seed = 1,
     better = [lt, gt, gt],
-    obj_funcs = [Point.evaluate_cost, Point.evaluate_benefit, Point.evaluate_softgoals],
-    evaluation = Point.evaluate,
     is_percent = True,
     binary = True,
     dominates = "bdom",
@@ -38,55 +36,10 @@ class DE(O):
       self.dominates = self.bdom
     else:
       self.dominates = self.cdom
-      self.limits = self.set_limits()
-    self.model.settings.obj_funcs = self.settings.obj_funcs
+      self.limits = self.model.get_tree().set_limits()
     self.model.settings.better = self.settings.better
     self.model.settings.is_percent = self.settings.is_percent
     self.global_set = set()
-    self.presets = self.get_presets()
-
-  def get_presets(self):
-    names = ["Access Control Assessed",
-             "Access Control Pilot",
-             "Monitoring Pilot"
-             ]
-    node_ids = []
-    for node in self.model.get_tree().nodes.values():
-      if node.name in names:
-        node_ids.append(node.id)
-    assert len(node_ids) == len(names), "Nodes and Names size mismatch"
-    return node_ids
-
-  def set_presets(self, point):
-    return point
-    for preset in self.presets:
-      point.decisions[preset] = t
-    return point
-
-  def set_limits(self):
-    """
-    Set Limit for each objectives
-    :return:
-    """
-    tot_cost, tot_benefit = 0, 0
-    for node in self.model.get_tree().nodes.values():
-      tot_cost += node.cost
-      tot_benefit += node.benefit
-    mins = []
-    maxs = []
-    weights = []
-    for comp, func in zip(self.settings.better, self.settings.obj_funcs):
-      weights.append(-1 if comp==lt else 1)
-      if func == Point.evaluate_cost:
-        mins.append(0)
-        maxs.append(tot_cost)
-      elif func == Point.evaluate_benefit:
-        mins.append(0)
-        maxs.append(tot_cost)
-      elif func == Point.evaluate_softgoals:
-        mins.append(0)
-        maxs.append(len(self.model.get_tree().get_nodes(node_type="softgoals")))
-    return O(mins=mins, maxs=maxs, weights=weights)
 
   def assign_frontier_size(self):
     """
@@ -100,7 +53,7 @@ class DE(O):
     population = set()
     while len(population) < size:
       point = Point(self.mutator.generate())
-      if (not point in self.global_set) and self.model.check_constraints(point, self.settings.obj_funcs):
+      if (not point in self.global_set) and self.model.check_constraints(point):
         self.global_set.add(point)
         population.add(point)
     return list(population)
@@ -120,13 +73,13 @@ class DE(O):
     population = self.generate(settings.candidates)
     stat.insert(population)
     for _ in range(self.settings.gens):
-      say(".")
+      #say(".")
       clones = population[:]
       for point in population:
-        original_obj = settings.evaluation(point, self.model, settings.obj_funcs)
+        original_obj = self.model.get_tree().evaluate(self.model, point)
         mutant = self.mutate(point, population)
-        mutated_obj = settings.evaluation(mutant, self.model, settings.obj_funcs)
-        if not self.model.check_constraints(mutant, self.settings.obj_funcs):
+        mutated_obj = self.model.get_tree().evaluate(self.model, mutant)
+        if not self.model.check_constraints(mutant):
           continue
         if self.dominates(mutated_obj, original_obj) and (not mutant in self.global_set):
           clones.remove(point)

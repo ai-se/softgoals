@@ -10,7 +10,7 @@ def loo(points):
     yield one, rest
 
 def select(problem, population, k):
-  if len(population) <= k:
+  if len(population) < k:
     return population
   fronts = sort_non_dominated(problem, population)
   pop_next = []
@@ -98,7 +98,7 @@ def assign_crowd_dist(problem, frontier):
   a frontier.
   """
   l = len(frontier)
-  for m in range(len(problem.settings.obj_funcs)):
+  for m in range(len(problem.get_tree().better)):
     frontier = sorted(frontier, key=lambda x:x.objectives[m])
     frontier[0].crowd_dist = float("inf")
     frontier[-1].crowd_dist = float("inf")

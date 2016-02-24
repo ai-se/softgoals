@@ -15,7 +15,7 @@ def default():
   return O(
     k1 = 10,
     k2 = 100,
-    best_percent = 20,
+    best_percent = 33,
     gen_step = 2
   )
 
@@ -33,28 +33,24 @@ class Star1(O):
     self.settings = default().update(**settings)
     self.de = DE(model, gens = self.settings.k1)
 
-  # def sample(self):
+  # def sample(self, sub_folder):
   #   stat = self.de.run()
+  #   self.to_csv(stat, "csv/"+sub_folder+"/"+self.model.get_tree().name+".csv")
   #   stat.settings.gen_step = self.settings.gen_step
   #   stat.tiles()
   #   population = set()
-  #   # for gen in stat.generations:
-  #   #   for point in gen:
-  #   #     population.add(point)
   #   for point in stat.generations[0]:
   #     population.add(point)
   #   for point in stat.generations[-1]:
   #     population.add(point)
-  #   print(len(population))
   #   best_size = int(len(population) * self.settings.best_percent/100)
   #   best = sel_nsga2(self.model, list(population), best_size)
-  #   print(len(best))
   #   rest = population - set(best)
-  #   return list(best), list(rest)
+  #   return best, list(rest)
 
-  def  sample(self, subfolder):
+  def sample(self, sub_folder):
     stat = self.de.run()
-    self.to_csv(stat, "csv/"+subfolder+"/"+self.model.get_tree().name+".csv")
+    self.to_csv(stat, "csv/"+sub_folder+"/"+self.model.get_tree().name+".csv")
     stat.settings.gen_step = self.settings.gen_step
     stat.tiles()
     best = set()
@@ -63,7 +59,7 @@ class Star1(O):
       population.add(point)
     for point in stat.generations[-1]:
       population.add(point)
-    for obj_index in range(len(self.de.settings.obj_funcs)):
+    for obj_index in range(len(self.de.settings.better)):
       sorted_pop = sorted(list(population), key=lambda x: x.objectives[obj_index], reverse=True)[:len(stat.generations[-1])//5]
       best.update(sorted_pop)
     rest = population - best
@@ -155,8 +151,7 @@ class Star1(O):
     if not point.objectives:
       model.reset_nodes(point.decisions)
       self.model.eval(self.model.get_tree().root)
-      funcs = [Point.evaluate_cost, Point.evaluate_benefit, Point.evaluate_softgoals]
-      point.objectives = [func(model) for func in funcs]
+      point.objectives = self.model.get_tree().evaluate(model, point)
       point.objectives.append(sum(decision.cost for decision in decisions if decision.value > 0))
       point._nodes = [node.clone() for node in model.get_tree().nodes.values()]
       point.objectives = [0 if one is None else one for one in point.objectives]
@@ -181,7 +176,7 @@ class Star1(O):
   def to_csv(self, stats, fname):
     directory = fname.rsplit("/", 1)[0]
     mkdir(directory)
-    last_gen = stats.generations[-1]
+    last_gen = sorted(stats.generations[-1], key=lambda x:x.objectives[1]-x.objectives[0], reverse=True)
     ids = self.model.get_tree().nodes.keys()
     names = [self.model.get_tree().nodes[key].name for key in ids] + ["?cost", "?benefit", "?softgoals"]
     table = [names]
@@ -191,7 +186,6 @@ class Star1(O):
       max_cost = max(point.objectives[0], max_cost)
       max_benefit = max(point.objectives[1], max_benefit)
       table.append(row)
-    print(max_cost, max_benefit)
     with open(fname, "wb") as file_obj:
       writer = csv.writer(file_obj)
       writer.writerows(table)
