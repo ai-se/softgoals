@@ -3,6 +3,7 @@ from __future__ import print_function, division
 __author__ = 'george'
 
 import matplotlib.pyplot as plt
+import matplotlib.lines as mlines
 import numpy as np
 from lib import *
 
@@ -131,7 +132,8 @@ def line_plot(x_axis, y_axes, fig_name="temp.png"):
   plt.savefig(fig_name)
 
 def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
-  plt.figure(1)
+  fig = plt.figure(1)
+  fig.subplots_adjust(hspace=0.5)
   directory = fig_name.rsplit("/", 1)[0]
   mkdir(directory)
   for i, data_map in enumerate(data):
@@ -149,5 +151,8 @@ def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
       plt.subplot(index)
       plt.title(obj_names[i])
       plt.plot(x, meds, 'b-')
+  blue_line = mlines.Line2D([],[], color='blue', label='Median')
+  red_line = mlines.Line2D([],[], color='red', label='IQR')
+  plt.figlegend((blue_line, red_line), ('Median', 'IQR'), 'upper right')
   plt.savefig(fig_name)
   plt.clf()
