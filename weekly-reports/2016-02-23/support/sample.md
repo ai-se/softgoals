@@ -32,6 +32,8 @@ rank ,         name ,    med   ,   iqr
 ### Time Taken : 2.85760498047
 ![1](../../../src/img/ahp_support_chart/sample.png)
 
+### [Pareto Front](https://github.com/ai-se/softgoals/blob/master/src/csv/ahp_support_chart/sample.csv)
+
 ### Decisions Ranked
 ```
 +------+-------------------------------------------------------+----------+-------+------+---------+
@@ -67,3 +69,7 @@ rank ,         name ,    med   ,   iqr
 ### Support Chart
 ![1](../../../src/img/ahp_support_chart/sample_support.png)
 ![1](../../../src/img/ahp_support_chart/sample_tree.png)
+
+### Conclusions
+- Oscillations in IQR cannot justify objectives.
+- Maximal Subset cannot justify even the slightest change in median/IQR. We can clearly observe that if we take maximal subset we would get only one such combo of objectives but miss out on the rest of the complementing ones
