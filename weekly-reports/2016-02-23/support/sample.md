@@ -1,3 +1,5 @@
+## [Model](https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)
+
 ## sample
 ```
 
@@ -69,6 +71,15 @@ rank ,         name ,    med   ,   iqr
 ### Support Chart
 ![1](../../../src/img/ahp_support_chart/sample_support.png)
 ![1](../../../src/img/ahp_support_chart/sample_tree.png)
+
+### Maximal Subset
+**16** maximal subsets of size **13** are in the model
+
+| Objective | Median | IQR | Max | Min |
+|-----------|--------|-----|-----|-----|
+| Cost | 30 | 3.0 | 32 | 27 |
+| Benefit | 39 | 2.0 | 41 | 37 |
+| Softgoals | 4 | 0 | 4 | 4 |
 
 ### Conclusions
 - Oscillations in IQR cannot justify objectives.
