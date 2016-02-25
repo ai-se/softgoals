@@ -156,3 +156,19 @@ def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
   plt.figlegend((blue_line, red_line), ('Median', 'IQR'), 'upper right')
   plt.savefig(fig_name)
   plt.clf()
+
+def point_plot(x_axis, y_axes, styles, fig_name="temp.png"):
+  keys = y_axes.keys()
+  y_min = sys.maxint
+  y_max = -y_min
+  for index, y_axis in enumerate(y_axes.values()):
+    y_max = max(max(y_axis), y_max)
+    y_min = min(min(y_axis), y_min)
+    plt.plot(x_axis, y_axis, styles[index])
+  plt.legend(keys, loc="upper left")
+  plt.xlabel("Number of Decisions")
+  plt.ylabel("Count")
+  plt.xlim([min(x_axis)-1, max(x_axis)+1])
+  plt.ylim([y_min-1, y_max+1])
+  plt.savefig(fig_name)
+  plt.clf()

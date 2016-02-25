@@ -6,7 +6,7 @@ from utilities.lib import *
 from de import DE
 from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
-from utilities.plotter import med_spread_plot, line_plot
+from utilities.plotter import med_spread_plot, line_plot, point_plot
 from prettytable import PrettyTable
 import csv
 from pyAHP.dotter import Grapher
@@ -177,6 +177,7 @@ class Star1(O):
     directory = fname.rsplit("/", 1)[0]
     mkdir(directory)
     last_gen = sorted(stats.generations[-1], key=lambda x:x.objectives[1]-x.objectives[0], reverse=True)
+    self.plot_objectives(last_gen, directory)
     ids = self.model.get_tree().nodes.keys()
     names = [self.model.get_tree().nodes[key].name for key in ids] + ["?cost", "?benefit", "?softgoals"]
     table = [names]
@@ -189,6 +190,23 @@ class Star1(O):
     with open(fname, "wb") as file_obj:
       writer = csv.writer(file_obj)
       writer.writerows(table)
+
+  def plot_objectives(self, points, directory):
+    directory = directory.replace("csv/", "img/")
+    objectives = []
+    for point in points:
+      dec_lens = sum([1 if dec == 1 else 0 for dec in point.decisions.values()])
+      obj = [dec_lens]
+      for o in point.objectives[:2]:
+        obj.append(o)
+      objectives.append(obj)
+    zipped = zip(*objectives)
+    x = zipped[0]
+    costs = zipped[1]
+    benefits = zipped[2]
+    tree_name = self.model.get_tree().name
+    point_plot(x, {"cost":costs}, ['ro'], "%s/%s_costs.png"%(directory, tree_name))
+    point_plot(x, {"benefit":benefits}, ['bx'], "%s/%s_benefits.png"%(directory, tree_name))
 
 
 
