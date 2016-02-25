@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import numpy as np
 from lib import *
+from mpl_toolkits.mplot3d import Axes3D
 
 
 # COLORS = ['indigo', 'gold', 'hotpink', 'firebrick', 'indianred', 'yellow', 'mistyrose',
@@ -171,4 +172,16 @@ def point_plot(x_axis, y_axes, styles, fig_name="temp.png"):
   plt.xlim([min(x_axis)-1, max(x_axis)+1])
   plt.ylim([y_min-1, y_max+1])
   plt.savefig(fig_name)
+  plt.clf()
+
+def point_plot_3d(x_axis, y_axis, z_axis,
+                  color, marker, file_name,
+                  x_label, y_label, z_label):
+  fig = plt.figure()
+  ax = fig.add_subplot(111, projection='3d')
+  ax.scatter(x_axis, y_axis, z_axis, c=color, marker=marker)
+  ax.set_xlabel(x_label)
+  ax.set_ylabel(y_label)
+  ax.set_zlabel(z_label)
+  plt.savefig(file_name)
   plt.clf()

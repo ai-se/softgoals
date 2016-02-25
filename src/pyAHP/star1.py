@@ -6,7 +6,7 @@ from utilities.lib import *
 from de import DE
 from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
-from utilities.plotter import med_spread_plot, line_plot, point_plot
+from utilities.plotter import med_spread_plot, line_plot, point_plot, point_plot_3d
 from prettytable import PrettyTable
 import csv
 from pyAHP.dotter import Grapher
@@ -207,6 +207,8 @@ class Star1(O):
     tree_name = self.model.get_tree().name
     point_plot(x, {"cost":costs}, ['ro'], "%s/%s_costs.png"%(directory, tree_name))
     point_plot(x, {"benefit":benefits}, ['bx'], "%s/%s_benefits.png"%(directory, tree_name))
+    point_plot_3d(x, costs, benefits, 'r', 'x', "%s/%s_3d.png"%(directory, tree_name),
+                  "Number of Decisions", "Costs", "Benefits")
 
 
 
