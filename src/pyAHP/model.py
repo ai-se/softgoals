@@ -6,6 +6,7 @@ sys.dont_write_bytecode = True
 from template import *
 import random
 from math import exp
+from copy import deepcopy
 
 def coin_toss():
   return random.choice([t, f])
@@ -282,6 +283,7 @@ class Point(O):
       return t
     else:
       return f
+
 
 
 def _main():
