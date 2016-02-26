@@ -183,5 +183,8 @@ def point_plot_3d(x_axis, y_axis, z_axis,
   ax.set_xlabel(x_label)
   ax.set_ylabel(y_label)
   ax.set_zlabel(z_label)
+  ax.set_xlim3d(left=min(x_axis)-1, right=max(x_axis)+1)
+  ax.set_ylim3d(bottom=min(y_axis)-1, top=max(y_axis)+1)
+  ax.set_zlim3d(bottom=min(z_axis)-1, top=max(z_axis)+1)
   plt.savefig(file_name)
   plt.clf()
