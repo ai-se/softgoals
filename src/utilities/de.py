@@ -1,7 +1,8 @@
 from __future__ import print_function, division
-import sys
+import sys, os
 __author__ = 'george'
 sys.dont_write_bytecode = True
+sys.path.append(os.path.abspath("."))
 from lib import *
 import time
 from math import exp
@@ -81,8 +82,10 @@ class DE(O):
 
   def generate(self, size):
     population = list()
+    generator = Generator(self.model)
     while len(population) < size:
-      point = Point(self.model.generate())
+      #point = Point(self.model.generate())
+      point = Point(generator.generate())
       if not point in population:
         population.append(point)
     return population
@@ -234,3 +237,110 @@ def AND(a, b):
   if a==t and b==t:
     return t
   return f
+
+
+class Generator(O):
+  """
+  Generator to generate a valid solution
+  via propagation.
+  """
+  def __init__(self, model):
+    O.__init__(self)
+    self.model = model
+
+  def generate(self):
+    node_dict, decisions = {}, {}
+    self.model.clear_nodes()
+    nodes = self.model.get_tree().get_nodes(node_type=["softgoal", "goal"])
+    for node in nodes:
+      value = t if node.type == "goal" else t/2
+      node_dict = Generator.update_dict(node_dict, self.propagate(node, value))
+    for base in self.model.bases:
+      decisions[base.id] = node_dict.get(base.id, choice([t,f]))
+    return decisions
+
+  @staticmethod
+  def update_dict(target, source):
+    for key in source.keys():
+      if key not in target:
+        target[key] = source[key]
+    return target
+
+  def propagate(self, node, value):
+    if node.value is not None:
+      return {node.id : value}
+    node.value = value
+    deps, rest= self.model.dep_and_rest(node.from_edges)
+    if not deps and not rest:
+      value = 1 if value > 0 else -1
+      node.value = value
+      return {node.id : value}
+    decisions = {}
+    if deps:
+      dep_nodes = shuffle([self.model.get_tree().get_node(dep.source) for dep in deps])
+      if value == t:
+        for dep_node in dep_nodes:
+          decisions = Generator.update_dict(decisions, self.propagate(dep_node, t))
+      else:
+        decisions = Generator.update_dict(decisions, self.propagate(dep_nodes[0], f))
+        for dep_node in dep_nodes[1:]:
+          decisions = Generator.update_dict(decisions, self.propagate(dep_node, choice([t, f])))
+    if not rest:
+      return decisions
+
+    edge_type = rest[0].type
+    if edge_type == "decompositions":
+      kids = shuffle([self.model.get_tree().get_node(edge.source) for edge in rest])
+      if rest[0].value == "and" and value == t:
+        for kid in kids:
+          decisions = Generator.update_dict(decisions, self.propagate(kid, t))
+      elif rest[0].value == "and" and value == f:
+        decisions = Generator.update_dict(decisions, self.propagate(kids[0], f))
+        for kid in kids[1:]:
+          decisions = Generator.update_dict(decisions, self.propagate(kid, choice([t, f])))
+      elif rest[0].value == "or" and value == t:
+        decisions = Generator.update_dict(decisions, self.propagate(kids[0], t))
+        for kid in kids[1:]:
+          decisions = Generator.update_dict(decisions, self.propagate(kid, choice([t, f])))
+      else:
+        for kid in kids:
+          decisions = Generator.update_dict(decisions, self.propagate(kid, f))
+    elif edge_type == "contribution":
+      for edge in shuffle(rest):
+        kid = self.model.get_tree().get_node(edge.source)
+        contrib = edge.value
+        contrib_value = None
+        if value == t:
+          if contrib == "make": contrib_value = t
+        elif value == t/2:
+          if contrib == "make" or contrib == "help":
+            contrib_value = t/2
+          else:
+            contrib_value = f/2
+        elif value == f/2:
+          if contrib == "make" or contrib == "help":
+            contrib_value = f/2
+          else:
+            contrib_value = t/2
+        else:
+          if contrib == "make":
+            contrib_value = f
+          elif contrib == "break":
+            contrib_value = t
+        if contrib_value is None:
+          # Conflict Arises over here due to wrong choice
+          # of value for edge. Hence random assign
+          contrib_value = choice([t/2, f/2])
+          #raise RuntimeError("Either node value is %s or edge %s is unknown"%(kid.value, contrib))
+        decisions = Generator.update_dict(decisions, self.propagate(kid, contrib_value))
+    return decisions
+
+
+def _main():
+  from pystar.models.dot_models import CSServices
+  model = Model(CSServices())
+  generator = Generator(model)
+  print(len(generator.generate().keys()))
+
+if __name__ == "__main__":
+  _main()

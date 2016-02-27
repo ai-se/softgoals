@@ -52,33 +52,33 @@ class Star1(O):
               break
     return nodes
 
-  # def sample(self):
-  #   stat = self.de.run()
-  #   stat.settings.gen_step = 20
-  #   stat.tiles()
-  #   best = set()
-  #   for obj_index in range(len(self.de.settings.obj_funcs)):
-  #     sorted_pop = sorted(stat.generations[-1], key=lambda x: x.objectives[obj_index], reverse=True)[:len(stat.generations[-1])//5]
-  #     best.update(sorted_pop)
-  #   rest = set()
-  #   for gen in stat.generations:
-  #     for point in gen:
-  #       if not point in best:
-  #         rest.add(point)
-  #   return best, rest
-
   def sample(self):
     stat = self.de.run()
     stat.settings.gen_step = self.settings.gen_step
     stat.tiles()
-    population = set()
+    best = set()
+    for obj_index in range(len(self.de.settings.obj_funcs)):
+      sorted_pop = sorted(stat.generations[-1], key=lambda x: x.objectives[obj_index], reverse=True)[:len(stat.generations[-1])//5]
+      best.update(sorted_pop)
+    rest = set()
     for gen in stat.generations:
       for point in gen:
-        population.add(point)
-    best_size = int(len(population) * self.settings.best_percent/100)
-    best = sel_nsga2(self.model, list(population), best_size)
-    rest = population - set(best)
-    return list(best), list(rest)
+        if not point in best:
+          rest.add(point)
+    return best, rest
+
+  # def sample(self):
+  #   stat = self.de.run()
+  #   stat.settings.gen_step = self.settings.gen_step
+  #   stat.tiles()
+  #   population = set()
+  #   for gen in stat.generations:
+  #     for point in gen:
+  #       population.add(point)
+  #   best_size = int(len(population) * self.settings.best_percent/100)
+  #   best = sel_nsga2(self.model, list(population), best_size)
+  #   rest = population - set(best)
+  #   return list(best), list(rest)
 
   def rank(self, best, rest):
     best_size = len(best)
@@ -107,8 +107,14 @@ class Star1(O):
       f_neg_rest /= rest_size
       l_pos_rest = f_pos_rest * p_rest
       l_neg_rest = f_neg_rest * p_rest
-      sup_pos = l_pos_best ** 2 / (l_pos_best + l_pos_rest)
-      sup_neg = l_neg_best ** 2 / (l_neg_best + l_neg_rest)
+      if l_pos_best == 0 and l_pos_rest == 0:
+        sup_pos = 0
+      else:
+        sup_pos = l_pos_best ** 2 / (l_pos_best + l_pos_rest)
+      if l_neg_best == 0 and l_neg_rest == 0:
+        sup_neg = 0
+      else:
+        sup_neg = l_neg_best ** 2 / (l_neg_best + l_neg_rest)
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_pos, value = 1,
                                 type = dec_node.type, container=dec_node.container,
