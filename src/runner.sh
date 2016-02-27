@@ -4,7 +4,7 @@ array=('CSServices' 'CSCounselling' 'CSCounsellingManagement'
 		#'CSCounsellingManagementSD' 'CSCounsellingSD'
 		'CSFDandMarketing'
 		#'CSFDandMarketingSD'
-		'CSITDepartment' 'CSSAProgram' 'CSSimplified' 'KidsAndYouth'
+		'CSITDepartment' 'CSSAProgram' 'KidsAndYouth'
 		#'Parents'
 		#'OOOChatRooms' 'DelayModeratedBulletinBoard'
 		)
