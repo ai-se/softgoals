@@ -72,7 +72,7 @@ rank ,         name ,    med   ,   iqr
 ![1](../../../src/img/ahp_support_chart/sample_support.png)
 ![1](../../../src/img/ahp_support_chart/sample_tree.png)
 
-### Maximal Subset
+## Maximal Subset
 **16** maximal subsets of size **13** are in the model
 
 | Objective | Median | IQR | Max | Min |
@@ -81,6 +81,17 @@ rank ,         name ,    med   ,   iqr
 | Benefit | 39 | 2.0 | 41 | 37 |
 | Softgoals | 4 | 0 | 4 | 4 |
 
-### Conclusions
+## Visualizations
+###Decisions vs Costs vs Benefits
+![1](../../../src/img/ahp_support_chart/sample_3d.png)
+
+###Decisions vs Costs
+![1](../../../src/img/ahp_support_chart/sample_costs.png)
+
+###Decisions vs Benefits
+![1](../../../src/img/ahp_support_chart/sample_benefits.png)
+
+
+## Conclusions
 - Oscillations in IQR cannot justify objectives.
 - Maximal Subset cannot justify even the slightest change in median/IQR. We can clearly observe that if we take maximal subset we would get only one such combo of objectives but miss out on the rest of the complementing ones
