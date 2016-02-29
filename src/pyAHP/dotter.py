@@ -77,3 +77,68 @@ class Grapher(O):
     edge = dot.Edge(source, target, arrowhead=arrow_type)
     return edge
 
+class Recommender(O):
+ def __init__(self, tree, decisions, tracks, folder_path):
+   O.__init__(self)
+   self.tree = tree
+   self.decisions = decisions
+   self.tracks = tracks
+   self.folder_path = folder_path
+
+ def draw_tree(self):
+   up = u'\u25B2'
+   down = u'\u25BC'
+   tree = self.tree
+   tracks = self.tracks
+   graph = dot.Dot(graph_type='digraph', graph_name=tree.name, rankdir="TB")
+   previous = None
+   left_count, right_count = 0, 0
+   for track in tracks:
+     root_label = "Implement %s ?"%track.name
+     root = dot.Node(name = track.id, label=root_label)
+     graph.add_node(root)
+     if previous:
+       connector = dot.Edge(previous, root)
+       graph.add_edge(connector)
+     left_color, right_color = '#66ff66', '#ff6666'
+     if track.prefered_value == -1:
+       left_color, right_color = right_color, left_color
+     left_label = "YES\n %s Cost = %0.1f +/- %0.1f\n %s Benefit = %0.1f +/- %0.1f \n" \
+                  "%s Softgoals = %0.1f +/- %0.1f\n %s Decision Cost = %0.1f +/- %0.1f \n"\
+                  %(down, track.pos_meds[0], track.pos_iqrs[0],
+                    up, track.pos_meds[1], track.pos_iqrs[1],
+                    up, track.pos_meds[2], track.pos_iqrs[2],
+                    down, track.pos_meds[3], track.pos_iqrs[3],)
+     left = dot.Node(name = "Yes %d"%track.id, label = left_label, style="filled", fillcolor=left_color)
+     right_label = "NO\n %s Cost = %0.1f +/- %0.1f\n %s Benefit = %0.1f +/- %0.1f \n" \
+                  "%s Softgoals = %0.1f +/- %0.1f\n %s Decision Cost = %0.1f +/- %0.1f \n"\
+                  %(down, track.neg_meds[0], track.neg_iqrs[0],
+                    up, track.neg_meds[1], track.neg_iqrs[1],
+                    up, track.neg_meds[2], track.neg_iqrs[2],
+                    down, track.neg_meds[3], track.neg_iqrs[3],)
+     right = dot.Node(name = "No %d"%track.id, label = right_label, style="filled", fillcolor=right_color)
+     if track.prefered_value == 1:
+       previous = left
+     elif track.prefered_value == -1:
+       previous = right
+     else:
+       raise RuntimeError("Preferred value not mentioned")
+     if left_count > right_count:
+       left, right = right, left
+       right_count += 1
+     else:
+       left_count += 1
+
+     graph.add_node(left)
+     left_edge = dot.Edge(root, left)
+     graph.add_edge(left_edge)
+
+
+     graph.add_node(right)
+     right_edge = dot.Edge(root, right)
+     graph.add_edge(right_edge)
+
+   graph.write_png("img/"+self.folder_path+"/"+tree.name+"_choices.png")
+   return tree.name+"_choices"
+
+

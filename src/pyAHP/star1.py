@@ -9,7 +9,7 @@ from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot, line_plot, point_plot, point_plot_3d
 from prettytable import PrettyTable
 import csv
-from pyAHP.dotter import Grapher
+from pyAHP.dotter import Grapher, Recommender
 
 def default():
   return O(
@@ -205,10 +205,48 @@ class Star1(O):
     costs = zipped[1]
     benefits = zipped[2]
     tree_name = self.model.get_tree().name
+    mkdir(directory)
     point_plot(x, {"cost":costs}, ['ro'], "%s/%s_costs.png"%(directory, tree_name))
     point_plot(x, {"benefit":benefits}, ['bx'], "%s/%s_benefits.png"%(directory, tree_name))
     point_plot_3d(x, costs, benefits, 'r', 'x', "%s/%s_3d.png"%(directory, tree_name),
                   "Number of Decisions", "Costs", "Benefits")
+
+  def visualize(self, decisions):
+    tracks = []
+    for i in range(len(decisions)):
+      pos_decs, neg_decs = [], []
+      for j in range(len(decisions)):
+        if j < i:
+          pos_decs.append(Decision(id = decisions[j].id, value = decisions[j].value, cost = decisions[j].cost))
+          neg_decs.append(Decision(id = decisions[j].id, value = decisions[j].value, cost = decisions[j].cost))
+        elif j == i:
+          pos_decs.append(Decision(id = decisions[j].id, value = +1, cost = decisions[j].cost))
+          neg_decs.append(Decision(id = decisions[j].id, value = -1, cost = decisions[j].cost))
+        # else:
+        #   pos_decs.append(Decision(id = decisions[j].id, value = -1 * decisions[j].value))
+        #   neg_decs.append(Decision(id = decisions[j].id, value = -1 * decisions[j].value))
+      pos_pop = self.generate(pos_decs)
+      neg_pop = self.generate(neg_decs)
+      for pos, neg in zip(pos_pop, neg_pop):
+        self.evaluate(pos, pos_decs)
+        self.evaluate(neg, neg_decs)
+      p_meds, p_iqrs = [], []
+      n_meds, n_iqrs = [], []
+      for o_i in range(len(pos_pop[0].objectives)):
+        p_objs = [pt.objectives[o_i] for pt in pos_pop]
+        n_objs = [pt.objectives[o_i] for pt in neg_pop]
+        med, iqr = median_iqr(p_objs)
+        p_meds.append(med)
+        p_iqrs.append(iqr)
+        med, iqr = median_iqr(n_objs)
+        n_meds.append(med)
+        n_iqrs.append(iqr)
+      tracks.append(O(id = decisions[i].id, name = decisions[i].name,
+                      pos_meds = p_meds, pos_iqrs = p_iqrs,
+                      neg_meds = n_meds, neg_iqrs = n_iqrs,
+                      prefered_value = decisions[i].value))
+    return tracks
+
 
 
 
@@ -258,6 +296,9 @@ def run(graph, subfolder, optimal_index = None):
   plot_support(decisions, "img/%s/%s_support.png"%(subfolder,graph.name))
   tree_name = Grapher(graph, decisions, subfolder).draw_tree()
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,tree_name))
+  tracks = star.visualize(decisions)
+  reco_tree_name = Recommender(graph, decisions, tracks, subfolder).draw_tree()
+  print("###[Recommendation](../../../src/img/%s/%s.png)"%(subfolder,reco_tree_name))
   # if optimal_index is not None:
   #   print("\n### Top %d Decisions from above table."%optimal_index)
   #   print("```")
@@ -274,5 +315,5 @@ def run(graph, subfolder, optimal_index = None):
 
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
-  tree.name = "sample"
-  run(tree, "ahp_support_chart")
+  #tree.name = "sample"
+  run(tree, "visualize")
