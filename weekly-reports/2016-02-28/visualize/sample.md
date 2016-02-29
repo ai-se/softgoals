@@ -1,3 +1,5 @@
+## [Model] (https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)
+
 ## sample
 ```
 
