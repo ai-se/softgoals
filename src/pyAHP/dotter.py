@@ -94,7 +94,9 @@ class Recommender(O):
    previous = None
    left_count, right_count = 0, 0
    for track in tracks:
-     root_label = "Implement %s ?"%track.name
+     root_label = "Implement \"%s\" ?\n" \
+                  "Cost = %0.f, Benefit = %0.f"\
+                  %(track.name, track.cost, track.benefit)
      root = dot.Node(name = track.id, label=root_label)
      graph.add_node(root)
      if previous:
@@ -104,18 +106,18 @@ class Recommender(O):
      if track.prefered_value == -1:
        left_color, right_color = right_color, left_color
      left_label = "YES\n %s Cost = %0.1f +/- %0.1f\n %s Benefit = %0.1f +/- %0.1f \n" \
-                  "%s Softgoals = %0.1f +/- %0.1f\n %s Decision Cost = %0.1f +/- %0.1f \n"\
+                  "%s Softgoals = %0.1f +/- %0.1f\n %s Total Decision Cost = %0.1f \n"\
                   %(down, track.pos_meds[0], track.pos_iqrs[0],
                     up, track.pos_meds[1], track.pos_iqrs[1],
                     up, track.pos_meds[2], track.pos_iqrs[2],
-                    down, track.pos_meds[3], track.pos_iqrs[3],)
+                    down, track.pos_meds[3],)
      left = dot.Node(name = "Yes %d"%track.id, label = left_label, style="filled", fillcolor=left_color)
      right_label = "NO\n %s Cost = %0.1f +/- %0.1f\n %s Benefit = %0.1f +/- %0.1f \n" \
-                  "%s Softgoals = %0.1f +/- %0.1f\n %s Decision Cost = %0.1f +/- %0.1f \n"\
+                  "%s Softgoals = %0.1f +/- %0.1f\n %s Total Decision Cost = %0.1f\n"\
                   %(down, track.neg_meds[0], track.neg_iqrs[0],
                     up, track.neg_meds[1], track.neg_iqrs[1],
                     up, track.neg_meds[2], track.neg_iqrs[2],
-                    down, track.neg_meds[3], track.neg_iqrs[3],)
+                    down, track.neg_meds[3],)
      right = dot.Node(name = "No %d"%track.id, label = right_label, style="filled", fillcolor=right_color)
      if track.prefered_value == 1:
        previous = left

@@ -3,7 +3,7 @@ import sys, os, time
 sys.path.append(os.path.abspath("."))
 __author__ = 'panzer'
 from utilities.lib import *
-from de import DE
+from de import DE, Mutator
 from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot, line_plot, point_plot, point_plot_3d
@@ -32,6 +32,7 @@ class Star1(O):
     self.model = model
     self.settings = default().update(**settings)
     self.de = DE(model, gens = self.settings.k1)
+    self.mutator = Mutator(model.get_tree())
 
   # def sample(self, sub_folder):
   #   stat = self.de.run()
@@ -103,11 +104,11 @@ class Star1(O):
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_pos, value = 1,
                                 type = dec_node.type, container=dec_node.container,
-                                cost = dec_node.base_cost))
+                                cost = dec_node.base_cost, benefit = dec_node.base_benefit))
       decisions.append(Decision(id = dec_node.id, name = dec_node.name,
                                 support=sup_neg, value = -1,
                                 type = dec_node.type, container=dec_node.container,
-                                cost = dec_node.base_cost))
+                                cost = dec_node.base_cost, benefit = dec_node.base_benefit))
     decisions.sort(key=lambda x:x.support, reverse=True)
     sorted_decs = []
     aux = set()
@@ -121,7 +122,7 @@ class Star1(O):
   def generate(self, presets = None):
     population = list()
     while len(population) < self.settings.k2:
-      point = Point(self.model.generate())
+      point = Point(self.mutator.generate())
       if not point in population:
         for preset in presets:
           point.decisions[preset.id] = preset.value
@@ -217,11 +218,15 @@ class Star1(O):
       pos_decs, neg_decs = [], []
       for j in range(len(decisions)):
         if j < i:
-          pos_decs.append(Decision(id = decisions[j].id, value = decisions[j].value, cost = decisions[j].cost))
-          neg_decs.append(Decision(id = decisions[j].id, value = decisions[j].value, cost = decisions[j].cost))
+          pos_decs.append(Decision(id = decisions[j].id, value = decisions[j].value,
+                                   cost = decisions[j].cost, benefit = decisions[j].benefit))
+          neg_decs.append(Decision(id = decisions[j].id, value = decisions[j].value,
+                                   cost = decisions[j].cost, benefit = decisions[j].benefit))
         elif j == i:
-          pos_decs.append(Decision(id = decisions[j].id, value = +1, cost = decisions[j].cost))
-          neg_decs.append(Decision(id = decisions[j].id, value = -1, cost = decisions[j].cost))
+          pos_decs.append(Decision(id = decisions[j].id, value = +1,
+                                   cost = decisions[j].cost, benefit = decisions[j].benefit))
+          neg_decs.append(Decision(id = decisions[j].id, value = -1,
+                                   cost = decisions[j].cost, benefit = decisions[j].benefit))
         # else:
         #   pos_decs.append(Decision(id = decisions[j].id, value = -1 * decisions[j].value))
         #   neg_decs.append(Decision(id = decisions[j].id, value = -1 * decisions[j].value))
@@ -244,7 +249,8 @@ class Star1(O):
       tracks.append(O(id = decisions[i].id, name = decisions[i].name,
                       pos_meds = p_meds, pos_iqrs = p_iqrs,
                       neg_meds = n_meds, neg_iqrs = n_iqrs,
-                      prefered_value = decisions[i].value))
+                      prefered_value = decisions[i].value,
+                      cost = decisions[i].cost, benefit = decisions[i].benefit))
     return tracks
 
 
@@ -316,4 +322,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "visualize")
+  run(tree, "star1_induced")
