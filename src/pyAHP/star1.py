@@ -298,7 +298,7 @@ def run(graph, subfolder, optimal_index = None):
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,tree_name))
   tracks = star.visualize(decisions)
   reco_tree_name = Recommender(graph, decisions, tracks, subfolder).draw_tree()
-  print("###[Recommendation](../../../src/img/%s/%s.png)"%(subfolder,reco_tree_name))
+  print("##[Recommendation](../../../src/img/%s/%s.png)"%(subfolder,reco_tree_name))
   # if optimal_index is not None:
   #   print("\n### Top %d Decisions from above table."%optimal_index)
   #   print("```")
