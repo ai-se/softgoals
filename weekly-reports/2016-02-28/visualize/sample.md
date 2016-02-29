@@ -68,7 +68,7 @@ rank ,         name ,    med   ,   iqr
 ![1](../../../src/img/visualize/sample_support.png)
 ![1](../../../src/img/visualize/sample_tree.png)
 
-###[Recommendation](../../../src/img/visualize/sample_choices.png)
+##[Recommendation](../../../src/img/visualize/sample_choices.png)
 
 ## Visualizations
 ###Decisions vs Costs vs Benefits
