@@ -59,14 +59,16 @@ class MaximumSubset(O):
     objs = []
     for subset in maximal_subsets:
       decisions = {}
+      decision_cost = 0
       for base in bases:
         if base.id in subset:
           decisions[base.id] = t
+          decision_cost += base.base_cost
         else:
           decisions[base.id] = f
       point = Point(decisions)
       self.tree.evaluate(model, point)
-      objs.append(point.objectives)
+      objs.append(point.objectives+[decision_cost])
       points.append(Point)
     print(map(stats, zip(*objs)))
     return points
