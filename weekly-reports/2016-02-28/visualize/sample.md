@@ -90,4 +90,4 @@ rank ,         name ,    med   ,   iqr
 | Cost | 30 | 3.0 | 32 | 27 |
 | Benefit | 39 | 2.0 | 41 | 37 |
 | Softgoals | 4 | 0 | 4 | 4 |
-| Decision Cost | 15 | 3 | 17 | 12 |
+| Total Decision Cost | 15 | 3 | 17 | 12 |
