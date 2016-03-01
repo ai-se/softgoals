@@ -1,3 +1,6 @@
+## [Model] (https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)
+
+
 ## sample
 ```
 
@@ -67,4 +70,26 @@ rank ,         name ,    med   ,   iqr
 ### Support Chart
 ![1](../../../src/img/valid_generations/sample_support.png)
 ![1](../../../src/img/valid_generations/sample_tree.png)
+
 ##[Recommendation](../../../src/img/valid_generations/sample_choices.png)
+
+## Visualizations
+###Decisions vs Costs vs Benefits
+![1](../../../src/img/ahp_support_chart/sample_3d.png)
+
+###Decisions vs Costs
+![1](../../../src/img/ahp_support_chart/sample_costs.png)
+
+###Decisions vs Benefits
+![1](../../../src/img/ahp_support_chart/sample_benefits.png)
+
+## Maximal Subset
+**16** maximal subsets of size **13** are in the model
+
+| Objective | Median | IQR | Max | Min |
+|-----------|--------|-----|-----|-----|
+| Cost | 30 | 3.0 | 32 | 27 |
+| Benefit | 39 | 2.0 | 41 | 37 |
+| Softgoals | 4 | 0 | 4 | 4 |
+| Total Decision Cost | 15 | 3 | 17 | 12 |
+
