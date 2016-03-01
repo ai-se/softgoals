@@ -119,13 +119,18 @@ class Star1(O):
     assert len(sorted_decs) == len(self.model.bases), "Mismatch after sorting support"
     return sorted_decs
 
-  def generate(self, presets = None):
+  def generate(self, presets = None, check_validity = False):
     population = list()
     while len(population) < self.settings.k2:
       point = Point(self.mutator.generate())
       if not point in population:
         for preset in presets:
           point.decisions[preset.id] = preset.value
+        if check_validity:
+          self.model.reset_nodes(point.decisions)
+          self.model.eval(self.model.get_tree().root)
+          if self.model.get_tree().root.value != 1:
+            continue
         population.append(point)
     return population
 
@@ -162,7 +167,7 @@ class Star1(O):
     gens = []
     for i in range(len(support)):
       decisions = support[:i]
-      population = self.generate(decisions)
+      population = self.generate(decisions, check_validity=True)
       for point in population:
         self.evaluate(point, decisions)
       gens.append(population)
@@ -230,8 +235,12 @@ class Star1(O):
         # else:
         #   pos_decs.append(Decision(id = decisions[j].id, value = -1 * decisions[j].value))
         #   neg_decs.append(Decision(id = decisions[j].id, value = -1 * decisions[j].value))
-      pos_pop = self.generate(pos_decs)
-      neg_pop = self.generate(neg_decs)
+      if decisions[i].value == 1:
+        pos_pop = self.generate(pos_decs, check_validity=True)
+        neg_pop = self.generate(neg_decs, check_validity=False)
+      else:
+        pos_pop = self.generate(pos_decs, check_validity=False)
+        neg_pop = self.generate(neg_decs, check_validity=True)
       for pos, neg in zip(pos_pop, neg_pop):
         self.evaluate(pos, pos_decs)
         self.evaluate(neg, neg_decs)
@@ -322,4 +331,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "star1_induced")
+  run(tree, "valid_generations")
