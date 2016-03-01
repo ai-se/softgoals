@@ -171,7 +171,7 @@ class Star1(O):
 
   def report(self, stats, sub_folder):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
-    headers = ["root cost", "root benefit", "softgoals", "decisions cost"]
+    headers = ["root cost", "root benefit", "softgoals", "preset decisions cost"]
     med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
 
   def to_csv(self, stats, fname):

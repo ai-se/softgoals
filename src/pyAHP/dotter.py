@@ -106,14 +106,14 @@ class Recommender(O):
      if track.prefered_value == -1:
        left_color, right_color = right_color, left_color
      left_label = "YES\n %s Cost = %0.1f +/- %0.1f\n %s Benefit = %0.1f +/- %0.1f \n" \
-                  "%s Softgoals = %0.1f +/- %0.1f\n %s Total Decision Cost = %0.1f \n"\
+                  "%s Softgoals = %0.1f +/- %0.1f\n %s Preset Decision Cost = %0.1f \n"\
                   %(down, track.pos_meds[0], track.pos_iqrs[0],
                     up, track.pos_meds[1], track.pos_iqrs[1],
                     up, track.pos_meds[2], track.pos_iqrs[2],
                     down, track.pos_meds[3],)
      left = dot.Node(name = "Yes %d"%track.id, label = left_label, style="filled", fillcolor=left_color)
      right_label = "NO\n %s Cost = %0.1f +/- %0.1f\n %s Benefit = %0.1f +/- %0.1f \n" \
-                  "%s Softgoals = %0.1f +/- %0.1f\n %s Total Decision Cost = %0.1f\n"\
+                  "%s Softgoals = %0.1f +/- %0.1f\n %s Preset Decision Cost = %0.1f\n"\
                   %(down, track.neg_meds[0], track.neg_iqrs[0],
                     up, track.neg_meds[1], track.neg_iqrs[1],
                     up, track.neg_meds[2], track.neg_iqrs[2],
