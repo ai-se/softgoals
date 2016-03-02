@@ -8,7 +8,8 @@ from pyAHP.model import Model, Point
 from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot, line_plot, point_plot, point_plot_3d
 from prettytable import PrettyTable
-import csv
+import csv, numpy as np
+from collections import OrderedDict
 from pyAHP.dotter import Grapher, Recommender
 
 def default():
@@ -126,11 +127,11 @@ class Star1(O):
       if not point in population:
         for preset in presets:
           point.decisions[preset.id] = preset.value
-        if check_validity:
-          self.model.reset_nodes(point.decisions)
-          self.model.eval(self.model.get_tree().root)
-          if self.model.get_tree().root.value != 1:
-            continue
+        # if check_validity:
+        #   self.model.reset_nodes(point.decisions)
+        #   self.model.eval(self.model.get_tree().root)
+        #   if self.model.get_tree().root.value != 1:
+        #     continue
         population.append(point)
     return population
 
@@ -291,21 +292,57 @@ def plot_support(decisions, fig_name):
   print("\n### Support Chart")
   print("![1](../../../src/%s)"%fig_name)
 
+def linear_seq_clusterer(stats, decisions, key="iqrs", delta=0.25):
+  point_to_cluster = OrderedDict()
+  for stat in stats:
+    vals = stat[key]
+    clusters = []
+    cluster_prev = [vals[0]]
+    clusters.append(cluster_prev)
+    current_cluster = point_to_cluster.get(0, set())
+    current_cluster.add(len(clusters))
+    point_to_cluster[0] = current_cluster
+    for index, val in enumerate(vals[1:]):
+      prev_mean = np.mean(cluster_prev)
+      if abs(prev_mean - val) > delta * prev_mean:
+        cluster_prev = [val]
+        clusters.append(cluster_prev)
+      else:
+        cluster_prev.append(val)
+      current_cluster = point_to_cluster.get(index+1, set())
+      current_cluster.add(len(clusters))
+      point_to_cluster[index+1] = current_cluster
+  columns = ["Cluster ID", "Decision Name"]
+  table = PrettyTable(columns)
+  prev_val = None
+  for key, val in point_to_cluster.items():
+    current_val = ",".join(map(str, list(val)))
+    if current_val == prev_val:
+      row = ["\"", decisions[key].name]
+    else:
+      row = [current_val, decisions[key].name]
+      prev_val = current_val
+    table.add_row(row)
+  print("\n### Decisions Clustered")
+  print("```")
+  print(table)
+  print("```")
+
+
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
   start = time.time()
   model = Model(graph)
+  print("## [Model](https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)")
   print("## %s"%graph.name)
   print("```")
   star = Star1(model)
   best, rest = star.sample(subfolder)
   decisions = star.rank(best, rest)
   obj_stats, gens = star.prune(decisions)
-  delta = time.time() - start
   star.report(obj_stats, subfolder)
   print("```")
-  print("\n### Time Taken : %s"%delta)
   print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
   print_decisions(decisions)
   plot_support(decisions, "img/%s/%s_support.png"%(subfolder,graph.name))
@@ -314,6 +351,9 @@ def run(graph, subfolder, optimal_index = None):
   tracks = star.visualize(decisions)
   reco_tree_name = Recommender(graph, decisions, tracks, subfolder).draw_tree()
   print("##[Recommendation](../../../src/img/%s/%s.png)"%(subfolder,reco_tree_name))
+  linear_seq_clusterer(obj_stats[:2], decisions, key="meds")
+  delta = time.time() - start
+  print("\n### Time Taken : %s"%delta)
   # if optimal_index is not None:
   #   print("\n### Top %d Decisions from above table."%optimal_index)
   #   print("```")
@@ -331,4 +371,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "valid_generations")
+  run(tree, "cluster_decision_93_invalid")
