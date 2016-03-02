@@ -328,6 +328,9 @@ def linear_seq_clusterer(stats, decisions, key="iqrs", delta=0.25):
   print(table)
   print("```")
 
+def smoothen(stats, decisions):
+  # TODO - Impelement smoothen based on #94
+  pass
 
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
