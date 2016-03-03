@@ -11,6 +11,7 @@ from prettytable import PrettyTable
 import csv, numpy as np
 from collections import OrderedDict
 from pyAHP.dotter import Grapher, Recommender
+from utilities.sk import rdivDemo
 
 def default():
   return O(
@@ -139,19 +140,23 @@ class Star1(O):
   def objective_stats(generations):
     stats = []
     obj_len = len(generations[0][0].objectives)
+    objective_map = {}
     for i in range(obj_len):
+      objectives = []
       data_map = {}
       meds = []
       iqrs = []
       for gen, pop in enumerate(generations):
         objs = [pt.objectives[i] for pt in pop]
+        objectives.append(objs)
         med, iqr = median_iqr(objs)
         meds.append(med)
         iqrs.append(iqr)
+      objective_map[i] = objectives
       data_map["meds"] = meds
       data_map["iqrs"] = iqrs
       stats.append(data_map)
-    return stats
+    return stats, objective_map
 
   def evaluate(self, point, decisions):
     model = self.model
@@ -172,13 +177,14 @@ class Star1(O):
       for point in population:
         self.evaluate(point, decisions)
       gens.append(population)
-    obj_stats = self.objective_stats(gens)
-    return obj_stats, gens
+    obj_stats, objective_map = self.objective_stats(gens)
+    return obj_stats, gens, objective_map
 
-  def report(self, stats, sub_folder):
+  def report(self, stats, sub_folder, fig_name):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
     headers = ["root cost", "root benefit", "softgoals", "preset decisions cost"]
-    med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
+    med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+fig_name+".png")
+    return "img/"+sub_folder+"/"+fig_name+".png"
 
   def to_csv(self, stats, fname):
     directory = fname.rsplit("/", 1)[0]
@@ -328,9 +334,32 @@ def linear_seq_clusterer(stats, decisions, key="iqrs", delta=0.25):
   print(table)
   print("```")
 
-def smoothen(stats, decisions):
-  # TODO - Impelement smoothen based on #94
-  pass
+def smoothen(objective_map, decisions, keys=[0, 1, 2]):
+  smoothened = []
+  for key in keys:
+    objectives = objective_map[key]
+    sk_data = []
+    for index, (decision, dec_objectives) in enumerate(zip(decisions, objectives)):
+      sk_data.append([str(index)]+dec_objectives)
+    ranks = rdivDemo(sk_data, do_print=False)
+    rank_map = {}
+    for rank, _, x in ranks:
+      meds_iqrs = rank_map.get(rank, [[], []])
+      med, iqr = median_iqr(x.all)
+      meds_iqrs[0].append(med)
+      meds_iqrs[1].append(iqr)
+      rank_map[rank] = meds_iqrs
+    smooth_objs = {}
+    meds, iqrs = [], []
+    for rank, _, x in ranks:
+      meds_iqrs = rank_map[rank]
+      med, iqr = round(float(np.mean(meds_iqrs[0])), 2), round(float(np.mean(meds_iqrs[1])), 2)
+      meds.append(med)
+      iqrs.append(iqr)
+      smooth_objs["meds"] = meds
+      smooth_objs["iqrs"] = iqrs
+    smoothened.append(smooth_objs)
+  return smoothened
 
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
@@ -343,10 +372,15 @@ def run(graph, subfolder, optimal_index = None):
   star = Star1(model)
   best, rest = star.sample(subfolder)
   decisions = star.rank(best, rest)
-  obj_stats, gens = star.prune(decisions)
-  star.report(obj_stats, subfolder)
+  obj_stats, gens, objective_map = star.prune(decisions)
+  smoothened = smoothen(objective_map, decisions)
+  smoothened.append(obj_stats[3])
+  med_iqr_plot = star.report(obj_stats, subfolder, model.get_tree().name)
+  smoothened_plot = star.report(smoothened, subfolder, model.get_tree().name+"_smooth")
   print("```")
-  print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
+  print("![1](../../../src/%s)"%med_iqr_plot)
+  print("### Smoothened Plot")
+  print("![1](../../../src/%s)"%smoothened_plot)
   print_decisions(decisions)
   plot_support(decisions, "img/%s/%s_support.png"%(subfolder,graph.name))
   tree_name = Grapher(graph, decisions, subfolder).draw_tree()
@@ -374,4 +408,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "cluster_decision_93_invalid")
+  run(tree, "smoothen_invalid")
