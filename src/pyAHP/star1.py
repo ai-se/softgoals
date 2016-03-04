@@ -128,11 +128,11 @@ class Star1(O):
       if not point in population:
         for preset in presets:
           point.decisions[preset.id] = preset.value
-        # if check_validity:
-        #   self.model.reset_nodes(point.decisions)
-        #   self.model.eval(self.model.get_tree().root)
-        #   if self.model.get_tree().root.value != 1:
-        #     continue
+        if check_validity:
+          self.model.reset_nodes(point.decisions)
+          self.model.eval(self.model.get_tree().root)
+          if self.model.get_tree().root.value != 1:
+            continue
         population.append(point)
     return population
 

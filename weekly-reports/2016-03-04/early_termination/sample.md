@@ -17,9 +17,9 @@ rank ,         name ,    med   ,   iqr
    1 ,      gen0_f2 ,      5.0  ,   31.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
    1 ,      gen2_f2 ,      5.0  ,   31.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
    1 ,      gen4_f2 ,      5.0  ,   31.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
-   1 ,      gen6_f2 ,      5.0  ,   33.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
-   1 ,      gen8_f2 ,      5.0  ,   33.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
-   1 ,     gen10_f2 ,      5.0  ,   33.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
+   1 ,      gen6_f2 ,      5.0  ,   31.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
+   1 ,      gen8_f2 ,      5.0  ,   31.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
+   1 ,     gen10_f2 ,      5.0  ,   31.0 (*--------------|-----------   ), 5.00,  5.00,  5.00,  5.00, 38.00
 
 rank ,         name ,    med   ,   iqr 
 ----------------------------------------------------
@@ -39,30 +39,30 @@ rank ,         name ,    med   ,   iqr
 +------+-------------------------------------------------------+----------+-------+------+---------+
 | rank |                          name                         |   type   | value | cost | support |
 +------+-------------------------------------------------------+----------+-------+------+---------+
-|  1   |                   J2EE Specification                  |   task   |   1   |  0   | 0.05348 |
-|  2   |                    Data Model Pilot                   |   task   |   1   |  0   | 0.05306 |
-|  3   |        External data model can be extended(19)        |   goal   |   1   |  4   | 0.05166 |
-|  4   |                   Documentation Tool                  | resource |   1   |  0   | 0.05064 |
-|  5   |                     Bakeoff Result                    |   task   |   1   |  0   |  0.0502 |
-|  6   |                Access Control Assessed                |   task   |   1   |  0   | 0.04691 |
-|  7   | XXX coordinates and internal client does whatever(17) |   goal   |   1   |  3   | 0.04672 |
-|  8   |                     Pnp Framework                     |   goal   |   -1  |  5   | 0.04615 |
-|  9   |                    General Test Env                   |   task   |   1   |  0   | 0.04615 |
-|  10  |                  Access Control Pilot                 |   task   |   1   |  0   | 0.04542 |
-|  11  |                    Monitoring Pilot                   |   task   |   1   |  0   | 0.04471 |
-|  12  |                   DB Vendor Test Env                  |   task   |   1   |  0   | 0.04471 |
-|  13  |                   Data Service Spec                   |   task   |   1   |  0   | 0.04256 |
-|  14  |                         3 Tier                        |   goal   |   1   |  5   | 0.04206 |
-|  15  |       Svc layer w/ extracted biz logic in DB(12)      |   goal   |   1   |  3   | 0.04149 |
-|  16  |          Svc layer w/ extracted biz logic(13)         |   goal   |   1   |  5   | 0.03278 |
-|  17  |       Provide logical data scheme internally(8)       |   goal   |   1   |  3   |  0.0301 |
-|  18  |           Define ext mandatory data std(18)           |   goal   |   1   |  3   |  0.0301 |
-|  19  |                         2 Tier                        |   goal   |   1   |  5   |  0.0292 |
-|  20  |                   Data Service Pilot                  |   task   |   1   |  0   | 0.02884 |
-|  21  | XXX coordinates and external client does whatever(20) |   goal   |   1   |  5   | 0.02717 |
-|  22  |   External clients get exactly what they request(10)  |   goal   |   1   |  4   | 0.02657 |
-|  23  |       Define data model for all shared data(15)       |   goal   |   1   |  3   | 0.02599 |
-|  24  |                      New Database                     |   goal   |   1   |  6   | 0.02221 |
+|  1   |                     Pnp Framework                     |   goal   |   -1  |  5   |  0.0581 |
+|  2   |                      New Database                     |   goal   |   -1  |  6   | 0.05664 |
+|  3   |                    Data Model Pilot                   |   task   |   1   |  0   | 0.04751 |
+|  4   |        External data model can be extended(19)        |   goal   |   1   |  4   |  0.0468 |
+|  5   |                   J2EE Specification                  |   task   |   1   |  0   |  0.0459 |
+|  6   |                   Documentation Tool                  | resource |   1   |  0   | 0.04147 |
+|  7   |                    Monitoring Pilot                   |   task   |   1   |  0   | 0.03907 |
+|  8   |                    General Test Env                   |   task   |   1   |  0   | 0.03843 |
+|  9   |                Access Control Assessed                |   task   |   1   |  0   | 0.03812 |
+|  10  |                     Bakeoff Result                    |   task   |   1   |  0   | 0.03812 |
+|  11  |                   DB Vendor Test Env                  |   task   |   1   |  0   | 0.03636 |
+|  12  |                  Access Control Pilot                 |   task   |   1   |  0   | 0.03528 |
+|  13  | XXX coordinates and internal client does whatever(17) |   goal   |   1   |  3   | 0.03316 |
+|  14  |                         2 Tier                        |   goal   |   1   |  5   | 0.03291 |
+|  15  |   External clients get exactly what they request(10)  |   goal   |   1   |  4   | 0.03179 |
+|  16  |                   Data Service Pilot                  |   task   |   1   |  0   | 0.02868 |
+|  17  |                   Data Service Spec                   |   task   |   1   |  0   | 0.02797 |
+|  18  |                         3 Tier                        |   goal   |   1   |  5   | 0.02517 |
+|  19  | XXX coordinates and external client does whatever(20) |   goal   |   1   |  5   | 0.02137 |
+|  20  |       Define data model for all shared data(15)       |   goal   |   -1  |  3   | 0.02077 |
+|  21  |           Define ext mandatory data std(18)           |   goal   |   -1  |  3   | 0.02073 |
+|  22  |       Provide logical data scheme internally(8)       |   goal   |   -1  |  3   | 0.01865 |
+|  23  |          Svc layer w/ extracted biz logic(13)         |   goal   |   1   |  5   | 0.01803 |
+|  24  |       Svc layer w/ extracted biz logic in DB(12)      |   goal   |   -1  |  3   | 0.01735 |
 +------+-------------------------------------------------------+----------+-------+------+---------+
 ```
 
@@ -76,31 +76,31 @@ rank ,         name ,    med   ,   iqr
 +------------+-------------------------------------------------------+
 | Cluster ID |                     Decision Name                     |
 +------------+-------------------------------------------------------+
-|     1      |                   J2EE Specification                  |
-|     "      |                    Data Model Pilot                   |
-|     "      |        External data model can be extended(19)        |
-|     "      |                   Documentation Tool                  |
-|     "      |                     Bakeoff Result                    |
-|     "      |                Access Control Assessed                |
-|     "      | XXX coordinates and internal client does whatever(17) |
-|     "      |                     Pnp Framework                     |
-|     "      |                    General Test Env                   |
-|     "      |                  Access Control Pilot                 |
-|     "      |                    Monitoring Pilot                   |
-|     "      |                   DB Vendor Test Env                  |
-|     "      |                   Data Service Spec                   |
-|     2      |                         3 Tier                        |
-|     3      |       Svc layer w/ extracted biz logic in DB(12)      |
-|     4      |          Svc layer w/ extracted biz logic(13)         |
-|     5      |       Provide logical data scheme internally(8)       |
-|     6      |           Define ext mandatory data std(18)           |
-|     7      |                         2 Tier                        |
-|     "      |                   Data Service Pilot                  |
-|     8      | XXX coordinates and external client does whatever(20) |
-|     9      |   External clients get exactly what they request(10)  |
-|     "      |       Define data model for all shared data(15)       |
+|     1      |                     Pnp Framework                     |
 |     "      |                      New Database                     |
+|     2      |                    Data Model Pilot                   |
+|     "      |        External data model can be extended(19)        |
+|     "      |                   J2EE Specification                  |
+|     "      |                   Documentation Tool                  |
+|     "      |                    Monitoring Pilot                   |
+|     "      |                    General Test Env                   |
+|     "      |                Access Control Assessed                |
+|     "      |                     Bakeoff Result                    |
+|     "      |                   DB Vendor Test Env                  |
+|     "      |                  Access Control Pilot                 |
+|     "      | XXX coordinates and internal client does whatever(17) |
+|     "      |                         2 Tier                        |
+|     "      |   External clients get exactly what they request(10)  |
+|     "      |                   Data Service Pilot                  |
+|     "      |                   Data Service Spec                   |
+|     "      |                         3 Tier                        |
+|     "      | XXX coordinates and external client does whatever(20) |
+|     "      |       Define data model for all shared data(15)       |
+|     "      |           Define ext mandatory data std(18)           |
+|     "      |       Provide logical data scheme internally(8)       |
+|     "      |          Svc layer w/ extracted biz logic(13)         |
+|     "      |       Svc layer w/ extracted biz logic in DB(12)      |
 +------------+-------------------------------------------------------+
 ```
 
-### Time Taken : 37.573734045
+### Time Taken : 56.8417711258
