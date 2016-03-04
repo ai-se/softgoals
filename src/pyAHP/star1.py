@@ -368,8 +368,10 @@ def run(graph, subfolder, optimal_index = None):
   model = Model(graph)
   print("## [Model](https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)")
   print("## %s"%graph.name)
-  print("```")
   star = Star1(model)
+  if star.de.termination is not None:
+    print("### Early Termination Cost = %d"%star.de.termination)
+  print("```")
   best, rest = star.sample(subfolder)
   decisions = star.rank(best, rest)
   obj_stats, gens, objective_map = star.prune(decisions)
@@ -408,4 +410,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "smoothen_invalid")
+  run(tree, "early_termination")

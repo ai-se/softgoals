@@ -21,7 +21,8 @@ def default():
     is_percent = True,
     binary = True,
     dominates = "bdom",
-    cdom_delta = 0.01
+    cdom_delta = 0.01,
+    early_termination = True,
   )
 
 
@@ -40,6 +41,17 @@ class DE(O):
     self.model.settings.better = self.settings.better
     self.model.settings.is_percent = self.settings.is_percent
     self.global_set = set()
+    if self.settings.early_termination:
+      self.termination = DE.early_termination_cost(model)
+    else:
+      self.termination = None
+
+  @staticmethod
+  def early_termination_cost(model):
+    total_cost = 0
+    for node in model.get_tree().get_nodes():
+      total_cost += node.base_cost
+    return random.randint(int(total_cost/3), int(total_cost))
 
   def assign_frontier_size(self):
     """
@@ -53,7 +65,11 @@ class DE(O):
     population = set()
     while len(population) < size:
       point = Point(self.mutator.generate())
-      if (not point in self.global_set) and self.model.check_constraints(point):
+      objs = self.model.get_tree().evaluate(self.model, point)
+      early_terminates = False
+      if self.termination is None or objs[0] < self.termination:
+        early_terminates = True
+      if (not point in self.global_set) and self.model.check_constraints(point) and early_terminates:
         self.global_set.add(point)
         population.add(point)
     return list(population)
@@ -79,8 +95,11 @@ class DE(O):
         original_obj = self.model.get_tree().evaluate(self.model, point)
         mutant = self.mutate(point, population)
         mutated_obj = self.model.get_tree().evaluate(self.model, mutant)
-        if not self.model.check_constraints(mutant):
+        if (self.termination is not None and mutated_obj[0] >= self.termination) or \
+            (not self.model.check_constraints(mutant)):
           continue
+        if mutated_obj[0] >= self.termination:
+          print(mutated_obj[0], self.termination)
         if self.dominates(mutated_obj, original_obj) and (not mutant in self.global_set):
           clones.remove(point)
           clones.append(mutant)

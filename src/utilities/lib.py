@@ -163,6 +163,25 @@ def mkdir(directory):
   if not os.path.exists(directory):
     os.makedirs(directory)
 
+
+def traingular(low, mode, high):
+  """
+  Returns a value in a triangular distribution
+  :param low: Low value
+  :param mode: Mode value
+  :param high: High value
+  :return:
+  """
+  # TODO implement triangular distribution
+  r = rand()
+  if r == (mode - low)/(high - low):
+    return mode
+  elif r < (mode - low)/(high - low):
+    return low + (r * (high - low) * (mode - low))**0.5
+  else:
+    return high - ((1 - r) * (high - low) * (high - mode))**0.5
+  pass
+
 class Statistics(O):
   @staticmethod
   def default_settings():
