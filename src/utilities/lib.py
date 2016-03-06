@@ -164,7 +164,7 @@ def mkdir(directory):
     os.makedirs(directory)
 
 
-def traingular(low, mode, high):
+def triangular(low, mode, high, do_round = True):
   """
   Returns a value in a triangular distribution
   :param low: Low value
@@ -174,13 +174,18 @@ def traingular(low, mode, high):
   """
   # TODO implement triangular distribution
   r = rand()
-  if r == (mode - low)/(high - low):
-    return mode
+  if high == low:
+    value = 0
+  elif r == (mode - low)/(high - low):
+    value = mode
   elif r < (mode - low)/(high - low):
-    return low + (r * (high - low) * (mode - low))**0.5
+    value = low + (r * (high - low) * (mode - low))**0.5
   else:
-    return high - ((1 - r) * (high - low) * (high - mode))**0.5
-  pass
+    value = high - ((1 - r) * (high - low) * (high - mode))**0.5
+  if do_round:
+    return round(value, 2)
+  return value
+
 
 class Statistics(O):
   @staticmethod

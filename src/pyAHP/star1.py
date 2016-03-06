@@ -365,7 +365,7 @@ def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
   start = time.time()
-  model = Model(graph)
+  model = Model(graph, generation_mode="triangular")
   print("## [Model](https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)")
   print("## %s"%graph.name)
   star = Star1(model)
@@ -410,4 +410,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "early_termination")
+  run(tree, "junk")

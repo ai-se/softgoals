@@ -6,7 +6,7 @@ sys.dont_write_bytecode = True
 from template import *
 import random
 from math import exp
-from copy import deepcopy
+from utilities.lib import triangular
 
 def coin_toss():
   return random.choice([t, f])
@@ -22,12 +22,18 @@ def shuffle(lst):
   random.shuffle(lst)
   return lst
 
+def default_settings():
+  return O(
+    generation_mode = "regular" # Can be "exponential" or "triangular"
+  )
+
 class Model(O):
   def __init__(self, tree, **settings):
     O.__init__(self)
-    self.settings = O().update(**settings)
+    self.settings = default_settings().update(**settings)
     self._tree = tree
     self.bases = self._tree.get_bases()
+    self.generate_costs_benefits()
 
   def get_tree(self):
     return self._tree
@@ -67,30 +73,32 @@ class Model(O):
       point_map[node.id] = random.choice([t, f])
     return point_map
 
-  def get_node_base_cost(self, node):
-    return node.base_cost
-    if node.base_cost == 0:
-      return 0
-    level = 0
-    if hasattr(node, 'level'):
-      level = node.level
-    return exp(node.base_cost) * exp(self.get_tree().max_level-level)
-
-  def get_node_base_benefit(self, node):
-    return node.base_benefit
-    if node.base_benefit == 0:
-      return 0
-    level = 0
-    if hasattr(node, 'level'):
-      level = node.level
-    return exp(node.base_benefit) * exp(self.get_tree().max_level-level)
+  def generate_costs_benefits(self):
+    for node in self.get_tree().get_nodes():
+      if self.settings.generation_mode == "regular":
+        node.base_cost = node.default_cost
+        node.base_benefit = node.default_benefit
+      elif self.settings.generation_mode == "exponential":
+        if node.default_cost == 0:
+          node.base_cost = 0
+        else:
+          level = node.level if hasattr(node, 'level') else 0
+          node.base_cost = exp(node.default_cost) * exp(self.get_tree().max_level-level)
+        if node.default_benefit == 0:
+          node.base_benefit = 0
+        else:
+          level = node.level if hasattr(node, 'level') else 0
+          node.base_benefit = exp(node.default_benefit) * exp(self.get_tree().max_level-level)
+      elif self.settings.generation_mode == "triangular":
+        node.base_cost = triangular(node.default_cost, node.default_cost*1.5 ,2*node.default_cost)
+        node.base_benefit = triangular(node.default_benefit, node.default_benefit*1.5 ,2*node.default_benefit)
 
   def clear_nodes(self):
     for node in self._tree.nodes.values():
       node.value = None
       node.is_random = False
-      node.cost = self.get_node_base_cost(node)
-      node.benefit = self.get_node_base_benefit(node)
+      node.cost = node.base_cost
+      node.benefit = node.base_benefit
       node.selected = None
 
   def reset_nodes(self, initial_node_map):
@@ -220,13 +228,15 @@ class Point(O):
     self.dominating = 0
     self.dominated = []
     self.crowd_dist = 0
+    # Cost attributes
+    self.node_costs = None
+    self.node_benefits = None
 
   def get_nodes(self):
     return self._nodes
 
   def get_node_by_name(self, name):
     """
-
     :param name:
     :return:
     """
@@ -284,6 +294,13 @@ class Point(O):
     else:
       return f
 
+  def update_leaf_values(self, model):
+    node_costs, node_benefits = {}, {}
+    for node in model.get_tree().get_nodes():
+      node_costs[node.id] = node.base_cost
+      node_benefits[node.id] = node.base_benefit
+    self.node_costs = node_costs
+    self.node_benefits = node_benefits
 
 
 def _main():

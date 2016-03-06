@@ -7,6 +7,7 @@ from utilities.lib import *
 import time
 from math import exp
 from pyAHP.model import Model, Point
+from copy import deepcopy
 
 MIN_FRONTIER_SIZE=10
 
@@ -65,6 +66,7 @@ class DE(O):
     population = set()
     while len(population) < size:
       point = Point(self.mutator.generate())
+      point.update_leaf_values(self.model)
       objs = self.model.get_tree().evaluate(self.model, point)
       early_terminates = False
       if self.termination is None or objs[0] < self.termination:
@@ -94,12 +96,11 @@ class DE(O):
       for point in population:
         original_obj = self.model.get_tree().evaluate(self.model, point)
         mutant = self.mutate(point, population)
+        mutant.update_leaf_values(self.model)
         mutated_obj = self.model.get_tree().evaluate(self.model, mutant)
         if (self.termination is not None and mutated_obj[0] >= self.termination) or \
             (not self.model.check_constraints(mutant)):
           continue
-        if mutated_obj[0] >= self.termination:
-          print(mutated_obj[0], self.termination)
         if self.dominates(mutated_obj, original_obj) and (not mutant in self.global_set):
           clones.remove(point)
           clones.append(mutant)
