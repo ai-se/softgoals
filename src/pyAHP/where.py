@@ -21,6 +21,7 @@ class Row(O):
   def __init__(self, decisions):
     O.__init__(self)
     self.decisions = decisions
+    self.meta = None
     self.normalized = None
 
 class TreeNode(O):
@@ -224,6 +225,15 @@ class Where(O):
       east, west = self.get_furthest2(rows)
       node.west, node.east = west, east
     return node
+
+  def get_leaves(self, node):
+    leaves = []
+    if node.kids:
+      for kid in node.kids:
+        leaves += self.get_leaves(kid)
+    else:
+      leaves = [node]
+    return leaves
 
 
 
