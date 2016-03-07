@@ -563,6 +563,7 @@ class Modernize(Tree):
       model.reset_nodes(point.decisions)
       model.eval(model.get_tree().root)
       point.objectives = [self.evaluate_cost(), self.evaluate_benefit(), self.evaluate_softgoals(model)]
+      point.decisions_set = self.get_decisions_set()
       point._nodes = [node.clone() for node in tree.nodes.values()]
     return point.objectives
 
@@ -584,6 +585,24 @@ class Modernize(Tree):
       if node.value == t:
         satisfied += 1
     return satisfied
+
+  def get_decisions_set(self):
+    def recurse(node):
+      if node.value == f:
+        return 0
+      elif not node.from_edges and node.value == t:
+        return 1
+      kids = [self.get_node(self.get_edge(e_id).source) for e_id in node.from_edges]
+      ret_val = 0
+      for kid in kids:
+        ret_val += recurse(kid)
+      return ret_val
+    children = [self.get_node(self.get_edge(edge_id).source) for edge_id in self.root.from_edges]
+    left, right = children[0], children[1]
+    if right.cost == self.root.cost and right.benefit == self.root.benefit:
+      return recurse(right)
+    else:
+      return recurse(left)
 
   def set_limits(self):
     """

@@ -4,16 +4,17 @@ sys.path.append(os.path.abspath("."))
 from utilities.lib import *
 from pyAHP.de import DE
 from pyAHP.model import Model
+from pyAHP.where import Where, Row
 __author__ = 'panzer'
 
 
-# TODO - Select cost and benefit from triangular functions
-# TODO - Run an MOEA to select top decisions that yield lowest cost and highest benefit.
 # TODO - Somehow find values of cost and benefit that change the decisions selected.
 
 def default_settings():
   return O(
-    gens = 1000
+    gens = 100,
+    decisions_names = ["costs", "benefits", "softgoals", "decisions_set"],
+    verbose = True
   )
 
 class Active(O):
@@ -57,12 +58,24 @@ class Active(O):
       best_points += list(gen_best_benefits)
     return best_points
 
+  def cluster(self, best_points):
+    rows = []
+    for point in best_points:
+      objs = point.objectives + [point.decisions_set]
+      rows.append(Row(objs))
+    where = Where(rows, min_size = (len(rows)**0.5))
+    print("")
+    where.cluster(verbose=self.settings.verbose)
+
+  # TODO - Show clusters
+
+
 def _main():
   from pyAHP.models.sample import tree
   model = Model(tree, generation_mode = "triangular")
   active = Active(model)
-  active.learn()
-
+  best_points = active.learn()
+  active.cluster(best_points)
 
 if __name__ == "__main__":
   _main()

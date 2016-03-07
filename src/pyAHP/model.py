@@ -224,6 +224,7 @@ class Point(O):
     self.decisions = decisions
     self.objectives = objectives
     self._nodes = None
+    self.decisions_set = None
     # Attributes for NSGA2
     self.dominating = 0
     self.dominated = []
