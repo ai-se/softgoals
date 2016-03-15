@@ -68,7 +68,7 @@ class Active(O):
   def learn(self):
     best_points = []
     for _ in range(self.settings.gens):
-      say(".")
+      #say(".")
       self.de.model.generate_costs_benefits()
       stat = self.de.run()
       last_gen = stat.generations[-1]
@@ -139,7 +139,11 @@ class Active(O):
     return report
 
 
-def _main():
+def test_triangular():
+  """
+  Refer github.com/ai-se/softgoals/issues/95
+  :return:
+  """
   from pyAHP.models.sample import tree
   model = Model(tree, generation_mode = "triangular")
   active = Active(model)
@@ -150,6 +154,21 @@ def _main():
     active.report_cluster(cluster).print()
 
 
+def test_uniform_3():
+  """
+  Refer github.com/ai-se/softgoals/issues/98
+  :return:
+  """
+  from pyAHP.models.sample import tree
+  model = Model(tree, generation_mode = "3-uniform")
+  active = Active(model, gens = 100)
+  best_points = active.learn()
+  clusters = active.cluster(best_points)
+  print("")
+  for cluster in clusters:
+    active.report_cluster(cluster).print()
+
+
 if __name__ == "__main__":
-  _main()
+  test_uniform_3()
 

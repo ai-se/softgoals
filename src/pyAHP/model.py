@@ -6,7 +6,7 @@ sys.dont_write_bytecode = True
 from template import *
 import random
 from math import exp
-from utilities.lib import triangular
+from utilities.lib import triangular, choice
 
 def coin_toss():
   return random.choice([t, f])
@@ -92,6 +92,9 @@ class Model(O):
       elif self.settings.generation_mode == "triangular":
         node.base_cost = triangular(node.default_cost, node.default_cost*1.5 ,2*node.default_cost)
         node.base_benefit = triangular(node.default_benefit, node.default_benefit*1.5 ,2*node.default_benefit)
+      elif self.settings.generation_mode == "3-uniform":
+        node.base_cost = uniform_triangle(node.default_cost)
+        node.base_benefit = uniform_triangle(node.default_benefit)
 
   def clear_nodes(self):
     for node in self._tree.nodes.values():
@@ -304,6 +307,13 @@ class Point(O):
     self.node_benefits = node_benefits
 
 
+def uniform_triangle(val, lst_size = 3):
+  lst = [val]
+  delta = 2*val/(lst_size-1)
+  while len(lst) < lst_size:
+    lst.append(lst[-1]+delta)
+  return choice(lst)
+
 def _main():
   from pyAHP.models.sample import tree
   model = Model(tree)
@@ -314,7 +324,3 @@ def _main():
 
 if __name__ == "__main__":
   _main()
-
-
-
-
