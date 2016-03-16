@@ -1,10 +1,11 @@
 from __future__ import print_function, division
-import sys,os
+import sys,os, csv
 sys.path.append(os.path.abspath("."))
 from utilities.lib import *
 from pyAHP.de import DE
 from pyAHP.model import Model
 from pyAHP.where import Where, Row
+from collections import OrderedDict
 __author__ = 'panzer'
 
 
@@ -68,7 +69,7 @@ class Active(O):
   def learn(self):
     best_points = []
     for _ in range(self.settings.gens):
-      #say(".")
+      say(".")
       self.de.model.generate_costs_benefits()
       stat = self.de.run()
       last_gen = stat.generations[-1]
@@ -121,12 +122,12 @@ class Active(O):
         node_benefits = benefits_map.get(node_id, [])
         node_benefits.append(row.meta.benefits[node_id])
         benefits_map[node_id] = node_benefits
-    decisions_report = {}
+    decisions_report = OrderedDict()
     for index, name in enumerate(self.settings.decisions_names):
       median, iqr = median_iqr(decisions_map[index])
       decisions_report[name] =  O(median = median, iqr = iqr)
     report.decisions = decisions_report
-    nodes_report = {}
+    nodes_report = OrderedDict()
     for node_id in costs_map.keys():
       name = self.de.model.get_tree().get_node(node_id).name
       costs = costs_map[node_id]
@@ -138,6 +139,36 @@ class Active(O):
     report.nodes = nodes_report
     return report
 
+  def dump_clusters(self, cluster_reports, folder):
+    def to_csv(file_name, rows):
+      with open(file_name, "wb") as file_obj:
+        writer = csv.writer(file_obj)
+        writer.writerows(rows)
+      return file_name
+
+    #decisions = cluster_reports[0].nodes.keys()
+    decisions = [base.name for base in self.de.model.bases]
+    objectives = cluster_reports[0].decisions.keys()
+    costs_list, benefits_list = [], []
+    header = ["Cluster ID"] + decisions + ["?%s"%obj for obj in objectives]
+    costs_list.append(header)
+    benefits_list.append(header)
+    for cluster_id, cluster in enumerate(cluster_reports):
+      cost_row, benefit_row = [cluster_id+1], [cluster_id+1]
+      for decision in decisions:
+        cost_row.append(cluster.nodes[decision].cost.median)
+        benefit_row.append(cluster.nodes[decision].benefit.median)
+      for objective in objectives:
+        cost_row.append(cluster.decisions[objective].median)
+        benefit_row.append(cluster.decisions[objective].median)
+      costs_list.append(cost_row)
+      benefits_list.append(benefit_row)
+    directory = "csv/%s"%folder
+    mkdir(directory)
+    cost_csv = to_csv("%s/costs.csv"%directory, costs_list)
+    benefit_csv = to_csv("%s/benefits.csv"%directory, benefits_list)
+    print("### [Costs](../../../src/%s)"%cost_csv)
+    print("### [Benefits](../../../src/%s)"%benefit_csv)
 
 def test_triangular():
   """
@@ -154,7 +185,7 @@ def test_triangular():
     active.report_cluster(cluster).print()
 
 
-def test_uniform_3():
+def test_uniform_3(folder):
   """
   Refer github.com/ai-se/softgoals/issues/98
   :return:
@@ -164,11 +195,14 @@ def test_uniform_3():
   active = Active(model, gens = 100)
   best_points = active.learn()
   clusters = active.cluster(best_points)
-  print("")
+  reports = []
   for cluster in clusters:
-    active.report_cluster(cluster).print()
+    report = active.report_cluster(cluster)
+    reports.append(report)
+    #report.print()
+  active.dump_clusters(reports, folder)
 
 
 if __name__ == "__main__":
-  test_uniform_3()
+  test_uniform_3("cluster_csv")
 
