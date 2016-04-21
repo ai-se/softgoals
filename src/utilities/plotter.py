@@ -156,7 +156,7 @@ def med_spread_plot(data, obj_names, fig_name="temp.png", **settings):
       plt.ylim((min(meds)-1, max(meds)+1))
   blue_line = mlines.Line2D([],[], color='blue', label='Median')
   red_line = mlines.Line2D([],[], color='red', label='IQR')
-  plt.figlegend((blue_line, red_line), ('Median', 'IQR'), 'upper right', bbox_to_anchor=(2,0.5))
+  plt.figlegend((blue_line, red_line), ('Median', 'IQR'), loc=9, bbox_to_anchor=(0.5, 0.075), ncol=2)
   plt.savefig(fig_name)
   plt.clf()
 
