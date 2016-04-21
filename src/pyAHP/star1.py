@@ -15,10 +15,10 @@ from utilities.sk import rdivDemo
 
 def default():
   return O(
-    k1 = 10,
+    k1 = 100,
     k2 = 100,
     best_percent = 33,
-    gen_step = 2
+    gen_step = 20
   )
 
 class Decision(O):

@@ -23,7 +23,7 @@ def default():
     binary = True,
     dominates = "bdom",
     cdom_delta = 0.01,
-    early_termination = True,
+    early_termination = False,
   )
 
 
