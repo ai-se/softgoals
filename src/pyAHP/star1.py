@@ -334,7 +334,7 @@ def linear_seq_clusterer(stats, decisions, key="iqrs", delta=0.25):
   print(table)
   print("```")
 
-def smoothen(objective_map, decisions, keys=[0, 1, 2]):
+def smoothen(objective_map, decisions, keys=[0, 1]):
   smoothened = []
   for key in keys:
     objectives = objective_map[key]
@@ -365,7 +365,7 @@ def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
   start = time.time()
-  model = Model(graph, generation_mode="triangular")
+  model = Model(graph)
   print("## [Model](https://github.com/ai-se/softgoals/blob/master/pdf/AOWS.pdf)")
   print("## %s"%graph.name)
   star = Star1(model)
@@ -376,7 +376,7 @@ def run(graph, subfolder, optimal_index = None):
   decisions = star.rank(best, rest)
   obj_stats, gens, objective_map = star.prune(decisions)
   smoothened = smoothen(objective_map, decisions)
-  smoothened.append(obj_stats[3])
+  smoothened += obj_stats[2:]
   med_iqr_plot = star.report(obj_stats, subfolder, model.get_tree().name)
   smoothened_plot = star.report(smoothened, subfolder, model.get_tree().name+"_smooth")
   print("```")
