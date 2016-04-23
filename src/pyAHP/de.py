@@ -23,7 +23,7 @@ def default():
     binary = True,
     dominates = "bdom",
     cdom_delta = 0.01,
-    early_termination = True,
+    early_termination = False,
   )
 
 
@@ -43,8 +43,7 @@ class DE(O):
     self.model.settings.is_percent = self.settings.is_percent
     self.global_set = set()
     if self.settings.early_termination:
-      #self.termination = DE.early_termination_cost(model)
-      self.termination = 29
+      self.termination = DE.early_termination_cost(model)
     else:
       self.termination = None
 
