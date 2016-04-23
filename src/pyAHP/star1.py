@@ -410,4 +410,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "junk")
+  run(tree, "junk_et")
