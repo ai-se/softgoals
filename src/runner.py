@@ -112,7 +112,11 @@ def main():
 SUB_FOLDER = "induced_softgoals"
 
 if __name__ == "__main__":
-  main()
+  #main()
+  from pystar.models.dot_models import modelers
+  for model in modelers:
+    m = model()
+    print(model.__name__, len(m.nodes), len(m.edges))
 
 
 
