@@ -109,14 +109,14 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "induced_softgoals"
+SUB_FOLDER = "correction"
 
 if __name__ == "__main__":
-  #main()
-  from pystar.models.dot_models import modelers
-  for model in modelers:
-    m = model()
-    print(model.__name__, len(m.nodes), len(m.edges))
+  main()
+  # from pystar.models.dot_models import modelers
+  # for model in modelers:
+  #   m = model()
+  #   print(model.__name__, len(m.nodes), len(m.edges))
 
 
 
