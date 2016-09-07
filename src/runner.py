@@ -7,6 +7,8 @@ from utilities.de import DE
 from pystar.nsga2 import NSGA2
 from utilities.plotter import plot_clusters, bar_plot, med_spread_plot
 from utilities.kmeans import KMeans
+from star1 import star1
+from pystar.models.dot_models import modelers, optimal_indices, CSSAProgram
 
 def process_ood(file_name):
   name = os.path.basename(file_name).split(".")[0]
@@ -89,8 +91,6 @@ def test_ome_trees():
   bar_plot(times, 'img/random_runtimes.png')
 
 def test_star1(model_name, show_optimal_index = True):
-  from pystar.models.dot_models import modelers, optimal_indices
-  from star1 import star1
   for model in modelers:
     if model.__name__ == model_name:
       optimal_index = optimal_indices.get(model_name, None) if show_optimal_index else None
@@ -127,6 +127,8 @@ SUB_FOLDER = "correction"
 
 if __name__ == "__main__":
   main()
+  # star1.run(CSSAProgram(), SUB_FOLDER, optimal_index=True)
+  # test_star1("CSCounselling", True)
   # nsga2_main()
   # from pystar.models.dot_models import modelers
   # for model in modelers:

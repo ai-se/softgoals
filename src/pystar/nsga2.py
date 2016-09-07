@@ -79,6 +79,7 @@ class NSGA2(O):
   def generate(self, size):
     population = list()
     generator = Generator(self.model)
+
     while len(population) < size:
       # point = Point(self.model.generate())
       point = Point(generator.generate())
