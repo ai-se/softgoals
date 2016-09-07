@@ -10,7 +10,7 @@ from utilities.de import Generator
 
 def default():
   return O(
-    gens = 5,
+    gens = 250,
     candidates = 100,
     f = 0.75,
     cr = 0.3,
@@ -74,7 +74,7 @@ class NSGA2(O):
 
   def assign_frontier_size(self):
     num_decs = len(self.model.generate().keys())
-    return min(int(2 ** num_decs), default().candidates)
+    return min(int((2 ** num_decs)/20), default().candidates)
 
   def generate(self, size):
     population = list()
@@ -110,26 +110,6 @@ class NSGA2(O):
       return 2
     else:
       return 0
-
-  def run(self):
-    """
-    Runner function that runs the NSGA2 optimization algorithm
-    """
-    start = get_time()
-    self.population = self.generate(self.settings.candidates)
-    pop_size = len(self.population)
-    self.gen = 0
-    while self.gen < self.settings.gens:
-      say(".")
-      self.gen += 1
-      self.population = self.select(self.population)
-      self.population = self.evolve(self.population, pop_size)
-    self.runtime = get_time() - start
-    objs = [one.objectives for one in self.population]
-    print("")
-    for i in range(len(self.settings.obj_funcs)):
-      print(median_iqr([one[i] for one in objs]))
-    return self.population
 
   def select(self, population):
     kids = []
@@ -254,3 +234,26 @@ class NSGA2(O):
       if self.bdom(this_obj, best_obj):
         best = tourn[i]
     return best
+
+  def run(self):
+    """
+    Runner function that runs the NSGA2 optimization algorithm
+    """
+    start = get_time()
+    self.population = self.generate(self.settings.candidates)
+    pop_size = len(self.population)
+    self.gen = 0
+    print(self.model._tree.name)
+    while self.gen < self.settings.gens:
+      say(".")
+      self.gen += 1
+      self.population = self.select(self.population)
+      self.population = self.evolve(self.population, pop_size)
+    self.runtime = get_time() - start
+    objs = [one.objectives for one in self.population]
+    print("")
+    for i in range(len(self.settings.obj_funcs)):
+      lst = [one[i] for one in objs]
+      print(self.settings.obj_funcs[i].__name__, min(lst), median_iqr(lst), max(lst))
+    print("Runtime : ", get_time()-start)
+    return self.population

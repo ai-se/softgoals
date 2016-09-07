@@ -104,7 +104,7 @@ def test_nsga2(model_name):
 
 def nsga2_main():
   args = sys.argv
-  if len(args) <= 2:
+  if len(args) < 2:
     print("Invalid args")
     exit()
   test_nsga2(args[1]).run()
@@ -127,7 +127,7 @@ SUB_FOLDER = "nsga"
 
 if __name__ == "__main__":
   # main()
-  test_nsga2("CSServices")
+  nsga2_main()
   # from pystar.models.dot_models import modelers
   # for model in modelers:
   #   m = model()
