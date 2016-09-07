@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    1 ,      gen8_f2 ,    44.83  ,   3.45 (           ----|-------      *),34.48, 41.38, 44.83, 44.83, 44.83
    1 ,     gen10_f2 ,    44.83  ,   3.45 (           ----|-------      *),34.48, 41.38, 44.83, 44.83, 44.83
 ```
-
-### Time Taken : 39.5793659687
 ![1](../../../src/img/correction/CSCounselling.png)
+### Smoothened Plot
+![1](../../../src/img/correction/CSCounselling_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -130,3 +130,5 @@ rank ,         name ,    med   ,   iqr
 | 100  |                   ! Write Articles for Magazines 1                   |   task   |   -1  |  1   |  0.0035 |
 +------+----------------------------------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 59.9634420872

@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    3 ,      gen8_f2 ,    65.22  ,   4.35 (     ----------|----------   *),30.43, 60.87, 65.22, 65.22, 65.22
    3 ,     gen10_f2 ,    65.22  ,    0.0 (               |             *),65.22, 65.22, 65.22, 65.22, 65.22
 ```
-
-### Time Taken : 49.022331953
 ![1](../../../src/img/correction/CSServices.png)
+### Smoothened Plot
+![1](../../../src/img/correction/CSServices_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -101,3 +101,5 @@ rank ,         name ,    med   ,   iqr
 |  71  |           Kids Use Bulletin Board with Replies1            |   task   |   -1  |  1   | 0.00174 |
 +------+------------------------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 47.8813660145

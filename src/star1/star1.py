@@ -10,6 +10,8 @@ from utilities.de import DE
 from utilities.nsga2 import select as sel_nsga2
 from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
+from utilities.sk import rdivDemo
+import numpy as np
 
 def default():
   return O(
@@ -147,19 +149,23 @@ class Star1(O):
   def objective_stats(generations):
     stats = []
     obj_len = len(generations[0][0].objectives)
+    objective_map={}
     for i in range(obj_len):
+      objectives = []
       data_map = {}
       meds = []
       iqrs = []
       for gen, pop in enumerate(generations):
         objs = [pt.objectives[i] for pt in pop]
+        objectives.append(objs)
         med, iqr = median_iqr(objs)
         meds.append(med)
         iqrs.append(iqr)
+      objective_map[i] = objectives
       data_map["meds"] = meds
       data_map["iqrs"] = iqrs
       stats.append(data_map)
-    return stats
+    return stats, objective_map
 
   def evaluate(self, point, decisions):
     model = self.model
@@ -181,13 +187,14 @@ class Star1(O):
         # TODO - Mark Best objective model here
         #self.de.settings.evaluation(point, self.model, self.de.settings.obj_funcs)
       gens.append(population)
-    obj_stats = self.objective_stats(gens)
-    return obj_stats, gens
+    obj_stats, objective_map = self.objective_stats(gens)
+    return obj_stats, gens, objective_map
 
-  def report(self, stats, sub_folder):
+  def report(self, stats, sub_folder, fig_name):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
     headers = ["softgoals", "goals", "paths", "costs"]
-    med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+self.model.get_tree().name+".png")
+    med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+fig_name+".png")
+    return "img/"+sub_folder+"/"+fig_name+".png"
 
   @staticmethod
   def get_elbow(gens, index, obj_index=None):
@@ -207,6 +214,33 @@ def print_decisions(decisions):
   print(table)
   print("```")
 
+def smoothen(objective_map, decisions, keys=[0, 1]):
+  smoothened = []
+  for key in keys:
+    objectives = objective_map[key]
+    sk_data = []
+    for index, (decision, dec_objectives) in enumerate(zip(decisions, objectives)):
+      sk_data.append([str(index)]+dec_objectives)
+    ranks = rdivDemo(sk_data, do_print=False)
+    rank_map = {}
+    for rank, _, x in ranks:
+      meds_iqrs = rank_map.get(rank, [[], []])
+      med, iqr = median_iqr(x.all)
+      meds_iqrs[0].append(med)
+      meds_iqrs[1].append(iqr)
+      rank_map[rank] = meds_iqrs
+    smooth_objs = {}
+    meds, iqrs = [], []
+    for rank, _, x in ranks:
+      meds_iqrs = rank_map[rank]
+      med, iqr = round(float(np.mean(meds_iqrs[0])), 2), round(float(np.mean(meds_iqrs[1])), 2)
+      meds.append(med)
+      iqrs.append(iqr)
+      smooth_objs["meds"] = meds
+      smooth_objs["iqrs"] = iqrs
+    smoothened.append(smooth_objs)
+  return smoothened
+
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
@@ -217,12 +251,15 @@ def run(graph, subfolder, optimal_index = None):
   star = Star1(model)
   best, rest = star.sample()
   decisions = star.rank(best, rest)
-  obj_stats, gens = star.prune(decisions)
-  delta = time.time() - start
-  star.report(obj_stats, subfolder)
+  obj_stats, gens, objective_map = star.prune(decisions)
+  smoothened = smoothen(objective_map, decisions)
+  smoothened += obj_stats[2:]
+  med_iqr_plot = star.report(obj_stats, subfolder, graph.name)
+  smoothened_plot = star.report(smoothened[:3], subfolder, model.get_tree().name + "_smooth")
   print("```")
-  print("\n### Time Taken : %s"%delta)
-  print("![1](../../../src/img/%s/%s.png)"%(subfolder,graph.name))
+  print("![1](../../../src/%s)"%med_iqr_plot)
+  print("### Smoothened Plot")
+  print("![1](../../../src/%s)" % smoothened_plot)
   print_decisions(decisions)
   if optimal_index is not None:
     print("\n### Top %d Decisions from above table."%optimal_index)
@@ -236,3 +273,5 @@ def run(graph, subfolder, optimal_index = None):
         table.add_row(row)
     print(table)
     print("```")
+  delta = time.time() - start
+  print("\n### Time Taken : %s" % delta)

@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    1 ,      gen8_f2 ,    100.0  ,    0.0 (*              |              ),100.00, 100.00, 100.00, 100.00, 100.00
    1 ,     gen10_f2 ,    100.0  ,    0.0 (*              |              ),100.00, 100.00, 100.00, 100.00, 100.00
 ```
-
-### Time Taken : 0.922709941864
 ![1](../../../src/img/correction/Kids and Youth.png)
+### Smoothened Plot
+![1](../../../src/img/correction/Kids and Youth_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -58,3 +58,5 @@ rank ,         name ,    med   ,   iqr
 |  28  |      Be informed of service anonymity     |   goal   |   1   |  1   | 0.01235 |
 +------+-------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 5.55835294724

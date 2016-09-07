@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    2 ,      gen8_f2 ,    34.38  ,    0.0 (               |             *),34.38, 34.38, 34.38, 34.38, 34.38
    2 ,     gen10_f2 ,    34.38  ,    0.0 (               |             *),34.38, 34.38, 34.38, 34.38, 34.38
 ```
-
-### Time Taken : 38.0849637985
 ![1](../../../src/img/correction/CSFDandMarketing.png)
+### Smoothened Plot
+![1](../../../src/img/correction/CSFDandMarketing_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -129,3 +129,5 @@ rank ,         name ,    med   ,   iqr
 |  99  |                          Participate in events                           |   task   |   1   |  1   | 0.00277 |
 +------+--------------------------------------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 60.2585508823

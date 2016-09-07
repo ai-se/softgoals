@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    2 ,      gen8_f2 ,    69.57  ,   8.69 (               |             *),65.22, 65.22, 73.91, 73.91, 73.91
    2 ,     gen10_f2 ,    73.91  ,   8.69 (               |             *),65.22, 65.22, 73.91, 73.91, 73.91
 ```
-
-### Time Taken : 3.20903491974
 ![1](../../../src/img/correction/CSITDepartment.png)
+### Smoothened Plot
+![1](../../../src/img/correction/CSITDepartment_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -66,3 +66,5 @@ rank ,         name ,    med   ,   iqr
 |  36  |                  !Implement Phone Feedback1                 |   task   |   -1  |  1   | 0.00215 |
 +------+-------------------------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 10.4086050987

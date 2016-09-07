@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    2 ,      gen8_f2 ,    61.11  ,   5.56 (               |             *),58.33, 58.33, 63.89, 63.89, 63.89
    2 ,     gen10_f2 ,    61.11  ,   2.78 (               |       ---   *),58.33, 61.11, 63.89, 63.89, 63.89
 ```
-
-### Time Taken : 11.0244991779
 ![1](../../../src/img/correction/CSCounsellingManagement.png)
+### Smoothened Plot
+![1](../../../src/img/correction/CSCounsellingManagement_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -100,3 +100,5 @@ rank ,         name ,    med   ,   iqr
 |  70  |                          Call Statistics                           | resource |   -1  |  1   | 0.00159 |
 +------+--------------------------------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 24.8104820251
