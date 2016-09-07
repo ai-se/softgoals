@@ -377,8 +377,8 @@ def run(graph, subfolder, optimal_index = None):
   obj_stats, gens, objective_map = star.prune(decisions)
   smoothened = smoothen(objective_map, decisions)
   smoothened += obj_stats[2:]
-  med_iqr_plot = star.report(obj_stats, subfolder, model.get_tree().name)
-  smoothened_plot = star.report(smoothened, subfolder, model.get_tree().name+"_smooth")
+  med_iqr_plot = star.report(obj_stats[:3], subfolder, model.get_tree().name)
+  smoothened_plot = star.report(smoothened[:3], subfolder, model.get_tree().name+"_smooth")
   print("```")
   print("![1](../../../src/%s)"%med_iqr_plot)
   print("### Smoothened Plot")
@@ -410,4 +410,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "junk_et")
+  run(tree, "ase_paper_et")
