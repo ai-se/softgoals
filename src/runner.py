@@ -4,6 +4,7 @@ import os, sys
 from models.model import Model
 from pystar.model import Model as Py_Model
 from utilities.de import DE
+from pystar.nsga2 import NSGA2
 from utilities.plotter import plot_clusters, bar_plot, med_spread_plot
 from utilities.kmeans import KMeans
 
@@ -95,6 +96,19 @@ def test_star1(model_name, show_optimal_index = True):
       optimal_index = optimal_indices.get(model_name, None) if show_optimal_index else None
       star1.run(model(), SUB_FOLDER, optimal_index=optimal_index)
 
+def test_nsga2(model_name):
+  from pystar.models.dot_models import modelers, optimal_indices
+  for model in modelers:
+    if model.__name__ == model_name:
+      NSGA2(Py_Model(model())).run()
+
+def nsga2_main():
+  args = sys.argv
+  if len(args) < 2:
+    print("Invalid args")
+    exit()
+  test_nsga2(args[1]).run()
+
 
 def main():
   # test_ome_trees()
@@ -109,10 +123,15 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "induced_softgoals"
+SUB_FOLDER = "nsga"
 
 if __name__ == "__main__":
-  main()
+  # main()
+  nsga2_main()
+  # from pystar.models.dot_models import modelers
+  # for model in modelers:
+  #   m = model()
+  #   print(model.__name__, len(m.nodes), len(m.edges))
 
 
 

@@ -15,10 +15,10 @@ from utilities.sk import rdivDemo
 
 def default():
   return O(
-    k1 = 100,
+    k1 = 10,
     k2 = 100,
     best_percent = 33,
-    gen_step = 20
+    gen_step = 2
   )
 
 class Decision(O):
@@ -169,11 +169,11 @@ class Star1(O):
       point.objectives = [0 if one is None else one for one in point.objectives]
     return point.objectives
 
-  def prune(self, support):
+  def prune(self, support, check_validity):
     gens = []
     for i in range(len(support)):
       decisions = support[:i]
-      population = self.generate(decisions, check_validity=True)
+      population = self.generate(decisions, check_validity=check_validity)
       for point in population:
         self.evaluate(point, decisions)
       gens.append(population)
@@ -183,6 +183,7 @@ class Star1(O):
   def report(self, stats, sub_folder, fig_name):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
     headers = ["root cost", "root benefit", "softgoals", "preset decisions cost"]
+    headers = ["root cost", "root benefit", "softgoals"]
     med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+fig_name+".png")
     return "img/"+sub_folder+"/"+fig_name+".png"
 
@@ -361,6 +362,8 @@ def smoothen(objective_map, decisions, keys=[0, 1]):
     smoothened.append(smooth_objs)
   return smoothened
 
+
+VALID_ONLY = True
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
   #model = Model(cs_agent_sr_graph)
@@ -374,7 +377,7 @@ def run(graph, subfolder, optimal_index = None):
   print("```")
   best, rest = star.sample(subfolder)
   decisions = star.rank(best, rest)
-  obj_stats, gens, objective_map = star.prune(decisions)
+  obj_stats, gens, objective_map = star.prune(decisions, check_validity=VALID_ONLY)
   smoothened = smoothen(objective_map, decisions)
   smoothened += obj_stats[2:]
   med_iqr_plot = star.report(obj_stats[:3], subfolder, model.get_tree().name)
@@ -385,11 +388,12 @@ def run(graph, subfolder, optimal_index = None):
   print("![1](../../../src/%s)"%smoothened_plot)
   print_decisions(decisions)
   plot_support(decisions, "img/%s/%s_support.png"%(subfolder,graph.name))
-  tree_name = Grapher(graph, decisions, subfolder).draw_tree()
-  print("![1](../../../src/img/%s/%s.png)"%(subfolder,tree_name))
-  tracks = star.visualize(decisions)
-  reco_tree_name = Recommender(graph, decisions, tracks, subfolder).draw_tree()
-  print("##[Recommendation](../../../src/img/%s/%s.png)"%(subfolder,reco_tree_name))
+
+  # tree_name = Grapher(graph, decisions, subfolder).draw_tree()
+  # print("![1](../../../src/img/%s/%s.png)"%(subfolder,tree_name))
+  # tracks = star.visualize(decisions)
+  # reco_tree_name = Recommender(graph, decisions, tracks, subfolder).draw_tree()
+  # print("##[Recommendation](../../../src/img/%s/%s.png)"%(subfolder,reco_tree_name))
   linear_seq_clusterer(obj_stats[:2], decisions, key="meds")
   delta = time.time() - start
   print("\n### Time Taken : %s"%delta)
@@ -410,4 +414,4 @@ def run(graph, subfolder, optimal_index = None):
 if __name__ == "__main__":
   from pyAHP.models.sample import tree
   #tree.name = "sample"
-  run(tree, "ase_paper_et")
+  run(tree, "invalid_gen")
