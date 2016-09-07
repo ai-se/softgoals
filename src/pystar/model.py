@@ -1,6 +1,6 @@
 from __future__ import print_function, division
 __author__ = 'george'
-import sys,os
+import sys,os, copy
 sys.path.append(os.path.abspath("."))
 sys.dont_write_bytecode = True
 from template import *
@@ -374,6 +374,12 @@ class Point(O):
     self.dominating = 0
     self.dominated = []
     self.crowd_dist = 0
+
+  def clone(self):
+    new = Point(copy.deepcopy(self.decisions), copy.deepcopy(self.objectives))
+    new._nodes = self._nodes
+    return new
+
 
   def get_nodes(self):
     return self._nodes
