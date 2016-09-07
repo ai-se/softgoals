@@ -123,13 +123,13 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "nsga"
+SUB_FOLDER = "correction"
 
 if __name__ == "__main__":
-  # main()
+  main()
   # star1.run(CSSAProgram(), SUB_FOLDER, optimal_index=True)
   # test_star1("CSCounselling", True)
-  nsga2_main()
+  # nsga2_main()
   # from pystar.models.dot_models import modelers
   # for model in modelers:
   #   m = model()

@@ -19,9 +19,9 @@ rank ,         name ,    med   ,   iqr
    1 ,      gen8_f2 ,    66.67  ,    0.0 (               |             *),66.67, 66.67, 66.67, 66.67, 66.67
    1 ,     gen10_f2 ,    66.67  ,    0.0 (               |             *),66.67, 66.67, 66.67, 66.67, 66.67
 ```
-
-### Time Taken : 1.56440806389
 ![1](../../../src/img/correction/CSSAProgram.png)
+### Smoothened Plot
+![1](../../../src/img/correction/CSSAProgram_smooth.png)
 
 ### Decisions Ranked
 ```
@@ -46,3 +46,5 @@ rank ,         name ,    med   ,   iqr
 |  16  |              Attend CS Meetings             |   task   |   -1  |  1   | 0.00735 |
 +------+---------------------------------------------+----------+-------+------+---------+
 ```
+
+### Time Taken : 4.32045984268
