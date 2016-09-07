@@ -20,7 +20,7 @@ rank ,         name ,    med   ,   iqr
    1 ,     gen10_f2 ,      4.0  ,    0.0 (               |             *), 4.00,  4.00,  4.00,  4.00,  4.00
 ```
 
-### Time Taken : 1.57491588593
+### Time Taken : 1.5772190094
 ![1](../../../src/img/correction/CSSAProgram.png)
 
 ### Decisions Ranked

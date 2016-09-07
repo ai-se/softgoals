@@ -20,7 +20,7 @@ rank ,         name ,    med   ,   iqr
    1 ,     gen10_f2 ,     13.0  ,    1.0 (           ----|-------      *),10.00, 12.00, 13.00, 13.00, 13.00
 ```
 
-### Time Taken : 40.3630449772
+### Time Taken : 38.0358071327
 ![1](../../../src/img/correction/CSCounselling.png)
 
 ### Decisions Ranked

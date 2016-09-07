@@ -20,7 +20,7 @@ rank ,         name ,    med   ,   iqr
    2 ,     gen10_f2 ,     11.0  ,    0.0 (               |             *),11.00, 11.00, 11.00, 11.00, 11.00
 ```
 
-### Time Taken : 40.5431308746
+### Time Taken : 35.200273037
 ![1](../../../src/img/correction/CSFDandMarketing.png)
 
 ### Decisions Ranked

@@ -18,7 +18,7 @@ def default():
     better = [gt, gt],
     obj_funcs = [Point.eval_softgoals, Point.eval_goals],
     evaluation = Point.evaluate,
-    is_percent = False,
+    is_percent = True,
     binary = True,
     dominates = "bdom",
     cdom_delta = 0.01

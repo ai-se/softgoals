@@ -20,7 +20,7 @@ rank ,         name ,    med   ,   iqr
    2 ,     gen10_f2 ,     17.0  ,    2.0 (               |             *),15.00, 15.00, 17.00, 17.00, 17.00
 ```
 
-### Time Taken : 2.81974387169
+### Time Taken : 2.65573787689
 ![1](../../../src/img/correction/CSITDepartment.png)
 
 ### Decisions Ranked
