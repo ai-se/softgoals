@@ -107,7 +107,7 @@ def nsga2_main():
   if len(args) < 2:
     print("Invalid args")
     exit()
-  test_nsga2(args[1]).run()
+  test_nsga2(args[1])
 
 
 def main():
@@ -123,13 +123,13 @@ def main():
   test_star1(args[1], show_optimal_index)
   #_test()
 
-SUB_FOLDER = "correction"
+SUB_FOLDER = "nsga"
 
 if __name__ == "__main__":
-  main()
+  # main()
   # star1.run(CSSAProgram(), SUB_FOLDER, optimal_index=True)
   # test_star1("CSCounselling", True)
-  # nsga2_main()
+  nsga2_main()
   # from pystar.models.dot_models import modelers
   # for model in modelers:
   #   m = model()
