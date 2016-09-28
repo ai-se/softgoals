@@ -221,7 +221,7 @@ def smoothen(objective_map, decisions, keys=[0, 1]):
     sk_data = []
     for index, (decision, dec_objectives) in enumerate(zip(decisions, objectives)):
       sk_data.append([str(index)]+dec_objectives)
-    ranks = rdivDemo(sk_data, do_print=False)
+    ranks = rdivDemo(sk_data, do_print=False, useA12=False, epsilon=0.5)
     rank_map = {}
     for rank, _, x in ranks:
       meds_iqrs = rank_map.get(rank, [[], []])
@@ -233,13 +233,16 @@ def smoothen(objective_map, decisions, keys=[0, 1]):
     meds, iqrs = [], []
     for rank, _, x in ranks:
       meds_iqrs = rank_map[rank]
-      med, iqr = round(float(np.mean(meds_iqrs[0])), 2), round(float(np.mean(meds_iqrs[1])), 2)
+      med, iqr = custom_round(np.mean(meds_iqrs[0]), 10), custom_round(np.mean(meds_iqrs[1]), 10)
       meds.append(med)
       iqrs.append(iqr)
       smooth_objs["meds"] = meds
       smooth_objs["iqrs"] = iqrs
     smoothened.append(smooth_objs)
   return smoothened
+
+def custom_round(val, base):
+  return int(base*round(val/base))
 
 def run(graph, subfolder, optimal_index = None):
   #graph = DelayModeratedBulletinBoard()
@@ -275,3 +278,7 @@ def run(graph, subfolder, optimal_index = None):
     print("```")
   delta = time.time() - start
   print("\n### Time Taken : %s" % delta)
+
+# if __name__ == "__main__":
+#   from pystar.models.dot_models import CSCounsellingManagement
+#   run(CSCounsellingManagement(), "correction2")

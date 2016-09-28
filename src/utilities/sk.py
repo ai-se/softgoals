@@ -477,13 +477,13 @@ def leftRight(parts,epsilon=0.01):
 Driver for the demos:
 
 """
-def rdivDemo(data, do_print=True):
+def rdivDemo(data, do_print=True, useA12=True, epsilon=0.01):
   def z(x):
     return int(100 * (x - lo) / (hi - lo + 0.00001))
   data = map(lambda lst:Num(lst[0],lst[1:]),
              data)
   ranks=[]
-  for x in scottknott(data,useA12=True):
+  for x in scottknott(data,useA12=useA12,epsilon=epsilon):
     ranks += [(x.rank,x.median(),x)]
   if not do_print:
     return ranks
@@ -502,6 +502,7 @@ def rdivDemo(data, do_print=True):
                  (x.rank+1, x.name, q2, q3 - q1))  + \
               xtile(x.all,lo=lo,hi=hi,width=30,show="%5.2f")
     last = x.rank
+  return ranks
 """
 
 The demos:
