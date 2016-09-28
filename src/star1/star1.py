@@ -192,7 +192,7 @@ class Star1(O):
 
   def report(self, stats, sub_folder, fig_name):
     #headers = [obj.__name__.split("_")[-1] for obj in self.de.settings.obj_funcs]
-    headers = ["softgoals", "goals", "paths", "costs"]
+    headers = ["softgoals", "goals", "costs"]
     med_spread_plot(stats, headers, fig_name="img/"+sub_folder+"/"+fig_name+".png")
     return "img/"+sub_folder+"/"+fig_name+".png"
 
@@ -257,8 +257,8 @@ def run(graph, subfolder, optimal_index = None):
   obj_stats, gens, objective_map = star.prune(decisions)
   smoothened = smoothen(objective_map, decisions)
   smoothened += obj_stats[2:]
-  med_iqr_plot = star.report(obj_stats, subfolder, graph.name)
-  smoothened_plot = star.report(smoothened[:3], subfolder, model.get_tree().name + "_smooth")
+  med_iqr_plot = star.report(obj_stats[:2] + [obj_stats[3]], subfolder, graph.name)
+  smoothened_plot = star.report(smoothened[:2]+[obj_stats[3]], subfolder, model.get_tree().name + "_smooth")
   print("```")
   print("![1](../../../src/%s)"%med_iqr_plot)
   print("### Smoothened Plot")
