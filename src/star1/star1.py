@@ -12,6 +12,7 @@ from utilities.plotter import med_spread_plot
 from prettytable import PrettyTable
 from utilities.sk import rdivDemo
 import numpy as np
+from matplotlib import pyplot as plt
 
 def default():
   return O(
@@ -279,6 +280,24 @@ def run(graph, subfolder, optimal_index = None):
   delta = time.time() - start
   print("\n### Time Taken : %s" % delta)
 
+
+def plot_runtimes():
+  x = ["CSServices", "CSFDandMarketing", "CSCounselling", "CSCounsellingMgmt", "CSITDepartment", "CSSAProgram", "KidsAndYouth"]
+  nsga2 = [1002.4, 903.8, 930.6, 428.4, 224.5, 243.3, 132.3]
+  our = [18.7, 20, 21.4, 6.1, 1.54, 0.97, 0.51]
+  width = 0.35
+  fig, ax = plt.subplots()
+  ind = np.arange(len(x))
+  rects1 = ax.bar(ind, our, width, color='r')
+  rects2 = ax.bar(ind+width, nsga2, width, color='b')
+  ax.legend((rects1[0], rects2[0]), ('Our Method', 'NSGA2'))
+  plt.xticks(ind+2*width, x, rotation=-45, fontsize=9)
+  plt.ylabel("Runtime (in seconds)")
+  plt.yscale("log")
+  plt.tight_layout()
+  plt.savefig("sg_runtimes.png")
+
+plot_runtimes()
 # if __name__ == "__main__":
 #   from pystar.models.dot_models import CSCounsellingManagement
 #   run(CSCounsellingManagement(), "correction2")
