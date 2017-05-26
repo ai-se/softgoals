@@ -168,6 +168,7 @@ def growth_charts2():
            [70, 70, 70, 60, 55, 60],
            [30, 50, 60, 60, 70, 70],
            [50, 50, 70, 60, 60, 70]]
+
   costs = [[0, 5, 10, 20, 28, 35],
            [0, 4,  8, 20, 24, 32],
            [0, 6,  8, 11, 12, 20],
@@ -223,15 +224,15 @@ def main():
 SUB_FOLDER = "correction"
 
 if __name__ == "__main__":
-  main()
+  # main()
   # growth_charts2()
   # star1.run(CSSAProgram(), SUB_FOLDER, optimal_index=True)
   # test_star1("CSCounselling", True)
   # nsga2_main()
-  # from pystar.models.dot_models import modelers
-  # for model in modelers:
-  #   m = model()
-  #   print(model.__name__, len(m.nodes), len(m.edges))
+  from pystar.models.dot_models import modelers
+  for model in modelers:
+    m = model()
+    print(model.__name__, len(m.nodes), len(m.edges))
 
 
 

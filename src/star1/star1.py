@@ -282,22 +282,22 @@ def run(graph, subfolder, optimal_index = None):
 
 
 def plot_runtimes():
-  x = ["CSServices", "CSFDandMarketing", "CSCounselling", "CSCounsellingMgmt", "CSITDepartment", "CSSAProgram", "KidsAndYouth"]
+  x = ["Services", "Marketing", "Counselling", "Management", "ITDepartment", "SAProgram", "Kids&Youth"]
   nsga2 = [1002.4, 903.8, 930.6, 428.4, 224.5, 243.3, 132.3]
   our = [18.7, 20, 21.4, 6.1, 1.54, 0.97, 0.51]
   width = 0.35
   fig, ax = plt.subplots()
   ind = np.arange(len(x))
-  rects1 = ax.bar(ind, our, width, color='r')
-  rects2 = ax.bar(ind+width, nsga2, width, color='b')
-  ax.legend((rects1[0], rects2[0]), ('Our Method', 'NSGA2'))
-  plt.xticks(ind+2*width, x, rotation=-45, fontsize=9)
-  plt.ylabel("Runtime (in seconds)")
+  rects1 = ax.bar(ind+width, our, width, color='r')
+  rects2 = ax.bar(ind+2*width, nsga2, width, color='b')
+  ax.legend((rects1[0], rects2[0]), ('SHORT', 'NSGA2'))
+  plt.xticks(ind+2*width, x, rotation=-60, fontsize=14)
+  plt.ylabel("Runtime (in seconds)", fontsize=14)
   plt.yscale("log")
   plt.tight_layout()
-  plt.savefig("sg_runtimes.png")
+  plt.savefig("img/sg_runtimes.png")
 
-# plot_runtimes()
+plot_runtimes()
 # if __name__ == "__main__":
 #   from pystar.models.dot_models import CSCounsellingManagement
 #   run(CSCounsellingManagement(), "correction2")
