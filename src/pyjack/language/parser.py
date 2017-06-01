@@ -92,13 +92,15 @@ class Parser(NodeVisitor):
     self.uninitialized_variables[name] = dec
     return dec
 
-  def visit_dec_rhs(self, _, vc):
+  @staticmethod
+  def visit_dec_rhs(_, vc):
     args = [vc[0]]
     if vc[-1]:
       args += vc[-1]
     return args
 
-  def visit_dec_rhs1(self, _, vc):
+  @staticmethod
+  def visit_dec_rhs1(_, vc):
     return vc[-1]
 
   def visit_var_eq(self, node, vc):
@@ -122,7 +124,7 @@ class Parser(NodeVisitor):
       return inp.name
     elif isinstance(term, str):
       if term not in self.initialized_variables:
-        self.uninitialized_variables[term] = None #TODO: Check this
+        self.uninitialized_variables[term] = None
       return term
     elif isinstance(term, float):
       inp = self.model.input(distributions["constant"](term))
@@ -132,13 +134,12 @@ class Parser(NodeVisitor):
     elif isinstance(term, O) and term.type == "bracketed":
       return term.name
 
-  def visit_bracketed(self, _, vc):
+  @staticmethod
+  def visit_bracketed(_, vc):
     return O(name=vc[2], type="bracketed")
 
   def visit_operated(self, _, vc):
     if vc[-1] is None:
-      # nodes = [vc[0]]
-      # op = None
       return vc[0]
     else:
       ops = set([o.operation for o in vc[-1]])
@@ -151,37 +152,44 @@ class Parser(NodeVisitor):
       var.operation = op
       for n in nodes:
         if n not in self.initialized_variables:
-          self.uninitialized_variables[n] = None  # TODO: Check this
+          self.uninitialized_variables[n] = None
         var.children.append(n)
       self.initialized_variables[var.name] = var
       return var.name
 
-  def visit_operated1(self, _, vc):
+  @staticmethod
+  def visit_operated1(_, vc):
     operation = vc[1]
     term = vc[-1]
     return O(operation=operation, term=term, type="operated")
 
-  def visit_operator(self, node, _):
+  @staticmethod
+  def visit_operator(node, _):
     return node.text
 
-  def visit_func_call(self, _, vc):
+  @staticmethod
+  def visit_func_call(_, vc):
     name = vc[0]
     args = vc[-2]
     return O(name=name, args=args, type="function")
 
-  def visit_args(self, _, vc):
+  @staticmethod
+  def visit_args(_, vc):
     args = [vc[0]]
     if vc[-1]:
       args += vc[-1]
     return args
 
-  def visit_args1(self, _, vc):
+  @staticmethod
+  def visit_args1(_, vc):
     return vc[-1]
 
-  def visit_number_token(self, _, vc):
+  @staticmethod
+  def visit_number_token(_, vc):
     return vc[0]
 
-  def visit_add(self, node, vc):
+  @staticmethod
+  def visit_add(_, vc):
     num = vc[0]
     if vc[-1]:
       op = vc[-1][0].operation
@@ -189,10 +197,12 @@ class Parser(NodeVisitor):
       num = eval("%f %s %f" % (num, op, val))
     return num
 
-  def visit_add1(self, node, vc):
+  @staticmethod
+  def visit_add1(_, vc):
     return O(operation=vc[0], value=vc[-1])
 
-  def visit_mul(self, node, vc):
+  @staticmethod
+  def visit_mul(_, vc):
     num = vc[0]
     if vc[-1]:
       op = vc[-1][0].operation
@@ -200,37 +210,43 @@ class Parser(NodeVisitor):
       num = eval("%f %s %f" % (num, op, val))
     return num
 
-  def visit_mul1(self, node, vc):
+  @staticmethod
+  def visit_mul1(_, vc):
     return O(operation=vc[0], value=vc[-1])
 
-  def visit_add_sub(self, node, vc):
+  @staticmethod
+  def visit_add_sub(node, _):
     return node.text
 
-  def visit_mul_div(self, node, vc):
+  @staticmethod
+  def visit_mul_div(node, _):
     return node.text
 
-  def visit_expo(self, node, vc):
+  @staticmethod
+  def visit_expo(_, vc):
     num = vc[0]
     if vc[-1]:
       num = num ** vc[-1][0]
     return num
 
-  def visit_expo1(self, node, vc):
+  @staticmethod
+  def visit_expo1(_, vc):
     return vc[-1]
 
-
-  def visit_number(self, node, vc):
+  @staticmethod
+  def visit_number(_, vc):
     return vc[0]
 
+  @staticmethod
+  def visit_bracket_number(_, vc):
+    return vc[2]
 
-  def visit_bracket_number(self, node, vc):
-    print(vc)
-
-
-  def visit_float(self, node, _):
+  @staticmethod
+  def visit_float(node, _):
     return float(node.text)
 
-  def visit_token(self, node, _):
+  @staticmethod
+  def visit_token(node, _):
     return node.text.strip()
 
   def generic_visit(self, node, vc):
@@ -247,7 +263,7 @@ class Parser(NodeVisitor):
 _text = """
 Model mdl;
 Samples 1000;
-Max o1 = EV(v1, 10 ^ 3);
+Max o1 = EV(v1, 10 ^ (1 + 2));
 Decision d = uniform(0, 1) , x2 , 100, (z3 + z4 + 60);
 v1 = d * v2;
 x2 = triangular(0, 0.5, 1);
