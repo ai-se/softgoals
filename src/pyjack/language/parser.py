@@ -181,7 +181,53 @@ class Parser(NodeVisitor):
   def visit_number_token(self, _, vc):
     return vc[0]
 
-  def visit_number(self, node, _):
+  def visit_add(self, node, vc):
+    num = vc[0]
+    if vc[-1]:
+      op = vc[-1][0].operation
+      val = vc[-1][0].value
+      num = eval("%f %s %f" % (num, op, val))
+    return num
+
+  def visit_add1(self, node, vc):
+    return O(operation=vc[0], value=vc[-1])
+
+  def visit_mul(self, node, vc):
+    num = vc[0]
+    if vc[-1]:
+      op = vc[-1][0].operation
+      val = vc[-1][0].value
+      num = eval("%f %s %f" % (num, op, val))
+    return num
+
+  def visit_mul1(self, node, vc):
+    return O(operation=vc[0], value=vc[-1])
+
+  def visit_add_sub(self, node, vc):
+    return node.text
+
+  def visit_mul_div(self, node, vc):
+    return node.text
+
+  def visit_expo(self, node, vc):
+    num = vc[0]
+    if vc[-1]:
+      num = num ** vc[-1][0]
+    return num
+
+  def visit_expo1(self, node, vc):
+    return vc[-1]
+
+
+  def visit_number(self, node, vc):
+    return vc[0]
+
+
+  def visit_bracket_number(self, node, vc):
+    print(vc)
+
+
+  def visit_float(self, node, _):
     return float(node.text)
 
   def visit_token(self, node, _):
@@ -201,14 +247,14 @@ class Parser(NodeVisitor):
 _text = """
 Model mdl;
 Samples 1000;
-Max o1 = EV(v1, 1000);
+Max o1 = EV(v1, 10 ^ 3);
 Decision d = uniform(0, 1) , x2 , 100, (z3 + z4 + 60);
 v1 = d * v2;
 x2 = triangular(0, 0.5, 1);
 z3 = normalCI(0, 10);
 z4 = 50;
 v2 = 1.2;
-# x1 = 5 + 6.6;
+x1 = 5 + 6.6;
 """
 
 if __name__ == "__main__":
@@ -217,3 +263,5 @@ if __name__ == "__main__":
   fdm.test()
   print("Method 2")
   import pyjack.models.fdm
+  # mdl = Parser(_text).process()
+  # mdl.test()
