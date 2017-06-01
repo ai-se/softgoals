@@ -1,0 +1,9 @@
+Model cba;
+Samples 1000;
+Max ENB = EV(bc);
+Min LP = STD(bc);
+
+bc = benefit - cost;
+Decision benefit = normalCI(1, 9), normalCI(0.9, 1.1);
+Decision cost = normalCI(1, 5), 0;
+

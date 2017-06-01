@@ -8,7 +8,7 @@ f = -1
 """
 Default class which everything extends.
 """
-class O():
+class O:
   def __init__(self,**d): self.has().update(**d)
   def has(self): return self.__dict__
   def update(self,**d): self.has().update(d); return self
@@ -42,7 +42,7 @@ class O():
 """
 An accumulator for reporting on numbers.
 """
-class N():
+class N:
   "Add/delete counts of numbers."
   def __init__(self,inits=[]):
     self.zero()
