@@ -44,6 +44,24 @@ def lte(a, b):
   """
   return a <= b
 
+def eq(a, b):
+  """
+  True if a == b
+  :param a:
+  :param b:
+  :return:
+  """
+  return a == b
+
+def neq(a, b):
+  """
+  True if a != b
+  :param a:
+  :param b:
+  :return:
+  """
+  return a != b
+
 def np_to_list(a):
   """
   Convert numpy list to python list

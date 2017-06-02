@@ -15,6 +15,8 @@ from pyjack.functions import evaluations, distributions, operations
 _max = "Max"
 _min = "Min"
 
+# TODO: Implement decision mapping
+
 class Parser(NodeVisitor):
   def __init__(self, content):
     self.model = None
@@ -27,6 +29,10 @@ class Parser(NodeVisitor):
     self.visit(ast)
     self.check_undeclared()
     self.update_children()
+    dec = self.model.decisions.values()[0]
+    print(dec.key)
+    print([(i, c.name) for i, c in dec.options.items()])
+    exit()
     return self.model
 
   def check_undeclared(self):
@@ -36,7 +42,14 @@ class Parser(NodeVisitor):
   def update_children(self):
     for node_id, node in self.model.nodes.items():
       if isinstance(node, Decision):
-        node.options = {child:self.initialized_variables[child] for child in node.children}
+        opts = {}
+        for child in node.children:
+          c_node = self.initialized_variables[child]
+          if "key" in c_node.has():
+            opts[c_node.key] = c_node
+          else:
+            opts[c_node.name] = c_node
+        node.options = opts
       node.children = [self.initialized_variables[child] for child in node.children]
     for node_id, node in self.model.nodes.items():
       self.model.node_edges(node)
@@ -88,8 +101,12 @@ class Parser(NodeVisitor):
 
   def visit_dec_lhs(self, _, vc):
     name = vc[-1]
-    dec = self.model.decision({}, name=name)
-    self.uninitialized_variables[name] = dec
+    splits = name.split(":")
+    if len(splits) > 1:
+      dec = self.model.decision({}, name=splits[1], key=splits[0])
+    else:
+      dec = self.model.decision({}, name=splits[0])
+    self.uninitialized_variables[dec.name] = dec
     return dec
 
   @staticmethod
@@ -102,6 +119,17 @@ class Parser(NodeVisitor):
   @staticmethod
   def visit_dec_rhs1(_, vc):
     return vc[-1]
+
+  @staticmethod
+  def visit_dec_node(_, vc):
+    return vc[0]
+
+  def visit_named_term(self, _, vc):
+    dec_node = self.initialized_variables.pop(vc[-1])
+    dec_node.name = "%s_%d" % (vc[0], dec_node.id)
+    dec_node.key = vc[0]
+    self.initialized_variables[dec_node.name] = dec_node
+    return dec_node.name
 
   def visit_var_eq(self, node, vc):
     lhs = vc[0]
@@ -249,6 +277,10 @@ class Parser(NodeVisitor):
   def visit_token(node, _):
     return node.text.strip()
 
+  @staticmethod
+  def visit_named_token(node, _):
+    return node.text.strip()
+
   def generic_visit(self, node, vc):
     if vc:
       return vc
@@ -264,7 +296,7 @@ _text = """
 Model mdl;
 Samples 1000;
 Max o1 = EV(v1, 10 ^ (1 + 2));
-Decision d = uniform(0, 1) , x2 , 100, (z3 + z4 + 60);
+Decision d = UF:uniform(0, 1) , x2 , 100, (z3 + z4 + 60);
 v1 = d * v2;
 x2 = triangular(0, 0.5, 1);
 z3 = normalCI(0, 10);
@@ -275,9 +307,10 @@ x1 = 5 + 6.6;
 
 if __name__ == "__main__":
   print("Method 1")
-  fdm = Parser.from_file("pyjack/models/fdm.str")
+  fdm = Parser.from_file("pyjack/models/SAS.str")
   fdm.test()
-  print("Method 2")
-  import pyjack.models.fdm
+  # print("Method 2")
+  # import pyjack.models.fdm
   # mdl = Parser(_text).process()
   # mdl.test()
+  # mdl.objectives[0].bfs()

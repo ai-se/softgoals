@@ -21,9 +21,12 @@ definition = """
   obj_lhs = direction space+ token
   obj_rhs = func_call
   dec_eq = dec_lhs space* eq_sign space* dec_rhs
-  dec_lhs = Decision space* token
-  dec_rhs = term space* dec_rhs1*
-  dec_rhs1 = space* "," space* term
+  dec_lhs = Decision space* named_token
+  dec_rhs = dec_node space* dec_rhs1*
+  dec_rhs1 = space* "," space* dec_node
+  dec_node = named_term / term
+  named_term = token ":" term
+  named_token = token ":" token
   expr = model / samples
   samples = ("Samples" space* number)
   model = ("Model" space token)
@@ -37,7 +40,7 @@ definition = """
   decision_args = term space* (',' space* term)*
   mul_div = "*" / "/"
   add_sub = "+" / "-"
-  operator = "+" / "-" / "*" / "/"
+  operator = "+" / "-" / "*" / "/" / "|" / "&" / ">" / "<" / ">=" / "<=" / "==" / "!="
   Decision = "Decision"
   direction = "Max" / "Min"
   number_token = add / token
@@ -52,10 +55,10 @@ definition = """
   sign = "+" / "-"
   float = sign? int ("." int)?
   int = ~r"[0-9]+"
-  token = ~r"[a-zA-Z0-9]+"
+  token = ~r"[a-zA-Z0-9_\-]+"
   eq_sign = "="
   nl = "\\n"
-  space = ~r" +"
+  space = ~r"\s+"
   hash = "#"
   sc = ";"
 """

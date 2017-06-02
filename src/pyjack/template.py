@@ -190,11 +190,13 @@ class Model(O):
     self.nodes[v.id] = v
     return v
 
-  def decision(self, options, name=None):
+  def decision(self, options, name=None, key=None):
     d = Decision(**options)
     for value in options.values():
       self.add_edge(value, d, operation=None)
     d.name = name if name else d.id
+    if key is not None:
+      d.key = key
     self.decisions[d.id] = d
     self.nodes[d.id] = d
     return d
