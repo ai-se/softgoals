@@ -190,6 +190,8 @@ class Parser(NodeVisitor):
     else:
       ops = set([o.operation for o in vc[-1]])
       if len(ops) > 1:
+        print(_)
+        exit()
         raise Exception("Multiple operations not allowed: % s" % operations)
       op = operations[ops.pop()]
       nodes = [vc[0]] + [o.term for o in vc[-1]]
@@ -325,7 +327,7 @@ x1 = 5 + 6.6;
 
 if __name__ == "__main__":
   print("Method 1")
-  fdm = Parser.from_file("pyjack/models/cba.str")
+  fdm = Parser.from_file("pyjack/models/ECS.str")
   # exit()
   fdm.test()
   # print("Method 2")

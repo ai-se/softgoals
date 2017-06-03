@@ -230,9 +230,9 @@ class Model(O):
   def get_max_size(self):
     if self.decision_map:
       lst = [len(vals) for vals in self.decision_map.values()]
-      return reduce(mul, lst, 1)
     else:
-      return sum([len(value.options) for value in self.decisions.values()])
+      lst = [len(value.options) for value in self.decisions.values()]
+    return reduce(mul, lst, 1)
 
   def print_solution(self, solution):
     print("Solution:")
