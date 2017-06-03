@@ -7,6 +7,7 @@ from utils import O
 import numpy as np
 from collections import deque, OrderedDict
 from copy import deepcopy
+from operator import mul
 
 __author__ = "bigfatnoob"
 
@@ -87,6 +88,7 @@ class Decision(Node):
   def __init__(self, **options):
     self.value = None
     self.options = options
+    self.key = None
     Node.__init__(self)
 
   def clear(self):
@@ -169,6 +171,7 @@ class Model(O):
     self.inputs = OrderedDict()
     self.objectives = OrderedDict()
     self.variables = OrderedDict()
+    self.decision_map = OrderedDict()
     O.__init__(self)
 
   def add_edge(self, source, target, operation=same):
@@ -215,13 +218,39 @@ class Model(O):
 
   def generate(self):
     solutions = OrderedDict()
-    for key, decision in self.decisions.items():
-      solutions[key] = np.random.choice(decision.options.values()).id
+    if self.decision_map:
+      ref = {key: np.random.choice(vals) for key, vals in self.decision_map.items()}
+      for key, decision in self.decisions.items():
+        solutions[key] = decision.options[ref[decision.key]].id
+    else:
+      for key, decision in self.decisions.items():
+        solutions[key] = np.random.choice(decision.options.values()).id
     return solutions
 
+  def get_max_size(self):
+    if self.decision_map:
+      lst = [len(vals) for vals in self.decision_map.values()]
+      return reduce(mul, lst, 1)
+    else:
+      return sum([len(value.options) for value in self.decisions.values()])
+
+  def print_solution(self, solution):
+    print("Solution:")
+    dic = OrderedDict()
+    for key, value in solution.items():
+      name = self.decisions[key].key
+      value = self.nodes[value].has()["label"]
+      if name is None:
+        name = self.decisions[key].name
+      if value is None:
+        value = self.nodes[value].name
+      dic[name] = value
+    for name, value in dic.items():
+      print("\t name: %s, value: %s" % (name, value))
+
+
   def populate(self, size):
-    max_size = sum([len(value.options) for value in self.decisions.values()])
-    print(max_size)
+    max_size = self.get_max_size()
     if size > max_size:
       size = max_size
     population = []
@@ -249,6 +278,7 @@ class Model(O):
 
   def test(self):
     self.initialize()
+    print("Max Size = %d" % self.get_max_size())
     # for inp in self.inputs.values():
     #   print(inp.samples)
     solutions = self.populate(10)
@@ -259,3 +289,4 @@ class Model(O):
       for key, val in evals.items():
         arr.append((self.objectives[key].name, val))
       print(arr)
+      # self.print_solution(sol)

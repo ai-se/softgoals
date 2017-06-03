@@ -13,7 +13,8 @@ definition = """
   stmt = comment / ((eq / expr ) sc)
   comment = (hash space all)
   all = ~r".+"
-  eq = obj_eq / dec_eq / var_eq
+  eq = dec_map_eq / obj_eq / dec_eq / var_eq
+  dec_map_eq = "DM" space+ token space* "=" space* token space* ("," space* token)*
   var_eq = var_lhs space* eq_sign space* var_rhs
   var_lhs = token
   var_rhs = operated

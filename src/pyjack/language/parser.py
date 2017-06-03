@@ -29,10 +29,12 @@ class Parser(NodeVisitor):
     self.visit(ast)
     self.check_undeclared()
     self.update_children()
-    dec = self.model.decisions.values()[0]
-    print(dec.key)
-    print([(i, c.name) for i, c in dec.options.items()])
-    exit()
+    decs = self.model.decisions.values()
+    # for dec in decs:
+    #   print(dec.key, dec.name, [opt.has().get('label', None) for opt in dec.options.values()])
+    # print(dec.key)
+    # print([(i, c.name) for i, c in dec.options.items()])
+    # exit()
     return self.model
 
   def check_undeclared(self):
@@ -45,8 +47,8 @@ class Parser(NodeVisitor):
         opts = {}
         for child in node.children:
           c_node = self.initialized_variables[child]
-          if "key" in c_node.has():
-            opts[c_node.key] = c_node
+          if "label" in c_node.has():
+            opts[c_node.label] = c_node
           else:
             opts[c_node.name] = c_node
         node.options = opts
@@ -73,8 +75,15 @@ class Parser(NodeVisitor):
 
   def visit_var_lhs(self, node, _):
     name = node.text
-    self.uninitialized_variables[name] = None
+    self.uninitialized_variables[name] = self.uninitialized_variables.get(name, None)
     return name
+
+  def visit_dec_map_eq(self, node, _):
+    text = node.text
+    splits = text.split("=")
+    key = splits[0].strip().split()[1].strip()
+    vals = [val.strip() for val in splits[1].split(",")]
+    self.model.decision_map[key] = vals
 
   def visit_obj_eq(self, _, vc):
     lhs = vc[0]
@@ -106,6 +115,10 @@ class Parser(NodeVisitor):
       dec = self.model.decision({}, name=splits[1], key=splits[0])
     else:
       dec = self.model.decision({}, name=splits[0])
+    if self.uninitialized_variables.get(dec.name, None) is not None:
+      # print(self.uninitialized_variables.get(dec.name, None))
+      # exit()
+      dec.label = self.uninitialized_variables[dec.name]
     self.uninitialized_variables[dec.name] = dec
     return dec
 
@@ -125,11 +138,16 @@ class Parser(NodeVisitor):
     return vc[0]
 
   def visit_named_term(self, _, vc):
-    dec_node = self.initialized_variables.pop(vc[-1])
-    dec_node.name = "%s_%d" % (vc[0], dec_node.id)
-    dec_node.key = vc[0]
-    self.initialized_variables[dec_node.name] = dec_node
-    return dec_node.name
+    name = vc[-1]
+    label = vc[0]
+    if name not in self.initialized_variables:
+      self.uninitialized_variables[name] = label
+      return name
+    else:
+      dec_node = self.initialized_variables.pop(name)
+      dec_node.label = label
+      self.initialized_variables[dec_node.name] = dec_node
+      return dec_node.name
 
   def visit_var_eq(self, node, vc):
     lhs = vc[0]
@@ -152,7 +170,7 @@ class Parser(NodeVisitor):
       return inp.name
     elif isinstance(term, str):
       if term not in self.initialized_variables:
-        self.uninitialized_variables[term] = None
+        self.uninitialized_variables[term] = self.uninitialized_variables.get(term, None)
       return term
     elif isinstance(term, float):
       inp = self.model.input(distributions["constant"](term))
@@ -180,7 +198,7 @@ class Parser(NodeVisitor):
       var.operation = op
       for n in nodes:
         if n not in self.initialized_variables:
-          self.uninitialized_variables[n] = None
+          self.uninitialized_variables[n] = self.uninitialized_variables.get(n, None)
         var.children.append(n)
       self.initialized_variables[var.name] = var
       return var.name
@@ -307,7 +325,8 @@ x1 = 5 + 6.6;
 
 if __name__ == "__main__":
   print("Method 1")
-  fdm = Parser.from_file("pyjack/models/SAS.str")
+  fdm = Parser.from_file("pyjack/models/cba.str")
+  # exit()
   fdm.test()
   # print("Method 2")
   # import pyjack.models.fdm
